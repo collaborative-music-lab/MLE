@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1612.0, 937.0 ],
+		"rect" : [ 34.0, 79.0, 1141.0, 937.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,17 +38,6 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
-				"box" : 				{
-					"id" : "obj-1",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 7.0, 40.0, 22.0 ],
-					"text" : "git.init"
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"id" : "obj-135",
 					"maxclass" : "comment",
@@ -424,7 +413,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 638.0, 772.0, 50.0, 22.0 ],
-					"text" : "50"
+					"text" : "60"
 				}
 
 			}
@@ -852,7 +841,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 704.0, 191.0, 50.0, 22.0 ],
-					"text" : "1 8 0 3"
+					"text" : "1 6 0 3"
 				}
 
 			}
@@ -1072,7 +1061,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 921.0, 1016.6666259765625, 71.75, 22.0 ],
+					"patching_rect" : [ 859.5, 1013.6666259765625, 29.5, 22.0 ],
 					"text" : "*~"
 				}
 
@@ -1235,7 +1224,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1293,7 +1282,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 3,
+											"revision" : 6,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1587,9 +1576,9 @@
 								"box" : 								{
 									"id" : "obj-86",
 									"maxclass" : "newobj",
-									"numinlets" : 3,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 50.0, 198.21893310546875, 121.0, 22.0 ],
 									"text" : "LP.8row"
 								}
@@ -1611,7 +1600,7 @@
 								"box" : 								{
 									"id" : "obj-1",
 									"maxclass" : "newobj",
-									"numinlets" : 1,
+									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 101.0, 162.0, 45.0, 22.0 ],
@@ -1754,7 +1743,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1834,7 +1823,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 3,
+											"revision" : 6,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2144,7 +2133,7 @@
 								"box" : 								{
 									"id" : "obj-7",
 									"maxclass" : "newobj",
-									"numinlets" : 3,
+									"numinlets" : 2,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 64.0, 43.0, 187.0, 22.0 ],
@@ -2348,7 +2337,7 @@
 								"box" : 								{
 									"id" : "obj-29",
 									"maxclass" : "newobj",
-									"numinlets" : 1,
+									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 142.0, 8.0, 53.0, 22.0 ],
@@ -2360,7 +2349,7 @@
 								"box" : 								{
 									"id" : "obj-30",
 									"maxclass" : "newobj",
-									"numinlets" : 1,
+									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 103.5, 229.0, 45.0, 22.0 ],
@@ -2816,7 +2805,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 265.0, 415.0, 163.0, 153.0 ],
+					"patching_rect" : [ 259.0, 400.609466552734375, 163.0, 153.0 ],
 					"setminmax" : [ 0.0, 8.0 ],
 					"setstyle" : 1,
 					"settype" : 0,
@@ -3185,7 +3174,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-92", 0 ],
-					"midpoints" : [ 930.5, 1078.1666259765625, 458.5, 1078.1666259765625 ],
+					"midpoints" : [ 869.0, 1078.1666259765625, 458.5, 1078.1666259765625 ],
 					"source" : [ "obj-36", 0 ]
 				}
 
@@ -3238,7 +3227,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-47", 1 ]
 				}
 
@@ -3253,7 +3242,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-21", 1 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-47", 1 ]
 				}
 
@@ -3570,7 +3559,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-36", 1 ],
-					"midpoints" : [ 848.5, 1002.83331298828125, 983.25, 1002.83331298828125 ],
+					"midpoints" : [ 848.5, 1002.83331298828125, 879.5, 1002.83331298828125 ],
 					"source" : [ "obj-89", 0 ]
 				}
 
@@ -3645,9 +3634,9 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-10::obj-21::obj-6" : [ "live.tab[3]", "live.tab[1]", 0 ],
 			"obj-10::obj-35" : [ "[5]", "Level", 0 ],
 			"obj-98" : [ "live.grid[1]", "live.grid", 0 ],
+			"obj-10::obj-21::obj-6" : [ "live.tab[3]", "live.tab[1]", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -3655,69 +3644,6 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "LP.out.maxpat",
-				"bootpath" : "~/Dropbox/MLE/Library/patchers/controllers/launchpad",
-				"patcherrelativepath" : "../../controllers/launchpad",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "LP.grid.maxpat",
-				"bootpath" : "~/Dropbox/MLE/Library/patchers/controllers/launchpad",
-				"patcherrelativepath" : "../../controllers/launchpad",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "LP.padY.maxpat",
-				"bootpath" : "~/Dropbox/MLE/Library/patchers/controllers/launchpad",
-				"patcherrelativepath" : "../../controllers/launchpad",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "LP.seq8.maxpat",
-				"bootpath" : "~/Dropbox/MLE/Library/patchers/controllers/launchpad",
-				"patcherrelativepath" : "../../controllers/launchpad",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "LP.ledBar.maxpat",
-				"bootpath" : "~/Dropbox/MLE/Library/patchers/controllers/launchpad",
-				"patcherrelativepath" : "../../controllers/launchpad",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "LP.row.maxpat",
-				"bootpath" : "~/Dropbox/MLE/Library/patchers/controllers/launchpad",
-				"patcherrelativepath" : "../../controllers/launchpad",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "initPV.maxpat",
-				"bootpath" : "~/Dropbox/MLE/Library/patchers/utilities",
-				"patcherrelativepath" : "../../utilities",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "LP.led1.maxpat",
-				"bootpath" : "~/Dropbox/MLE/Library/patchers/controllers/launchpad",
-				"patcherrelativepath" : "../../controllers/launchpad",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "LP.8row.maxpat",
-				"bootpath" : "~/Dropbox/MLE/Library/patchers/controllers/launchpad",
-				"patcherrelativepath" : "../../controllers/launchpad",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "MLE.polysampler.maxpat",
 				"bootpath" : "~/Dropbox/MLE/Library/patchers/sandbox/Carina",
 				"patcherrelativepath" : ".",
@@ -3733,22 +3659,22 @@
 			}
 , 			{
 				"name" : "init.maxpat",
-				"bootpath" : "~/Dropbox/MLE/Library/patchers/utilities",
-				"patcherrelativepath" : "../../utilities",
+				"bootpath" : "~/Downloads",
+				"patcherrelativepath" : "../../../../../../Downloads",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.scale.maxpat",
-				"bootpath" : "~/Dropbox/MLE/Library/patchers/controllers",
-				"patcherrelativepath" : "../../controllers",
+				"bootpath" : "~/Downloads",
+				"patcherrelativepath" : "../../../../../../Downloads",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "initS.maxpat",
-				"bootpath" : "~/Dropbox/MLE/Library/patchers/utilities",
-				"patcherrelativepath" : "../../utilities",
+				"bootpath" : "~/Downloads",
+				"patcherrelativepath" : "../../../../../../Downloads",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3761,8 +3687,8 @@
 			}
 , 			{
 				"name" : "MLE.keyGrid.maxpat",
-				"bootpath" : "~/Dropbox/MLE/Library/patchers/controllers",
-				"patcherrelativepath" : "../../controllers",
+				"bootpath" : "~/Downloads",
+				"patcherrelativepath" : "../../../../../../Downloads",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3797,22 +3723,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "interfacecolor.js",
-				"bootpath" : "C74:/interfaces",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "yafr.maxpat",
 				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/legacy-examples/effects/reverb",
 				"patcherrelativepath" : "../../../../../../Library/Application Support/Cycling '74/Max 8/Examples/legacy-examples/effects/reverb",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "git.init.maxpat",
-				"bootpath" : "~/Dropbox/MLE/Library/patchers/utilities",
-				"patcherrelativepath" : "../../utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
