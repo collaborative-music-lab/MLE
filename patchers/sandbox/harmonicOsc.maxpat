@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 148.0, 88.0, 52.0, 22.0 ],
+					"text" : "open $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-70",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -56,7 +68,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 808.0, 242.5, 49.0, 22.0 ],
+					"patching_rect" : [ 904.0, 167.5, 49.0, 22.0 ],
 					"text" : "tapout~"
 				}
 
@@ -68,7 +80,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "tapconnect" ],
-					"patching_rect" : [ 808.0, 211.0, 42.0, 22.0 ],
+					"patching_rect" : [ 904.0, 136.0, 42.0, 22.0 ],
 					"text" : "tapin~"
 				}
 
@@ -676,7 +688,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 412.0, 398.0, 50.0, 22.0 ],
-					"text" : "4190.6"
+					"text" : "19."
 				}
 
 			}
@@ -725,7 +737,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 143.0, 110.0, 50.0, 22.0 ]
+					"patching_rect" : [ 138.0, 56.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -736,8 +748,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 149.0, 161.0, 144.0, 22.0 ],
-					"text" : "poly~ MLE.simplePoly 16"
+					"patching_rect" : [ 149.0, 161.0, 150.0, 22.0 ],
+					"text" : "poly~ MLE.simplePoly2 16"
 				}
 
 			}
@@ -1474,13 +1486,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-63", 0 ],
-					"source" : [ "obj-28", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-27", 1 ],
 					"source" : [ "obj-29", 0 ]
 				}
@@ -1546,6 +1551,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-50", 0 ]
 				}
@@ -1590,16 +1602,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"order" : 0,
-					"source" : [ "obj-6", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-14", 0 ],
-					"order" : 1,
+					"destination" : [ "obj-5", 0 ],
+					"midpoints" : [ 78.0, 95.0 ],
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -1701,8 +1705,8 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "MLE.simplePoly.maxpat",
-				"bootpath" : "~/Dropbox/MLE/Library/patchers/sandbox",
+				"name" : "MLE.simplePoly2.maxpat",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
