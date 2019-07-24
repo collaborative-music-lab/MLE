@@ -45,7 +45,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 873.0, 542.5, 93.0, 22.0 ],
-					"text" : "0. 0. 0."
+					"text" : "0. 1. 0."
 				}
 
 			}
@@ -527,7 +527,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.81, 0.9, 0.0, 1.0 ],
+					"bgcolor" : [ 0.4782969, 1.0, 0.0, 1.0 ],
 					"id" : "obj-197",
 					"maxclass" : "meter~",
 					"monotone" : 1,
