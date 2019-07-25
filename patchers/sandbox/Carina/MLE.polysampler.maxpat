@@ -305,7 +305,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "divide speed",
+					"comment" : "midi, routed parameters",
 					"id" : "obj-48",
 					"index" : 0,
 					"maxclass" : "inlet",
@@ -1144,15 +1144,15 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "MLE.polySampler_poly.maxpat",
-				"bootpath" : "~/Dropbox/MLE/Library/patchers/sandbox/Carina",
+				"bootpath" : "~/Desktop/MLE/patchers/sandbox/Carina",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "init.maxpat",
-				"bootpath" : "~/Downloads",
-				"patcherrelativepath" : "../../../../../../Downloads",
+				"bootpath" : "~/Dropbox/MLE/Library/patchers/utilities",
+				"patcherrelativepath" : "../../../../../Dropbox/MLE/Library/patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
