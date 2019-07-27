@@ -40,6 +40,114 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"floatoutput" : 1,
+					"id" : "obj-11",
+					"knobshape" : 3,
+					"maxclass" : "slider",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"orientation" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 466.5, 257.5, 184.0, 26.0 ],
+					"size" : 10.0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 420.0, 265.5, 29.5, 22.0 ],
+					"text" : "*~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-14",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "MLE.reverb.maxpat",
+					"numinlets" : 6,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 420.0, 301.0, 287.0, 155.5 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"buffername" : "polysampler_buffer",
+					"id" : "obj-8",
+					"maxclass" : "waveform~",
+					"numinlets" : 5,
+					"numoutlets" : 6,
+					"outlettype" : [ "float", "float", "float", "float", "list", "" ],
+					"patching_rect" : [ 183.0, 172.0, 136.0, 54.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"floatoutput" : 1,
+					"id" : "obj-1",
+					"knobshape" : 3,
+					"maxclass" : "slider",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"orientation" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 832.5, 246.0, 184.0, 26.0 ],
+					"size" : 10.0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 786.0, 257.0, 29.5, 22.0 ],
+					"text" : "*~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-7",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "MLE.distort.maxpat",
+					"numinlets" : 6,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 756.0, 292.0, 310.0, 143.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"floatoutput" : 1,
 					"id" : "obj-61",
 					"knobshape" : 3,
 					"maxclass" : "slider",
@@ -63,7 +171,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 14.25, 57.0, 217.0, 43.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Load a soundfile into the sampler to test out the effects.",
 					"textcolor" : [ 0.050980392843485, 0.050980392843485, 0.050980392843485, 1.0 ]
 				}
@@ -912,7 +1019,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 14.25, 301.0, 295.0, 204.0 ],
+					"patching_rect" : [ 14.25, 301.0, 381.0, 156.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -932,7 +1039,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 726.0, 66.5, 284.0, 165.0 ],
+					"patching_rect" : [ 725.0, 66.5, 286.0, 144.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -952,7 +1059,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 394.0, 66.5, 284.0, 165.0 ],
+					"patching_rect" : [ 394.0, 66.5, 284.0, 139.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -960,9 +1067,40 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-6", 1 ],
+					"midpoints" : [ 842.0, 280.0, 823.0, 280.0, 823.0, 252.0, 806.0, 252.0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 1 ],
+					"midpoints" : [ 476.0, 288.5, 457.0, 288.5, 457.0, 260.5, 440.0, 260.5 ],
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"midpoints" : [ 23.75, 288.0, 23.75, 288.0 ],
 					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"midpoints" : [ 429.5, 612.0, 24.625, 612.0 ],
+					"source" : [ "obj-14", 0 ]
 				}
 
 			}
@@ -977,8 +1115,17 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
-					"midpoints" : [ 403.5, 612.0, 24.625, 612.0 ],
+					"midpoints" : [ 403.5, 245.0, 717.0, 245.0, 717.0, 612.0, 24.625, 612.0 ],
 					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"midpoints" : [ 42.75, 249.0, 429.5, 249.0 ],
+					"order" : 2,
+					"source" : [ "obj-20", 0 ]
 				}
 
 			}
@@ -986,7 +1133,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
 					"midpoints" : [ 42.75, 241.0, 23.75, 241.0 ],
-					"order" : 2,
+					"order" : 4,
 					"source" : [ "obj-20", 0 ]
 				}
 
@@ -995,7 +1142,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-23", 0 ],
 					"midpoints" : [ 42.75, 243.0, 369.0, 243.0, 369.0, 13.0, 403.5, 13.0 ],
-					"order" : 1,
+					"order" : 3,
 					"source" : [ "obj-20", 0 ]
 				}
 
@@ -1004,8 +1151,25 @@
 				"patchline" : 				{
 					"destination" : [ "obj-27", 0 ],
 					"midpoints" : [ 42.75, 244.0, 368.0, 244.0, 368.0, 15.0, 735.5, 15.0 ],
+					"order" : 1,
+					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"midpoints" : [ 42.75, 249.0, 795.5, 249.0 ],
 					"order" : 0,
 					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"midpoints" : [ 130.75, 238.0, 176.625, 238.0, 176.625, 167.0, 192.5, 167.0 ],
+					"source" : [ "obj-20", 3 ]
 				}
 
 			}
@@ -1050,7 +1214,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
-					"midpoints" : [ 735.5, 612.0, 24.625, 612.0 ],
+					"midpoints" : [ 734.5, 234.0, 740.0, 234.0, 740.0, 612.0, 24.625, 612.0 ],
 					"source" : [ "obj-3", 0 ]
 				}
 
@@ -1088,8 +1252,23 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-9", 1 ],
 					"source" : [ "obj-61", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"midpoints" : [ 765.5, 612.0, 24.625, 612.0 ],
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
@@ -1157,6 +1336,20 @@
 				"name" : "init.maxpat",
 				"bootpath" : "~/Dropbox/MLE/Library/patchers/utilities",
 				"patcherrelativepath" : "../../../../../../Dropbox/MLE/Library/patchers/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.distort.maxpat",
+				"bootpath" : "~/Desktop/MLE/patchers/sandbox/Carina/MLE FX",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.reverb.maxpat",
+				"bootpath" : "~/Desktop/MLE/patchers/sandbox/Carina/MLE FX",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
