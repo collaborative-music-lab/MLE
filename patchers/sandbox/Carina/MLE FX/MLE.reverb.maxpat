@@ -41,7 +41,7 @@
 				"box" : 				{
 					"comment" : "reverb timw",
 					"id" : "obj-97",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -54,7 +54,7 @@
 				"box" : 				{
 					"comment" : "diffusion",
 					"id" : "obj-96",
-					"index" : 0,
+					"index" : 6,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -67,7 +67,7 @@
 				"box" : 				{
 					"comment" : "early reflections:tail ratio",
 					"id" : "obj-325",
-					"index" : 0,
+					"index" : 4,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -80,7 +80,7 @@
 				"box" : 				{
 					"comment" : "Damping",
 					"id" : "obj-94",
-					"index" : 0,
+					"index" : 5,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -100,7 +100,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1036.733385443687439, 88.486712803132832, 116.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 203.320042480714619, 82.253129569574867, 63.0, 22.0 ],
+					"presentation_rect" : [ 212.61079174792394, 80.846644531004131, 63.0, 22.0 ],
 					"text" : "Diffusion",
 					"textcolor" : [ 0.113725490196078, 0.113725490196078, 0.113725490196078, 1.0 ]
 				}
@@ -121,7 +121,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1040.116714417934418, 128.733346581459045, 34.359915038570762, 34.359915038570762 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 217.640084961429238, 43.713257011718724, 34.359915038570762, 34.359915038570762 ],
+					"presentation_rect" : [ 226.93083422863856, 43.713257011718724, 34.359915038570762, 34.359915038570762 ],
 					"size" : 1.0
 				}
 
@@ -149,7 +149,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 918.683342218399048, 88.306755283847451, 112.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 83.679957519285381, 82.253129569574867, 49.0, 22.0 ],
+					"presentation_rect" : [ 79.380728026852012, 80.846644531004131, 46.320042480714619, 22.0 ],
 					"text" : "Shape",
 					"textcolor" : [ 0.113725490196078, 0.113725490196078, 0.113725490196078, 1.0 ]
 				}
@@ -170,7 +170,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 918.683342218399048, 128.733346581459045, 34.359915038570762, 34.359915038570762 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 91.0, 43.713257011718724, 34.359915038570762, 34.359915038570762 ],
+					"presentation_rect" : [ 85.36079174792394, 43.713257011718724, 34.359915038570762, 34.359915038570762 ],
 					"size" : 1.0
 				}
 
@@ -198,7 +198,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 418.583342373371124, 97.306755283847451, 75.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 140.460127442143744, 82.253129569574867, 63.0, 22.0 ],
+					"presentation_rect" : [ 142.392312267209377, 80.846644531004131, 63.0, 22.0 ],
 					"text" : "Damping",
 					"textcolor" : [ 0.113725490196078, 0.113725490196078, 0.113725490196078, 1.0 ]
 				}
@@ -219,7 +219,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 423.833342313766479, 128.733346581459045, 34.359915038570762, 34.359915038570762 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 154.780169922858363, 43.713257011718724, 34.359915038570762, 34.359915038570762 ],
+					"presentation_rect" : [ 156.712354747923996, 43.713257011718724, 34.359915038570762, 34.359915038570762 ],
 					"size" : 1.0
 				}
 
@@ -231,8 +231,8 @@
 					"numinlets" : 5,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 423.833342313766479, 224.666673719882965, 125.0, 22.0 ],
-					"text" : "zmap 1. 10. 20. 1200."
+					"patching_rect" : [ 423.833342313766479, 224.666673719882965, 131.0, 22.0 ],
+					"text" : "zmap 1. 10. 20. 12000."
 				}
 
 			}
@@ -284,9 +284,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 592.333342313766479, 97.306755283847451, 113.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 19.218479480714564, 79.073172050289486, 52.0, 37.0 ],
-					"text" : "Reverb Time",
+					"presentation_rect" : [ 15.463231457277175, 80.846644531004131, 39.822269786494758, 22.0 ],
+					"text" : "Size",
 					"textcolor" : [ 0.113725490196078, 0.113725490196078, 0.113725490196078, 1.0 ]
 				}
 
@@ -306,7 +305,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 597.962529361248016, 128.733346581459045, 34.359915038570762, 34.359915038570762 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 28.038521961429183, 43.713257011718724, 34.359915038570762, 34.359915038570762 ],
+					"presentation_rect" : [ 16.18083422863856, 43.713257011718724, 34.359915038570762, 34.359915038570762 ],
 					"size" : 1.0
 				}
 
@@ -426,7 +425,7 @@
 				"box" : 				{
 					"comment" : "signal",
 					"id" : "obj-27",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -513,7 +512,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 19.12504506111145, 67.000013828277588, 227.0, 43.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Reverb based off of yafr and yafr2 objects.",
 					"textcolor" : [ 0.050980392843485, 0.050980392843485, 0.050980392843485, 1.0 ]
 				}
@@ -530,7 +528,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 19.12504506111145, 19.782204269351951, 347.0, 36.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.0, 119.073172050289486, 223.0, 36.0 ],
+					"presentation_rect" : [ 4.0, 106.16668701171875, 223.0, 36.0 ],
 					"text" : "MLE.reverb",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -540,7 +538,7 @@
 				"box" : 				{
 					"comment" : "dry:wet mix",
 					"id" : "obj-93",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -553,11 +551,11 @@
 				"box" : 				{
 					"comment" : "signal",
 					"id" : "obj-319",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 272.773484326087782, 194.733334064483643, 30.0, 30.0 ]
 				}
 
@@ -1367,7 +1365,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 270.773484326087782, 27.640098193660378, 883.125057220458984, 146.808767040180555 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -0.72918701171875, -1.833343505859375, 302.4583740234375, 156.906515556148861 ],
+					"presentation_rect" : [ -0.72918701171875, -1.833343505859375, 302.4583740234375, 150.906515556148861 ],
 					"proportion" : 0.5
 				}
 
@@ -2284,8 +2282,6 @@
 
 			}
  ],
-		"dependency_cache" : [  ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
