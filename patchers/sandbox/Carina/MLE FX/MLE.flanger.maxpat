@@ -315,8 +315,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 142.52497900000003, 622.800841999999989, 40.0, 22.0 ],
-					"text" : "*~ 0.2"
+					"patching_rect" : [ 142.52497900000003, 618.800841999999989, 40.0, 22.0 ],
+					"text" : "*~ 0.5"
 				}
 
 			}
@@ -361,8 +361,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 92.25, 581.084746999999993, 34.0, 22.0 ],
-					"text" : "*~ 1."
+					"patching_rect" : [ 92.25, 581.084746999999993, 29.5, 22.0 ],
+					"text" : "*~"
 				}
 
 			}
@@ -374,7 +374,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 142.52497900000003, 653.0, 30.0, 30.0 ]
+					"patching_rect" : [ 142.52497900000003, 661.0, 30.0, 30.0 ]
 				}
 
 			}
