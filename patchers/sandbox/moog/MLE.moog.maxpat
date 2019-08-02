@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 3,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 199.0, 230.0, 840.0, 323.0 ],
+		"rect" : [ 293.0, 379.0, 840.0, 323.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 8.0,
@@ -366,7 +366,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -626,7 +626,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -707,7 +707,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 3,
+											"revision" : 4,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -971,7 +971,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 3,
+											"revision" : 4,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1666,8 +1666,8 @@
 								"name" : "helpfile_label-1",
 								"default" : 								{
 									"fontsize" : [ 13.0 ],
-									"fontname" : [ "Arial" ],
-									"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ]
+									"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
+									"fontname" : [ "Arial" ]
 								}
 ,
 								"parentstyle" : "",
@@ -2389,7 +2389,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4041,11 +4041,11 @@
 					"patching_rect" : [ 1049.166748046875, 402.833343505859375, 56.0, 17.0 ],
 					"restore" : 					{
 						"AM2-1" : [ 0.0 ],
-						"FM3-1" : [ 0.0 ],
+						"FM3-1" : [ 0.028435996337026 ],
 						"VCAgate" : [ 0 ],
 						"amoLFO" : [ 0.0 ],
-						"ampADSR" : [ 0.052087675780058, 0.278727799654007, 0.493439495563507, 0.278727799654007 ],
-						"filterADSR" : [ 0.0, 0.523658275604248, 0.0, 0.332803428173065 ],
+						"ampADSR" : [ 0.052087675780058, 0.278727799654007, 0.445725798606873, 0.553081631660461 ],
+						"filterADSR" : [ 0.0, 0.523658275604248, 0.0, 0.464016139507294 ],
 						"filterADSRlevel" : [ 1.317073170731708 ],
 						"filterFreq" : [ 1.630695413810028 ],
 						"filterKey" : [ 4.0 ],
@@ -4062,14 +4062,14 @@
 						"osc1_waveform" : [ 3 ],
 						"osc1duty" : [ 0.235329667282014 ],
 						"osc1gain" : [ 1.0 ],
-						"osc1gain[1]" : [ 0.327790843186212 ],
+						"osc1gain[1]" : [ 0.285035515814097 ],
 						"osc1gain[2]" : [ 0.0 ],
 						"osc2_waveform" : [ 3 ],
 						"osc2detune" : [ 12.1 ],
 						"osc2duty" : [ 0.105868086316955 ],
 						"osc2octave" : [ 1 ],
 						"osc3-waveform" : [ 0 ],
-						"osc3detune" : [ 0.647138838110664 ],
+						"osc3detune" : [ 5.6 ],
 						"osc3duty" : [ 0.50574717078787 ],
 						"osc3octave" : [ 2 ],
 						"pitchLFO" : [ 0.0 ],
@@ -4077,7 +4077,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u986017388"
+					"varname" : "u175004863"
 				}
 
 			}
@@ -4266,9 +4266,11 @@
 				"box" : 				{
 					"bgcolor" : [ 0.2, 0.2, 0.2, 0.0 ],
 					"fontsize" : 12.0,
+					"format" : 6,
 					"id" : "obj-125",
 					"ignoreclick" : 1,
-					"maxclass" : "number",
+					"maxclass" : "flonum",
+					"numdecimalplaces" : 2,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
@@ -4597,7 +4599,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4855,7 +4857,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -7028,8 +7030,8 @@
 				"name" : "helpfile_label-1",
 				"default" : 				{
 					"fontsize" : [ 13.0 ],
-					"fontname" : [ "Arial" ],
-					"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ]
+					"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
+					"fontname" : [ "Arial" ]
 				}
 ,
 				"parentstyle" : "",
