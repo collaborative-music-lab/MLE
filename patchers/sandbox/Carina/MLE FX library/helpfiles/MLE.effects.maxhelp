@@ -46,7 +46,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 916.013294945470989, 96.750000476837158, 61.0, 22.0 ],
+					"patching_rect" : [ 1102.81825246475637, 359.25, 61.0, 22.0 ],
 					"text" : "delay 100"
 				}
 
@@ -59,7 +59,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 916.013294945470989, 70.0, 58.0, 22.0 ],
+					"patching_rect" : [ 1102.81825246475637, 332.499999523162842, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -72,8 +72,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1099.69325246475637, 497.25, 71.0, 22.0 ],
-					"text" : "MLE.reverb"
+					"patching_rect" : [ 1102.81825246475637, 435.000000476837158, 90.0, 22.0 ],
+					"text" : "set MLE.reverb"
 				}
 
 			}
@@ -85,8 +85,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1007.513294945470989, 300.750000447034836, 73.0, 22.0 ],
-					"text" : "MLE.phaser"
+					"patching_rect" : [ 1102.81825246475637, 409.25, 93.0, 22.0 ],
+					"text" : "MLE.chorus"
 				}
 
 			}
@@ -98,8 +98,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 916.013294945470989, 122.750000476837158, 73.0, 22.0 ],
-					"text" : "MLE.chorus"
+					"patching_rect" : [ 1102.81825246475637, 385.25, 92.0, 22.0 ],
+					"text" : "set MLE.chorus"
 				}
 
 			}
@@ -7856,24 +7856,36 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-59", 0 ],
-					"hidden" : 1,
+					"destination" : [ "obj-265", 0 ],
+					"order" : 0,
 					"source" : [ "obj-264", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-68", 0 ],
+					"destination" : [ "obj-65", 0 ],
 					"hidden" : 1,
+					"midpoints" : [ 1112.31825246475637, 405.0, 1071.0, 405.0, 1071.0, 300.0, 987.0, 300.0, 987.0, 102.0, 629.458337426185608, 102.0 ],
+					"order" : 1,
+					"source" : [ "obj-264", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-66", 0 ],
+					"hidden" : 1,
+					"midpoints" : [ 1112.31825246475637, 426.0, 1080.0, 426.0, 1080.0, 300.0, 716.833337426185608, 300.0 ],
 					"source" : [ "obj-265", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-72", 0 ],
+					"destination" : [ "obj-70", 0 ],
 					"hidden" : 1,
+					"midpoints" : [ 1112.31825246475637, 483.0, 996.0, 483.0, 996.0, 492.0, 809.138294945470989, 492.0 ],
 					"source" : [ "obj-266", 0 ]
 				}
 
@@ -7899,7 +7911,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-265", 0 ],
 					"hidden" : 1,
-					"midpoints" : [ 925.513294945470989, 120.0, 912.0, 120.0, 912.0, 153.0, 981.0, 153.0, 981.0, 252.0, 999.0, 252.0, 999.0, 294.0, 1017.013294945470989, 294.0 ],
+					"midpoints" : [ 1112.31825246475637, 381.0, 1098.541672468185425, 381.0, 1098.541672468185425, 405.0, 1112.31825246475637, 405.0 ],
 					"order" : 1,
 					"source" : [ "obj-268", 0 ]
 				}
@@ -7909,7 +7921,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-266", 0 ],
 					"hidden" : 1,
-					"midpoints" : [ 925.513294945470989, 120.0, 912.0, 120.0, 912.0, 144.0, 1000.0, 144.0, 1000.0, 483.0, 1109.19325246475637, 483.0 ],
+					"midpoints" : [ 1112.31825246475637, 381.0, 1089.541672468185425, 381.0, 1089.541672468185425, 432.0, 1112.31825246475637, 432.0 ],
 					"order" : 0,
 					"source" : [ "obj-268", 0 ]
 				}
@@ -8144,8 +8156,8 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "MLE.chorus.maxpat",
-				"bootpath" : "~/Desktop/MLE/patchers/sandbox/Carina/MLE FX",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Desktop/MLE/patchers/sandbox/Carina/MLE FX library",
+				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -8187,36 +8199,36 @@
 			}
 , 			{
 				"name" : "MLE.flanger.maxpat",
-				"bootpath" : "~/Desktop/MLE/patchers/sandbox/Carina/MLE FX",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Desktop/MLE/patchers/sandbox/Carina/MLE FX library",
+				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.phaser.maxpat",
-				"bootpath" : "~/Desktop/MLE/patchers/sandbox/Carina/MLE FX",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Desktop/MLE/patchers/sandbox/Carina/MLE FX library",
+				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.reverb.maxpat",
-				"bootpath" : "~/Desktop/MLE/patchers/sandbox/Carina/MLE FX",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Desktop/MLE/patchers/sandbox/Carina/MLE FX library",
+				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.distort.maxpat",
-				"bootpath" : "~/Desktop/MLE/patchers/sandbox/Carina/MLE FX",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Desktop/MLE/patchers/sandbox/Carina/MLE FX library",
+				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "init.maxpat",
 				"bootpath" : "~/Dropbox/MLE/Library/patchers/utilities",
-				"patcherrelativepath" : "../../../../../../Dropbox/MLE/Library/patchers/utilities",
+				"patcherrelativepath" : "../../../../../../../Dropbox/MLE/Library/patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}

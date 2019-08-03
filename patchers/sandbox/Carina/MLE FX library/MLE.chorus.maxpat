@@ -318,6 +318,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"degrees" : 320,
 					"id" : "obj-46",
 					"maxclass" : "dial",
 					"min" : 15.0,
@@ -338,6 +339,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"degrees" : 320,
 					"id" : "obj-31",
 					"maxclass" : "dial",
 					"mode" : 5,
@@ -357,6 +359,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"degrees" : 320,
 					"floatoutput" : 1,
 					"id" : "obj-32",
 					"maxclass" : "dial",
@@ -378,6 +381,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"degrees" : 320,
 					"floatoutput" : 1,
 					"id" : "obj-34",
 					"maxclass" : "dial",

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+		"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -83,7 +83,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 328.742900229179327, 15.0, 63.5, 22.0 ],
+					"patching_rect" : [ 328.742900229179327, 15.0, 64.0, 22.0 ],
 					"text" : "init 0.5 #1 "
 				}
 
@@ -138,7 +138,7 @@
 				"box" : 				{
 					"comment" : "super drive",
 					"id" : "obj-63",
-					"index" : 6,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -253,6 +253,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"degrees" : 320,
 					"floatoutput" : 1,
 					"id" : "obj-5",
 					"maxclass" : "dial",
@@ -364,7 +365,7 @@
 				"box" : 				{
 					"comment" : "bit depth",
 					"id" : "obj-24",
-					"index" : 4,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -498,7 +499,7 @@
 				"box" : 				{
 					"comment" : "signal",
 					"id" : "obj-27",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -586,7 +587,7 @@
 				"box" : 				{
 					"comment" : "drive",
 					"id" : "obj-97",
-					"index" : 5,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -599,7 +600,7 @@
 				"box" : 				{
 					"comment" : "% sampling rate",
 					"id" : "obj-94",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -612,7 +613,7 @@
 				"box" : 				{
 					"comment" : "dry:wet mix",
 					"id" : "obj-93",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -638,11 +639,11 @@
 				"box" : 				{
 					"comment" : "signal",
 					"id" : "obj-7",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 86.5, 179.0, 30.0, 30.0 ]
 				}
 
@@ -713,6 +714,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.07843137254902, 0.07843137254902, 0.07843137254902, 1.0 ],
+					"degrees" : 320,
 					"floatoutput" : 1,
 					"id" : "obj-34",
 					"maxclass" : "dial",
@@ -734,6 +736,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"degrees" : 320,
 					"floatoutput" : 1,
 					"id" : "obj-35",
 					"maxclass" : "dial",
@@ -1140,6 +1143,15 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "init.maxpat",
+				"bootpath" : "~/Dropbox/MLE/Library/patchers/utilities",
+				"patcherrelativepath" : "../../../../../../Dropbox/MLE/Library/patchers/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
@@ -1175,8 +1187,8 @@
 , 			{
 				"name" : "rsliderGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
-					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
+					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

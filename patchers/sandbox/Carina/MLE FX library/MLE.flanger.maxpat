@@ -208,7 +208,7 @@
 				"box" : 				{
 					"comment" : "rate",
 					"id" : "obj-97",
-					"index" : 4,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -221,7 +221,7 @@
 				"box" : 				{
 					"comment" : "feedback",
 					"id" : "obj-96",
-					"index" : 6,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -234,7 +234,7 @@
 				"box" : 				{
 					"comment" : "depth",
 					"id" : "obj-95",
-					"index" : 5,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -247,7 +247,7 @@
 				"box" : 				{
 					"comment" : "delay",
 					"id" : "obj-94",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -260,7 +260,7 @@
 				"box" : 				{
 					"comment" : "dry:wet mix",
 					"id" : "obj-93",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -370,7 +370,7 @@
 				"box" : 				{
 					"comment" : "signal",
 					"id" : "obj-27",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -382,11 +382,11 @@
 				"box" : 				{
 					"comment" : "signal",
 					"id" : "obj-26",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 81.5, 197.877681025144739, 30.0, 30.0 ]
 				}
 
@@ -618,6 +618,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"degrees" : 320,
 					"id" : "obj-46",
 					"maxclass" : "dial",
 					"min" : 2.0,
@@ -638,6 +639,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"degrees" : 320,
 					"id" : "obj-20",
 					"maxclass" : "dial",
 					"mode" : 5,
@@ -657,6 +659,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"degrees" : 320,
 					"id" : "obj-10",
 					"maxclass" : "dial",
 					"mode" : 5,
@@ -676,6 +679,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"degrees" : 320,
 					"id" : "obj-29",
 					"maxclass" : "dial",
 					"mode" : 5,
@@ -1004,6 +1008,8 @@
 
 			}
  ],
+		"dependency_cache" : [  ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "comment001",
 				"default" : 				{
