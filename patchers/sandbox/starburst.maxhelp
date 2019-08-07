@@ -60,7 +60,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ -41.0, 386.0, 150.0, 261.0 ],
+					"patching_rect" : [ -37.0, 359.5, 152.0, 261.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 10,
 					"presentation_rect" : [ 15.5, 532.0, 594.0, 141.0 ],
@@ -1306,10 +1306,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 479.0, 312.0, 171.0, 42.0 ],
+					"patching_rect" : [ 479.0, 312.0, 181.0, 42.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 529.0, 54.0, 171.0, 42.0 ],
+					"presentation_rect" : [ 529.0, 54.0, 181.0, 42.0 ],
 					"text" : "Number of beats (Shift Q to ]"
 				}
 
@@ -1657,7 +1657,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u059008425"
+					"varname" : "u102017486"
 				}
 
 			}
@@ -4513,8 +4513,8 @@
  ],
 		"parameters" : 		{
 			"obj-58::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
-			"obj-45" : [ "live.grid[1]", "live.grid", 0 ],
 			"obj-42" : [ "live.grid", "live.grid", 0 ],
+			"obj-45" : [ "live.grid[1]", "live.grid", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -4543,9 +4543,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "IH.moogOsc.maxpat",
-				"bootpath" : "~/Dropbox/_documents/MaxIH/ current/ synthesis/moog",
-				"patcherrelativepath" : "../../../../../../Dropbox/_documents/MaxIH/ current/ synthesis/moog",
+				"name" : "MLE.bb.moogOsc.maxpat",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox/buildingBlocks",
+				"patcherrelativepath" : "./buildingBlocks",
 				"type" : "JSON",
 				"implicit" : 1
 			}
