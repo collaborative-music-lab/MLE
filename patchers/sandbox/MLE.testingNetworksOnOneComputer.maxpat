@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-89",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 58.5, 330.5, 234.0, 47.0 ],
+					"text" : "<- CLICK TO ENABLE LOCAL TESTING. MUST SET WHENVER A NETOWK OBJCT IS CHANGED"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-87",
 					"linecount" : 4,
 					"maxclass" : "comment",
@@ -358,7 +370,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1109.0, 102.0, 135.5, 35.0 ],
+					"patching_rect" : [ 1109.0, 102.0, 157.0, 35.0 ],
 					"text" : "MLE.UDPreceive rmsValue global Carina"
 				}
 
@@ -638,7 +650,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 175.333343505859375, 676.0, 24.0, 24.0 ]
+					"patching_rect" : [ 31.0, 342.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -648,7 +660,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 175.333343505859375, 711.0, 157.0, 22.0 ],
+					"patching_rect" : [ 31.0, 377.0, 157.0, 22.0 ],
 					"text" : "s mleNetworkTestingEnable"
 				}
 
@@ -719,7 +731,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 175.333343505859375, 785.0, 32.0, 22.0 ],
+					"patching_rect" : [ 31.0, 451.0, 32.0, 22.0 ],
 					"text" : "print"
 				}
 
@@ -731,7 +743,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 175.333343505859375, 753.0, 97.0, 22.0 ],
+					"patching_rect" : [ 31.0, 419.0, 97.0, 22.0 ],
 					"text" : "udpreceive 8000"
 				}
 

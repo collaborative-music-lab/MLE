@@ -215,7 +215,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 386.0, 479.0, 104.0, 22.0 ],
+					"patching_rect" : [ 386.0, 479.0, 106.0, 22.0 ],
 					"text" : "initS global #2"
 				}
 
@@ -263,7 +263,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 103.0, 496.0, 77.0, 22.0 ],
+					"patching_rect" : [ 103.0, 496.0, 93.0, 22.0 ],
 					"text" : "loadmess #3"
 				}
 
@@ -486,7 +486,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"order" : 0,
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
+					"order" : 1,
 					"source" : [ "obj-17", 0 ]
 				}
 
