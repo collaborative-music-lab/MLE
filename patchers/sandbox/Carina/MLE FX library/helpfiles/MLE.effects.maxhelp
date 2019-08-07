@@ -2598,7 +2598,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 119.875, 387.500003337860107, 113.0, 22.0 ],
-									"text" : "Dry:Wet mix (0-1)",
+									"text" : "Dry:Wet mix (0,1)",
 									"textcolor" : [ 0.113725490196078, 0.113725490196078, 0.113725490196078, 1.0 ]
 								}
 
@@ -2641,7 +2641,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 197.25, 422.000003337860107, 108.0, 22.0 ],
-									"text" : "Drive (0-10)",
+									"text" : "Drive (0,10)",
 									"textcolor" : [ 0.113725490196078, 0.113725490196078, 0.113725490196078, 1.0 ]
 								}
 
@@ -2656,7 +2656,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 354.124998450279236, 488.500003337860107, 121.0, 22.0 ],
-									"text" : "Bit Depth (0-24)",
+									"text" : "Bit Depth (0,24)",
 									"textcolor" : [ 0.113725490196078, 0.113725490196078, 0.113725490196078, 1.0 ]
 								}
 
@@ -3612,7 +3612,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 101.875, 395.500003337860107, 113.0, 22.0 ],
-									"text" : "Dry:Wet mix (0-1)",
+									"text" : "Dry:Wet mix (0,1)",
 									"textcolor" : [ 0.113725490196078, 0.113725490196078, 0.113725490196078, 1.0 ]
 								}
 
@@ -4721,7 +4721,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 86.0, 366.500003337860107, 113.0, 22.0 ],
-									"text" : "Dry:Wet mix (0-1)",
+									"text" : "Dry:Wet mix (0,1)",
 									"textcolor" : [ 0.113725490196078, 0.113725490196078, 0.113725490196078, 1.0 ]
 								}
 
@@ -5670,7 +5670,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 101.875, 395.500003337860107, 113.0, 22.0 ],
-									"text" : "Dry:Wet mix (0-1)",
+									"text" : "Dry:Wet mix (0,1)",
 									"textcolor" : [ 0.113725490196078, 0.113725490196078, 0.113725490196078, 1.0 ]
 								}
 
@@ -5744,7 +5744,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 374.124998450279236, 395.500003337860107, 78.0, 22.0 ],
-									"text" : "Depth (0-1)",
+									"text" : "Depth (0,1)",
 									"textcolor" : [ 0.113725490196078, 0.113725490196078, 0.113725490196078, 1.0 ]
 								}
 
@@ -6759,7 +6759,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 101.875, 395.500003337860107, 113.0, 22.0 ],
-									"text" : "Dry:Wet mix (0-1)",
+									"text" : "Dry:Wet mix (0,1)",
 									"textcolor" : [ 0.113725490196078, 0.113725490196078, 0.113725490196078, 1.0 ]
 								}
 
@@ -6833,7 +6833,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 374.124998450279236, 395.500003337860107, 78.0, 22.0 ],
-									"text" : "Depth (0-1)",
+									"text" : "Depth (0,1)",
 									"textcolor" : [ 0.113725490196078, 0.113725490196078, 0.113725490196078, 1.0 ]
 								}
 
@@ -7517,7 +7517,7 @@
 					"id" : "obj-2",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "MLE.chorus.maxpat",
+					"name" : "MLE.reverb.maxpat",
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
@@ -8093,53 +8093,45 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-30::obj-23::obj-21::obj-6" : [ "live.tab[3]", "live.tab[1]", 0 ],
-			"obj-48::obj-23::obj-35" : [ "[1]", "Level", 0 ],
-			"obj-30::obj-23::obj-35" : [ "[5]", "Level", 0 ],
 			"obj-47::obj-23::obj-21::obj-6" : [ "live.tab[6]", "live.tab[1]", 0 ],
-			"obj-31::obj-23::obj-21::obj-6" : [ "live.tab[5]", "live.tab[1]", 0 ],
 			"obj-48::obj-23::obj-21::obj-6" : [ "live.tab[1]", "live.tab[1]", 0 ],
+			"obj-31::obj-23::obj-21::obj-6" : [ "live.tab[5]", "live.tab[1]", 0 ],
 			"obj-52::obj-21::obj-6" : [ "live.tab[7]", "live.tab[1]", 0 ],
-			"obj-10::obj-23::obj-35" : [ "[2]", "Level", 0 ],
-			"obj-47::obj-23::obj-35" : [ "[7]", "Level", 0 ],
 			"obj-10::obj-23::obj-21::obj-6" : [ "live.tab[4]", "live.tab[1]", 0 ],
+			"obj-47::obj-23::obj-35" : [ "[7]", "Level", 0 ],
+			"obj-30::obj-23::obj-35" : [ "[5]", "Level", 0 ],
 			"obj-31::obj-23::obj-35" : [ "[6]", "Level", 0 ],
 			"obj-52::obj-35" : [ "[8]", "Level", 0 ],
+			"obj-30::obj-23::obj-21::obj-6" : [ "live.tab[3]", "live.tab[1]", 0 ],
+			"obj-10::obj-23::obj-35" : [ "[2]", "Level", 0 ],
+			"obj-48::obj-23::obj-35" : [ "[1]", "Level", 0 ],
 			"parameterbanks" : 			{
 
 			}
 ,
 			"parameter_overrides" : 			{
-				"obj-48::obj-23::obj-35" : 				{
-					"parameter_longname" : "[1]"
-				}
-,
 				"obj-47::obj-23::obj-21::obj-6" : 				{
 					"parameter_longname" : "live.tab[6]"
-				}
-,
-				"obj-31::obj-23::obj-21::obj-6" : 				{
-					"parameter_longname" : "live.tab[5]"
 				}
 ,
 				"obj-48::obj-23::obj-21::obj-6" : 				{
 					"parameter_longname" : "live.tab[1]"
 				}
 ,
+				"obj-31::obj-23::obj-21::obj-6" : 				{
+					"parameter_longname" : "live.tab[5]"
+				}
+,
 				"obj-52::obj-21::obj-6" : 				{
 					"parameter_longname" : "live.tab[7]"
 				}
 ,
-				"obj-10::obj-23::obj-35" : 				{
-					"parameter_longname" : "[2]"
+				"obj-10::obj-23::obj-21::obj-6" : 				{
+					"parameter_longname" : "live.tab[4]"
 				}
 ,
 				"obj-47::obj-23::obj-35" : 				{
 					"parameter_longname" : "[7]"
-				}
-,
-				"obj-10::obj-23::obj-21::obj-6" : 				{
-					"parameter_longname" : "live.tab[4]"
 				}
 ,
 				"obj-31::obj-23::obj-35" : 				{
@@ -8149,12 +8141,34 @@
 				"obj-52::obj-35" : 				{
 					"parameter_longname" : "[8]"
 				}
+,
+				"obj-10::obj-23::obj-35" : 				{
+					"parameter_longname" : "[2]"
+				}
+,
+				"obj-48::obj-23::obj-35" : 				{
+					"parameter_longname" : "[1]"
+				}
 
 			}
 
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "MLE.reverb.maxpat",
+				"bootpath" : "~/Desktop/MLE/patchers/sandbox/Carina/MLE FX library",
+				"patcherrelativepath" : "..",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "init.maxpat",
+				"bootpath" : "~/Dropbox/MLE/Library/patchers/utilities",
+				"patcherrelativepath" : "../../../../../../../Dropbox/MLE/Library/patchers/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "MLE.chorus.maxpat",
 				"bootpath" : "~/Desktop/MLE/patchers/sandbox/Carina/MLE FX library",
 				"patcherrelativepath" : "..",
@@ -8212,23 +8226,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "MLE.reverb.maxpat",
-				"bootpath" : "~/Desktop/MLE/patchers/sandbox/Carina/MLE FX library",
-				"patcherrelativepath" : "..",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "MLE.distort.maxpat",
 				"bootpath" : "~/Desktop/MLE/patchers/sandbox/Carina/MLE FX library",
 				"patcherrelativepath" : "..",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "init.maxpat",
-				"bootpath" : "~/Dropbox/MLE/Library/patchers/utilities",
-				"patcherrelativepath" : "../../../../../../../Dropbox/MLE/Library/patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
