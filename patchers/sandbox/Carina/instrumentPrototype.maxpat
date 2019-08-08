@@ -46,7 +46,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1154.39351956761675, 1023.668650679290522, 302.0, 87.0 ],
 					"presentation_linecount" : 6,
-					"text" : "questions-\n-are xover frequencies meant to be set by performers or do i need to ad that to messages sent by the mixer\n-gain maxed, output still quiet\n-i see the goal of using pfft but I'm not sure what the most useful way to implement this is"
+					"text" : "questions-\n-are xover frequencies meant to be set by performers or do i need to add that to messages sent by the mixer\n-gain maxed, output still quiet\n-i see the goal of using pfft but I'm not sure what the most useful way to implement this is"
 				}
 
 			}
