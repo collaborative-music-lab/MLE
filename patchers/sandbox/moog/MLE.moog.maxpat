@@ -1724,8 +1724,8 @@
 , 							{
 								"name" : "helpfile_label-1",
 								"default" : 								{
-									"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
 									"fontsize" : [ 13.0 ],
+									"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
 									"fontname" : [ "Arial" ]
 								}
 ,
@@ -1771,8 +1771,8 @@
 , 							{
 								"name" : "newobjBlue-1",
 								"default" : 								{
-									"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-									"fontsize" : [ 12.0 ]
+									"fontsize" : [ 12.0 ],
+									"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1835,8 +1835,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1908,8 +1908,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 								}
 ,
 								"parentstyle" : "",
@@ -4052,7 +4052,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 83.666671752929688, 914.0001220703125, 69.0, 17.0 ],
+					"patching_rect" : [ 52.000015258789062, 874.0, 69.0, 17.0 ],
 					"text" : "LFOfreq $1"
 				}
 
@@ -4103,13 +4103,13 @@
 						"FM3-1" : [ 0.0 ],
 						"VCAgate" : [ 0 ],
 						"amoLFO" : [ 0.0 ],
-						"ampADSR" : [ 0.052000001072884, 0.259916245937347, 0.357489943504333, 0.467868596315384 ],
-						"filterADSR" : [ 0.0, 0.526994287967682, 0.0, 0.467868596315384 ],
+						"ampADSR" : [ 0.052000001072884, 0.247804448008537, 0.504740715026855, 0.368455618619919 ],
+						"filterADSR" : [ 0.0, 0.43862721323967, 0.0, 0.368455618619919 ],
 						"filterADSRlevel" : [ 1.317073170731708 ],
 						"filterFreq" : [ 1.630695413810028 ],
-						"filterKey" : [ 2.897637795275591 ],
+						"filterKey" : [ 2.015748031496063 ],
 						"filterLFO" : [ 0.0 ],
-						"filterRes" : [ 0.07605459057072 ],
+						"filterRes" : [ 0.392307692307692 ],
 						"glide" : [ 0.0 ],
 						"lfoFreq" : [ 2.147320846218189 ],
 						"lfoShape" : [ 0.56140350877193 ],
@@ -4119,24 +4119,24 @@
 						"noiseGain" : [ 0.0 ],
 						"osc1_octave" : [ 1 ],
 						"osc1_waveform" : [ 3 ],
-						"osc1duty" : [ 0.284789081885856 ],
+						"osc1duty" : [ 0.221538461538462 ],
 						"osc1gain" : [ 1.0 ],
 						"osc2_waveform" : [ 3 ],
 						"osc2detune" : [ 12.1 ],
-						"osc2duty" : [ 0.438591811414392 ],
+						"osc2duty" : [ 0.391153846153846 ],
 						"osc2gain" : [ 0.285035515814097 ],
 						"osc2octave" : [ 1 ],
 						"osc3-waveform" : [ 0 ],
 						"osc3detune" : [ 0.324141460295797 ],
-						"osc3duty" : [ 0.869578163771712 ],
-						"osc3gain" : [ 1.0 ],
+						"osc3duty" : [ 0.743076923076923 ],
+						"osc3gain" : [ 0.0 ],
 						"osc3octave" : [ 2 ],
 						"pitchLFO" : [ 0.0 ],
 						"pwmLFO" : [ 0.0 ]
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u278020581"
+					"varname" : "u043002057"
 				}
 
 			}
@@ -5589,10 +5589,10 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 53.666671752929688, 1152.0, 115.0, 17.0 ],
+					"patching_rect" : [ 52.000015258789062, 1170.0, 115.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 216.5, 286.86669921875, 110.0, 17.0 ],
-					"text" : "poly~ moogVoice 4 @steal 1"
+					"presentation_rect" : [ 216.5, 286.86669921875, 115.0, 17.0 ],
+					"text" : "poly~ moogVoice 16 @steal 1"
 				}
 
 			}
@@ -7095,8 +7095,8 @@
 , 			{
 				"name" : "helpfile_label-1",
 				"default" : 				{
-					"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
 					"fontsize" : [ 13.0 ],
+					"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
 					"fontname" : [ "Arial" ]
 				}
 ,
@@ -7142,8 +7142,8 @@
 , 			{
 				"name" : "newobjBlue-1",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"fontsize" : [ 12.0 ]
+					"fontsize" : [ 12.0 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -7206,8 +7206,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -7279,8 +7279,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 				}
 ,
 				"parentstyle" : "",

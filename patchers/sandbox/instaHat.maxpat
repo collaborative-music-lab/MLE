@@ -12,7 +12,7 @@
 		"classnamespace" : "box",
 		"rect" : [ 34.0, 79.0, 1138.0, 937.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -260,7 +260,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 559.0, 559.0, 89.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "storagewindow"
 				}
 
@@ -849,7 +848,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "preset", "int", "preset", "int" ],
 					"patching_rect" : [ 475.0, 494.0, 100.0, 40.0 ],
-					"pattrstorage" : "instaDrums",
+					"pattrstorage" : "instaHat",
 					"presentation" : 1,
 					"presentation_rect" : [ 334.36669921875, 188.666656494140625, 100.0, 40.0 ]
 				}
@@ -863,16 +862,16 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 475.0, 595.5, 168.5, 35.0 ],
+					"patching_rect" : [ 475.0, 595.5, 183.0, 35.0 ],
 					"saved_object_attributes" : 					{
 						"client_rect" : [ 4, 45, 358, 173 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
-						"storage_rect" : [ 583, 69, 920, 855 ]
+						"storage_rect" : [ 583, 69, 1034, 197 ]
 					}
 ,
-					"text" : "pattrstorage instaDrums @savemode 1 @greedy 1",
-					"varname" : "instaDrums"
+					"text" : "pattrstorage instaHat @savemode 1 @greedy 1",
+					"varname" : "instaHat"
 				}
 
 			}
@@ -979,7 +978,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 110.0, 85.0, 50.0, 22.0 ],
-									"text" : "3 0"
+									"text" : "1 0"
 								}
 
 							}
@@ -2930,8 +2929,8 @@
 		"parameters" : 		{
 			"obj-39::obj-7" : [ "trig_1", "trig_1", 0 ],
 			"obj-27::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
-			"obj-39::obj-20" : [ "snare-decay", "decay", 0 ],
 			"obj-39::obj-45" : [ "trig_7", "trig_7", 0 ],
+			"obj-39::obj-20" : [ "snare-decay", "decay", 0 ],
 			"obj-39::obj-44" : [ "trig_6", "trig_6", 0 ],
 			"obj-39::obj-21" : [ "snare-snap", "snap", 0 ],
 			"obj-39::obj-22" : [ "snare-tune", "tuning", 0 ],
