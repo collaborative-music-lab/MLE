@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -38,6 +38,26 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-25",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 55.0, 132.0, 124.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"client_rect" : [ 0, 0, 1280, 800 ],
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0,
+						"storage_rect" : [ 583, 69, 1034, 197 ]
+					}
+,
+					"text" : "pattrstorage distortFX",
+					"varname" : "distortFX"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-43",
 					"maxclass" : "newobj",
@@ -102,7 +122,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u178000904"
+					"varname" : "u865007388"
 				}
 
 			}
@@ -291,9 +311,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 789.0, 55.0, 79.0, 17.0 ],
+					"patching_rect" : [ 789.0, 55.0, 79.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 207.30413818359375, 79.846641540527344, 77.0, 17.0 ],
+					"presentation_rect" : [ 207.30413818359375, 79.846641540527344, 77.0, 22.0 ],
 					"text" : "Super Drive",
 					"textcolor" : [ 0.113725490868092, 0.113725490868092, 0.113725490868092, 1.0 ]
 				}
@@ -303,7 +323,7 @@
 				"box" : 				{
 					"comment" : "super drive",
 					"id" : "obj-63",
-					"index" : 6,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -474,9 +494,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 617.0, 104.073485976562552, 30.0, 14.0 ],
+					"patching_rect" : [ 617.0, 104.073485976562552, 30.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 196.12762451171875, 59.846645355224609, 29.0, 14.0 ],
+					"presentation_rect" : [ 196.12762451171875, 59.846645355224609, 29.0, 18.0 ],
 					"text" : "24",
 					"textcolor" : [ 0.04313725605607, 0.04313725605607, 0.04313725605607, 1.0 ]
 				}
@@ -491,9 +511,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 554.0, 104.073485976562552, 34.0, 14.0 ],
+					"patching_rect" : [ 554.0, 104.073485976562552, 34.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 145.447662353515625, 59.846645355224609, 31.0, 14.0 ],
+					"presentation_rect" : [ 145.447662353515625, 59.846645355224609, 31.0, 18.0 ],
 					"text" : "0",
 					"textcolor" : [ 0.04313725605607, 0.04313725605607, 0.04313725605607, 1.0 ]
 				}
@@ -508,9 +528,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 579.0, 55.0, 72.0, 17.0 ],
+					"patching_rect" : [ 579.0, 55.0, 72.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 145.703399658203125, 79.846641540527344, 63.0, 17.0 ],
+					"presentation_rect" : [ 145.703399658203125, 79.846641540527344, 63.0, 22.0 ],
 					"text" : "Bit Depth",
 					"textcolor" : [ 0.113725490868092, 0.113725490868092, 0.113725490868092, 1.0 ]
 				}
@@ -520,7 +540,7 @@
 				"box" : 				{
 					"comment" : "bit depth",
 					"id" : "obj-24",
-					"index" : 4,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -630,7 +650,7 @@
 				"box" : 				{
 					"comment" : "signal",
 					"id" : "obj-27",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -658,9 +678,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 426.0, 55.0, 105.0, 17.0 ],
+					"patching_rect" : [ 426.0, 55.0, 105.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 51.395572662353516, 79.846641540527344, 96.255729675292969, 17.0 ],
+					"presentation_rect" : [ 51.395572662353516, 79.846641540527344, 96.255729675292969, 22.0 ],
 					"text" : "Sampling Rate",
 					"textcolor" : [ 0.113725490868092, 0.113725490868092, 0.113725490868092, 1.0 ]
 				}
@@ -675,9 +695,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 290.648436999999944, 94.591251963136529, 35.0, 17.0 ],
+					"patching_rect" : [ 290.648436999999944, 94.591251963136529, 35.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 11.767708778381348, 9.846644401550293, 35.0, 17.0 ],
+					"presentation_rect" : [ 11.767708778381348, 9.846644401550293, 35.0, 22.0 ],
 					"text" : "Dry",
 					"textcolor" : [ 0.113725490868092, 0.113725490868092, 0.113725490868092, 1.0 ]
 				}
@@ -692,9 +712,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 359.242900229179327, 94.591251963136529, 33.0, 17.0 ],
+					"patching_rect" : [ 359.242900229179327, 94.591251963136529, 33.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 244.37762451171875, 9.846644401550293, 33.0, 17.0 ],
+					"presentation_rect" : [ 244.37762451171875, 9.846644401550293, 33.0, 22.0 ],
 					"text" : "Wet",
 					"textcolor" : [ 0.113725490868092, 0.113725490868092, 0.113725490868092, 1.0 ]
 				}
@@ -718,7 +738,7 @@
 				"box" : 				{
 					"comment" : "drive",
 					"id" : "obj-97",
-					"index" : 5,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -731,7 +751,7 @@
 				"box" : 				{
 					"comment" : "% sampling rate",
 					"id" : "obj-94",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -744,7 +764,7 @@
 				"box" : 				{
 					"comment" : "dry:wet mix",
 					"id" : "obj-93",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -770,11 +790,11 @@
 				"box" : 				{
 					"comment" : "signal",
 					"id" : "obj-7",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 86.5, 179.0, 30.0, 30.0 ]
 				}
 
@@ -835,9 +855,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 689.0, 55.0, 68.0, 17.0 ],
+					"patching_rect" : [ 689.0, 55.0, 68.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.767708778381348, 79.846641540527344, 40.679958343505859, 17.0 ],
+					"presentation_rect" : [ 7.767708778381348, 79.846641540527344, 40.679958343505859, 22.0 ],
 					"text" : "Drive",
 					"textcolor" : [ 0.113725490868092, 0.113725490868092, 0.113725490868092, 1.0 ]
 				}
@@ -899,9 +919,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 413.0, 101.073485976562552, 32.0, 14.0 ],
+					"patching_rect" : [ 413.0, 101.073485976562552, 32.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 65.767707824707031, 59.846645355224609, 21.0, 14.0 ],
+					"presentation_rect" : [ 65.767707824707031, 59.846645355224609, 21.0, 18.0 ],
 					"text" : "0",
 					"textcolor" : [ 0.04313725605607, 0.04313725605607, 0.04313725605607, 1.0 ]
 				}
@@ -916,9 +936,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 485.242900229179327, 101.073485976562552, 34.0, 14.0 ],
+					"patching_rect" : [ 485.242900229179327, 101.073485976562552, 34.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 118.703392028808594, 59.846645355224609, 25.0, 14.0 ],
+					"presentation_rect" : [ 118.703392028808594, 59.846645355224609, 25.0, 18.0 ],
 					"text" : "Full",
 					"textcolor" : [ 0.04313725605607, 0.04313725605607, 0.04313725605607, 1.0 ]
 				}
@@ -1347,6 +1367,15 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "init.maxpat",
+				"bootpath" : "~/Dropbox/MLE/Library/patchers/utilities",
+				"patcherrelativepath" : "../../../../../../Dropbox/MLE/Library/patchers/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
@@ -1382,8 +1411,8 @@
 , 			{
 				"name" : "rsliderGold",
 				"default" : 				{
-					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
