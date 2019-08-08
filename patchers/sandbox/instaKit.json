@@ -1,0 +1,52 @@
+{
+	"pattrstorage" : 	{
+		"name" : "instaKit",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"MLE.analogueDrums::u425001037" : [ -1 ],
+					"MLE.analogueDrums::kickTuning" : [ 56.0 ],
+					"MLE.analogueDrums::kickSweep" : [ 19.0 ],
+					"MLE.analogueDrums::kickDecay" : [ 201.0 ],
+					"MLE.analogueDrums::kickAttack" : [ 55.0 ],
+					"MLE.analogueDrums::kickLevel" : [ 100.0 ],
+					"MLE.analogueDrums::snareTuning" : [ 250.0 ],
+					"MLE.analogueDrums::snareDecay" : [ 186.0 ],
+					"MLE.analogueDrums::snareSnap" : [ 55.0 ],
+					"MLE.analogueDrums::snareHicut" : [ 1101.574803149605941 ],
+					"MLE.analogueDrums::snareLevel" : [ 35.0 ],
+					"MLE.analogueDrums::hihatTone" : [ 55.0 ],
+					"MLE.analogueDrums::hihatCloseDecay" : [ 314.0 ],
+					"MLE.analogueDrums::hihatOpDecay" : [ 1303.0 ],
+					"MLE.analogueDrums::hihatLevel" : [ 54.0 ],
+					"MLE.analogueDrums::tomLow" : [ 80.078740157480297 ],
+					"MLE.analogueDrums::tomMid" : [ 227.952755905512078 ],
+					"MLE.analogueDrums::tomHi" : [ 430.314960629921245 ],
+					"MLE.analogueDrums::tomDecay" : [ 2009.527559055116626 ],
+					"MLE.analogueDrums::tomLevel" : [ 66.14173228346452 ],
+					"MLE.analogueDrums::aDrumLevel" : [ 0.0 ],
+					"MLE.distort::bitdepth" : [ 100.0 ],
+					"MLE.distort::drive" : [ 45.826771653543304 ],
+					"MLE.distort::drywet" : [ 100.0 ],
+					"MLE.distort::samplingRate" : [ 10.0 ],
+					"MLE.distort::superdrive" : [ 1 ],
+					"MLE.flanger::delay" : [ 3 ],
+					"MLE.flanger::depth" : [ 71 ],
+					"MLE.flanger::feedback" : [ 0.158207358830879 ],
+					"MLE.flanger::rate" : [ 15 ],
+					"MLE.flanger::wet" : [ 21.0 ],
+					"MLE.reverb::damping" : [ 0.5 ],
+					"MLE.reverb::diffusion" : [ 0.9 ],
+					"MLE.reverb::drywet" : [ 10.727600596448763 ],
+					"MLE.reverb::shape" : [ 0.5 ],
+					"MLE.reverb::size" : [ 0.25259842519685 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}

@@ -811,11 +811,11 @@
 				"box" : 				{
 					"id" : "obj-10",
 					"maxclass" : "newobj",
-					"numinlets" : 7,
-					"numoutlets" : 7,
-					"outlettype" : [ "", "", "", "", "", "", "" ],
-					"patching_rect" : [ 641.0, 159.0, 276.0, 22.0 ],
-					"text" : "route tempo beats divisions groove template delay"
+					"numinlets" : 8,
+					"numoutlets" : 8,
+					"outlettype" : [ "", "", "", "", "", "", "", "" ],
+					"patching_rect" : [ 641.0, 159.0, 306.0, 22.0 ],
+					"text" : "route tempo beats divisions groove template delay done"
 				}
 
 			}
@@ -1187,7 +1187,7 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
-					"midpoints" : [ 693.333333333333371, 207.5, 367.0, 207.5 ],
+					"midpoints" : [ 691.5, 207.5, 367.0, 207.5 ],
 					"source" : [ "obj-10", 1 ]
 				}
 
@@ -1195,7 +1195,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-44", 0 ],
-					"midpoints" : [ 736.166666666666629, 250.0, 500.0, 250.0 ],
+					"midpoints" : [ 732.5, 250.0, 500.0, 250.0 ],
 					"source" : [ "obj-10", 2 ]
 				}
 
@@ -1203,7 +1203,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-55", 0 ],
-					"midpoints" : [ 779.0, 514.0, 588.0, 514.0 ],
+					"midpoints" : [ 773.5, 514.0, 588.0, 514.0 ],
 					"source" : [ "obj-10", 3 ]
 				}
 
@@ -1211,8 +1211,8 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-62", 0 ],
-					"midpoints" : [ 907.5, 195.5, 64.5, 195.5 ],
-					"source" : [ "obj-10", 6 ]
+					"midpoints" : [ 937.5, 195.5, 64.5, 195.5 ],
+					"source" : [ "obj-10", 7 ]
 				}
 
 			}
@@ -1227,7 +1227,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-77", 0 ],
-					"midpoints" : [ 821.833333333333371, 576.0, 682.0, 576.0 ],
+					"midpoints" : [ 814.5, 576.0, 682.0, 576.0 ],
 					"source" : [ "obj-10", 4 ]
 				}
 
@@ -1235,7 +1235,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-85", 0 ],
-					"midpoints" : [ 864.666666666666629, 665.0, 375.0, 665.0 ],
+					"midpoints" : [ 855.5, 665.0, 375.0, 665.0 ],
 					"source" : [ "obj-10", 5 ]
 				}
 
