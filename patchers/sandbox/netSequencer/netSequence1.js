@@ -3,6 +3,7 @@ outlets = 3;
 inlets = 2;
 var lcd = 0;
 var grid = 1;
+var net = 2;
 
 var rows = 8;
 var columns = 16;
@@ -99,7 +100,8 @@ function rect(x,y,val, player){
 	arr.push(corner);
 	arr.push(corner);
 	var out = arr.concat(curColor);
-	outlet( lcd, out);
+	//outlet( lcd, out);
+	outlet( net, out);
 }
 
 function shiftRect(x,y,val, player){
@@ -119,7 +121,8 @@ function shiftRect(x,y,val, player){
 	arr.push(x*sq+ sq/2);
 	arr.push(y*sq+4);
 	//var out = arr.concat(curColor);
-	outlet( lcd, arr);
+	//outlet( lcd, arr);
+	outlet( net, arr);
 }
 
 function seq(x,y,state, player){
