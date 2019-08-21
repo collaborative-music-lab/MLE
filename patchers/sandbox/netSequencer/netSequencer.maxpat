@@ -39,6 +39,19 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"format" : 6,
+					"id" : "obj-204",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 881.0, 1139.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-202",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -261,7 +274,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1492.0, 844.0, 218.0, 22.0 ],
-					"text" : "13 13 13 13 1 3 11 5"
+					"text" : "5 5 5 5 5 5 5 5"
 				}
 
 			}
@@ -547,7 +560,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1233.0, 1208.0, 50.0, 35.0 ],
-					"text" : "0 0 6 0 4 0 0 0"
+					"text" : "0 0 0 0 0 0 2 0"
 				}
 
 			}
@@ -864,12 +877,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-52",
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 181.0, 192.0, 50.0, 22.0 ],
-									"text" : "3"
+									"patching_rect" : [ 181.0, 192.0, 50.0, 35.0 ],
+									"text" : "0 0 0 0 0 0 2 0"
 								}
 
 							}
@@ -2656,6 +2670,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-32", 1 ],
+					"source" : [ "obj-204", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-34", 0 ],
 					"source" : [ "obj-23", 0 ]
 				}
@@ -3051,9 +3072,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "moogVoice.maxpat",
-				"bootpath" : "~/Dropbox/_documents/MaxIH/ current/ synthesis/moog",
-				"patcherrelativepath" : "../../../../../../../Dropbox/_documents/MaxIH/ current/ synthesis/moog",
+				"name" : "MLE.moogVoice.maxpat",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox/moog",
+				"patcherrelativepath" : "../moog",
 				"type" : "JSON",
 				"implicit" : 1
 			}
