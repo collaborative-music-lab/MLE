@@ -1,5 +1,9 @@
 # MLE Networking Overview
-The MLE library uses UDP communication over a wireless of wired network. The primary networking objects are:
+The MLE library uses UDP to send messages over a local area network. All messages are sent in the format:
+
+[name of player to receive message] [name of player sending the message] [message name] [data]
+
+The primary networking objects are:
 
 - MLE.UDPsend
 - MLE.UDPreceive
@@ -8,6 +12,7 @@ The MLE library uses UDP communication over a wireless of wired network. The pri
 
 MLE.testingNetworksOnOneComputer shows how to test networks using a single computer
 
+####Ports
 Regular network messages are sent to port 8000
 Messages announcing player names and IP addresses are sent on port 8001
 
