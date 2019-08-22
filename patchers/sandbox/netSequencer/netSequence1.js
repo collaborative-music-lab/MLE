@@ -100,7 +100,7 @@ function rect2(x,y,val, player){
 	arr.push(corner);
 	arr.push(corner);
 	var out = arr.concat(curColor);
-	outlet( lcd, out);
+	//outlet( lcd, out);
 	outlet( net, out);
 }
 
