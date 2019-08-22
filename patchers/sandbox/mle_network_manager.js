@@ -72,7 +72,7 @@ function updateColls(){
 		outlet(OUTLET_PLAYER_ID, idArray);
 		outlet(OUTLET_PLAYER_NAME, nameArray);
 	}
-	outlet(OUTLET_PLAYER_NAME, globalArray);
+	//outlet(OUTLET_PLAYER_NAME, globalArray);
 
 }
 
