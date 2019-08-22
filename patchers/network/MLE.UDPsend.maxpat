@@ -39,6 +39,42 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-28",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 813.0, 708.0, 53.0, 22.0 ],
+					"text" : "prepend"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-27",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 709.0, 770.0, 41.0, 22.0 ],
+					"text" : "set $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-20",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 654.0, 792.0, 53.0, 22.0 ],
+					"text" : "prepend"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"comment" : "player to send from",
 					"id" : "obj-9",
 					"index" : 3,
@@ -69,7 +105,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 455.0, 819.0, 32.0, 22.0 ],
+					"patching_rect" : [ 490.0, 832.0, 139.0, 22.0 ],
 					"text" : "gate"
 				}
 
@@ -80,7 +116,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 455.0, 858.0, 103.0, 22.0 ],
+					"patching_rect" : [ 490.0, 861.0, 103.0, 22.0 ],
 					"text" : "s mleNetworkTest"
 				}
 
@@ -228,7 +264,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 386.0, 479.0, 106.0, 22.0 ],
+					"patching_rect" : [ 386.0, 479.0, 110.0, 22.0 ],
 					"text" : "initS global #2"
 				}
 
@@ -276,7 +312,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 103.0, 496.0, 93.0, 22.0 ],
+					"patching_rect" : [ 103.0, 496.0, 103.0, 22.0 ],
 					"text" : "loadmess #3"
 				}
 
@@ -342,7 +378,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 14.333343505859375, 32.0, 399.0, 194.0 ],
-					"text" : "Updated version June 1, 2019\nSends data on the MLE network using UDP.\n\nAll data is in format: [myName] [address] [data]\n\nThree arguments:\n1) name of the parameter whose data is to be sent\n    -mandatory argument. Must start with a letter\n2) (optional) the address to send to\n    - default is global\n    - can either by set to a player's name or to an ID\n3) (optional) the name to send from\n    - default is your player name\n"
+					"text" : "Updated version June 1, 2019\nSends data on the MLE network using UDP.\n\nAll data is in format: [playerToSendTo] [myName] [address] [data]\n\nThree arguments:\n1) name of the parameter whose data is to be sent\n    -mandatory argument. Must start with a letter\n2) (optional) the address to send to\n    - default is global\n    - can either by set to a player's name or to an ID\n3) (optional) the name to send from\n    - default is your player name\n"
 				}
 
 			}
@@ -449,7 +485,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 214.5, 851.0, 180.0, 22.0 ],
+					"patching_rect" : [ 210.0, 847.0, 180.0, 22.0 ],
 					"text" : "udpsend 255.255.255.255 8000"
 				}
 
@@ -486,6 +522,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
+					"order" : 1,
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"order" : 0,
 					"source" : [ "obj-14", 0 ]
 				}
 
@@ -536,6 +581,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-18", 1 ],
+					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
 					"source" : [ "obj-21", 0 ]
 				}
@@ -566,6 +618,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-38", 0 ],
 					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"source" : [ "obj-27", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"source" : [ "obj-28", 0 ]
 				}
 
 			}
@@ -614,7 +680,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
-					"order" : 2,
+					"order" : 3,
 					"source" : [ "obj-39", 1 ]
 				}
 
@@ -628,7 +694,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-40", 0 ],
+					"destination" : [ "obj-27", 0 ],
 					"order" : 0,
 					"source" : [ "obj-39", 1 ]
 				}
@@ -636,8 +702,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-71", 0 ],
+					"destination" : [ "obj-40", 0 ],
 					"order" : 1,
+					"source" : [ "obj-39", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-71", 0 ],
+					"order" : 2,
 					"source" : [ "obj-39", 1 ]
 				}
 
@@ -673,6 +747,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
+					"order" : 1,
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"order" : 0,
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -680,15 +763,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"order" : 1,
-					"source" : [ "obj-6", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-18", 1 ],
-					"order" : 0,
 					"source" : [ "obj-6", 0 ]
 				}
 

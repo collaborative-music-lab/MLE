@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 3,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -126,7 +126,7 @@
 					"patching_rect" : [ 821.70001220703125, 10.866668701171875, 100.0, 40.0 ],
 					"pattrstorage" : "instaKit",
 					"presentation" : 1,
-					"presentation_rect" : [ 246.483322143554688, 184.866668701171875, 90.0, 17.800018310546875 ]
+					"presentation_rect" : [ 246.483322143554688, 184.866668701171875, 167.0, 17.800018310546875 ]
 				}
 
 			}
@@ -174,7 +174,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1241.5, 292.0, 121.5, 35.0 ],
+					"patching_rect" : [ 1241.5, 292.0, 125.0, 35.0 ],
 					"text" : "expr pow($f1/127.\\, 2) * 2"
 				}
 
@@ -227,7 +227,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 915.00006103515625, 50.800018310546875, 41.0, 33.0 ],
+					"patching_rect" : [ 915.00006103515625, 50.800018310546875, 42.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 398.5333251953125, -2.000005722045898, 42.0, 33.0 ],
@@ -935,7 +935,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1535,7 +1535,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1592,7 +1592,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 3,
+											"revision" : 4,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2189,7 +2189,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 3,
+											"revision" : 4,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3760,35 +3760,35 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-39::obj-3" : [ "kick-tune[1]", "tuning", 0 ],
-			"obj-39::obj-32" : [ "hat-tone", "tone", 0 ],
-			"obj-39::obj-44" : [ "trig_6", "trig_6", 0 ],
-			"obj-39::obj-42" : [ "tom-mid", "mid", 0 ],
-			"obj-39::obj-7" : [ "trig_1", "trig_1", 0 ],
-			"obj-39::obj-5" : [ "kick-decay", "decay", 0 ],
+			"obj-39::obj-31" : [ "clhat-decay", "cl-dec", 0 ],
 			"obj-39::obj-45" : [ "trig_7", "trig_7", 0 ],
-			"obj-39::obj-12" : [ "trig_2", "trig_2", 0 ],
-			"obj-39::obj-41" : [ "tom-hi", "hi", 0 ],
-			"obj-39::obj-22" : [ "snare-tune", "tuning", 0 ],
+			"obj-39::obj-44" : [ "trig_6", "trig_6", 0 ],
 			"obj-39::obj-43" : [ "tom-low", "low", 0 ],
-			"obj-39::obj-6" : [ "kick-attack", "attack", 0 ],
-			"obj-39::obj-23" : [ "trig_3", "trig_3", 0 ],
-			"obj-39::obj-19" : [ "snare-hicut", "hicut", 0 ],
-			"obj-39::obj-40" : [ "tom-decay", "decay", 0 ],
-			"obj-39::obj-21" : [ "snare-snap", "snap", 0 ],
-			"obj-39::obj-9" : [ "kick-level", "level", 0 ],
-			"obj-39::obj-33" : [ "trig_4", "trig_4", 0 ],
-			"obj-39::obj-30" : [ "ophat-decay", "op-dec", 0 ],
+			"obj-39::obj-34" : [ "trig_5", "trig_5", 0 ],
+			"obj-39::obj-12" : [ "trig_2", "trig_2", 0 ],
+			"obj-39::obj-7" : [ "trig_1", "trig_1", 0 ],
+			"obj-27::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
 			"obj-39::obj-46" : [ "ad-level", "level", 0 ],
 			"obj-39::obj-17" : [ "snare-level", "level", 0 ],
-			"obj-39::obj-38" : [ "tom-level", "level", 0 ],
-			"obj-39::obj-20" : [ "snare-decay", "decay", 0 ],
+			"obj-39::obj-33" : [ "trig_4", "trig_4", 0 ],
+			"obj-39::obj-9" : [ "kick-level", "level", 0 ],
 			"obj-9" : [ "live.grid", "live.grid", 0 ],
+			"obj-39::obj-23" : [ "trig_3", "trig_3", 0 ],
+			"obj-39::obj-19" : [ "snare-hicut", "hicut", 0 ],
+			"obj-39::obj-6" : [ "kick-attack", "attack", 0 ],
+			"obj-39::obj-32" : [ "hat-tone", "tone", 0 ],
+			"obj-39::obj-38" : [ "tom-level", "level", 0 ],
+			"obj-39::obj-40" : [ "tom-decay", "decay", 0 ],
 			"obj-39::obj-27" : [ "hat-level", "level", 0 ],
-			"obj-39::obj-31" : [ "clhat-decay", "cl-dec", 0 ],
-			"obj-39::obj-34" : [ "trig_5", "trig_5", 0 ],
-			"obj-27::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
+			"obj-39::obj-41" : [ "tom-hi", "hi", 0 ],
+			"obj-39::obj-30" : [ "ophat-decay", "op-dec", 0 ],
+			"obj-39::obj-42" : [ "tom-mid", "mid", 0 ],
+			"obj-39::obj-20" : [ "snare-decay", "decay", 0 ],
+			"obj-39::obj-5" : [ "kick-decay", "decay", 0 ],
+			"obj-39::obj-21" : [ "snare-snap", "snap", 0 ],
 			"obj-39::obj-4" : [ "kick-sweep", "sweep", 0 ],
+			"obj-39::obj-22" : [ "snare-tune", "tuning", 0 ],
+			"obj-39::obj-3" : [ "kick-tune[1]", "tuning", 0 ],
 			"parameterbanks" : 			{
 
 			}
