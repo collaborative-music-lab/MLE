@@ -66,17 +66,17 @@ function player(){
 		var curPlayer = a[0];
 		switch (state){
 			case 0:
-			rect(gx(a), gy(a), arr[gy(a)][gx(a)], curPlayer);
+			rect2(gx(a), gy(a), arr[gy(a)][gx(a)], curPlayer);
 			seq(gx(a), gy(a), arr[gy(a)][gx(a)], curPlayer);
 			break;
 
 			case 1:
-			rect(gx(a), gy(a), arr[gy(a)][gx(a)], curPlayer);
+			rect2(gx(a), gy(a), arr[gy(a)][gx(a)], curPlayer);
 			seq(gx(a), gy(a), arr[gy(a)][gx(a)], curPlayer);
 			break;
 
 			case 2:
-			rect(gx(a), gy(a),0, curPlayer);
+			rect2(gx(a), gy(a),0, curPlayer);
 			shiftRect(gx(a), gy(a), arr[gy(a)][gx(a)], curPlayer);
 			//seq(gx(a), gy(a), arr[gy(a)][gx(a)], curPlayer);
 			break;
@@ -88,7 +88,7 @@ function player(){
 	prevMouseVal = a[4];
 }//player
 
-function rect(x,y,val, player){
+function rect2(x,y,val, player){
 	var arr = new Array("paintroundrect");
 	var curColor = color[Math.floor(player)];
 	if(val==0) curColor = [0,0,0];
@@ -100,7 +100,7 @@ function rect(x,y,val, player){
 	arr.push(corner);
 	arr.push(corner);
 	var out = arr.concat(curColor);
-	//outlet( lcd, out);
+	outlet( lcd, out);
 	outlet( net, out);
 }
 
