@@ -39,6 +39,17 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 86.0, 920.0, 51.0, 22.0 ],
+					"text" : "print rcv"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgstepcolor" : [ 0.313725490196078, 0.313725490196078, 0.313725490196078, 0.0 ],
 					"bgstepcolor2" : [ 0.529411764705882, 0.529411764705882, 0.529411764705882, 0.0 ],
 					"bordercolor" : [ 0.313725490196078, 0.313725490196078, 0.313725490196078, 0.0 ],
@@ -92,7 +103,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 142.0, 929.0, 134.0, 62.0 ],
-					"text" : "playerToSendTo Ian seqValues paintroundrect 304 354 347 397 10 10 0 0 0"
+					"text" : "global Ian seqValues paintroundrect 354 104 397 147 10 10 255 255 0"
 				}
 
 			}
@@ -111,13 +122,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-9",
-					"linecount" : 6,
+					"linecount" : 7,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 402.0, 948.0, 52.0, 89.0 ],
-					"text" : "paintroundrect 304 354 347 397 10 10 0 0 0"
+					"patching_rect" : [ 402.0, 948.0, 52.0, 102.0 ],
+					"text" : "paintroundrect 354 104 397 147 10 10 255 255 0"
 				}
 
 			}
@@ -191,7 +202,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 226.0, 230.5, 169.0, 35.0 ],
-					"text" : "paintroundrect 304 354 347 397 10 10 0 0 0"
+					"text" : "paintroundrect 354 104 397 147 10 10 255 255 0"
 				}
 
 			}
@@ -213,8 +224,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 620.5, 954.0, 182.0, 22.0 ],
-					"text" : "MLE.UDPsend seqValues global"
+					"patching_rect" : [ 620.5, 954.0, 185.0, 22.0 ],
+					"text" : "MLE.UDPsend seqValues IanOld"
 				}
 
 			}
@@ -908,7 +919,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 181.0, 192.0, 34.0, 22.0 ],
-									"text" : "1"
+									"text" : "4"
 								}
 
 							}
@@ -1716,7 +1727,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 679.0, 792.0, 52.0, 62.0 ],
-					"text" : "mouse 318 383 0 0 0 0 0 0"
+					"text" : "mouse 366 130 0 0 0 0 0 0"
 				}
 
 			}
@@ -2395,6 +2406,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-18", 1 ],
+					"order" : 0,
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"order" : 1,
 					"source" : [ "obj-14", 0 ]
 				}
 
