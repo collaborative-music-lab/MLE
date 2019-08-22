@@ -11,7 +11,7 @@
 ,
 		"classnamespace" : "box",
 		"rect" : [ 34.0, 79.0, 1141.0, 937.0 ],
-		"bglocked" : 0,
+		"bglocked" : 1,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
@@ -39,11 +39,84 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-124",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 213.0, 848.0, 322.0, 33.0 ],
+					"text" : "UDPreceive won't get anything if the message is addressed to someone else"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontsize" : 36.0,
+					"id" : "obj-120",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 15.0, 18.0, 1212.0, 47.0 ],
+					"text" : "MLE Network Testing Overview"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-119",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 589.0, 557.0, 458.0, 20.0 ],
+					"text" : "You can assign a test address after the UDPreceive object is created"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-117",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 593.0, 643.5, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-115",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 593.0, 611.5, 130.0, 22.0 ],
+					"text" : "MLE.UDPreceive test1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-112",
+					"items" : [ "Beth", ",", "Greg", ",", "Alice" ],
+					"maxclass" : "umenu",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 663.5, 579.0, 100.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-109",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 565.0, 669.0, 237.0, 20.0 ],
+					"patching_rect" : [ 600.0, 810.0, 237.0, 20.0 ],
 					"presentation_linecount" : 2,
 					"text" : "raw messages coming over test network ->"
 				}
@@ -52,12 +125,14 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-110",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 804.0, 669.0, 130.5, 22.0 ],
-					"text" : "Greg t915 test1 81"
+					"patching_rect" : [ 839.0, 810.0, 130.5, 35.0 ],
+					"presentation_linecount" : 2,
+					"text" : "someoneElse t819 test 66"
 				}
 
 			}
@@ -68,7 +143,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 799.0, 640.5, 101.0, 22.0 ],
+					"patching_rect" : [ 834.0, 781.5, 101.0, 22.0 ],
 					"text" : "r mleNetworkTest"
 				}
 
@@ -76,11 +151,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-108",
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 599.0, 600.0, 197.0, 20.0 ],
-					"text" : "raw messages coming over UDP ->"
+					"patching_rect" : [ 634.0, 741.0, 197.0, 47.0 ],
+					"text" : "raw messages coming over UDP ->\nWill only appear if messages are\naddressed to this computer"
 				}
 
 			}
@@ -184,7 +260,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 25.0, 738.0, 480.0, 20.0 ],
+					"patching_rect" : [ 19.0, 738.0, 480.0, 20.0 ],
 					"text" : "To test, we can send messages to ourself, using either our playerName or playerID"
 				}
 
@@ -197,7 +273,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 25.0, 793.0, 50.0, 22.0 ]
+					"patching_rect" : [ 19.0, 793.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -207,7 +283,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 25.0, 827.0, 111.0, 22.0 ],
+					"patching_rect" : [ 19.0, 827.0, 111.0, 22.0 ],
 					"text" : "MLE.UDPsend test"
 				}
 
@@ -219,7 +295,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 588.0, 325.0, 482.0, 33.0 ],
+					"patching_rect" : [ 589.0, 338.0, 497.0, 33.0 ],
 					"text" : "The UDPreceive object has an optional third argument which will set the name for testing. This will do nothing if testing isn't enabled."
 				}
 
@@ -232,7 +308,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 897.0, 456.5, 50.0, 22.0 ]
+					"patching_rect" : [ 898.0, 463.5, 50.0, 22.0 ]
 				}
 
 			}
@@ -240,10 +316,10 @@
 				"box" : 				{
 					"id" : "obj-84",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 897.0, 425.5, 194.0, 22.0 ],
+					"patching_rect" : [ 898.0, 432.5, 194.0, 22.0 ],
 					"text" : "MLE.UDPreceive test1 global Alice"
 				}
 
@@ -256,7 +332,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 744.0, 425.5, 50.0, 22.0 ]
+					"patching_rect" : [ 745.0, 438.5, 50.0, 22.0 ]
 				}
 
 			}
@@ -264,10 +340,10 @@
 				"box" : 				{
 					"id" : "obj-82",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 744.0, 394.5, 195.0, 22.0 ],
+					"patching_rect" : [ 745.0, 407.5, 195.0, 22.0 ],
 					"text" : "MLE.UDPreceive test1 global Greg"
 				}
 
@@ -280,7 +356,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 588.0, 394.5, 50.0, 22.0 ]
+					"patching_rect" : [ 589.0, 407.5, 50.0, 22.0 ]
 				}
 
 			}
@@ -288,10 +364,10 @@
 				"box" : 				{
 					"id" : "obj-78",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 588.0, 363.5, 193.0, 22.0 ],
+					"patching_rect" : [ 589.0, 376.5, 193.0, 22.0 ],
 					"text" : "MLE.UDPreceive test1 global Beth"
 				}
 
@@ -304,7 +380,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 904.0, 230.5, 50.0, 22.0 ]
+					"patching_rect" : [ 905.0, 237.5, 50.0, 22.0 ]
 				}
 
 			}
@@ -316,7 +392,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 744.0, 238.0, 50.0, 22.0 ]
+					"patching_rect" : [ 745.0, 251.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -326,7 +402,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 904.0, 267.5, 146.0, 22.0 ],
+					"patching_rect" : [ 905.0, 274.5, 146.0, 22.0 ],
 					"text" : "MLE.UDPsend test1 Alice"
 				}
 
@@ -337,7 +413,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 744.0, 267.5, 147.0, 22.0 ],
+					"patching_rect" : [ 745.0, 280.5, 147.0, 22.0 ],
 					"text" : "MLE.UDPsend test1 Greg"
 				}
 
@@ -348,7 +424,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 588.0, 267.0, 145.0, 22.0 ],
+					"patching_rect" : [ 589.0, 280.0, 145.0, 22.0 ],
 					"text" : "MLE.UDPsend test1 Beth"
 				}
 
@@ -361,7 +437,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 588.0, 232.0, 50.0, 22.0 ]
+					"patching_rect" : [ 589.0, 245.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -372,7 +448,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 25.0, 634.0, 428.0, 33.0 ],
+					"patching_rect" : [ 19.0, 634.0, 428.0, 33.0 ],
 					"text" : "When we send a message to 'Beth', we are actually sending the message to her ip address. If there is no ip address for Beth, no message gets sent."
 				}
 
@@ -396,7 +472,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 25.0, 521.0, 457.0, 33.0 ],
+					"patching_rect" : [ 19.0, 521.0, 457.0, 33.0 ],
 					"text" : "Both the playerName and playerID are used to lookup the ip address of the player you are sending the message to. "
 				}
 
@@ -408,7 +484,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 588.0, 103.0, 440.5, 47.0 ],
+					"patching_rect" : [ 589.0, 118.0, 519.5, 47.0 ],
 					"text" : "Because only one playerName and playerID can be set per computer, we have to have a second local network for testing. To enable this network, send a message to 's mleNetworkTestingEnable'"
 				}
 
@@ -456,7 +532,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 364.0, 438.0, 113.0, 22.0 ],
-					"text" : "\"123\""
+					"text" : "\"51\""
 				}
 
 			}
@@ -479,7 +555,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 438.0, 57.0, 22.0 ],
+					"patching_rect" : [ 19.0, 438.0, 57.0, 22.0 ],
 					"text" : "tosymbol"
 				}
 
@@ -491,7 +567,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 25.0, 409.0, 59.0, 22.0 ],
+					"patching_rect" : [ 19.0, 409.0, 59.0, 22.0 ],
 					"text" : "route text"
 				}
 
@@ -506,8 +582,8 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 25.0, 374.0, 127.0, 30.0 ],
-					"text" : "123"
+					"patching_rect" : [ 19.0, 374.0, 127.0, 30.0 ],
+					"text" : "51"
 				}
 
 			}
@@ -518,7 +594,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 464.0, 81.0, 22.0 ],
+					"patching_rect" : [ 19.0, 464.0, 81.0, 22.0 ],
 					"text" : "MLE.playerID"
 				}
 
@@ -543,7 +619,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 19.0, 298.0, 204.0, 22.0 ],
-					"text" : "\"123\""
+					"text" : "\"51\""
 				}
 
 			}
@@ -633,11 +709,12 @@
 , 			{
 				"box" : 				{
 					"fontface" : 1,
+					"fontsize" : 16.0,
 					"id" : "obj-27",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 19.0, 103.0, 408.0, 20.0 ],
+					"patching_rect" : [ 10.5, 92.0, 550.0, 24.0 ],
 					"text" : "MLE uses two player names to lookup ipaddress to send messages to"
 				}
 
@@ -645,12 +722,12 @@
 , 			{
 				"box" : 				{
 					"fontface" : 1,
-					"fontsize" : 36.0,
+					"fontsize" : 16.0,
 					"id" : "obj-14",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 17.0, 1077.0, 47.0 ],
+					"patching_rect" : [ 589.0, 92.0, 485.0, 24.0 ],
 					"text" : "MLE - testing network implementations on one computer"
 				}
 
@@ -705,8 +782,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 798.0, 600.0, 130.5, 22.0 ],
-					"text" : "Ian Ian test 126"
+					"patching_rect" : [ 833.0, 741.0, 130.5, 22.0 ],
+					"text" : "\"51\" Ian test 82"
 				}
 
 			}
@@ -717,7 +794,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 793.0, 571.5, 97.0, 22.0 ],
+					"patching_rect" : [ 828.0, 712.5, 97.0, 22.0 ],
 					"text" : "udpreceive 8000"
 				}
 
@@ -730,7 +807,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 32.0, 895.0, 50.0, 22.0 ],
-					"text" : "126"
+					"text" : "82"
 				}
 
 			}
@@ -738,7 +815,7 @@
 				"box" : 				{
 					"id" : "obj-16",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 63.0, 866.0, 123.0, 22.0 ],
@@ -754,7 +831,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 25.0, 675.0, 50.0, 22.0 ]
+					"patching_rect" : [ 19.0, 675.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -764,32 +841,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 25.0, 705.0, 139.0, 22.0 ],
+					"patching_rect" : [ 19.0, 705.0, 139.0, 22.0 ],
 					"text" : "MLE.UDPsend test Beth"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-12",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 281.0, 1141.0, 161.0, 22.0 ],
-					"text" : "Greg t915 test1 81"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-10",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 281.0, 1110.0, 101.0, 22.0 ],
-					"text" : "r mleNetworkTest"
 				}
 
 			}
@@ -801,7 +854,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 588.0, 157.0, 24.0, 24.0 ]
+					"patching_rect" : [ 589.0, 170.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -811,20 +864,47 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 588.0, 188.0, 157.0, 22.0 ],
+					"patching_rect" : [ 589.0, 201.0, 157.0, 22.0 ],
 					"text" : "s mleNetworkTestingEnable"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 0.0,
+					"background" : 1,
+					"bgcolor" : [ 0.094118, 0.113725, 0.137255, 0.0 ],
+					"border" : 1,
+					"bordercolor" : [ 0.415686, 0.454902, 0.52549, 1.0 ],
+					"id" : "obj-122",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 578.5, 79.0, 536.0, 618.0 ],
+					"rounded" : 16
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 0.0,
+					"background" : 1,
+					"bgcolor" : [ 0.094118, 0.113725, 0.137255, 0.0 ],
+					"border" : 1,
+					"bordercolor" : [ 0.415686, 0.454902, 0.52549, 1.0 ],
+					"id" : "obj-121",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 10.5, 79.0, 541.0, 853.0 ],
+					"rounded" : 16
 				}
 
 			}
  ],
 		"lines" : [ 			{
-				"patchline" : 				{
-					"destination" : [ "obj-12", 1 ],
-					"source" : [ "obj-10", 0 ]
-				}
-
-			}
-, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-101", 0 ],
 					"source" : [ "obj-100", 0 ]
@@ -851,6 +931,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-110", 1 ],
 					"source" : [ "obj-111", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-115", 1 ],
+					"source" : [ "obj-112", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-117", 0 ],
+					"source" : [ "obj-115", 0 ]
 				}
 
 			}
