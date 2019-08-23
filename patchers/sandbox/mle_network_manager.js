@@ -49,10 +49,13 @@ function incPing(playerName, playerID, ipAddress){
 	
 }
 
+
+
 function updateColls(){
 	//post('update colls \n');
 	outlet(OUTLET_PLAYER_ID, "clear");
 	outlet(OUTLET_PLAYER_NAME, "clear");
+	var playerNumber = 0;
 	var nameArray = new Array();
 	var idArray = new Array();
 	nameArray.push("store");
@@ -65,12 +68,16 @@ function updateColls(){
 	for(var i=1;i<ipArray.length;i++){
 		nameArray[1] = ipArray[i][0];
 		nameArray[2] = ipArray[i][2];
+		nameArray[3] = playerNumber;
 		idArray[1] = ipArray[i][1];
 		idArray[2] = ipArray[i][2];
+		idArray[3] = playerNumber;
 		globalArray.push(ipArray[i][2]);
 
 		outlet(OUTLET_PLAYER_ID, idArray);
 		outlet(OUTLET_PLAYER_NAME, nameArray);
+		
+		playerNumber++;
 	}
 	//outlet(OUTLET_PLAYER_NAME, globalArray);
 
