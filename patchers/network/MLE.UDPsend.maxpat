@@ -3680,7 +3680,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 171.0, 246.5, 77.0, 22.0 ],
+									"patching_rect" : [ 171.0, 266.5, 77.0, 22.0 ],
 									"text" : "route symbol"
 								}
 
@@ -3786,13 +3786,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-43", 0 ],
 									"source" : [ "obj-1", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-1", 0 ],
-									"source" : [ "obj-10", 0 ]
 								}
 
 							}
@@ -3911,6 +3904,13 @@
 									"destination" : [ "obj-36", 0 ],
 									"order" : 1,
 									"source" : [ "obj-24", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"source" : [ "obj-36", 1 ]
 								}
 
 							}

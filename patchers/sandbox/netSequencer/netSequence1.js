@@ -54,39 +54,64 @@ var prevMouseVal=0;
 
 function player(){
 	var a = arrayfromargs(arguments);
+	var thisX = gx(a);
+	var thisY = gy(a);
+
 	//shift or not
 	
 	if( a[4] == 1 && prevMouseVal == 0){
-		var state = a[4];
-		if(state == 1 && a[6] == 1 ) state = 2; //shift or not
-	
-		if( state > arr[gy(a)][gx(a)] ) arr[gy(a)][gx(a)] = state;
-		else if( state <= arr[gy(a)][gx(a)]) arr[gy(a)][gx(a)] = 0;
-
 		var curPlayer = a[0];
-		switch (state){
-			case 0:
-			rect2(gx(a), gy(a), arr[gy(a)][gx(a)], curPlayer);
-			seq(gx(a), gy(a), arr[gy(a)][gx(a)], curPlayer);
-			break;
+		var state = a[4];
+		var shift = a[6];
 
-			case 1:
-			rect2(gx(a), gy(a), arr[gy(a)][gx(a)], curPlayer);
-			seq(gx(a), gy(a), arr[gy(a)][gx(a)], curPlayer);
-			break;
+		if(state == 1 && shift == 1 ) state = 2; //shift or not
 
-			case 2:
-			rect2(gx(a), gy(a),0, curPlayer);
-			shiftRect(gx(a), gy(a), arr[gy(a)][gx(a)], curPlayer);
-			//seq(gx(a), gy(a), arr[gy(a)][gx(a)], curPlayer);
-			break;
-		}
-		//post((gx(a), gy(a), arr[gx(a)][gy(a)]), "\n");
-		//dumpArray()
+		netSend(thisX,thisY,state,curPlayer);
 		
 	}
 	prevMouseVal = a[4];
 }//player
+
+function netSend(thisX,thisY,state,curPlayer){
+	var arr = new Array("seqEvent");
+	arr.push(thisX);
+	arr.push(thisY);
+	arr.push(state);
+	arr.push(curPlayer);
+	//var out = arr.concat(curColor);
+	//outlet( lcd, arr);
+	outlet( net, arr);
+}
+
+function seqEvent(){
+	var a = arrayfromargs(arguments);
+	updateGrid(a[0],a[1],a[2],a[3]);
+}
+
+function updateGrid(thisX,thisY,state,curPlayer){
+	if( state > arr[thisY][thisX] ) arr[thisY][thisX] = state;
+	else if( state <= arr[thisY][thisX]) arr[thisY][thisX] = 0;
+
+	switch (state){
+		case 0:
+		rect2(thisX, thisY, arr[thisY][thisX], curPlayer);
+		seq(thisX, thisY, arr[thisY][thisX], curPlayer);
+		break;
+
+		case 1:
+		rect2(thisX, thisY, arr[thisY][thisX], curPlayer);
+		seq(thisX, thisY, arr[thisY][thisX], curPlayer);
+		break;
+
+		case 2:
+		//rect2(thisX, thisY,0, curPlayer);
+		shiftRect(thisX, thisY, arr[thisY][thisX], curPlayer);
+		//seq(gx(a), gy(a), arr[gy(a)][gx(a)], curPlayer);
+		break;
+	}
+	//post((gx(a), gy(a), arr[gx(a)][gy(a)]), "\n");
+	//dumpArray()
+}
 
 function rect2(x,y,val, player){
 	var arr = new Array("paintroundrect");
@@ -101,7 +126,7 @@ function rect2(x,y,val, player){
 	arr.push(corner);
 	var out = arr.concat(curColor);
 	//outlet( lcd, out);
-	outlet( net, out);
+	outlet( lcd, out);
 }
 
 function shiftRect(x,y,val, player){
@@ -122,7 +147,7 @@ function shiftRect(x,y,val, player){
 	arr.push(y*sq+4);
 	//var out = arr.concat(curColor);
 	//outlet( lcd, arr);
-	outlet( net, arr);
+	outlet( lcd, arr);
 }
 
 function seq(x,y,state, player){
