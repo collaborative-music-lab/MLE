@@ -1,9 +1,10 @@
 autowatch = 1;
-outlets = 3;
+outlets = 5;
 inlets = 2;
 var lcd = 0;
 var grid = 1;
-var net = 2;
+var grid2 = 2
+var net = 3;
 
 var rows = 8;
 var columns = 16;
@@ -66,7 +67,10 @@ function player(){
 
 		if(state == 1 && shift == 1 ) state = 2; //shift or not
 
-		netSend(thisX,thisY,state,curPlayer);
+		if( state > arr[thisY][thisX] ) arr[thisY][thisX] = state;
+		else if( state <= arr[thisY][thisX]) arr[thisY][thisX] = 0;
+
+		netSend(thisX,thisY,arr[thisY][thisX],curPlayer);
 		
 	}
 	prevMouseVal = a[4];
@@ -89,8 +93,6 @@ function seqEvent(){
 }
 
 function updateGrid(thisX,thisY,state,curPlayer){
-	if( state > arr[thisY][thisX] ) arr[thisY][thisX] = state;
-	else if( state <= arr[thisY][thisX]) arr[thisY][thisX] = 0;
 
 	switch (state){
 		case 0:
@@ -104,7 +106,7 @@ function updateGrid(thisX,thisY,state,curPlayer){
 		break;
 
 		case 2:
-		//rect2(thisX, thisY,0, curPlayer);
+		rect2(thisX, thisY,0, curPlayer);
 		shiftRect(thisX, thisY, arr[thisY][thisX], curPlayer);
 		//seq(gx(a), gy(a), arr[gy(a)][gx(a)], curPlayer);
 		break;
