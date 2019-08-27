@@ -10,7 +10,7 @@ MLE_network_manager
 */
 autowatch = 1;
 inlets = 1;
-outlets = 3;
+outlets = 4;
 
 var ipArray = new Array();
 ipArray[0] = new Array("default", "none", "192.168.0.1", "timeCounter")
@@ -18,6 +18,7 @@ ipArray[0] = new Array("default", "none", "192.168.0.1", "timeCounter")
 var OUTLET_PLAYER_NAME = 0;
 var OUTLET_PLAYER_ID= 1;
 var DEFAULT_OUTLET = 2;
+var OUTLET_STATUS = 3;
 
 setoutletassist(OUTLET_PLAYER_NAME, "connect to coll 'mle_ipaddresses_byPlayername'");
 setoutletassist(OUTLET_PLAYER_ID, "connect to coll 'mle_ipaddresses_byPlayername'");
@@ -76,7 +77,7 @@ function updateColls(){
 
 		outlet(OUTLET_PLAYER_ID, idArray);
 		outlet(OUTLET_PLAYER_NAME, nameArray);
-		
+		outlet(OUTLET_STATUS, "newPlayer");
 		playerNumber++;
 	}
 	//outlet(OUTLET_PLAYER_NAME, globalArray);
