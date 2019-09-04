@@ -1,5 +1,5 @@
-ASCII ;
-;
+ASCII, coll ;
+
 32, "space ";
 33, "!";
 34, """;
