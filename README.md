@@ -13,6 +13,10 @@ Max/MSP Library for use by the MIT Laptop Ensemble
 9. Close and reopen GettingStarted
 9. Double-click "about this patch" for details on how to configure MLE.init and use the gettingStarted patch.
 
+### Video Tutorial
+A video tutorial is available on youtube: 
+  * https://youtu.be/WSOMIEbnR6o
+  
 ### FAQ
 * **Can I use Max 7 or earlier?**
 No, we need Max 8 to use the Ableton Link library
