@@ -5,7 +5,7 @@ Max/MSP Library for use by the MIT Laptop Ensemble
 1. Install Max 8. https://cycling74.com/downloads
 2. Create a directory for the MLE library (probably on your desktop or in your documents folder)
 3. Clone the MLE library into the folder you just created using either GitHub Desktop or the terminal. https://help.github.com/en/articles/cloning-a-repository
-4. You may need to install git tools if necessary. 
+4. You may need to install git tools if necessary. https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 5. Find the GettingStarted folder in the MLE library, and open the GettingStarted Max patch. There will be a bunch of errors we will fix.
 6. Install Java if necessary.
 7. Install the Max Link library using the File->Show Package Manager menu and searching for "link"
