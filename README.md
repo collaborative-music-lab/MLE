@@ -23,7 +23,7 @@ No, it can't be in a Dropbox or other shared folder, but anywhere else is fine.
 * **How do I navigate in Terminal?**
 https://computers.tutsplus.com/tutorials/navigating-the-terminal-a-gentle-introduction--mac-3855
 
-Type `pwd` in the terminal to doublecheck which directory you are in.
+* * Type `pwd` in the terminal to doublecheck which directory you are in.
 
 * **Gimme the commands to clone and pull repos again?**
 To clone, navigate to the folder you want to store in and type `git clone https://github.com/collaborative-music-lab/MLE/`
@@ -32,7 +32,7 @@ To pull, navigate to the MLE directory and type `git pull https://github.com/col
 * **What is the difference between cloning and pulling?**
 Cloning creates a fresh copy of the MLE library, whereas pulling just updates the library with any changes.
 
-You really only want to clone once.
+* * You really only want to clone once.
 
 * **I don't seem to have git installed**
 If you don't hav the git tools installed on your computer, follow the directions here:
