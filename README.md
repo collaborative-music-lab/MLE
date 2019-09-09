@@ -51,6 +51,7 @@ You probably don't have the MLE library in your Max search path. Check options->
 * **I get an error from the mxj object / my IP address doesn't get set**
 You need to have java installed on your machine. Get it here - note, you only need the development kit, not the demos and samples:
   * https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+  * Yes, apparently you do need to make an Oracle account to download Java. This sucks. . . 
 
 * **I don't hear any audio**
   * Make sure audio is turned on.
