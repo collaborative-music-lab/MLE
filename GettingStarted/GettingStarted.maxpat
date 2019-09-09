@@ -365,7 +365,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 55.0, 334.0, 45.0, 20.0 ],
+					"patching_rect" : [ 72.0, 333.0, 45.0, 20.0 ],
 					"text" : "Tempo",
 					"textjustification" : 2
 				}
@@ -377,7 +377,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 25.0, 301.0, 75.0, 20.0 ],
+					"patching_rect" : [ 42.0, 300.0, 75.0, 20.0 ],
 					"text" : "Sub Division",
 					"textjustification" : 2
 				}
@@ -389,7 +389,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 70.0, 270.0, 33.0, 20.0 ],
+					"patching_rect" : [ 84.0, 269.0, 33.0, 20.0 ],
 					"text" : "Beat",
 					"textjustification" : 2
 				}
@@ -793,7 +793,7 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
-					"midpoints" : [ 126.5, 358.0, 103.0, 358.0, 103.0, 232.0, 126.5, 232.0 ],
+					"midpoints" : [ 126.5, 358.0, 39.0, 358.0, 39.0, 232.0, 126.5, 232.0 ],
 					"source" : [ "obj-11", 0 ]
 				}
 
