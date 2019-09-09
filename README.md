@@ -35,7 +35,7 @@ Cloning creates a fresh copy of the MLE library, whereas pulling just updates th
   * You really only want to clone once to install the library.
 
 * **I don't seem to have git installed**
-If you don't hav the git tools installed on your computer, follow the directions here:
+If you don't have the git tools installed on your computer, follow the directions here:
   * https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 
 * **Where does MLE.init store data?**
@@ -45,7 +45,7 @@ It makes a file in your documents/Max 8/Library folder called MLEdata.txt.
 You probably don't have the MLE library in your Max search path. Check options->File Preferences and add it by clinking the '+' sign on the bottom left of the file manager.
 
 * **The sequencer / MLE.beat doesn't seem to be running**
-  * Make sure you have the Ableton Link Package installed in Max. Install the Max Link library using the File->Show Package   * Manager menu and searching for "link".
+  * Make sure you have the Ableton Link Package installed in Max. Install the Max Link library using the File->Show Package Manager menu and searching for "link".
   * Make sure audio is turned on.
 
 * **I get an error from the mxj object / my IP address doesn't get set**
