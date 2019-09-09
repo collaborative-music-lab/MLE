@@ -23,7 +23,7 @@ No, it can't be in a Dropbox or other shared folder, but anywhere else is fine.
 * **How do I navigate in Terminal?**
 https://computers.tutsplus.com/tutorials/navigating-the-terminal-a-gentle-introduction--mac-3855
 
- * Type `pwd` in the terminal to doublecheck which directory you are in.
+  * Type `pwd` in the terminal to doublecheck which directory you are in.
 
 * **Gimme the commands to clone and pull repos again?**
   * To clone, navigate to the folder you want to store in and type `git clone https://github.com/collaborative-music-lab/MLE/`
