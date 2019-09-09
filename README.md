@@ -2,7 +2,7 @@
 Max/MSP Library for use by the MIT Laptop Ensemble
 
 ## Steps to get started with the MLE Library:
-1. Install Max 8
+1. Install Max 8. https://cycling74.com/downloads
 2. Create a directory for the MLE library (probably on your desktop or in your documents folder)
 3. Clone the MLE library into the folder you just created using either GitHub Desktop or the terminal. https://help.github.com/en/articles/cloning-a-repository
 4. You may need to install git tools if necessary. 
