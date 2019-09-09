@@ -32,7 +32,7 @@ https://computers.tutsplus.com/tutorials/navigating-the-terminal-a-gentle-introd
 * **What is the difference between cloning and pulling?**
 Cloning creates a fresh copy of the MLE library, whereas pulling just updates the library with any changes.
 
- * You really only want to clone once.
+  * You really only want to clone once to install the library.
 
 * **I don't seem to have git installed**
 If you don't hav the git tools installed on your computer, follow the directions here:
