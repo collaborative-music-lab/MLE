@@ -23,20 +23,20 @@ No, it can't be in a Dropbox or other shared folder, but anywhere else is fine.
 * **How do I navigate in Terminal?**
 https://computers.tutsplus.com/tutorials/navigating-the-terminal-a-gentle-introduction--mac-3855
 
-* * Type `pwd` in the terminal to doublecheck which directory you are in.
+ * Type `pwd` in the terminal to doublecheck which directory you are in.
 
 * **Gimme the commands to clone and pull repos again?**
-To clone, navigate to the folder you want to store in and type `git clone https://github.com/collaborative-music-lab/MLE/`
-To pull, navigate to the MLE directory and type `git pull https://github.com/collaborative-music-lab/MLE/`
+  * To clone, navigate to the folder you want to store in and type `git clone https://github.com/collaborative-music-lab/MLE/`
+  * To pull, navigate to the MLE directory and type `git pull https://github.com/collaborative-music-lab/MLE/`
 
 * **What is the difference between cloning and pulling?**
 Cloning creates a fresh copy of the MLE library, whereas pulling just updates the library with any changes.
 
-* * You really only want to clone once.
+ * You really only want to clone once.
 
 * **I don't seem to have git installed**
 If you don't hav the git tools installed on your computer, follow the directions here:
-https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+  * https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 
 * **Where does MLE.init store data?**
 It makes a file in your documents/Max 8/Library folder called MLEdata.txt.
@@ -45,17 +45,17 @@ It makes a file in your documents/Max 8/Library folder called MLEdata.txt.
 You probably don't have the MLE library in your Max search path. Check options->File Preferences and add it by clinking the '+' sign on the bottom left of the file manager.
 
 * **The sequencer / MLE.beat doesn't seem to be running**
-Make sure you have the Ableton Link Package installed in Max. Install the Max Link library using the File->Show Package Manager menu and searching for "link".
-Make sure audio is turned on.
+  * Make sure you have the Ableton Link Package installed in Max. Install the Max Link library using the File->Show Package   * Manager menu and searching for "link".
+  * Make sure audio is turned on.
 
 * **I get an error from the mxj object / my IP address doesn't get set**
 You need to have java installed on your machine. Get it here - note, you only need the development kit, not the demos and samples:
-https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+  * https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 
 * **I don't hear any audio**
-Make sure audio is turned on.
-Make sure the volume of the synth is turned on.
-Make sure the sequencer and MLE.beat are running.
+  * Make sure audio is turned on.
+  * Make sure the volume of the synth is turned on.
+  * Make sure the sequencer and MLE.beat are running.
 
 
 
