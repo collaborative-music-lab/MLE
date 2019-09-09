@@ -1,7 +1,7 @@
 # MLE
 Max/MSP Library for use by the MIT Laptop Ensemble
 
-##Steps to get started with the MLE Library:
+## Steps to get started with the MLE Library:
 1. Install Max 8
 2. Install git tools if necessary
 3. Create a directory for the MLE library (probably on your desktop or in your documents folder)
