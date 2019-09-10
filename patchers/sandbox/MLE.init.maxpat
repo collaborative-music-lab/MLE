@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 3,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -38,6 +38,136 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-115",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1607.0, 328.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 178.10675048828125, 308.0, 109.0, 20.0 ],
+					"text" : "Current IP address"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-113",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1596.0, 269.4368896484375, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 181.10675048828125, 283.21844482421875, 103.0, 20.0 ],
+					"text" : "Network Interface"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-111",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 185.0, 293.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 146.0, 28.277305603027344, 150.0, 20.0 ],
+					"text" : "Player Name"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-109",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 448.0, 255.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 189.10675048828125, 60.054611206054688, 150.0, 20.0 ],
+					"text" : "Audio Driver"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-105",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 548.0, 395.78155517578125, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 181.10675048828125, 107.722694396972656, 150.0, 20.0 ],
+					"text" : "Audio Output"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-99",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 674.0, 242.21844482421875, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 181.10675048828125, 86.722694396972656, 69.0, 20.0 ],
+					"text" : "Audio Input"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-95",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1202.0, 459.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 181.10675048828125, 202.21844482421875, 150.0, 20.0 ],
+					"text" : "Overdrive"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-87",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1154.499893188476562, 241.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 181.10675048828125, 178.941139221191406, 69.0, 20.0 ],
+					"text" : "Vector Size"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-81",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 914.656539916992188, 360.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 181.10675048828125, 154.941139221191406, 60.0, 20.0 ],
+					"text" : "I/O Buffer"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-73",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 905.0, 241.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 181.10675048828125, 131.109222412109375, 87.0, 20.0 ],
+					"text" : "Sampling Rate"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-89",
 					"maxclass" : "newobj",
@@ -116,7 +246,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1422.0, 738.0, 50.0, 22.0 ],
-					"text" : "\"123\""
+					"text" : "\"1234\""
 				}
 
 			}
@@ -195,13 +325,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-79",
-					"linecount" : 3,
+					"linecount" : 4,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1804.0, 1305.5, 56.0, 49.0 ],
-					"text" : "Ian none 192.168.140.168"
+					"patching_rect" : [ 1804.0, 1305.5, 59.0, 62.0 ],
+					"text" : "Ian \"1234\" 18.20.131.252"
 				}
 
 			}
@@ -225,7 +355,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1714.0, 1319.0, 50.0, 22.0 ],
-					"text" : "\"123\""
+					"text" : "\"1234\""
 				}
 
 			}
@@ -237,7 +367,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1262.0, 1321.5, 250.0, 22.0 ],
-					"text" : "ping Ian none 192.168.140.168"
+					"text" : "ping Ian \"1234\" 18.20.131.252"
 				}
 
 			}
@@ -261,7 +391,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1468.0, 1063.5, 225.0, 22.0 ],
-					"text" : "ping Ian none 192.168.140.168"
+					"text" : "ping Ian \"1234\" 18.20.131.252"
 				}
 
 			}
@@ -635,7 +765,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1163,8 +1293,8 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1549.0, 328.0, 56.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 308.0, 148.0, 22.0 ],
-					"text" : "192.168.140.168"
+					"presentation_rect" : [ 7.0, 308.0, 172.10675048828125, 22.0 ],
+					"text" : "18.20.131.252"
 				}
 
 			}
@@ -1180,7 +1310,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1324,7 +1454,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 3,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1755,7 +1885,7 @@
 					"fontsize" : 10.0,
 					"hint" : "",
 					"id" : "obj-47",
-					"items" : [ "utun1", ",", "utun0", ",", "awdl0", ",", "en5", ",", "bridge0", ",", "en0", ",", "lo0" ],
+					"items" : [ "en5", ",", "utun2", ",", "utun1", ",", "utun0", ",", "bridge0", ",", "awdl0", ",", "en0", ",", "lo0" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1845,7 +1975,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 517.0, 58.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 5.0, 100.0, 20.0 ]
+					"presentation_rect" : [ 7.0, 5.0, 137.0, 20.0 ],
+					"text" : "Change player Name"
 				}
 
 			}
@@ -1861,7 +1992,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1918,7 +2049,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 3,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2145,7 +2276,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 3,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2557,7 +2688,7 @@
 					"pattrmode" : 1,
 					"prefix_mode" : 2,
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 178.21844482421875, 172.10675048828125, 20.0 ],
+					"presentation_rect" : [ 7.0, 178.941139221191406, 172.10675048828125, 20.0 ],
 					"prototypename" : "Lato9",
 					"style" : "AudioStatus_Menu"
 				}
@@ -2575,7 +2706,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2620,7 +2751,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 3,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2828,7 +2959,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 3,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3252,7 +3383,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3297,7 +3428,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 3,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3524,7 +3655,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 3,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3930,7 +4061,7 @@
 					"pattrmode" : 1,
 					"prefix_mode" : 2,
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 131.21844482421875, 172.10675048828125, 20.0 ],
+					"presentation_rect" : [ 7.0, 132.386528015136719, 172.10675048828125, 20.0 ],
 					"prototypename" : "Lato9",
 					"style" : "AudioStatus_Menu"
 				}
@@ -3948,7 +4079,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4029,7 +4160,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 3,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -4256,7 +4387,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 3,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -4690,7 +4821,7 @@
 					"pattrmode" : 1,
 					"prefix_mode" : 2,
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 156.21844482421875, 172.10675048828125, 20.0 ],
+					"presentation_rect" : [ 7.0, 155.663833618164062, 172.10675048828125, 20.0 ],
 					"prototypename" : "Lato9",
 					"style" : "AudioStatus_Menu"
 				}
@@ -4708,7 +4839,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4753,7 +4884,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 3,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -4961,7 +5092,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 3,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -5367,7 +5498,7 @@
 					"pattrmode" : 1,
 					"prefix_mode" : 2,
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 82.0, 172.10675048828125, 20.0 ],
+					"presentation_rect" : [ 7.0, 85.831916809082031, 172.10675048828125, 20.0 ],
 					"prototypename" : "Lato9",
 					"style" : "AudioStatus_Menu"
 				}
@@ -5385,7 +5516,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5430,7 +5561,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 3,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -5638,7 +5769,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 3,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -6034,7 +6165,7 @@
 					"fontsize" : 10.0,
 					"hint" : "",
 					"id" : "obj-6",
-					"items" : [ "External Headphones", ",", "MacBook Pro Speakers", ",", "Multi-Output Device" ],
+					"items" : [ "MacBook Pro Speakers", ",", "Multi-Output Device" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -6044,7 +6175,7 @@
 					"pattrmode" : 1,
 					"prefix_mode" : 2,
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 105.96649169921875, 172.10675048828125, 20.0 ],
+					"presentation_rect" : [ 7.0, 109.109222412109375, 172.10675048828125, 20.0 ],
 					"prototypename" : "Lato9",
 					"style" : "AudioStatus_Menu"
 				}
@@ -6086,7 +6217,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -6412,7 +6543,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -6457,7 +6588,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 3,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -6665,7 +6796,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 3,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -7045,7 +7176,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -7348,7 +7479,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 268.0, 293.0, 131.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 27.0, 131.0, 26.0 ],
+					"presentation_rect" : [ 7.0, 28.277305603027344, 131.0, 26.0 ],
 					"text" : "Ian"
 				}
 
@@ -7389,7 +7520,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -7736,7 +7867,7 @@
 					"pattrmode" : 1,
 					"prefix_mode" : 2,
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 55.0, 178.626708984375, 25.0 ],
+					"presentation_rect" : [ 7.0, 57.554611206054688, 178.626708984375, 25.0 ],
 					"prototypename" : "Lato9"
 				}
 
