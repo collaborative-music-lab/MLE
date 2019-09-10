@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 3,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 104.0, 640.0, 678.0 ],
+		"rect" : [ 191.0, 241.0, 640.0, 678.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,13 +39,25 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 113.5, 300.0, 29.5, 22.0 ],
+					"text" : "1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-17",
 					"maxclass" : "number",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 494.0, 526.0, 50.0, 22.0 ]
+					"patching_rect" : [ 492.0, 518.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -81,7 +93,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 517.0, 602.0, 96.0, 33.0 ],
-					"presentation_linecount" : 2,
 					"text" : "selected player name"
 				}
 
@@ -105,7 +116,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 270.0, 502.0, 49.0, 22.0 ],
+					"patching_rect" : [ 270.0, 465.0, 49.0, 22.0 ],
 					"text" : "pack i s"
 				}
 
@@ -117,7 +128,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 304.0, 560.0, 96.0, 20.0 ],
-					"presentation_linecount" : 2,
 					"text" : "all pleyer names"
 				}
 
@@ -258,10 +268,10 @@
 					"id" : "obj-33",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "int", "dump", "int", "bang" ],
-					"patching_rect" : [ 30.0, 172.0, 75.0, 22.0 ],
-					"text" : "t 0 dump 1 b"
+					"numoutlets" : 5,
+					"outlettype" : [ "int", "dump", "int", "bang", "int" ],
+					"patching_rect" : [ 30.0, 172.0, 85.0, 22.0 ],
+					"text" : "t 0 dump 1 b 1"
 				}
 
 			}
@@ -368,6 +378,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"source" : [ "obj-28", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-35", 0 ],
 					"source" : [ "obj-28", 1 ]
 				}
@@ -397,7 +414,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-34", 3 ],
+					"destination" : [ "obj-34", 2 ],
 					"source" : [ "obj-33", 2 ]
 				}
 
