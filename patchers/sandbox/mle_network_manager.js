@@ -1,7 +1,6 @@
-
-
 /*
 MLE_network_manager
+Ian Hattwick May 2019
 - keeps track of IP addresses and player names/IDs
 - stores data in colls for MLE.UDPsend and MLE.UDPreceive
 - colls: mle_ipaddresses_byPlayername, mle_ipaddresses_byPlayerID
