@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 4,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -38,6 +38,342 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-85",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 112.833332061767578, 209.0, 29.5, 22.0 ],
+					"text" : "+ 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-81",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 599.0, 70.0, 29.5, 22.0 ],
+					"text" : "+ 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-79",
+					"items" : [ "Default", "Presets", ",", "Local", "Presets" ],
+					"maxclass" : "umenu",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 599.0, 35.0, 100.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-77",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 508.0, 99.0, 29.5, 22.0 ],
+					"text" : "* 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-72",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 642.20001220703125, 871.83331298828125, 132.0, 22.0 ],
+					"text" : "MLE.pattrLocal instaKit"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 784.70001220703125, 969.0, 56.0, 22.0 ],
+					"restore" : 					{
+						"live.grid" : [ 3, 10, 2, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 ]
+					}
+,
+					"text" : "autopattr",
+					"varname" : "u140003281"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-105",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 8,
+							"minor" : 0,
+							"revision" : 8,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-21",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 50.0, 166.0, 65.0, 22.0 ],
+									"text" : "append $1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-19",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "bang", "" ],
+									"patching_rect" : [ 50.0, 127.0, 54.0, 22.0 ],
+									"text" : "sel done"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-18",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 50.0, 100.0, 82.0, 22.0 ],
+									"text" : "route clientlist"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-103",
+									"index" : 1,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 50.0, 40.0, 30.0, 30.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-104",
+									"index" : 1,
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 50.0, 248.0, 30.0, 30.0 ]
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-18", 0 ],
+									"source" : [ "obj-103", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-19", 0 ],
+									"source" : [ "obj-18", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-21", 0 ],
+									"source" : [ "obj-19", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-104", 0 ],
+									"source" : [ "obj-21", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 475.0, 989.3333740234375, 55.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p umenu"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-137",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 510.166664123535156, 838.3333740234375, 77.0, 22.0 ],
+					"text" : "clientwindow"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-142",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 516.166664123535156, 899.3333740234375, 33.0, 22.0 ],
+					"text" : "read"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 510.166664123535156, 868.0, 89.0, 22.0 ],
+					"text" : "storagewindow"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-57",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "clear" ],
+					"patching_rect" : [ 475.0, 933.3333740234375, 104.0, 22.0 ],
+					"text" : "t getclientlist clear"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-61",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 475.0, 899.3333740234375, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-62",
+					"items" : [ "filename", ",", "Arate", ",", "Brate", ",", "Crate", ",", "source[1]", ",", "dest[1]", ",", "decay", ",", "decay[1]", ",", "decay[2]", ",", "dest", ",", "dest[10]", ",", "dest[11]", ",", "dest[12]", ",", "dest[3]", ",", "dest[4]", ",", "dest[5]", ",", "dest[6]", ",", "dest[7]", ",", "dest[8]", ",", "dest[9]", ",", "filter", ",", "filter[1]", ",", "filter[2]", ",", "gain", ",", "gain[1]", ",", "gain[2]", ",", "octave", ",", "octave[1]", ",", "octave[2]", ",", "pitch", ",", "pitch[1]", ",", "pitch[2]", ",", "source[10]", ",", "source[11]", ",", "source[12]", ",", "source[2]", ",", "source[3]", ",", "source[4]", ",", "source[5]", ",", "source[6]", ",", "source[7]", ",", "source[8]", ",", "source[9]", ",", "step", ",", "step[1]", ",", "step[2]", ",", "updateRate", ",", "MLE.paramScale::minVal", ",", "MLE.paramScale::maxVal", ",", "MLE.paramScale::exponent", ",", "MLE.paramScale::clipMode", ",", "MLE.paramScale[1]::minVal", ",", "MLE.paramScale[1]::maxVal", ",", "MLE.paramScale[1]::exponent", ",", "MLE.paramScale[1]::clipMode", ",", "MLE.paramScale[2]::minVal", ",", "MLE.paramScale[2]::maxVal", ",", "MLE.paramScale[2]::exponent", ",", "MLE.paramScale[2]::clipMode", ",", "MLE.paramScale[4]::minVal", ",", "MLE.paramScale[4]::maxVal", ",", "MLE.paramScale[4]::exponent", ",", "MLE.paramScale[4]::clipMode", ",", "MLE.paramScale[3]::minVal", ",", "MLE.paramScale[3]::maxVal", ",", "MLE.paramScale[3]::exponent", ",", "MLE.paramScale[3]::clipMode", ",", "MLE.paramScale[6]::minVal", ",", "MLE.paramScale[6]::maxVal", ",", "MLE.paramScale[6]::exponent", ",", "MLE.paramScale[6]::clipMode", ",", "MLE.paramScale[5]::minVal", ",", "MLE.paramScale[5]::maxVal", ",", "MLE.paramScale[5]::exponent", ",", "MLE.paramScale[5]::clipMode", ",", "MLE.paramScale[8]::minVal", ",", "MLE.paramScale[8]::maxVal", ",", "MLE.paramScale[8]::exponent", ",", "MLE.paramScale[8]::clipMode", ",", "MLE.paramScale[7]::minVal", ",", "MLE.paramScale[7]::maxVal", ",", "MLE.paramScale[7]::exponent", ",", "MLE.paramScale[7]::clipMode", ",", "MLE.paramScale[10]::minVal", ",", "MLE.paramScale[10]::maxVal", ",", "MLE.paramScale[10]::exponent", ",", "MLE.paramScale[10]::clipMode", ",", "MLE.paramScale[9]::minVal", ",", "MLE.paramScale[9]::maxVal", ",", "MLE.paramScale[9]::exponent", ",", "MLE.paramScale[9]::clipMode", ",", "MLE.paramScale[11]::minVal", ",", "MLE.paramScale[11]::maxVal", ",", "MLE.paramScale[11]::exponent", ",", "MLE.paramScale[11]::clipMode", ",", "MLE.arpeggio[1]::arpeggioMode", ",", "MLE.arpeggio[1]::octaveRange", ",", "MLE.bassline::2nd_wave", ",", "MLE.bassline::amplitude", ",", "MLE.bassline::attack", ",", "MLE.bassline::attack_filt", ",", "MLE.bassline::ctl_attack", ",", "MLE.bassline::ctl_cutoff", ",", "MLE.bassline::ctl_decay", ",", "MLE.bassline::ctl_env", ",", "MLE.bassline::ctl_filt_attack", ",", "MLE.bassline::ctl_filt_decay", ",", "MLE.bassline::ctl_filt_release", ",", "MLE.bassline::ctl_filt_sustain", ",", "MLE.bassline::ctl_glide", ",", "MLE.bassline::ctl_key", ",", "MLE.bassline::ctl_modfilt", ",", "MLE.bassline::ctl_modwave", ",", "MLE.bassline::ctl_release", ",", "MLE.bassline::ctl_res", ",", "MLE.bassline::ctl_subosc", ",", "MLE.bassline::ctl_sustain", ",", "MLE.bassline::ctl_vib_speed", ",", "MLE.bassline::cut", ",", "MLE.bassline::decay", ",", "MLE.bassline::decay_filt", ",", "MLE.bassline::env", ",", "MLE.bassline::filt_type", ",", "MLE.bassline::glide", ",", "MLE.bassline::key", ",", "MLE.bassline::mod_attack", ",", "MLE.bassline::mod_cutoff", ",", "MLE.bassline::mod_decay", ",", "MLE.bassline::mod_env", ",", "MLE.bassline::mod_filt", ",", "MLE.bassline::mod_filt_attack", ",", "MLE.bassline::mod_filt_decay", ",", "MLE.bassline::mod_filt_release", ",", "MLE.bassline::mod_filt_sustain", ",", "MLE.bassline::mod_glide", ",", "MLE.bassline::mod_key", ",", "MLE.bassline::mod_modfilt", ",", "MLE.bassline::mod_modwave", ",", "MLE.bassline::mod_pitch", ",", "MLE.bassline::mod_release", ",", "MLE.bassline::mod_res", ",", "MLE.bassline::mod_subosc", ",", "MLE.bassline::mod_sustain", ",", "MLE.bassline::mod_vib_speed", ",", "MLE.bassline::polyphony", ",", "MLE.bassline::release", ",", "MLE.bassline::release_filt", ",", "MLE.bassline::res", ",", "MLE.bassline::speed", ",", "MLE.bassline::subosc", ",", "MLE.bassline::sustain", ",", "MLE.bassline::sustain_filt", ",", "MLE.bassline::wave", ",", "MLE.bassline[1]::2nd_wave", ",", "MLE.bassline[1]::amplitude", ",", "MLE.bassline[1]::attack", ",", "MLE.bassline[1]::attack_filt", ",", "MLE.bassline[1]::ctl_attack", ",", "MLE.bassline[1]::ctl_cutoff", ",", "MLE.bassline[1]::ctl_decay", ",", "MLE.bassline[1]::ctl_env", ",", "MLE.bassline[1]::ctl_filt_attack", ",", "MLE.bassline[1]::ctl_filt_decay", ",", "MLE.bassline[1]::ctl_filt_release", ",", "MLE.bassline[1]::ctl_filt_sustain", ",", "MLE.bassline[1]::ctl_glide", ",", "MLE.bassline[1]::ctl_key", ",", "MLE.bassline[1]::ctl_modfilt", ",", "MLE.bassline[1]::ctl_modwave", ",", "MLE.bassline[1]::ctl_release", ",", "MLE.bassline[1]::ctl_res", ",", "MLE.bassline[1]::ctl_subosc", ",", "MLE.bassline[1]::ctl_sustain", ",", "MLE.bassline[1]::ctl_vib_speed", ",", "MLE.bassline[1]::cut", ",", "MLE.bassline[1]::decay", ",", "MLE.bassline[1]::decay_filt", ",", "MLE.bassline[1]::env", ",", "MLE.bassline[1]::filt_type", ",", "MLE.bassline[1]::glide", ",", "MLE.bassline[1]::key", ",", "MLE.bassline[1]::mod_attack", ",", "MLE.bassline[1]::mod_cutoff", ",", "MLE.bassline[1]::mod_decay", ",", "MLE.bassline[1]::mod_env", ",", "MLE.bassline[1]::mod_filt", ",", "MLE.bassline[1]::mod_filt_attack", ",", "MLE.bassline[1]::mod_filt_decay", ",", "MLE.bassline[1]::mod_filt_release", ",", "MLE.bassline[1]::mod_filt_sustain", ",", "MLE.bassline[1]::mod_glide", ",", "MLE.bassline[1]::mod_key", ",", "MLE.bassline[1]::mod_modfilt", ",", "MLE.bassline[1]::mod_modwave", ",", "MLE.bassline[1]::mod_pitch", ",", "MLE.bassline[1]::mod_release", ",", "MLE.bassline[1]::mod_res", ",", "MLE.bassline[1]::mod_subosc", ",", "MLE.bassline[1]::mod_sustain", ",", "MLE.bassline[1]::mod_vib_speed", ",", "MLE.bassline[1]::polyphony", ",", "MLE.bassline[1]::release", ",", "MLE.bassline[1]::release_filt", ",", "MLE.bassline[1]::res", ",", "MLE.bassline[1]::speed", ",", "MLE.bassline[1]::subosc", ",", "MLE.bassline[1]::sustain", ",", "MLE.bassline[1]::sustain_filt", ",", "MLE.bassline[1]::wave", ",", "MLE.bassline[2]::2nd_wave", ",", "MLE.bassline[2]::amplitude", ",", "MLE.bassline[2]::attack", ",", "MLE.bassline[2]::attack_filt", ",", "MLE.bassline[2]::ctl_attack", ",", "MLE.bassline[2]::ctl_cutoff", ",", "MLE.bassline[2]::ctl_decay", ",", "MLE.bassline[2]::ctl_env", ",", "MLE.bassline[2]::ctl_filt_attack", ",", "MLE.bassline[2]::ctl_filt_decay", ",", "MLE.bassline[2]::ctl_filt_release", ",", "MLE.bassline[2]::ctl_filt_sustain", ",", "MLE.bassline[2]::ctl_glide", ",", "MLE.bassline[2]::ctl_key", ",", "MLE.bassline[2]::ctl_modfilt", ",", "MLE.bassline[2]::ctl_modwave", ",", "MLE.bassline[2]::ctl_release", ",", "MLE.bassline[2]::ctl_res", ",", "MLE.bassline[2]::ctl_subosc", ",", "MLE.bassline[2]::ctl_sustain", ",", "MLE.bassline[2]::ctl_vib_speed", ",", "MLE.bassline[2]::cut", ",", "MLE.bassline[2]::decay", ",", "MLE.bassline[2]::decay_filt", ",", "MLE.bassline[2]::env", ",", "MLE.bassline[2]::filt_type", ",", "MLE.bassline[2]::glide", ",", "MLE.bassline[2]::key", ",", "MLE.bassline[2]::mod_attack", ",", "MLE.bassline[2]::mod_cutoff", ",", "MLE.bassline[2]::mod_decay", ",", "MLE.bassline[2]::mod_env", ",", "MLE.bassline[2]::mod_filt", ",", "MLE.bassline[2]::mod_filt_attack", ",", "MLE.bassline[2]::mod_filt_decay", ",", "MLE.bassline[2]::mod_filt_release", ",", "MLE.bassline[2]::mod_filt_sustain", ",", "MLE.bassline[2]::mod_glide", ",", "MLE.bassline[2]::mod_key", ",", "MLE.bassline[2]::mod_modfilt", ",", "MLE.bassline[2]::mod_modwave", ",", "MLE.bassline[2]::mod_pitch", ",", "MLE.bassline[2]::mod_release", ",", "MLE.bassline[2]::mod_res", ",", "MLE.bassline[2]::mod_subosc", ",", "MLE.bassline[2]::mod_sustain", ",", "MLE.bassline[2]::mod_vib_speed", ",", "MLE.bassline[2]::polyphony", ",", "MLE.bassline[2]::release", ",", "MLE.bassline[2]::release_filt", ",", "MLE.bassline[2]::res", ",", "MLE.bassline[2]::speed", ",", "MLE.bassline[2]::subosc", ",", "MLE.bassline[2]::sustain", ",", "MLE.bassline[2]::sustain_filt", ",", "MLE.bassline[2]::wave" ],
+					"maxclass" : "umenu",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 475.0, 1019.3333740234375, 100.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-69",
+					"maxclass" : "preset",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "preset", "int", "preset", "int" ],
+					"patching_rect" : [ 755.20001220703125, 904.0, 100.0, 40.0 ],
+					"pattrstorage" : "instaKit",
+					"presentation" : 1,
+					"presentation_rect" : [ 228.08331298828125, 260.53338623046875, 100.0, 40.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"autorestore" : "instaKit.json",
+					"id" : "obj-70",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 475.0, 958.2000732421875, 258.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"client_rect" : [ 1057, 45, 1440, 407 ],
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0,
+						"storage_rect" : [ 583, 69, 1034, 197 ]
+					}
+,
+					"text" : "pattrstorage instaKit @savemode 1 @greedy 1",
+					"varname" : "instaKit[1]"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-63",
 					"maxclass" : "newobj",
@@ -97,10 +433,10 @@
 					"id" : "obj-60",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 508.0, 86.333328247070312, 32.0, 22.0 ],
-					"text" : "gate"
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 508.0, 147.0, 104.0, 22.0 ],
+					"text" : "gate 2"
 				}
 
 			}
@@ -124,9 +460,49 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "preset", "int", "preset", "int" ],
 					"patching_rect" : [ 821.70001220703125, 10.866668701171875, 100.0, 40.0 ],
-					"pattrstorage" : "instaKit",
 					"presentation" : 1,
-					"presentation_rect" : [ 246.483322143554688, 184.866668701171875, 167.0, 17.800018310546875 ]
+					"presentation_rect" : [ 246.483322143554688, 184.866668701171875, 167.0, 17.800018310546875 ],
+					"preset_data" : [ 						{
+							"number" : 1,
+							"data" : [ 5, "obj-25", "slider", "float", 74.0, 5, "obj-66", "slider", "float", 45.0, 5, "obj-23", "slider", "float", 51.0, 5, "obj-50", "slider", "float", 0.0, 5, "obj-6", "slider", "float", 30.0 ]
+						}
+, 						{
+							"number" : 2,
+							"data" : [ 5, "obj-25", "slider", "float", 74.0, 5, "obj-66", "slider", "float", 31.0, 5, "obj-23", "slider", "float", 62.0, 5, "obj-50", "slider", "float", 0.0, 5, "obj-6", "slider", "float", 35.0 ]
+						}
+, 						{
+							"number" : 3,
+							"data" : [ 5, "obj-25", "slider", "float", 67.0, 5, "obj-66", "slider", "float", 23.0, 5, "obj-23", "slider", "float", 66.0, 5, "obj-50", "slider", "float", 0.0, 5, "obj-6", "slider", "float", 51.0 ]
+						}
+, 						{
+							"number" : 4,
+							"data" : [ 5, "obj-25", "slider", "float", 67.0, 5, "obj-66", "slider", "float", 22.0, 5, "obj-23", "slider", "float", 85.0, 5, "obj-50", "slider", "float", 0.0, 5, "obj-6", "slider", "float", 62.0 ]
+						}
+, 						{
+							"number" : 5,
+							"data" : [ 5, "obj-25", "slider", "float", 58.0, 5, "obj-66", "slider", "float", 22.0, 5, "obj-23", "slider", "float", 85.0, 5, "obj-50", "slider", "float", 28.0, 5, "obj-6", "slider", "float", 62.0 ]
+						}
+, 						{
+							"number" : 6,
+							"data" : [ 5, "obj-25", "slider", "float", 58.0, 5, "obj-66", "slider", "float", 22.0, 5, "obj-23", "slider", "float", 85.0, 5, "obj-50", "slider", "float", 54.0, 5, "obj-6", "slider", "float", 75.0 ]
+						}
+, 						{
+							"number" : 7,
+							"data" : [ 5, "obj-25", "slider", "float", 58.0, 5, "obj-66", "slider", "float", 47.0, 5, "obj-23", "slider", "float", 64.0, 5, "obj-50", "slider", "float", 95.0, 5, "obj-6", "slider", "float", 84.0 ]
+						}
+, 						{
+							"number" : 8,
+							"data" : [ 5, "obj-25", "slider", "float", 58.0, 5, "obj-66", "slider", "float", 18.0, 5, "obj-23", "slider", "float", 82.0, 5, "obj-50", "slider", "float", 109.0, 5, "obj-6", "slider", "float", 44.0 ]
+						}
+, 						{
+							"number" : 9,
+							"data" : [ 5, "obj-25", "slider", "float", 58.0, 5, "obj-66", "slider", "float", 12.0, 5, "obj-23", "slider", "float", 67.0, 5, "obj-50", "slider", "float", 109.0, 5, "obj-6", "slider", "float", 63.0 ]
+						}
+, 						{
+							"number" : 10,
+							"data" : [ 5, "obj-25", "slider", "float", 58.0, 5, "obj-66", "slider", "float", 12.0, 5, "obj-23", "slider", "float", 106.0, 5, "obj-50", "slider", "float", 116.0, 5, "obj-6", "slider", "float", 83.0 ]
+						}
+ ]
 				}
 
 			}
@@ -304,11 +680,10 @@
 					"fontname" : "Courier",
 					"fontsize" : 24.0,
 					"id" : "obj-120",
-					"linecount" : 8,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 115.666656494140625, -1.666674017906189, 23.0, 198.0 ],
+					"patching_rect" : [ 28.0, 6.0, 164.0, 30.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 139.083328247070312, -2.000005722045898, 124.0, 30.0 ],
 					"text" : "instaKit",
@@ -559,8 +934,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 164.5, 241.333328247070312, 50.0, 22.0 ],
-					"text" : "9 2 0"
+					"patching_rect" : [ 180.5, 238.0, 50.0, 22.0 ],
+					"text" : "8 2 0"
 				}
 
 			}
@@ -687,7 +1062,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 112.833328247070312, 172.000015258789062, 114.0, 22.0 ],
+					"patching_rect" : [ 65.333332061767578, 170.000015258789062, 114.0, 22.0 ],
 					"text" : "expr ($i1+3) %4 + 1"
 				}
 
@@ -724,7 +1099,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 746.70001220703125, 382.70001220703125, 117.0, 22.0 ],
-					"text" : "scale 0 127 20. 100."
+					"text" : "scale 0 127 10. 100."
 				}
 
 			}
@@ -736,7 +1111,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 731.70001220703125, 440.70001220703125, 123.0, 22.0 ],
-					"text" : "scale 0 127 0.23 0.35"
+					"text" : "scale 0 127 0.15 0.35"
 				}
 
 			}
@@ -919,7 +1294,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 590.5, 55.79998779296875, 50.0, 22.0 ]
+					"patching_rect" : [ 676.00006103515625, 205.333310723304749, 50.0, 22.0 ]
 				}
 
 			}
@@ -935,7 +1310,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 4,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1429,7 +1804,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 590.5, 24.800003051757812, 70.0, 22.0 ],
+					"patching_rect" : [ 676.00006103515625, 174.333325982093811, 70.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1443,18 +1818,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-17",
-					"maxclass" : "preset",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "preset", "int", "preset", "int" ],
-					"patching_rect" : [ 411.0, 429.866668701171875, 100.0, 40.0 ],
-					"pattrstorage" : "instaKit"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"autorestore" : "instaKit.json",
 					"id" : "obj-14",
 					"maxclass" : "newobj",
@@ -1463,7 +1826,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 475.0, 595.5, 258.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 4, 45, 358, 173 ],
+						"client_rect" : [ 1057, 45, 1440, 407 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
 						"storage_rect" : [ 583, 69, 1034, 197 ]
@@ -1535,7 +1898,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 4,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1576,7 +1939,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 110.0, 77.333328247070312, 50.0, 22.0 ],
-									"text" : "9 2 0"
+									"text" : "8 2 0"
 								}
 
 							}
@@ -1592,7 +1955,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 4,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2189,7 +2552,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 4,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2242,7 +2605,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 227.0, 109.0, 50.0, 22.0 ],
-													"text" : "9 2 0"
+													"text" : "8 2 0"
 												}
 
 											}
@@ -3199,6 +3562,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-62", 0 ],
+					"source" : [ "obj-105", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-122", 1 ],
 					"source" : [ "obj-108", 0 ]
 				}
@@ -3234,6 +3604,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-70", 0 ],
+					"source" : [ "obj-137", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-70", 0 ],
+					"source" : [ "obj-142", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
 					"source" : [ "obj-15", 0 ]
 				}
@@ -3257,6 +3641,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-91", 0 ],
 					"source" : [ "obj-16", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-70", 0 ],
+					"source" : [ "obj-18", 0 ]
 				}
 
 			}
@@ -3345,7 +3736,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
+					"destination" : [ "obj-85", 0 ],
 					"order" : 0,
 					"source" : [ "obj-27", 1 ]
 				}
@@ -3639,8 +4030,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-60", 0 ],
-					"source" : [ "obj-58", 1 ]
+					"destination" : [ "obj-62", 0 ],
+					"source" : [ "obj-57", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-70", 0 ],
+					"source" : [ "obj-57", 0 ]
 				}
 
 			}
@@ -3648,6 +4046,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-60", 1 ],
 					"source" : [ "obj-58", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-77", 0 ],
+					"source" : [ "obj-58", 1 ]
 				}
 
 			}
@@ -3683,6 +4088,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-69", 0 ],
+					"source" : [ "obj-60", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-57", 0 ],
+					"source" : [ "obj-61", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-67", 0 ],
 					"source" : [ "obj-63", 0 ]
 				}
@@ -3711,6 +4130,27 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-105", 0 ],
+					"source" : [ "obj-70", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-69", 0 ],
+					"source" : [ "obj-72", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-70", 0 ],
+					"source" : [ "obj-72", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-75", 0 ],
 					"source" : [ "obj-74", 0 ]
 				}
@@ -3732,6 +4172,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-60", 0 ],
+					"source" : [ "obj-77", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-76", 0 ],
 					"source" : [ "obj-78", 0 ]
 				}
@@ -3739,8 +4186,29 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-81", 0 ],
+					"source" : [ "obj-79", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"source" : [ "obj-8", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-77", 1 ],
+					"source" : [ "obj-81", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"source" : [ "obj-85", 0 ]
 				}
 
 			}
@@ -3760,35 +4228,35 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-39::obj-31" : [ "clhat-decay", "cl-dec", 0 ],
+			"obj-39::obj-41" : [ "tom-hi", "hi", 0 ],
+			"obj-39::obj-30" : [ "ophat-decay", "op-dec", 0 ],
+			"obj-39::obj-42" : [ "tom-mid", "mid", 0 ],
+			"obj-39::obj-7" : [ "trig_1", "trig_1", 0 ],
+			"obj-39::obj-20" : [ "snare-decay", "decay", 0 ],
+			"obj-39::obj-21" : [ "snare-snap", "snap", 0 ],
 			"obj-39::obj-45" : [ "trig_7", "trig_7", 0 ],
 			"obj-39::obj-44" : [ "trig_6", "trig_6", 0 ],
-			"obj-39::obj-43" : [ "tom-low", "low", 0 ],
+			"obj-39::obj-22" : [ "snare-tune", "tuning", 0 ],
 			"obj-39::obj-34" : [ "trig_5", "trig_5", 0 ],
-			"obj-39::obj-12" : [ "trig_2", "trig_2", 0 ],
-			"obj-39::obj-7" : [ "trig_1", "trig_1", 0 ],
 			"obj-27::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
-			"obj-39::obj-46" : [ "ad-level", "level", 0 ],
-			"obj-39::obj-17" : [ "snare-level", "level", 0 ],
-			"obj-39::obj-33" : [ "trig_4", "trig_4", 0 ],
 			"obj-39::obj-9" : [ "kick-level", "level", 0 ],
-			"obj-9" : [ "live.grid", "live.grid", 0 ],
-			"obj-39::obj-23" : [ "trig_3", "trig_3", 0 ],
-			"obj-39::obj-19" : [ "snare-hicut", "hicut", 0 ],
 			"obj-39::obj-6" : [ "kick-attack", "attack", 0 ],
+			"obj-39::obj-31" : [ "clhat-decay", "cl-dec", 0 ],
+			"obj-39::obj-5" : [ "kick-decay", "decay", 0 ],
+			"obj-39::obj-43" : [ "tom-low", "low", 0 ],
+			"obj-39::obj-4" : [ "kick-sweep", "sweep", 0 ],
+			"obj-9" : [ "live.grid", "live.grid", 0 ],
+			"obj-39::obj-12" : [ "trig_2", "trig_2", 0 ],
+			"obj-39::obj-3" : [ "kick-tune[1]", "tuning", 0 ],
+			"obj-39::obj-46" : [ "ad-level", "level", 0 ],
+			"obj-39::obj-33" : [ "trig_4", "trig_4", 0 ],
+			"obj-39::obj-23" : [ "trig_3", "trig_3", 0 ],
+			"obj-39::obj-17" : [ "snare-level", "level", 0 ],
+			"obj-39::obj-19" : [ "snare-hicut", "hicut", 0 ],
 			"obj-39::obj-32" : [ "hat-tone", "tone", 0 ],
 			"obj-39::obj-38" : [ "tom-level", "level", 0 ],
 			"obj-39::obj-40" : [ "tom-decay", "decay", 0 ],
 			"obj-39::obj-27" : [ "hat-level", "level", 0 ],
-			"obj-39::obj-41" : [ "tom-hi", "hi", 0 ],
-			"obj-39::obj-30" : [ "ophat-decay", "op-dec", 0 ],
-			"obj-39::obj-42" : [ "tom-mid", "mid", 0 ],
-			"obj-39::obj-20" : [ "snare-decay", "decay", 0 ],
-			"obj-39::obj-5" : [ "kick-decay", "decay", 0 ],
-			"obj-39::obj-21" : [ "snare-snap", "snap", 0 ],
-			"obj-39::obj-4" : [ "kick-sweep", "sweep", 0 ],
-			"obj-39::obj-22" : [ "snare-tune", "tuning", 0 ],
-			"obj-39::obj-3" : [ "kick-tune[1]", "tuning", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -3798,35 +4266,42 @@
 		"dependency_cache" : [ 			{
 				"name" : "MLE.keyGrid.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/controllers",
-				"patcherrelativepath" : "../controllers",
+				"patcherrelativepath" : "../../controllers",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "asciiLinearMapping.txt",
+				"bootpath" : "~/Documents/github/CML/MLE/code",
+				"patcherrelativepath" : "../../../code",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.beat.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/network",
-				"patcherrelativepath" : "../network",
+				"patcherrelativepath" : "../../network",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "init.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
-				"patcherrelativepath" : "../utilities",
+				"patcherrelativepath" : "../../utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.swing.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox",
-				"patcherrelativepath" : ".",
+				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.analogueDrums.maxpat",
 				"bootpath" : "~/Dropbox/MIT/Teaching/MaxTeaching/M4L",
-				"patcherrelativepath" : "../../../../../../Dropbox/MIT/Teaching/MaxTeaching/M4L",
+				"patcherrelativepath" : "../../../../../../../Dropbox/MIT/Teaching/MaxTeaching/M4L",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3862,7 +4337,7 @@
 			}
 , 			{
 				"name" : "instaKit.json",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox/instaInstruments",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -3870,21 +4345,28 @@
 , 			{
 				"name" : "MLE.distort.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox/Carina/MLE FX library",
-				"patcherrelativepath" : "./Carina/MLE FX library",
+				"patcherrelativepath" : "../Carina/MLE FX library",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.flanger.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox/Carina/MLE FX library",
-				"patcherrelativepath" : "./Carina/MLE FX library",
+				"patcherrelativepath" : "../Carina/MLE FX library",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.reverb.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox/Carina/MLE FX library",
-				"patcherrelativepath" : "./Carina/MLE FX library",
+				"patcherrelativepath" : "../Carina/MLE FX library",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.pattrLocal.maxpat",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox",
+				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
