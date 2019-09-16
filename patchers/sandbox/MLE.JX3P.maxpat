@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 3,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -38,6 +38,77 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-41",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 439.0, 1353.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-37",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 413.0, 1320.0, 99.0, 22.0 ],
+					"text" : "routepass voices"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-36",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 360.0, 1256.0, 67.0, 22.0 ],
+					"text" : "delay 5000"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-32",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 360.0, 1219.0, 54.0, 22.0 ],
+					"text" : "deferlow"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-29",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 358.0, 1179.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-28",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 360.0, 1287.0, 72.0, 22.0 ],
+					"text" : "patcherargs"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-14",
 					"linecount" : 2,
@@ -240,7 +311,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -455,47 +526,8 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 19.67498779296875, 483.0, 56.0, 22.0 ],
-					"restore" : 					{
-						"Resonance" : [ 0.478087097406387 ],
-						"attack" : [ 0.239043548703194 ],
-						"chorus" : [ 0 ],
-						"chorusDelayLength" : [ 0.0 ],
-						"chorusDepth" : [ 0.0 ],
-						"chorusRate" : [ 0.0 ],
-						"cutoff" : [ 0.318724721670151 ],
-						"dco1env" : [ 1 ],
-						"dco1lfo" : [ 1 ],
-						"dco1octave" : [ 1 ],
-						"dco1wave" : [ 2 ],
-						"dco2env" : [ 0 ],
-						"dco2finetune" : [ 0.557768285274506 ],
-						"dco2lfo" : [ 0 ],
-						"dco2octave" : [ 1 ],
-						"dco2pwm" : [ 0 ],
-						"dco2tune" : [ 0.498007386922836 ],
-						"dco2wave" : [ 4 ],
-						"dcoENVdepth" : [ 0.0 ],
-						"dcoENVinvert" : [ 0 ],
-						"dcoLFOdepth" : [ 0.0 ],
-						"dcoMix" : [ 0.920318841934204 ],
-						"dcoMod" : [ 2 ],
-						"decay" : [ 0.278884142637253 ],
-						"filtENVinvert" : [ 0 ],
-						"filtENVmod" : [ 0.577688574790955 ],
-						"filtLFOmod" : [ 0.159362360835075 ],
-						"filterKeytrack" : [ 0.498007386922836 ],
-						"hpf" : [ 0.239043548703194 ],
-						"level" : [ 0.521912932395935 ],
-						"lfoDelay" : [ 0.0 ],
-						"lfoRate" : [ 0.0 ],
-						"lfoWave" : [ 1 ],
-						"release" : [ 0.577688574790955 ],
-						"subOsc" : [ 0.0 ],
-						"sustain" : [ 0.637449443340302 ]
-					}
-,
 					"text" : "autopattr",
-					"varname" : "u040010338"
+					"varname" : "u003012352"
 				}
 
 			}
@@ -535,7 +567,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -965,7 +997,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1503,7 +1535,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1750,7 +1782,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1978,7 +2010,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2540,7 +2572,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5018,7 +5050,7 @@
 				"box" : 				{
 					"comment" : "pattr names",
 					"id" : "obj-33",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -5060,7 +5092,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5105,7 +5137,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 3,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -5314,7 +5346,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 3,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -5970,7 +6002,7 @@
 				"box" : 				{
 					"comment" : "Envelope Scalar (0-1)",
 					"id" : "obj-67",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -5995,7 +6027,7 @@
 				"box" : 				{
 					"comment" : "Brightness (0-1)",
 					"id" : "obj-56",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -6084,11 +6116,47 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 651.6580810546875, 49.345611572265625, 56.0, 22.0 ],
 					"restore" : 					{
-						"LFO_retrigger" : [ 0 ]
+						"LFO_retrigger" : [ 0 ],
+						"Resonance" : [ 0.478087097406387 ],
+						"attack" : [ 0.239043548703194 ],
+						"chorus" : [ 0 ],
+						"chorusDelayLength" : [ 0.0 ],
+						"chorusDepth" : [ 0.0 ],
+						"chorusRate" : [ 0.0 ],
+						"cutoff" : [ 0.318724721670151 ],
+						"dco1env" : [ 1 ],
+						"dco1lfo" : [ 1 ],
+						"dco1octave" : [ 1 ],
+						"dco1wave" : [ 2 ],
+						"dco2env" : [ 0 ],
+						"dco2finetune" : [ 0.557768285274506 ],
+						"dco2lfo" : [ 0 ],
+						"dco2octave" : [ 1 ],
+						"dco2pwm" : [ 0 ],
+						"dco2tune" : [ 0.498007386922836 ],
+						"dco2wave" : [ 4 ],
+						"dcoENVdepth" : [ 0.0 ],
+						"dcoENVinvert" : [ 0 ],
+						"dcoLFOdepth" : [ 0.0 ],
+						"dcoMix" : [ 0.920318841934204 ],
+						"dcoMod" : [ 2 ],
+						"decay" : [ 0.278884142637253 ],
+						"filtENVinvert" : [ 0 ],
+						"filtENVmod" : [ 0.577688574790955 ],
+						"filtLFOmod" : [ 0.159362360835075 ],
+						"filterKeytrack" : [ 0.498007386922836 ],
+						"hpf" : [ 0.239043548703194 ],
+						"level" : [ 0.521912932395935 ],
+						"lfoDelay" : [ 0.0 ],
+						"lfoRate" : [ 0.0 ],
+						"lfoWave" : [ 1 ],
+						"release" : [ 0.577688574790955 ],
+						"subOsc" : [ 0.0 ],
+						"sustain" : [ 0.637449443340302 ]
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u198010347"
+					"varname" : "u004012351"
 				}
 
 			}
@@ -6096,7 +6164,7 @@
 				"box" : 				{
 					"comment" : "MIDI note (Note, or note/velocity pair)",
 					"id" : "obj-16",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -6110,7 +6178,7 @@
 				"box" : 				{
 					"comment" : "audio (signal)",
 					"id" : "obj-15",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -6154,7 +6222,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -6199,7 +6267,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 3,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -7282,8 +7350,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"source" : [ "obj-28", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
 					"source" : [ "obj-283", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-32", 0 ],
+					"source" : [ "obj-29", 0 ]
 				}
 
 			}
@@ -7298,6 +7380,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-283", 1 ],
 					"source" : [ "obj-30", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-36", 0 ],
+					"source" : [ "obj-32", 0 ]
 				}
 
 			}
@@ -7333,6 +7422,29 @@
 				"patchline" : 				{
 					"destination" : [ "obj-283", 1 ],
 					"source" : [ "obj-340", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"source" : [ "obj-36", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"order" : 1,
+					"source" : [ "obj-37", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-41", 1 ],
+					"order" : 0,
+					"source" : [ "obj-37", 0 ]
 				}
 
 			}
@@ -7506,37 +7618,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "MLE.JX3Ppoly.maxpat",
-				"bootpath" : "~/Dropbox/MLE/Library/patchers/sandbox",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "PM.Ladder~.maxpat",
-				"bootpath" : "~/Dropbox/MLE/Library/patchers/utilities",
-				"patcherrelativepath" : "../utilities",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ih.blend.maxpat",
-				"bootpath" : "~/Dropbox/MLE/Library/externals",
-				"patcherrelativepath" : "../../externals",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "init.maxpat",
-				"bootpath" : "~/Dropbox/MLE/Library/patchers/utilities",
-				"patcherrelativepath" : "../utilities",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
