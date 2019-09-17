@@ -39,13 +39,62 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-97",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1467.5, 475.0, 168.0, 35.0 ],
+					"text" : "MLE.UDPreceive MLEkeyDisplay"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-95",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "clear" ],
+					"patching_rect" : [ 1349.0, 520.0, 47.0, 22.0 ],
+					"text" : "t l clear"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-75",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 1349.0, 559.0, 47.0, 22.0 ],
+					"text" : "zl.iter 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-69",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1349.0, 493.0, 99.0, 22.0 ],
+					"text" : "r MLEkeyDisplay"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-88",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 360.0, 100.0, 50.0, 22.0 ],
-					"text" : "24"
+					"text" : "33"
 				}
 
 			}
@@ -93,7 +142,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 453.600006759166718, 827.20001232624054, 50.0, 22.0 ],
-					"text" : "55 0"
+					"text" : "2 80"
 				}
 
 			}
@@ -157,7 +206,7 @@
 					"patching_rect" : [ 841.0, 426.0, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 472.649978637695312, 330.0, 50.0, 22.0 ],
-					"text" : "52 0"
+					"text" : "43 0"
 				}
 
 			}
@@ -2434,7 +2483,7 @@
 					"mode" : 1,
 					"numinlets" : 2,
 					"numoutlets" : 2,
-					"offset" : 60,
+					"offset" : 12,
 					"outlettype" : [ "int", "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1061.0, 623.0, 360.0, 144.0 ],
@@ -2668,7 +2717,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 678.0, 140.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"SyncBeats" : [ 0 ],
+						"SyncBeats" : [ 1 ],
 						"SynctoNet" : [ 1 ],
 						"arpeggioMode" : [ 3 ],
 						"decay" : [ 0.207692307692308 ],
@@ -2685,7 +2734,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u493017525"
+					"varname" : "u867002434"
 				}
 
 			}
@@ -4980,6 +5029,18 @@
 				}
 
 			}
+, 			{
+				"box" : 				{
+					"id" : "obj-96",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1168.75, 593.0, 51.0, 22.0 ],
+					"text" : "clear"
+				}
+
+			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
@@ -5504,6 +5565,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-95", 0 ],
+					"source" : [ "obj-69", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-120", 0 ],
 					"source" : [ "obj-7", 0 ]
 				}
@@ -5555,6 +5623,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-7", 2 ],
 					"source" : [ "obj-74", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"source" : [ "obj-75", 0 ]
 				}
 
 			}
@@ -5732,6 +5807,34 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-75", 0 ],
+					"source" : [ "obj-95", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-96", 0 ],
+					"source" : [ "obj-95", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"source" : [ "obj-96", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-95", 0 ],
+					"source" : [ "obj-97", 0 ]
+				}
+
+			}
  ],
 		"parameters" : 		{
 			"obj-45" : [ "live.grid[1]", "live.grid", 0 ],
@@ -5857,6 +5960,20 @@
 			}
 , 			{
 				"name" : "MLE.output.maxpat",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "../utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.UDPreceive.maxpat",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/network",
+				"patcherrelativepath" : "../network",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "initS.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
 				"patcherrelativepath" : "../utilities",
 				"type" : "JSON",
