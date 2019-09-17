@@ -39,6 +39,17 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 260.5, 767.0, 70.0, 22.0 ],
+					"text" : "MLE.output"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-135",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -237,7 +248,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 508.0, 411.13330078125, 50.0, 22.0 ],
-					"text" : "1 1 0"
+					"text" : "6 1 0"
 				}
 
 			}
@@ -370,7 +381,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u319006772"
+					"varname" : "u863010249"
 				}
 
 			}
@@ -1703,7 +1714,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 345.600006103515625, 89.600006103515625, 50.0, 22.0 ],
-									"text" : "1 1 0"
+									"text" : "6 1 0"
 								}
 
 							}
@@ -3694,18 +3705,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-40",
-					"maxclass" : "ezdac~",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"patching_rect" : [ 260.5, 790.83331298828125, 45.0, 45.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 2.999993801116943, 253.499969482421875, 45.0, 45.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-39",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -4252,7 +4251,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-40", 1 ],
+					"destination" : [ "obj-17", 1 ],
 					"order" : 1,
 					"source" : [ "obj-41", 0 ]
 				}
@@ -4260,7 +4259,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-40", 0 ],
+					"destination" : [ "obj-17", 0 ],
 					"order" : 2,
 					"source" : [ "obj-41", 0 ]
 				}
@@ -4725,35 +4724,35 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-39::obj-41" : [ "tom-hi", "hi", 0 ],
-			"obj-39::obj-30" : [ "ophat-decay", "op-dec", 0 ],
-			"obj-39::obj-42" : [ "tom-mid", "mid", 0 ],
-			"obj-39::obj-7" : [ "trig_1", "trig_1", 0 ],
-			"obj-39::obj-20" : [ "snare-decay", "decay", 0 ],
-			"obj-39::obj-21" : [ "snare-snap", "snap", 0 ],
 			"obj-39::obj-45" : [ "trig_7", "trig_7", 0 ],
-			"obj-39::obj-44" : [ "trig_6", "trig_6", 0 ],
 			"obj-39::obj-22" : [ "snare-tune", "tuning", 0 ],
+			"obj-39::obj-44" : [ "trig_6", "trig_6", 0 ],
 			"obj-39::obj-34" : [ "trig_5", "trig_5", 0 ],
-			"obj-27::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
 			"obj-39::obj-9" : [ "kick-level", "level", 0 ],
 			"obj-39::obj-6" : [ "kick-attack", "attack", 0 ],
 			"obj-39::obj-31" : [ "clhat-decay", "cl-dec", 0 ],
-			"obj-39::obj-5" : [ "kick-decay", "decay", 0 ],
 			"obj-39::obj-43" : [ "tom-low", "low", 0 ],
-			"obj-39::obj-4" : [ "kick-sweep", "sweep", 0 ],
-			"obj-9" : [ "live.grid", "live.grid", 0 ],
-			"obj-39::obj-3" : [ "kick-tune[1]", "tuning", 0 ],
-			"obj-39::obj-12" : [ "trig_2", "trig_2", 0 ],
 			"obj-39::obj-46" : [ "ad-level", "level", 0 ],
+			"obj-39::obj-12" : [ "trig_2", "trig_2", 0 ],
+			"obj-27::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
 			"obj-39::obj-33" : [ "trig_4", "trig_4", 0 ],
 			"obj-39::obj-23" : [ "trig_3", "trig_3", 0 ],
 			"obj-39::obj-17" : [ "snare-level", "level", 0 ],
 			"obj-39::obj-19" : [ "snare-hicut", "hicut", 0 ],
+			"obj-39::obj-5" : [ "kick-decay", "decay", 0 ],
+			"obj-39::obj-4" : [ "kick-sweep", "sweep", 0 ],
 			"obj-39::obj-32" : [ "hat-tone", "tone", 0 ],
+			"obj-39::obj-3" : [ "kick-tune[1]", "tuning", 0 ],
 			"obj-39::obj-38" : [ "tom-level", "level", 0 ],
-			"obj-39::obj-40" : [ "tom-decay", "decay", 0 ],
 			"obj-39::obj-27" : [ "hat-level", "level", 0 ],
+			"obj-39::obj-41" : [ "tom-hi", "hi", 0 ],
+			"obj-39::obj-30" : [ "ophat-decay", "op-dec", 0 ],
+			"obj-39::obj-40" : [ "tom-decay", "decay", 0 ],
+			"obj-39::obj-42" : [ "tom-mid", "mid", 0 ],
+			"obj-39::obj-7" : [ "trig_1", "trig_1", 0 ],
+			"obj-9" : [ "live.grid", "live.grid", 0 ],
+			"obj-39::obj-20" : [ "snare-decay", "decay", 0 ],
+			"obj-39::obj-21" : [ "snare-snap", "snap", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -4790,8 +4789,8 @@
 			}
 , 			{
 				"name" : "MLE.swing.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE_Sept13_2019/patchers/sandbox",
-				"patcherrelativepath" : "../../../../MLE_Sept13_2019/patchers/sandbox",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox",
+				"patcherrelativepath" : "../../sandbox",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -4834,36 +4833,43 @@
 			}
 , 			{
 				"name" : "instaKit.json",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox/instaInstruments",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/Instruments/instaInstruments",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.distort.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE_Sept13_2019/patchers/sandbox/Carina/MLE FX library",
-				"patcherrelativepath" : "../../../../MLE_Sept13_2019/patchers/sandbox/Carina/MLE FX library",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox/Carina/MLE FX library",
+				"patcherrelativepath" : "../../sandbox/Carina/MLE FX library",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.flanger.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE_Sept13_2019/patchers/sandbox/Carina/MLE FX library",
-				"patcherrelativepath" : "../../../../MLE_Sept13_2019/patchers/sandbox/Carina/MLE FX library",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox/Carina/MLE FX library",
+				"patcherrelativepath" : "../../sandbox/Carina/MLE FX library",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.reverb.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE_Sept13_2019/patchers/sandbox/Carina/MLE FX library",
-				"patcherrelativepath" : "../../../../MLE_Sept13_2019/patchers/sandbox/Carina/MLE FX library",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox/Carina/MLE FX library",
+				"patcherrelativepath" : "../../sandbox/Carina/MLE FX library",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.pattrLocal.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox",
-				"patcherrelativepath" : "..",
+				"patcherrelativepath" : "../../sandbox",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.output.maxpat",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "../../utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
