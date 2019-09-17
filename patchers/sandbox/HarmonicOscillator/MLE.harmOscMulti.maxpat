@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 3,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 635.0, 937.0 ],
+		"rect" : [ 34.0, 79.0, 1077.0, 742.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -43,11 +43,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 539.0, 644.0, 35.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
+					"patching_rect" : [ 406.5, 657.0, 35.0, 22.0 ],
 					"text" : "out 1"
 				}
 
@@ -229,7 +225,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 566.0, 201.0, 29.5, 22.0 ],
+					"patching_rect" : [ 545.333333333333371, 115.0, 107.5, 22.0 ],
 					"text" : "+"
 				}
 
@@ -241,7 +237,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "float" ],
-					"patching_rect" : [ 473.0, 319.0, 108.0, 22.0 ],
+					"patching_rect" : [ 357.0, 115.0, 108.0, 22.0 ],
 					"text" : "makenote 100 100"
 				}
 
@@ -266,7 +262,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 637.0, 141.0, 24.0, 24.0 ]
+					"patching_rect" : [ 447.0, 463.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -313,7 +309,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 7,
 					"outlettype" : [ "float", "int", "int", "int", "float", "float", "float" ],
-					"patching_rect" : [ 361.0, 70.0, 92.0, 22.0 ],
+					"patching_rect" : [ 357.0, 61.0, 584.0, 22.0 ],
 					"text" : "unpack f i i i f f f"
 				}
 
@@ -330,7 +326,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -856,7 +852,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1453,7 +1449,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2005,7 +2001,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 637.0, 182.0, 59.0, 22.0 ],
+					"patching_rect" : [ 447.0, 490.0, 59.0, 22.0 ],
 					"text" : "mute 0, 1"
 				}
 
@@ -2017,7 +2013,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 264.5, 35.0, 149.0, 22.0 ],
+					"patching_rect" : [ 227.0, 21.0, 149.0, 22.0 ],
 					"text" : "route smoothing freqScale"
 				}
 
@@ -2029,7 +2025,11 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 264.5, -4.0, 28.0, 22.0 ],
+					"patching_rect" : [ 227.0, -18.0, 28.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "in 1"
 				}
 
@@ -2058,7 +2058,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2527,7 +2527,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 443.5, 195.25, 55.0, 22.0 ],
+					"patching_rect" : [ 929.5, 93.0, 55.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2594,7 +2594,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 168.0, 118.0, 83.0, 22.0 ],
+					"patching_rect" : [ 133.0, 12.0, 83.0, 22.0 ],
 					"text" : "loadmess 100"
 				}
 
@@ -2630,7 +2630,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 367.0, 367.75, 39.0, 22.0 ],
+					"patching_rect" : [ 446.0, 147.5, 39.0, 22.0 ],
 					"text" : "/ 127."
 				}
 
@@ -2654,6 +2654,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 263.5, 575.25, 42.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "out~ 1"
 				}
 
@@ -2666,7 +2670,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 227.0, 156.0, 50.0, 22.0 ]
+					"patching_rect" : [ 227.0, 50.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -2694,7 +2698,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3060,7 +3064,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-30", 6 ]
 				}
 
@@ -3068,7 +3072,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-30", 6 ]
 				}
 
