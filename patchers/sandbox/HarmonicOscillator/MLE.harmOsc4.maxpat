@@ -39,6 +39,17 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-378",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1024.0, 697.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-372",
 					"maxclass" : "button",
 					"numinlets" : 1,
@@ -3075,7 +3086,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 325.0, 50.0, 50.0, 35.0 ],
-													"text" : "2 1. 0.6 0.354331 1"
+													"text" : "4 2. 0.8 0.201575 3"
 												}
 
 											}
@@ -3511,7 +3522,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 414.0, 255.0, 50.0, 22.0 ],
-													"text" : "2"
+													"text" : "4"
 												}
 
 											}
@@ -7570,7 +7581,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1312.5, 550.25, 50.0, 22.0 ],
-					"text" : "23"
+					"text" : "6"
 				}
 
 			}
@@ -7683,7 +7694,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 245.0, 258.0, 50.0, 22.0 ],
-									"text" : "0.6"
+									"text" : "0.8"
 								}
 
 							}
@@ -7695,7 +7706,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 330.0, 253.0, 50.0, 22.0 ],
-									"text" : "75."
+									"text" : "50."
 								}
 
 							}
@@ -8358,7 +8369,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1445.60009765625, 482.25, 257.800048828125, 22.0 ],
-					"text" : "1 2 1. 0.6 45. 75. 50. 250. 5. 60. 0.1 1"
+					"text" : "1 4 2. 0.8 45. 50. 50. 250. 5. 5. 0.1 1"
 				}
 
 			}
@@ -9595,7 +9606,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 245.0, 204.0, 50.0, 22.0 ],
-									"text" : "666."
+									"text" : "1332."
 								}
 
 							}
@@ -12060,6 +12071,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-359", 0 ],
 					"source" : [ "obj-365", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-86", 0 ],
+					"source" : [ "obj-378", 0 ]
 				}
 
 			}

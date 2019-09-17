@@ -138,15 +138,15 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 55.0, 101.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"bitdepth" : [ 47.61337453892402 ],
-						"drive" : [ 43.655521217563347 ],
-						"drywet" : [ 100.0 ],
-						"samplingRate" : [ 10.0 ],
-						"superdrive" : [ 1 ]
+						"bitdepth" : [ 24.0 ],
+						"drive" : [ 10.0 ],
+						"drywet" : [ 1.0 ],
+						"samplingRate" : [ 1.0 ],
+						"superdrive" : [ 0 ]
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u782003203"
+					"varname" : "u102005231"
 				}
 
 			}
@@ -266,7 +266,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 598.499999999999886, 15.0, 57.0, 22.0 ],
-					"text" : "init 35 #3"
+					"text" : "init 24 #3"
 				}
 
 			}
@@ -444,7 +444,6 @@
 					"id" : "obj-5",
 					"maxclass" : "dial",
 					"mode" : 5,
-					"mult" : 0.1,
 					"needlecolor" : [ 0.850980392156863, 0.92156862745098, 0.313725490196078, 1.0 ],
 					"numinlets" : 1,
 					"numoutlets" : 1,
@@ -454,7 +453,7 @@
 					"patching_rect" : [ 580.640084961429238, 88.893528457277171, 34.359915038570762, 34.359915038570762 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 159.767715454101562, 43.486728668212891, 34.359916687011719, 34.359916687011719 ],
-					"size" : 100.0,
+					"size" : 24.0,
 					"varname" : "bitdepth"
 				}
 
@@ -466,8 +465,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 517.0, 199.0, 133.0, 22.0 ],
-					"text" : "expr pow($f1\\,2)/100*24"
+					"patching_rect" : [ 517.0, 199.0, 52.0, 22.0 ],
+					"text" : "expr $f1"
 				}
 
 			}
@@ -1411,8 +1410,8 @@
 , 			{
 				"name" : "rsliderGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
-					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
+					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
