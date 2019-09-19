@@ -559,7 +559,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 21.22456665054824, 543.23623257622387, 141.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 38.741946452449838, 336.5, 111.0, 26.0 ],
+					"presentation_rect" : [ 37.741946452449838, 336.5, 111.0, 26.0 ],
 					"text" : "note length ",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
