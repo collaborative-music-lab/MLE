@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, -156.0, 640.0, 636.0 ],
+		"rect" : [ 34.0, 79.0, 640.0, 610.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -559,7 +559,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 21.22456665054824, 543.23623257622387, 141.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 38.741946452449838, 336.5, 111.0, 26.0 ],
+					"presentation_rect" : [ 37.741946452449838, 336.5, 111.0, 26.0 ],
 					"text" : "note length ",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -921,14 +921,14 @@
 				"box" : 				{
 					"fontface" : 0,
 					"fontname" : "Lantinghei SC Demibold",
-					"fontsize" : 16.0,
+					"fontsize" : 14.0,
 					"id" : "obj-68",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 207.050390387158131, 809.774164191482669, 78.0, 29.0 ],
+					"patching_rect" : [ 207.050390387158131, 809.774164191482669, 69.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 202.006447784500835, 655.518149463532495, 86.0, 29.0 ],
+					"presentation_rect" : [ 213.506447784500835, 658.518149463532495, 77.0, 26.0 ],
 					"text" : "ON/OFF",
 					"textcolor" : [ 0.792156862745098, 0.792156862745098, 0.792156862745098, 1.0 ],
 					"textjustification" : 1
@@ -947,7 +947,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 169.050390387158131, 805.774164191482669, 36.0, 36.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 224.342092194866154, 616.049872236377951, 41.328711179269362, 41.328711179269362 ],
+					"presentation_rect" : [ 231.342092194866154, 616.049872236377951, 41.328711179269362, 41.328711179269362 ],
 					"thickness" : 60.0,
 					"uncheckedcolor" : [ 0.286274509803922, 0.290196078431373, 0.294117647058824, 1.0 ]
 				}
@@ -1197,7 +1197,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 57.472384142755914, 398.499977707862854, 50.0, 22.0 ],
-									"text" : "45."
+									"text" : "48."
 								}
 
 							}
@@ -1221,7 +1221,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 185.260714286206564, 450.887718796730042, 29.5, 22.0 ],
-									"text" : "76"
+									"text" : "90"
 								}
 
 							}
@@ -4109,6 +4109,7 @@
 					"allowdrag" : 0,
 					"bgcolor" : [ 0.07843137254902, 0.07843137254902, 0.07843137254902, 1.0 ],
 					"buffername" : "polysampler_buffer",
+					"chanoffset" : 0,
 					"id" : "obj-313",
 					"ignoreclick" : 1,
 					"maxclass" : "waveform~",
