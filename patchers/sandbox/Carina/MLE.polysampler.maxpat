@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 8,
+			"revision" : 6,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -68,7 +68,7 @@
 				"box" : 				{
 					"comment" : "sample length",
 					"id" : "obj-6",
-					"index" : 0,
+					"index" : 4,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -80,7 +80,7 @@
 				"box" : 				{
 					"comment" : "individual voice control parameters",
 					"id" : "obj-24",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -192,7 +192,7 @@
 				"box" : 				{
 					"comment" : "loopStart",
 					"id" : "obj-73",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -233,7 +233,7 @@
 				"box" : 				{
 					"comment" : "sample length",
 					"id" : "obj-23",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -245,7 +245,7 @@
 				"box" : 				{
 					"comment" : "(loop start, loop end (ms))",
 					"id" : "obj-13",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -258,7 +258,7 @@
 				"box" : 				{
 					"comment" : "signal",
 					"id" : "obj-7",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -282,7 +282,7 @@
 				"box" : 				{
 					"comment" : "midi, routed parameters",
 					"id" : "obj-48",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -328,9 +328,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 392.874997138977051, 67.333343505859375, 135.0, 18.0 ],
+					"patching_rect" : [ 392.874997138977051, 67.333343505859375, 135.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 70.0, 75.5, 128.0, 18.0 ],
+					"presentation_rect" : [ 70.0, 75.5, 128.0, 23.0 ],
 					"text" : "drop audio files here",
 					"textcolor" : [ 0.792156875133514, 0.792156875133514, 0.792156875133514, 1.0 ]
 				}
@@ -361,7 +361,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 8,
+							"revision" : 6,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -610,7 +610,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 38.333332061767578, 243.0, 124.0, 22.0 ],
-					"text" : "midievent 144 53 90"
+					"text" : "midievent 144 48 90"
 				}
 
 			}
@@ -767,7 +767,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-15", 0 ],
+					"destination" : [ "obj-3", 0 ],
 					"midpoints" : [ 146.833332061767578, 164.0 ],
 					"source" : [ "obj-101", 8 ]
 				}
@@ -1065,22 +1065,6 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "MLE.polySampler_poly.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE_Sept13_2019/patchers/sandbox/Carina",
-				"patcherrelativepath" : "../../../../MLE_Sept13_2019/patchers/sandbox/Carina",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "init.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
-				"patcherrelativepath" : "../../utilities",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "comment001",
 				"default" : 				{
