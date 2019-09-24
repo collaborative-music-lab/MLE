@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-87",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 127.0, -191.0, 70.0, 22.0 ],
+					"text" : "loadmess 6"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-85",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -71,8 +83,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1649.0, 846.25, 100.0, 22.0 ],
-					"prefix" : "Macintosh HD:/Users/ianhattwick/Documents/github/CML/MLE/docs/netEcho/NetEchoPatterns/"
+					"patching_rect" : [ 1649.0, 846.25, 100.0, 22.0 ]
 				}
 
 			}
@@ -86,7 +97,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
 					"patching_rect" : [ 1745.39990234375, 855.75, 89.333333333333258, 89.333333333333258 ],
-					"pic" : "Macintosh HD:/Users/ianhattwick/Documents/github/CML/MLE/docs/netEcho/NetEchoPatterns/NetEchoPatterns.001.jpeg",
+					"pic" : "NetEchoPatterns.001.jpeg",
 					"presentation" : 1,
 					"presentation_rect" : [ 1032.0, 101.0, 63.0, 63.0 ]
 				}
@@ -159,6 +170,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 182.0, -155.0, 71.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 17.10009765625, 90.0, 71.0, 20.0 ],
 					"text" : "# of players"
 				}
 
@@ -233,7 +246,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 127.0, -156.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 127.0, -156.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 17.10009765625, 108.5, 50.0, 22.0 ]
 				}
 
 			}
@@ -243,7 +256,7 @@
 						"count" : 4,
 						"data" : [ 							{
 								"key" : 1,
-								"value" : [ 4 ]
+								"value" : [ 3 ]
 							}
 , 							{
 								"key" : 2,
@@ -251,11 +264,11 @@
 							}
 , 							{
 								"key" : 3,
-								"value" : [ 7 ]
+								"value" : [ 5 ]
 							}
 , 							{
 								"key" : 4,
-								"value" : [ 3 ]
+								"value" : [ 2 ]
 							}
  ]
 					}
@@ -341,7 +354,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u505014856"
+					"varname" : "u765010021"
 				}
 
 			}
@@ -798,7 +811,7 @@
 										"count" : 4,
 										"data" : [ 											{
 												"key" : 1,
-												"value" : [ 4 ]
+												"value" : [ 3 ]
 											}
 , 											{
 												"key" : 2,
@@ -806,11 +819,11 @@
 											}
 , 											{
 												"key" : 3,
-												"value" : [ 7 ]
+												"value" : [ 5 ]
 											}
 , 											{
 												"key" : 4,
-												"value" : [ 3 ]
+												"value" : [ 2 ]
 											}
  ]
 									}
@@ -7170,7 +7183,7 @@
 					"patching_rect" : [ 1089.050048828125, 237.350006103515625, 149.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 17.10009765625, 108.100006103515625, 99.0, 35.0 ],
+					"presentation_rect" : [ 17.10009765625, 146.100006103515625, 99.0, 35.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 1
 					}
@@ -8086,7 +8099,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1312.5, 550.25, 50.0, 22.0 ],
-					"text" : "30"
+					"text" : "1"
 				}
 
 			}
@@ -12765,6 +12778,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"source" : [ "obj-87", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-44", 0 ],
 					"source" : [ "obj-89", 0 ]
 				}
@@ -12934,7 +12954,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "NetEchoPatterns.004.jpeg",
+				"name" : "NetEchoPatterns.001.jpeg",
 				"bootpath" : "~/Documents/github/CML/MLE/docs/netEcho/NetEchoPatterns",
 				"patcherrelativepath" : "../../docs/netEcho/NetEchoPatterns",
 				"type" : "JPEG",
