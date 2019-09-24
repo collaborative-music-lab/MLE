@@ -39,6 +39,23 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgcolor" : [ 0.694117647058824, 0.0, 0.0, 1.0 ],
+					"elementcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ],
+					"fgcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
+					"id" : "obj-6",
+					"maxclass" : "incdec",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 500.0, 41.0, 20.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 127.0, 30.0, 35.0, 68.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Courier",
 					"fontsize" : 10.0,
 					"id" : "obj-35",
@@ -241,7 +258,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 723.0, 411.5, 56.0, 22.0 ],
 					"text" : "autopattr",
-					"varname" : "u851000968"
+					"varname" : "u721010729"
 				}
 
 			}
@@ -267,7 +284,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 649.0, 731.0, 280.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 1057, 45, 1440, 407 ],
+						"client_rect" : [ 4, 45, 358, 173 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
 						"storage_rect" : [ 583, 69, 1034, 197 ]
@@ -359,32 +376,16 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Courier New",
-					"fontsize" : 18.0,
-					"id" : "obj-128",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 635.0, 70.5, 117.0, 47.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 149.0, 68.5, 117.0, 47.0 ],
-					"text" : "latency\n(ms)"
-				}
-
-			}
-, 			{
-				"box" : 				{
+					"fontsize" : 24.0,
 					"id" : "obj-126",
 					"maxclass" : "number",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 552.0, 41.0, 50.0, 22.0 ],
+					"patching_rect" : [ 552.0, 41.0, 72.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 97.0, 81.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 73.0, 30.0, 72.0, 35.0 ]
 				}
 
 			}
@@ -435,6 +436,30 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 50.0, 140.0, 32.0, 22.0 ],
+									"text" : "gate"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "" ],
+									"patching_rect" : [ 120.0, 40.0, 80.0, 22.0 ],
+									"text" : "MLE.beat 4 4"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"comment" : "",
 									"id" : "obj-1",
 									"index" : 1,
@@ -455,18 +480,6 @@
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 50.0, 100.0, 24.0, 24.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-119",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 50.0, 139.5, 63.0, 22.0 ],
-									"text" : "metro 500"
 								}
 
 							}
@@ -656,24 +669,22 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-111", 0 ],
-									"order" : 1,
-									"source" : [ "obj-119", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-116", 0 ],
-									"order" : 0,
-									"source" : [ "obj-119", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-119", 0 ],
+									"destination" : [ "obj-3", 0 ],
 									"source" : [ "obj-121", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 1 ],
+									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-111", 0 ],
+									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -935,9 +946,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 554.0, -11.0, 40.0, 40.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 97.0, 29.0, 50.0, 50.0 ],
+					"patching_rect" : [ 552.0, -10.0, 40.0, 40.0 ],
 					"size" : 100.0
 				}
 
@@ -2515,6 +2524,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-107", 0 ],
+					"order" : 0,
+					"source" : [ "obj-126", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"order" : 1,
 					"source" : [ "obj-126", 0 ]
 				}
 
@@ -2635,6 +2653,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-76", 0 ],
 					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-126", 0 ],
+					"source" : [ "obj-6", 0 ]
 				}
 
 			}
@@ -2786,7 +2811,36 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-124::obj-2::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
+			"parameterbanks" : 			{
+
+			}
+
+		}
+,
 		"dependency_cache" : [ 			{
+				"name" : "MLE.beat.maxpat",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/network",
+				"patcherrelativepath" : "./network",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "init.maxpat",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "./utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.swing.maxpat",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox",
+				"patcherrelativepath" : "./sandbox",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "MLE.init.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox",
 				"patcherrelativepath" : "./sandbox",
@@ -2843,13 +2897,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "init.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
-				"patcherrelativepath" : "./utilities",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "MLE.playerID.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox",
 				"patcherrelativepath" : "./sandbox",
@@ -2876,6 +2923,10 @@
 				"patcherrelativepath" : "./utilities",
 				"type" : "JSON",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "link.phasor~.mxo",
+				"type" : "iLaX"
 			}
  ],
 		"autosave" : 0

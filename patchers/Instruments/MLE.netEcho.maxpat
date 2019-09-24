@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1759.0, 239.25, 175.0, 22.0 ],
+					"text" : "MLE.UDPreceive globalPattern"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-87",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -354,7 +366,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u765010021"
+					"varname" : "u226014009"
 				}
 
 			}
@@ -7134,7 +7146,7 @@
 						"count" : 10,
 						"data" : [ 							{
 								"key" : [ "repeats", 0 ],
-								"value" : [ 1, 2, 4, 8 ]
+								"value" : [ 1, 3, 8, 32 ]
 							}
 , 							{
 								"key" : [ "delay", 1 ],
@@ -8099,7 +8111,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1312.5, 550.25, 50.0, 22.0 ],
-					"text" : "1"
+					"text" : "30"
 				}
 
 			}
@@ -8111,7 +8123,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1343.0, 577.25, 50.0, 22.0 ],
-					"text" : "120."
+					"text" : "98."
 				}
 
 			}
@@ -11794,6 +11806,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-45", 0 ],
 					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-311", 0 ],
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
