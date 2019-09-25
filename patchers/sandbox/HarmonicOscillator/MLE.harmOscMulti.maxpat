@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1077.0, 742.0 ],
+		"rect" : [ 34.0, 79.0, 1077.0, 937.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -91,7 +91,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 563.0, 469.25, 32.0, 22.0 ],
+					"patching_rect" : [ 563.0, 481.25, 32.0, 22.0 ],
 					"text" : "print"
 				}
 
@@ -103,10 +103,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 317.0, 571.0, 35.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "out 1"
 				}
 
@@ -2064,6 +2060,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 227.0, -18.0, 28.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "in 1"
 				}
 
@@ -2141,13 +2141,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-11",
-									"linecount" : 15,
+									"linecount" : 14,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 613.0, 260.0, 99.0, 210.0 ],
-									"text" : "1. 1.000945 1.001332 1.001001 0.999983 0.998678 0.99768 0.997514 0.998385 1.00005 1.001891 1.00315 1.003245 1.002034 0.999906 0.997658"
+									"text" : "1. 0.990391 1.000262 1.016319 0.980603 1.000829 1.02284 0.97411 1.001572 1.027672 0.96879 1.002457 1.031597 0.964122 1.003464 1.034918"
 								}
 
 							}
@@ -2688,6 +2688,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 263.5, 575.25, 42.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "out~ 1"
 				}
 
@@ -3023,13 +3027,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1", 1 ],
 					"source" : [ "obj-20", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
-					"source" : [ "obj-21", 0 ]
 				}
 
 			}
