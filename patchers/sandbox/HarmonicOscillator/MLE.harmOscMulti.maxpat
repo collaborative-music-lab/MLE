@@ -102,7 +102,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 317.0, 571.0, 35.0, 22.0 ],
+					"patching_rect" : [ 276.0, 571.0, 35.0, 22.0 ],
 					"text" : "out 1"
 				}
 
@@ -126,7 +126,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 307.25, 463.0, 51.0, 22.0 ],
+					"patching_rect" : [ 266.25, 463.0, 51.0, 22.0 ],
 					"text" : "sig~ 1.5"
 				}
 
@@ -138,7 +138,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 307.25, 496.0, 38.0, 22.0 ],
+					"patching_rect" : [ 266.25, 496.0, 38.0, 22.0 ],
 					"text" : "pow~"
 				}
 
@@ -2141,13 +2141,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-11",
-									"linecount" : 14,
+									"linecount" : 15,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 613.0, 260.0, 99.0, 210.0 ],
-									"text" : "1. 0.990391 1.000262 1.016319 0.980603 1.000829 1.02284 0.97411 1.001572 1.027672 0.96879 1.002457 1.031597 0.964122 1.003464 1.034918"
+									"text" : "1. 1.002273 1.000499 0.996723 0.995205 0.998438 1.004023 1.006544 1.002914 0.99592 0.992094 0.995551 1.003639 1.008929 1.006083 0.997212"
 								}
 
 							}
@@ -2640,7 +2640,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 264.5, 544.0, 29.5, 22.0 ],
+					"patching_rect" : [ 223.5, 544.0, 29.5, 22.0 ],
 					"text" : "*~"
 				}
 
@@ -2676,8 +2676,8 @@
 					"numinlets" : 5,
 					"numoutlets" : 4,
 					"outlettype" : [ "signal", "signal", "", "" ],
-					"patching_rect" : [ 367.0, 478.0, 61.0, 22.0 ],
-					"text" : "adsr~"
+					"patching_rect" : [ 326.0, 478.0, 97.0, 22.0 ],
+					"text" : "adsr~ @legato 1"
 				}
 
 			}
@@ -2687,7 +2687,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 263.5, 575.25, 42.0, 22.0 ],
+					"patching_rect" : [ 222.5, 575.25, 42.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"attr_comment" : ""
 					}
