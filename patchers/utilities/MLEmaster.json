@@ -5,16 +5,25 @@
 			"1" : 			{
 				"id" : 1,
 				"data" : 				{
-					"MLE.3bandEQ::highdb" : [ 3.428491154133677 ],
-					"MLE.3bandEQ::highhz" : [ 1764 ],
+					"MLE.3bandEQ::highdb" : [ 5.487314683545441 ],
+					"MLE.3bandEQ::highhz" : [ 9410 ],
 					"MLE.3bandEQ::highq" : [ 0.882352941176471 ],
 					"MLE.3bandEQ::lowdb" : [ 4.899079389427795 ],
 					"MLE.3bandEQ::lowhz" : [ 76.764705882352914 ],
 					"MLE.3bandEQ::lowq" : [ 0.0 ],
 					"MLE.3bandEQ::middb" : [ 3.134373507074853 ],
-					"MLE.3bandEQ::midhz" : [ 572 ],
-					"MLE.3bandEQ::midq" : [ 0.588235294117647 ],
-					"MLE.3bandEQ::3bandEQ" : [ -1 ]
+					"MLE.3bandEQ::midhz" : [ 1279 ],
+					"MLE.3bandEQ::midq" : [ 0.0 ],
+					"MLE.3bandEQ::3bandEQ" : [ -1 ],
+					"komp-regular[1]::attack" : [ 40.0 ],
+					"komp-regular[1]::bypass" : [ 0 ],
+					"komp-regular[1]::key" : [ 0 ],
+					"komp-regular[1]::lookahead" : [ 48 ],
+					"komp-regular[1]::makeup" : [ 0.0 ],
+					"komp-regular[1]::ratio" : [ 2.0 ],
+					"komp-regular[1]::release" : [ 80.0 ],
+					"komp-regular[1]::thresh" : [ -12.0 ],
+					"komp-regular[1]::kompattr" : [ -1 ]
 				}
 
 			}
@@ -31,7 +40,16 @@
 					"MLE.3bandEQ::middb" : [ 2.252020565898382 ],
 					"MLE.3bandEQ::midhz" : [ 775 ],
 					"MLE.3bandEQ::midq" : [ 0.0 ],
-					"MLE.3bandEQ::3bandEQ" : [ -1 ]
+					"MLE.3bandEQ::3bandEQ" : [ -1 ],
+					"komp-regular[1]::attack" : [ 40.0 ],
+					"komp-regular[1]::bypass" : [ 0 ],
+					"komp-regular[1]::key" : [ 0 ],
+					"komp-regular[1]::lookahead" : [ 48 ],
+					"komp-regular[1]::makeup" : [ 0.0 ],
+					"komp-regular[1]::ratio" : [ 2.0 ],
+					"komp-regular[1]::release" : [ 80.0 ],
+					"komp-regular[1]::thresh" : [ -12.0 ],
+					"komp-regular[1]::kompattr" : [ -1 ]
 				}
 
 			}
@@ -48,7 +66,16 @@
 					"MLE.3bandEQ::middb" : [ 3.134373507074853 ],
 					"MLE.3bandEQ::midhz" : [ 690 ],
 					"MLE.3bandEQ::midq" : [ 1.764705882352941 ],
-					"MLE.3bandEQ::3bandEQ" : [ -1 ]
+					"MLE.3bandEQ::3bandEQ" : [ -1 ],
+					"komp-regular[1]::attack" : [ 40.0 ],
+					"komp-regular[1]::bypass" : [ 0 ],
+					"komp-regular[1]::key" : [ 0 ],
+					"komp-regular[1]::lookahead" : [ 48 ],
+					"komp-regular[1]::makeup" : [ 0.0 ],
+					"komp-regular[1]::ratio" : [ 2.0 ],
+					"komp-regular[1]::release" : [ 80.0 ],
+					"komp-regular[1]::thresh" : [ -12.0 ],
+					"komp-regular[1]::kompattr" : [ -1 ]
 				}
 
 			}
@@ -65,7 +92,16 @@
 					"MLE.3bandEQ::middb" : [ 2.252020565898383 ],
 					"MLE.3bandEQ::midhz" : [ 454 ],
 					"MLE.3bandEQ::midq" : [ 0.882352941176471 ],
-					"MLE.3bandEQ::3bandEQ" : [ -1 ]
+					"MLE.3bandEQ::3bandEQ" : [ -1 ],
+					"komp-regular[1]::attack" : [ 40.0 ],
+					"komp-regular[1]::bypass" : [ 0 ],
+					"komp-regular[1]::key" : [ 0 ],
+					"komp-regular[1]::lookahead" : [ 48 ],
+					"komp-regular[1]::makeup" : [ 0.0 ],
+					"komp-regular[1]::ratio" : [ 2.0 ],
+					"komp-regular[1]::release" : [ 80.0 ],
+					"komp-regular[1]::thresh" : [ -12.0 ],
+					"komp-regular[1]::kompattr" : [ -1 ]
 				}
 
 			}
