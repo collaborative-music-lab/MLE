@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 3,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -202,7 +202,7 @@
 				"box" : 				{
 					"comment" : "pattr names",
 					"id" : "obj-33",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -412,7 +412,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -457,7 +457,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 3,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -666,7 +666,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 3,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -901,7 +901,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 430.5, 164.0, 179.0, 22.0 ],
-									"text" : "76 0"
+									"text" : "62 0"
 								}
 
 							}
@@ -1370,7 +1370,7 @@
 				"box" : 				{
 					"comment" : "Envelope Scalar (0-1)",
 					"id" : "obj-67",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1395,7 +1395,7 @@
 				"box" : 				{
 					"comment" : "Brightness (0-1)",
 					"id" : "obj-56",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1416,7 +1416,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1695,7 +1695,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1990,7 +1990,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2141,7 +2141,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2359,27 +2359,27 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 651.6580810546875, 49.345611572265625, 56.0, 22.0 ],
 					"restore" : 					{
-						"carrier2ratio" : [ 1.009999990463257 ],
+						"carrier2ratio" : [ 0.501999974250793 ],
 						"env1a" : [ 5 ],
 						"env2a" : [ 5 ],
-						"env2d" : [ 1000 ],
-						"env2d[1]" : [ 3000 ],
+						"env2d" : [ 200 ],
+						"env2d[1]" : [ 200 ],
 						"env2r" : [ 300 ],
 						"env2r[1]" : [ 100 ],
 						"env2response" : [ 2.0 ],
 						"env2s" : [ 0.5 ],
-						"env2s[1]" : [ 0.050000000745058 ],
-						"mod1depth" : [ 0.0 ],
-						"mod1env" : [ 0, 0, 14, 1, 0, 0 ],
-						"mod1harm" : [ 4.005000114440918 ],
-						"mod2depth" : [ 0.0 ],
+						"env2s[1]" : [ 0.300000011920929 ],
+						"mod1depth" : [ -0.259999990463257 ],
+						"mod1env" : [ 0, 0, 8, 1, 0, 0 ],
+						"mod1harm" : [ 2.0 ],
+						"mod2depth" : [ 0.600000023841858 ],
 						"mod2env" : [ 0, 0, 0, 1, 0, 52 ],
-						"mod2harm" : [ 2.005000114440918 ],
+						"mod2harm" : [ 2.009999990463257 ],
 						"osc2e" : [ 0, 0, 47, 1, 0, 30 ]
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u036005648"
+					"varname" : "u932006133"
 				}
 
 			}
@@ -2387,7 +2387,7 @@
 				"box" : 				{
 					"comment" : "MIDI note (Note, or note/velocity pair)",
 					"id" : "obj-16",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -2401,7 +2401,7 @@
 				"box" : 				{
 					"comment" : "audio (signal)",
 					"id" : "obj-15",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -2417,7 +2417,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 891.6666259765625, 813.0, 205.0, 22.0 ],
-					"text" : "osc2env 1 0 0.23622"
+					"text" : "env2 5 202. 0.5 303."
 				}
 
 			}
@@ -2433,7 +2433,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2590,7 +2590,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2660,7 +2660,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 3,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2937,7 +2937,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3007,7 +3007,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 3,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3356,7 +3356,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3401,7 +3401,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 3,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3775,8 +3775,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 772.7747802734375, 979.5, 173.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 346.949951171875, 361.078948974609375, 126.0, 35.0 ],
+					"presentation_rect" : [ 346.949951171875, 361.078948974609375, 173.0, 22.0 ],
 					"text" : "poly~ MLE.fmPoly 16 @steal 1"
 				}
 
@@ -5270,30 +5269,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "MLE.fmPoly.maxpat",
-				"bootpath" : "~/Dropbox/MIT/Teaching/MaxTeaching/361_S19/Week8Examples",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "init.maxpat",
-				"bootpath" : "~/Dropbox/MLE/Library/patchers/utilities",
-				"patcherrelativepath" : "../../../../../MLE/Library/patchers/utilities",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "MLE.pattrNamer.maxpat",
-				"bootpath" : "~/Dropbox/MLE/Library/patchers/sandbox",
-				"patcherrelativepath" : "../../../../../MLE/Library/patchers/sandbox",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
