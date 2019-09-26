@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-53",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 466.015375971794128, 346.5, 319.0, 22.0 ],
+					"text" : "3 0 0. 0. 69. 100. 10 2000 52. 61. 0.1 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-50",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -1330,7 +1342,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 944.0, 774.75, 335.0, 22.0 ],
-					"text" : "1 32 0.5 0.9 55. 90. 5. 100. 20. 120. 0.1 1"
+					"text" : "1 2 0.5 0.4 48. 75. 5. 100. 70. 5. 0.1 1"
 				}
 
 			}
@@ -1496,7 +1508,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u431012321"
+					"varname" : "u603012865"
 				}
 
 			}
@@ -1546,7 +1558,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 9.666658461093903, 97.066664814949036, 207.0, 22.0 ],
+					"patching_rect" : [ 9.666658461093903, 97.066664814949036, 288.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"client_rect" : [ 1057, 45, 1440, 407 ],
 						"parameter_enable" : 0,
@@ -1554,7 +1566,7 @@
 						"storage_rect" : [ 583, 69, 1034, 197 ]
 					}
 ,
-					"text" : "pattrstorage netEchoMLE @greedy 1",
+					"text" : "pattrstorage netEchoMLE @greedy 1 @savemode 0",
 					"varname" : "netEchoMLE"
 				}
 
@@ -4506,7 +4518,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 325.0, 50.0, 50.0, 35.0 ],
-													"text" : "32 0.5 0.9 0.027037 31"
+													"text" : "2 0.5 0.4 0.23622 1"
 												}
 
 											}
@@ -4942,7 +4954,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 414.0, 255.0, 50.0, 22.0 ],
-													"text" : "32"
+													"text" : "2"
 												}
 
 											}
@@ -6302,7 +6314,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 139.0, 365.0, 320.0, 35.0 ],
-									"text" : "1 1 0.102946 0.9 55. 3.433682 5 5 0.703687 4.222125 15.556809 1"
+									"text" : "1 1 0.102946 0.9 48. 3.433682 5 5 0.703687 0.175922 15.556809 1"
 								}
 
 							}
@@ -6898,7 +6910,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 225.0, 133.0, 386.0, 22.0 ],
-									"text" : "1 1 0.102946 0.9 55. 3.433682 5 5 0.703687 4.222125 15.556809 1"
+									"text" : "1 1 0.102946 0.9 48. 3.433682 5 5 0.703687 0.175922 15.556809 1"
 								}
 
 							}
@@ -9171,7 +9183,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1268.800048828125, 881.0, 50.0, 22.0 ],
-					"text" : "98."
+					"text" : "89."
 				}
 
 			}
@@ -9272,7 +9284,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 245.0, 258.0, 50.0, 22.0 ],
-									"text" : "0.9"
+									"text" : "0.4"
 								}
 
 							}
@@ -9284,7 +9296,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 330.0, 253.0, 50.0, 22.0 ],
-									"text" : "90."
+									"text" : "75."
 								}
 
 							}
@@ -12919,7 +12931,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-53", 1 ],
+					"order" : 0,
+					"source" : [ "obj-185", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-97", 0 ],
+					"order" : 1,
 					"source" : [ "obj-185", 0 ]
 				}
 
@@ -13976,16 +13997,16 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "mtoj.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
-				"patcherrelativepath" : "../utilities",
+				"name" : "MLE.simplePoly2.maxpat",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox",
+				"patcherrelativepath" : "../sandbox",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "MLE.simplePoly2.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox",
-				"patcherrelativepath" : "../sandbox",
+				"name" : "mtoj.maxpat",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "../utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
