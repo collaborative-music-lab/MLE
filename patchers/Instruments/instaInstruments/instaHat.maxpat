@@ -39,6 +39,30 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 217.0, 104.666679382324219, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 250.0, 145.0, 52.0, 22.0 ],
+					"text" : "gate 1 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-84",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -494,7 +518,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 809.0, 270.0, 50.0, 22.0 ],
-					"text" : "11"
+					"text" : "23"
 				}
 
 			}
@@ -1024,7 +1048,7 @@
 				"box" : 				{
 					"id" : "obj-35",
 					"maxclass" : "newobj",
-					"numinlets" : 7,
+					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 260.5, 654.0, 71.5, 22.0 ],
@@ -1607,7 +1631,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 475.0, 595.5, 183.0, 35.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 1057, 45, 1440, 407 ],
+						"client_rect" : [ 4, 45, 358, 173 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
 						"storage_rect" : [ 583, 69, 1034, 197 ]
@@ -1720,7 +1744,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 110.0, 85.0, 50.0, 22.0 ],
-									"text" : "1 0"
+									"text" : "6 0"
 								}
 
 							}
@@ -3199,7 +3223,7 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-82", 0 ],
+					"destination" : [ "obj-8", 1 ],
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -3236,6 +3260,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-49", 0 ],
 					"source" : [ "obj-122", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-16", 0 ]
 				}
 
 			}
@@ -3664,6 +3695,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-82", 0 ],
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-108", 1 ],
 					"source" : [ "obj-82", 1 ]
 				}
@@ -3708,35 +3746,35 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-39::obj-34" : [ "trig_5", "trig_5", 0 ],
-			"obj-39::obj-5" : [ "kick-decay", "decay", 0 ],
+			"obj-39::obj-20" : [ "snare-decay", "decay", 0 ],
 			"obj-39::obj-21" : [ "snare-snap", "snap", 0 ],
-			"obj-39::obj-4" : [ "kick-sweep", "sweep", 0 ],
 			"obj-39::obj-22" : [ "snare-tune", "tuning", 0 ],
-			"obj-39::obj-3" : [ "kick-tune[1]", "tuning", 0 ],
+			"obj-39::obj-38" : [ "tom-level", "level", 0 ],
+			"obj-39::obj-40" : [ "tom-decay", "decay", 0 ],
+			"obj-39::obj-9" : [ "kick-level", "level", 0 ],
+			"obj-27::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
+			"obj-39::obj-41" : [ "tom-hi", "hi", 0 ],
+			"obj-39::obj-6" : [ "kick-attack", "attack", 0 ],
+			"obj-39::obj-42" : [ "tom-mid", "mid", 0 ],
 			"obj-39::obj-31" : [ "clhat-decay", "cl-dec", 0 ],
-			"obj-39::obj-43" : [ "tom-low", "low", 0 ],
-			"obj-39::obj-12" : [ "trig_2", "trig_2", 0 ],
 			"obj-39::obj-46" : [ "ad-level", "level", 0 ],
-			"obj-39::obj-7" : [ "trig_1", "trig_1", 0 ],
+			"obj-39::obj-5" : [ "kick-decay", "decay", 0 ],
+			"obj-39::obj-43" : [ "tom-low", "low", 0 ],
+			"obj-39::obj-4" : [ "kick-sweep", "sweep", 0 ],
+			"obj-39::obj-3" : [ "kick-tune[1]", "tuning", 0 ],
+			"obj-39::obj-12" : [ "trig_2", "trig_2", 0 ],
 			"obj-39::obj-33" : [ "trig_4", "trig_4", 0 ],
 			"obj-39::obj-23" : [ "trig_3", "trig_3", 0 ],
 			"obj-39::obj-17" : [ "snare-level", "level", 0 ],
-			"obj-9" : [ "live.grid", "live.grid", 0 ],
 			"obj-39::obj-19" : [ "snare-hicut", "hicut", 0 ],
-			"obj-39::obj-9" : [ "kick-level", "level", 0 ],
 			"obj-39::obj-32" : [ "hat-tone", "tone", 0 ],
-			"obj-39::obj-6" : [ "kick-attack", "attack", 0 ],
-			"obj-39::obj-38" : [ "tom-level", "level", 0 ],
-			"obj-39::obj-40" : [ "tom-decay", "decay", 0 ],
 			"obj-39::obj-27" : [ "hat-level", "level", 0 ],
-			"obj-39::obj-41" : [ "tom-hi", "hi", 0 ],
 			"obj-39::obj-30" : [ "ophat-decay", "op-dec", 0 ],
-			"obj-39::obj-42" : [ "tom-mid", "mid", 0 ],
-			"obj-27::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
-			"obj-39::obj-20" : [ "snare-decay", "decay", 0 ],
+			"obj-9" : [ "live.grid", "live.grid", 0 ],
 			"obj-39::obj-45" : [ "trig_7", "trig_7", 0 ],
 			"obj-39::obj-44" : [ "trig_6", "trig_6", 0 ],
+			"obj-39::obj-7" : [ "trig_1", "trig_1", 0 ],
+			"obj-39::obj-34" : [ "trig_5", "trig_5", 0 ],
 			"parameterbanks" : 			{
 
 			}
