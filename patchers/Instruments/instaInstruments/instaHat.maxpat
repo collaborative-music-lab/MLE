@@ -1047,14 +1047,15 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-35",
+					"linecount" : 3,
 					"maxclass" : "newobj",
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 260.5, 654.0, 71.5, 22.0 ],
+					"patching_rect" : [ 260.5, 654.0, 74.0, 49.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 93.833328247070312, 268.53338623046875, 71.5, 22.0 ],
-					"text" : "MLE.reverb",
+					"presentation_rect" : [ 93.833328247070312, 268.53338623046875, 171.0, 22.0 ],
+					"text" : "MLE.reverb 0.2 0.1 0.2 0.4 0.4",
 					"varname" : "MLE.reverb"
 				}
 
@@ -1083,8 +1084,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 259.133331298828125, 586.0, 106.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 93.833328247070312, 209.288909912109375, 73.0, 35.0 ],
+					"presentation_rect" : [ 93.833328247070312, 209.288909912109375, 110.0, 22.0 ],
 					"text" : "MLE.distort 1 1 24",
 					"varname" : "MLE.distort"
 				}
@@ -1631,7 +1631,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 475.0, 595.5, 183.0, 35.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 4, 45, 358, 173 ],
+						"client_rect" : [ 1057, 45, 1440, 407 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
 						"storage_rect" : [ 583, 69, 1034, 197 ]
