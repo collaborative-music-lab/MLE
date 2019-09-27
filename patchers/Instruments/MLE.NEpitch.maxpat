@@ -117,7 +117,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 369.0, 19.0, 50.0, 22.0 ]
+					"patching_rect" : [ 369.0, 19.0, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 15.0, 166.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -1465,7 +1467,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 750.0, 595.0, 126.0, 22.0 ],
-					"text" : "38 53 69 74"
+					"text" : "37 52 69 76"
 				}
 
 			}
