@@ -40,13 +40,12 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-17",
-					"linecount" : 17,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 213.0, 205.0, 50.0, 236.0 ],
-					"text" : "\"Macintosh HD:/Users/ianhattwick/Documents/github/CML/MLE/media/singleshot samples/acGuitar_A_45.wav\""
+					"patching_rect" : [ 213.0, 205.0, 50.0, 22.0 ],
+					"text" : "bang"
 				}
 
 			}
@@ -117,13 +116,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-101",
-					"linecount" : 4,
+					"linecount" : 5,
 					"maxclass" : "newobj",
-					"numinlets" : 12,
-					"numoutlets" : 12,
-					"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "", "" ],
-					"patching_rect" : [ 33.333332061767578, 88.66668701171875, 162.0, 62.0 ],
-					"text" : "route loopenable resetLP starttime fwdreverse ogpitch decay fadetime voices replace notelength steal"
+					"numinlets" : 13,
+					"numoutlets" : 13,
+					"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "", "", "" ],
+					"patching_rect" : [ 33.333332061767578, 88.66668701171875, 156.0, 76.0 ],
+					"text" : "route loopenable resetLP starttime fwdreverse ogpitch decay fadetime voices replace notelength steal replacenew"
 				}
 
 			}
@@ -773,7 +772,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
-					"midpoints" : [ 133.833332061767578, 157.0, 29.0, 157.0, 29.0, 440.0, 132.0, 440.0 ],
+					"midpoints" : [ 122.74999872843425, 157.0, 29.0, 157.0, 29.0, 440.0, 132.0, 440.0 ],
 					"source" : [ "obj-101", 7 ]
 				}
 
@@ -788,6 +787,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-101", 11 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"order" : 0,
 					"source" : [ "obj-101", 8 ]
@@ -797,8 +803,8 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
-					"midpoints" : [ 185.833332061767578, 169.833343505859375, 47.833332061767578, 169.833343505859375 ],
-					"source" : [ "obj-101", 11 ]
+					"midpoints" : [ 179.833332061767578, 169.833343505859375, 47.833332061767578, 169.833343505859375 ],
+					"source" : [ "obj-101", 12 ]
 				}
 
 			}

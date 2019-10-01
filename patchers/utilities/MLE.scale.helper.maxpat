@@ -10,9 +10,9 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 104.0, 657.0, 646.0 ],
+		"rect" : [ 59.0, 104.0, 793.0, 646.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -99,7 +99,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 28.0, 33.0, 150.0, 33.0 ],
+					"patching_rect" : [ 20.0, -3.0, 150.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 11.0, 31.0, 150.0, 33.0 ],
@@ -114,7 +114,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 32.0, 38.0, 220.0, 27.0 ],
+					"patching_rect" : [ 172.0, 3.0, 220.0, 27.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 11.0, 9.0, 220.0, 27.0 ],
 					"text" : "MLE.scale.helper"
@@ -329,7 +329,7 @@
 			}
 , 			{
 				"box" : 				{
-					"cols" : 7,
+					"cols" : 1,
 					"colwidth" : 24,
 					"fontface" : 0,
 					"fontname" : "Arial",
@@ -345,7 +345,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 15.0, 201.0, 262.0, 153.0 ],
 					"rowhead" : 1,
-					"rows" : 6,
+					"rows" : 1,
 					"selmode" : 5
 				}
 
