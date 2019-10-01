@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 3,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -59,13 +59,13 @@
 					"patching_rect" : [ 12.0, 209.0, 56.0, 22.0 ],
 					"restore" : 					{
 						"Lowpass" : [ 0.52 ],
-						"delayLevel" : [ 0.037795275590551 ],
-						"delayTime" : [ 251 ],
-						"feedback" : [ 0.332125984251968 ]
+						"delayLevel" : [ 1.0 ],
+						"delayTime" : [ 240 ],
+						"feedback" : [ 0.84 ]
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u320003372"
+					"varname" : "u793005824"
 				}
 
 			}
@@ -81,7 +81,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -755,7 +755,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1124,17 +1124,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"order" : 1,
-					"source" : [ "obj-3", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-93", 0 ],
 					"midpoints" : [ 177.0, 377.0, 702.0, 377.0 ],
-					"order" : 0,
 					"source" : [ "obj-3", 0 ]
 				}
 

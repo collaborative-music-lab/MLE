@@ -5015,14 +5015,14 @@
 					"patching_rect" : [ 51.0, 203.266677856445312, 56.0, 22.0 ],
 					"restore" : 					{
 						"damping" : [ 0.5 ],
-						"diffusion" : [ 0.767170553506329 ],
-						"drywet" : [ 30.543033145640962 ],
+						"diffusion" : [ 0.75 ],
+						"drywet" : [ 25.0 ],
 						"shape" : [ 0.15 ],
-						"size" : [ 0.2 ]
+						"size" : [ 0.320140488928798 ]
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u788010791"
+					"varname" : "u162008481"
 				}
 
 			}
@@ -5325,8 +5325,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 597.9625244140625, 176.448867797851562, 127.0, 22.0 ],
-					"text" : "expr pow($f1\\,1.5)*300"
+					"patching_rect" : [ 597.9625244140625, 176.448867797851562, 117.0, 22.0 ],
+					"text" : "expr pow($f1\\,3)*300"
 				}
 
 			}
@@ -5509,7 +5509,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 19.12504506111145, 67.000013828277588, 227.0, 116.0 ],
+					"patching_rect" : [ 19.12504506111145, 67.000013828277588, 231.0, 116.0 ],
 					"text" : "Reverb \n- new version based on gen gigaverb example\n- old version based off of yafr and yafr2 objects. Had problems with stability",
 					"textcolor" : [ 0.050980392843485, 0.050980392843485, 0.050980392843485, 1.0 ]
 				}
@@ -6003,9 +6003,9 @@
 , 			{
 				"name" : "helpfile_label-1",
 				"default" : 				{
-					"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
 					"fontsize" : [ 13.0 ],
-					"fontname" : [ "Arial" ]
+					"fontname" : [ "Arial" ],
+					"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
