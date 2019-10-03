@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 333.0, 531.0, 1612.0, 882.0 ],
+		"rect" : [ 34.0, 531.0, 1612.0, 882.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,9 +39,21 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-84",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 92.333332061767578, 255.499969482421875, 50.0, 22.0 ],
+					"text" : "5"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"comment" : "",
 					"id" : "obj-20",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -389,11 +401,11 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 784.70001220703125, 969.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"live.grid" : [ 3, 10, 2, 0, 2, 0, 4001, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 ]
+						"live.grid" : [ 3, 10, 2, 0, 5, 0, 2000, 4000, 6000, 7000, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 ]
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u698008015"
+					"varname" : "u786017087"
 				}
 
 			}
@@ -644,7 +656,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 475.0, 958.2000732421875, 258.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 1057, 45, 1440, 407 ],
+						"client_rect" : [ 4, 45, 358, 173 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
 						"storage_rect" : [ 583, 69, 1034, 197 ]
@@ -1191,7 +1203,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 180.5, 238.0, 50.0, 22.0 ],
-					"text" : "8 2 0"
+					"text" : "6 2 0"
 				}
 
 			}
@@ -1308,18 +1320,6 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 363.07501220703125, 10.999994277954102, 24.0, 20.0 ],
 					"text" : "FX"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-68",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 65.333332061767578, 170.000015258789062, 114.0, 22.0 ],
-					"text" : "expr ($i1+3) %4 + 1"
 				}
 
 			}
@@ -1442,7 +1442,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 260.5, 654.0, 71.5, 49.0 ],
+					"patching_rect" : [ 260.5, 654.0, 74.0, 49.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 92.499992370605469, 269.53338623046875, 171.0, 22.0 ],
 					"text" : "MLE.reverb 0.2 0.1 0.2 0.4 0.4",
@@ -2164,7 +2164,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 475.0, 595.5, 258.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 1057, 45, 1440, 407 ],
+						"client_rect" : [ 4, 45, 358, 173 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
 						"storage_rect" : [ 583, 69, 1034, 197 ]
@@ -2277,7 +2277,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 110.0, 77.333328247070312, 50.0, 22.0 ],
-									"text" : "8 2 0"
+									"text" : "6 2 0"
 								}
 
 							}
@@ -2943,7 +2943,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 227.0, 109.0, 50.0, 22.0 ],
-													"text" : "8 2 0"
+													"text" : "6 2 0"
 												}
 
 											}
@@ -3810,10 +3810,10 @@
 					"rows" : 2,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "live.grid",
 							"parameter_type" : 3,
 							"parameter_longname" : "live.grid",
-							"parameter_invisible" : 1
+							"parameter_invisible" : 1,
+							"parameter_shortname" : "live.grid"
 						}
 
 					}
@@ -4147,16 +4147,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-68", 0 ],
-					"order" : 1,
-					"source" : [ "obj-27", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-85", 0 ],
-					"order" : 0,
 					"source" : [ "obj-27", 1 ]
 				}
 
@@ -4643,7 +4634,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-84", 1 ],
+					"order" : 1,
+					"source" : [ "obj-85", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
+					"order" : 0,
 					"source" : [ "obj-85", 0 ]
 				}
 
@@ -4745,41 +4745,161 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-22::obj-39::obj-46" : [ "ad-level", "level", 0 ],
-			"obj-22::obj-39::obj-12" : [ "trig_2", "trig_2", 0 ],
-			"obj-22::obj-39::obj-38" : [ "tom-level", "level", 0 ],
-			"obj-22::obj-39::obj-22" : [ "snare-tune", "tuning", 0 ],
-			"obj-22::obj-39::obj-6" : [ "kick-attack", "attack", 0 ],
-			"obj-22::obj-39::obj-27" : [ "hat-level", "level", 0 ],
-			"obj-22::obj-39::obj-31" : [ "clhat-decay", "cl-dec", 0 ],
-			"obj-22::obj-39::obj-34" : [ "trig_5", "trig_5", 0 ],
-			"obj-22::obj-39::obj-19" : [ "snare-hicut", "hicut", 0 ],
-			"obj-22::obj-39::obj-21" : [ "snare-snap", "snap", 0 ],
-			"obj-22::obj-39::obj-9" : [ "kick-level", "level", 0 ],
-			"obj-22::obj-39::obj-32" : [ "hat-tone", "tone", 0 ],
-			"obj-22::obj-39::obj-44" : [ "trig_6", "trig_6", 0 ],
-			"obj-22::obj-39::obj-17" : [ "snare-level", "level", 0 ],
-			"obj-22::obj-27::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
-			"obj-22::obj-39::obj-20" : [ "snare-decay", "decay", 0 ],
-			"obj-22::obj-39::obj-42" : [ "tom-mid", "mid", 0 ],
-			"obj-22::obj-9" : [ "live.grid", "live.grid", 0 ],
-			"obj-22::obj-39::obj-45" : [ "trig_7", "trig_7", 0 ],
-			"obj-22::obj-39::obj-41" : [ "tom-hi", "hi", 0 ],
-			"obj-22::obj-39::obj-43" : [ "tom-low", "low", 0 ],
-			"obj-22::obj-39::obj-23" : [ "trig_3", "trig_3", 0 ],
-			"obj-22::obj-39::obj-4" : [ "kick-sweep", "sweep", 0 ],
-			"obj-22::obj-39::obj-3" : [ "kick-tune[1]", "tuning", 0 ],
-			"obj-22::obj-39::obj-40" : [ "tom-decay", "decay", 0 ],
-			"obj-22::obj-39::obj-7" : [ "trig_1", "trig_1", 0 ],
-			"obj-22::obj-39::obj-33" : [ "trig_4", "trig_4", 0 ],
-			"obj-22::obj-39::obj-5" : [ "kick-decay", "decay", 0 ],
-			"obj-22::obj-39::obj-30" : [ "ophat-decay", "op-dec", 0 ],
+			"obj-39::obj-32" : [ "hat-tone", "tone", 0 ],
+			"obj-39::obj-38" : [ "tom-level", "level", 0 ],
+			"obj-39::obj-40" : [ "tom-decay", "decay", 0 ],
+			"obj-39::obj-41" : [ "tom-hi", "hi", 0 ],
+			"obj-39::obj-27" : [ "hat-level", "level", 0 ],
+			"obj-39::obj-42" : [ "tom-mid", "mid", 0 ],
+			"obj-39::obj-30" : [ "ophat-decay", "op-dec", 0 ],
+			"obj-39::obj-43" : [ "tom-low", "low", 0 ],
+			"obj-39::obj-7" : [ "trig_1", "trig_1", 0 ],
+			"obj-39::obj-45" : [ "trig_7", "trig_7", 0 ],
+			"obj-39::obj-20" : [ "snare-decay", "decay", 0 ],
+			"obj-39::obj-44" : [ "trig_6", "trig_6", 0 ],
+			"obj-39::obj-21" : [ "snare-snap", "snap", 0 ],
+			"obj-39::obj-34" : [ "trig_5", "trig_5", 0 ],
+			"obj-39::obj-22" : [ "snare-tune", "tuning", 0 ],
+			"obj-9" : [ "live.grid", "live.grid", 0 ],
+			"obj-39::obj-9" : [ "kick-level", "level", 0 ],
+			"obj-39::obj-6" : [ "kick-attack", "attack", 0 ],
+			"obj-39::obj-5" : [ "kick-decay", "decay", 0 ],
+			"obj-39::obj-31" : [ "clhat-decay", "cl-dec", 0 ],
+			"obj-39::obj-4" : [ "kick-sweep", "sweep", 0 ],
+			"obj-39::obj-12" : [ "trig_2", "trig_2", 0 ],
+			"obj-39::obj-3" : [ "kick-tune[1]", "tuning", 0 ],
+			"obj-39::obj-46" : [ "ad-level", "level", 0 ],
+			"obj-27::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
+			"obj-39::obj-33" : [ "trig_4", "trig_4", 0 ],
+			"obj-39::obj-23" : [ "trig_3", "trig_3", 0 ],
+			"obj-39::obj-17" : [ "snare-level", "level", 0 ],
+			"obj-39::obj-19" : [ "snare-hicut", "hicut", 0 ],
 			"parameterbanks" : 			{
 
 			}
 
 		}
-
+,
+		"dependency_cache" : [ 			{
+				"name" : "MLE.keyGrid.maxpat",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/controllers",
+				"patcherrelativepath" : "../../controllers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "asciiLinearMapping.txt",
+				"bootpath" : "~/Documents/github/CML/MLE/code",
+				"patcherrelativepath" : "../../../code",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.beat.maxpat",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/network",
+				"patcherrelativepath" : "../../network",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "init.maxpat",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "../../utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.swing.maxpat",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox",
+				"patcherrelativepath" : "../../sandbox",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.analogueDrums.maxpat",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/audio",
+				"patcherrelativepath" : "../../audio",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "thru.maxpat",
+				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "analog.Kick~.maxpat",
+				"bootpath" : "C74:/packages/Max for Live/patchers/Max Instrument/Analogue Drums",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "analog.Snare~.maxpat",
+				"bootpath" : "C74:/packages/Max for Live/patchers/Max Instrument/Analogue Drums",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "analog.Hihat~.maxpat",
+				"bootpath" : "C74:/packages/Max for Live/patchers/Max Instrument/Analogue Drums",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "analog.Tom~.maxpat",
+				"bootpath" : "C74:/packages/Max for Live/patchers/Max Instrument/Analogue Drums",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "instaKit.json",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/Instruments/instaInstruments",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.distort.maxpat",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox/Carina/MLE FX library",
+				"patcherrelativepath" : "../../sandbox/Carina/MLE FX library",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.flanger.maxpat",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox/Carina/MLE FX library",
+				"patcherrelativepath" : "../../sandbox/Carina/MLE FX library",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.reverb.maxpat",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox/Carina/MLE FX library",
+				"patcherrelativepath" : "../../sandbox/Carina/MLE FX library",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.pattrLocal.maxpat",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox",
+				"patcherrelativepath" : "../../sandbox",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.output.maxpat",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "../../utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "link.phasor~.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
