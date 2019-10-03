@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 544.0, 832.0, 675.0, 171.0 ],
+		"rect" : [ 34.0, 79.0, 1334.0, 937.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,42 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-36",
+					"maxclass" : "newobj",
+					"numinlets" : 5,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 654.0, 542.0, 126.0, 22.0 ],
+					"text" : "zmap 128 256 -12. -2."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-34",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 638.0, 486.0, 50.0, 22.0 ],
+					"text" : "189"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 654.0, 585.0, 200.0, 22.0 ],
+					"text" : "pattrforward komp-regular[1]::thresh"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-16",
 					"maxclass" : "toggle",
@@ -268,7 +304,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 1096.0, 788.0, 56.0, 22.0 ],
 					"text" : "autopattr",
-					"varname" : "u108006086"
+					"varname" : "u008008287"
 				}
 
 			}
@@ -294,10 +330,10 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1052.0, 816.0, 280.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 4, 44, 358, 172 ],
+						"client_rect" : [ 1057, 45, 1440, 407 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
-						"storage_rect" : [ 365, 44, 816, 172 ]
+						"storage_rect" : [ 583, 69, 1034, 197 ]
 					}
 ,
 					"text" : "pattrstorage MLEmaster @greedy 1 @savemode 0",
@@ -1526,7 +1562,7 @@
 					"numoutlets" : 2,
 					"offset" : [ -280.0, -72.0 ],
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 81.0, 383.0, 330.0, 121.0 ],
+					"patching_rect" : [ 81.0, 438.0, 330.0, 121.0 ],
 					"varname" : "komp-regular[1]",
 					"viewvisibility" : 1
 				}
@@ -1551,13 +1587,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-15",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 482.0, 468.0, 85.0, 35.0 ],
-					"text" : "expr pow($f1/ 127.\\,2)"
+					"patching_rect" : [ 482.0, 477.0, 143.0, 22.0 ],
+					"text" : "expr pow($f1/ 127.\\,2) * 2."
 				}
 
 			}
@@ -1723,6 +1758,23 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
+					"order" : 2,
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-34", 1 ],
+					"order" : 0,
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-36", 0 ],
+					"order" : 1,
 					"source" : [ "obj-14", 0 ]
 				}
 
@@ -1829,6 +1881,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
 					"source" : [ "obj-33", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-36", 0 ]
 				}
 
 			}
@@ -2015,8 +2074,8 @@
 			}
 , 			{
 				"name" : "MLE.init.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox",
-				"patcherrelativepath" : "./sandbox",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "./utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
