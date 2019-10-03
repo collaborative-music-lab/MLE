@@ -39,13 +39,25 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 159.0, 694.0, 80.0, 22.0 ],
+					"text" : "loadmess 0.5"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-26",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 120.0, 224.0, 50.0, 22.0 ],
-					"text" : "3"
+					"text" : "1"
 				}
 
 			}
@@ -542,7 +554,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 809.0, 270.0, 50.0, 22.0 ],
-					"text" : "23"
+					"text" : "44"
 				}
 
 			}
@@ -896,8 +908,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 355.0, 624.66668701171875, 95.0, 22.0 ],
-					"text" : "expr pow($f1\\, 2)"
+					"patching_rect" : [ 355.0, 624.66668701171875, 113.0, 22.0 ],
+					"text" : "expr pow($f1\\, 2) * 2"
 				}
 
 			}
@@ -1768,7 +1780,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 110.0, 85.0, 50.0, 22.0 ],
-									"text" : "7 0"
+									"text" : "6 0"
 								}
 
 							}
@@ -3331,6 +3343,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-74", 0 ],
+					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
 					"order" : 1,
 					"source" : [ "obj-24", 0 ]
@@ -3790,8 +3809,8 @@
 			"obj-39::obj-32" : [ "hat-tone", "tone", 0 ],
 			"obj-39::obj-38" : [ "tom-level", "level", 0 ],
 			"obj-39::obj-40" : [ "tom-decay", "decay", 0 ],
-			"obj-39::obj-27" : [ "hat-level", "level", 0 ],
 			"obj-39::obj-41" : [ "tom-hi", "hi", 0 ],
+			"obj-39::obj-27" : [ "hat-level", "level", 0 ],
 			"obj-39::obj-42" : [ "tom-mid", "mid", 0 ],
 			"obj-39::obj-30" : [ "ophat-decay", "op-dec", 0 ],
 			"obj-39::obj-43" : [ "tom-low", "low", 0 ],
@@ -3805,8 +3824,8 @@
 			"obj-9" : [ "live.grid", "live.grid", 0 ],
 			"obj-39::obj-9" : [ "kick-level", "level", 0 ],
 			"obj-39::obj-6" : [ "kick-attack", "attack", 0 ],
-			"obj-39::obj-31" : [ "clhat-decay", "cl-dec", 0 ],
 			"obj-39::obj-5" : [ "kick-decay", "decay", 0 ],
+			"obj-39::obj-31" : [ "clhat-decay", "cl-dec", 0 ],
 			"obj-39::obj-4" : [ "kick-sweep", "sweep", 0 ],
 			"obj-39::obj-12" : [ "trig_2", "trig_2", 0 ],
 			"obj-39::obj-3" : [ "kick-tune[1]", "tuning", 0 ],
