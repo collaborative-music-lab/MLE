@@ -48,7 +48,7 @@
 					"patching_rect" : [ 345.0, 101.0, 78.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 462.0, 176.0, 78.0, 35.0 ],
-					"text" : "0"
+					"text" : "2"
 				}
 
 			}
@@ -1257,6 +1257,7 @@
 					"fontsize" : 24.0,
 					"id" : "obj-111",
 					"maxclass" : "number",
+					"minimum" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
