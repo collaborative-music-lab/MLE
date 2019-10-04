@@ -39,6 +39,30 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-51",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1182.0, 477.0, 50.0, 22.0 ],
+					"text" : "1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-43",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "bang", "bang", "" ],
+					"patching_rect" : [ 1265.0, 440.70001220703125, 44.0, 22.0 ],
+					"text" : "sel 1 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-33",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -74,7 +98,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 997.0, 278.0, 50.0, 35.0 ],
-					"text" : "0.677165"
+					"text" : "0.507874"
 				}
 
 			}
@@ -206,7 +230,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1508.0, 509.70001220703125, 50.0, 22.0 ],
-					"text" : "109"
+					"text" : "59"
 				}
 
 			}
@@ -258,7 +282,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1298.0, 528.0333251953125, 50.0, 22.0 ],
-					"text" : "106"
+					"text" : "115"
 				}
 
 			}
@@ -637,14 +661,14 @@
 				"box" : 				{
 					"autopopulate" : 1,
 					"id" : "obj-147",
-					"items" : [ " TR-707 Clap.wav", ",", "DrumTrak Rim.wav", ",", "DrumTrak Snare.wav", ",", "LinnDrum Sidestick.wav", ",", "LinnDrum Snare Hard.wav", ",", "TR 505 Clap.wav", ",", "TR-909 Snare.wav" ],
+					"items" : [ "acGuitar_A_45.wav", ",", "batuhanFlute_G_79.wav", ",", "celloPluck_C_36.wav", ",", "guitar_C_48.wav", ",", "piano_C_60.mp3", ",", "piano_G_67.mp3", ",", "schoenhutToyPiano_A_69.wav", ",", "ukelele_C_48.wav", ",", "xylophone_b_83.wav" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 941.0, 1023.0, 100.0, 22.0 ],
-					"prefix" : "Macintosh HD:/Users/ianhattwick/Documents/github/CML/MLE/media/snares/",
+					"prefix" : "Macintosh HD:/Users/ianhattwick/Documents/github/CML/MLE/media/singleshot samples/",
 					"presentation" : 1,
 					"presentation_rect" : [ 482.066673278808594, 269.294418334960938, 130.0, 22.0 ]
 				}
@@ -954,7 +978,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 508.0, 411.13330078125, 50.0, 22.0 ],
-					"text" : "4 1 0"
+					"text" : "9 1 0"
 				}
 
 			}
@@ -2698,7 +2722,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 110.0, 77.333328247070312, 50.0, 22.0 ],
-									"text" : "7 2 0"
+									"text" : "3 2 0"
 								}
 
 							}
@@ -3364,7 +3388,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 227.0, 109.0, 50.0, 22.0 ],
-													"text" : "7 2 0"
+													"text" : "3 2 0"
 												}
 
 											}
@@ -4373,16 +4397,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-186", 0 ],
-					"order" : 1,
+					"destination" : [ "obj-43", 0 ],
+					"order" : 0,
 					"source" : [ "obj-127", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-192", 0 ],
-					"order" : 0,
+					"destination" : [ "obj-51", 1 ],
+					"order" : 1,
 					"source" : [ "obj-127", 1 ]
 				}
 
@@ -4871,6 +4895,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-48", 0 ],
 					"source" : [ "obj-42", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-186", 0 ],
+					"source" : [ "obj-43", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-192", 0 ],
+					"source" : [ "obj-43", 1 ]
 				}
 
 			}
