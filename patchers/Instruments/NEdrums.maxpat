@@ -10,9 +10,9 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
+		"rect" : [ 59.0, 104.0, 678.0, 793.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -69,7 +69,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 191.0, 230.0, 50.0, 22.0 ],
-					"text" : "6 0"
+					"text" : "4 0"
 				}
 
 			}
@@ -94,7 +94,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 337.0, 141.0, 50.0, 35.0 ],
-					"text" : "60 grid 6 8 0"
+					"text" : "60 grid 4 8 0"
 				}
 
 			}
@@ -392,7 +392,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2744.0, 119.0, 50.0, 22.0 ],
-					"text" : "84"
+					"text" : "85"
 				}
 
 			}
@@ -507,7 +507,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1327.333332061767578, 255.499969482421875, 50.0, 22.0 ],
-					"text" : "3"
+					"text" : "7"
 				}
 
 			}
@@ -590,7 +590,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2167.5333251953125, 166.0, 50.0, 22.0 ],
-					"text" : "0. 46"
+					"text" : "0. 80"
 				}
 
 			}
@@ -614,7 +614,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2004.0, 310.0, 50.0, 22.0 ],
-					"text" : "0"
+					"text" : "46"
 				}
 
 			}
@@ -734,7 +734,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1743.0, 411.13330078125, 50.0, 22.0 ],
-					"text" : "6 1 0"
+					"text" : "4 1 0"
 				}
 
 			}
@@ -1583,7 +1583,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1415.5, 238.0, 50.0, 22.0 ],
-					"text" : "8 2 0"
+					"text" : "3 2 0"
 				}
 
 			}
@@ -2107,7 +2107,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 345.600006103515625, 89.600006103515625, 50.0, 22.0 ],
-									"text" : "6 1 0"
+									"text" : "4 1 0"
 								}
 
 							}
@@ -2657,7 +2657,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 110.0, 77.333328247070312, 50.0, 22.0 ],
-									"text" : "8 2 0"
+									"text" : "3 2 0"
 								}
 
 							}
@@ -3323,7 +3323,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 227.0, 109.0, 50.0, 22.0 ],
-													"text" : "8 2 0"
+													"text" : "3 2 0"
 												}
 
 											}
@@ -5242,30 +5242,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-38",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 559.0, 559.0, 89.0, 22.0 ],
-					"text" : "storagewindow"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-37",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 475.0, 559.0, 77.0, 22.0 ],
-					"text" : "clientwindow"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-35",
 					"linecount" : 3,
 					"maxclass" : "newobj",
@@ -5842,28 +5818,6 @@
 			}
 , 			{
 				"box" : 				{
-					"autorestore" : "instaHat.json",
-					"id" : "obj-14",
-					"linecount" : 2,
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 475.0, 595.5, 183.0, 35.0 ],
-					"saved_object_attributes" : 					{
-						"client_rect" : [ 4, 45, 358, 173 ],
-						"parameter_enable" : 0,
-						"parameter_mappable" : 0,
-						"storage_rect" : [ 583, 69, 1034, 197 ]
-					}
-,
-					"text" : "pattrstorage instaHat @savemode 1 @greedy 1",
-					"varname" : "instaHat"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -5976,7 +5930,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 110.0, 85.0, 50.0, 22.0 ],
-									"text" : "6 0"
+									"text" : "4 0"
 								}
 
 							}
@@ -8503,20 +8457,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-14", 0 ],
-					"source" : [ "obj-37", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-14", 0 ],
-					"source" : [ "obj-38", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-28", 0 ],
 					"source" : [ "obj-39", 0 ]
 				}
@@ -9041,8 +8981,8 @@
 			"obj-198::obj-32" : [ "hat-tone[1]", "tone", 0 ],
 			"obj-39::obj-4" : [ "kick-sweep", "sweep", 0 ],
 			"obj-198::obj-45" : [ "trig_7[1]", "trig_7", 0 ],
-			"obj-200::obj-46::obj-2" : [ "live.grid[1]", "live.grid", 0 ],
 			"obj-198::obj-5" : [ "kick-decay[1]", "decay", 0 ],
+			"obj-200::obj-46::obj-2" : [ "live.grid[1]", "live.grid", 0 ],
 			"obj-39::obj-3" : [ "kick-tune[1]", "tuning", 0 ],
 			"obj-9" : [ "live.grid", "live.grid", 0 ],
 			"obj-39::obj-44" : [ "trig_6", "trig_6", 0 ],
@@ -9242,13 +9182,6 @@
 , 			{
 				"name" : "analog.Tom~.maxpat",
 				"bootpath" : "C74:/packages/Max for Live/patchers/Max Instrument/Analogue Drums",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "instaHat.json",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/Instruments/instaInstruments",
-				"patcherrelativepath" : "./instaInstruments",
 				"type" : "JSON",
 				"implicit" : 1
 			}
