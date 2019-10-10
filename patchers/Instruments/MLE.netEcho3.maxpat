@@ -61,7 +61,7 @@
 					"patching_rect" : [ 937.0, 1000.0, 78.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 937.10009765625, 511.850006103515625, 78.0, 35.0 ],
-					"text" : "3"
+					"text" : "0"
 				}
 
 			}
@@ -108,7 +108,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ -284.0, 85.0, 50.0, 22.0 ],
-					"text" : "12"
+					"text" : "9"
 				}
 
 			}
@@ -120,7 +120,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ -172.0, 125.0, 50.0, 22.0 ],
-					"text" : "12"
+					"text" : "9"
 				}
 
 			}
@@ -1987,7 +1987,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
 					"patching_rect" : [ 1585.833333333333485, 700.5, 89.333333333333258, 89.333333333333258 ],
-					"pic" : "NetEchoPatterns.001.jpeg",
+					"pic" : "NetEchoPatterns.004.jpeg",
 					"presentation" : 1,
 					"presentation_rect" : [ 1032.0, 101.0, 63.0, 63.0 ]
 				}
@@ -2043,25 +2043,25 @@
 					"patching_rect" : [ 114.666658461093903, 13.066664814949036, 56.0, 22.0 ],
 					"restore" : 					{
 						"ampEcho" : [ 1.0 ],
-						"amplitude" : [ 90.0 ],
+						"amplitude" : [ 110.0 ],
 						"attEcho" : [ 1.0 ],
-						"attack" : [ 5.0 ],
-						"brightEcho" : [ 1.0 ],
-						"brightness" : [ 5.0 ],
-						"decay" : [ 100.0 ],
-						"decayEcho" : [ 0.8 ],
-						"delay" : [ 1.0 ],
+						"attack" : [ 2.0 ],
+						"brightEcho" : [ 0.9 ],
+						"brightness" : [ 120.0 ],
+						"decay" : [ 400.0 ],
+						"decayEcho" : [ 1.1 ],
+						"delay" : [ 0.75 ],
 						"delayEcho" : [ 1.0 ],
 						"fbEcho" : [ 1.0 ],
-						"feedback" : [ 0.95 ],
-						"repeat" : [ 6 ],
+						"feedback" : [ 0.9 ],
+						"repeat" : [ 8 ],
 						"repeatEcho" : [ 1.0 ],
 						"reverb" : [ 0 ],
-						"space" : [ 1 ],
-						"spread" : [ 15.0 ],
+						"space" : [ 4 ],
+						"spread" : [ 60.0 ],
 						"spreadEcho" : [ 1.0 ],
 						"tuneEcho" : [ 1.0 ],
-						"tuning" : [ 0.04 ]
+						"tuning" : [ 0.17 ]
 					}
 ,
 					"text" : "autopattr",
@@ -6809,7 +6809,7 @@
 			}
 , 			{
 				"box" : 				{
-					"addpoints" : [ 0.0, 0.0, 0, 5.0, 1.0, 0, 500.0, 1.0, 0, 6300.0, 0.0, 0 ],
+					"addpoints" : [ 0.0, 0.0, 0, 2.0, 1.0, 0, 402.0, 0.0, 0, 6300.0, 0.0, 0 ],
 					"id" : "obj-44",
 					"ignoreclick" : 1,
 					"maxclass" : "function",
@@ -17934,7 +17934,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1133.25, 118.0, 50.0, 22.0 ],
-									"text" : "26"
+									"text" : "8"
 								}
 
 							}
