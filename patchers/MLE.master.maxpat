@@ -45,7 +45,10 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 216.0, 71.0, 150.0, 20.0 ],
 					"presentation" : 1,
+					"presentation_rect" : [ 216.0, 71.0, 150.0, 20.0 ]
 				}
+
+			}
 , 			{
 				"box" : 				{
 					"id" : "obj-36",
