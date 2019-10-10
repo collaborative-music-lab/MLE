@@ -39,6 +39,27 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-32",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "MLE.chat.maxpat",
+					"numinlets" : 3,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 316.0, 561.0, 128.0, 128.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 15.0, 489.0, 618.0, 237.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-115",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
@@ -647,7 +668,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-12",
@@ -704,7 +724,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 277.0, 262.0, 50.0, 22.0 ],
-									"text" : "2"
+									"text" : "3"
 								}
 
 							}
@@ -1085,7 +1105,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 170.0, 239.0, 50.0, 22.0 ],
-									"text" : "7"
+									"text" : "12"
 								}
 
 							}
@@ -1238,7 +1258,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1452.0, 15.0, 50.0, 22.0 ],
-					"text" : "6 0"
+					"text" : "1 0"
 				}
 
 			}
@@ -1253,7 +1273,7 @@
 					"patching_rect" : [ 345.0, 101.0, 193.0, 89.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 406.0, 139.0, 193.0, 89.0 ],
-					"text" : "2"
+					"text" : "3"
 				}
 
 			}
@@ -1411,7 +1431,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 654.0, 506.0, 50.0, 35.0 ],
-					"text" : "1 9 4 1 13 9"
+					"text" : "14 2 5 9 2 9"
 				}
 
 			}
@@ -1529,7 +1549,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 170.0, 239.0, 50.0, 22.0 ],
-									"text" : "2"
+									"text" : "3"
 								}
 
 							}
@@ -1788,7 +1808,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 170.0, 239.0, 50.0, 22.0 ],
-									"text" : "7"
+									"text" : "12"
 								}
 
 							}
@@ -3366,7 +3386,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 964.0, 809.0, 318.0, 22.0 ],
-					"text" : "6 0 0. 0. 60. 100. 10 500 50. 50. 0.1 0"
+					"text" : "4 0 0. 0. 0. 0. 0 0 0. 0. 0. 0"
 				}
 
 			}
@@ -5491,8 +5511,8 @@
 		"parameters" : 		{
 			"obj-170::obj-2::obj-46::obj-2" : [ "live.grid[3]", "live.grid", 0 ],
 			"obj-160::obj-46::obj-2" : [ "live.grid[1]", "live.grid", 0 ],
-			"obj-91::obj-2::obj-46::obj-2" : [ "live.grid[5]", "live.grid", 0 ],
 			"obj-55::obj-2::obj-46::obj-2" : [ "live.grid[2]", "live.grid", 0 ],
+			"obj-91::obj-2::obj-46::obj-2" : [ "live.grid[5]", "live.grid", 0 ],
 			"obj-169::obj-2::obj-46::obj-2" : [ "live.grid[4]", "live.grid", 0 ],
 			"obj-114::obj-2::obj-46::obj-2" : [ "live.grid[6]", "live.grid", 0 ],
 			"obj-9::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
@@ -5541,6 +5561,27 @@
 				"name" : "MLE.midiKey.maxpat",
 				"bootpath" : "~/Dropbox/MIT/Teaching/M080_Fall2019/Max/Class 7",
 				"patcherrelativepath" : "../../../../../../Dropbox/MIT/Teaching/M080_Fall2019/Max/Class 7",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.chat.maxpat",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/network",
+				"patcherrelativepath" : "../network",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mle.UDPsend.maxpat",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/network",
+				"patcherrelativepath" : "../network",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mle.UDPreceive.maxpat",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/network",
+				"patcherrelativepath" : "../network",
 				"type" : "JSON",
 				"implicit" : 1
 			}
