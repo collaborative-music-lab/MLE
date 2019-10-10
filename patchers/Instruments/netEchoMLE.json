@@ -28,8 +28,8 @@
 					"MLE.reverb::damping" : [ 0.5 ],
 					"MLE.reverb::diffusion" : [ 0.9 ],
 					"MLE.reverb::drywet" : [ 5.0 ],
-					"MLE.reverb::shape" : [ 0.02 ],
 					"MLE.reverb::size" : [ 0.232283464566929 ],
+					"MLE.reverb::time" : [  ],
 					"MLE.reverb::reverbFX" : [ -1 ]
 				}
 
@@ -62,8 +62,8 @@
 					"MLE.reverb::damping" : [ 0.5 ],
 					"MLE.reverb::diffusion" : [ 0.9 ],
 					"MLE.reverb::drywet" : [ 5.0 ],
-					"MLE.reverb::shape" : [ 0.02 ],
 					"MLE.reverb::size" : [ 0.232283464566929 ],
+					"MLE.reverb::time" : [  ],
 					"MLE.reverb::reverbFX" : [ -1 ]
 				}
 
@@ -96,8 +96,8 @@
 					"MLE.reverb::damping" : [ 0.5 ],
 					"MLE.reverb::diffusion" : [ 0.9 ],
 					"MLE.reverb::drywet" : [ 5.0 ],
-					"MLE.reverb::shape" : [ 0.02 ],
 					"MLE.reverb::size" : [ 0.232283464566929 ],
+					"MLE.reverb::time" : [  ],
 					"MLE.reverb::reverbFX" : [ -1 ]
 				}
 
@@ -130,8 +130,8 @@
 					"MLE.reverb::damping" : [ 0.5 ],
 					"MLE.reverb::diffusion" : [ 0.9 ],
 					"MLE.reverb::drywet" : [ 5.0 ],
-					"MLE.reverb::shape" : [ 0.02 ],
 					"MLE.reverb::size" : [ 0.232283464566929 ],
+					"MLE.reverb::time" : [  ],
 					"MLE.reverb::reverbFX" : [ -1 ]
 				}
 
@@ -164,8 +164,8 @@
 					"MLE.reverb::damping" : [ 0.5 ],
 					"MLE.reverb::diffusion" : [ 0.9 ],
 					"MLE.reverb::drywet" : [ 5.0 ],
-					"MLE.reverb::shape" : [ 0.02 ],
 					"MLE.reverb::size" : [ 0.232283464566929 ],
+					"MLE.reverb::time" : [  ],
 					"MLE.reverb::reverbFX" : [ -1 ]
 				}
 
@@ -198,8 +198,8 @@
 					"MLE.reverb::damping" : [ 0.5 ],
 					"MLE.reverb::diffusion" : [ 0.9 ],
 					"MLE.reverb::drywet" : [ 5.0 ],
-					"MLE.reverb::shape" : [ 0.02 ],
 					"MLE.reverb::size" : [ 0.232283464566929 ],
+					"MLE.reverb::time" : [  ],
 					"MLE.reverb::reverbFX" : [ -1 ]
 				}
 
@@ -232,8 +232,8 @@
 					"MLE.reverb::damping" : [ 0.5 ],
 					"MLE.reverb::diffusion" : [ 0.9 ],
 					"MLE.reverb::drywet" : [ 5.0 ],
-					"MLE.reverb::shape" : [ 0.02 ],
 					"MLE.reverb::size" : [ 0.232283464566929 ],
+					"MLE.reverb::time" : [  ],
 					"MLE.reverb::reverbFX" : [ -1 ]
 				}
 
@@ -266,8 +266,8 @@
 					"MLE.reverb::damping" : [ 0.5 ],
 					"MLE.reverb::diffusion" : [ 0.9 ],
 					"MLE.reverb::drywet" : [ 5.0 ],
-					"MLE.reverb::shape" : [ 0.02 ],
 					"MLE.reverb::size" : [ 0.232283464566929 ],
+					"MLE.reverb::time" : [  ],
 					"MLE.reverb::reverbFX" : [ -1 ]
 				}
 
@@ -279,13 +279,13 @@
 				"data" : 				{
 					"ampEcho" : [ 1.0 ],
 					"amplitude" : [ 110.0 ],
-					"attEcho" : [ 1.0 ],
+					"attEcho" : [ 1.1 ],
 					"attack" : [ 2.0 ],
 					"brightEcho" : [ 0.9 ],
 					"brightness" : [ 120.0 ],
 					"decay" : [ 400.0 ],
-					"decayEcho" : [ 1.1 ],
-					"delay" : [ 0.5 ],
+					"decayEcho" : [ 1.25 ],
+					"delay" : [ 0.75 ],
 					"delayEcho" : [ 1.0 ],
 					"fbEcho" : [ 1.0 ],
 					"feedback" : [ 0.9 ],
@@ -300,8 +300,8 @@
 					"MLE.reverb::damping" : [ 0.5 ],
 					"MLE.reverb::diffusion" : [ 0.9 ],
 					"MLE.reverb::drywet" : [ 5.0 ],
-					"MLE.reverb::shape" : [ 0.02 ],
 					"MLE.reverb::size" : [ 0.232283464566929 ],
+					"MLE.reverb::time" : [ 0.02 ],
 					"MLE.reverb::reverbFX" : [ -1 ]
 				}
 
@@ -334,8 +334,8 @@
 					"MLE.reverb::damping" : [ 0.5 ],
 					"MLE.reverb::diffusion" : [ 0.9 ],
 					"MLE.reverb::drywet" : [ 5.0 ],
-					"MLE.reverb::shape" : [ 0.02 ],
 					"MLE.reverb::size" : [ 0.232283464566929 ],
+					"MLE.reverb::time" : [  ],
 					"MLE.reverb::reverbFX" : [ -1 ]
 				}
 
@@ -368,8 +368,8 @@
 					"MLE.reverb::damping" : [ 0.5 ],
 					"MLE.reverb::diffusion" : [ 0.9 ],
 					"MLE.reverb::drywet" : [ 5.0 ],
-					"MLE.reverb::shape" : [ 0.02 ],
 					"MLE.reverb::size" : [ 0.232283464566929 ],
+					"MLE.reverb::time" : [  ],
 					"MLE.reverb::reverbFX" : [ -1 ]
 				}
 
@@ -402,8 +402,8 @@
 					"MLE.reverb::damping" : [ 0.5 ],
 					"MLE.reverb::diffusion" : [ 0.9 ],
 					"MLE.reverb::drywet" : [ 5.0 ],
-					"MLE.reverb::shape" : [ 0.02 ],
 					"MLE.reverb::size" : [ 0.232283464566929 ],
+					"MLE.reverb::time" : [  ],
 					"MLE.reverb::reverbFX" : [ -1 ]
 				}
 
