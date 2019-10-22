@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-34",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 936.0, 126.0, 29.5, 22.0 ],
+					"text" : "+ 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -79,7 +91,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1124.0, 144.800003051757812, 50.0, 22.0 ],
+					"patching_rect" : [ 1059.0, 186.800003051757812, 50.0, 22.0 ],
 					"text" : "0.4"
 				}
 
@@ -91,7 +103,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 999.9000244140625, 86.400001525878906, 135.0, 22.0 ],
+					"patching_rect" : [ 999.9000244140625, 53.0, 135.0, 22.0 ],
 					"text" : "MLE.UDPreceive swing"
 				}
 
@@ -103,8 +115,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1042.4000244140625, 159.199996948242188, 50.0, 22.0 ],
-					"text" : "0"
+					"patching_rect" : [ 977.4000244140625, 201.199996948242188, 50.0, 22.0 ],
+					"text" : "10"
 				}
 
 			}
@@ -115,7 +127,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 1005.60003662109375, 119.200004577636719, 87.0, 22.0 ],
+					"patching_rect" : [ 940.60003662109375, 161.200004577636719, 87.0, 22.0 ],
 					"text" : "MLE.swing 3 8"
 				}
 
@@ -1878,7 +1890,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1006.0, 218.0, 41.0, 22.0 ],
+					"patching_rect" : [ 899.0, 21.0, 41.0, 22.0 ],
 					"text" : "set $1"
 				}
 
@@ -1890,7 +1902,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 908.5, 209.666656494140625, 80.0, 22.0 ],
+					"patching_rect" : [ 904.5, 82.666656494140625, 80.0, 22.0 ],
 					"text" : "MLE.beat 4 4"
 				}
 
@@ -2994,7 +3006,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 969.3333740234375, 170.0, 57.0, 20.0 ],
+					"patching_rect" : [ 965.3333740234375, 43.0, 57.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 262.5, 2.433341503143311, 57.0, 20.0 ],
 					"text" : "tempo"
@@ -3010,7 +3022,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 910.3333740234375, 175.0, 50.0, 22.0 ],
+					"patching_rect" : [ 906.3333740234375, 48.0, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 210.5, 2.433341503143311, 50.0, 22.0 ]
 				}
@@ -5450,7 +5462,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 248.0, 250.0, 50.0, 22.0 ],
-									"text" : "2 4"
+									"text" : "0"
 								}
 
 							}
@@ -7954,25 +7966,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-34", 0 ],
+					"source" : [ "obj-15", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-36", 1 ],
 					"order" : 0,
 					"source" : [ "obj-15", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-36", 4 ],
-					"order" : 0,
-					"source" : [ "obj-15", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-36", 0 ],
-					"order" : 1,
-					"source" : [ "obj-15", 1 ]
 				}
 
 			}
@@ -8031,7 +8034,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-349", 0 ],
-					"midpoints" : [ 1015.5, 243.0, 903.0, 243.0, 903.0, 171.0, 919.8333740234375, 171.0 ],
+					"midpoints" : [ 908.5, 45.0, 915.8333740234375, 45.0 ],
 					"source" : [ "obj-17", 0 ]
 				}
 
@@ -8330,6 +8333,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-36", 4 ],
+					"order" : 0,
+					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-36", 0 ],
+					"order" : 1,
+					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-246", 1 ],
 					"midpoints" : [ 633.25, 219.0, 648.1666259765625, 219.0 ],
 					"source" : [ "obj-345", 1 ]
@@ -8542,15 +8561,15 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-60" : [ "live.grid[3]", "live.grid", 0 ],
-			"obj-346::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
 			"obj-247" : [ "live.grid[7]", "live.grid", 0 ],
-			"obj-15::obj-46::obj-2" : [ "live.grid[1]", "live.grid", 0 ],
-			"obj-353" : [ "live.grid[4]", "live.grid", 0 ],
 			"obj-291" : [ "live.grid[8]", "live.grid", 0 ],
 			"obj-2" : [ "live.grid", "live.grid", 0 ],
-			"obj-36::obj-2" : [ "live.grid[2]", "live.grid", 0 ],
 			"obj-246" : [ "live.grid[6]", "live.grid", 0 ],
+			"obj-353" : [ "live.grid[4]", "live.grid", 0 ],
+			"obj-36::obj-2" : [ "live.grid[2]", "live.grid", 0 ],
+			"obj-60" : [ "live.grid[3]", "live.grid", 0 ],
+			"obj-346::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
+			"obj-15::obj-46::obj-2" : [ "live.grid[1]", "live.grid", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -8560,98 +8579,98 @@
 		"dependency_cache" : [ 			{
 				"name" : "MLE.FMsynth.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/audio",
-				"patcherrelativepath" : "../../../../Documents/github/CML/MLE/patchers/audio",
+				"patcherrelativepath" : "../../patchers/audio",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.fmPoly.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/audio",
-				"patcherrelativepath" : "../../../../Documents/github/CML/MLE/patchers/audio",
+				"patcherrelativepath" : "../../patchers/audio",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "init.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
-				"patcherrelativepath" : "../../../../Documents/github/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "../../patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.pattrNamer.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox",
-				"patcherrelativepath" : "../../../../Documents/github/CML/MLE/patchers/sandbox",
+				"patcherrelativepath" : "../../patchers/sandbox",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.bassDrum.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/audio",
-				"patcherrelativepath" : "../../../../Documents/github/CML/MLE/patchers/audio",
+				"patcherrelativepath" : "../../patchers/audio",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.UDPreceive.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/network",
-				"patcherrelativepath" : "../../../../Documents/github/CML/MLE/patchers/network",
+				"patcherrelativepath" : "../../patchers/network",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "initS.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
-				"patcherrelativepath" : "../../../../Documents/github/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "../../patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.beat.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/network",
-				"patcherrelativepath" : "../../../../Documents/github/CML/MLE/patchers/network",
+				"patcherrelativepath" : "../../patchers/network",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.swing.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox",
-				"patcherrelativepath" : "../../../../Documents/github/CML/MLE/patchers/sandbox",
+				"patcherrelativepath" : "../../patchers/sandbox",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.chat.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/network",
-				"patcherrelativepath" : "../../../../Documents/github/CML/MLE/patchers/network",
+				"patcherrelativepath" : "../../patchers/network",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mle.UDPsend.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/network",
-				"patcherrelativepath" : "../../../../Documents/github/CML/MLE/patchers/network",
+				"patcherrelativepath" : "../../patchers/network",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mle.UDPreceive.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/network",
-				"patcherrelativepath" : "../../../../Documents/github/CML/MLE/patchers/network",
+				"patcherrelativepath" : "../../patchers/network",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "asciiLinearMapping.txt",
 				"bootpath" : "~/Documents/github/CML/MLE/code",
-				"patcherrelativepath" : "../../../../Documents/github/CML/MLE/code",
+				"patcherrelativepath" : "../../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.output.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
-				"patcherrelativepath" : "../../../../Documents/github/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "../../patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
