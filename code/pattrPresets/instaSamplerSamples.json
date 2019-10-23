@@ -16,10 +16,10 @@
 			"2" : 			{
 				"id" : 2,
 				"data" : 				{
-					"menuA3" : [ 5 ],
-					"menuA4" : [ 1 ],
-					"menuB3" : [ 0 ],
-					"menuB4" : [ 2 ]
+					"menuA3" : [ 0 ],
+					"menuA4" : [ 2 ],
+					"menuB3" : [ 3 ],
+					"menuB4" : [ 1 ]
 				}
 
 			}
@@ -27,43 +27,10 @@
 			"3" : 			{
 				"id" : 3,
 				"data" : 				{
-					"menuA3" : [ 5 ],
+					"menuA3" : [ 0 ],
 					"menuA4" : [ 0 ],
 					"menuB3" : [ 0 ],
 					"menuB4" : [ 0 ]
-				}
-
-			}
-,
-			"4" : 			{
-				"id" : 4,
-				"data" : 				{
-					"menuA3" : [ 1 ],
-					"menuA4" : [ 3 ],
-					"menuB3" : [ 1 ],
-					"menuB4" : [ 2 ]
-				}
-
-			}
-,
-			"5" : 			{
-				"id" : 5,
-				"data" : 				{
-					"menuA3" : [ 1 ],
-					"menuA4" : [ 0 ],
-					"menuB3" : [ 1 ],
-					"menuB4" : [ 4 ]
-				}
-
-			}
-,
-			"6" : 			{
-				"id" : 6,
-				"data" : 				{
-					"menuA3" : [ 3 ],
-					"menuA4" : [ 2 ],
-					"menuB3" : [ 3 ],
-					"menuB4" : [ 3 ]
 				}
 
 			}
