@@ -45,7 +45,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 187.0, 19.0, 50.0, 22.0 ],
-					"text" : "42"
+					"text" : "110"
 				}
 
 			}
@@ -85,7 +85,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 628.0, 1277.0, 50.0, 35.0 ],
-					"text" : "0.450807"
+					"text" : "0.230769"
 				}
 
 			}
@@ -660,7 +660,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 240.166664958000183, 271.733332812786102, 133.333335816860199, 49.0 ],
-									"text" : "0 1 0 0 1 0 2 0 4 0 5 0 6 1 0 1 1 1 1 0 2 1 3 0 5 0 5 0 7 0 8 0 10"
+									"text" : "0 1 1 0 1 0 1 0 1 0 1 0 1 1 1 1 8 1 8 0 8 0 8 0 8 1 8 0 8 0 8 0 8"
 								}
 
 							}
@@ -1824,7 +1824,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 445.0, 247.0, 53.0, 22.0 ],
-									"text" : "b"
+									"text" : "m"
 								}
 
 							}
@@ -2485,7 +2485,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 172.0, 212.0, 50.0, 22.0 ],
-									"text" : "4"
+									"text" : "6"
 								}
 
 							}
@@ -2497,7 +2497,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 228.0, 171.0, 50.0, 22.0 ],
-									"text" : "4 0 0"
+									"text" : "6 0 1"
 								}
 
 							}
@@ -3822,7 +3822,7 @@
 					"presentation_rect" : [ 8.0, 646.5, 330.0, 27.0 ],
 					"preset_data" : [ 						{
 							"number" : 1,
-							"data" : [ 5, "obj-15", "umenu", "int", 1, 5, "obj-52", "number", "int", 81, 5, "obj-26", "dial", "float", 0.179487198591232, 5, "obj-42", "number", "int", 0, 5, "obj-83", "dial", "float", 0.769230782985687, 5, "obj-55", "flonum", "float", 27.0, 5, "obj-51", "number", "int", 17, 5, "obj-69", "umenu", "int", 2, 5, "obj-133", "umenu", "int", 1, 5, "obj-166", "dial", "float", 0.217948719859123, 5, "obj-168", "dial", "float", 0.0, 5, "obj-265", "umenu", "int", 0, 5, "obj-281", "number", "int", 8, 5, "obj-10", "number", "int", 0, 5, "obj-106", "flonum", "float", 0.48000967502594, 5, "obj-46", "live.grid", "mode", 0, 5, "obj-46", "live.grid", "matrixmode", 1, 5, "obj-46", "live.grid", "columns", 16, 5, "obj-46", "live.grid", "rows", 1, 6, "obj-46", "live.grid", "constraint", 1, 1, 6, "obj-46", "live.grid", "constraint", 2, 1, 6, "obj-46", "live.grid", "constraint", 3, 1, 6, "obj-46", "live.grid", "constraint", 4, 1, 6, "obj-46", "live.grid", "constraint", 5, 1, 6, "obj-46", "live.grid", "constraint", 6, 1, 6, "obj-46", "live.grid", "constraint", 7, 1, 6, "obj-46", "live.grid", "constraint", 8, 1, 6, "obj-46", "live.grid", "constraint", 9, 1, 6, "obj-46", "live.grid", "constraint", 10, 1, 6, "obj-46", "live.grid", "constraint", 11, 1, 6, "obj-46", "live.grid", "constraint", 12, 1, 6, "obj-46", "live.grid", "constraint", 13, 1, 6, "obj-46", "live.grid", "constraint", 14, 1, 6, "obj-46", "live.grid", "constraint", 15, 1, 6, "obj-46", "live.grid", "constraint", 16, 1, 4, "obj-46", "live.grid", "clear", 20, "obj-46", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-86", "live.grid", "mode", 0, 5, "obj-86", "live.grid", "matrixmode", 1, 5, "obj-86", "live.grid", "columns", 16, 5, "obj-86", "live.grid", "rows", 1, 6, "obj-86", "live.grid", "constraint", 1, 1, 6, "obj-86", "live.grid", "constraint", 2, 1, 6, "obj-86", "live.grid", "constraint", 3, 1, 6, "obj-86", "live.grid", "constraint", 4, 1, 6, "obj-86", "live.grid", "constraint", 5, 1, 6, "obj-86", "live.grid", "constraint", 6, 1, 6, "obj-86", "live.grid", "constraint", 7, 1, 6, "obj-86", "live.grid", "constraint", 8, 1, 6, "obj-86", "live.grid", "constraint", 9, 1, 6, "obj-86", "live.grid", "constraint", 10, 1, 6, "obj-86", "live.grid", "constraint", 11, 1, 6, "obj-86", "live.grid", "constraint", 12, 1, 6, "obj-86", "live.grid", "constraint", 13, 1, 6, "obj-86", "live.grid", "constraint", 14, 1, 6, "obj-86", "live.grid", "constraint", 15, 1, 6, "obj-86", "live.grid", "constraint", 16, 1, 4, "obj-86", "live.grid", "clear", 20, "obj-86", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-177", "dial", "float", 0.5, 5, "obj-179", "dial", "float", 0.012820512987673, 5, "obj-182", "number", "int", 32, 5, "obj-104", "number", "int", 3000, 5, "obj-120", "flonum", "float", 0.419999986886978, 5, "obj-121", "flonum", "float", 1.399999976158142, 6, "obj-76", "number~", "list", 0.0, 0.0 ]
+							"data" : [ 5, "obj-15", "umenu", "int", 1, 5, "obj-52", "number", "int", 81, 5, "obj-26", "dial", "float", 0.179487198591232, 5, "obj-42", "number", "int", 0, 5, "obj-83", "dial", "float", 0.769230782985687, 5, "obj-55", "flonum", "float", 16.0, 5, "obj-51", "number", "int", 17, 5, "obj-69", "umenu", "int", 2, 5, "obj-133", "umenu", "int", 1, 5, "obj-166", "dial", "float", 0.217948719859123, 5, "obj-168", "dial", "float", 0.0, 5, "obj-265", "umenu", "int", 0, 5, "obj-281", "number", "int", 8, 5, "obj-10", "number", "int", 0, 5, "obj-106", "flonum", "float", 0.48000967502594, 5, "obj-46", "live.grid", "mode", 0, 5, "obj-46", "live.grid", "matrixmode", 1, 5, "obj-46", "live.grid", "columns", 16, 5, "obj-46", "live.grid", "rows", 1, 6, "obj-46", "live.grid", "constraint", 1, 1, 6, "obj-46", "live.grid", "constraint", 2, 1, 6, "obj-46", "live.grid", "constraint", 3, 1, 6, "obj-46", "live.grid", "constraint", 4, 1, 6, "obj-46", "live.grid", "constraint", 5, 1, 6, "obj-46", "live.grid", "constraint", 6, 1, 6, "obj-46", "live.grid", "constraint", 7, 1, 6, "obj-46", "live.grid", "constraint", 8, 1, 6, "obj-46", "live.grid", "constraint", 9, 1, 6, "obj-46", "live.grid", "constraint", 10, 1, 6, "obj-46", "live.grid", "constraint", 11, 1, 6, "obj-46", "live.grid", "constraint", 12, 1, 6, "obj-46", "live.grid", "constraint", 13, 1, 6, "obj-46", "live.grid", "constraint", 14, 1, 6, "obj-46", "live.grid", "constraint", 15, 1, 6, "obj-46", "live.grid", "constraint", 16, 1, 4, "obj-46", "live.grid", "clear", 20, "obj-46", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-86", "live.grid", "mode", 0, 5, "obj-86", "live.grid", "matrixmode", 1, 5, "obj-86", "live.grid", "columns", 16, 5, "obj-86", "live.grid", "rows", 1, 6, "obj-86", "live.grid", "constraint", 1, 1, 6, "obj-86", "live.grid", "constraint", 2, 1, 6, "obj-86", "live.grid", "constraint", 3, 1, 6, "obj-86", "live.grid", "constraint", 4, 1, 6, "obj-86", "live.grid", "constraint", 5, 1, 6, "obj-86", "live.grid", "constraint", 6, 1, 6, "obj-86", "live.grid", "constraint", 7, 1, 6, "obj-86", "live.grid", "constraint", 8, 1, 6, "obj-86", "live.grid", "constraint", 9, 1, 6, "obj-86", "live.grid", "constraint", 10, 1, 6, "obj-86", "live.grid", "constraint", 11, 1, 6, "obj-86", "live.grid", "constraint", 12, 1, 6, "obj-86", "live.grid", "constraint", 13, 1, 6, "obj-86", "live.grid", "constraint", 14, 1, 6, "obj-86", "live.grid", "constraint", 15, 1, 6, "obj-86", "live.grid", "constraint", 16, 1, 4, "obj-86", "live.grid", "clear", 20, "obj-86", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-177", "dial", "float", 0.5, 5, "obj-179", "dial", "float", 0.012820512987673, 5, "obj-182", "number", "int", 32, 5, "obj-104", "number", "int", 3000, 5, "obj-120", "flonum", "float", 0.419999986886978, 5, "obj-121", "flonum", "float", 1.399999976158142, 6, "obj-76", "number~", "list", 0.0, 0.0 ]
 						}
 , 						{
 							"number" : 2,
@@ -3830,11 +3830,11 @@
 						}
 , 						{
 							"number" : 3,
-							"data" : [ 5, "obj-15", "umenu", "int", 2, 5, "obj-52", "number", "int", 48, 5, "obj-26", "dial", "float", 0.115384615957737, 5, "obj-42", "number", "int", 0, 5, "obj-83", "dial", "float", 0.628205120563507, 5, "obj-55", "flonum", "float", 40.0, 5, "obj-51", "number", "int", 23, 5, "obj-69", "umenu", "int", 2, 5, "obj-133", "umenu", "int", 1, 5, "obj-166", "dial", "float", 0.15384615957737, 5, "obj-168", "dial", "float", 0.0, 5, "obj-265", "umenu", "int", 6, 5, "obj-281", "number", "int", 4, 5, "obj-10", "number", "int", 0, 5, "obj-106", "flonum", "float", 0.48000967502594, 5, "obj-46", "live.grid", "mode", 0, 5, "obj-46", "live.grid", "matrixmode", 1, 5, "obj-46", "live.grid", "columns", 16, 5, "obj-46", "live.grid", "rows", 1, 6, "obj-46", "live.grid", "constraint", 1, 1, 6, "obj-46", "live.grid", "constraint", 2, 1, 6, "obj-46", "live.grid", "constraint", 3, 1, 6, "obj-46", "live.grid", "constraint", 4, 1, 6, "obj-46", "live.grid", "constraint", 5, 1, 6, "obj-46", "live.grid", "constraint", 6, 1, 6, "obj-46", "live.grid", "constraint", 7, 1, 6, "obj-46", "live.grid", "constraint", 8, 1, 6, "obj-46", "live.grid", "constraint", 9, 1, 6, "obj-46", "live.grid", "constraint", 10, 1, 6, "obj-46", "live.grid", "constraint", 11, 1, 6, "obj-46", "live.grid", "constraint", 12, 1, 6, "obj-46", "live.grid", "constraint", 13, 1, 6, "obj-46", "live.grid", "constraint", 14, 1, 6, "obj-46", "live.grid", "constraint", 15, 1, 6, "obj-46", "live.grid", "constraint", 16, 1, 4, "obj-46", "live.grid", "clear", 20, "obj-46", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-86", "live.grid", "mode", 0, 5, "obj-86", "live.grid", "matrixmode", 1, 5, "obj-86", "live.grid", "columns", 16, 5, "obj-86", "live.grid", "rows", 1, 6, "obj-86", "live.grid", "constraint", 1, 1, 6, "obj-86", "live.grid", "constraint", 2, 1, 6, "obj-86", "live.grid", "constraint", 3, 1, 6, "obj-86", "live.grid", "constraint", 4, 1, 6, "obj-86", "live.grid", "constraint", 5, 1, 6, "obj-86", "live.grid", "constraint", 6, 1, 6, "obj-86", "live.grid", "constraint", 7, 1, 6, "obj-86", "live.grid", "constraint", 8, 1, 6, "obj-86", "live.grid", "constraint", 9, 1, 6, "obj-86", "live.grid", "constraint", 10, 1, 6, "obj-86", "live.grid", "constraint", 11, 1, 6, "obj-86", "live.grid", "constraint", 12, 1, 6, "obj-86", "live.grid", "constraint", 13, 1, 6, "obj-86", "live.grid", "constraint", 14, 1, 6, "obj-86", "live.grid", "constraint", 15, 1, 6, "obj-86", "live.grid", "constraint", 16, 1, 4, "obj-86", "live.grid", "clear", 20, "obj-86", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-177", "dial", "float", 0.333333343267441, 5, "obj-179", "dial", "float", 0.051282059401274, 5, "obj-182", "number", "int", 8, 5, "obj-104", "number", "int", 400, 5, "obj-120", "flonum", "float", 0.419999986886978, 5, "obj-121", "flonum", "float", 1.399999976158142, 6, "obj-76", "number~", "list", 0.0, 0.0 ]
+							"data" : [ 5, "obj-15", "umenu", "int", 2, 5, "obj-52", "number", "int", 48, 5, "obj-26", "dial", "float", 0.115384615957737, 5, "obj-42", "number", "int", 0, 5, "obj-83", "dial", "float", 0.628205120563507, 5, "obj-55", "flonum", "float", 52.0, 5, "obj-51", "number", "int", 23, 5, "obj-69", "umenu", "int", 2, 5, "obj-133", "umenu", "int", 1, 5, "obj-166", "dial", "float", 0.15384615957737, 5, "obj-168", "dial", "float", 0.0, 5, "obj-265", "umenu", "int", 6, 5, "obj-281", "number", "int", 8, 5, "obj-10", "number", "int", 0, 5, "obj-106", "flonum", "float", 0.48000967502594, 5, "obj-46", "live.grid", "mode", 0, 5, "obj-46", "live.grid", "matrixmode", 1, 5, "obj-46", "live.grid", "columns", 16, 5, "obj-46", "live.grid", "rows", 1, 6, "obj-46", "live.grid", "constraint", 1, 1, 6, "obj-46", "live.grid", "constraint", 2, 1, 6, "obj-46", "live.grid", "constraint", 3, 1, 6, "obj-46", "live.grid", "constraint", 4, 1, 6, "obj-46", "live.grid", "constraint", 5, 1, 6, "obj-46", "live.grid", "constraint", 6, 1, 6, "obj-46", "live.grid", "constraint", 7, 1, 6, "obj-46", "live.grid", "constraint", 8, 1, 6, "obj-46", "live.grid", "constraint", 9, 1, 6, "obj-46", "live.grid", "constraint", 10, 1, 6, "obj-46", "live.grid", "constraint", 11, 1, 6, "obj-46", "live.grid", "constraint", 12, 1, 6, "obj-46", "live.grid", "constraint", 13, 1, 6, "obj-46", "live.grid", "constraint", 14, 1, 6, "obj-46", "live.grid", "constraint", 15, 1, 6, "obj-46", "live.grid", "constraint", 16, 1, 4, "obj-46", "live.grid", "clear", 20, "obj-46", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-86", "live.grid", "mode", 0, 5, "obj-86", "live.grid", "matrixmode", 1, 5, "obj-86", "live.grid", "columns", 16, 5, "obj-86", "live.grid", "rows", 1, 6, "obj-86", "live.grid", "constraint", 1, 1, 6, "obj-86", "live.grid", "constraint", 2, 1, 6, "obj-86", "live.grid", "constraint", 3, 1, 6, "obj-86", "live.grid", "constraint", 4, 1, 6, "obj-86", "live.grid", "constraint", 5, 1, 6, "obj-86", "live.grid", "constraint", 6, 1, 6, "obj-86", "live.grid", "constraint", 7, 1, 6, "obj-86", "live.grid", "constraint", 8, 1, 6, "obj-86", "live.grid", "constraint", 9, 1, 6, "obj-86", "live.grid", "constraint", 10, 1, 6, "obj-86", "live.grid", "constraint", 11, 1, 6, "obj-86", "live.grid", "constraint", 12, 1, 6, "obj-86", "live.grid", "constraint", 13, 1, 6, "obj-86", "live.grid", "constraint", 14, 1, 6, "obj-86", "live.grid", "constraint", 15, 1, 6, "obj-86", "live.grid", "constraint", 16, 1, 4, "obj-86", "live.grid", "clear", 20, "obj-86", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-177", "dial", "float", 0.333333343267441, 5, "obj-179", "dial", "float", 0.051282059401274, 5, "obj-182", "number", "int", 8, 5, "obj-104", "number", "int", 400, 5, "obj-120", "flonum", "float", 0.419999986886978, 5, "obj-121", "flonum", "float", 1.399999976158142, 6, "obj-76", "number~", "list", 0.0, 0.0 ]
 						}
 , 						{
 							"number" : 4,
-							"data" : [ 5, "obj-15", "umenu", "int", 0, 5, "obj-52", "number", "int", 36, 5, "obj-26", "dial", "float", 0.5, 5, "obj-42", "number", "int", 0, 5, "obj-83", "dial", "float", 0.205128192901611, 5, "obj-55", "flonum", "float", 57.0, 5, "obj-51", "number", "int", 22, 5, "obj-69", "umenu", "int", 1, 5, "obj-133", "umenu", "int", 1, 5, "obj-166", "dial", "float", 0.128205135464668, 5, "obj-168", "dial", "float", 0.0, 5, "obj-265", "umenu", "int", 5, 5, "obj-281", "number", "int", 8, 5, "obj-10", "number", "int", 0, 5, "obj-106", "flonum", "float", 0.48000967502594, 5, "obj-46", "live.grid", "mode", 0, 5, "obj-46", "live.grid", "matrixmode", 1, 5, "obj-46", "live.grid", "columns", 16, 5, "obj-46", "live.grid", "rows", 1, 6, "obj-46", "live.grid", "constraint", 1, 1, 6, "obj-46", "live.grid", "constraint", 2, 1, 6, "obj-46", "live.grid", "constraint", 3, 1, 6, "obj-46", "live.grid", "constraint", 4, 1, 6, "obj-46", "live.grid", "constraint", 5, 1, 6, "obj-46", "live.grid", "constraint", 6, 1, 6, "obj-46", "live.grid", "constraint", 7, 1, 6, "obj-46", "live.grid", "constraint", 8, 1, 6, "obj-46", "live.grid", "constraint", 9, 1, 6, "obj-46", "live.grid", "constraint", 10, 1, 6, "obj-46", "live.grid", "constraint", 11, 1, 6, "obj-46", "live.grid", "constraint", 12, 1, 6, "obj-46", "live.grid", "constraint", 13, 1, 6, "obj-46", "live.grid", "constraint", 14, 1, 6, "obj-46", "live.grid", "constraint", 15, 1, 6, "obj-46", "live.grid", "constraint", 16, 1, 4, "obj-46", "live.grid", "clear", 20, "obj-46", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-86", "live.grid", "mode", 0, 5, "obj-86", "live.grid", "matrixmode", 1, 5, "obj-86", "live.grid", "columns", 16, 5, "obj-86", "live.grid", "rows", 1, 6, "obj-86", "live.grid", "constraint", 1, 1, 6, "obj-86", "live.grid", "constraint", 2, 1, 6, "obj-86", "live.grid", "constraint", 3, 1, 6, "obj-86", "live.grid", "constraint", 4, 1, 6, "obj-86", "live.grid", "constraint", 5, 1, 6, "obj-86", "live.grid", "constraint", 6, 1, 6, "obj-86", "live.grid", "constraint", 7, 1, 6, "obj-86", "live.grid", "constraint", 8, 1, 6, "obj-86", "live.grid", "constraint", 9, 1, 6, "obj-86", "live.grid", "constraint", 10, 1, 6, "obj-86", "live.grid", "constraint", 11, 1, 6, "obj-86", "live.grid", "constraint", 12, 1, 6, "obj-86", "live.grid", "constraint", 13, 1, 6, "obj-86", "live.grid", "constraint", 14, 1, 6, "obj-86", "live.grid", "constraint", 15, 1, 6, "obj-86", "live.grid", "constraint", 16, 1, 4, "obj-86", "live.grid", "clear", 20, "obj-86", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-177", "dial", "float", 0.15384615957737, 5, "obj-179", "dial", "float", 0.15384615957737, 5, "obj-182", "number", "int", 8, 5, "obj-104", "number", "int", 400, 5, "obj-120", "flonum", "float", 0.419999986886978, 5, "obj-121", "flonum", "float", 1.399999976158142, 6, "obj-76", "number~", "list", 0.0, 0.0 ]
+							"data" : [ 5, "obj-15", "umenu", "int", 2, 5, "obj-52", "number", "int", 0, 5, "obj-26", "dial", "float", 0.423076927661896, 5, "obj-42", "number", "int", 0, 5, "obj-83", "dial", "float", 1.0, 5, "obj-55", "flonum", "float", 50.0, 5, "obj-51", "number", "int", 22, 5, "obj-69", "umenu", "int", 1, 5, "obj-133", "umenu", "int", 1, 5, "obj-166", "dial", "float", 0.0, 5, "obj-168", "dial", "float", 0.0, 5, "obj-265", "umenu", "int", 5, 5, "obj-281", "number", "int", 8, 5, "obj-10", "number", "int", 0, 5, "obj-106", "flonum", "float", 0.48000967502594, 5, "obj-46", "live.grid", "mode", 0, 5, "obj-46", "live.grid", "matrixmode", 1, 5, "obj-46", "live.grid", "columns", 16, 5, "obj-46", "live.grid", "rows", 1, 6, "obj-46", "live.grid", "constraint", 1, 1, 6, "obj-46", "live.grid", "constraint", 2, 1, 6, "obj-46", "live.grid", "constraint", 3, 1, 6, "obj-46", "live.grid", "constraint", 4, 1, 6, "obj-46", "live.grid", "constraint", 5, 1, 6, "obj-46", "live.grid", "constraint", 6, 1, 6, "obj-46", "live.grid", "constraint", 7, 1, 6, "obj-46", "live.grid", "constraint", 8, 1, 6, "obj-46", "live.grid", "constraint", 9, 1, 6, "obj-46", "live.grid", "constraint", 10, 1, 6, "obj-46", "live.grid", "constraint", 11, 1, 6, "obj-46", "live.grid", "constraint", 12, 1, 6, "obj-46", "live.grid", "constraint", 13, 1, 6, "obj-46", "live.grid", "constraint", 14, 1, 6, "obj-46", "live.grid", "constraint", 15, 1, 6, "obj-46", "live.grid", "constraint", 16, 1, 4, "obj-46", "live.grid", "clear", 20, "obj-46", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-86", "live.grid", "mode", 0, 5, "obj-86", "live.grid", "matrixmode", 1, 5, "obj-86", "live.grid", "columns", 16, 5, "obj-86", "live.grid", "rows", 1, 6, "obj-86", "live.grid", "constraint", 1, 1, 6, "obj-86", "live.grid", "constraint", 2, 1, 6, "obj-86", "live.grid", "constraint", 3, 1, 6, "obj-86", "live.grid", "constraint", 4, 1, 6, "obj-86", "live.grid", "constraint", 5, 1, 6, "obj-86", "live.grid", "constraint", 6, 1, 6, "obj-86", "live.grid", "constraint", 7, 1, 6, "obj-86", "live.grid", "constraint", 8, 1, 6, "obj-86", "live.grid", "constraint", 9, 1, 6, "obj-86", "live.grid", "constraint", 10, 1, 6, "obj-86", "live.grid", "constraint", 11, 1, 6, "obj-86", "live.grid", "constraint", 12, 1, 6, "obj-86", "live.grid", "constraint", 13, 1, 6, "obj-86", "live.grid", "constraint", 14, 1, 6, "obj-86", "live.grid", "constraint", 15, 1, 6, "obj-86", "live.grid", "constraint", 16, 1, 4, "obj-86", "live.grid", "clear", 20, "obj-86", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-177", "dial", "float", 0.15384615957737, 5, "obj-179", "dial", "float", 0.0, 5, "obj-182", "number", "int", 8, 5, "obj-104", "number", "int", 400, 5, "obj-120", "flonum", "float", 0.419999986886978, 5, "obj-121", "flonum", "float", 1.399999976158142, 6, "obj-76", "number~", "list", 0.0, 0.0 ]
 						}
 , 						{
 							"number" : 5,
@@ -6285,7 +6285,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 167.0, 106.0, 50.0, 35.0 ],
-									"text" : "0.602564"
+									"text" : "0.769231"
 								}
 
 							}
@@ -7532,7 +7532,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 149.0, 282.0, 164.0, 22.0 ],
-									"text" : "233.081881"
+									"text" : "146.832384"
 								}
 
 							}
@@ -7544,7 +7544,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 149.0, 309.0, 164.0, 22.0 ],
-									"text" : "243.615389"
+									"text" : "153.468078"
 								}
 
 							}
