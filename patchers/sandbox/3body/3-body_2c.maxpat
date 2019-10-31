@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ -124.0, 972.0, 95.0, 22.0 ],
+					"text" : "prepend custom"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-7",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -53,7 +65,7 @@
 				"box" : 				{
 					"id" : "obj-37",
 					"maxclass" : "newobj",
-					"numinlets" : 0,
+					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ -46.5, 1393.666748046875, 149.0, 22.0 ],
@@ -102,7 +114,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ -313.0, 988.0, 140.0, 22.0 ],
-					"text" : "0 4 5 7 11 9 7 5"
+					"text" : "1 3 4 5 8 10 12 13"
 				}
 
 			}
@@ -176,7 +188,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 17.0, 79.0, 50.0, 22.0 ]
+					"patching_rect" : [ 17.0, 79.0, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 269.625, 5.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -4227,7 +4241,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 329.5, 148.0, 50.0, 22.0 ],
-									"text" : "24"
+									"text" : "44"
 								}
 
 							}
@@ -4891,7 +4905,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 79.0, 1141.0, 937.0 ],
+						"rect" : [ 124.0, 79.0, 1141.0, 937.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -4926,7 +4940,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 282.0, 265.0, 50.0, 22.0 ],
-									"text" : "1856."
+									"text" : "1600."
 								}
 
 							}
@@ -4938,7 +4952,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ -25.0, 142.0, 50.0, 22.0 ],
-									"text" : "58"
+									"text" : "50"
 								}
 
 							}
@@ -4950,7 +4964,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 450.0, 424.0, 50.0, 22.0 ],
-									"text" : "35 0"
+									"text" : "37 0"
 								}
 
 							}
@@ -9615,7 +9629,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 250.0, 49.0, 50.0, 22.0 ],
-									"text" : "4."
+									"text" : "0.1"
 								}
 
 							}
@@ -10563,7 +10577,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 287.0, 181.0, 214.0, 22.0 ],
-									"text" : "153.523109 19.968124"
+									"text" : "78.306468 15.155285"
 								}
 
 							}
@@ -11898,15 +11912,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-194", 0 ],
-					"order" : 2,
-					"source" : [ "obj-4", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-195", 0 ],
+					"destination" : [ "obj-32", 1 ],
 					"order" : 1,
 					"source" : [ "obj-4", 0 ]
 				}
@@ -11914,16 +11920,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-202", 0 ],
+					"destination" : [ "obj-6", 0 ],
 					"order" : 0,
-					"source" : [ "obj-4", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-32", 1 ],
-					"order" : 3,
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -12059,6 +12057,30 @@
 				"patchline" : 				{
 					"destination" : [ "obj-56", 0 ],
 					"source" : [ "obj-58", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-194", 0 ],
+					"order" : 2,
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-195", 0 ],
+					"order" : 1,
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-202", 0 ],
+					"order" : 0,
+					"source" : [ "obj-6", 0 ]
 				}
 
 			}
@@ -12439,15 +12461,15 @@
 			}
 , 			{
 				"name" : "MLE.JX3P.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox",
-				"patcherrelativepath" : "..",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/audio/JX3P",
+				"patcherrelativepath" : "../../audio/JX3P",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.JX3Ppoly.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox",
-				"patcherrelativepath" : "..",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/audio/JX3P",
+				"patcherrelativepath" : "../../audio/JX3P",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -12460,8 +12482,8 @@
 			}
 , 			{
 				"name" : "MLE.midiKey.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/controllers",
-				"patcherrelativepath" : "../../controllers",
+				"bootpath" : "~/Dropbox/MIT/Teaching/M080_Fall2019/Max/Class 7",
+				"patcherrelativepath" : "../../../../../../../Dropbox/MIT/Teaching/M080_Fall2019/Max/Class 7",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -12474,8 +12496,8 @@
 			}
 , 			{
 				"name" : "MLE.pattrLocal.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox",
-				"patcherrelativepath" : "..",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "../../utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
