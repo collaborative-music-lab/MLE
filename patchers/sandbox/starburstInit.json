@@ -35,7 +35,7 @@
 					"MLE.moog::lfoFreq" : [ 2.147320846218189 ],
 					"MLE.moog::lfoShape" : [ 0.56140350877193 ],
 					"MLE.moog::masterVolume" : [ 0.491228070175438 ],
-					"MLE.moog::mono" : [ 0 ],
+					"MLE.moog::mono" : [ 1 ],
 					"MLE.moog::noiseColor" : [ 0.705262021723459 ],
 					"MLE.moog::noiseGain" : [ 0.0 ],
 					"MLE.moog::osc1_octave" : [ 1 ],
