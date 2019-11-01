@@ -39,6 +39,30 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 247.0, 28.0, 70.0, 22.0 ],
+					"text" : "loadmess 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 207.0, 36.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-34",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -434,7 +458,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 92.333332061767578, 255.499969482421875, 50.0, 22.0 ],
-					"text" : "1"
+					"text" : "3"
 				}
 
 			}
@@ -469,7 +493,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1377.0, 155.0, 50.0, 22.0 ],
-					"text" : "71"
+					"text" : "85"
 				}
 
 			}
@@ -661,7 +685,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 508.0, 411.13330078125, 50.0, 22.0 ],
-					"text" : "1 1 0"
+					"text" : "4 1 0"
 				}
 
 			}
@@ -790,11 +814,11 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 784.70001220703125, 969.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"live.grid" : [ 3, 10, 2, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 ]
+						"live.grid" : [ 3, 10, 2, 0, 3, 0, 3000, 6001, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 ]
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u549016156"
+					"varname" : "u589022427"
 				}
 
 			}
@@ -1509,7 +1533,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 180.5, 238.0, 50.0, 22.0 ],
-					"text" : "4 2 0"
+					"text" : "6 2 0"
 				}
 
 			}
@@ -2033,7 +2057,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 345.600006103515625, 89.600006103515625, 50.0, 22.0 ],
-									"text" : "1 1 0"
+									"text" : "4 1 0"
 								}
 
 							}
@@ -2583,7 +2607,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 110.0, 77.333328247070312, 50.0, 22.0 ],
-									"text" : "4 2 0"
+									"text" : "6 2 0"
 								}
 
 							}
@@ -3249,7 +3273,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 227.0, 109.0, 50.0, 22.0 ],
-													"text" : "4 2 0"
+													"text" : "6 2 0"
 												}
 
 											}
@@ -4092,10 +4116,10 @@
 					"rows" : 2,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_type" : 3,
 							"parameter_longname" : "live.grid",
 							"parameter_invisible" : 1,
-							"parameter_shortname" : "live.grid"
+							"parameter_shortname" : "live.grid",
+							"parameter_type" : 3
 						}
 
 					}
@@ -4123,7 +4147,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 190.0, 77.0, 78.0, 22.0 ],
+					"patching_rect" : [ 190.0, 73.333332061767578, 78.0, 22.0 ],
 					"text" : "MLE.keyGrid"
 				}
 
@@ -4528,6 +4552,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
 					"source" : [ "obj-40", 0 ]
 				}
@@ -4825,6 +4856,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-105", 0 ],
 					"source" : [ "obj-70", 0 ]
 				}
@@ -5034,35 +5072,35 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-39::obj-32" : [ "hat-tone", "tone", 0 ],
 			"obj-39::obj-38" : [ "tom-level", "level", 0 ],
 			"obj-39::obj-40" : [ "tom-decay", "decay", 0 ],
-			"obj-39::obj-27" : [ "hat-level", "level", 0 ],
-			"obj-39::obj-41" : [ "tom-hi", "hi", 0 ],
-			"obj-39::obj-30" : [ "ophat-decay", "op-dec", 0 ],
-			"obj-39::obj-42" : [ "tom-mid", "mid", 0 ],
-			"obj-39::obj-43" : [ "tom-low", "low", 0 ],
 			"obj-39::obj-7" : [ "trig_1", "trig_1", 0 ],
-			"obj-39::obj-45" : [ "trig_7", "trig_7", 0 ],
+			"obj-39::obj-41" : [ "tom-hi", "hi", 0 ],
+			"obj-39::obj-42" : [ "tom-mid", "mid", 0 ],
 			"obj-39::obj-20" : [ "snare-decay", "decay", 0 ],
-			"obj-39::obj-44" : [ "trig_6", "trig_6", 0 ],
+			"obj-39::obj-43" : [ "tom-low", "low", 0 ],
 			"obj-39::obj-21" : [ "snare-snap", "snap", 0 ],
-			"obj-39::obj-34" : [ "trig_5", "trig_5", 0 ],
+			"obj-39::obj-32" : [ "hat-tone", "tone", 0 ],
 			"obj-39::obj-22" : [ "snare-tune", "tuning", 0 ],
-			"obj-9" : [ "live.grid", "live.grid", 0 ],
 			"obj-39::obj-9" : [ "kick-level", "level", 0 ],
 			"obj-39::obj-6" : [ "kick-attack", "attack", 0 ],
-			"obj-39::obj-31" : [ "clhat-decay", "cl-dec", 0 ],
+			"obj-39::obj-30" : [ "ophat-decay", "op-dec", 0 ],
+			"obj-39::obj-45" : [ "trig_7", "trig_7", 0 ],
 			"obj-39::obj-5" : [ "kick-decay", "decay", 0 ],
 			"obj-39::obj-4" : [ "kick-sweep", "sweep", 0 ],
+			"obj-39::obj-44" : [ "trig_6", "trig_6", 0 ],
+			"obj-39::obj-33" : [ "trig_4", "trig_4", 0 ],
+			"obj-39::obj-34" : [ "trig_5", "trig_5", 0 ],
 			"obj-39::obj-3" : [ "kick-tune[1]", "tuning", 0 ],
 			"obj-39::obj-12" : [ "trig_2", "trig_2", 0 ],
-			"obj-39::obj-46" : [ "ad-level", "level", 0 ],
-			"obj-27::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
-			"obj-39::obj-33" : [ "trig_4", "trig_4", 0 ],
 			"obj-39::obj-23" : [ "trig_3", "trig_3", 0 ],
 			"obj-39::obj-17" : [ "snare-level", "level", 0 ],
+			"obj-39::obj-27" : [ "hat-level", "level", 0 ],
+			"obj-39::obj-46" : [ "ad-level", "level", 0 ],
+			"obj-27::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
 			"obj-39::obj-19" : [ "snare-hicut", "hicut", 0 ],
+			"obj-39::obj-31" : [ "clhat-decay", "cl-dec", 0 ],
+			"obj-9" : [ "live.grid", "live.grid", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -5171,8 +5209,8 @@
 			}
 , 			{
 				"name" : "MLE.pattrLocal.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox",
-				"patcherrelativepath" : "../../sandbox",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "../../utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
