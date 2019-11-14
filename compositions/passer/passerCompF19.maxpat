@@ -39,6 +39,51 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"coll_data" : 					{
+						"count" : 6,
+						"data" : [ 							{
+								"key" : 0,
+								"value" : [ "Richard" ]
+							}
+, 							{
+								"key" : 1,
+								"value" : [ "Josh" ]
+							}
+, 							{
+								"key" : 2,
+								"value" : [ "Chris" ]
+							}
+, 							{
+								"key" : 3,
+								"value" : [ "Jerry" ]
+							}
+, 							{
+								"key" : 4,
+								"value" : [ "Nikhil" ]
+							}
+, 							{
+								"key" : 5,
+								"value" : [ "ijc" ]
+							}
+ ]
+					}
+,
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 532.0, 912.0, 158.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 1
+					}
+,
+					"text" : "coll F19_players @embed 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-11",
 					"linecount" : 2,
 					"maxclass" : "message",
@@ -3108,7 +3153,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 325.0, 294.0, 50.0, 22.0 ],
-									"text" : "-1"
+									"text" : "5"
 								}
 
 							}
@@ -3156,7 +3201,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 397.0, 556.0, 50.0, 22.0 ],
-									"text" : "-1"
+									"text" : "11"
 								}
 
 							}
@@ -4392,12 +4437,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-24",
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 291.3333740234375, 117.5, 86.0, 22.0 ],
-									"text" : "0"
+									"text" : "1 1 9 1 11 1 13 1"
 								}
 
 							}

@@ -39,6 +39,29 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 795.0, 559.0, 96.0, 20.0 ],
+					"text" : "my player name"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "myPlayerName",
+					"id" : "obj-18",
+					"index" : 5,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 795.0, 588.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-32",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -97,7 +120,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 661.0, 559.0, 96.0, 33.0 ],
-					"presentation_linecount" : 2,
 					"text" : "my player number"
 				}
 
@@ -510,7 +532,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
+					"destination" : [ "obj-18", 0 ],
 					"order" : 0,
 					"source" : [ "obj-30", 0 ]
 				}
@@ -518,8 +540,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-28", 1 ],
+					"destination" : [ "obj-21", 0 ],
 					"order" : 1,
+					"source" : [ "obj-30", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 1 ],
+					"order" : 2,
 					"source" : [ "obj-30", 0 ]
 				}
 
