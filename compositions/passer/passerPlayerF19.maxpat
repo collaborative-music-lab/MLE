@@ -5199,7 +5199,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 105.0, 100.0, 65.0, 22.0 ],
-									"text" : "$1 $1 0 $3"
+									"text" : "$1 $2 0 $3"
 								}
 
 							}
