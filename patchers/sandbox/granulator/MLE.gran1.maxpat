@@ -89,25 +89,26 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-17",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 754.0, 685.0, 50.0, 22.0 ],
-					"text" : "94.421655"
+					"patching_rect" : [ 717.0, 677.0, 65.0, 35.0 ],
+					"text" : "111.111112"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-12",
-					"linecount" : 8,
+					"linecount" : 10,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 617.0, 645.0, 50.0, 116.0 ],
-					"text" : "0.555934 0. 0.5 0. 0.36 0. 0.599681 0. 0.094422 0."
+					"patching_rect" : [ 617.0, 645.0, 50.0, 143.0 ],
+					"text" : "0.585185 0. 0.525926 0. 0.585185 0. 0.037037 0. 0.111111 0."
 				}
 
 			}
@@ -251,11 +252,11 @@
 				"box" : 				{
 					"id" : "obj-103",
 					"maxclass" : "newobj",
-					"numinlets" : 8,
-					"numoutlets" : 8,
-					"outlettype" : [ "", "", "", "", "", "", "", "" ],
-					"patching_rect" : [ 1019.0, 83.0, 270.0, 26.0 ],
-					"text" : "route replace duration pitch amp time rate enable"
+					"numinlets" : 11,
+					"numoutlets" : 11,
+					"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "" ],
+					"patching_rect" : [ 1019.0, 83.0, 397.0, 26.0 ],
+					"text" : "route replace duration pitch amp time rate enable multislider trigger slope"
 				}
 
 			}
@@ -297,7 +298,7 @@
 						"ampRand" : [ 0.0 ],
 						"duration" : [ 0.555934189733272 ],
 						"durationRand" : [ 0.0 ],
-						"enable" : [ 1 ],
+						"enable" : [ 0 ],
 						"pitch" : [ 0.5 ],
 						"pitchRand" : [ 0.0 ],
 						"rate" : [ 0.094421652771402 ],
@@ -308,7 +309,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u918019240"
+					"varname" : "u964012416"
 				}
 
 			}
@@ -532,7 +533,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 498.0, 8.0, 77.0, 53.0 ],
+					"patching_rect" : [ 498.0, 8.0, 43.0, 53.0 ],
 					"text" : "loadmess #1"
 				}
 
@@ -697,7 +698,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 664.0, 394.5, 92.0, 22.0 ],
-									"text" : "2060.503165 0."
+									"text" : "177.777779 0."
 								}
 
 							}
@@ -1698,7 +1699,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 926.0, 249.0, 75.0, 20.0 ],
+					"patching_rect" : [ 1435.0, 92.0, 75.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 250.5, 192.0, 75.0, 20.0 ],
 					"text" : "Grain slope:"
@@ -1716,7 +1717,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 926.0, 272.0, 50.0, 22.0 ],
+					"patching_rect" : [ 1435.0, 115.0, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 327.0, 192.0, 50.0, 22.0 ],
 					"style" : "numberGold-1",
@@ -1730,7 +1731,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 926.0, 303.0, 69.0, 26.0 ],
+					"patching_rect" : [ 1435.0, 146.0, 69.0, 26.0 ],
 					"text" : "send slope"
 				}
 
@@ -1947,6 +1948,34 @@
 				"patchline" : 				{
 					"destination" : [ "obj-117", 0 ],
 					"source" : [ "obj-103", 5 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-145", 0 ],
+					"source" : [ "obj-103", 6 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-147", 0 ],
+					"source" : [ "obj-103", 8 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-60", 0 ],
+					"source" : [ "obj-103", 7 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-84", 0 ],
+					"source" : [ "obj-103", 9 ]
 				}
 
 			}
@@ -2388,8 +2417,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
