@@ -582,7 +582,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 473.0, 369.0, 50.0, 22.0 ],
-									"text" : "1500"
+									"text" : "3100"
 								}
 
 							}
@@ -1065,7 +1065,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 430.5, 164.0, 179.0, 22.0 ],
-									"text" : "50"
+									"text" : "67 100"
 								}
 
 							}
@@ -1423,17 +1423,8 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-7", 0 ],
-									"order" : 1,
-									"source" : [ "obj-30", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-8", 0 ],
 									"midpoints" : [ 235.5, 405.0, 235.5, 405.0 ],
-									"order" : 0,
 									"source" : [ "obj-30", 0 ]
 								}
 
@@ -2601,27 +2592,27 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 651.6580810546875, 49.345611572265625, 56.0, 22.0 ],
 					"restore" : 					{
-						"carrier2ratio" : [ 2.009999990463257 ],
-						"env1a" : [ 500 ],
-						"env2a" : [ 500 ],
+						"carrier2ratio" : [ 1.009999990463257 ],
+						"env1a" : [ 5 ],
+						"env2a" : [ 5 ],
 						"env2d" : [ 1000 ],
-						"env2d[1]" : [ 1000 ],
-						"env2r" : [ 500 ],
-						"env2r[1]" : [ 500 ],
-						"env2response" : [ 1.0 ],
-						"env2s" : [ 0.0 ],
-						"env2s[1]" : [ 0.5 ],
-						"mod1depth" : [ 1.5 ],
-						"mod1env" : [ 0, 0, 0, 1, 0, 52 ],
-						"mod1harm" : [ 2.019999980926514 ],
-						"mod2depth" : [ 0.25 ],
-						"mod2env" : [ 0, 0, 16, 1, 0, 0 ],
-						"mod2harm" : [ 1.0 ],
-						"osc2e" : [ 0, 0, 54, 1, 0, 0 ]
+						"env2d[1]" : [ 3000 ],
+						"env2r" : [ 300 ],
+						"env2r[1]" : [ 100 ],
+						"env2response" : [ 2.0 ],
+						"env2s" : [ 0.5 ],
+						"env2s[1]" : [ 0.050000000745058 ],
+						"mod1depth" : [ 0.0 ],
+						"mod1env" : [ 0, 0, 14, 1, 0, 0 ],
+						"mod1harm" : [ 4.005000114440918 ],
+						"mod2depth" : [ 0.0 ],
+						"mod2env" : [ 0, 0, 0, 1, 0, 52 ],
+						"mod2harm" : [ 2.005000114440918 ],
+						"osc2e" : [ 0, 0, 47, 1, 0, 30 ]
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u082010440"
+					"varname" : "u680010335"
 				}
 
 			}
@@ -2659,7 +2650,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 891.6666259765625, 813.0, 205.0, 22.0 ],
-					"text" : "env2 500 685. 0. 342.5"
+					"text" : "osc2env 1 0 0.23622"
 				}
 
 			}
