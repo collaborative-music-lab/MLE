@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 360.0, 78.0, 618.0, 890.0 ],
+		"rect" : [ 360.0, 78.0, 551.0, 745.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,13 +39,22 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"fontname" : "Avenir Next Condensed Regular",
+					"fontsize" : 14.0,
 					"id" : "obj-23",
-					"maxclass" : "newobj",
+					"maxclass" : "textbutton",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1337.0, 1056.0, 162.0, 22.0 ],
-					"text" : "loadmess read _g_main.json"
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"parameter_mappable" : 0,
+					"patching_rect" : [ 1334.0, 1006.0, 100.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 22.0, 893.0, 146.0, 35.0 ],
+					"rounded" : 20.0,
+					"text" : "read",
+					"textoncolor" : [ 0.862745, 0.741176, 0.137255, 1.0 ]
 				}
 
 			}
@@ -931,7 +940,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1486.0, 1488.0, 327.0, 35.0 ],
+					"patching_rect" : [ 1486.0, 1488.0, 241.0, 35.0 ],
 					"text" : "fontname Menlo, fontsize 32, gl_color 0 0 0 0.7, position -1. 0., text Bodycloud I"
 				}
 
@@ -1057,9 +1066,9 @@
 					"restore" : 					{
 						"_len_max" : [ 0.02 ],
 						"_len_min" : [ 0.01 ],
-						"_sample_num" : [ 3 ],
+						"_sample_num" : [ 0 ],
 						"_window_function" : [ 512.0, 0.0, 1.0, 11.082251082251082, 0.0, 0, 15.515151515151516, 0.962945642518298, 0, 117.471861471861473, 0.005844538884963, 0, 188.0, 0.055045871559633, 2, 512.0, 0.0, 0, "linear" ],
-						"_window_quick" : [ 2 ],
+						"_window_quick" : [ 1 ],
 						"_window_which" : [ 0 ],
 						"b" : [ 1.0 ],
 						"g" : [ 1.0 ],
@@ -1067,7 +1076,7 @@
 					}
 ,
 					"text" : "autopattr @autoname 0",
-					"varname" : "u204002413"
+					"varname" : "u069000428"
 				}
 
 			}
@@ -1476,7 +1485,7 @@
 					"fontname" : "Avenir Next Condensed Regular",
 					"fontsize" : 14.0,
 					"id" : "obj-112",
-					"items" : [ "samples.1", "1.wav", ",", "samples.2", "10.wav", ",", "samples.3", "2.wav", ",", "samples.4", "3.wav", ",", "samples.5", "4.wav", ",", "samples.6", "5.wav", ",", "samples.7", "6.wav", ",", "samples.8", "7.wav", ",", "samples.9", "8.wav", ",", "samples.10", "9.wav", ",", "samples.11", "c_long.wav", ",", "samples.12", "dd.wav", ",", "samples.13", "test.wav", ",", "samples.14", "v_long.wav" ],
+					"items" : [ "samples.1", "1.mp3", ",", "samples.2", "10.mp3", ",", "samples.3", "2.mp3", ",", "samples.4", "3.mp3", ",", "samples.5", "4.mp3", ",", "samples.6", "5.mp3", ",", "samples.7", "6.mp3", ",", "samples.8", "7.mp3", ",", "samples.9", "8.mp3", ",", "samples.10", "9.mp3", ",", "samples.11", "c_long.wav", ",", "samples.12", "subway_0.mp3", ",", "samples.13", "subway_1.mp3" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1561,7 +1570,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 22.0, 755.0, 267.0, 35.0 ],
 					"rounded" : 20.0,
-					"text" : "readfolder",
+					"text" : "open",
 					"textoncolor" : [ 0.862745, 0.741176, 0.137255, 1.0 ]
 				}
 
@@ -1596,6 +1605,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"patching_rect" : [ 957.5999755859375, 1817.0, 116.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 185.5999755859375, 899.5, 116.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0
 					}
@@ -6904,7 +6915,7 @@
 					"presentation_rect" : [ 46.0, 90.0, 219.0, 219.0 ],
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 0.0 ],
 					"xplace" : [ 0.5 ],
-					"yplace" : [ 0.497402294793882 ]
+					"yplace" : [ 0.5 ]
 				}
 
 			}
@@ -7820,8 +7831,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-158", 0 ],
-					"source" : [ "obj-23", 0 ]
+					"destination" : [ "obj-161", 0 ],
+					"source" : [ "obj-23", 1 ]
 				}
 
 			}
@@ -8520,7 +8531,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "_g_main.json",
-				"bootpath" : "~/Desktop",
+				"bootpath" : "~/Documents/Max 8/Packages/MLE/compositions/bodycloud_i",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -8578,9 +8589,9 @@
 , 			{
 				"name" : "helpfile_label-1",
 				"default" : 				{
-					"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
+					"fontname" : [ "Arial" ],
 					"fontsize" : [ 13.0 ],
-					"fontname" : [ "Arial" ]
+					"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -8625,8 +8636,8 @@
 , 			{
 				"name" : "newobjBlue-1",
 				"default" : 				{
-					"fontsize" : [ 12.0 ],
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"fontsize" : [ 12.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -8689,8 +8700,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -8772,8 +8783,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
