@@ -39,6 +39,30 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-37",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 312.0, 35.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 310.0, 80.0, 52.0, 22.0 ],
+					"text" : "gate 1 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-14",
 					"linecount" : 2,
 					"maxclass" : "newobj",
@@ -124,15 +148,15 @@
 					"restore" : 					{
 						"AmpA" : [ 85 ],
 						"AmpB" : [ 85 ],
-						"FX" : [ 0 ],
-						"PitchA" : [ 51 ],
-						"PitchB" : [ 45 ],
-						"decay" : [ 30 ],
+						"FX" : [ 109 ],
+						"PitchA" : [ 82 ],
+						"PitchB" : [ 18 ],
+						"decay" : [ 44 ],
 						"live.grid" : [ 3, 10, 2, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 ]
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u197005308"
+					"varname" : "u837015255"
 				}
 
 			}
@@ -229,7 +253,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 255.0, 1034.2000732421875, 289.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 1057, 45, 1440, 407 ],
+						"client_rect" : [ 4, 45, 358, 173 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
 						"storage_rect" : [ 583, 69, 1034, 197 ]
@@ -299,7 +323,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1298.0, 998.0, 81.0, 22.0 ],
-					"restore" : [ 0 ],
+					"restore" : [ 2 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -318,7 +342,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1230.0, 926.0, 81.0, 22.0 ],
-					"restore" : [ 0 ],
+					"restore" : [ 1 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -337,7 +361,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 846.0, 993.0, 81.0, 22.0 ],
-					"restore" : [ 0 ],
+					"restore" : [ 3 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -356,7 +380,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 854.0, 926.0, 81.0, 22.0 ],
-					"restore" : [ 0 ],
+					"restore" : [ 1 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -377,13 +401,13 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1230.0, 884.0, 380.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 1057, 45, 1440, 407 ],
+						"client_rect" : [ 4, 45, 358, 173 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
 						"storage_rect" : [ 583, 69, 1034, 197 ]
 					}
 ,
-					"subscribe" : [ "menuB3", "menuA2", "menuB4", "menuA1", "menuB1", "menuA4", "menuA3", "test1", "menuB2" ],
+					"subscribe" : [ "test1", "menuA3", "menuA2", "menuB4", "menuB2", "menuA4", "menuA1", "menuB3", "menuB1" ],
 					"text" : "pattrstorage instaSamplerSamples @savemode 0 @subscribemode 1",
 					"varname" : "instaSamplerSamples"
 				}
@@ -409,7 +433,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1163.70001220703125, 162.0, 50.0, 22.0 ],
-					"text" : "45"
+					"text" : "18"
 				}
 
 			}
@@ -631,7 +655,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1001.533324999999991, 167.0, 50.0, 22.0 ],
-					"text" : "51"
+					"text" : "82"
 				}
 
 			}
@@ -1175,14 +1199,14 @@
 				"box" : 				{
 					"autopopulate" : 1,
 					"id" : "obj-173",
-					"items" : [ "DrumTraks Kick.wav", ",", "LinnDrum Kick Hard.wav", ",", "TR-909 Kick.wav" ],
+					"items" : [ "DrumTrak Crash.wav", ",", "DrumTraks Ride.wav", ",", "LinnDrum Hat Close.wav", ",", "LinnDrum Hat Open.wav", ",", "LinnDrum Ride Soft.wav", ",", "TR-909 Hat Closed .wav", ",", "TR-909 Hat Open.wav" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1197.0, 1028.0, 100.0, 22.0 ],
-					"prefix" : "Macintosh HD:/Users/ianhattwick/Documents/github/CML/MLE/media/bassDrums/",
+					"prefix" : "Macintosh HD:/Users/ianhattwick/Documents/github/CML/MLE/media/cymbals/",
 					"presentation" : 1,
 					"presentation_rect" : [ 446.333332061767578, 267.711090087890625, 129.0, 22.0 ],
 					"varname" : "umenu[2]"
@@ -1460,14 +1484,14 @@
 				"box" : 				{
 					"autopopulate" : 1,
 					"id" : "obj-147",
-					"items" : [ "DrumTraks Kick.wav", ",", "LinnDrum Kick Hard.wav", ",", "TR-909 Kick.wav" ],
+					"items" : [ "DrumTrak Crash.wav", ",", "DrumTraks Ride.wav", ",", "LinnDrum Hat Close.wav", ",", "LinnDrum Hat Open.wav", ",", "LinnDrum Ride Soft.wav", ",", "TR-909 Hat Closed .wav", ",", "TR-909 Hat Open.wav" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 941.0, 1023.0, 100.0, 22.0 ],
-					"prefix" : "Macintosh HD:/Users/ianhattwick/Documents/github/CML/MLE/media/bassDrums/",
+					"prefix" : "Macintosh HD:/Users/ianhattwick/Documents/github/CML/MLE/media/cymbals/",
 					"presentation" : 1,
 					"presentation_rect" : [ 307.866668701171875, 270.094345092773438, 130.0, 22.0 ],
 					"varname" : "umenu[1]"
@@ -1585,7 +1609,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 769.0, 310.0, 50.0, 22.0 ],
-					"text" : "0"
+					"text" : "109"
 				}
 
 			}
@@ -1657,7 +1681,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 508.0, 411.13330078125, 50.0, 22.0 ],
-					"text" : "6 1 0"
+					"text" : "1 1 0"
 				}
 
 			}
@@ -4469,10 +4493,10 @@
 					"rows" : 2,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_invisible" : 1,
 							"parameter_shortname" : "live.grid",
 							"parameter_type" : 3,
-							"parameter_longname" : "live.grid"
+							"parameter_longname" : "live.grid",
+							"parameter_invisible" : 1
 						}
 
 					}
@@ -4500,7 +4524,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 190.0, 77.0, 78.0, 22.0 ],
+					"patching_rect" : [ 190.0, 63.3333740234375, 78.0, 22.0 ],
 					"text" : "MLE.keyGrid"
 				}
 
@@ -4508,7 +4532,7 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
+					"destination" : [ "obj-5", 1 ],
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -5089,6 +5113,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-37", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
 					"order" : 1,
 					"source" : [ "obj-4", 0 ]
@@ -5231,6 +5262,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-47", 0 ],
 					"source" : [ "obj-46", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
@@ -5544,8 +5582,8 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-9" : [ "live.grid", "live.grid", 0 ],
 			"obj-27::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
+			"obj-9" : [ "live.grid", "live.grid", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -5638,15 +5676,15 @@
 			}
 , 			{
 				"name" : "instaSamplerSamples.json",
-				"bootpath" : "~/Documents/Max 8/Library/presets",
-				"patcherrelativepath" : "../../../../../../Max 8/Library/presets",
+				"bootpath" : "~/Documents/github/CML/MLE/code/pattrPresets",
+				"patcherrelativepath" : "../../../code/pattrPresets",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "instaSampler.json",
-				"bootpath" : "~/Documents/Max 8/Library/presets",
-				"patcherrelativepath" : "../../../../../../Max 8/Library/presets",
+				"bootpath" : "~/Documents/github/CML/MLE/code/pattrPresets",
+				"patcherrelativepath" : "../../../code/pattrPresets",
 				"type" : "JSON",
 				"implicit" : 1
 			}
