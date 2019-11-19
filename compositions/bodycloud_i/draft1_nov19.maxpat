@@ -1162,7 +1162,7 @@
 					"restore" : 					{
 						"_len_max" : [ 0.02 ],
 						"_len_min" : [ 0.01 ],
-						"_sample_num" : [ 3 ],
+						"_sample_num" : [ 0 ],
 						"_window_function" : [ 512.0, 0.0, 1.0, 11.082251082251082, 0.0, 0, 15.515151515151516, 0.962945642518298, 0, 117.471861471861473, 0.005844538884963, 0, 188.0, 0.055045871559633, 2, 512.0, 0.0, 0, "linear" ],
 						"_window_quick" : [ 2 ],
 						"_window_which" : [ 0 ],
@@ -1172,7 +1172,7 @@
 					}
 ,
 					"text" : "autopattr @autoname 0",
-					"varname" : "u597001997"
+					"varname" : "u116005612"
 				}
 
 			}
@@ -1581,7 +1581,7 @@
 					"fontname" : "Avenir Next Condensed Regular",
 					"fontsize" : 14.0,
 					"id" : "obj-112",
-					"items" : [ "samples.1", "1.mp3", ",", "samples.2", "10.mp3", ",", "samples.3", "2.mp3", ",", "samples.4", "3.mp3", ",", "samples.5", "4.mp3", ",", "samples.6", "5.mp3", ",", "samples.7", "6.mp3", ",", "samples.8", "7.mp3", ",", "samples.9", "8.mp3", ",", "samples.10", "9.mp3", ",", "samples.11", "c_long.wav", ",", "samples.12", "subway_0.mp3", ",", "samples.13", "subway_1.mp3" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1646,7 +1646,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1119.0, 1817.0, 39.0, 22.0 ],
+					"patching_rect" : [ 1164.5555419921875, 1817.0, 39.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 311.22216796875, 906.0, 39.0, 22.0 ],
 					"text" : "dump"
 				}
 
@@ -1700,14 +1702,15 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 957.5999755859375, 1817.0, 116.0, 22.0 ],
+					"patching_rect" : [ 957.5999755859375, 1817.0, 178.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 185.5999755859375, 899.5, 116.0, 22.0 ],
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 185.5999755859375, 899.5, 119.0, 35.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0
 					}
 ,
-					"text" : "polybuffer~ samples"
+					"text" : "polybuffer~ samples @embed 0"
 				}
 
 			}
@@ -6960,7 +6963,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"buffername" : "samples.4",
+					"buffername" : "samples.1",
 					"fontname" : "Avenir Next Condensed Regular",
 					"fontsize" : 14.0,
 					"gridcolor" : [ 0.349019607843137, 0.349019607843137, 0.349019607843137, 0.0 ],
@@ -7010,7 +7013,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 46.0, 90.0, 219.0, 219.0 ],
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 0.0 ],
-					"xplace" : [ 0.5 ],
+					"xplace" : [ 0.499999999887214 ],
 					"yplace" : [ 0.500000000000001 ]
 				}
 
