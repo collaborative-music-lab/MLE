@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 330.0, 79.0, 863.0, 937.0 ],
+		"rect" : [ 617.0, 79.0, 863.0, 937.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,48 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-135",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 68.0, 730.0, 213.0, 22.0 ],
+					"text" : "refer mle_ipaddresses_byPlayerName"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-133",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 85.0, 661.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"cols" : 3,
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-130",
+					"maxclass" : "jit.cellblock",
+					"numinlets" : 2,
+					"numoutlets" : 4,
+					"outlettype" : [ "list", "", "", "" ],
+					"patching_rect" : [ 143.5, 836.0, 200.0, 200.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 379.0, 9.0, 328.0, 189.941139221191406 ],
+					"rows" : 7
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-132",
 					"maxclass" : "newobj",
@@ -283,7 +325,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1482.3056640625, 417.78155517578125, 97.0, 22.0 ],
-					"text" : "192.168.1.4"
+					"text" : "192.168.0.109"
 				}
 
 			}
@@ -341,7 +383,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 36.0, 255.0, 50.0, 35.0 ],
-									"text" : "fe80:0:0:0:39f7:7ed:a724:7b7e%utun1"
+									"text" : "fe80:0:0:0:aede:48ff:fe00:1122%en5"
 								}
 
 							}
@@ -763,7 +805,7 @@
 					"patching_rect" : [ 1952.10675048828125, 335.0, 131.0, 26.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 7.0, 308.0, 172.10675048828125, 26.0 ],
-					"text" : "192.168.1.4"
+					"text" : "192.168.0.109"
 				}
 
 			}
@@ -1001,8 +1043,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1422.0, 738.0, 50.0, 22.0 ],
-					"text" : "\"2\""
+					"patching_rect" : [ 1422.0, 738.0, 61.0, 22.0 ],
+					"text" : "conductor"
 				}
 
 			}
@@ -1081,13 +1123,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-79",
-					"linecount" : 4,
+					"linecount" : 5,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1804.0, 1305.5, 43.0, 62.0 ],
-					"text" : "Ian \"2\" 192.168.1.4"
+					"patching_rect" : [ 1804.0, 1305.5, 59.0, 76.0 ],
+					"text" : "Ian conductor 192.168.0.109"
 				}
 
 			}
@@ -1110,8 +1152,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1714.0, 1319.0, 50.0, 22.0 ],
-					"text" : "\"2\""
+					"patching_rect" : [ 1714.0, 1319.0, 61.0, 22.0 ],
+					"text" : "conductor"
 				}
 
 			}
@@ -1123,7 +1165,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1262.0, 1321.5, 250.0, 22.0 ],
-					"text" : "ping Ian \"2\" 192.168.1.4"
+					"text" : "ping Ian conductor 192.168.0.109"
 				}
 
 			}
@@ -1147,7 +1189,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1468.0, 1063.5, 225.0, 22.0 ],
-					"text" : "ping Ian \"2\" 192.168.1.4"
+					"text" : "ping Ian conductor 192.168.0.109"
 				}
 
 			}
@@ -2630,7 +2672,7 @@
 					"fontsize" : 10.0,
 					"hint" : "",
 					"id" : "obj-47",
-					"items" : [ "utun1", ",", "utun0", ",", "awdl0", ",", "en5", ",", "en0", ",", "lo0" ],
+					"items" : [ "en5", ",", "utun2", ",", "utun1", ",", "utun0", ",", "awdl0", ",", "en0", ",", "lo0" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -6910,7 +6952,7 @@
 					"fontsize" : 10.0,
 					"hint" : "",
 					"id" : "obj-6",
-					"items" : [ "MacBook Pro Speakers", ",", "Multi-Output Device" ],
+					"items" : "MacBook Pro Speakers",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -8967,6 +9009,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-101", 0 ],
 					"source" : [ "obj-132", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-135", 0 ],
+					"source" : [ "obj-133", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-130", 0 ],
+					"source" : [ "obj-135", 0 ]
 				}
 
 			}

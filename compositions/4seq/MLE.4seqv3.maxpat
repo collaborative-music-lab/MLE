@@ -135,7 +135,7 @@
 					"bgfillcolor_type" : "color",
 					"fontsize" : 16.0,
 					"id" : "obj-74",
-					"items" : [ "Ian1", ",", "Ian2", ",", "Ian3", ",", "Ian4", ",", "Ian5" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -160,7 +160,7 @@
 					"bgfillcolor_type" : "color",
 					"fontsize" : 16.0,
 					"id" : "obj-71",
-					"items" : [ "Ian1", ",", "Ian2", ",", "Ian3", ",", "Ian4", ",", "Ian5" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -197,7 +197,7 @@
 					"bgfillcolor_type" : "color",
 					"fontsize" : 16.0,
 					"id" : "obj-56",
-					"items" : [ "Ian1", ",", "Ian2", ",", "Ian3", ",", "Ian4", ",", "Ian5" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -263,13 +263,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-40",
-					"linecount" : 18,
+					"linecount" : 17,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 162.0, 778.0, 51.0, 250.0 ],
-					"text" : "replace \"Macintosh HD:/Users/ianhattwick/Documents/github/CML/MLE/media/singleshot samples/batuhanFlute_G_79.wav\""
+					"patching_rect" : [ 162.0, 778.0, 51.0, 236.0 ],
+					"text" : "replace \"Macintosh HD:/Users/ianhattwick/Documents/github/CML/MLE/media/singleshot samples/acGuitar_A_45.wav\""
 				}
 
 			}
@@ -1153,7 +1153,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"rect" : [ 420.0, 273.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1182,12 +1182,24 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "float" ],
+									"patching_rect" : [ 86.0, 159.0, 29.5, 22.0 ],
+									"text" : "* 5."
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-66",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 125.600003659725189, 217.85711669921875, 52.5, 22.0 ],
+									"patching_rect" : [ 219.600003659725189, 237.85711669921875, 52.5, 22.0 ],
 									"text" : "*~"
 								}
 
@@ -1199,7 +1211,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 159.100003659725189, 155.5, 45.0, 22.0 ],
+									"patching_rect" : [ 253.100003659725189, 175.5, 45.0, 22.0 ],
 									"text" : "$1 100"
 								}
 
@@ -1211,7 +1223,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "bang" ],
-									"patching_rect" : [ 159.100003659725189, 187.0, 34.0, 22.0 ],
+									"patching_rect" : [ 253.100003659725189, 207.0, 34.0, 22.0 ],
 									"text" : "line~"
 								}
 
@@ -1223,7 +1235,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 50.0, 217.85711669921875, 52.5, 22.0 ],
+									"patching_rect" : [ 50.0, 245.85711669921875, 52.5, 22.0 ],
 									"text" : "*~"
 								}
 
@@ -1235,7 +1247,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 83.5, 155.5, 45.0, 22.0 ],
+									"patching_rect" : [ 83.5, 183.5, 45.0, 22.0 ],
 									"text" : "$1 100"
 								}
 
@@ -1247,7 +1259,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "bang" ],
-									"patching_rect" : [ 83.5, 187.0, 34.0, 22.0 ],
+									"patching_rect" : [ 83.5, 215.0, 34.0, 22.0 ],
 									"text" : "line~"
 								}
 
@@ -1311,7 +1323,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 125.59997599999997, 40.0, 30.0, 30.0 ]
+									"patching_rect" : [ 224.59997599999997, 36.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -1342,6 +1354,13 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
+									"destination" : [ "obj-24", 0 ],
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-15", 0 ],
 									"source" : [ "obj-13", 0 ]
 								}
@@ -1349,7 +1368,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-24", 0 ],
+									"destination" : [ "obj-1", 0 ],
 									"source" : [ "obj-15", 0 ]
 								}
 
@@ -1897,7 +1916,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 690.0, 342.0, 169.0, 49.0 ],
-					"text" : "0 1 0 1 1 0 2 1 3 1 4 0 5 0 6 1 7 1 0 1 1 1 2 1 3 1 4 1 5 1 6 1 7"
+					"text" : "0 1 1 1 2 1 0 0 1 0 4 0 1 0 5 1 1 1 0 1 4 1 0 0 0 0 4 0 0 1 2 1 0"
 				}
 
 			}
@@ -2041,7 +2060,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 132.0, 153.0, 50.0, 22.0 ],
-									"text" : "2 2"
+									"text" : "0 5"
 								}
 
 							}
@@ -2817,10 +2836,10 @@
 					"presentation_rect" : [ 11.0, 46.0, 381.0, 183.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_type" : 3,
 							"parameter_longname" : "live.grid",
 							"parameter_invisible" : 1,
-							"parameter_shortname" : "live.grid"
+							"parameter_shortname" : "live.grid",
+							"parameter_type" : 3
 						}
 
 					}
@@ -3113,7 +3132,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 285.0, 104.0, 339.0, 22.0 ],
-									"text" : "0 1 0 1 0 1 0 1 0 1 0 1 0 0 0 1 0 1 3 1 0 1 0 1 0 1 0 1 0 1 0 1 0"
+									"text" : "0 1 1 1 2 1 0 0 1 0 4 0 1 0 5 1 1 1 0 1 4 1 0 0 0 0 4 0 0 1 2 1 0"
 								}
 
 							}
@@ -3125,7 +3144,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 25.0, 160.0, 50.0, 22.0 ],
-									"text" : "2 2"
+									"text" : "0 5"
 								}
 
 							}
@@ -3452,7 +3471,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 882.5999755859375, 484.5, 95.0, 22.0 ],
-					"text" : "\"eighth note\""
+					"text" : "\"half note\""
 				}
 
 			}
@@ -3927,7 +3946,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 50.0, 156.5, 50.0, 22.0 ],
-													"text" : "16"
+													"text" : "64"
 												}
 
 											}
@@ -5119,7 +5138,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 94.0, 644.0, 127.0, 22.0 ],
-					"text" : "decay 625"
+					"text" : "decay 1164"
 				}
 
 			}
@@ -5347,7 +5366,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 273.0, 260.0, 50.0, 22.0 ],
-									"text" : "34"
+									"text" : "68"
 								}
 
 							}
@@ -5908,7 +5927,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 445.0, 247.0, 50.0, 22.0 ],
-									"text" : "e"
+									"text" : "n"
 								}
 
 							}
@@ -6569,7 +6588,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 172.0, 212.0, 50.0, 22.0 ],
-									"text" : "6"
+									"text" : "5"
 								}
 
 							}
@@ -6581,7 +6600,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 228.0, 171.0, 50.0, 22.0 ],
-									"text" : "2 2 0"
+									"text" : "5 0 0"
 								}
 
 							}
@@ -7447,8 +7466,8 @@
 					"id" : "obj-121",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
+					"numoutlets" : 5,
+					"outlettype" : [ "", "", "", "", "" ],
 					"patching_rect" : [ 1006.0, -285.0, 117.0, 22.0 ],
 					"text" : "MLE.playerNames 3"
 				}
@@ -7523,8 +7542,8 @@
 					"id" : "obj-115",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
+					"numoutlets" : 5,
+					"outlettype" : [ "", "", "", "", "" ],
 					"patching_rect" : [ 769.0, -296.0, 117.0, 22.0 ],
 					"text" : "MLE.playerNames 2"
 				}
@@ -7673,8 +7692,8 @@
 					"id" : "obj-78",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
+					"numoutlets" : 5,
+					"outlettype" : [ "", "", "", "", "" ],
 					"patching_rect" : [ 519.5, -296.0, 117.0, 22.0 ],
 					"text" : "MLE.playerNames 1"
 				}
@@ -9065,11 +9084,11 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-113::obj-43" : [ "live.grid[3]", "live.grid", 0 ],
-			"obj-119::obj-43" : [ "live.grid[1]", "live.grid", 0 ],
 			"obj-84::obj-43" : [ "live.grid[2]", "live.grid", 0 ],
-			"obj-1::obj-43" : [ "live.grid[6]", "live.grid", 0 ],
+			"obj-113::obj-43" : [ "live.grid[3]", "live.grid", 0 ],
 			"obj-245" : [ "live.grid", "live.grid", 0 ],
+			"obj-119::obj-43" : [ "live.grid[1]", "live.grid", 0 ],
+			"obj-1::obj-43" : [ "live.grid[6]", "live.grid", 0 ],
 			"obj-168::obj-124::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
 			"parameterbanks" : 			{
 
@@ -9080,21 +9099,21 @@
 		"dependency_cache" : [ 			{
 				"name" : "MLE.seq.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/sequencers",
-				"patcherrelativepath" : "../sequencers",
+				"patcherrelativepath" : "../../patchers/sequencers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "init.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
-				"patcherrelativepath" : "../utilities",
+				"patcherrelativepath" : "../../patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.subSynth.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/audio",
-				"patcherrelativepath" : "../audio",
+				"patcherrelativepath" : "../../patchers/audio",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -9108,98 +9127,105 @@
 , 			{
 				"name" : "MLE.scale.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/controllers",
-				"patcherrelativepath" : "../controllers",
+				"patcherrelativepath" : "../../patchers/controllers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "initS.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
-				"patcherrelativepath" : "../utilities",
+				"bootpath" : "~/Dropbox/MIT/Teaching/M470_Fall2019/Concertmedia",
+				"patcherrelativepath" : "../../../../../../Dropbox/MIT/Teaching/M470_Fall2019/Concertmedia",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.init.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
-				"patcherrelativepath" : "../utilities",
+				"patcherrelativepath" : "../../patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.UDPreceive.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/network",
-				"patcherrelativepath" : "../network",
+				"patcherrelativepath" : "../../patchers/network",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mle_network_manager.js",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox",
-				"patcherrelativepath" : "../sandbox",
+				"bootpath" : "~/Documents/github/CML/MLE/code",
+				"patcherrelativepath" : "../../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.UDPsend.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/network",
-				"patcherrelativepath" : "../network",
+				"patcherrelativepath" : "../../patchers/network",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.chat.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/network",
-				"patcherrelativepath" : "../network",
+				"patcherrelativepath" : "../../patchers/network",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mle.UDPsend.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/network",
-				"patcherrelativepath" : "../network",
+				"patcherrelativepath" : "../../patchers/network",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mle.UDPreceive.maxpat",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/network",
+				"patcherrelativepath" : "../../patchers/network",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.playerID.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox",
-				"patcherrelativepath" : "../sandbox",
+				"patcherrelativepath" : "../../patchers/sandbox",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.seq.shift.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox",
-				"patcherrelativepath" : "../sandbox",
+				"patcherrelativepath" : "../../patchers/sandbox",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.polysampler.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox/Carina",
-				"patcherrelativepath" : "../sandbox/Carina",
+				"patcherrelativepath" : "../../patchers/sandbox/Carina",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.polySampler_poly.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox/Carina",
-				"patcherrelativepath" : "../sandbox/Carina",
+				"patcherrelativepath" : "../../patchers/sandbox/Carina",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.playerNames.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/network",
-				"patcherrelativepath" : "../network",
+				"patcherrelativepath" : "../../patchers/network",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.keyGrid.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/controllers",
-				"patcherrelativepath" : "../controllers",
+				"patcherrelativepath" : "../../patchers/controllers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -9213,14 +9239,14 @@
 , 			{
 				"name" : "MLE.beat.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/network",
-				"patcherrelativepath" : "../network",
+				"patcherrelativepath" : "../../patchers/network",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.swing.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox",
-				"patcherrelativepath" : "../sandbox",
+				"patcherrelativepath" : "../../patchers/sandbox",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -9234,14 +9260,14 @@
 , 			{
 				"name" : "MLE.reverb.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox/Carina/MLE FX library",
-				"patcherrelativepath" : "../sandbox/Carina/MLE FX library",
+				"patcherrelativepath" : "../../patchers/sandbox/Carina/MLE FX library",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.output.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
-				"patcherrelativepath" : "../utilities",
+				"patcherrelativepath" : "../../patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
