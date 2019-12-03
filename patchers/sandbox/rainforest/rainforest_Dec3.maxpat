@@ -39,6 +39,17 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "meter~",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 464.75, 538.0, 80.0, 13.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"hidden" : 1,
 					"id" : "obj-58",
 					"maxclass" : "newobj",
@@ -217,38 +228,6 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 288.0, 63.5, 150.0, 20.0 ],
 					"text" : "sensitivity"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 0.0,
-					"bgcolor" : [ 0.094118, 0.113725, 0.137255, 0.0 ],
-					"border" : 1,
-					"bordercolor" : [ 0.415686, 0.454902, 0.52549, 1.0 ],
-					"id" : "obj-52",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 393.5, 309.5, 255.5, 224.5 ],
-					"rounded" : 16
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 0.0,
-					"bgcolor" : [ 0.094118, 0.113725, 0.137255, 0.0 ],
-					"border" : 1,
-					"bordercolor" : [ 0.415686, 0.454902, 0.52549, 1.0 ],
-					"id" : "obj-51",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 20.0, 164.0, 321.5, 245.0 ],
-					"rounded" : 16
 				}
 
 			}
@@ -701,10 +680,10 @@
 						"followglobaltempo" : 0,
 						"formantcorrection" : 0,
 						"mode" : "basic",
-						"originallength" : [ 12639.085714285707581, "ticks" ],
-						"originaltempo" : 119.999999999999929,
+						"originallength" : [ 60721.110204081596748, "ticks" ],
+						"originaltempo" : 119.999999999999915,
 						"pitchcorrection" : 0,
-						"pitchshift" : [ 0.75 ],
+						"pitchshift" : [ 0.750019494642909 ],
 						"pitchshiftcent" : [ -498 ],
 						"quality" : "basic",
 						"timestretch" : [ 1 ]
@@ -729,7 +708,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 34.0, 435.0, 304.0, 160.0 ],
+					"patching_rect" : [ 34.0, 504.0, 304.0, 160.0 ],
 					"varname" : "MLE.reverb",
 					"viewvisibility" : 1
 				}
@@ -810,7 +789,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 34.0, 617.0, 70.0, 22.0 ],
+					"patching_rect" : [ 34.0, 678.0, 70.0, 22.0 ],
 					"text" : "MLE.output"
 				}
 
@@ -832,26 +811,6 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 400.0, 29.0, 682.0, 380.0 ],
 					"varname" : "multidrone3",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-2",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "rainforest_study2.maxpat",
-					"numinlets" : 4,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 20.0, 164.0, 318.0, 241.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -904,6 +863,58 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 393.5, 7.0, 293.0, 285.0 ],
+					"rounded" : 16
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-2",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "rainforest_study2.maxpat",
+					"numinlets" : 4,
+					"numoutlets" : 2,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "signal", "" ],
+					"patching_rect" : [ 20.0, 164.0, 318.0, 289.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 0.0,
+					"bgcolor" : [ 0.094118, 0.113725, 0.137255, 0.0 ],
+					"border" : 1,
+					"bordercolor" : [ 0.415686, 0.454902, 0.52549, 1.0 ],
+					"id" : "obj-51",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 20.0, 164.0, 321.5, 245.0 ],
+					"rounded" : 16
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 0.0,
+					"bgcolor" : [ 0.094118, 0.113725, 0.137255, 0.0 ],
+					"border" : 1,
+					"bordercolor" : [ 0.415686, 0.454902, 0.52549, 1.0 ],
+					"id" : "obj-52",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 393.5, 309.5, 255.5, 224.5 ],
 					"rounded" : 16
 				}
 
@@ -1113,12 +1124,28 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
+					"order" : 1,
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"order" : 0,
 					"source" : [ "obj-8", 0 ]
 				}
 
 			}
  ],
 		"dependency_cache" : [ 			{
+				"name" : "rainforest_study2.maxpat",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox/rainforest",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "MLE.light.maxpat",
 				"bootpath" : "~/Dropbox/MLE/Library/patchers/sandbox",
 				"patcherrelativepath" : "../../../../../../../Dropbox/MLE/Library/patchers/sandbox",
@@ -1129,13 +1156,6 @@
 				"name" : "init.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
 				"patcherrelativepath" : "../../utilities",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "rainforest_study2.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox/rainforest",
-				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
