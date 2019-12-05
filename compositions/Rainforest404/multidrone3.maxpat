@@ -88,26 +88,24 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-144",
-					"linecount" : 4,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 237.0, 1229.0, 50.0, 62.0 ],
-					"text" : "0.007874 0.330709"
+					"patching_rect" : [ 237.0, 1229.0, 50.0, 22.0 ],
+					"text" : "0. 0."
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-121",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1772.0, 692.0, 50.0, 35.0 ],
-					"text" : "0.330709"
+					"patching_rect" : [ 1772.0, 692.0, 50.0, 22.0 ],
+					"text" : "0."
 				}
 
 			}
@@ -115,7 +113,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-119",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -251,24 +249,8 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 162.0, 57.0, 56.0, 22.0 ],
-					"restore" : 					{
-						"densityScalar" : [ 81, 74 ],
-						"detune" : [ 0.100000001490116 ],
-						"droneLevel" : [ 0.007874015748031 ],
-						"glide" : [ 354 ],
-						"grainBegin" : [ 0.0 ],
-						"grainEnd" : [ 0.0 ],
-						"grainLevel" : [ 0.330708661417323 ],
-						"grainPitches" : [ 10, 10, 4, 14, 14, 13, 23, 23 ],
-						"octave" : [ 4 ],
-						"pitch1" : [ 56.0 ],
-						"pitch2" : [ 63.0 ],
-						"pitch3" : [ 68.0 ],
-						"shape" : [ 0.699999988079071 ]
-					}
-,
 					"text" : "autopattr",
-					"varname" : "u614006716"
+					"varname" : "u204001386"
 				}
 
 			}
@@ -500,8 +482,24 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 112.0, 292.0, 100.0, 22.0 ],
+					"restore" : 					{
+						"densityScalar" : [ 18, 63 ],
+						"detune" : [ 0.100000001490116 ],
+						"droneLevel" : [ 0.0 ],
+						"glide" : [ 0 ],
+						"grainBegin" : [ 0.0 ],
+						"grainEnd" : [ 0.0 ],
+						"grainLevel" : [ 0.0 ],
+						"grainPitches" : [ 10, 10, 4, 14, 14, 13, 23, 23 ],
+						"octave" : [ 4 ],
+						"pitch1" : [ 55.0 ],
+						"pitch2" : [ 65.0 ],
+						"pitch3" : [ 60.0 ],
+						"shape" : [ 0.699999988079071 ]
+					}
+,
 					"text" : "autopattr",
-					"varname" : "u642006717"
+					"varname" : "u641001391"
 				}
 
 			}
@@ -1753,7 +1751,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-58",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1816,7 +1814,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-30",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1829,11 +1827,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-28",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 416.0, 209.0, 30.0, 30.0 ]
 				}
 
@@ -1842,11 +1840,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 59.0, 217.0, 30.0, 30.0 ]
 				}
 
@@ -4025,7 +4023,7 @@
 					"patching_rect" : [ 887.0, 73.0, 100.0, 40.0 ],
 					"preset_data" : [ 						{
 							"number" : 1,
-							"data" : [ 5, "<invalid>", "flonum", "float", 20.0, 5, "<invalid>", "flonum", "float", 2.0, 6, "<invalid>", "pictslider", "list", 0, 0, 5, "obj-26", "flonum", "float", 0.097438730299473, 5, "<invalid>", "flonum", "float", 29.791000366210938, 133, "<invalid>", "itable", "set", 0, 6, 16, 17, 19, 20, 21, 22, 22, 23, 24, 25, 25, 28, 30, 32, 34, 37, 39, 41, 42, 44, 45, 47, 47, 47, 48, 49, 49, 50, 51, 51, 51, 51, 52, 52, 52, 52, 52, 53, 53, 54, 54, 54, 54, 54, 55, 55, 55, 55, 56, 56, 56, 56, 57, 57, 57, 57, 57, 57, 57, 57, 57, 57, 57, 57, 57, 57, 57, 57, 57, 57, 58, 58, 59, 59, 59, 59, 60, 60, 60, 60, 60, 61, 62, 62, 63, 64, 65, 66, 67, 67, 67, 68, 69, 70, 71, 73, 74, 75, 75, 76, 78, 79, 80, 82, 83, 84, 86, 88, 90, 94, 96, 97, 100, 101, 103, 105, 106, 108, 109, 110, 112, 112, 113, 113, 116, 117, 117, 5, "obj-50", "flonum", "float", 60.0, 5, "obj-55", "flonum", "float", 712.633056640625, 6, "obj-59", "pictslider", "list", 56, 3, 5, "obj-69", "flonum", "float", 0.000004486694252, 5, "obj-71", "flonum", "float", 65.0, 5, "obj-74", "flonum", "float", 55.0, 5, "<invalid>", "number", "int", 300, 5, "<invalid>", "flonum", "float", 0.310000002384186, 5, "<invalid>", "flonum", "float", 0.600000023841858, 5, "obj-128", "number", "int", 58, 13, "obj-130", "itable", "set", 0, 10, 10, 4, 14, 14, 13, 23, 23, 5, "obj-134", "number", "int", 58, 5, "obj-136", "flonum", "float", 0.445449352264404, 5, "obj-145", "number", "int", 4, 5, "obj-8", "flonum", "float", 0.0, 5, "obj-62", "flonum", "float", 0.100000001490116, 5, "obj-104", "flonum", "float", 0.699999988079071, 5, "obj-182", "flonum", "float", 3092.0, 5, "obj-181", "flonum", "float", 3093.0, 5, "obj-10", "flonum", "float", 24.640182495117188, 5, "obj-11", "flonum", "float", 35.366298675537109, 5, "obj-180", "flonum", "float", 0.44359615445137, 5, "obj-12", "flonum", "float", 0.44359615445137, 5, "obj-179", "flonum", "float", 0.0, 5, "obj-14", "flonum", "float", 0.0, 5, "obj-178", "flonum", "float", 1.0, 5, "obj-177", "flonum", "float", 1.0, 5, "obj-171", "number", "int", 3, 5, "obj-60", "number", "int", 0, 5, "<invalid>", "toggle", "int", 0, 6, "obj-139", "pictslider", "list", 56, 3, 6, "<invalid>", "pictslider", "list", 42, 83, 5, "obj-31", "flonum", "float", 4.0, 6, "obj-87", "pictslider", "list", 18, 63, 5, "obj-98", "number", "int", 15, 5, "obj-101", "flonum", "float", 0.002118181902915, 5, "<invalid>", "flonum", "float", 0.0, 5, "obj-106", "flonum", "float", 56.0, 5, "obj-107", "flonum", "float", 3.0 ]
+							"data" : [ 5, "obj-26", "flonum", "float", 0.008503937162459, 5, "obj-50", "flonum", "float", 60.0, 5, "obj-55", "flonum", "float", 288.6739501953125, 6, "obj-59", "pictslider", "list", 56, 3, 5, "obj-69", "flonum", "float", 0.000004486694252, 5, "obj-71", "flonum", "float", 65.0, 5, "obj-74", "flonum", "float", 55.0, 5, "obj-128", "number", "int", 58, 13, "obj-130", "itable", "set", 0, 10, 10, 4, 14, 14, 13, 23, 23, 5, "obj-134", "number", "int", 58, 5, "obj-136", "flonum", "float", 0.445449352264404, 5, "obj-145", "number", "int", 4, 5, "obj-8", "flonum", "float", 0.0, 5, "obj-62", "flonum", "float", 0.100000001490116, 5, "obj-104", "flonum", "float", 0.699999988079071, 5, "obj-182", "flonum", "float", 439.0, 5, "obj-181", "flonum", "float", 440.0, 5, "obj-10", "flonum", "float", 39.280364990234375, 5, "obj-11", "flonum", "float", 50.006481170654297, 5, "obj-180", "flonum", "float", 0.445449352264404, 5, "obj-12", "flonum", "float", 0.445449352264404, 5, "obj-179", "flonum", "float", 0.0, 5, "obj-14", "flonum", "float", 0.0, 5, "obj-178", "flonum", "float", 1.0, 5, "obj-177", "flonum", "float", 1.0, 5, "obj-171", "number", "int", 0, 5, "obj-60", "number", "int", 0, 6, "obj-139", "pictslider", "list", 56, 3, 5, "obj-31", "flonum", "float", 0.0, 6, "obj-87", "pictslider", "list", 18, 63, 5, "obj-98", "number", "int", 15, 5, "obj-101", "flonum", "float", 0.002118181902915, 5, "obj-106", "flonum", "float", 56.0, 5, "obj-107", "flonum", "float", 3.0, 5, "obj-24", "number", "int", 0, 5, "obj-73", "flonum", "float", 0.0, 5, "obj-82", "flonum", "float", 0.0 ]
 						}
  ]
 				}
@@ -4606,7 +4604,7 @@
 					"order" : 1,
 					"source" : [ "obj-117", 0 ],
 					"watchpoint_flags" : 5,
-					"watchpoint_id" : 2
+					"watchpoint_id" : 1
 				}
 
 			}
@@ -5903,7 +5901,48 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "MLE.drone2.maxpat",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/audio",
+				"patcherrelativepath" : "../../patchers/audio",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "PM.Ladder~.maxpat",
+				"bootpath" : "~/Dropbox/MIT/Teaching/2018Fall/M080_Intro to Music Tech/080Slides/Class 16 Max",
+				"patcherrelativepath" : "../../../../../../Dropbox/MIT/Teaching/2018Fall/M080_Intro to Music Tech/080Slides/Class 16 Max",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "init.maxpat",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "../../patchers/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.delay.maxpat",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox",
+				"patcherrelativepath" : "../../patchers/sandbox",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.trackpad.maxpat",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/controllers",
+				"patcherrelativepath" : "../../patchers/controllers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "cm.indexcloud~.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
