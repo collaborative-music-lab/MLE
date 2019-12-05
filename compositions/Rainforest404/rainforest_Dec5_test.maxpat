@@ -145,7 +145,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2054.0, 891.708983999999873, 50.0, 49.0 ],
-					"text" : "Ian: ```````````c`e"
+					"text" : "Ian: ```````````c`e"
 				}
 
 			}
@@ -301,7 +301,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1584.0, 438.0, 50.0, 49.0 ],
-					"text" : "Ian: ```````````c`e"
+					"text" : "Ian: ```````````c`e"
 				}
 
 			}
@@ -420,7 +420,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1831.0, 802.0, 89.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "1 500 0.5 5000"
 				}
 
@@ -1043,15 +1042,15 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-210",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1190.0, 901.0, 50.0, 35.0 ],
+					"patching_rect" : [ 1190.0, 901.0, 50.0, 49.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 314.0, 531.0, 249.0, 22.0 ],
-					"text" : "targetVal 0."
+					"text" : "masterVolume 88."
 				}
 
 			}
@@ -2034,7 +2033,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 992.5, 808.708984375, 182.0, 22.0 ],
-					"text" : "rainforest_network::targetVal"
+					"text" : "masterVolume"
 				}
 
 			}
@@ -2241,13 +2240,13 @@
 					"patching_rect" : [ 692.0, 576.0, 56.0, 22.0 ],
 					"restore" : 					{
 						"impulseGain" : [ 0.023622047244094 ],
-						"masterVolume" : [ 45 ],
-						"sensitivity" : [ 0.062992125984252 ],
+						"masterVolume" : [ 88 ],
+						"sensitivity" : [ 2.708661417322835 ],
 						"soundfileGain" : [ 0.007874015748031 ]
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u280000972"
+					"varname" : "u530008184"
 				}
 
 			}
@@ -2965,7 +2964,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 409.25, 798.0, 80.0, 13.0 ]
+					"patching_rect" : [ 409.25, 798.0, 80.0, 13.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 314.0, 495.0, 231.0, 25.0 ]
 				}
 
 			}
