@@ -61,7 +61,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 526.0, 331.0, 50.0, 129.0 ],
-					"text" : "0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
+					"text" : "0 0 0 0 2 0 4 0 6 0 8 0 10 0 11 0 9 1 7 0 5 0 3 0 1 0 2 0 4 0 6 0 9"
 				}
 
 			}
@@ -107,12 +107,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-3",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 628.0, 1277.0, 50.0, 22.0 ],
-					"text" : "0."
+					"patching_rect" : [ 628.0, 1277.0, 50.0, 35.0 ],
+					"text" : "0.405262"
 				}
 
 			}
@@ -687,7 +688,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 240.166664958000183, 271.733332812786102, 133.333335816860199, 49.0 ],
-									"text" : "0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
+									"text" : "0 0 0 0 2 0 4 0 6 0 8 0 10 0 11 0 9 1 7 0 5 0 3 0 1 0 2 0 4 0 6 0 9"
 								}
 
 							}
@@ -1689,10 +1690,10 @@
 					"rows" : 1,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "live.grid[5]",
 							"parameter_invisible" : 1,
 							"parameter_shortname" : "live.grid",
-							"parameter_type" : 3,
-							"parameter_longname" : "live.grid[5]"
+							"parameter_type" : 3
 						}
 
 					}
@@ -1737,10 +1738,10 @@
 					"rows" : 1,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "live.grid",
 							"parameter_invisible" : 1,
 							"parameter_shortname" : "live.grid",
-							"parameter_type" : 3,
-							"parameter_longname" : "live.grid"
+							"parameter_type" : 3
 						}
 
 					}
@@ -1851,7 +1852,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 445.0, 247.0, 53.0, 22.0 ],
-									"text" : "c"
+									"text" : "x"
 								}
 
 							}
@@ -2512,7 +2513,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 172.0, 212.0, 50.0, 22.0 ],
-									"text" : "2"
+									"text" : "1"
 								}
 
 							}
@@ -2524,7 +2525,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 228.0, 171.0, 50.0, 22.0 ],
-									"text" : "2 0 1"
+									"text" : "1 0 0"
 								}
 
 							}
@@ -3422,7 +3423,7 @@
 											}
 , 											{
 												"key" : 3,
-												"value" : [ 4 ]
+												"value" : [ "conductor" ]
 											}
 , 											{
 												"key" : "A",
@@ -3430,11 +3431,11 @@
 											}
 , 											{
 												"key" : "B",
-												"value" : [ 5 ]
+												"value" : [ "conductor" ]
 											}
 , 											{
 												"key" : "C",
-												"value" : [ 6 ]
+												"value" : [ "conductor" ]
 											}
 , 											{
 												"key" : "Z",
@@ -5118,7 +5119,7 @@
 															}
 , 															{
 																"key" : 3,
-																"value" : [ 4 ]
+																"value" : [ "conductor" ]
 															}
 , 															{
 																"key" : "A",
@@ -5126,11 +5127,11 @@
 															}
 , 															{
 																"key" : "B",
-																"value" : [ 5 ]
+																"value" : [ "conductor" ]
 															}
 , 															{
 																"key" : "C",
-																"value" : [ 6 ]
+																"value" : [ "conductor" ]
 															}
 , 															{
 																"key" : "Z",
@@ -6311,7 +6312,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 167.0, 106.0, 50.0, 35.0 ],
-									"text" : "0.525641"
+									"text" : "0.730769"
 								}
 
 							}
@@ -10136,12 +10137,12 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-4::obj-43" : [ "live.grid[7]", "live.grid", 0 ],
+			"obj-33::obj-54" : [ "live.grid[1]", "live.grid", 0 ],
 			"obj-39::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
 			"obj-46" : [ "live.grid", "live.grid", 0 ],
-			"obj-33::obj-54" : [ "live.grid[1]", "live.grid", 0 ],
-			"obj-12::obj-43" : [ "live.grid[3]", "live.grid", 0 ],
-			"obj-4::obj-43" : [ "live.grid[7]", "live.grid", 0 ],
 			"obj-86" : [ "live.grid[5]", "live.grid", 0 ],
+			"obj-12::obj-43" : [ "live.grid[3]", "live.grid", 0 ],
 			"obj-5::obj-54" : [ "live.grid[4]", "live.grid", 0 ],
 			"parameterbanks" : 			{
 
@@ -10165,8 +10166,8 @@
 			}
 , 			{
 				"name" : "initS.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
-				"patcherrelativepath" : "../../patchers/utilities",
+				"bootpath" : "~/Dropbox/MIT/Teaching/M470_Fall2019/Concertmedia",
+				"patcherrelativepath" : "../../../../../../Dropbox/MIT/Teaching/M470_Fall2019/Concertmedia",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -10227,6 +10228,20 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "MinorScale.js",
+				"bootpath" : "~/Dropbox/MIT/Teaching/M080_Fall2019/Assignments/Assignment 2/44385295-submissions/Mloduchowski, Tomasz B/21M.080.2/code",
+				"patcherrelativepath" : "../../../../../../Dropbox/MIT/Teaching/M080_Fall2019/Assignments/Assignment 2/44385295-submissions/Mloduchowski, Tomasz B/21M.080.2/code",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MajorScale.js",
+				"bootpath" : "~/Dropbox/MIT/Teaching/M080_Fall2019/Assignments/Assignment 2/44385295-submissions/Mloduchowski, Tomasz B/21M.080.2/code",
+				"patcherrelativepath" : "../../../../../../Dropbox/MIT/Teaching/M080_Fall2019/Assignments/Assignment 2/44385295-submissions/Mloduchowski, Tomasz B/21M.080.2/code",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "MLE.beat.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/network",
 				"patcherrelativepath" : "../../patchers/network",
@@ -10263,15 +10278,15 @@
 			}
 , 			{
 				"name" : "MLE.UDPreceive.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/network",
-				"patcherrelativepath" : "../../patchers/network",
+				"bootpath" : "~/Dropbox/MIT/Teaching/M470_Fall2019/Concertmedia",
+				"patcherrelativepath" : "../../../../../../Dropbox/MIT/Teaching/M470_Fall2019/Concertmedia",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.UDPsend.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/network",
-				"patcherrelativepath" : "../../patchers/network",
+				"bootpath" : "~/Dropbox/MIT/Teaching/M470_Fall2019/Concertmedia",
+				"patcherrelativepath" : "../../../../../../Dropbox/MIT/Teaching/M470_Fall2019/Concertmedia",
 				"type" : "JSON",
 				"implicit" : 1
 			}
