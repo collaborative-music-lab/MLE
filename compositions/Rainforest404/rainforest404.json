@@ -1,0 +1,58 @@
+{
+	"pattrstorage" : 	{
+		"name" : "rainforest404",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"LRbalance" : [ 0.0 ],
+					"impulseGain" : [ 0.52755905511811 ],
+					"masterVolume" : [ 0.675590551181102 ],
+					"sensitivity" : [ 3.464566929133858 ],
+					"soundfileGain" : [ 0.0 ],
+					"rainforest_study2::delay2scalar" : [ 0.0 ],
+					"rainforest_study2::delayScalar" : [ 111, 96 ],
+					"rainforest_study2::feedbackGain" : [ 0.0 ],
+					"rainforest_study2::filterScalar" : [ 57, 34 ],
+					"rainforest_study2::forceGain" : [ 9.0 ],
+					"rainforest_study2::increment" : [ 0.009999999776483 ],
+					"rainforest_study2::lfoDepth" : [ 0.0 ],
+					"rainforest_study2::lfoMin" : [ 0.0 ],
+					"rainforest_study2::lfoRate" : [ 0.100000001490116 ],
+					"rainforest_study2::rmsInterval" : [ 100 ],
+					"rainforest_study2::vcaTarget" : [ 0.110236220061779 ],
+					"multidrone3::densityScalar" : [ 68, 74 ],
+					"multidrone3::detune" : [ 0.100000001490116 ],
+					"multidrone3::droneLevel" : [ 0.0 ],
+					"multidrone3::glide" : [ 0 ],
+					"multidrone3::grainBegin" : [ 0.0 ],
+					"multidrone3::grainEnd" : [ 0.5 ],
+					"multidrone3::grainLevel" : [ 0.0 ],
+					"multidrone3::grainPitches" : [ 10, 10, 4, 14, 14, 13, 23, 23 ],
+					"multidrone3::octave" : [ 4 ],
+					"multidrone3::pitch1" : [ 63.0 ],
+					"multidrone3::pitch2" : [ 68.0 ],
+					"multidrone3::pitch3" : [ 71.0 ],
+					"multidrone3::shape" : [ 0.699999988079071 ],
+					"multidrone3::MLE.delay::Lowpass" : [ 0.52 ],
+					"multidrone3::MLE.delay::delayLevel" : [ 0.2 ],
+					"multidrone3::MLE.delay::delayTime" : [ 120 ],
+					"multidrone3::MLE.delay::feedback" : [ 0.8 ],
+					"rainforest_network::groupThreshold" : [ 0.125984251499176 ],
+					"rainforest_network::increment" : [ 0.100000001490116 ],
+					"rainforest_network::targetVal" : [ 0.110236220472441 ],
+					"MLE.reverb::damping" : [ 0.5 ],
+					"MLE.reverb::diffusion" : [ 0.75 ],
+					"MLE.reverb::drywet" : [ 37.147251398990292 ],
+					"MLE.reverb::size" : [ 0.461933114738956 ],
+					"MLE.reverb::time" : [ 0.15 ],
+					"MLE.reverb::reverbFX" : [ -1 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
