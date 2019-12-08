@@ -68,15 +68,15 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 351.0, 63.0, 56.0, 22.0 ],
+					"patching_rect" : [ 255.0, 38.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"groupThreshold" : [ 0.165354326367378 ],
+						"groupThreshold" : [ 0.0 ],
 						"increment" : [ 0.100000001490116 ],
-						"targetVal" : [ 0.275590551181102 ]
+						"targetVal" : [ 0.0 ]
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u836003237"
+					"varname" : "u511012365"
 				}
 
 			}
@@ -111,7 +111,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 18.0, 716.0, 58.0, 22.0 ],
+					"patching_rect" : [ 0.0, 725.0, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -143,13 +143,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-3",
-					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 18.0, 39.0, 50.0, 49.0 ],
-					"text" : "Ian 0.275591"
+					"patching_rect" : [ 18.0, 39.0, 50.0, 22.0 ],
+					"text" : "Ian 0."
 				}
 
 			}
@@ -161,7 +160,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 104.0, -144.5, 78.0, 60.0 ],
+					"patching_rect" : [ 22.0, -130.5, 78.0, 60.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 8.0, 1.0, 78.0, 60.0 ],
@@ -182,15 +181,14 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-45",
-					"linecount" : 4,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 261.0, 191.0, 50.0, 62.0 ],
+					"patching_rect" : [ 261.0, 191.0, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 8.0, 282.0, 141.0, 22.0 ],
-					"text" : "threshold 0.165354"
+					"text" : "Ian 0."
 				}
 
 			}
@@ -261,40 +259,12 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-191",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 261.0, 42.0, 35.0, 22.0 ],
-					"text" : "clear"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-178",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 0,
 					"patching_rect" : [ 80.0, 38.0, 149.0, 22.0 ],
 					"text" : "MLE.UDPsend rainforestA"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-103",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 80.0, 76.0, 160.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"embed" : 0
-					}
-,
-					"text" : "coll rainforest_names&amps"
 				}
 
 			}
@@ -2041,13 +2011,6 @@
 					"destination" : [ "obj-187", 0 ],
 					"order" : 0,
 					"source" : [ "obj-189", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-103", 0 ],
-					"source" : [ "obj-191", 0 ]
 				}
 
 			}

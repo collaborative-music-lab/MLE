@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 40.0, 1385.0, 1005.0 ],
+		"rect" : [ 0.0, 45.0, 1385.0, 1005.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,19 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-28",
+					"linecount" : 19,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 754.0, 266.0, 50.0, 263.0 ],
+					"text" : "\"Macintosh HD:/Users/ianhattwick/Dropbox/MIT/Teaching/M470_Fall2019/Concertmedia/MLE_BG_F19/MLE_BG_F19.004.jpeg\""
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-23",
 					"maxclass" : "newobj",
@@ -104,13 +117,13 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 1147.0, 409.0, 50.0, 22.0 ],
+					"patching_rect" : [ 800.0, 705.0, 50.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "number[4]",
 							"parameter_invisible" : 1,
 							"parameter_shortname" : "number[4]",
-							"parameter_type" : 3
+							"parameter_type" : 3,
+							"parameter_longname" : "number[4]"
 						}
 
 					}
@@ -125,7 +138,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1144.0, 469.0, 167.0, 22.0 ],
+					"patching_rect" : [ 800.0, 743.0, 167.0, 22.0 ],
 					"text" : "MLE.UDPsend MLE_F19_BG"
 				}
 
@@ -179,11 +192,11 @@
 					"prefix" : "Macintosh HD:/Users/ianhattwick/Dropbox/MIT/Teaching/M470_Fall2019/Concertmedia/MLE_BG_F19/",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "umenu",
 							"parameter_mmax" : 12,
 							"parameter_shortname" : "umenu",
 							"parameter_enum" : [ "MLE_BG_F19.001.jpeg", "MLE_BG_F19.002.jpeg", "MLE_BG_F19.003.jpeg", "MLE_BG_F19.004.jpeg", "MLE_BG_F19.005.jpeg", "MLE_BG_F19.006.jpeg", "MLE_BG_F19.007.jpeg", "MLE_BG_F19.008.jpeg", "MLE_BG_F19.009.jpeg", "MLE_BG_F19.010.jpeg", "MLE_BG_F19.011.jpeg", "MLE_BG_F19.012.jpeg", "MLE_BG_F19.013.jpeg" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "umenu"
 						}
 
 					}
@@ -202,7 +215,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
 					"patching_rect" : [ 943.0, 195.0, 247.0, 164.666666666666657 ],
-					"pic" : "MLE_BG_F19.001.jpeg",
+					"pic" : "MLE_BG_F19.004.jpeg",
 					"presentation" : 1,
 					"presentation_rect" : [ -1.0, -206.0, 1924.0, 1282.666666666666515 ]
 				}
@@ -398,10 +411,10 @@
 					"patching_rect" : [ 110.0, 164.000015258789062, 50.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "number[3]",
 							"parameter_invisible" : 1,
 							"parameter_shortname" : "number[3]",
-							"parameter_type" : 3
+							"parameter_type" : 3,
+							"parameter_longname" : "number[3]"
 						}
 
 					}
@@ -1283,10 +1296,10 @@
 					"patching_rect" : [ 466.0, 11.0, 50.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "number[2]",
 							"parameter_invisible" : 1,
 							"parameter_shortname" : "number[2]",
-							"parameter_type" : 3
+							"parameter_type" : 3,
+							"parameter_longname" : "number[2]"
 						}
 
 					}
@@ -1306,11 +1319,11 @@
 					"patching_rect" : [ 116.0, 29.0, 24.0, 24.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "button",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "button",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "button"
 						}
 
 					}
@@ -1355,10 +1368,10 @@
 					"saturation" : 1.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "swatch",
 							"parameter_invisible" : 1,
 							"parameter_shortname" : "swatch",
-							"parameter_type" : 3
+							"parameter_type" : 3,
+							"parameter_longname" : "swatch"
 						}
 
 					}
@@ -2185,10 +2198,10 @@
 					"patching_rect" : [ 398.0, 488.0, 50.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "number[1]",
 							"parameter_invisible" : 1,
 							"parameter_shortname" : "number[1]",
-							"parameter_type" : 3
+							"parameter_type" : 3,
+							"parameter_longname" : "number[1]"
 						}
 
 					}
@@ -2209,10 +2222,10 @@
 					"patching_rect" : [ 333.0, 488.0, 50.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "number",
 							"parameter_invisible" : 1,
 							"parameter_shortname" : "number",
-							"parameter_type" : 3
+							"parameter_type" : 3,
+							"parameter_longname" : "number"
 						}
 
 					}
@@ -2429,6 +2442,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
+					"order" : 0,
+					"source" : [ "obj-12", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 1 ],
+					"order" : 1,
 					"source" : [ "obj-12", 1 ]
 				}
 
@@ -2692,14 +2714,14 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-14" : [ "swatch", "swatch", 0 ],
 			"obj-45" : [ "number", "number", 0 ],
-			"obj-22" : [ "number[4]", "number[4]", 0 ],
 			"obj-48" : [ "number[1]", "number[1]", 0 ],
-			"obj-69" : [ "number[2]", "number[2]", 0 ],
+			"obj-22" : [ "number[4]", "number[4]", 0 ],
 			"obj-115" : [ "number[3]", "number[3]", 0 ],
+			"obj-69" : [ "number[2]", "number[2]", 0 ],
 			"obj-12" : [ "umenu", "umenu", 0 ],
 			"obj-18" : [ "button", "button", 0 ],
+			"obj-14" : [ "swatch", "swatch", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -2707,6 +2729,13 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "MLE_BG_F19.004.jpeg",
+				"bootpath" : "~/Dropbox/MIT/Teaching/M470_Fall2019/Concertmedia/MLE_BG_F19",
+				"patcherrelativepath" : "../../../../../../Dropbox/MIT/Teaching/M470_Fall2019/Concertmedia/MLE_BG_F19",
+				"type" : "JPEG",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "MLE.UDPreceive.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/network",
 				"patcherrelativepath" : "../../patchers/network",

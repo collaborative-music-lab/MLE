@@ -39,6 +39,29 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-137",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1901.0, 1301.0, 65.0, 22.0 ],
+					"text" : "newPlayer"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-134",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1883.0, 1338.5, 115.0, 22.0 ],
+					"text" : "s mleNetworkStatus"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-135",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -75,7 +98,7 @@
 					"patching_rect" : [ 143.5, 836.0, 200.0, 200.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 379.0, 9.0, 328.0, 189.941139221191406 ],
-					"rows" : 7
+					"rows" : 1
 				}
 
 			}
@@ -325,7 +348,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1482.3056640625, 417.78155517578125, 97.0, 22.0 ],
-					"text" : "192.168.0.109"
+					"text" : "18.20.128.122"
 				}
 
 			}
@@ -383,7 +406,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 36.0, 255.0, 50.0, 35.0 ],
-									"text" : "fe80:0:0:0:aede:48ff:fe00:1122%en5"
+									"text" : "fe80:0:0:0:3662:d452:9688:5f4c%utun1"
 								}
 
 							}
@@ -805,7 +828,7 @@
 					"patching_rect" : [ 1952.10675048828125, 335.0, 131.0, 26.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 7.0, 308.0, 172.10675048828125, 26.0 ],
-					"text" : "192.168.0.109"
+					"text" : "18.20.128.122"
 				}
 
 			}
@@ -1128,8 +1151,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1804.0, 1305.5, 59.0, 76.0 ],
-					"text" : "Ian conductor 192.168.0.109"
+					"patching_rect" : [ 1804.0, 1305.5, 47.0, 76.0 ],
+					"text" : "Ian none 18.20.128.122"
 				}
 
 			}
@@ -1165,7 +1188,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1262.0, 1321.5, 250.0, 22.0 ],
-					"text" : "ping Ian conductor 192.168.0.109"
+					"text" : "ping Ian none 18.20.128.122"
 				}
 
 			}
@@ -1189,7 +1212,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1468.0, 1063.5, 225.0, 22.0 ],
-					"text" : "ping Ian conductor 192.168.0.109"
+					"text" : "ping Ian none 18.20.128.122"
 				}
 
 			}
@@ -1251,9 +1274,10 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "MLE.chat.maxpat",
-					"numinlets" : 3,
-					"numoutlets" : 0,
+					"numinlets" : 4,
+					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 878.0, 833.0, 280.0, 140.0 ],
 					"viewvisibility" : 1
 				}
@@ -2672,7 +2696,7 @@
 					"fontsize" : 10.0,
 					"hint" : "",
 					"id" : "obj-47",
-					"items" : [ "en5", ",", "utun2", ",", "utun1", ",", "utun0", ",", "awdl0", ",", "en0", ",", "lo0" ],
+					"items" : [ "utun1", ",", "utun0", ",", "awdl0", ",", "en5", ",", "en9", ",", "en0", ",", "lo0" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -4838,7 +4862,7 @@
 					"fontsize" : 10.0,
 					"hint" : "",
 					"id" : "obj-21",
-					"items" : [ 44100, ",", 48000, ",", 88200, ",", 96000 ],
+					"items" : [ 44100, ",", 48000 ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -6275,7 +6299,7 @@
 					"fontsize" : 10.0,
 					"hint" : "",
 					"id" : "obj-18",
-					"items" : "MacBook Pro Microphone",
+					"items" : [ "USB Audio Device", ",", "MacBook Pro Microphone" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -6952,7 +6976,7 @@
 					"fontsize" : 10.0,
 					"hint" : "",
 					"id" : "obj-6",
-					"items" : "MacBook Pro Speakers",
+					"items" : [ "USB Audio Device", ",", "MacBook Pro Speakers" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -8891,6 +8915,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-106", 0 ],
+					"order" : 0,
+					"source" : [ "obj-114", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-137", 0 ],
+					"order" : 1,
 					"source" : [ "obj-114", 0 ]
 				}
 
@@ -9023,6 +9056,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-130", 0 ],
 					"source" : [ "obj-135", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-134", 0 ],
+					"source" : [ "obj-137", 0 ]
 				}
 
 			}
