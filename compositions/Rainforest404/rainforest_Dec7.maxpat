@@ -39,6 +39,43 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-234",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1107.0, 610.0, 57.0, 22.0 ],
+					"text" : "tosymbol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-225",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"patching_rect" : [ 1250.75, 602.0, 29.5, 22.0 ],
+					"text" : "t l b"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-199",
+					"linecount" : 3,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 875.0, 449.0, 50.0, 49.0 ],
+					"text" : "grain loads shunt"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-231",
 					"maxclass" : "slider",
 					"numinlets" : 1,
@@ -55,15 +92,14 @@
 				"box" : 				{
 					"fontsize" : 24.0,
 					"id" : "obj-227",
-					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1211.0, 1010.0, 78.0, 89.0 ],
+					"patching_rect" : [ 926.5, 1013.0, 282.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 262.25, 622.0, 451.0, 35.0 ],
-					"text" : "droneLevel 0."
+					"text" : "LRbalance 0.456693"
 				}
 
 			}
@@ -488,7 +524,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1104.0, 863.0, 51.0, 22.0 ],
+					"patching_rect" : [ 1069.0, 861.0, 51.0, 22.0 ],
 					"text" : "enabled"
 				}
 
@@ -1098,8 +1134,8 @@
 										"followglobaltempo" : 0,
 										"formantcorrection" : 0,
 										"mode" : "basic",
-										"originallength" : [ 119596.90884353731235, "ticks" ],
-										"originaltempo" : 119.999999999999886,
+										"originallength" : [ 62575.54285714278376, "ticks" ],
+										"originaltempo" : 119.999999999999844,
 										"pitchcorrection" : 0,
 										"quality" : "basic",
 										"timestretch" : [ 1 ]
@@ -1444,21 +1480,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-210",
-					"linecount" : 2,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1190.0, 901.0, 52.0, 35.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 314.0, 531.0, 249.0, 22.0 ],
-					"text" : "droneLevel 0."
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-208",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -1564,7 +1585,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 739.0, 870.0, 50.0, 35.0 ],
-					"text" : "63 68 71"
+					"text" : "56 63 68"
 				}
 
 			}
@@ -2436,7 +2457,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 992.5, 808.708984375, 182.0, 22.0 ],
-					"text" : "multidrone3::droneLevel"
+					"text" : "LRbalance"
 				}
 
 			}
@@ -2642,11 +2663,11 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 692.0, 576.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"LRbalance" : [ 0.0 ],
-						"impulseGain" : [ 0.52755905511811 ],
-						"masterVolume" : [ 0.65511811023622 ],
-						"sensitivity" : [ 0.818897637795276 ],
-						"soundfileGain" : [ 0.0 ]
+						"LRbalance" : [ 0.456692913385827 ],
+						"impulseGain" : [ 0.0 ],
+						"masterVolume" : [ 1.105511811023622 ],
+						"sensitivity" : [ 0.692913385826772 ],
+						"soundfileGain" : [ 0.007874015748031 ]
 					}
 ,
 					"text" : "autopattr",
@@ -4520,9 +4541,9 @@
 					"maxclass" : "bpatcher",
 					"name" : "multidrone3.maxpat",
 					"numinlets" : 3,
-					"numoutlets" : 2,
+					"numoutlets" : 3,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "", "signal" ],
+					"outlettype" : [ "", "signal", "" ],
 					"patching_rect" : [ 400.0, 29.0, 682.0, 380.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 345.0, 12.5, 682.0, 300.0 ],
@@ -5356,14 +5377,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-210", 1 ],
-					"order" : 2,
-					"source" : [ "obj-178", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-227", 1 ],
 					"order" : 1,
 					"source" : [ "obj-178", 0 ]
@@ -5705,13 +5718,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-129", 0 ],
-					"source" : [ "obj-210", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-129", 0 ],
 					"midpoints" : [ 1320.0, 944.0 ],
 					"order" : 1,
 					"source" : [ "obj-211", 0 ]
@@ -5817,6 +5823,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-129", 0 ],
+					"source" : [ "obj-225", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-208", 0 ],
+					"source" : [ "obj-225", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-224", 0 ],
 					"source" : [ "obj-226", 0 ]
 				}
@@ -5885,6 +5905,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-227", 1 ],
+					"source" : [ "obj-234", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-12", 1 ],
 					"source" : [ "obj-24", 0 ]
 				}
@@ -5922,6 +5949,30 @@
 				"patchline" : 				{
 					"destination" : [ "obj-63", 0 ],
 					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-199", 1 ],
+					"order" : 2,
+					"source" : [ "obj-3", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-225", 0 ],
+					"order" : 0,
+					"source" : [ "obj-3", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-234", 0 ],
+					"order" : 1,
+					"source" : [ "obj-3", 2 ]
 				}
 
 			}
@@ -6620,6 +6671,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "MLE.globalPath.maxpat",
+				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "../../patchers/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "rainforest_network.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/compositions/Rainforest404",
 				"patcherrelativepath" : ".",
@@ -6740,10 +6798,6 @@
 			}
 , 			{
 				"name" : "cv.jit.centroids.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "cv.jit.mean.mxo",
 				"type" : "iLaX"
 			}
 , 			{
