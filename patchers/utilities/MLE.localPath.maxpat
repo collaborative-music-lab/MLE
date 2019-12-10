@@ -53,11 +53,11 @@
 				"box" : 				{
 					"comment" : "connect closebang here",
 					"id" : "obj-10",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 423.0, 92.0, 30.0, 30.0 ]
 				}
 
@@ -125,7 +125,7 @@
 				"box" : 				{
 					"comment" : "Connect to pattr preset object",
 					"id" : "obj-22",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -236,7 +236,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 216.00006103515625, 201.0, 77.0, 22.0 ],
+					"patching_rect" : [ 216.00006103515625, 201.0, 139.0, 22.0 ],
 					"text" : "loadmess #1"
 				}
 
@@ -282,8 +282,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 40.0, 465.0, 350.0, 22.0 ],
-					"text" : "\"Macintosh HD:/Users/ianhattwick/Documents/Max 8/Library/#1\""
+					"patching_rect" : [ 40.0, 465.0, 455.0, 22.0 ],
+					"text" : "\"Macintosh HD:/Users/ianhattwick/Documents/Max 8/Library/presets/rainforest.json\""
 				}
 
 			}
@@ -354,8 +354,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 92.666671752929688, 273.0, 104.0, 22.0 ],
-					"text" : "sprintf %s/presets"
+					"patching_rect" : [ 92.666671752929688, 273.0, 61.0, 22.0 ],
+					"text" : "sprintf %s"
 				}
 
 			}
@@ -399,7 +399,7 @@
 				"box" : 				{
 					"comment" : "Connect to pattrStorage",
 					"id" : "obj-98",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -504,7 +504,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-21", 1 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-153", 0 ]
 				}
 
@@ -512,7 +512,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 1 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-153", 0 ]
 				}
 
@@ -622,9 +622,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [  ],
-		"autosave" : 0
+ ]
 	}
 
 }
