@@ -278,13 +278,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-4",
-					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 40.0, 465.0, 221.0, 49.0 ],
-					"text" : "\"Macintosh HD:/Users/ianhattwick/Documents/Max 8/Library/presets/#1\""
+					"patching_rect" : [ 40.0, 465.0, 350.0, 22.0 ],
+					"text" : "\"Macintosh HD:/Users/ianhattwick/Documents/Max 8/Library/#1\""
 				}
 
 			}

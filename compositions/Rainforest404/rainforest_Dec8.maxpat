@@ -76,13 +76,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-158",
-					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 854.0, 862.0, 293.0, 49.0 ],
-					"text" : "read \"Macintosh HD:/Users/ianhattwick/Documents/github/CML/MLE/compositions/Rainforest404/rainforest404.json\""
+					"patching_rect" : [ 854.0, 862.0, 293.0, 22.0 ],
+					"text" : "read 0"
 				}
 
 			}
@@ -3808,7 +3807,7 @@
 									}
 ,
 									"text" : "autopattr",
-									"varname" : "u731008175"
+									"varname" : "u051011295"
 								}
 
 							}
@@ -5873,7 +5872,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u347008174"
+					"varname" : "u022011296"
 				}
 
 			}
@@ -6043,7 +6042,7 @@
 			}
 , 			{
 				"box" : 				{
-					"autorestore" : "rainforest404.json",
+					"autorestore" : "rainforest.json",
 					"id" : "obj-37",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -9549,9 +9548,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "rainforest404.json",
-				"bootpath" : "~/Documents/github/CML/MLE/compositions/Rainforest404",
-				"patcherrelativepath" : ".",
+				"name" : "rainforest.json",
+				"bootpath" : "~/Documents/Max 8/Library/presets",
+				"patcherrelativepath" : "../../../../../Max 8/Library/presets",
 				"type" : "JSON",
 				"implicit" : 1
 			}
