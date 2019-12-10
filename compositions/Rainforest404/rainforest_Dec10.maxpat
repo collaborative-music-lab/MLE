@@ -1486,13 +1486,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-93",
-					"linecount" : 7,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1492.0, 1004.5, 99.0, 102.0 ],
-					"text" : "Ian: nnnnnni`nbbbnnnbmntnnnntcbnnnm\tnfnnfc``wwwwwwwwwwwwwwwwwwww"
+					"patching_rect" : [ 1492.0, 1004.5, 99.0, 22.0 ],
+					"text" : "Ian: qqqaaaqq"
 				}
 
 			}
@@ -1692,7 +1691,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 392.0, 323.0, 93.0, 35.0 ],
-									"text" : "1 10 0 2078.542309"
+									"text" : "1 10 0 5233.888992"
 								}
 
 							}
@@ -4730,7 +4729,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 340.0, 11.0, 108.0, 22.0 ],
-									"text" : "eventCounter 12"
+									"text" : "eventCounter 15"
 								}
 
 							}
@@ -4840,7 +4839,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 24.0, 296.0, 50.0, 35.0 ],
-									"text" : "36. 63. 55."
+									"text" : "60. 70. 55."
 								}
 
 							}
@@ -4876,7 +4875,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 219.0, 376.0, 50.0, 22.0 ],
-									"text" : "36"
+									"text" : "60"
 								}
 
 							}
@@ -5586,7 +5585,7 @@
 					"patching_rect" : [ 926.5, 1013.0, 282.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 6.5, 557.0, 451.0, 35.0 ],
-					"text" : "masterVolume 0.677165"
+					"text" : "LRbalance 0.535433"
 				}
 
 			}
@@ -6298,7 +6297,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 464.75, 464.0, 150.0, 20.0 ],
+					"patching_rect" : [ 464.75, 464.0, 83.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 348.75, 425.5, 150.0, 20.0 ],
 					"text" : "soundfile gain"
@@ -6956,7 +6955,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1006.0, 751.708984375, 182.0, 22.0 ],
-					"text" : "masterVolume"
+					"text" : "LRbalance"
 				}
 
 			}
@@ -6994,12 +6993,12 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 493.75, 604.291015625, 56.0, 22.0 ],
 					"restore" : 					{
-						"LRbalance" : [ 0.55 ],
+						"LRbalance" : [ 0.535433070866142 ],
 						"hipassL" : [ 20 ],
 						"hipassR" : [ 50 ],
-						"impulseGain" : [ 0.023622047244094 ],
+						"impulseGain" : [ 0.559055118110236 ],
 						"masterVolume" : [ 0.677165354330709 ],
-						"sensitivity" : [ 3.0 ],
+						"sensitivity" : [ 1.15748031496063 ],
 						"sfgain" : [ 0.0 ],
 						"sfpitch" : [ 0.0 ],
 						"sfspeed" : [ 1.0 ]
@@ -7052,7 +7051,7 @@
 						"count" : 11,
 						"data" : [ 							{
 								"key" : [ "qa", 0 ],
-								"value" : [ "rainforest_study2::feedbackGain" ]
+								"value" : [ "feedback::gain" ]
 							}
 , 							{
 								"key" : [ "ws", 1 ],
@@ -7064,7 +7063,7 @@
 							}
 , 							{
 								"key" : [ "rf", 3 ],
-								"value" : [ "soundfileGain" ]
+								"value" : [ "sfgain" ]
 							}
 , 							{
 								"key" : [ "tg", 4 ],
@@ -7169,7 +7168,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 521.0, 717.0, 208.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 4, 45, 358, 173 ],
+						"client_rect" : [ 4, 45, 405, 437 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
 						"storage_rect" : [ 583, 69, 1034, 197 ]
