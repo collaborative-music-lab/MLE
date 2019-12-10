@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1317.0, 937.0 ],
+		"rect" : [ 34.0, 79.0, 665.0, 540.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -91,7 +91,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 796.0, 347.0, 79.0, 20.0 ],
+					"patching_rect" : [ 796.0, 342.0, 79.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 206.0, 90.0, 79.0, 20.0 ],
 					"text" : "delay2 scalar"
@@ -123,21 +123,21 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 217.0, 507.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"delay2scalar" : [ 0.0 ],
-						"delayScalar" : [ 111, 96 ],
-						"feedbackGain" : [ 0.0 ],
-						"filterScalar" : [ 84, 83 ],
+						"delay2scalar" : [ 0.66 ],
+						"delayScalar" : [ 53, 68 ],
+						"filterScalar" : [ 71, 60 ],
 						"forceGain" : [ 9.0 ],
+						"gain" : [ 0.001 ],
 						"increment" : [ 1.0 ],
-						"lfoDepth" : [ 0.0 ],
-						"lfoMin" : [ 0.0 ],
-						"lfoRate" : [ 0.100000001490116 ],
+						"lfoDepth" : [ 0.5 ],
+						"lfoMin" : [ 200.0 ],
+						"lfoRate" : [ 0.01 ],
 						"rmsInterval" : [ 100 ],
-						"vcaTarget" : [ 0.200905501917474 ]
+						"vcaTarget" : [ 0.053 ]
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u365003233"
+					"varname" : "u302008190"
 				}
 
 			}
@@ -424,7 +424,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 228.0, 277.0, 133.0, 22.0 ],
-									"text" : "-0.200906"
+									"text" : "0.000947"
 								}
 
 							}
@@ -1179,13 +1179,14 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-108",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 984.0, 325.0, 63.0, 20.0 ],
+					"patching_rect" : [ 984.0, 325.0, 63.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 180.0, 234.5, 63.0, 20.0 ],
-					"text" : "delay time"
+					"presentation_rect" : [ 180.0, 234.5, 91.0, 20.0 ],
+					"text" : "delay time (ms)"
 				}
 
 			}
@@ -1271,39 +1272,42 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-78",
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 792.5, 515.0, 28.0, 20.0 ],
+					"patching_rect" : [ 792.5, 515.0, 28.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 246.0, 210.0, 28.0, 20.0 ],
-					"text" : "min"
+					"presentation_rect" : [ 246.0, 210.0, 54.0, 20.0 ],
+					"text" : "min (Hz)"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-70",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 729.5, 515.0, 39.0, 20.0 ],
+					"patching_rect" : [ 729.5, 515.0, 39.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 246.0, 181.0, 39.0, 20.0 ],
-					"text" : "depth"
+					"presentation_rect" : [ 246.0, 181.0, 65.0, 20.0 ],
+					"text" : "depth (Hz)"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-66",
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 676.5, 517.0, 29.0, 20.0 ],
+					"patching_rect" : [ 676.5, 517.0, 29.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 246.0, 155.0, 29.0, 20.0 ],
-					"text" : "rate"
+					"presentation_rect" : [ 246.0, 155.0, 55.0, 20.0 ],
+					"text" : "rate (Hz)"
 				}
 
 			}
@@ -1379,13 +1383,14 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-50",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 736.0, 663.0, 55.0, 20.0 ],
+					"patching_rect" : [ 736.0, 663.0, 55.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 180.0, 260.0, 55.0, 20.0 ],
-					"text" : "filter freq"
+					"presentation_rect" : [ 180.0, 260.0, 87.0, 20.0 ],
+					"text" : "filter freq (Hz)"
 				}
 
 			}
@@ -1427,7 +1432,7 @@
 					"patching_rect" : [ 696.0, 755.0, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 79.0, 80.0, 50.0, 22.0 ],
-					"varname" : "feedbackGain"
+					"varname" : "gain"
 				}
 
 			}

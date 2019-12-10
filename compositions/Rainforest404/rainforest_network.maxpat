@@ -39,6 +39,54 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-25",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 245.0, 252.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 245.0, 252.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 245.0, 252.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 245.0, 252.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-16",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -106,9 +154,9 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 255.0, 38.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"groupThreshold" : [ 0.25984251499176 ],
+						"groupThreshold" : [ 0.275590538978577 ],
 						"increment" : [ 0.100000001490116 ],
-						"targetVal" : [ 0.031496062992126 ]
+						"targetVal" : [ 0.094488188976378 ]
 					}
 ,
 					"text" : "autopattr",
@@ -185,7 +233,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 18.0, 39.0, 50.0, 49.0 ],
-					"text" : "Ian 0.031496"
+					"text" : "Ian 0.094488"
 				}
 
 			}
@@ -218,15 +266,14 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-45",
-					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 265.0, 204.0, 50.0, 49.0 ],
+					"patching_rect" : [ 153.0, 204.0, 136.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 8.0, 282.0, 141.0, 22.0 ],
-					"text" : "Ian 0.031496"
+					"text" : "Ian 0.094488"
 				}
 
 			}
@@ -1755,7 +1802,7 @@
 					"patching_rect" : [ 627.0, 569.0, 150.0, 182.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 8.0, 94.0, 150.0, 182.0 ],
-					"rows" : 2
+					"rows" : 3
 				}
 
 			}

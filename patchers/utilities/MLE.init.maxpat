@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 617.0, 79.0, 863.0, 937.0 ],
+		"rect" : [ 617.0, 79.0, 568.0, 937.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -197,7 +197,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1533.0, 1362.0, 114.0, 22.0 ],
+					"patching_rect" : [ 1564.1263427734375, 1356.0, 114.0, 22.0 ],
 					"text" : "MLE.UDPsend ping"
 				}
 
@@ -1377,7 +1377,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1468.0, 1063.5, 225.0, 22.0 ],
-					"text" : "ping Ian none 192.168.0.100"
+					"text" : "ping ijc none 192.168.0.101"
 				}
 
 			}
@@ -2174,7 +2174,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 924.62646484375, 728.0, 182.0, 22.0 ],
-					"text" : "ping Ian none 192.168.0.100"
+					"text" : "ping ijc none 192.168.0.101"
 				}
 
 			}
