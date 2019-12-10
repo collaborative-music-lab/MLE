@@ -39,6 +39,53 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-198",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1037.0, 1280.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-195",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1099.0, 1329.0, 32.0, 22.0 ],
+					"text" : "gate"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-194",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1049.0, 1329.0, 32.0, 22.0 ],
+					"text" : "print"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-193",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1096.0, 1281.0, 97.0, 22.0 ],
+					"text" : "udpreceive 8000"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-189",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -1043,7 +1090,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 854.0, 862.0, 293.0, 49.0 ],
-					"text" : "read \"Macintosh HD:/Users/ianhattwick/Documents/github/CML/MLE/compositions/Rainforest404/rainforest404.json\""
+					"text" : "read \"Macintosh HD:/Users/ianhattwick/Documents/Max 8/Library/rainforest.json\""
 				}
 
 			}
@@ -1645,7 +1692,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 392.0, 323.0, 93.0, 35.0 ],
-									"text" : "1 10 0 1616.708771"
+									"text" : "1 10 0 2078.542309"
 								}
 
 							}
@@ -4683,7 +4730,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 340.0, 11.0, 108.0, 22.0 ],
-									"text" : "eventCounter 7"
+									"text" : "eventCounter 12"
 								}
 
 							}
@@ -4793,7 +4840,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 24.0, 296.0, 50.0, 35.0 ],
-									"text" : "74. 70. 48."
+									"text" : "36. 63. 55."
 								}
 
 							}
@@ -4829,7 +4876,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 219.0, 376.0, 50.0, 22.0 ],
-									"text" : "70"
+									"text" : "36"
 								}
 
 							}
@@ -5539,7 +5586,7 @@
 					"patching_rect" : [ 926.5, 1013.0, 282.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 6.5, 557.0, 451.0, 35.0 ],
-					"text" : "graingain 0."
+					"text" : "masterVolume 0.677165"
 				}
 
 			}
@@ -6909,7 +6956,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1006.0, 751.708984375, 182.0, 22.0 ],
-					"text" : "multidrone3::graingain"
+					"text" : "masterVolume"
 				}
 
 			}
@@ -6947,12 +6994,12 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 493.75, 604.291015625, 56.0, 22.0 ],
 					"restore" : 					{
-						"LRbalance" : [ 1.0 ],
+						"LRbalance" : [ 0.55 ],
 						"hipassL" : [ 20 ],
 						"hipassR" : [ 50 ],
 						"impulseGain" : [ 0.023622047244094 ],
-						"masterVolume" : [ 0.9 ],
-						"sensitivity" : [ 0.330708661417323 ],
+						"masterVolume" : [ 0.677165354330709 ],
+						"sensitivity" : [ 3.0 ],
 						"sfgain" : [ 0.0 ],
 						"sfpitch" : [ 0.0 ],
 						"sfspeed" : [ 1.0 ]
@@ -7029,7 +7076,7 @@
 							}
 , 							{
 								"key" : [ "uj", 6 ],
-								"value" : [ "multidrone3::glide" ]
+								"value" : [ "multidrone3::droneglide" ]
 							}
 , 							{
 								"key" : [ "ik", 7 ],
@@ -7114,7 +7161,7 @@
 			}
 , 			{
 				"box" : 				{
-					"autorestore" : "rainforest404.json",
+					"autorestore" : "rainforest.json",
 					"id" : "obj-37",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -9743,6 +9790,27 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-195", 1 ],
+					"source" : [ "obj-193", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-194", 0 ],
+					"source" : [ "obj-195", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-195", 0 ],
+					"source" : [ "obj-198", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"source" : [ "obj-2", 0 ]
 				}
@@ -10813,9 +10881,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "rainforest404.json",
-				"bootpath" : "~/Documents/github/CML/MLE/compositions/Rainforest404",
-				"patcherrelativepath" : ".",
+				"name" : "rainforest.json",
+				"bootpath" : "~/Documents/Max 8/Library",
+				"patcherrelativepath" : "../../../../../Max 8/Library",
 				"type" : "JSON",
 				"implicit" : 1
 			}
