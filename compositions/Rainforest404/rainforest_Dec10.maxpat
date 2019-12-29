@@ -974,8 +974,8 @@
 				"box" : 				{
 					"id" : "obj-105",
 					"maxclass" : "number",
-					"maximum" : 500.0,
-					"minimum" : 10.0,
+					"maximum" : 500,
+					"minimum" : 10,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
@@ -991,8 +991,8 @@
 				"box" : 				{
 					"id" : "obj-98",
 					"maxclass" : "number",
-					"maximum" : 500.0,
-					"minimum" : 10.0,
+					"maximum" : 500,
+					"minimum" : 10,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
@@ -1090,7 +1090,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 854.0, 862.0, 293.0, 49.0 ],
-					"text" : "read \"Macintosh HD:/Users/ianhattwick/Documents/Max 8/Library/rainforest.json\""
+					"text" : "read \"Macintosh HD:/Users/ianhattwick/Documents/github/CML/MLE/compositions/Rainforest404/rainforest404.json\""
 				}
 
 			}
@@ -1491,7 +1491,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1492.0, 1004.5, 99.0, 22.0 ],
-					"text" : "Ian: qqqaaaqq"
+					"text" : "Ian: we"
 				}
 
 			}
@@ -1595,7 +1595,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 841.0, 97.0, 345.0, 560.0 ],
+						"rect" : [ 841.0, 97.0, 725.0, 666.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1623,6 +1623,64 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-31",
+									"linecount" : 2,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 42.0, 403.0, 50.0, 35.0 ],
+									"text" : "67.322835"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-22",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 160.0, 316.0, 50.0, 22.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 0,
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-13",
+									"maxclass" : "number~",
+									"mode" : 2,
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "signal", "float" ],
+									"patching_rect" : [ 238.0, 579.0, 56.0, 22.0 ],
+									"sig" : 0.0
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 0,
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-12",
+									"maxclass" : "number~",
+									"mode" : 2,
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "signal", "float" ],
+									"patching_rect" : [ 42.5, 579.0, 56.0, 22.0 ],
+									"sig" : 0.0
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-30",
 									"maxclass" : "newobj",
@@ -1674,11 +1732,11 @@
 								"box" : 								{
 									"id" : "obj-26",
 									"maxclass" : "newobj",
-									"numinlets" : 2,
+									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 156.5, 372.5, 112.0, 22.0 ],
-									"text" : "expr $f1 * ($f2+0.5)"
+									"patching_rect" : [ 123.0, 365.0, 80.0, 22.0 ],
+									"text" : "expr $f1 * 0.5"
 								}
 
 							}
@@ -1691,7 +1749,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 392.0, 323.0, 93.0, 35.0 ],
-									"text" : "1 10 0 5233.888992"
+									"text" : "1 10 0 3089.413656"
 								}
 
 							}
@@ -1738,8 +1796,8 @@
 									"numinlets" : 6,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 114.0, 340.0, 110.0, 22.0 ],
-									"text" : "scale 0. 127 36 84."
+									"patching_rect" : [ 114.0, 340.0, 120.0, 22.0 ],
+									"text" : "scale 0. 127 100 150"
 								}
 
 							}
@@ -1786,7 +1844,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 311.0, 404.0, 29.5, 22.0 ],
+									"patching_rect" : [ 301.0, 413.0, 29.5, 22.0 ],
 									"text" : "*~"
 								}
 
@@ -2369,6 +2427,15 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-20", 0 ],
+									"order" : 0,
+									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-31", 1 ],
+									"order" : 1,
 									"source" : [ "obj-26", 0 ]
 								}
 
@@ -2406,20 +2473,47 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-19", 0 ],
+									"order" : 1,
 									"source" : [ "obj-279", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-8", 1 ],
+									"destination" : [ "obj-22", 0 ],
+									"order" : 0,
+									"source" : [ "obj-279", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-12", 0 ],
+									"order" : 1,
 									"source" : [ "obj-28", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-8", 1 ],
+									"order" : 0,
+									"source" : [ "obj-28", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-13", 0 ],
+									"order" : 0,
+									"source" : [ "obj-29", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-28", 1 ],
+									"order" : 1,
 									"source" : [ "obj-29", 0 ]
 								}
 
@@ -4839,7 +4933,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 24.0, 296.0, 50.0, 35.0 ],
-									"text" : "60. 70. 55."
+									"text" : "55. 65. 55."
 								}
 
 							}
@@ -4875,7 +4969,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 219.0, 376.0, 50.0, 22.0 ],
-									"text" : "60"
+									"text" : "55"
 								}
 
 							}
@@ -4893,7 +4987,7 @@
 									}
 ,
 									"text" : "autopattr",
-									"varname" : "u958003410"
+									"varname" : "u834003730"
 								}
 
 							}
@@ -5585,7 +5679,7 @@
 					"patching_rect" : [ 926.5, 1013.0, 282.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 6.5, 557.0, 451.0, 35.0 ],
-					"text" : "LRbalance 0.535433"
+					"text" : "LRbalance 0.007874"
 				}
 
 			}
@@ -6993,19 +7087,19 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 493.75, 604.291015625, 56.0, 22.0 ],
 					"restore" : 					{
-						"LRbalance" : [ 0.535433070866142 ],
+						"LRbalance" : [ 0.007874015748031 ],
 						"hipassL" : [ 20 ],
 						"hipassR" : [ 50 ],
-						"impulseGain" : [ 0.559055118110236 ],
-						"masterVolume" : [ 0.677165354330709 ],
-						"sensitivity" : [ 1.15748031496063 ],
+						"impulseGain" : [ 1.0 ],
+						"masterVolume" : [ 4.0 ],
+						"sensitivity" : [ 1.062992125984252 ],
 						"sfgain" : [ 0.0 ],
 						"sfpitch" : [ 0.0 ],
 						"sfspeed" : [ 1.0 ]
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u152003411"
+					"varname" : "u842003731"
 				}
 
 			}
@@ -7160,7 +7254,7 @@
 			}
 , 			{
 				"box" : 				{
-					"autorestore" : "rainforest.json",
+					"autorestore" : "rainforest404.json",
 					"id" : "obj-37",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -7168,7 +7262,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 521.0, 717.0, 208.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 4, 45, 405, 437 ],
+						"client_rect" : [ 4, 45, 358, 173 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
 						"storage_rect" : [ 583, 69, 1034, 197 ]
@@ -7646,7 +7740,7 @@
 					"patching_rect" : [ 543.0, 985.0, 40.0, 40.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 806.5, 460.5, 77.5, 77.5 ],
-					"size" : 2.0,
+					"size" : 4.0,
 					"varname" : "masterVolume"
 				}
 
@@ -10880,9 +10974,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "rainforest.json",
-				"bootpath" : "~/Documents/Max 8/Library",
-				"patcherrelativepath" : "../../../../../Max 8/Library",
+				"name" : "rainforest404.json",
+				"bootpath" : "~/Documents/github/CML/MLE/compositions/Rainforest404",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -11012,9 +11106,9 @@
 , 			{
 				"name" : "helpfile_label-1",
 				"default" : 				{
-					"fontname" : [ "Arial" ],
 					"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
-					"fontsize" : [ 13.0 ]
+					"fontsize" : [ 13.0 ],
+					"fontname" : [ "Arial" ]
 				}
 ,
 				"parentstyle" : "",

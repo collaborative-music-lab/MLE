@@ -434,6 +434,39 @@
 			}
 , 			{
 				"box" : 				{
+					"coll_data" : 					{
+						"count" : 7,
+						"data" : [ 							{
+								"key" : 0,
+								"value" : [ 0 ]
+							}
+, 							{
+								"key" : 1,
+								"value" : [ 2 ]
+							}
+, 							{
+								"key" : 2,
+								"value" : [ 4 ]
+							}
+, 							{
+								"key" : 3,
+								"value" : [ 5 ]
+							}
+, 							{
+								"key" : 4,
+								"value" : [ 7 ]
+							}
+, 							{
+								"key" : 5,
+								"value" : [ 9 ]
+							}
+, 							{
+								"key" : 6,
+								"value" : [ 11 ]
+							}
+ ]
+					}
+,
 					"id" : "obj-31",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -441,7 +474,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 248.0, 423.0, 50.5, 22.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 0
+						"embed" : 1
 					}
 ,
 					"text" : "coll"
@@ -680,36 +713,8 @@
 , 			{
 				"box" : 				{
 					"coll_data" : 					{
-						"count" : 7,
-						"data" : [ 							{
-								"key" : 0,
-								"value" : [ 0 ]
-							}
-, 							{
-								"key" : 1,
-								"value" : [ 2 ]
-							}
-, 							{
-								"key" : 2,
-								"value" : [ 3 ]
-							}
-, 							{
-								"key" : 3,
-								"value" : [ 5 ]
-							}
-, 							{
-								"key" : 4,
-								"value" : [ 7 ]
-							}
-, 							{
-								"key" : 5,
-								"value" : [ 8 ]
-							}
-, 							{
-								"key" : 6,
-								"value" : [ 10 ]
-							}
- ]
+						"count" : 0,
+						"data" : [  ]
 					}
 ,
 					"id" : "obj-12",
@@ -826,6 +831,39 @@
 			}
 , 			{
 				"box" : 				{
+					"coll_data" : 					{
+						"count" : 7,
+						"data" : [ 							{
+								"key" : 0,
+								"value" : [ 0 ]
+							}
+, 							{
+								"key" : 1,
+								"value" : [ 2 ]
+							}
+, 							{
+								"key" : 2,
+								"value" : [ 4 ]
+							}
+, 							{
+								"key" : 3,
+								"value" : [ 5 ]
+							}
+, 							{
+								"key" : 4,
+								"value" : [ 7 ]
+							}
+, 							{
+								"key" : 5,
+								"value" : [ 9 ]
+							}
+, 							{
+								"key" : 6,
+								"value" : [ 11 ]
+							}
+ ]
+					}
+,
 					"id" : "obj-6",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -833,7 +871,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 132.0, 663.0, 50.5, 22.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 0
+						"embed" : 1
 					}
 ,
 					"text" : "coll"
@@ -856,15 +894,15 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-4",
-					"linecount" : 7,
+					"linecount" : 11,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.5, 62.0, 150.0, 100.0 ],
+					"patching_rect" : [ 11.5, 62.0, 150.0, 154.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 6,
-					"presentation_rect" : [ 4.0, 40.0, 270.0, 87.0 ],
-					"text" : "Arguments:\n1) Scale\n2) Octave\n\nScale options: MajorScale, MinorScale, MajorPent, MinorPent"
+					"presentation_linecount" : 9,
+					"presentation_rect" : [ 4.0, 40.0, 270.0, 127.0 ],
+					"text" : "Arguments:\n1) Scale\n2) Octave\n\nScale options: MajorScale, MinorScale, MajorPent, MinorPent\n\nCustom scale: custom followed by list of scale degrees"
 				}
 
 			}
