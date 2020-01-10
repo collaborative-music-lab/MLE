@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-76",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 194.0, 146.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"format" : 6,
 					"id" : "obj-74",
 					"maxclass" : "flonum",
@@ -830,7 +842,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 239.0, 217.0, 311.0, 22.0 ],
-					"text" : "0. 0.278863 0.025817 0.605676 1.467217 0. 0. 0. 1.053554"
+					"text" : "0. 0. 0. 0. 0. 0. 0. 0. 0."
 				}
 
 			}
@@ -838,7 +850,7 @@
 				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "newobj",
-					"numinlets" : 0,
+					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 194.0, 178.0, 58.0, 22.0 ],
@@ -1315,6 +1327,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-76", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-37", 0 ],
 					"midpoints" : [ 496.607819000000063, 1102.0, 496.607819000000063, 1084.0, 521.5, 1084.0 ],
 					"source" : [ "obj-8", 0 ]
@@ -1322,6 +1341,13 @@
 
 			}
  ],
+		"parameters" : 		{
+			"parameterbanks" : 			{
+
+			}
+
+		}
+,
 		"dependency_cache" : [ 			{
 				"name" : "MLE.flow.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox",
