@@ -1,3 +1,8 @@
+/*
+
+
+
+*/
 autowatch = 1;
 
 outlets = 3;
@@ -5,9 +10,23 @@ var lcdOut = 0;
 var colomnOut = 1;
 var debug = 2;
 
+/*****************************************
+SETUP VARIABLES
+*****************************************/
 var dimX = 8;
 var dimY = 8;
-function size(x,y){ dimX=x; dimY=y}
+var gridSize = 53;
+var gridSpacing = 2;
+
+function size(x,y){ 
+	dimX=x; dimY=y;
+	var a = new Array();
+	a.push("dim");
+	a.push(x * gridSize + x * gridSpacing);
+	a.push(y * gridSize +  y * gridSpacing);
+	createStates();
+	outlet(lcdOut, a);
+}
 
 var curNumStates = 3;
 function numStates (val) { 
@@ -15,8 +34,7 @@ function numStates (val) {
 	createColor();
 }
 
-var gridSize = 53;
-var gridSpacing = 2;
+
 var curColor = new Array(255,0,0);
 
 var color = new Array(curNumStates);
@@ -24,7 +42,7 @@ function createColor(){
 	for(var i=0;i<curNumStates;i++) {
 		color[i] = new Array(3);
 		for(var k=0;k<3;k++)color[i][k] = curColor[k] * (i/curNumStates) * (curNumStates/(curNumStates-1));
-			post(i, color[i], "\n");
+			//post(i, color[i], "\n");
 	}
 }//createColor
 createColor();
@@ -33,30 +51,45 @@ function cursorColor(){
 	var a = arrayfromargs(messagename,arguments);
 	for(var i=0;i<3;i++)curCursorColor[i] = a[i+1];
 }
-cursorColor(0,100,100);
+cursorColor(50,50,50);
 
 //arrays for storing states
 var states = new Array(dimX);
-for(var i=0; i<dimX; i++){
-	states[i] = new Array(dimY);
-	for(var k=0;k<dimY;k++) states[i][k]=0;
-	post(states[i],"\n");
+function createStates(){
+	for(var i=0; i<dimX; i++){
+		states[i] = new Array(dimY);
+		for(var k=0;k<dimY;k++) states[i][k] = {x:0, y:0, color:[0,0,0], state:0};
+		//post(states[i],"\n");
+	}
 }
+createStates()
 
 function loadbang(){
 	outlet(lcdOut, "brgb 0 0 0");
 	outlet(lcdOut, "clear");
 }
 
+
+/****************************************
+MAIN
+****************************************/
+
 //new message changing the state of one button
 function update(){
 	var a = arrayfromargs(messagename,arguments);
-	states[a[1]][a[2]] = (states[a[1]][a[2]]+ 1 ) % curNumStates ;
-	curState = states[a[1]][a[2]];
+	a[2] = dimY - a[2] - 1;
+	//post(a[2]);
+	states[a[1]][a[2]].state = (states[a[1]][a[2]].state + 1 ) % curNumStates ;
+	curState = states[a[1]][a[2]].state;
+	for(var i=0;i<3;i++) {
+		var hue = curState / (curNumStates-1);
+		states[a[1]][a[2]].color[i] = a[i+3] * hue;
+	}
+	
 	writeGrid(a[1],a[2], 
-		color[curState][0],
-		color[curState][1], 
-		color[curState][2]); //x, y
+		curState * states[a[1]][a[2]].color[0],
+		curState * states[a[1]][a[2]].color[1],
+		curState * states[a[1]][a[2]].color[2]);
 	outlet(debug,a);
 }
 
@@ -79,10 +112,10 @@ function msg_int(val){
 	else val = 0;
 
 	//create cursor column
-	for(var i=0;i<dimY;i++){
+	for(var i=0;i<dimY;i++){ 
 		var col = new Array(3);
 		for(var k=0;k<3;k++) {
-			col[k] = color[states[val][i]][k];
+			col[k] = states[val][i].color[k];
 			col[k] += curCursorColor[k];
 		}
 		writeGrid(val,i,col[0],col[1],col[2]);
@@ -93,7 +126,7 @@ function msg_int(val){
 		var col = new Array(3);
 		var prevVal = (val + dimX - 1) % dimX;
 		for(var k=0;k<3;k++) {
-			col[k] = color[states[prevVal][i]][k];
+			col[k] = states[prevVal][i].color[k];
 		}
 		writeGrid(prevVal,i,col[0],col[1],col[2]);
 	}
