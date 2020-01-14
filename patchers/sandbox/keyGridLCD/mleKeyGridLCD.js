@@ -31,21 +31,13 @@ function size(x,y){
 var curNumStates = 3;
 function numStates (val) { 
 	curNumStates=val;
-	createColor();
 }
 
+var curNumPlayers = 2;
+function numPlayers(val){
+	curNumPlayers = val;
+}
 
-var curColor = new Array(255,0,0);
-
-var color = new Array(curNumStates);
-function createColor(){ 
-	for(var i=0;i<curNumStates;i++) {
-		color[i] = new Array(3);
-		for(var k=0;k<3;k++)color[i][k] = curColor[k] * (i/curNumStates) * (curNumStates/(curNumStates-1));
-			//post(i, color[i], "\n");
-	}
-}//createColor
-createColor();
 var curCursorColor = new Array(3);
 function cursorColor(){
 	var a = arrayfromargs(messagename,arguments);
@@ -62,11 +54,52 @@ function createStates(){
 		//post(states[i],"\n");
 	}
 }
-createStates()
+createStates();
 
-function loadbang(){
+/****************************************
+LOADBANG
+****************************************/
+
+var playerColors = new Array();
+
+function loadbang(){ 
+
+	var d = new Dict("gridSettings");
+
 	outlet(lcdOut, "brgb 0 0 0");
-	outlet(lcdOut, "clear");
+	outlet(lcdOut, "clear"); 
+
+	curNumPlayers = d.get("numPlayers");
+	curNumStates = d.get("numStates");
+	size( d.get("size::x"), d.get("size::y") );
+
+	var c = d.get("cursorColor");
+	cursorColor( c[0],c[1],c[2]);
+
+	var n = "playerColors::";
+
+	//var b = d.get("playerColors::1"); 
+	
+
+	for(var i=0;i<curNumPlayers;i++){
+		var o = n.concat(i); 
+		//post(o);
+		playerColors.push(d.get(o));
+		post(playerColors[i]);
+
+		createStates();
+	}
+
+	post("mleKeyGridLCD.js loaded\n");
+} 
+loadbang();
+
+function post_info(dictname, keys)
+{
+	post("Info regarding the dictionary named '", dictname, "': ");
+	post();
+	post("    Keys: " + keys);
+	post();
 }
 
 
@@ -77,6 +110,7 @@ MAIN
 //new message changing the state of one button
 function update(){
 	var a = arrayfromargs(messagename,arguments);
+	//args = "update", x, y, playernumber
 	if(a[1]>dimX-1 || a[2] > dimY-1) return;
 	a[2] = dimY - a[2] - 1;
 	//post(a[2]);
@@ -84,7 +118,7 @@ function update(){
 	curState = states[a[1]][a[2]].state;
 	for(var i=0;i<3;i++) {
 		var hue = curState / (curNumStates-1);
-		states[a[1]][a[2]].color[i] = a[i+3] * hue;
+		states[a[1]][a[2]].color[i] = playerColors[a[3]][i] * hue;
 	}
 	
 	writeGrid(a[1],a[2], 
