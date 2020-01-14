@@ -8,7 +8,7 @@ autowatch = 1;
 outlets = 3;
 var lcdOut = 0;
 var colomnOut = 1;
-var debug = 2;
+var collOut = 2;
 
 /*****************************************
 SETUP VARIABLES
@@ -24,7 +24,7 @@ function size(x,y){
 	a.push("dim");
 	a.push(x * gridSize + x * gridSpacing);
 	a.push(y * gridSize +  y * gridSpacing);
-	createStates();
+	if(dimX > numStates) createStates();
 	outlet(lcdOut, a);
 }
 
@@ -77,6 +77,7 @@ MAIN
 //new message changing the state of one button
 function update(){
 	var a = arrayfromargs(messagename,arguments);
+	if(a[1]>dimX-1 || a[2] > dimY-1) return;
 	a[2] = dimY - a[2] - 1;
 	//post(a[2]);
 	states[a[1]][a[2]].state = (states[a[1]][a[2]].state + 1 ) % curNumStates ;
@@ -90,7 +91,16 @@ function update(){
 		curState * states[a[1]][a[2]].color[0],
 		curState * states[a[1]][a[2]].color[1],
 		curState * states[a[1]][a[2]].color[2]);
-	outlet(debug,a);
+	//outlet(debug,a);
+
+	var s = new Array(dimY+1);
+	s[0] = a[1];
+	for(var i=0; i<dimY; i++) {
+		var curY = (dimY-i-1) % dimY;
+		s[i+1] = states[a[1]][curY].state;
+	}
+
+	outlet(colomnOut, s);
 }
 
 function writeGrid(x, y, r, g, b){
@@ -131,12 +141,6 @@ function msg_int(val){
 		writeGrid(prevVal,i,col[0],col[1],col[2]);
 	}
 
-	var s = new Array(dimY);
-	for(var i=0; i<dimY; i++) {
-		curY = (dimY-i-1) % dimY;
-		s[i] = states[val][curY];
-	}
-
-	outlet(colomnOut, s);
+	
 
 }
