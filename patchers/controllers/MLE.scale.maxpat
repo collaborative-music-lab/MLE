@@ -363,7 +363,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 66.0, 663.0, 50.0, 22.0 ],
-					"text" : "3"
+					"text" : "7"
 				}
 
 			}
@@ -434,39 +434,6 @@
 			}
 , 			{
 				"box" : 				{
-					"coll_data" : 					{
-						"count" : 7,
-						"data" : [ 							{
-								"key" : 0,
-								"value" : [ 0 ]
-							}
-, 							{
-								"key" : 1,
-								"value" : [ 2 ]
-							}
-, 							{
-								"key" : 2,
-								"value" : [ 4 ]
-							}
-, 							{
-								"key" : 3,
-								"value" : [ 5 ]
-							}
-, 							{
-								"key" : 4,
-								"value" : [ 7 ]
-							}
-, 							{
-								"key" : 5,
-								"value" : [ 9 ]
-							}
-, 							{
-								"key" : 6,
-								"value" : [ 11 ]
-							}
- ]
-					}
-,
 					"id" : "obj-31",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -474,7 +441,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 248.0, 423.0, 50.5, 22.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 1
+						"embed" : 0
 					}
 ,
 					"text" : "coll"
@@ -831,39 +798,6 @@
 			}
 , 			{
 				"box" : 				{
-					"coll_data" : 					{
-						"count" : 7,
-						"data" : [ 							{
-								"key" : 0,
-								"value" : [ 0 ]
-							}
-, 							{
-								"key" : 1,
-								"value" : [ 2 ]
-							}
-, 							{
-								"key" : 2,
-								"value" : [ 4 ]
-							}
-, 							{
-								"key" : 3,
-								"value" : [ 5 ]
-							}
-, 							{
-								"key" : 4,
-								"value" : [ 7 ]
-							}
-, 							{
-								"key" : 5,
-								"value" : [ 9 ]
-							}
-, 							{
-								"key" : 6,
-								"value" : [ 11 ]
-							}
- ]
-					}
-,
 					"id" : "obj-6",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -871,7 +805,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 132.0, 663.0, 50.5, 22.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 1
+						"embed" : 0
 					}
 ,
 					"text" : "coll"
@@ -886,7 +820,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 184.5, 69.0, 30.0, 30.0 ]
 				}
 

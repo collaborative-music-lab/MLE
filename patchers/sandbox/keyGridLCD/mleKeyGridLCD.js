@@ -1,5 +1,24 @@
-/*
+/*mleKeyGridLCD
 
+Replicates live.grid object using jit.lcd
+with additional functionality
+
+Intended to be used with output 1 of MLE.keygrid as main grid entry
+and output 2 as modifier entry
+
+Modifiers:
+0: Accent 
+1: Ratchet 2
+2: Ratchet 4
+3: Mod 1
+4: 
+5:  
+6:
+7:
+
+Grid states are expressed as bits:
+0: off
+1: normal
 
 
 */
@@ -7,9 +26,9 @@ autowatch = 1;
 
 outlets = 3;
 var lcdOut = 0;
-var colomnOut = 1;
+var columnOut = 1;
 var collOut = 2;
-
+   
 /*****************************************
 SETUP VARIABLES
 *****************************************/
@@ -50,11 +69,13 @@ var states = new Array(dimX);
 function createStates(){
 	for(var i=0; i<dimX; i++){
 		states[i] = new Array(dimY);
-		for(var k=0;k<dimY;k++) states[i][k] = {x:0, y:0, color:[0,0,0], state:0};
+		for(var k=0;k<dimY;k++) states[i][k] = {x:0, y:0, color:[0,0,0], state:0, player:0};
 		//post(states[i],"\n");
 	}
 }
 createStates();
+
+var curMod = new Array(8);
 
 /****************************************
 LOADBANG
@@ -75,24 +96,31 @@ function loadbang(){
 
 	var c = d.get("cursorColor");
 	cursorColor( c[0],c[1],c[2]);
-
+ 
 	var n = "playerColors::";
-
-	//var b = d.get("playerColors::1"); 
-	
 
 	for(var i=0;i<curNumPlayers;i++){
 		var o = n.concat(i); 
 		//post(o);
 		playerColors.push(d.get(o));
-		post(playerColors[i]);
+		//post(playerColors[i]);
 
-		createStates();
+		createStates();		
 	}
 
+	//clear coll
+	var s = new Array();
+	for(var i=0; i<dimY*3;i++) s.push(0);
+	for(var i=0;i<dimX;i++){ 
+		var t = new Array();
+		t.push(i);
+		t.concat(s);
+		outlet(columnOut, t, s);  
+	}
+	outlet(columnOut, 99, "player state pos"); 
 	post("mleKeyGridLCD.js loaded\n");
-} 
-loadbang();
+} //loadbang
+//loadbang();
 
 function post_info(dictname, keys)
 {
@@ -102,7 +130,6 @@ function post_info(dictname, keys)
 	post();
 }
 
-
 /****************************************
 MAIN
 ****************************************/
@@ -111,30 +138,67 @@ MAIN
 function update(){
 	var a = arrayfromargs(messagename,arguments);
 	//args = "update", x, y, playernumber
-	if(a[1]>dimX-1 || a[2] > dimY-1) return;
-	a[2] = dimY - a[2] - 1;
-	//post(a[2]);
-	states[a[1]][a[2]].state = (states[a[1]][a[2]].state + 1 ) % curNumStates ;
-	curState = states[a[1]][a[2]].state;
-	for(var i=0;i<3;i++) {
-		var hue = curState / (curNumStates-1);
-		states[a[1]][a[2]].color[i] = playerColors[a[3]][i] * hue;
-	}
+	if(a[1]>7 || a[2] > 7) { //out of range
+		
+	} else{ //new grid entry
 	
-	writeGrid(a[1],a[2], 
-		curState * states[a[1]][a[2]].color[0],
-		curState * states[a[1]][a[2]].color[1],
-		curState * states[a[1]][a[2]].color[2]);
-	//outlet(debug,a);
+		//get coords of update
+		var d = new Dict("gridSettings");
+		var s = "playerOffset::";
+		s = s.concat(a[3]);
+		cOffset = d.get(s)
+		a[1] += cOffset[1];
+		a[2] += cOffset[0];
 
-	var s = new Array(dimY+1);
-	s[0] = a[1];
-	for(var i=0; i<dimY; i++) {
-		var curY = (dimY-i-1) % dimY;
-		s[i+1] = states[a[1]][curY].state;
+		a[2] = dimY - a[2] - 1; //flip Y-axis 
+
+		//determine state
+		var modFlag = 0;
+		curState = states[a[1]][a[2]].state;
+		for(var i=0;i<8;i++){
+			if(curMod[i]>0) {
+				modFlag += Math.pow(i+1,2);
+			}
+		}
+		if (modFlag== 0 && curState > 0 && states[a[1]][a[2]].player == a[3] ) curState = 0;
+		else if(modFlag == 0 ) curState = 1;//normal note
+		else curState = modFlag; 
+		if(modFlag == 1) curState++;
+		//post(curState);
+
+		states[a[1]][a[2]].state = curState;
+		states[a[1]][a[2]].player = a[3];
+
+		//generate color
+		for(var i=0;i<3;i++) {
+			if(curState>8) curState=8;
+			var hue = curState / 8;
+			hue = Math.pow(hue,0.3);	
+			states[a[1]][a[2]].color[i] = playerColors[a[3]][i] * hue;
+		}
+		
+		writeGrid(a[1],a[2], 
+			states[a[1]][a[2]].color[0],
+			states[a[1]][a[2]].color[1],
+			states[a[1]][a[2]].color[2]);
+		//outlet(debug,a);
+
+		//outlet to coll is 3 values: player, state, y-position
+		var s = new Array(dimY+1);
+		s[0] = a[1];
+		for(var i=0; i<dimY; i++) {
+			var curY = (dimY-i-1) % dimY;
+			s[(i*3+1)] = states[a[1]][curY].player;
+			s[(i*3+2)] = states[a[1]][curY].state;
+			s[(i*3+3)] = i;
+		}
+
+		outlet(columnOut, s);
 	}
+}//update
 
-	outlet(colomnOut, s);
+function mod(pos, val){
+	curMod[8-pos] = val;
 }
 
 function writeGrid(x, y, r, g, b){
@@ -150,7 +214,7 @@ function writeGrid(x, y, r, g, b){
 	a[7] = b;
 	outlet(lcdOut,a);                   
 }
-
+ 
 function msg_int(val){
 	if(val >=0) val = val % dimX;
 	else val = 0;
@@ -174,7 +238,4 @@ function msg_int(val){
 		}
 		writeGrid(prevVal,i,col[0],col[1],col[2]);
 	}
-
-	
-
-}
+}//msg_int

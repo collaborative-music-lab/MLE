@@ -39,6 +39,23 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 314.0, 287.0, 56.0, 22.0 ],
+					"restore" : 					{
+						"pitches" : [ 0, 3, 5, 8, 10, 12, 15, 17 ]
+					}
+,
+					"text" : "autopattr",
+					"varname" : "u171015392"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontsize" : 10.0,
 					"id" : "obj-19",
 					"maxclass" : "comment",
@@ -111,7 +128,7 @@
 				"box" : 				{
 					"comment" : "inlet to itable",
 					"id" : "obj-14",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -124,7 +141,7 @@
 				"box" : 				{
 					"comment" : "list of pitches",
 					"id" : "obj-13",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -173,7 +190,8 @@
 					"presentation_rect" : [ 11.666663587093353, 1.666665077209473, 121.0, 290.0 ],
 					"range" : 25,
 					"size" : 8,
-					"table_data" : [ 0, 8, 13, 6, 15, 20, 1, 23, 23 ]
+					"table_data" : [ 0, 0, 3, 5, 8, 10, 12, 15, 17 ],
+					"varname" : "pitches"
 				}
 
 			}
@@ -407,9 +425,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [  ],
-		"autosave" : 0
+ ]
 	}
 
 }
