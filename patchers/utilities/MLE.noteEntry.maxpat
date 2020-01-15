@@ -39,11 +39,28 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 603.0, 112.0, 56.0, 22.0 ],
+					"restore" : 					{
+						"notes" : [ 36, 127, 38, 127, 41, 127, 43, 127, 46, 127 ]
+					}
+,
+					"text" : "autopattr",
+					"varname" : "u567004285"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-51",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "int", "flush" ],
+					"outlettype" : [ "int", "" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -2066,7 +2083,8 @@
 					"patching_rect" : [ 270.0, 112.0, 196.0, 60.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 196.0, 60.0 ],
-					"range" : 24
+					"range" : 24,
+					"varname" : "notes"
 				}
 
 			}

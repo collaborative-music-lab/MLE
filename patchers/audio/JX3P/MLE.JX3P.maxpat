@@ -671,7 +671,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 641.0, 117.0, 179.0, 22.0 ],
-									"text" : "62 80"
+									"text" : "24 80"
 								}
 
 							}
@@ -1418,8 +1418,48 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 19.67498779296875, 483.0, 56.0, 22.0 ],
+					"restore" : 					{
+						"LFO_retrigger" : [ 0 ],
+						"Resonance" : [ 0.478087097406387 ],
+						"attack" : [ 0.0 ],
+						"chorus" : [ 0 ],
+						"chorusDelayLength" : [ 0.0 ],
+						"chorusDepth" : [ 0.0 ],
+						"chorusRate" : [ 0.0 ],
+						"cutoff" : [ 0.752695652173914 ],
+						"dco1env" : [ 1 ],
+						"dco1lfo" : [ 1 ],
+						"dco1octave" : [ 2 ],
+						"dco1wave" : [ 0 ],
+						"dco2env" : [ 1 ],
+						"dco2finetune" : [ 0.258963849531411 ],
+						"dco2lfo" : [ 1 ],
+						"dco2octave" : [ 2 ],
+						"dco2pwm" : [ 0 ],
+						"dco2tune" : [ 0.836652414098344 ],
+						"dco2wave" : [ 4 ],
+						"dcoENVdepth" : [ 0.0 ],
+						"dcoENVinvert" : [ 0 ],
+						"dcoLFOdepth" : [ 0.0 ],
+						"dcoMix" : [ 0.184636310576031 ],
+						"dcoMod" : [ 1 ],
+						"decay" : [ 0.159362368340016 ],
+						"filtENVinvert" : [ 0 ],
+						"filtENVmod" : [ 0.577688574790955 ],
+						"filtLFOmod" : [ 0.0 ],
+						"filterKeytrack" : [ 0.816732118382137 ],
+						"hpf" : [ 0.0 ],
+						"level" : [ 0.557768280053776 ],
+						"lfoDelay" : [ 0.0 ],
+						"lfoRate" : [ 0.0 ],
+						"lfoWave" : [ 1 ],
+						"release" : [ 0.019920295716206 ],
+						"subOsc" : [ 0.0 ],
+						"sustain" : [ 0.143427284203129 ]
+					}
+,
 					"text" : "autopattr",
-					"varname" : "u818023357"
+					"varname" : "u033012256"
 				}
 
 			}
@@ -4175,7 +4215,7 @@
 					"shape" : 1,
 					"size" : 2,
 					"style" : "chiba",
-					"value" : 0,
+					"value" : 1,
 					"varname" : "dco2env"
 				}
 
@@ -4199,7 +4239,7 @@
 					"shape" : 1,
 					"size" : 2,
 					"style" : "chiba",
-					"value" : 0,
+					"value" : 1,
 					"varname" : "dco2lfo"
 				}
 
@@ -4296,13 +4336,14 @@
 				"box" : 				{
 					"fontname" : "Tahoma",
 					"id" : "obj-246",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 746.199951171875, 510.4666748046875, 38.0, 21.0 ],
+					"patching_rect" : [ 746.199951171875, 510.4666748046875, 38.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 370.149871826171875, 390.399993896484375, 38.0, 21.0 ],
-					"text" : "Delay",
+					"presentation_rect" : [ 364.149871826171875, 390.399993896484375, 41.0, 21.0 ],
+					"text" : "Decay",
 					"textcolor" : [ 0.847058832645416, 0.847058832645416, 0.847058832645416, 1.0 ],
 					"textjustification" : 1
 				}
@@ -4682,7 +4723,7 @@
 					"shape" : 1,
 					"size" : 3,
 					"style" : "chiba",
-					"value" : 0,
+					"value" : 1,
 					"varname" : "dcoMod"
 				}
 
@@ -4798,7 +4839,7 @@
 					"shape" : 1,
 					"size" : 3,
 					"style" : "chiba",
-					"value" : 1,
+					"value" : 2,
 					"varname" : "dco2octave"
 				}
 
@@ -5362,7 +5403,7 @@
 					"shape" : 1,
 					"size" : 5,
 					"style" : "chiba",
-					"value" : 2,
+					"value" : 0,
 					"varname" : "dco1wave"
 				}
 
@@ -5386,7 +5427,7 @@
 					"shape" : 1,
 					"size" : 3,
 					"style" : "chiba",
-					"value" : 1,
+					"value" : 2,
 					"varname" : "dco1octave"
 				}
 
@@ -6024,48 +6065,8 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 651.6580810546875, 49.345611572265625, 56.0, 22.0 ],
-					"restore" : 					{
-						"LFO_retrigger" : [ 0 ],
-						"Resonance" : [ 0.756971237433275 ],
-						"attack" : [ 0.0 ],
-						"chorus" : [ 0 ],
-						"chorusDelayLength" : [ 0.0 ],
-						"chorusDepth" : [ 0.0 ],
-						"chorusRate" : [ 0.0 ],
-						"cutoff" : [ 0.37007874015748 ],
-						"dco1env" : [ 1 ],
-						"dco1lfo" : [ 1 ],
-						"dco1octave" : [ 1 ],
-						"dco1wave" : [ 2 ],
-						"dco2env" : [ 0 ],
-						"dco2finetune" : [ 0.617529172423125 ],
-						"dco2lfo" : [ 0 ],
-						"dco2octave" : [ 1 ],
-						"dco2pwm" : [ 0 ],
-						"dco2tune" : [ 0.498007386922836 ],
-						"dco2wave" : [ 4 ],
-						"dcoENVdepth" : [ 0.0 ],
-						"dcoENVinvert" : [ 0 ],
-						"dcoLFOdepth" : [ 0.258963844310682 ],
-						"dcoMix" : [ 0.760956476204553 ],
-						"dcoMod" : [ 0 ],
-						"decay" : [ 0.278884142637253 ],
-						"filtENVinvert" : [ 0 ],
-						"filtENVmod" : [ 0.597608870507161 ],
-						"filtLFOmod" : [ 0.019920290821631 ],
-						"filterKeytrack" : [ 0.498007386922836 ],
-						"hpf" : [ 0.239043548703194 ],
-						"level" : [ 0.521912932395935 ],
-						"lfoDelay" : [ 0.0 ],
-						"lfoRate" : [ 0.0 ],
-						"lfoWave" : [ 1 ],
-						"release" : [ 0.15936236572965 ],
-						"subOsc" : [ 0.0 ],
-						"sustain" : [ 0.398405894745826 ]
-					}
-,
 					"text" : "autopattr",
-					"varname" : "u516023362"
+					"varname" : "u353012257"
 				}
 
 			}
