@@ -25,8 +25,8 @@ Grid states are expressed as bits:
 autowatch = 1;
 
 outlets = 3;
-var lcdOut = 0;
-var columnOut = 1;
+var lcdOut = 0; // to LCD for monitoring
+var columnOut = 1; //tocoll to store data
 var collOut = 2;
    
 /*****************************************
