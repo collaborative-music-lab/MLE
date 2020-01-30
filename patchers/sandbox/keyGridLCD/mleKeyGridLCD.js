@@ -27,7 +27,7 @@ autowatch = 1;
 outlets = 3;
 var lcdOut = 0; // to LCD for monitoring
 var columnOut = 1; //tocoll to store data
-var collOut = 2;
+var LPout = 2;
    
 /*****************************************
 SETUP VARIABLES
@@ -119,8 +119,20 @@ function loadbang(){
 	}
 	outlet(columnOut, 99, "player state pos"); 
 	post("mleKeyGridLCD.js loaded\n");
+
+	clearLP();
 } //loadbang
-//loadbang();
+
+function clearLP(){
+	for(var i=1;i<9;i++){
+		for(k=1;k<9;k++){
+			//cOut = new Array (0,0,0,0,0);
+			outlet(LPout, 0, i, k, 0, 0);
+			outlet(LPout, 1, i, k, 0, 0);
+		}
+	}
+}
+loadbang();
 
 function post_info(dictname, keys)
 {
@@ -137,6 +149,7 @@ MAIN
 //new message changing the state of one button
 function update(){
 	var a = arrayfromargs(messagename,arguments);
+	var ca = new Array(a[0],a[1],a[2],a[3],a[4]);
 	//args = "update", x, y, playernumber
 	if(a[1]>7 || a[2] > 7) { //out of range
 		
@@ -146,7 +159,8 @@ function update(){
 		var d = new Dict("gridSettings");
 		var s = "playerOffset::";
 		s = s.concat(a[3]);
-		cOffset = d.get(s)
+		//post(s, "\n");
+		cOffset = d.get(s);
 		a[1] += cOffset[1];
 		a[2] += cOffset[0];
 
@@ -157,7 +171,8 @@ function update(){
 		curState = states[a[1]][a[2]].state;
 		for(var i=0;i<8;i++){
 			if(curMod[i]>0) {
-				modFlag += Math.pow(i+1,2);
+				//post(i,"\n");
+				modFlag += (1<<(i+1));
 			}
 		}
 		if (modFlag== 0 && curState > 0 && states[a[1]][a[2]].player == a[3] ) curState = 0;
@@ -168,7 +183,8 @@ function update(){
 
 		states[a[1]][a[2]].state = curState;
 		states[a[1]][a[2]].player = a[3];
-
+		//post(2, a[1], a[2], states[a[1]][a[2]].state, states[a[1]][a[2]].player, "\n");
+		//post("offset:", cOffset, "\n");
 		//generate color
 		for(var i=0;i<3;i++) {
 			if(curState>8) curState=8;
@@ -194,8 +210,51 @@ function update(){
 		}
 
 		outlet(columnOut, s);
+
+		updateLP(ca[1], ca[2], states[a[1]][a[2]].state, states[a[1]][a[2]].player);
 	}
 }//update
+
+//outputs (layer, x, y, r, g)
+function updateLP(x, y, cState, cPlayer){
+	var cOut = new Array(0,x+1,8-y,0,0);
+
+	if(cState == 0) {
+		outlet(LPout,cOut);
+		return;
+	}
+	cOut[3] = 1;
+	if( (cState >> 1) & 1) cOut[4] = 1;
+	if( cState >> 2 > 0) {
+		cOut[4] += 2;
+		cOut[3] = 3;
+	}
+
+
+	outlet(LPout,cOut);
+}
+
+function refreshLP(cPlayer){
+
+	var d = new Dict("gridSettings");
+		var s = "playerOffset::";
+		s = s.concat(cPlayer);
+		//post(s, "\n");
+		cOffset = d.get(s);
+		//post("offzxet", cOffset, "\n");
+
+		var x,y;
+	for(var i=0;i<8;i++){
+		for(k=0;k<8;k++){
+			y = 11 - k + cOffset[0];
+			x  = i + cOffset[1];
+			updateLP(i,k,states[x][y].state , states[x][y].player);
+			//cOut = new Array (0,0,0,0,0);
+			//outlet(LPout, 0, i, k, 0, 0);
+			//outlet(LPout, 0, i+1, 8-k, states[x][y].state , states[x][y].player );
+		}
+	}
+}
 
 function mod(pos, val){
 	curMod[8-pos] = val;
