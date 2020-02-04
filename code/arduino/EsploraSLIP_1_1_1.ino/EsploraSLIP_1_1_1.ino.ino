@@ -30,6 +30,11 @@ void setup() {
   while (!Serial){};
   if(Esplora.readButton(SWITCH_1) == LOW) calibrateAccel();
   SensorSetup();
+
+//  for(int i=0;i<10;i++){
+//    digitalWrite(13, !(analogRead(13)));
+//    delay(50);
+//  }
 }
 
 void loop() {

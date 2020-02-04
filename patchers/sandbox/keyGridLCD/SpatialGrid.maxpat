@@ -39,6 +39,17 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-47",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 410.0, 243.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-97",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -57,7 +68,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1140.80001699924469, 646.400009632110596, 50.0, 22.0 ],
-					"text" : "127"
+					"text" : "0"
 				}
 
 			}
@@ -95,10 +106,10 @@
 					"rows" : 8,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.grid[14]",
-							"parameter_invisible" : 1,
 							"parameter_shortname" : "live.grid[11]",
-							"parameter_type" : 3
+							"parameter_type" : 3,
+							"parameter_longname" : "live.grid[14]",
+							"parameter_invisible" : 1
 						}
 
 					}
@@ -434,7 +445,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 415.333345711231232, 166.000004947185516, 50.0, 35.0 ],
-					"text" : "mod 5 0"
+					"text" : "update 3 3 0"
 				}
 
 			}
@@ -468,7 +479,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 776.0, 1201.0, 50.0, 22.0 ],
-					"text" : "50 0"
+					"text" : "38 80"
 				}
 
 			}
@@ -562,7 +573,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1090.0, 676.999990582466125, 83.0, 49.0 ],
-					"text" : "1 polar 0.724409 -3.1416 0."
+					"text" : "1 polar 0.834646 3.1416 0."
 				}
 
 			}
@@ -934,7 +945,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1069.0, 593.999990582466125, 40.0, 40.0 ]
+					"patching_rect" : [ 1069.0, 593.999990582466125, 40.0, 40.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 426.0, 619.999990582466125, 40.0, 40.0 ]
 				}
 
 			}
@@ -949,7 +962,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1120.0, 593.999990582466125, 40.0, 40.0 ]
+					"patching_rect" : [ 1120.0, 593.999990582466125, 40.0, 40.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 477.0, 619.999990582466125, 40.0, 40.0 ]
 				}
 
 			}
@@ -3616,7 +3631,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 386.0, 918.0, 50.0, 22.0 ],
-					"text" : "8 7"
+					"text" : "8 5"
 				}
 
 			}
@@ -4263,12 +4278,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-145",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 40.299993110382076, 737.499990582466125, 124.0, 22.0 ],
-					"text" : "parent::param1 7"
+					"patching_rect" : [ 40.299993110382076, 737.499990582466125, 124.0, 35.0 ],
+					"text" : "parent::MLE.atten::curve 1."
 				}
 
 			}
@@ -4293,10 +4309,10 @@
 					"rows" : 8,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.grid[9]",
-							"parameter_invisible" : 1,
 							"parameter_shortname" : "live.grid[11]",
-							"parameter_type" : 3
+							"parameter_type" : 3,
+							"parameter_longname" : "live.grid[9]",
+							"parameter_invisible" : 1
 						}
 
 					}
@@ -5343,10 +5359,10 @@
 					"rows" : 8,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.grid[11]",
-							"parameter_invisible" : 1,
 							"parameter_shortname" : "live.grid[11]",
-							"parameter_type" : 3
+							"parameter_type" : 3,
+							"parameter_longname" : "live.grid[11]",
+							"parameter_invisible" : 1
 						}
 
 					}
@@ -6138,20 +6154,20 @@
 						"accent" : [ 30 ],
 						"baseVelocity" : [ 80 ],
 						"live.grid" : [ 3, 16, 1, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 ],
-						"live.grid[1]" : [ 2, 8, 8, 0, 8, 7, 1007, 2005, 3005, 4005, 5006, 6006, 7006, 2, 2, 2, 2, 2, 2, 2, 2 ],
-						"live.grid[2]" : [ 2, 8, 8, 0, 8, 0, 1006, 2007, 3005, 4000, 5004, 6003, 7002, 2, 2, 2, 2, 2, 2, 2, 2 ],
-						"live.grid[3]" : [ 2, 8, 8, 0, 8, 7, 1007, 2000, 3002, 4000, 5004, 6000, 7004, 2, 2, 2, 2, 2, 2, 2, 2 ],
+						"live.grid[1]" : [ 2, 8, 8, 0, 8, 1, 1004, 2005, 3007, 4007, 5007, 6007, 7007, 2, 2, 2, 2, 2, 2, 2, 2 ],
+						"live.grid[2]" : [ 2, 8, 8, 0, 8, 0, 1001, 2002, 3003, 4004, 5005, 6006, 7007, 2, 2, 2, 2, 2, 2, 2, 2 ],
+						"live.grid[3]" : [ 2, 8, 8, 0, 8, 6, 1007, 2006, 3004, 4003, 5003, 6002, 7002, 2, 2, 2, 2, 2, 2, 2, 2 ],
 						"param1" : [ 7 ],
 						"param1dest" : [ 0 ],
 						"paramB" : [ 22 ],
 						"paramBdest" : [ 0 ],
-						"seqArate" : [ 16 ],
-						"seqBrate" : [ 4 ],
-						"seqBrate[1]" : [ 1 ]
+						"seqArate" : [ 13 ],
+						"seqBrate" : [ 6 ],
+						"seqBrate[1]" : [ 5 ]
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u085007305"
+					"varname" : "u303002278"
 				}
 
 			}
@@ -6188,10 +6204,10 @@
 					"rows" : 1,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.grid",
-							"parameter_invisible" : 1,
 							"parameter_shortname" : "live.grid",
-							"parameter_type" : 3
+							"parameter_type" : 3,
+							"parameter_longname" : "live.grid",
+							"parameter_invisible" : 1
 						}
 
 					}
@@ -10143,7 +10159,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 156.0, 148.0, 50.0, 22.0 ],
-													"text" : "0"
+													"text" : "1"
 												}
 
 											}
@@ -10155,7 +10171,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 112.0, 42.0, 50.0, 22.0 ],
-													"text" : "20"
+													"text" : "24"
 												}
 
 											}
@@ -11748,7 +11764,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 913.0, 195.999997794628143, 179.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 1057, 45, 1440, 407 ],
+						"client_rect" : [ 4, 45, 358, 173 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
 						"storage_rect" : [ 583, 69, 1034, 197 ]
@@ -11825,13 +11841,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-119",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 719.0, 823.0, 111.0, 49.0 ],
-					"text" : "custom 2 4 5 7 10 14 16 17 19 22 26 28"
+					"patching_rect" : [ 719.0, 823.0, 111.0, 35.0 ],
+					"text" : "custom 0 2 5 7 10 12 14 17"
 				}
 
 			}
@@ -13264,19 +13280,19 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-82" : [ "live.grid[14]", "live.grid[11]", 0 ],
-			"obj-87::obj-6::obj-46::obj-2" : [ "live.grid[15]", "live.grid", 0 ],
-			"obj-146::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
-			"obj-269::obj-248::obj-210::obj-46::obj-2" : [ "live.grid[6]", "live.grid", 0 ],
-			"obj-53" : [ "live.grid[11]", "live.grid[11]", 0 ],
 			"obj-376::obj-6::obj-46::obj-2" : [ "live.grid[13]", "live.grid", 0 ],
-			"obj-268::obj-251::obj-210::obj-46::obj-2" : [ "live.grid[3]", "live.grid", 0 ],
+			"obj-133" : [ "live.grid[9]", "live.grid[11]", 0 ],
 			"obj-269::obj-251::obj-210::obj-46::obj-2" : [ "live.grid[7]", "live.grid", 0 ],
 			"obj-3::obj-46::obj-2" : [ "live.grid[8]", "live.grid", 0 ],
-			"obj-26" : [ "live.grid", "live.grid", 0 ],
+			"obj-82" : [ "live.grid[14]", "live.grid[11]", 0 ],
 			"obj-268::obj-248::obj-210::obj-46::obj-2" : [ "live.grid[4]", "live.grid", 0 ],
-			"obj-133" : [ "live.grid[9]", "live.grid[11]", 0 ],
+			"obj-268::obj-251::obj-210::obj-46::obj-2" : [ "live.grid[3]", "live.grid", 0 ],
 			"obj-288::obj-6::obj-46::obj-2" : [ "live.grid[12]", "live.grid", 0 ],
+			"obj-26" : [ "live.grid", "live.grid", 0 ],
+			"obj-53" : [ "live.grid[11]", "live.grid[11]", 0 ],
+			"obj-87::obj-6::obj-46::obj-2" : [ "live.grid[15]", "live.grid", 0 ],
+			"obj-269::obj-248::obj-210::obj-46::obj-2" : [ "live.grid[6]", "live.grid", 0 ],
+			"obj-146::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
 			"parameterbanks" : 			{
 
 			}

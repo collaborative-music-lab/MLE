@@ -799,12 +799,12 @@
 					"patching_rect" : [ 655.0, 471.0, 27.0, 28.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmin" : -1.0,
-							"parameter_longname" : "live.dial",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "live.dial",
 							"parameter_type" : 0,
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 0,
+							"parameter_mmin" : -1.0,
+							"parameter_longname" : "live.dial",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -936,16 +936,15 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-105",
-					"linecount" : 4,
+					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 990.0, 1147.0, 50.0, 62.0 ],
+					"patching_rect" : [ 990.0, 1147.0, 50.0, 49.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 465.833344876766205, 498.666684150695801, 111.0, 35.0 ],
-					"text" : "gran4 gain 0.370079"
+					"presentation_rect" : [ 465.833344876766205, 498.666684150695801, 111.0, 22.0 ],
+					"text" : "gran4 pos 66 77"
 				}
 
 			}
@@ -2747,16 +2746,15 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-39",
-					"linecount" : 5,
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 950.0, 486.0, 50.0, 76.0 ],
+					"patching_rect" : [ 950.0, 486.0, 50.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 475.0, 210.333323955535889, 111.0, 35.0 ],
-					"text" : "gran2 gran amp 4.324803"
+					"presentation_rect" : [ 475.0, 210.333323955535889, 111.0, 22.0 ],
+					"text" : "gran2 gain 0."
 				}
 
 			}
@@ -3661,7 +3659,7 @@
 					"patching_rect" : [ 510.0, 499.0, 50.0, 49.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 185.666655123233795, 201.999999284744263, 111.0, 22.0 ],
-					"text" : "gran1 pos 85 68"
+					"text" : "gran1 pos 57 74"
 				}
 
 			}
@@ -4107,7 +4105,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 707.0, 196.000001430511475, 79.0, 22.0 ],
+					"patching_rect" : [ 721.0, 196.000001430511475, 79.0, 22.0 ],
 					"text" : "prepend gain"
 				}
 
@@ -4622,7 +4620,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-165", 1 ],
+					"destination" : [ "obj-12", 0 ],
 					"source" : [ "obj-11", 0 ]
 				}
 
@@ -5644,8 +5642,8 @@
  ],
 		"parameters" : 		{
 			"obj-132" : [ "live.dial", "live.dial", 0 ],
-			"obj-14::obj-7" : [ "live.grid[1]", "live.grid", 0 ],
 			"obj-14::obj-91" : [ "live.grid", "live.grid", 0 ],
+			"obj-14::obj-7" : [ "live.grid[1]", "live.grid", 0 ],
 			"parameterbanks" : 			{
 
 			}

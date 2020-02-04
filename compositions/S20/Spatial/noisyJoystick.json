@@ -1,0 +1,26 @@
+{
+	"pattrstorage" : 	{
+		"name" : "noisyJoystick",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"MLE.reverb::damping" : [ 0.52910367941544 ],
+					"MLE.reverb::diffusion" : [ 0.669384626555109 ],
+					"MLE.reverb::drywet" : [ 100.0 ],
+					"MLE.reverb::size" : [ 0.578347832400714 ],
+					"MLE.reverb::time" : [ 0.470140473569835 ],
+					"MLE.reverb::reverbFX" : [ -1 ],
+					"MLE.delay::Lowpass" : [ 0.52 ],
+					"MLE.delay::delayLevel" : [ 0.2 ],
+					"MLE.delay::delayTime" : [ 120 ],
+					"MLE.delay::feedback" : [ 0.8 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
