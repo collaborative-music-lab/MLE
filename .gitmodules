@@ -1,0 +1,3 @@
+[submodule "compositions/F19/Gloop/glooper"]
+	path = compositions/F19/Gloop/glooper
+	url = https://github.com/ijc8/glooper
