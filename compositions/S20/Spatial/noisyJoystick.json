@@ -5,16 +5,18 @@
 			"1" : 			{
 				"id" : 1,
 				"data" : 				{
-					"MLE.reverb::damping" : [ 0.52910367941544 ],
-					"MLE.reverb::diffusion" : [ 0.669384626555109 ],
-					"MLE.reverb::drywet" : [ 100.0 ],
-					"MLE.reverb::size" : [ 0.578347832400714 ],
-					"MLE.reverb::time" : [ 0.470140473569835 ],
-					"MLE.reverb::reverbFX" : [ -1 ],
-					"MLE.delay::Lowpass" : [ 0.52 ],
-					"MLE.delay::delayLevel" : [ 0.2 ],
-					"MLE.delay::delayTime" : [ 120 ],
-					"MLE.delay::feedback" : [ 0.8 ]
+					"FMfreqHigh" : [ 50.0 ],
+					"FMfreqLow" : [ 48.0 ],
+					"FlangeTimeHigh" : [ 16.0 ],
+					"FlangeTimeHigh[1]" : [ 8.0 ],
+					"ReverbTime" : [ 3000.0 ],
+					"flangeTimeLow" : [ 12.0 ],
+					"flangeTimeLow[1]" : [ 2.0 ],
+					"ocatve" : [ 0 ],
+					"resonance" : [ 0.5 ],
+					"swnse" : [ 127 ],
+					"swnse[1]" : [ 0 ],
+					"MLE.noteEntry::notes" : [ 36, 127, 38, 127, 41, 127, 43, 127, 46, 127 ]
 				}
 
 			}
