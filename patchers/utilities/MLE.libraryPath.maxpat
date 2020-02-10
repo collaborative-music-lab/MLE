@@ -39,6 +39,19 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-73",
+					"linecount" : 10,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 217.0, 812.0, 50.0, 143.0 ],
+					"text" : "\"Macintosh HD:/Users/ianhattwick/Documents/github/CML/MLE/\""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-71",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -373,8 +386,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "bang", "path", "int", "bang", "int" ],
-					"patching_rect" : [ 79.200001180171967, 184.800002753734589, 673.0, 22.0 ],
-					"text" : "t b path 0 b 0"
+					"patching_rect" : [ 79.200001180171967, 184.800002753734589, 632.5, 22.0 ],
+					"text" : "t b path 1 b 0"
 				}
 
 			}
@@ -577,6 +590,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-47", 0 ],
+					"order" : 1,
+					"source" : [ "obj-41", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-73", 1 ],
+					"order" : 0,
 					"source" : [ "obj-41", 0 ]
 				}
 
@@ -615,7 +637,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-23", 0 ],
-					"midpoints" : [ 742.700001180171967, 753.0, 592.499989807605743, 753.0 ],
+					"midpoints" : [ 702.200001180171967, 753.0, 592.499989807605743, 753.0 ],
 					"source" : [ "obj-48", 4 ]
 				}
 
@@ -705,6 +727,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-58", 0 ],
+					"order" : 1,
+					"source" : [ "obj-57", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-73", 1 ],
+					"order" : 0,
 					"source" : [ "obj-57", 0 ]
 				}
 
