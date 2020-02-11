@@ -12,7 +12,7 @@
 		"classnamespace" : "box",
 		"rect" : [ 34.0, 79.0, 1317.0, 937.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -266,7 +266,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 75.0, 835.0, 50.0, 49.0 ],
+					"patching_rect" : [ 75.0, 835.0, 52.0, 49.0 ],
 					"text" : "grid 2 3 5 5 5 5 3 3 5"
 				}
 
@@ -3826,13 +3826,15 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.32156862745098, 0.588235294117647, 0.101960784313725, 1.0 ],
+					"fontsize" : 18.0,
 					"id" : "obj-69",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 265.650004208087921, 266.0, 100.0, 22.0 ],
+					"patching_rect" : [ 265.650004208087921, 266.0, 146.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 464.0, 2.799999237060547, 82.0, 22.0 ],
+					"presentation_rect" : [ 569.0, 669.799999237060547, 119.0, 29.0 ],
 					"text" : "spatialGridctrl",
 					"varname" : "SpatialGridCtrl"
 				}
@@ -3893,7 +3895,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 677.200013399124146, 1449.800020456314087, 50.0, 22.0 ],
-					"text" : "40"
+					"text" : "27"
 				}
 
 			}
@@ -4352,7 +4354,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 415.333345711231232, 166.000004947185516, 50.0, 35.0 ],
-					"text" : "update 7 3 3"
+					"text" : "update 4 7 3"
 				}
 
 			}
@@ -4386,7 +4388,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 776.0, 1201.0, 50.0, 22.0 ],
-					"text" : "65 80"
+					"text" : "38 0"
 				}
 
 			}
@@ -4463,13 +4465,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-42",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 626.399996399879456, 1480.400001406669617, 83.0, 49.0 ],
-					"text" : "1 polar 0.574803 1.162639 0."
+					"patching_rect" : [ 626.399996399879456, 1480.400001406669617, 83.0, 35.0 ],
+					"text" : "1 polar 0. 1.805802 0."
 				}
 
 			}
@@ -4954,7 +4956,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 810.5, 1144.0, 50.0, 22.0 ],
-					"text" : "169"
+					"text" : "215"
 				}
 
 			}
@@ -6775,7 +6777,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 40.299993110382076, 737.499990582466125, 124.0, 35.0 ],
-					"text" : "parent::MLE.atten::gain 1.130435"
+					"text" : "parent::MLE.atten[1]::gain 1.5"
 				}
 
 			}
@@ -8562,10 +8564,10 @@
 						"accent" : [ 30 ],
 						"baseVelocity" : [ 80 ],
 						"live.grid" : [ 3, 16, 1, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 ],
-						"live.grid[1]" : [ 2, 8, 8, 0, 8, 4, 1002, 2003, 3002, 4000, 5003, 6002, 7001, 2, 2, 2, 2, 2, 2, 2, 2 ],
-						"live.grid[2]" : [ 2, 8, 8, 0, 8, 3, 1000, 2003, 3000, 4007, 5003, 6000, 7003, 2, 2, 2, 2, 2, 2, 2, 2 ],
-						"live.grid[3]" : [ 2, 8, 8, 0, 8, 2, 1002, 2004, 3000, 4005, 5000, 6004, 7004, 2, 2, 2, 2, 2, 2, 2, 2 ],
-						"live.grid[4]" : [ 2, 8, 8, 0, 8, 2, 1004, 2004, 3004, 4004, 5002, 6002, 7004, 2, 2, 2, 2, 2, 2, 2, 2 ],
+						"live.grid[1]" : [ 2, 8, 8, 0, 8, 2, 1002, 2005, 3005, 4005, 5006, 6006, 7006, 2, 2, 2, 2, 2, 2, 2, 2 ],
+						"live.grid[2]" : [ 2, 8, 8, 0, 8, 5, 1005, 2005, 3004, 4003, 5002, 6003, 7002, 2, 2, 2, 2, 2, 2, 2, 2 ],
+						"live.grid[3]" : [ 2, 8, 8, 0, 8, 2, 1002, 2000, 3002, 4000, 5004, 6000, 7004, 2, 2, 2, 2, 2, 2, 2, 2 ],
+						"live.grid[4]" : [ 2, 8, 8, 0, 8, 0, 1001, 2003, 3003, 4004, 5005, 6006, 7007, 2, 2, 2, 2, 2, 2, 2, 2 ],
 						"param1" : [ 7 ],
 						"param1[1]" : [ 34 ],
 						"param1dest" : [ 0 ],
@@ -8579,7 +8581,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u572012038"
+					"varname" : "u136002075"
 				}
 
 			}
@@ -12116,7 +12118,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 24.0, 205.0, 50.0, 22.0 ],
-									"text" : "7 1"
+									"text" : "1 1"
 								}
 
 							}
@@ -14439,13 +14441,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-119",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 719.0, 823.0, 111.0, 35.0 ],
-					"text" : "custom 0 2 5 7 10 12 14 17"
+					"patching_rect" : [ 719.0, 823.0, 111.0, 49.0 ],
+					"text" : "custom 0 2 5 7 10 12 14 17 19 22 24 26"
 				}
 
 			}
@@ -15975,189 +15977,175 @@
 		"dependency_cache" : [ 			{
 				"name" : "MLE.keyGrid.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/controllers",
-				"patcherrelativepath" : "../../controllers",
+				"patcherrelativepath" : "../../../../patchers/controllers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "asciiLinearMapping.txt",
 				"bootpath" : "~/Documents/github/CML/MLE/code",
-				"patcherrelativepath" : "../../../code",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mleKeyGridLCD.js",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox/keyGridLCD",
-				"patcherrelativepath" : ".",
+				"patcherrelativepath" : "../../../../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.scale.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/controllers",
-				"patcherrelativepath" : "../../controllers",
+				"patcherrelativepath" : "../../../../patchers/controllers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MajorScale.js",
 				"bootpath" : "~/Dropbox/MIT/Teaching/2019Fall/M080_Fall2019/Assignments/Assignment 2/44385295-submissions/Mloduchowski, Tomasz B/21M.080.2/code",
-				"patcherrelativepath" : "../../../../../../../Dropbox/MIT/Teaching/2019Fall/M080_Fall2019/Assignments/Assignment 2/44385295-submissions/Mloduchowski, Tomasz B/21M.080.2/code",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "MinorScale.js",
-				"bootpath" : "~/Dropbox/MIT/Teaching/2019Fall/M080_Fall2019/Assignments/Assignment 2/44385295-submissions/Mloduchowski, Tomasz B/21M.080.2/code",
-				"patcherrelativepath" : "../../../../../../../Dropbox/MIT/Teaching/2019Fall/M080_Fall2019/Assignments/Assignment 2/44385295-submissions/Mloduchowski, Tomasz B/21M.080.2/code",
+				"patcherrelativepath" : "../../../../../../../../Dropbox/MIT/Teaching/2019Fall/M080_Fall2019/Assignments/Assignment 2/44385295-submissions/Mloduchowski, Tomasz B/21M.080.2/code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "initS.maxpat",
 				"bootpath" : "~/Dropbox/MIT/Teaching/2019Fall/M470_Fall2019/Concertmedia",
-				"patcherrelativepath" : "../../../../../../../Dropbox/MIT/Teaching/2019Fall/M470_Fall2019/Concertmedia",
+				"patcherrelativepath" : "../../../../../../../../Dropbox/MIT/Teaching/2019Fall/M470_Fall2019/Concertmedia",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "init.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
-				"patcherrelativepath" : "../../utilities",
+				"patcherrelativepath" : "../../../../patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.beat.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/network",
-				"patcherrelativepath" : "../../network",
+				"patcherrelativepath" : "../../../../patchers/network",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.swing.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox",
-				"patcherrelativepath" : "..",
+				"patcherrelativepath" : "../../../../patchers/sandbox",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.atten.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
-				"patcherrelativepath" : "../../utilities",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "keyGrid.json",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox/keyGridLCD",
-				"patcherrelativepath" : ".",
+				"patcherrelativepath" : "../../../../patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.UDPsend.maxpat",
 				"bootpath" : "~/Dropbox/MIT/Teaching/2019Fall/M470_Fall2019/Concertmedia",
-				"patcherrelativepath" : "../../../../../../../Dropbox/MIT/Teaching/2019Fall/M470_Fall2019/Concertmedia",
+				"patcherrelativepath" : "../../../../../../../../Dropbox/MIT/Teaching/2019Fall/M470_Fall2019/Concertmedia",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.UDPreceive.maxpat",
 				"bootpath" : "~/Dropbox/MIT/Teaching/2019Fall/M470_Fall2019/Concertmedia",
-				"patcherrelativepath" : "../../../../../../../Dropbox/MIT/Teaching/2019Fall/M470_Fall2019/Concertmedia",
+				"patcherrelativepath" : "../../../../../../../../Dropbox/MIT/Teaching/2019Fall/M470_Fall2019/Concertmedia",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "LP.dot.maxpat",
 				"bootpath" : "~/Documents/github/CML/LP/launchpad/feedback",
-				"patcherrelativepath" : "../../../../LP/launchpad/feedback",
+				"patcherrelativepath" : "../../../../../LP/launchpad/feedback",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "LP.padX.maxpat",
 				"bootpath" : "~/Documents/github/CML/LP/launchpad/input",
-				"patcherrelativepath" : "../../../../LP/launchpad/input",
+				"patcherrelativepath" : "../../../../../LP/launchpad/input",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.playerID.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox",
-				"patcherrelativepath" : "..",
+				"patcherrelativepath" : "../../../../patchers/sandbox",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SpatialGridCtrl.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox/spatialAudio",
-				"patcherrelativepath" : "../spatialAudio",
+				"bootpath" : "~/Documents/github/CML/MLE/compositions/S20/Spatial/Spatial Grid/dependencies",
+				"patcherrelativepath" : "./dependencies",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.noteEntry.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
-				"patcherrelativepath" : "../../utilities",
+				"patcherrelativepath" : "../../../../patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "LP.out.maxpat",
 				"bootpath" : "~/Documents/github/CML/LP/launchpad/output",
-				"patcherrelativepath" : "../../../../LP/launchpad/output",
+				"patcherrelativepath" : "../../../../../LP/launchpad/output",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "LP.8row.maxpat",
 				"bootpath" : "~/Documents/github/CML/LP/launchpad/mapping",
-				"patcherrelativepath" : "../../../../LP/launchpad/mapping",
+				"patcherrelativepath" : "../../../../../LP/launchpad/mapping",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "LP.row.maxpat",
 				"bootpath" : "~/Documents/github/CML/LP/launchpad/mapping",
-				"patcherrelativepath" : "../../../../LP/launchpad/mapping",
+				"patcherrelativepath" : "../../../../../LP/launchpad/mapping",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "initPV.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
-				"patcherrelativepath" : "../../utilities",
+				"patcherrelativepath" : "../../../../patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "LP.grid.maxpat",
 				"bootpath" : "~/Documents/github/CML/LP/launchpad/input",
-				"patcherrelativepath" : "../../../../LP/launchpad/input",
+				"patcherrelativepath" : "../../../../../LP/launchpad/input",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "LP.padY.maxpat",
 				"bootpath" : "~/Documents/github/CML/LP/launchpad/input",
-				"patcherrelativepath" : "../../../../LP/launchpad/input",
+				"patcherrelativepath" : "../../../../../LP/launchpad/input",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "LP.seq8.maxpat",
 				"bootpath" : "~/Documents/github/CML/LP/launchpad/mapping",
-				"patcherrelativepath" : "../../../../LP/launchpad/mapping",
+				"patcherrelativepath" : "../../../../../LP/launchpad/mapping",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "LP.ledBar.maxpat",
 				"bootpath" : "~/Documents/github/CML/LP/launchpad/feedback",
-				"patcherrelativepath" : "../../../../LP/launchpad/feedback",
+				"patcherrelativepath" : "../../../../../LP/launchpad/feedback",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "LP.led1.maxpat",
+				"bootpath" : "~/Documents/github/CML/LP/launchpad/feedback",
+				"patcherrelativepath" : "../../../../../LP/launchpad/feedback",
 				"type" : "JSON",
 				"implicit" : 1
 			}
