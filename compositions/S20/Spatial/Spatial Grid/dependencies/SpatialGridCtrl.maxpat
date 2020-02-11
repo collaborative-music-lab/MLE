@@ -152,7 +152,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1080.0, 161.100010693073273, 74.0, 22.0 ],
+					"patching_rect" : [ 255.5, 237.100010693073273, 74.0, 22.0 ],
 					"text" : "r LPpadYout"
 				}
 
@@ -593,7 +593,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1004.5, 161.100010693073273, 72.0, 22.0 ],
+					"patching_rect" : [ 180.0, 237.100010693073273, 72.0, 22.0 ],
 					"text" : "r LPmidiOut"
 				}
 
@@ -680,7 +680,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 923.5, 161.100010693073273, 75.0, 22.0 ],
+					"patching_rect" : [ 99.0, 237.100010693073273, 75.0, 22.0 ],
 					"text" : "r LPpadXout"
 				}
 
@@ -1123,7 +1123,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 912.0, 192.981107115745544, 42.0, 22.0 ],
+					"patching_rect" : [ 87.5, 268.981107115745544, 42.0, 22.0 ],
 					"text" : "LP.out"
 				}
 
