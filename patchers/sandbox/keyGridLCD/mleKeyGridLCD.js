@@ -36,6 +36,8 @@ var dimX = 8;
 var dimY = 8;
 var gridSize = 53;
 var gridSpacing = 2;
+var curPlayer = 0;
+
 
 function size(x,y){ 
 	dimX=x; dimY=y;
@@ -218,7 +220,7 @@ function update(){
 //outputs (layer, x, y, r, g)
 function updateLP(x, y, cState, cPlayer){
 	var cOut = new Array(0,x+1,8-y,0,0);
-
+	//post(cOut, "\n");
 	if(cState == 0) {
 		outlet(LPout,cOut);
 		return;
@@ -229,24 +231,27 @@ function updateLP(x, y, cState, cPlayer){
 		cOut[4] += 2;
 		cOut[3] = 3;
 	}
-
+	if(cPlayer!= curPlayer){
+		cOut[3]=0;
+		cOut[4]=1;
+	}
 
 	outlet(LPout,cOut);
 }
 
 function refreshLP(cPlayer){
-
+	curPlayer = cPlayer
 	var d = new Dict("gridSettings");
 		var s = "playerOffset::";
 		s = s.concat(cPlayer);
 		//post(s, "\n");
 		cOffset = d.get(s);
-		//post("offzxet", cOffset, "\n");
+		post("offzxet", cOffset, "\n");
 
 		var x,y;
 	for(var i=0;i<8;i++){
 		for(k=0;k<8;k++){
-			y = 11 - k + cOffset[0];
+			y = 11 - (k + cOffset[0]);
 			x  = i + cOffset[1];
 			updateLP(i,k,states[x][y].state , states[x][y].player);
 			//cOut = new Array (0,0,0,0,0);
@@ -258,6 +263,16 @@ function refreshLP(cPlayer){
 
 function mod(pos, val){
 	curMod[8-pos] = val;
+}
+
+function  postStates(){
+	var c = new Array(8);
+	for(var i=0;i<dimX;i++){
+		for(k=0;k<dimY;k++){
+			c[k] = states[i][k].state;
+		}
+		post(c, "\n");
+	}
 }
 
 function writeGrid(x, y, r, g, b){
