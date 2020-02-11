@@ -39,6 +39,45 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 252.400004208087921, 643.933346101604457, 68.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 6.0, 664.933346101604457, 68.0, 22.0 ],
+					"text" : "Launchpad"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-35",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 252.400004208087921, 675.600010999999995, 102.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 6.0, 696.600010999999995, 102.0, 22.0 ],
+					"text" : "\"Launchpad Mini\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-41",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 252.400004208087921, 709.600010999999995, 127.0, 22.0 ],
+					"text" : "s LPmidiOutputAssign"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-159",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -4354,7 +4393,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 415.333345711231232, 166.000004947185516, 50.0, 35.0 ],
-					"text" : "update 4 7 3"
+					"text" : "update 5 0 0"
 				}
 
 			}
@@ -4471,7 +4510,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 626.399996399879456, 1480.400001406669617, 83.0, 35.0 ],
-					"text" : "1 polar 0. 1.805802 0."
+					"text" : "1 polar 0. 0. 0."
 				}
 
 			}
@@ -6771,13 +6810,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-145",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 40.299993110382076, 737.499990582466125, 124.0, 35.0 ],
-					"text" : "parent::MLE.atten[1]::gain 1.5"
+					"patching_rect" : [ 40.299993110382076, 737.499990582466125, 124.0, 22.0 ],
+					"text" : "parent::param1dest 0"
 				}
 
 			}
@@ -8566,7 +8604,7 @@
 						"live.grid" : [ 3, 16, 1, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 ],
 						"live.grid[1]" : [ 2, 8, 8, 0, 8, 2, 1002, 2005, 3005, 4005, 5006, 6006, 7006, 2, 2, 2, 2, 2, 2, 2, 2 ],
 						"live.grid[2]" : [ 2, 8, 8, 0, 8, 5, 1005, 2005, 3004, 4003, 5002, 6003, 7002, 2, 2, 2, 2, 2, 2, 2, 2 ],
-						"live.grid[3]" : [ 2, 8, 8, 0, 8, 2, 1002, 2000, 3002, 4000, 5004, 6000, 7004, 2, 2, 2, 2, 2, 2, 2, 2 ],
+						"live.grid[3]" : [ 2, 8, 8, 0, 8, 7, 1007, 2000, 3002, 4000, 5004, 6000, 7004, 2, 2, 2, 2, 2, 2, 2, 2 ],
 						"live.grid[4]" : [ 2, 8, 8, 0, 8, 0, 1001, 2003, 3003, 4004, 5005, 6006, 7007, 2, 2, 2, 2, 2, 2, 2, 2 ],
 						"param1" : [ 7 ],
 						"param1[1]" : [ 34 ],
@@ -8581,7 +8619,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u136002075"
+					"varname" : "u806017502"
 				}
 
 			}
@@ -8594,39 +8632,6 @@
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 187.0, 275.0, 29.5, 22.0 ],
 					"text" : "+ 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgstepcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 0.0 ],
-					"bgstepcolor2" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
-					"bordercolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 0.0 ],
-					"bordercolor2" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
-					"direction" : 0,
-					"hbgcolor" : [ 0.886274509803922, 0.886274509803922, 0.886274509803922, 0.250980392156863 ],
-					"id" : "obj-26",
-					"matrixmode" : 1,
-					"maxclass" : "live.grid",
-					"numinlets" : 2,
-					"numoutlets" : 6,
-					"outlettype" : [ "", "", "", "", "", "" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 187.0, 304.0, 300.0, 150.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 6.0, 28.799995899200439, 686.799999594688416, 574.0 ],
-					"rows" : 1,
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_longname" : "live.grid",
-							"parameter_invisible" : 1,
-							"parameter_shortname" : "live.grid",
-							"parameter_type" : 3
-						}
-
-					}
-,
-					"varname" : "live.grid"
 				}
 
 			}
@@ -14441,13 +14446,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-119",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 719.0, 823.0, 111.0, 49.0 ],
-					"text" : "custom 0 2 5 7 10 12 14 17 19 22 24 26"
+					"patching_rect" : [ 719.0, 823.0, 111.0, 35.0 ],
+					"text" : "custom 0 2 5 7 10 12 14 17"
 				}
 
 			}
@@ -14519,6 +14524,8 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 179.0, 191.0, 119.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 569.0, 700.799999237060547, 119.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "mleKeyGridLCD.js",
 						"parameter_enable" : 0
@@ -14537,20 +14544,6 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 205.0, 45.0, 78.0, 22.0 ],
 					"text" : "MLE.keyGrid"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"border" : 1.0,
-					"id" : "obj-20",
-					"maxclass" : "jit.pwindow",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 31.0, 304.0, 623.0, 316.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 3.799999594688416, 28.799995899200439, 689.0, 574.0 ]
 				}
 
 			}
@@ -14587,8 +14580,62 @@
 				}
 
 			}
+, 			{
+				"box" : 				{
+					"bgstepcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 0.0 ],
+					"bgstepcolor2" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
+					"bordercolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 0.0 ],
+					"bordercolor2" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
+					"direction" : 0,
+					"hbgcolor" : [ 0.886274509803922, 0.886274509803922, 0.886274509803922, 0.250980392156863 ],
+					"id" : "obj-26",
+					"matrixmode" : 1,
+					"maxclass" : "live.grid",
+					"numinlets" : 2,
+					"numoutlets" : 6,
+					"outlettype" : [ "", "", "", "", "", "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 187.0, 304.0, 300.0, 150.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 6.0, 28.799995899200439, 686.799999594688416, 574.0 ],
+					"rows" : 1,
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "live.grid",
+							"parameter_invisible" : 1,
+							"parameter_shortname" : "live.grid",
+							"parameter_type" : 3
+						}
+
+					}
+,
+					"varname" : "live.grid"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"border" : 1.0,
+					"id" : "obj-20",
+					"maxclass" : "jit.pwindow",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 31.0, 304.0, 623.0, 316.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 3.799999594688416, 28.799995899200439, 689.0, 574.0 ]
+				}
+
+			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-41", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-28", 0 ],
 					"source" : [ "obj-10", 0 ]
@@ -15460,6 +15507,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-41", 0 ],
+					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-28", 0 ],
 					"source" : [ "obj-36", 0 ]
 				}
@@ -15989,6 +16043,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "mleKeyGridLCD.js",
+				"bootpath" : "~/Documents/github/CML/MLE/compositions/S20/Spatial/Spatial Grid/dependencies",
+				"patcherrelativepath" : "./dependencies",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "MLE.scale.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/controllers",
 				"patcherrelativepath" : "../../../../patchers/controllers",
@@ -16034,6 +16095,13 @@
 				"name" : "MLE.atten.maxpat",
 				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
 				"patcherrelativepath" : "../../../../patchers/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "keyGrid.json",
+				"bootpath" : "~/Documents/github/CML/MLE/compositions/S20/Spatial/Spatial Grid/dependencies",
+				"patcherrelativepath" : "./dependencies",
 				"type" : "JSON",
 				"implicit" : 1
 			}
