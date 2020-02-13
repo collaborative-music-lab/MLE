@@ -23,11 +23,11 @@ def get_ip():
 def main():   
     IP =  get_ip()
     print( IP )
-    sock.sendto(MESSAGE, (UDP_IP, UDP_PORT))
+    #sock.sendto(MESSAGE, (UDP_IP, UDP_PORT))
     
     print ("UDP target IP:", UDP_IP)
-    print ("UDP target port:", UDP_PORT)
-    print ("message:", MESSAGE)
+    #print ("UDP target port:", UDP_PORT)
+    #print ("message:", MESSAGE)
 
 if __name__ == "__main__":
     main()
