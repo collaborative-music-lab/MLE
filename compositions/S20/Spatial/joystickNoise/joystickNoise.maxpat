@@ -39,6 +39,19 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-4",
+					"linecount" : 3,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1447.0, 411.0, 50.0, 49.0 ],
+					"text" : "36 48 55 41 51 58"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-62",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -92,7 +105,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1340.0, 413.0, 53.0, 22.0 ],
+					"patching_rect" : [ 1313.0, 421.0, 53.0, 22.0 ],
 					"text" : "prepend"
 				}
 
@@ -132,7 +145,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 962.0, -306.0, 50.0, 22.0 ],
-					"text" : "0"
+					"text" : "2"
 				}
 
 			}
@@ -1094,7 +1107,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 197.0, 549.0, 50.0, 76.0 ],
+					"patching_rect" : [ 197.0, 549.0, 53.0, 76.0 ],
 					"text" : "Section 1 - ALL: waves - slow quiet"
 				}
 
@@ -1237,43 +1250,6 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 376.0, 286.0, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"format" : 6,
-					"id" : "obj-15",
-					"maxclass" : "flonum",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 298.0, 285.0, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-4",
-					"maxclass" : "number",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 233.0, 275.0, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-3",
-					"maxclass" : "newobj",
-					"numinlets" : 4,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 214.0, 314.0, 114.0, 22.0 ],
-					"text" : "LP.scope 100 10 32"
 				}
 
 			}
@@ -3445,20 +3421,20 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 231.0, 344.0, 50.0, 35.0 ],
-									"text" : "0.042727"
+									"text" : "0.042939"
 								}
 
 							}
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"linecount" : 6,
+									"linecount" : 5,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 381.0, 316.0, 50.0, 89.0 ],
-									"text" : "243.635695 136.585522 121.788216"
+									"text" : "239.442381 141.5 122.559437"
 								}
 
 							}
@@ -3610,7 +3586,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 115.5, 21.5, 226.0, 22.0 ],
-																	"text" : "-0.013672 0.023438 0.205078"
+																	"text" : "-0.015625 0.041016 0.222656"
 																}
 
 															}
@@ -4409,7 +4385,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 284.0, 606.0, 50.0, 35.0 ],
-													"text" : "0.042727"
+													"text" : "0.042939"
 												}
 
 											}
@@ -5929,7 +5905,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 100.0, 50.0, 89.0 ],
-									"text" : "-0.013672 0.023438 0.205078"
+									"text" : "-0.015625 0.041016 0.222656"
 								}
 
 							}
@@ -21379,14 +21355,14 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ -108.800009608268738, -510.399999558925629, 56.0, 22.0 ],
 					"restore" : 					{
-						"ocatve" : [ 0 ],
-						"swnse" : [ 127 ],
-						"swnse[1]" : [ 0 ],
-						"swnse[2]" : [ 0.0 ]
+						"ocatve" : [ -1 ],
+						"swnse" : [ 50 ],
+						"swnse[1]" : [ 120 ],
+						"swnse[2]" : [ 0.6 ]
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u455011836"
+					"varname" : "u839015866"
 				}
 
 			}
@@ -32908,7 +32884,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1382.866665542125702, 131.333340764045715, 50.0, 22.0 ],
+					"patching_rect" : [ 1424.866665542125702, 131.333340764045715, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 11.0, 629.5, 50.0, 22.0 ]
 				}
@@ -33017,6 +32993,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
+					"order" : 1,
+					"source" : [ "obj-112", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-76", 1 ],
+					"order" : 0,
 					"source" : [ "obj-112", 0 ]
 				}
 
@@ -33175,13 +33160,6 @@
 					"destination" : [ "obj-165", 4 ],
 					"order" : 0,
 					"source" : [ "obj-14", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-3", 2 ],
-					"source" : [ "obj-15", 0 ]
 				}
 
 			}
@@ -33406,13 +33384,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 3 ],
-					"source" : [ "obj-21", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-210", 0 ],
 					"source" : [ "obj-214", 0 ]
 				}
@@ -33618,13 +33589,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 1 ],
-					"source" : [ "obj-4", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-35", 0 ],
 					"source" : [ "obj-40", 0 ]
 				}
@@ -33667,7 +33631,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-4", 1 ],
+					"order" : 0,
+					"source" : [ "obj-50", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-76", 0 ],
+					"order" : 1,
 					"source" : [ "obj-50", 0 ]
 				}
 
@@ -33942,20 +33915,6 @@
 				"name" : "mtoj.maxpat",
 				"bootpath" : "~/Dropbox/MIT/Teaching/2019Fall/M080_Fall2019/Max/class 10",
 				"patcherrelativepath" : "../../../../../../../../Dropbox/MIT/Teaching/2019Fall/M080_Fall2019/Max/class 10",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "LP.scope.maxpat",
-				"bootpath" : "~/Documents/github/CML/LP/launchpad/mapping",
-				"patcherrelativepath" : "../../../../../LP/launchpad/mapping",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "LP.out.maxpat",
-				"bootpath" : "~/Documents/github/CML/LP/launchpad/output",
-				"patcherrelativepath" : "../../../../../LP/launchpad/output",
 				"type" : "JSON",
 				"implicit" : 1
 			}
