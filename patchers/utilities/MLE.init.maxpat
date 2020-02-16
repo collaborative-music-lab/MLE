@@ -39,6 +39,17 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-37",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1475.0, 506.0, 32.0, 22.0 ],
+					"text" : "print"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-45",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -300,7 +311,7 @@
 					"patching_rect" : [ 143.5, 836.0, 200.0, 200.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 379.0, 9.0, 328.0, 189.941139221191406 ],
-					"rows" : 2
+					"rows" : 1
 				}
 
 			}
@@ -600,6 +611,42 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-7",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "bang", "int" ],
+									"patching_rect" : [ 719.5, 151.0, 32.0, 22.0 ],
+									"text" : "t b 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 703.60675048828125, 248.0, 42.0, 22.0 ],
+									"text" : "gate 2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "bang", "int" ],
+									"patching_rect" : [ 656.5, 147.0, 32.0, 22.0 ],
+									"text" : "t b 2"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-4",
 									"maxclass" : "button",
 									"numinlets" : 1,
@@ -621,7 +668,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 856.0, 100.0, 165.0, 33.0 ],
-									"presentation_linecount" : 2,
 									"text" : ";\rmax getsystem thisComputerOS"
 								}
 
@@ -657,7 +703,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 656.5, 209.0, 50.0, 22.0 ],
+									"patching_rect" : [ 656.5, 180.0, 50.0, 22.0 ],
 									"text" : "ipconfig"
 								}
 
@@ -669,7 +715,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 3,
 									"outlettype" : [ "bang", "bang", "" ],
-									"patching_rect" : [ 656.5, 175.0, 131.0, 22.0 ],
+									"patching_rect" : [ 656.5, 114.0, 131.0, 22.0 ],
 									"text" : "sel windows macintosh"
 								}
 
@@ -681,7 +727,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 656.5, 142.0, 105.0, 22.0 ],
+									"patching_rect" : [ 578.5, 68.0, 105.0, 22.0 ],
 									"text" : "r thisComputerOS"
 								}
 
@@ -755,7 +801,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 726.60675048828125, 209.0, 123.0, 22.0 ],
+									"patching_rect" : [ 772.60675048828125, 185.0, 123.0, 22.0 ],
 									"text" : "ipconfig getifaddr en0"
 								}
 
@@ -767,7 +813,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
-									"patching_rect" : [ 726.60675048828125, 243.0, 33.0, 22.0 ],
+									"patching_rect" : [ 726.60675048828125, 217.0, 33.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"shell" : "(default)"
 									}
@@ -1091,25 +1137,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-137", 0 ],
-									"order" : 2,
-									"source" : [ "obj-180", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-190", 0 ],
-									"order" : 0,
-									"source" : [ "obj-180", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-204", 0 ],
-									"midpoints" : [ 736.10675048828125, 270.5, 682.0, 270.5 ],
-									"order" : 1,
+									"destination" : [ "obj-6", 1 ],
 									"source" : [ "obj-180", 0 ]
 								}
 
@@ -1170,7 +1198,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-205", 0 ],
-									"midpoints" : [ 666.0, 168.0, 584.5, 168.0 ],
+									"midpoints" : [ 588.0, 168.0, 584.5, 168.0 ],
 									"order" : 1,
 									"source" : [ "obj-198", 0 ]
 								}
@@ -1178,15 +1206,15 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-185", 0 ],
-									"source" : [ "obj-199", 1 ]
+									"destination" : [ "obj-3", 0 ],
+									"source" : [ "obj-199", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-203", 0 ],
-									"source" : [ "obj-199", 0 ]
+									"destination" : [ "obj-7", 0 ],
+									"source" : [ "obj-199", 1 ]
 								}
 
 							}
@@ -1220,6 +1248,20 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-203", 0 ],
+									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"source" : [ "obj-3", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-1", 0 ],
 									"source" : [ "obj-4", 0 ]
 								}
@@ -1236,6 +1278,44 @@
 								"patchline" : 								{
 									"destination" : [ "obj-137", 0 ],
 									"source" : [ "obj-54", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-137", 0 ],
+									"order" : 1,
+									"source" : [ "obj-6", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-190", 0 ],
+									"source" : [ "obj-6", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-204", 0 ],
+									"midpoints" : [ 713.10675048828125, 270.5, 682.0, 270.5 ],
+									"order" : 0,
+									"source" : [ "obj-6", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-185", 0 ],
+									"source" : [ "obj-7", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"source" : [ "obj-7", 1 ]
 								}
 
 							}
@@ -1719,7 +1799,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1468.0, 1063.5, 225.0, 22.0 ],
-					"text" : "ping server none 192.168.0.100"
+					"text" : "ping Qintian none Connection-specific"
 				}
 
 			}
@@ -10630,6 +10710,13 @@
 			}
  ],
 		"dependency_cache" : [ 			{
+				"name" : "MLEdata.txt",
+				"bootpath" : "~/Documents/Max 8/Library",
+				"patcherrelativepath" : "../../../../../ianhattwick/Documents/Max 8/Library",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "MLE.UDPreceive.maxpat",
 				"bootpath" : "~/Dropbox/MIT/Teaching/2019Fall/M470_Fall2019/Concertmedia",
 				"patcherrelativepath" : "../../../../../ianhattwick/Dropbox/MIT/Teaching/2019Fall/M470_Fall2019/Concertmedia",
