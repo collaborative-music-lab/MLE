@@ -766,8 +766,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "int", "int" ],
-									"patching_rect" : [ 726.60675048828125, 311.0, 143.0, 22.0 ],
-									"text" : "splitAsciiString 1982.168."
+									"patching_rect" : [ 726.60675048828125, 311.0, 137.0, 22.0 ],
+									"text" : "splitAsciiString 192.168."
 								}
 
 							}
@@ -1799,7 +1799,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1468.0, 1063.5, 225.0, 22.0 ],
-					"text" : "ping Qintian none Connection-specific"
+					"text" : "ping Qintian none none"
 				}
 
 			}
