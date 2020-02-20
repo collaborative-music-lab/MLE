@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 8,
+			"minor" : 1,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 460.0, 79.0, 904.0, 835.0 ],
+		"rect" : [ 460.0, 79.0, 615.0, 835.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -41,7 +41,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -95,7 +95,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 564.0, 298.0, 50.0, 49.0 ],
-					"text" : "34 53 46 68 60"
+					"text" : "36 48 55 41 58 51"
 				}
 
 			}
@@ -240,7 +240,7 @@
 					"patching_rect" : [ 222.0, 629.0, 321.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 14.0, 189.0, 321.0, 22.0 ],
-					"text" : "46 65 58 80 72"
+					"text" : "48 60 67 53 70 63"
 				}
 
 			}
@@ -258,15 +258,15 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-33",
-					"linecount" : 6,
+					"linecount" : 5,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 387.0, 535.0, 52.0, 89.0 ],
+					"patching_rect" : [ 387.0, 535.0, 52.0, 76.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 14.0, 151.0, 218.0, 22.0 ],
-					"text" : "Section 4 - match Ian's gestures - BIG"
+					"text" : "Section 1 - ALL: waves - slow quiet"
 				}
 
 			}
@@ -281,8 +281,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 8,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -393,8 +393,8 @@
 									"numinlets" : 3,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 102.0, 273.0, 53.0, 22.0 ],
-									"text" : "clip 0 20"
+									"patching_rect" : [ 102.0, 273.0, 57.0, 22.0 ],
+									"text" : "clip -1 20"
 								}
 
 							}
@@ -595,6 +595,8 @@
 				"box" : 				{
 					"id" : "obj-17",
 					"maxclass" : "number",
+					"maximum" : 20,
+					"minimum" : -1,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
@@ -608,8 +610,12 @@
 , 			{
 				"box" : 				{
 					"coll_data" : 					{
-						"count" : 13,
+						"count" : 14,
 						"data" : [ 							{
+								"key" : -1,
+								"value" : [ "Get", "ready", "to", "start", "-", "eye", "contact!" ]
+							}
+, 							{
 								"key" : 0,
 								"value" : [ "Section", 1, "-", "ALL:", "waves", "-", "slow", "quiet" ]
 							}
@@ -1601,6 +1607,71 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "MLE.keyGrid.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/controllers",
+				"patcherrelativepath" : "../../../../../patchers/controllers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "asciiLinearMapping.txt",
+				"bootpath" : "/Users/famle/CML/MLE/code",
+				"patcherrelativepath" : "../../../../../code",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.UDPsend.maxpat",
+				"bootpath" : "~/Dropbox/MIT/Teaching/2019Fall/M470_Fall2019/Concertmedia",
+				"patcherrelativepath" : "../../../../../../../../ianhattwick/Dropbox/MIT/Teaching/2019Fall/M470_Fall2019/Concertmedia",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "initS.maxpat",
+				"bootpath" : "~/Dropbox/MIT/Teaching/2019Fall/M470_Fall2019/Concertmedia",
+				"patcherrelativepath" : "../../../../../../../../ianhattwick/Dropbox/MIT/Teaching/2019Fall/M470_Fall2019/Concertmedia",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.playerID.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/sandbox",
+				"patcherrelativepath" : "../../../../../patchers/sandbox",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.subSynth.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/audio",
+				"patcherrelativepath" : "../../../../../patchers/audio",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "PM.Ladder~.maxpat",
+				"bootpath" : "~/Dropbox/MIT/Teaching/2018Fall/M080_Intro to Music Tech/080Slides/Class 16 Max",
+				"patcherrelativepath" : "../../../../../../../../ianhattwick/Dropbox/MIT/Teaching/2018Fall/M080_Intro to Music Tech/080Slides/Class 16 Max",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "init.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "../../../../../patchers/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.output.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "../../../../../patchers/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
