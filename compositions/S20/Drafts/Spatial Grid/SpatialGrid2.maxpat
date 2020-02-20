@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-43",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 207.0, -27.0, 70.0, 22.0 ],
+					"text" : "loadmess 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -112,18 +124,6 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 3.799999594688416, 606.799995899200439, 689.0, 49.0 ],
 					"text" : "sequence"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-150",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 923.0, 683.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -214,7 +214,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 873.0, 570.0, 150.0, 20.0 ],
+					"patching_rect" : [ 601.399996399879456, 1369.0, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 866.299996972084045, 573.799995899200439, 49.0, 20.0 ],
 					"text" : "center?"
@@ -227,7 +227,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 760.0, 585.0, 150.0, 20.0 ],
+					"patching_rect" : [ 425.0, 1314.200004004074117, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 782.5, 573.799995899200439, 78.0, 20.0 ],
 					"text" : "spatialization"
@@ -240,7 +240,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 771.0, 412.0, 150.0, 20.0 ],
+					"patching_rect" : [ 369.200006676399198, 936.0, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 830.0, 192.599995641315445, 35.0, 20.0 ],
 					"text" : "Tone"
@@ -253,7 +253,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 763.0, 234.0, 150.0, 20.0 ],
+					"patching_rect" : [ 104.400004208087921, 936.0, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 774.0, 7.599990992153153, 95.0, 20.0 ],
 					"text" : "Filter Frequency"
@@ -266,7 +266,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 775.0, 605.0, 150.0, 20.0 ],
+					"patching_rect" : [ 115.0, 1305.0, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 810.0, 383.799995899200439, 59.0, 20.0 ],
 					"text" : "Envelope"
@@ -1531,10 +1531,10 @@
 					"rows" : 8,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.grid[16]",
-							"parameter_invisible" : 1,
 							"parameter_shortname" : "live.grid[11]",
-							"parameter_type" : 3
+							"parameter_type" : 3,
+							"parameter_longname" : "live.grid[16]",
+							"parameter_invisible" : 1
 						}
 
 					}
@@ -3905,17 +3905,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-47",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 410.0, 243.0, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-97",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -3934,7 +3923,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 677.200013399124146, 1449.800020456314087, 50.0, 22.0 ],
-					"text" : "27"
+					"text" : "53"
 				}
 
 			}
@@ -3972,10 +3961,10 @@
 					"rows" : 8,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.grid[14]",
-							"parameter_invisible" : 1,
 							"parameter_shortname" : "live.grid[11]",
-							"parameter_type" : 3
+							"parameter_type" : 3,
+							"parameter_longname" : "live.grid[14]",
+							"parameter_invisible" : 1
 						}
 
 					}
@@ -4392,8 +4381,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 415.333345711231232, 166.000004947185516, 50.0, 35.0 ],
-					"text" : "update 5 0 0"
+					"patching_rect" : [ 415.333345711231232, 202.0, 50.0, 35.0 ],
+					"text" : "update 6 1 0"
 				}
 
 			}
@@ -4427,7 +4416,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 776.0, 1201.0, 50.0, 22.0 ],
-					"text" : "38 0"
+					"text" : "36 80"
 				}
 
 			}
@@ -4510,7 +4499,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 626.399996399879456, 1480.400001406669617, 83.0, 35.0 ],
-					"text" : "1 polar 0. 0. 0."
+					"text" : "1 polar 0. 0.519477 0."
 				}
 
 			}
@@ -4995,7 +4984,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 810.5, 1144.0, 50.0, 22.0 ],
-					"text" : "215"
+					"text" : "250"
 				}
 
 			}
@@ -6810,12 +6799,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-145",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 40.299993110382076, 737.499990582466125, 124.0, 22.0 ],
-					"text" : "parent::param1dest 0"
+					"patching_rect" : [ 40.299993110382076, 737.499990582466125, 124.0, 35.0 ],
+					"text" : "parent::MLE.atten::curve 1."
 				}
 
 			}
@@ -6840,10 +6830,10 @@
 					"rows" : 8,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.grid[9]",
-							"parameter_invisible" : 1,
 							"parameter_shortname" : "live.grid[11]",
-							"parameter_type" : 3
+							"parameter_type" : 3,
+							"parameter_longname" : "live.grid[9]",
+							"parameter_invisible" : 1
 						}
 
 					}
@@ -7807,10 +7797,10 @@
 					"rows" : 8,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.grid[11]",
-							"parameter_invisible" : 1,
 							"parameter_shortname" : "live.grid[11]",
-							"parameter_type" : 3
+							"parameter_type" : 3,
+							"parameter_longname" : "live.grid[11]",
+							"parameter_invisible" : 1
 						}
 
 					}
@@ -8619,7 +8609,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u806017502"
+					"varname" : "u540006586"
 				}
 
 			}
@@ -12123,7 +12113,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 24.0, 205.0, 50.0, 22.0 ],
-									"text" : "1 1"
+									"text" : "0 1"
 								}
 
 							}
@@ -14369,10 +14359,10 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 913.0, 195.999997794628143, 179.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 4, 45, 358, 173 ],
+						"client_rect" : [ 4, 44, 358, 172 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
-						"storage_rect" : [ 583, 69, 1034, 197 ]
+						"storage_rect" : [ 365, 44, 816, 172 ]
 					}
 ,
 					"text" : "pattrstorage keyGrid @greedy 1",
@@ -14601,10 +14591,10 @@
 					"rows" : 1,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.grid",
-							"parameter_invisible" : 1,
 							"parameter_shortname" : "live.grid",
-							"parameter_type" : 3
+							"parameter_type" : 3,
+							"parameter_longname" : "live.grid",
+							"parameter_invisible" : 1
 						}
 
 					}
@@ -14911,14 +14901,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-147", 0 ],
 					"order" : 0,
-					"source" : [ "obj-142", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-150", 0 ],
-					"order" : 2,
 					"source" : [ "obj-142", 0 ]
 				}
 
@@ -15675,6 +15657,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-43", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-42", 1 ],
 					"order" : 0,
 					"source" : [ "obj-44", 0 ]
@@ -16007,21 +15996,21 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-82" : [ "live.grid[14]", "live.grid[11]", 0 ],
-			"obj-269::obj-248::obj-210::obj-46::obj-2" : [ "live.grid[6]", "live.grid", 0 ],
-			"obj-87::obj-6::obj-46::obj-2" : [ "live.grid[15]", "live.grid", 0 ],
-			"obj-99" : [ "live.grid[16]", "live.grid[11]", 0 ],
-			"obj-133" : [ "live.grid[9]", "live.grid[11]", 0 ],
 			"obj-376::obj-6::obj-46::obj-2" : [ "live.grid[13]", "live.grid", 0 ],
-			"obj-106::obj-6::obj-46::obj-2" : [ "live.grid[17]", "live.grid", 0 ],
-			"obj-146::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
 			"obj-53" : [ "live.grid[11]", "live.grid[11]", 0 ],
-			"obj-269::obj-251::obj-210::obj-46::obj-2" : [ "live.grid[7]", "live.grid", 0 ],
-			"obj-3::obj-46::obj-2" : [ "live.grid[8]", "live.grid", 0 ],
-			"obj-26" : [ "live.grid", "live.grid", 0 ],
-			"obj-268::obj-248::obj-210::obj-46::obj-2" : [ "live.grid[4]", "live.grid", 0 ],
 			"obj-268::obj-251::obj-210::obj-46::obj-2" : [ "live.grid[3]", "live.grid", 0 ],
+			"obj-269::obj-248::obj-210::obj-46::obj-2" : [ "live.grid[6]", "live.grid", 0 ],
+			"obj-3::obj-46::obj-2" : [ "live.grid[8]", "live.grid", 0 ],
+			"obj-82" : [ "live.grid[14]", "live.grid[11]", 0 ],
+			"obj-268::obj-248::obj-210::obj-46::obj-2" : [ "live.grid[4]", "live.grid", 0 ],
+			"obj-87::obj-6::obj-46::obj-2" : [ "live.grid[15]", "live.grid", 0 ],
+			"obj-133" : [ "live.grid[9]", "live.grid[11]", 0 ],
+			"obj-106::obj-6::obj-46::obj-2" : [ "live.grid[17]", "live.grid", 0 ],
 			"obj-288::obj-6::obj-46::obj-2" : [ "live.grid[12]", "live.grid", 0 ],
+			"obj-99" : [ "live.grid[16]", "live.grid[11]", 0 ],
+			"obj-146::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
+			"obj-269::obj-251::obj-210::obj-46::obj-2" : [ "live.grid[7]", "live.grid", 0 ],
+			"obj-26" : [ "live.grid", "live.grid", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -16030,28 +16019,28 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "MLE.keyGrid.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/controllers",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/controllers",
 				"patcherrelativepath" : "../../../../patchers/controllers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "asciiLinearMapping.txt",
-				"bootpath" : "~/Documents/github/CML/MLE/code",
+				"bootpath" : "/Users/famle/CML/MLE/code",
 				"patcherrelativepath" : "../../../../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mleKeyGridLCD.js",
-				"bootpath" : "~/Documents/github/CML/MLE/compositions/S20/Spatial/Spatial Grid/dependencies",
+				"bootpath" : "/Users/famle/CML/MLE/compositions/S20/Drafts/Spatial Grid/dependencies",
 				"patcherrelativepath" : "./dependencies",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.scale.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/controllers",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/controllers",
 				"patcherrelativepath" : "../../../../patchers/controllers",
 				"type" : "JSON",
 				"implicit" : 1
@@ -16059,48 +16048,48 @@
 , 			{
 				"name" : "MajorScale.js",
 				"bootpath" : "~/Dropbox/MIT/Teaching/2019Fall/M080_Fall2019/Assignments/Assignment 2/44385295-submissions/Mloduchowski, Tomasz B/21M.080.2/code",
-				"patcherrelativepath" : "../../../../../../../../Dropbox/MIT/Teaching/2019Fall/M080_Fall2019/Assignments/Assignment 2/44385295-submissions/Mloduchowski, Tomasz B/21M.080.2/code",
+				"patcherrelativepath" : "../../../../../../../ianhattwick/Dropbox/MIT/Teaching/2019Fall/M080_Fall2019/Assignments/Assignment 2/44385295-submissions/Mloduchowski, Tomasz B/21M.080.2/code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "initS.maxpat",
 				"bootpath" : "~/Dropbox/MIT/Teaching/2019Fall/M470_Fall2019/Concertmedia",
-				"patcherrelativepath" : "../../../../../../../../Dropbox/MIT/Teaching/2019Fall/M470_Fall2019/Concertmedia",
+				"patcherrelativepath" : "../../../../../../../ianhattwick/Dropbox/MIT/Teaching/2019Fall/M470_Fall2019/Concertmedia",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "init.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
 				"patcherrelativepath" : "../../../../patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.beat.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/network",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/network",
 				"patcherrelativepath" : "../../../../patchers/network",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.swing.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/sandbox",
 				"patcherrelativepath" : "../../../../patchers/sandbox",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.atten.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
 				"patcherrelativepath" : "../../../../patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "keyGrid.json",
-				"bootpath" : "~/Documents/github/CML/MLE/compositions/S20/Spatial/Spatial Grid/dependencies",
+				"bootpath" : "/Users/famle/CML/MLE/compositions/S20/Drafts/Spatial Grid/dependencies",
 				"patcherrelativepath" : "./dependencies",
 				"type" : "JSON",
 				"implicit" : 1
@@ -16108,111 +16097,111 @@
 , 			{
 				"name" : "MLE.UDPsend.maxpat",
 				"bootpath" : "~/Dropbox/MIT/Teaching/2019Fall/M470_Fall2019/Concertmedia",
-				"patcherrelativepath" : "../../../../../../../../Dropbox/MIT/Teaching/2019Fall/M470_Fall2019/Concertmedia",
+				"patcherrelativepath" : "../../../../../../../ianhattwick/Dropbox/MIT/Teaching/2019Fall/M470_Fall2019/Concertmedia",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.UDPreceive.maxpat",
 				"bootpath" : "~/Dropbox/MIT/Teaching/2019Fall/M470_Fall2019/Concertmedia",
-				"patcherrelativepath" : "../../../../../../../../Dropbox/MIT/Teaching/2019Fall/M470_Fall2019/Concertmedia",
+				"patcherrelativepath" : "../../../../../../../ianhattwick/Dropbox/MIT/Teaching/2019Fall/M470_Fall2019/Concertmedia",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "LP.dot.maxpat",
-				"bootpath" : "~/Documents/github/CML/LP/launchpad/feedback",
+				"bootpath" : "/Users/famle/CML/LP/launchpad/feedback",
 				"patcherrelativepath" : "../../../../../LP/launchpad/feedback",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "LP.padX.maxpat",
-				"bootpath" : "~/Documents/github/CML/LP/launchpad/input",
+				"bootpath" : "/Users/famle/CML/LP/launchpad/input",
 				"patcherrelativepath" : "../../../../../LP/launchpad/input",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.playerID.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/sandbox",
 				"patcherrelativepath" : "../../../../patchers/sandbox",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SpatialGridCtrl.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/compositions/S20/Spatial/Spatial Grid/dependencies",
+				"bootpath" : "/Users/famle/CML/MLE/compositions/S20/Drafts/Spatial Grid/dependencies",
 				"patcherrelativepath" : "./dependencies",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.noteEntry.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
 				"patcherrelativepath" : "../../../../patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "LP.out.maxpat",
-				"bootpath" : "~/Documents/github/CML/LP/launchpad/output",
+				"bootpath" : "/Users/famle/CML/LP/launchpad/output",
 				"patcherrelativepath" : "../../../../../LP/launchpad/output",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "LP.8row.maxpat",
-				"bootpath" : "~/Documents/github/CML/LP/launchpad/mapping",
+				"bootpath" : "/Users/famle/CML/LP/launchpad/mapping",
 				"patcherrelativepath" : "../../../../../LP/launchpad/mapping",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "LP.row.maxpat",
-				"bootpath" : "~/Documents/github/CML/LP/launchpad/mapping",
+				"bootpath" : "/Users/famle/CML/LP/launchpad/mapping",
 				"patcherrelativepath" : "../../../../../LP/launchpad/mapping",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "initPV.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
 				"patcherrelativepath" : "../../../../patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "LP.grid.maxpat",
-				"bootpath" : "~/Documents/github/CML/LP/launchpad/input",
+				"bootpath" : "/Users/famle/CML/LP/launchpad/input",
 				"patcherrelativepath" : "../../../../../LP/launchpad/input",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "LP.padY.maxpat",
-				"bootpath" : "~/Documents/github/CML/LP/launchpad/input",
+				"bootpath" : "/Users/famle/CML/LP/launchpad/input",
 				"patcherrelativepath" : "../../../../../LP/launchpad/input",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "LP.seq8.maxpat",
-				"bootpath" : "~/Documents/github/CML/LP/launchpad/mapping",
+				"bootpath" : "/Users/famle/CML/LP/launchpad/mapping",
 				"patcherrelativepath" : "../../../../../LP/launchpad/mapping",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "LP.ledBar.maxpat",
-				"bootpath" : "~/Documents/github/CML/LP/launchpad/feedback",
+				"bootpath" : "/Users/famle/CML/LP/launchpad/feedback",
 				"patcherrelativepath" : "../../../../../LP/launchpad/feedback",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "LP.led1.maxpat",
-				"bootpath" : "~/Documents/github/CML/LP/launchpad/feedback",
+				"bootpath" : "/Users/famle/CML/LP/launchpad/feedback",
 				"patcherrelativepath" : "../../../../../LP/launchpad/feedback",
 				"type" : "JSON",
 				"implicit" : 1

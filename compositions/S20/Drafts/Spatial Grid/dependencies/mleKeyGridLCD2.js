@@ -136,14 +136,6 @@ function clearLP(){
 }
 loadbang();
 
-function dump(){
-	for(var i=0;i<8;i++){
-		for(k=0;k<8;k++){
-			updateLP(i, 7-k, states[i][k].state, states[i][k].player);
-		}
-	}
-}
-
 function post_info(dictname, keys)
 {
 	post("Info regarding the dictionary named '", dictname, "': ");
@@ -239,10 +231,10 @@ function updateLP(x, y, cState, cPlayer){
 		cOut[4] += 2;
 		cOut[3] = 3;
 	}
-	// if(cPlayer!= curPlayer){
-	// 	cOut[3]=0;
-	// 	cOut[4]=1;
-	// }
+	if(cPlayer!= curPlayer){
+		cOut[3]=0;
+		cOut[4]=1;
+	}
 
 	outlet(LPout,cOut);
 }
@@ -259,7 +251,7 @@ function refreshLP(cPlayer){
 		var x,y;
 	for(var i=0;i<8;i++){
 		for(k=0;k<8;k++){
-			y = (dimX - 1) - (k + cOffset[0]);
+			y = (dimX-1) - (k + cOffset[0]);
 			x  = i + cOffset[1];
 			updateLP(i,k,states[x][y].state , states[x][y].player);
 			//cOut = new Array (0,0,0,0,0);

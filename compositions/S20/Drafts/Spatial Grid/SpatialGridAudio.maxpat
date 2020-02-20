@@ -886,7 +886,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u738003519"
+					"varname" : "u216011391"
 				}
 
 			}
@@ -900,10 +900,10 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 943.0, 225.999997794628143, 209.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 4, 45, 358, 173 ],
+						"client_rect" : [ 4, 44, 358, 172 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
-						"storage_rect" : [ 583, 69, 1034, 197 ]
+						"storage_rect" : [ 365, 44, 816, 172 ]
 					}
 ,
 					"text" : "pattrstorage keyGridaudio @greedy 1",
@@ -2285,99 +2285,99 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "MLE.JX3P.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/audio/JX3P",
-				"patcherrelativepath" : "../../audio/JX3P",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/audio/JX3P",
+				"patcherrelativepath" : "../../../../patchers/audio/JX3P",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.JX3Ppoly.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/audio/JX3P",
-				"patcherrelativepath" : "../../audio/JX3P",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/audio/JX3P",
+				"patcherrelativepath" : "../../../../patchers/audio/JX3P",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "PM.Ladder~.maxpat",
 				"bootpath" : "~/Dropbox/MIT/Teaching/2018Fall/M080_Intro to Music Tech/080Slides/Class 16 Max",
-				"patcherrelativepath" : "../../../../../../../Dropbox/MIT/Teaching/2018Fall/M080_Intro to Music Tech/080Slides/Class 16 Max",
+				"patcherrelativepath" : "../../../../../../../ianhattwick/Dropbox/MIT/Teaching/2018Fall/M080_Intro to Music Tech/080Slides/Class 16 Max",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ih.blend.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/externals",
-				"patcherrelativepath" : "../../../externals",
+				"bootpath" : "/Users/famle/CML/MLE/externals",
+				"patcherrelativepath" : "../../../../externals",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "init.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
-				"patcherrelativepath" : "../../utilities",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "../../../../patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.reverb.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox/Carina/MLE FX library",
-				"patcherrelativepath" : "../Carina/MLE FX library",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/sandbox/Carina/MLE FX library",
+				"patcherrelativepath" : "../../../../patchers/sandbox/Carina/MLE FX library",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.output.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
-				"patcherrelativepath" : "../../utilities",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "../../../../patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hoa.helpout_7.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/HoaLibrary-Mac-v2.2/misc/others/hoa.helpout",
-				"patcherrelativepath" : "../../../../../../Max 8/Packages/HoaLibrary-Mac-v2.2/misc/others/hoa.helpout",
+				"patcherrelativepath" : "../../../../../../../ianhattwick/Documents/Max 8/Packages/HoaLibrary-Mac-v2.2/misc/others/hoa.helpout",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hoa.fx.delay~.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/HoaLibrary-Mac-v2.2/patchers/effects",
-				"patcherrelativepath" : "../../../../../../Max 8/Packages/HoaLibrary-Mac-v2.2/patchers/effects",
+				"patcherrelativepath" : "../../../../../../../ianhattwick/Documents/Max 8/Packages/HoaLibrary-Mac-v2.2/patchers/effects",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hoa.help.process.infos.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/HoaLibrary-Mac-v2.2/patchers/helputility",
-				"patcherrelativepath" : "../../../../../../Max 8/Packages/HoaLibrary-Mac-v2.2/patchers/helputility",
+				"patcherrelativepath" : "../../../../../../../ianhattwick/Documents/Max 8/Packages/HoaLibrary-Mac-v2.2/patchers/helputility",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hoa.args.map.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/HoaLibrary-Mac-v2.2/misc/others",
-				"patcherrelativepath" : "../../../../../../Max 8/Packages/HoaLibrary-Mac-v2.2/misc/others",
+				"patcherrelativepath" : "../../../../../../../ianhattwick/Documents/Max 8/Packages/HoaLibrary-Mac-v2.2/misc/others",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hoa.mode.sel.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/HoaLibrary-Mac-v2.2/misc/others",
-				"patcherrelativepath" : "../../../../../../Max 8/Packages/HoaLibrary-Mac-v2.2/misc/others",
+				"patcherrelativepath" : "../../../../../../../ianhattwick/Documents/Max 8/Packages/HoaLibrary-Mac-v2.2/misc/others",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hoa.fx.mixer~.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/HoaLibrary-Mac-v2.2/patchers/effects",
-				"patcherrelativepath" : "../../../../../../Max 8/Packages/HoaLibrary-Mac-v2.2/patchers/effects",
+				"patcherrelativepath" : "../../../../../../../ianhattwick/Documents/Max 8/Packages/HoaLibrary-Mac-v2.2/patchers/effects",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "keyGridaudio.json",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox/keyGridLCD",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/famle/CML/MLE/compositions/S20/Drafts/Spatial Grid/dependencies",
+				"patcherrelativepath" : "./dependencies",
 				"type" : "JSON",
 				"implicit" : 1
 			}
