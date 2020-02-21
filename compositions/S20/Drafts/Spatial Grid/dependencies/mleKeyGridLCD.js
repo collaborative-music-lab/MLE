@@ -28,6 +28,7 @@ outlets = 3;
 var lcdOut = 0; // to LCD for monitoring
 var columnOut = 1; //tocoll to store data
 var LPout = 2;
+
    
 /*****************************************
 SETUP VARIABLES
@@ -85,7 +86,7 @@ LOADBANG
 
 var playerColors = new Array();
 
-function loadbang(){ 
+function loadbang2(){ 
 
 	var d = new Dict("gridSettings");
 
@@ -127,14 +128,20 @@ function loadbang(){
 
 function clearLP(){
 	for(var i=1;i<9;i++){
+		outlet(columnOut, i, 0, 0, 0);
 		for(k=1;k<9;k++){
 			//cOut = new Array (0,0,0,0,0);
 			outlet(LPout, 0, i, k, 0, 0);
 			outlet(LPout, 1, i, k, 0, 0);
+
 		}
 	}
 }
 loadbang();
+
+function loadbang(){
+	outlet(0,"loadbang");
+}
 
 function dump(){
 	for(var i=0;i<8;i++){
