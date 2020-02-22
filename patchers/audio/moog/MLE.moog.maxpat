@@ -39,36 +39,13 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-234",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"patching_rect" : [ 136.666670739650726, 1238.000036895275116, 49.0, 17.0 ],
-					"text" : "MLE.output"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-230",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 95.333336174488068, 1110.666699767112732, 50.0, 17.0 ],
-					"text" : "60 0"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-227",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 111.0, 1058.5, 56.0, 17.0 ],
-					"text" : "MLE.midiKey"
+					"text" : "voices 32"
 				}
 
 			}
@@ -3027,7 +3004,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u018015427"
+					"varname" : "u070019383"
 				}
 
 			}
@@ -5339,13 +5316,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-224", 0 ],
-					"source" : [ "obj-227", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
 					"source" : [ "obj-228", 0 ]
 				}
@@ -5532,24 +5502,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-234", 1 ],
-					"order" : 0,
-					"source" : [ "obj-38", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-234", 0 ],
-					"order" : 1,
-					"source" : [ "obj-38", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-77", 0 ],
-					"order" : 2,
 					"source" : [ "obj-38", 0 ]
 				}
 
@@ -6067,20 +6020,6 @@
 			}
 , 			{
 				"name" : "MLE.polyMidi.maxpat",
-				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
-				"patcherrelativepath" : "../../utilities",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "MLE.midiKey.maxpat",
-				"bootpath" : "~/Dropbox/MIT/Teaching/2019Fall/M080_Fall2019/Assignments/Assignment 1/44385301-submissions/Janovetz, Nicholas W/44997309-JANOVETZ_NICHOLAS_REC_ASS1",
-				"patcherrelativepath" : "../../../../../../ianhattwick/Dropbox/MIT/Teaching/2019Fall/M080_Fall2019/Assignments/Assignment 1/44385301-submissions/Janovetz, Nicholas W/44997309-JANOVETZ_NICHOLAS_REC_ASS1",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "MLE.output.maxpat",
 				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
 				"patcherrelativepath" : "../../utilities",
 				"type" : "JSON",
