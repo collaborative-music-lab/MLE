@@ -355,7 +355,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 410.0, -357.60000091791153, 100.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 543.399998962879181, 56.400000035762787, 100.0, 22.0 ],
+					"presentation_rect" : [ 543.399998962879181, 118.0, 100.0, 22.0 ],
 					"varname" : "subdivider"
 				}
 
@@ -370,7 +370,7 @@
 					"patching_rect" : [ 708.0, 753.300004005432129, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 488.649978637695312, 569.0, 50.0, 22.0 ],
-					"text" : "0"
+					"text" : "8"
 				}
 
 			}
@@ -384,7 +384,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 462.699951171875, -290.0, 129.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 648.399998962879181, 56.400000035762787, 125.0, 24.0 ],
+					"presentation_rect" : [ 648.399998962879181, 118.0, 125.0, 24.0 ],
 					"text" : "subdivider"
 				}
 
@@ -495,7 +495,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 453.600006759166718, 827.20001232624054, 50.0, 22.0 ],
-					"text" : "42 0"
+					"text" : "53 90"
 				}
 
 			}
@@ -547,7 +547,7 @@
 					"patching_rect" : [ 863.5, 432.0, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 472.649978637695312, 443.0, 50.0, 22.0 ],
-					"text" : "42 0"
+					"text" : "55 0"
 				}
 
 			}
@@ -1650,6 +1650,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 3.0, -57.0, 127.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 573.0, 152.0, 127.0, 24.0 ],
 					"text" : "Sync to Net"
 				}
 
@@ -1675,6 +1677,8 @@
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 132.0, -57.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 543.399998962879181, 152.0, 24.0, 24.0 ],
 					"varname" : "SynctoNet"
 				}
 
@@ -1744,7 +1748,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 136.0, 124.0, 50.0, 22.0 ],
-									"text" : "0 8 1"
+									"text" : "4 0 1"
 								}
 
 							}
@@ -2281,7 +2285,7 @@
 					"patching_rect" : [ -59.5, 92.0, 181.0, 42.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 595.399998962879181, 115.0, 192.0, 42.0 ],
+					"presentation_rect" : [ 595.399998962879181, 60.400000035762787, 192.0, 42.0 ],
 					"text" : "Number of beats \n(Shift Q to ']')"
 				}
 
@@ -2297,7 +2301,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1015.75, 510.0, 288.0, 42.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 500.899998962879181, 350.433349609375, 318.0, 24.0 ],
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 500.899998962879181, 350.433349609375, 257.0, 42.0 ],
 					"text" : "Trig Arp on Next Space ('\\')"
 				}
 
@@ -2379,6 +2384,7 @@
 					"mode" : 1,
 					"numinlets" : 2,
 					"numoutlets" : 2,
+					"offset" : 48,
 					"outlettype" : [ "int", "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1441.0, 635.0, 360.0, 144.0 ],
@@ -2618,9 +2624,9 @@
 						"delay" : [ 66 ],
 						"filter" : [ 65 ],
 						"glide" : [ 58 ],
-						"live.grid" : [ 3, 10, 1, 0, 6, 0, 2000, 3000, 5000, 6000, 7000, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 ],
+						"live.grid" : [ 3, 8, 1, 0, 7, 0, 1000, 2000, 3000, 5000, 6000, 7000, 2, 2, 2, 2, 2, 2, 2, 2 ],
 						"live.grid[1]" : [ 3, 12, 1, 0, 3, 0, 4000, 8000, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 ],
-						"seqSize" : [ 10 ],
+						"seqSize" : [ 8 ],
 						"sub" : [ 0.523076923076923 ],
 						"subdivider" : [ 3 ],
 						"tempo" : [ 120 ],
@@ -4101,7 +4107,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 282.0, 178.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 543.399998962879181, 125.0, 50.0, 22.0 ],
+					"presentation_rect" : [ 543.399998962879181, 70.400000035762787, 50.0, 22.0 ],
 					"varname" : "seqSize"
 				}
 
@@ -4429,7 +4435,7 @@
 			}
 , 			{
 				"box" : 				{
-					"columns" : 10,
+					"columns" : 8,
 					"direction" : 0,
 					"id" : "obj-42",
 					"ignoreclick" : 1,
