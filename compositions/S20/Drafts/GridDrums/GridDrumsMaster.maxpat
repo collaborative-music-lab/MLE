@@ -39,13 +39,42 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 148.0, 142.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 120.0, 74.0, 150.0, 20.0 ],
+					"text" : "enable keyGrid"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 189.0, 134.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 15.0, 63.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-27",
 					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 763.0, -15.0, 24.0, 24.0 ]
+					"patching_rect" : [ 763.0, -15.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 15.0, 139.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -57,6 +86,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 762.0, 18.0, 48.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 45.0, 140.0, 48.0, 22.0 ],
 					"text" : "clearAll"
 				}
 
@@ -69,7 +100,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 642.0, -5.0, 24.0, 24.0 ]
+					"patching_rect" : [ 642.0, -5.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 15.0, 113.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -81,6 +114,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 639.0, 24.0, 75.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 45.0, 113.0, 75.0, 22.0 ],
 					"text" : "playAllAudio"
 				}
 
@@ -117,6 +152,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 543.0, 24.0, 89.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 69.0, 89.0, 89.0, 22.0 ],
 					"text" : "numPlayers $1"
 				}
 
@@ -131,7 +168,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 543.0, -5.0, 50.0, 22.0 ]
+					"patching_rect" : [ 543.0, -5.0, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 15.0, 89.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -639,7 +678,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 576.0, 131.0, 585.0, 468.0 ],
+					"patching_rect" : [ 575.0, 117.0, 585.0, 468.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 180.0, 109.0, 585.0, 468.0 ],
 					"varname" : "GridDrumsAudio",
 					"viewvisibility" : 1
 				}
@@ -967,6 +1008,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 87.0, 24.0, 287.0, 33.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 87.0, 24.0, 287.0, 33.0 ],
 					"text" : "<- set player ID"
 				}
 
@@ -1016,7 +1059,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 125.650004208087921, 592.0, 68.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 36.0, 694.933346101604457, 68.0, 22.0 ],
+					"presentation_rect" : [ 35.0, 365.933346101604457, 68.0, 22.0 ],
 					"text" : "Launchpad"
 				}
 
@@ -1030,7 +1073,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 125.650004208087921, 623.666664898395538, 102.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 36.0, 726.600010999999995, 102.0, 22.0 ],
+					"presentation_rect" : [ 35.0, 397.600010999999995, 102.0, 22.0 ],
 					"text" : "\"Launchpad Mini\""
 				}
 
@@ -1191,7 +1234,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 15.0, 24.0, 70.0, 35.0 ]
+					"patching_rect" : [ 15.0, 24.0, 70.0, 35.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 15.0, 24.0, 70.0, 35.0 ]
 				}
 
 			}
@@ -1203,7 +1248,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 292.0, 53.0, 45.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 643.5, 17.799999237060547, 45.0, 20.0 ],
+					"presentation_rect" : [ 63.5, 207.799999237060547, 45.0, 20.0 ],
 					"text" : "Tempo"
 				}
 
@@ -1218,7 +1263,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 292.0, 78.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 591.5, 17.799999237060547, 50.0, 22.0 ]
+					"presentation_rect" : [ 15.0, 205.799999237060547, 50.0, 22.0 ]
 				}
 
 			}
@@ -1240,11 +1285,11 @@
 					"fontsize" : 18.0,
 					"id" : "obj-69",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 80.0, 171.666664898395538, 146.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 569.0, 669.799999237060547, 119.0, 29.0 ],
+					"presentation_rect" : [ 35.0, 442.799999237060547, 119.0, 29.0 ],
 					"text" : "spatialGridctrl",
 					"varname" : "SpatialGridCtrl"
 				}
@@ -1260,6 +1305,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-69", 1 ],
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-12", 0 ]
 				}
@@ -1270,6 +1322,14 @@
 					"destination" : [ "obj-15", 0 ],
 					"hidden" : 1,
 					"order" : 4,
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"order" : 5,
 					"source" : [ "obj-13", 0 ]
 				}
 
@@ -1720,8 +1780,8 @@
 			"obj-17::obj-12::obj-45" : [ "trig_7", "trig_7", 0 ],
 			"obj-17::obj-12::obj-4" : [ "kick-sweep", "sweep", 0 ],
 			"obj-17::obj-12::obj-17" : [ "snare-level", "level", 0 ],
-			"obj-17::obj-12::obj-38" : [ "tom-level", "level", 0 ],
 			"obj-17::obj-12::obj-23" : [ "trig_3", "trig_3", 0 ],
+			"obj-17::obj-12::obj-38" : [ "tom-level", "level", 0 ],
 			"obj-17::obj-12::obj-129" : [ "trig_6[1]", "trig_6", 0 ],
 			"obj-57::obj-268::obj-13::obj-210::obj-46::obj-2" : [ "live.grid[22]", "live.grid", 0 ],
 			"obj-17::obj-12::obj-46" : [ "ad-level", "level", 0 ],
@@ -1865,6 +1925,20 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "MLE.keyGrid.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/controllers",
+				"patcherrelativepath" : "../../../../patchers/controllers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "asciiLinearMapping.txt",
+				"bootpath" : "/Users/famle/CML/MLE/code",
+				"patcherrelativepath" : "../../../../code",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "MLE.beat.maxpat",
 				"bootpath" : "/Users/famle/CML/MLE/patchers/network",
 				"patcherrelativepath" : "../../../../patchers/network",
@@ -1883,20 +1957,6 @@
 				"bootpath" : "/Users/famle/CML/MLE/compositions/S20/Drafts/GridDrums/dependencies",
 				"patcherrelativepath" : "./dependencies",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "MLE.keyGrid.maxpat",
-				"bootpath" : "/Users/famle/CML/MLE/patchers/controllers",
-				"patcherrelativepath" : "../../../../patchers/controllers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "asciiLinearMapping.txt",
-				"bootpath" : "/Users/famle/CML/MLE/code",
-				"patcherrelativepath" : "../../../../code",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{

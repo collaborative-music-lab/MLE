@@ -128,12 +128,12 @@ function loadbang2(){
 
 function clearLP(){
 	for(var i=1;i<9;i++){
-		outlet(columnOut, i, 0, 0, 0);
+		outlet(columnOut, i-1, 0, 0, 0);
 		for(k=1;k<9;k++){
 			//cOut = new Array (0,0,0,0,0);
 			outlet(LPout, 0, i, k, 0, 0);
 			outlet(LPout, 1, i, k, 0, 0);
-
+			states[i-1][k-1].state = 0;
 		}
 	}
 }
