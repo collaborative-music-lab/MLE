@@ -240,7 +240,7 @@ function startUdpServer(port,address) {
 		//for (var i=0;i<host.length;i++) if(rinfo.address == host[i]) _address = i;
 		//for (var i=0;i<host.length;i++) Max.post(host[i]);
 		//Max.post("add: ", rinfo.address);
-
+		Max.post("msg recevied");
 		var dlen = data.length;
 		
 		data = data.toString(dataMode);
@@ -250,11 +250,12 @@ function startUdpServer(port,address) {
 			dlen = data.length;
 		}
 
+		Max.outlet('udp-recv', 'data', rinfo.address, rinfo.port, dlen, data);
 
 		if( checkIfAckMsg(data) == 0 ){
 			sendAck(data,rinfo.address);
 			Max.post("not acl");
-			//Max.outlet('udp-recv', 'data', rinfo.address, rinfo.port, dlen, result);
+			//Max.outlet('udp-recv', 'data', rinfo.address, rinfo.port, dlen, data);
 		} 
 
 		
@@ -327,16 +328,24 @@ Max.addHandler("addHost", (num,ip) => {
 //format the ascii values and convert to an int
 function getSequenceNum(data){
 	var num = Object.keys(data).length;
-	var test = 1;
-	var str = [];
-	while(test){
-		if(data[num-1] == 32) { test = 0; break;}
-		str.push(data[num-1]);
-		num-=1;
-	}
-	str.reverse();
-	var val = String.fromCharCode.apply(null, str);
-	return val;
+	var val = 0;
+
+	var result = Object.values(data);
+		result = result.join('');
+		result = result.split(" ");
+		result = result.pop();
+		//Max.post('seqnum: ', result);
+
+	// var test = 1;
+	// var str = [];
+	// while(test){
+	// 	if(data[num-1] == 32) { test = 0; break;}
+	// 	str.push(data[num-1]);
+	// 	num-=1;
+	// }
+	// str.reverse();
+	// var val = String.fromCharCode.apply(null, str);
+	return parseInt(result);
 }
 
 //https://gist.github.com/joni/3760795/8f0c1a608b7f0c8b3978db68105c5b1d741d0446
