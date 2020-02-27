@@ -39,35 +39,6 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-26",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 762.0, 78.0, 39.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 709.0, 4.0, 39.0, 20.0 ],
-					"text" : "swing"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"floatoutput" : 1,
-					"id" : "obj-10",
-					"maxclass" : "dial",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 762.0, 100.0, 40.0, 40.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 709.0, 26.0, 40.0, 40.0 ],
-					"size" : 1.0
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-139",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -1061,7 +1032,7 @@
 				"box" : 				{
 					"id" : "obj-84",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
 					"patcher" : 					{
@@ -1102,33 +1073,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
-								"box" : 								{
-									"id" : "obj-4",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 102.0, 62.0, 62.0, 22.0 ],
-									"text" : "groove $1"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"comment" : "",
-									"id" : "obj-2",
-									"index" : 2,
-									"maxclass" : "inlet",
-									"numinlets" : 0,
-									"numoutlets" : 1,
-									"outlettype" : [ "float" ],
-									"patching_rect" : [ 108.0, 18.0, 30.0, 30.0 ]
-								}
-
-							}
-, 							{
 								"box" : 								{
 									"id" : "obj-1",
 									"maxclass" : "newobj",
@@ -1635,7 +1580,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-81",
-									"index" : 3,
+									"index" : 2,
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
@@ -1673,20 +1618,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-83", 0 ],
 									"source" : [ "obj-1", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-4", 0 ],
-									"source" : [ "obj-2", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-52", 0 ],
-									"source" : [ "obj-4", 0 ]
 								}
 
 							}
@@ -2360,7 +2291,7 @@
 					"id" : "obj-17",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "gridDrumsAudio.maxpat",
+					"name" : "gridDrumsSynth.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
@@ -2380,8 +2311,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 670.0, 126.666664898395538, 35.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 588.0, 58.0, 35.0, 22.0 ],
 					"text" : "clear"
 				}
 
@@ -2917,13 +2846,6 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-84", 1 ],
-					"source" : [ "obj-10", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-114", 0 ],
 					"source" : [ "obj-107", 0 ]
 				}
@@ -3196,7 +3118,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-84", 2 ],
+					"destination" : [ "obj-84", 1 ],
 					"source" : [ "obj-40", 0 ]
 				}
 
@@ -3579,46 +3501,15 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-17::obj-12::obj-23" : [ "trig_3", "trig_3", 0 ],
-			"obj-17::obj-12::obj-7" : [ "trig_1", "trig_1", 0 ],
-			"obj-17::obj-12::obj-119" : [ "choke", "choke", 0 ],
 			"obj-84::obj-43::obj-46::obj-2" : [ "live.grid[31]", "live.grid", 0 ],
-			"obj-17::obj-12::obj-129" : [ "trig_6[1]", "trig_6", 0 ],
-			"obj-17::obj-12::obj-20" : [ "snare-decay", "decay", 0 ],
 			"obj-57::obj-26" : [ "live.grid[61]", "live.grid", 0 ],
-			"obj-17::obj-12::obj-21" : [ "snare-snap", "snap", 0 ],
 			"obj-17::obj-268::obj-13::obj-210::obj-46::obj-2" : [ "live.grid[3]", "live.grid", 0 ],
-			"obj-17::obj-12::obj-32" : [ "hat-tone", "tone", 0 ],
-			"obj-17::obj-12::obj-22" : [ "snare-tune", "tuning", 0 ],
-			"obj-17::obj-12::obj-120" : [ "accent", "accent", 0 ],
-			"obj-17::obj-12::obj-27" : [ "hat-level", "level", 0 ],
 			"obj-56::obj-26" : [ "live.grid[47]", "live.grid", 0 ],
-			"obj-17::obj-12::obj-30" : [ "ophat-decay", "op-dec", 0 ],
-			"obj-17::obj-12::obj-33" : [ "trig_4", "trig_4", 0 ],
-			"obj-17::obj-12::obj-38" : [ "tom-level", "level", 0 ],
-			"obj-17::obj-12::obj-12" : [ "trig_2", "trig_2", 0 ],
-			"obj-17::obj-12::obj-40" : [ "tom-decay", "decay", 0 ],
-			"obj-17::obj-12::obj-41" : [ "tom-hi", "hi", 0 ],
-			"obj-17::obj-12::obj-44" : [ "trig_6", "trig_6", 0 ],
 			"obj-58::obj-26" : [ "live.grid[72]", "live.grid", 0 ],
-			"obj-17::obj-12::obj-42" : [ "tom-mid", "mid", 0 ],
-			"obj-17::obj-12::obj-46" : [ "ad-level", "level", 0 ],
-			"obj-17::obj-12::obj-6" : [ "kick-attack", "attack", 0 ],
-			"obj-17::obj-12::obj-43" : [ "tom-low", "low", 0 ],
-			"obj-17::obj-12::obj-5" : [ "kick-decay", "decay", 0 ],
-			"obj-17::obj-12::obj-45" : [ "trig_7", "trig_7", 0 ],
-			"obj-17::obj-12::obj-4" : [ "kick-sweep", "sweep", 0 ],
-			"obj-17::obj-12::obj-17" : [ "snare-level", "level", 0 ],
 			"obj-84::obj-52::obj-46::obj-2" : [ "live.grid[32]", "live.grid", 0 ],
-			"obj-17::obj-12::obj-3" : [ "kick-tune[1]", "tuning", 0 ],
-			"obj-17::obj-12::obj-19" : [ "snare-hicut", "hicut", 0 ],
-			"obj-17::obj-12::obj-31" : [ "clhat-decay", "cl-dec", 0 ],
-			"obj-17::obj-12::obj-128" : [ "trig_7[1]", "trig_7", 0 ],
 			"obj-15::obj-26" : [ "live.grid[26]", "live.grid", 0 ],
-			"obj-17::obj-12::obj-34" : [ "trig_5", "trig_5", 0 ],
 			"obj-37::obj-26" : [ "live.grid[29]", "live.grid", 0 ],
 			"obj-55::obj-26" : [ "live.grid[37]", "live.grid", 0 ],
-			"obj-17::obj-12::obj-9" : [ "kick-level", "level", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -3780,60 +3671,16 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "gridDrumsAudio.maxpat",
+				"name" : "gridDrumsSynth.maxpat",
 				"bootpath" : "/Users/famle/CML/MLE/compositions/S20/Drafts/GridDrums/dependencies",
 				"patcherrelativepath" : "./dependencies",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "MLE.reverb.maxpat",
-				"bootpath" : "/Users/famle/CML/MLE/patchers/sandbox/Carina/MLE FX library",
-				"patcherrelativepath" : "../../../../patchers/sandbox/Carina/MLE FX library",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "drumGridAudio.json",
+				"name" : "drumGridSynth.json",
 				"bootpath" : "/Users/famle/CML/MLE/compositions/S20/Drafts/GridDrums/dependencies",
 				"patcherrelativepath" : "./dependencies",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "MLE.analogueDrums.maxpat",
-				"bootpath" : "/Users/famle/CML/MLE/patchers/audio",
-				"patcherrelativepath" : "../../../../patchers/audio",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "thru.maxpat",
-				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "analog.Kick~.maxpat",
-				"bootpath" : "C74:/packages/Max for Live/patchers/Max Instrument/Analogue Drums",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "analog.Snare~.maxpat",
-				"bootpath" : "C74:/packages/Max for Live/patchers/Max Instrument/Analogue Drums",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "analog.Hihat~.maxpat",
-				"bootpath" : "C74:/packages/Max for Live/patchers/Max Instrument/Analogue Drums",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "analog.Tom~.maxpat",
-				"bootpath" : "C74:/packages/Max for Live/patchers/Max Instrument/Analogue Drums",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3862,6 +3709,62 @@
 				"name" : "MLE.swing.maxpat",
 				"bootpath" : "/Users/famle/CML/MLE/patchers/sandbox",
 				"patcherrelativepath" : "../../../../patchers/sandbox",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.moog.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/audio/moog",
+				"patcherrelativepath" : "../../../../patchers/audio/moog",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.moogVoice.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/audio/moog",
+				"patcherrelativepath" : "../../../../patchers/audio/moog",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "PM.Ladder~.maxpat",
+				"bootpath" : "~/Dropbox/MIT/Teaching/2018Fall/M080_Intro to Music Tech/080Slides/Class 16 Max",
+				"patcherrelativepath" : "../../../../../../../ianhattwick/Dropbox/MIT/Teaching/2018Fall/M080_Intro to Music Tech/080Slides/Class 16 Max",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.bb.moogOsc.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/sandbox/buildingBlocks",
+				"patcherrelativepath" : "../../../../patchers/sandbox/buildingBlocks",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.bb.lfo.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/sandbox/buildingBlocks",
+				"patcherrelativepath" : "../../../../patchers/sandbox/buildingBlocks",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "testMoog.json",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/audio/moog",
+				"patcherrelativepath" : "../../../../patchers/audio/moog",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.polyMidi.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "../../../../patchers/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.reverb.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/sandbox/Carina/MLE FX library",
+				"patcherrelativepath" : "../../../../patchers/sandbox/Carina/MLE FX library",
 				"type" : "JSON",
 				"implicit" : 1
 			}
