@@ -100,25 +100,6 @@ var sequenceNum = 0;
 
 // This will be printed directly to the Max console
 Max.post(`Loaded the ${path.basename(__filename)} script`);
-
-
-Max.addHandler('mytask', () => {
-	const client = dgram.createSocket('udp4');
-
-	for(var i=0;i<host.length;i++){
-		if(ackInProcess[i] == 1 ) udpSend( client, host[i], 10001, savedData );
-	}
-
-});
-
-function sendAck(data, chost){
-	const client = dgram.createSocket('udp4');
-
-	var ack = ['ack'];
-	ack.push( getSequenceNum(data) );
-	udpSend( client, chost, 10001, toUTF8Array(Object.values(ack)) );		
-}
-
 	
 Max.addHandler('datamode', (mode) => {
 
@@ -174,9 +155,10 @@ Max.addHandler("udp-send", (chost,port,...data) => {
 		return Max.outlet('udp-send', 'error', 'missing message');
 	}
 	
+	sequenceNum++;
+
 	data.push(sequenceNum);
 	savedData = data;
-	sequenceNum++;
 
 	var data = data.join(' ');
 	
@@ -184,7 +166,7 @@ Max.addHandler("udp-send", (chost,port,...data) => {
 	
 	for(var i=0; i<host.length;i++){
 		udpSend( client, host[i], port, data );
-		ackInProcess[i]=1;
+		ackInProcess[i]=sequenceNum;
 	}
 });//udp-send handler
 
@@ -208,6 +190,27 @@ Max.addHandler("udp-send-bc", (host,port,...data) => {
 		udpSend(  client, host, port, data );
 	});	
 });
+
+Max.addHandler('mytask', () => {
+	const client = dgram.createSocket('udp4');
+
+	for(var i=0;i<host.length;i++){
+		if(ackInProcess[i] > 0 ) udpSend( client, host[i], 10001, savedData );
+	}
+
+});
+
+function sendAck(data, chost){
+	const client = dgram.createSocket('udp4');
+
+	var ack = ['ack'];
+	ack.push( getSequenceNum(data) );
+	udpSend( client, chost, 10001, toUTF8Array(Object.values(ack)) );		
+}
+
+/*	****************************
+//UDP RECEIVE		
+*********************************/
 
 function startUdpServer(port,address) {
 
@@ -233,10 +236,12 @@ function startUdpServer(port,address) {
 	});
 	
 	server.on('message', (data, rinfo) => {
-		
-		var dlen = data.length;
+		//var _address;
+		//for (var i=0;i<host.length;i++) if(rinfo.address == host[i]) _address = i;
+		//for (var i=0;i<host.length;i++) Max.post(host[i]);
+		//Max.post("add: ", rinfo.address);
 
-		sendAck(data,rinfo.address);
+		var dlen = data.length;
 		
 		data = data.toString(dataMode);
 		
@@ -245,12 +250,12 @@ function startUdpServer(port,address) {
 			dlen = data.length;
 		}
 
-		var result = Object.values(data);
-		result = result.join('');
 
-		if( checkIfAckMsg(result) == 0 ){
-			Max.outlet('udp-recv', 'data', rinfo.address, rinfo.port, dlen, result);
-		}
+		if( checkIfAckMsg(data) == 0 ){
+			sendAck(data,rinfo.address);
+			Max.post("not acl");
+			//Max.outlet('udp-recv', 'data', rinfo.address, rinfo.port, dlen, result);
+		} 
 
 		
 	});
@@ -259,17 +264,25 @@ function startUdpServer(port,address) {
 }//startUDPserver
 
 
-function checkIfAckMsg(result, address){
+function checkIfAckMsg(data, address){
+
+	var result = Object.values(data);
+		result = result.join('');
+
 	var ackTag = ['a','c','k'];
 	var ackArray = [result[0],result[1],result[2]];
 	if(JSON.stringify(ackArray) == JSON.stringify(ackTag)) {
 		Max.post('ack received!');
 
-		for (var i=0;i<host.length;i++) {
-			if(address = host[i]){
-				ackInProcess[i] = 0;
-			}
-		}
+		//result = result.split(" ");
+			
+		//if( parseInt(result[1]) >= ackInProcess[i] ) Max.post('ack?', (parseInt(result[1])));
+
+		// for (var i=0;i<host.length;i++) {
+		// 	if(address = host[i]){
+		// 		ackInProcess[i] = 0;
+		// 	}
+		// }
 		return 1;
 	}
 	return 0;
