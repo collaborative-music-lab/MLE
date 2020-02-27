@@ -95,8 +95,6 @@ var dataMode = 'utf8';
 var trimEnabled = true;
 
 //variables for acknowledgement procedures
-var savedData;
-var ackInProcess = new Array(16);
 var hosts = [];
 var port = 10001;
 var sequenceNum = 0;
@@ -139,7 +137,7 @@ function udpSend(client, host, port, data) {
 	data = Buffer.from(data, dataMode);
 	
 	client.send(data, port, host, (err) => {
-  		client.close();
+  		
 		if (err) {
 			Max.outlet('udp-send', 'error', err.message);
 		}
@@ -174,7 +172,10 @@ Max.addHandler("udp-send", (chost,port,...data) => {
 		hosts[i].ackStatus = sequenceNum;
 		hosts[i].lastMsg = data;
 		hosts[i].numAckTries = 0;
+		Max.post("sent", hosts[i].ip);
 	}
+
+	client.close();
 });//udp-send handler
 
 Max.addHandler("udp-send-bc", (host,port,...data) => {
@@ -200,7 +201,7 @@ Max.addHandler("udp-send-bc", (host,port,...data) => {
 
 Max.addHandler('mytask', () => {
 	const client = dgram.createSocket('udp4');
-
+	//Max.post("mytask", hosts.length);
 	for(var i=0;i<hosts.length;i++){
 		if(hosts[i].ackStatus > 0 && hosts[i].numAckTries < maxAckTries) {
 			udpSend( client, hosts[i].ip, 10001, hosts[i].lastMsg );
@@ -223,7 +224,7 @@ function sendAck(data, chost){
 	udpSend( client, chost, 10001, toUTF8Array(Object.values(ack)) );		
 }
 
-/****************************
+/********************************
 //UDP RECEIVE		
 *********************************/
 
@@ -251,10 +252,6 @@ function startUdpServer(port,address) {
 	});
 	
 	server.on('message', (data, rinfo) => {
-		//var _address;
-		//for (var i=0;i<host.length;i++) if(rinfo.address == host[i]) _address = i;
-		//for (var i=0;i<host.length;i++) Max.post(host[i]);
-		//Max.post("add: ", rinfo.address);
 
 		var dlen = data.length;
 		
@@ -296,15 +293,6 @@ function checkIfAckMsg(data, address){
 			} 
 		}
 
-		//result = result.split(" ");
-			
-		//if( parseInt(result[1]) >= ackInProcess[i] ) Max.post('ack confirmed!', (parseInt(result[1])));
-
-		// for (var i=0;i<hosts.length;i++) {
-		// 	if(address = hosts[i]){
-		// 		ackInProcess[i] = 0;
-		// 	}
-		// }
 		return 1;
 	}
 	return 0;
@@ -343,16 +331,23 @@ Max.addHandler("udp-recv", (cmd, port, address) => {
 });
 
 Max.addHandler("addHost", (_num,_ip) => {
-
-	hosts[_num] = ({
+	var newHost = {
 		ip: _ip, 
 		ackStatus: 0,
 		lastMsg: '',
 		numAckTries: 0
-	});
-	Max.post('Added', hosts[_num], 'as host', _num);
+	};
+
+	hosts.push ( newHost );
+	Max.post('Added', hosts[_num-1], 'as host', _num-1);
 
 
+});
+
+Max.addHandler("printHosts", () => {
+
+	for(var i=0;i<hosts.length;i++) Max.post("hosts:", i, hosts[i]);
+	
 });
 
 /*	****************************
