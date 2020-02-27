@@ -103,6 +103,8 @@ var sequenceNum = 0;
 
 // This will be printed directly to the Max console
 Max.post(`Loaded the ${path.basename(__filename)} script`);
+
+Max.outlet('loadbang', 'bang');
 	
 Max.addHandler('datamode', (mode) => {
 
@@ -206,11 +208,11 @@ Max.addHandler('mytask', () => {
 		if(hosts[i].ackStatus > 0 && hosts[i].numAckTries < maxAckTries) {
 			udpSend( client, hosts[i].ip, 10001, hosts[i].lastMsg );
 			hosts[i].numAckTries++;
-			Max.post('resending ', hosts[i].numAckTries);
+			//Max.post('resending ', hosts[i].numAckTries);
 		} else if (hosts[i].numAckTries >= maxAckTries ){
 			hosts[i].numAckTries = 0;
 			hosts[i].ackStatus = 0;
-			Max.post('ack timed out');
+			Max.post('ack timed out', hosts[i].ip);
 		} 
 	}
 

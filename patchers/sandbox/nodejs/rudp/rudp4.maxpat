@@ -39,6 +39,30 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 328.0, 571.5, 67.0, 22.0 ],
+					"text" : "delay 1000"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 328.0, 545.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"comment" : "bang to start",
 					"id" : "obj-3",
 					"index" : 1,
@@ -58,8 +82,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 508.0, 735.0, 50.0, 49.0 ],
-					"text" : "Anita vbhnsfgns"
+					"patching_rect" : [ 508.0, 735.0, 28.0, 49.0 ],
+					"text" : "Anita 6"
 				}
 
 			}
@@ -722,8 +746,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 275.5, 648.0, 55.0, 89.0 ],
-					"text" : "192.168.0.101 62223 17 Anita vbhnsfgns 2"
+					"patching_rect" : [ 275.5, 648.0, 47.0, 89.0 ],
+					"text" : "192.168.0.101 51010 9 Anita 6 6"
 				}
 
 			}
@@ -912,6 +936,8 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -1139,7 +1165,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-57", 0 ],
+					"destination" : [ "obj-8", 0 ],
 					"source" : [ "obj-48", 2 ]
 				}
 
@@ -1218,6 +1244,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-48", 0 ],
 					"source" : [ "obj-71", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-57", 0 ],
+					"source" : [ "obj-9", 0 ]
 				}
 
 			}
