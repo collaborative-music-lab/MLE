@@ -741,12 +741,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-54",
-					"linecount" : 6,
+					"linecount" : 5,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 275.5, 648.0, 47.0, 89.0 ],
+					"patching_rect" : [ 275.5, 648.0, 49.0, 76.0 ],
 					"text" : "192.168.0.101 51010 9 Anita 6 6"
 				}
 
@@ -936,8 +936,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -1256,7 +1254,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-57", 0 ],
+					"destination" : [ "obj-11", 0 ],
+					"order" : 1,
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-42", 1 ],
+					"order" : 0,
 					"source" : [ "obj-9", 0 ]
 				}
 
