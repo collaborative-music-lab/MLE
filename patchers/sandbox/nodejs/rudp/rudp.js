@@ -240,7 +240,7 @@ function startUdpServer(port,address) {
 		//for (var i=0;i<host.length;i++) if(rinfo.address == host[i]) _address = i;
 		//for (var i=0;i<host.length;i++) Max.post(host[i]);
 		//Max.post("add: ", rinfo.address);
-		Max.post("msg recevied");
+
 		var dlen = data.length;
 		
 		data = data.toString(dataMode);
@@ -250,12 +250,10 @@ function startUdpServer(port,address) {
 			dlen = data.length;
 		}
 
-		Max.outlet('udp-recv', 'data', rinfo.address, rinfo.port, dlen, data);
-
 		if( checkIfAckMsg(data) == 0 ){
 			sendAck(data,rinfo.address);
-			Max.post("not acl");
-			//Max.outlet('udp-recv', 'data', rinfo.address, rinfo.port, dlen, data);
+			Max.post("msgrcv", "not acl");
+			Max.outlet('udp-recv', 'data', rinfo.address, rinfo.port, dlen, data);
 		} 
 
 		
@@ -269,11 +267,11 @@ function checkIfAckMsg(data, address){
 
 	var result = Object.values(data);
 		result = result.join('');
+		result = result.split(" ");
 
-	var ackTag = ['a','c','k'];
-	var ackArray = [result[0],result[1],result[2]];
-	if(JSON.stringify(ackArray) == JSON.stringify(ackTag)) {
-		Max.post('ack received!');
+	//Max.post("check", ackTag, ackArray);
+	if(JSON.stringify(result[0]) == JSON.stringify('ack')) {
+		Max.post("checkAck", 'ack received!');
 
 		//result = result.split(" ");
 			
@@ -327,24 +325,12 @@ Max.addHandler("addHost", (num,ip) => {
 //separate the sequenceNumber from the list of ASCII values,
 //format the ascii values and convert to an int
 function getSequenceNum(data){
-	var num = Object.keys(data).length;
-	var val = 0;
 
 	var result = Object.values(data);
 		result = result.join('');
 		result = result.split(" ");
 		result = result.pop();
-		//Max.post('seqnum: ', result);
 
-	// var test = 1;
-	// var str = [];
-	// while(test){
-	// 	if(data[num-1] == 32) { test = 0; break;}
-	// 	str.push(data[num-1]);
-	// 	num-=1;
-	// }
-	// str.reverse();
-	// var val = String.fromCharCode.apply(null, str);
 	return parseInt(result);
 }
 
@@ -352,7 +338,7 @@ function getSequenceNum(data){
 function toUTF8Array(str) {
     var utf8 = [];
     str = str.join(' ');
-    Max.post(str);
+    //Max.post("utf", str);
     for (var i=0; i < str.length; i++) {
         var charcode = str.charCodeAt(i);
         if (charcode < 0x80) utf8.push(charcode);

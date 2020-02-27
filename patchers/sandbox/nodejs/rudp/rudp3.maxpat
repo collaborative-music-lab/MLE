@@ -332,7 +332,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 303.25, 427.0, 261.0, 22.0 ],
-					"text" : "udp-send 192.168.0.101 10001 test 12"
+					"text" : "udp-send 192.168.0.101 10001 test 22"
 				}
 
 			}
@@ -428,7 +428,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 275.5, 648.0, 55.0, 62.0 ],
-					"text" : "192.168.0.101 55154 5 16 52"
+					"text" : "192.168.0.101 64577 5 ack 1"
 				}
 
 			}
