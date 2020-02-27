@@ -136,6 +136,7 @@ function clearLP(){
 			states[i-1][k-1].state = 0;
 		}
 	}
+	outlet(lcdOut, "clear"); 
 }
 loadbang();
 
