@@ -1,7 +1,20 @@
+/*rudp.js
+
+Reliable UDP implementation for FaMLE, the MIT laptop ensemble
+
+info:
+default port for listening: 10001
+
+
+
+*/
+
+
 const path = require('path');
 const url = require('url');
 const dgram = require('dgram');
 const net = require('net');
+const os = require('os');
 
 const Max = require('max-api');
 
@@ -11,7 +24,56 @@ const Max = require('max-api');
 // 	Max.post("hello");
 // });
 
+/**************************
+GET LOCAL IP ADDRESS
+*************************/
+//https://stackoverflow.com/questions/3653065/get-local-ip-address-in-node-js
+var ifaces = os.networkInterfaces();
 
+var localIP;
+
+Object.keys(ifaces).forEach(function (ifname) {
+  var alias = 0;
+
+  ifaces[ifname].forEach(function (iface) {
+    if ('IPv4' !== iface.family || iface.internal !== false) {
+      // skip over internal (i.e. 127.0.0.1) and non-ipv4 addresses
+      return;
+    }
+
+    if (alias >= 1) {
+      // this single interface has multiple ipv4 addresses
+      var addSegments = iface.address.split('.');
+      Max.post(addSegments);
+
+  //     for(var i=0;i<3;i++){
+  //     	for(var k=0;k<3;k++){
+  //     		if(iface.address[k] != '.') addSegments[i] = iface.address[k];
+  //     	}
+  //     }
+  //     var result = Object.values(data);
+		// result = result.join('');
+  //     console.log(iface.address[0]);
+    } else {
+      // this interface has only one ipv4 adress
+      var addSegments = iface.address.split('.');
+      //Max.post(iface.address);
+      //Max.post(iface.address);
+      if(JSON.stringify(addSegments.slice(0,3)) == JSON.stringify(["192","168","0"])){
+      	console.log(iface.address);
+      	localIP = iface.address;
+      }
+    }
+    ++alias;
+  });
+});
+
+Max.post('local IP: ' + localIP);
+
+
+/**************************
+NETWORK VARIABLES
+*************************/
 
 var server = false;
 var connectedClients = {};
@@ -42,12 +104,20 @@ Max.post(`Loaded the ${path.basename(__filename)} script`);
 
 Max.addHandler('mytask', () => {
 	const client = dgram.createSocket('udp4');
-	
+
 	for(var i=0;i<host.length;i++){
 		if(ackInProcess[i] == 1 ) udpSend( client, host[i], 10001, savedData );
 	}
 
 });
+
+function sendAck(data, chost){
+	const client = dgram.createSocket('udp4');
+
+	var ack = ['ack'];
+	ack.push( getSequenceNum(data) );
+	udpSend( client, chost, 10001, toUTF8Array(Object.values(ack)) );		
+}
 
 	
 Max.addHandler('datamode', (mode) => {
@@ -90,6 +160,8 @@ function udpSend(client, host, port, data) {
 		Max.outlet('udp-send', 'ok');
 	});
 }//udpSend
+
+
 
 Max.addHandler("udp-send", (chost,port,...data) => {
 	
@@ -140,6 +212,7 @@ Max.addHandler("udp-send-bc", (host,port,...data) => {
 function startUdpServer(port,address) {
 
 	server = dgram.createSocket('udp4');
+	//Max.post("server addres", server);
 
 	server.on('error', (err) => {
   		Max.outlet('udp-recv', 'error',  err.message);
@@ -162,6 +235,8 @@ function startUdpServer(port,address) {
 	server.on('message', (data, rinfo) => {
 		
 		var dlen = data.length;
+
+		sendAck(data,rinfo.address);
 		
 		data = data.toString(dataMode);
 		
@@ -169,12 +244,36 @@ function startUdpServer(port,address) {
 			data = data.trim();
 			dlen = data.length;
 		}
+
+		var result = Object.values(data);
+		result = result.join('');
+
+		if( checkIfAckMsg(result) == 0 ){
+			Max.outlet('udp-recv', 'data', rinfo.address, rinfo.port, dlen, result);
+		}
+
 		
-		Max.outlet('udp-recv', 'data', rinfo.address, rinfo.port, dlen, data);
 	});
 		
 	server.bind(port,address);
-}
+}//startUDPserver
+
+
+function checkIfAckMsg(result, address){
+	var ackTag = ['a','c','k'];
+	var ackArray = [result[0],result[1],result[2]];
+	if(JSON.stringify(ackArray) == JSON.stringify(ackTag)) {
+		Max.post('ack received!');
+
+		for (var i=0;i<host.length;i++) {
+			if(address = host[i]){
+				ackInProcess[i] = 0;
+			}
+		}
+		return 1;
+	}
+	return 0;
+}//checkifackkmsg
 	
 
 Max.addHandler("udp-recv", (cmd, port, address) => {
@@ -182,9 +281,10 @@ Max.addHandler("udp-recv", (cmd, port, address) => {
 	if (cmd == 'start'){
 		if (server) {
 			server.close( () => {
-				startUdpServer(port,address);	
+			//	startUdpServer(port,localIP);	
 			});
 		} else {
+			Max.post(port, address);
 			startUdpServer(port,address);
 		}
 	}
@@ -208,4 +308,53 @@ Max.addHandler("addHost", (num,ip) => {
 
 
 });
+
+//read the array of data values, 
+//separate the sequenceNumber from the list of ASCII values,
+//format the ascii values and convert to an int
+function getSequenceNum(data){
+	var num = Object.keys(data).length;
+	var test = 1;
+	var str = [];
+	while(test){
+		if(data[num-1] == 32) { test = 0; break;}
+		str.push(data[num-1]);
+		num-=1;
+	}
+	str.reverse();
+	var val = String.fromCharCode.apply(null, str);
+	return val;
+}
+
+//https://gist.github.com/joni/3760795/8f0c1a608b7f0c8b3978db68105c5b1d741d0446
+function toUTF8Array(str) {
+    var utf8 = [];
+    str = str.join(' ');
+    Max.post(str);
+    for (var i=0; i < str.length; i++) {
+        var charcode = str.charCodeAt(i);
+        if (charcode < 0x80) utf8.push(charcode);
+        else if (charcode < 0x800) {
+            utf8.push(0xc0 | (charcode >> 6), 
+                      0x80 | (charcode & 0x3f));
+        }
+        else if (charcode < 0xd800 || charcode >= 0xe000) {
+            utf8.push(0xe0 | (charcode >> 12), 
+                      0x80 | ((charcode>>6) & 0x3f), 
+                      0x80 | (charcode & 0x3f));
+        }
+        // surrogate pair
+        else {
+            i++;
+            charcode = ((charcode&0x3ff)<<10)|(str.charCodeAt(i)&0x3ff)
+            utf8.push(0xf0 | (charcode >>18), 
+                      0x80 | ((charcode>>12) & 0x3f), 
+                      0x80 | ((charcode>>6) & 0x3f), 
+                      0x80 | (charcode & 0x3f));
+        }
+    }
+    return utf8;
+}
+
+
 
