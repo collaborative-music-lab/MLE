@@ -1,0 +1,69 @@
+{
+	"pattrstorage" : 	{
+		"name" : "GridDrumsMaster",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"SpatialGridCtrl::MLE.noteEntry::notes" : [ 36, 127, 38, 127, 41, 127, 43, 127, 46, 127 ],
+					"GridDrumsAudio::drumGridAudio" : [ 1 ],
+					"GridDrumsAudio::bell1amp" : [ 79 ],
+					"GridDrumsAudio::bell1decay" : [ 62 ],
+					"GridDrumsAudio::bell1pitch" : [ 39 ],
+					"GridDrumsAudio::bellpreset1" : [ 2 ],
+					"GridDrumsAudio::bellpreset2" : [ 3 ],
+					"GridDrumsAudio::bell2decay" : [ 30 ],
+					"GridDrumsAudio::bell2pitch" : [ 53 ],
+					"GridDrumsAudio::bell2amp" : [ 47 ],
+					"GridDrumsAudio::MLE.analogueDrums::u973007415" : [ -1 ],
+					"GridDrumsAudio::MLE.analogueDrums::kickTuning" : [ 79.0 ],
+					"GridDrumsAudio::MLE.analogueDrums::kickSweep" : [ 19.0 ],
+					"GridDrumsAudio::MLE.analogueDrums::kickDecay" : [ 718.818897637795203 ],
+					"GridDrumsAudio::MLE.analogueDrums::kickAttack" : [ 55.0 ],
+					"GridDrumsAudio::MLE.analogueDrums::kickLevel" : [ 74.0 ],
+					"GridDrumsAudio::MLE.analogueDrums::snareTuning" : [ 251.181102362204712 ],
+					"GridDrumsAudio::MLE.analogueDrums::snareDecay" : [ 1278.464566929133525 ],
+					"GridDrumsAudio::MLE.analogueDrums::snareSnap" : [ 55.0 ],
+					"GridDrumsAudio::MLE.analogueDrums::snareHicut" : [ 1101.574803149605941 ],
+					"GridDrumsAudio::MLE.analogueDrums::snareLevel" : [ 42.0 ],
+					"GridDrumsAudio::MLE.analogueDrums::hihatTone" : [ 50.0 ],
+					"GridDrumsAudio::MLE.analogueDrums::hihatCloseDecay" : [ 839.200000000000045 ],
+					"GridDrumsAudio::MLE.analogueDrums::hihatOpDecay" : [ 2410.433070866139587 ],
+					"GridDrumsAudio::MLE.analogueDrums::hihatLevel" : [ 35.0 ],
+					"GridDrumsAudio::MLE.analogueDrums::tomLow" : [ 80.078740157480297 ],
+					"GridDrumsAudio::MLE.analogueDrums::tomMid" : [ 227.952755905512078 ],
+					"GridDrumsAudio::MLE.analogueDrums::tomHi" : [ 430.314960629921245 ],
+					"GridDrumsAudio::MLE.analogueDrums::tomDecay" : [ 1349.212598425197029 ],
+					"GridDrumsAudio::MLE.analogueDrums::tomLevel" : [ 66.14173228346452 ],
+					"GridDrumsAudio::MLE.analogueDrums::aDrumLevel" : [ 0.0 ],
+					"GridDrumsAudio::MLE.analogueDrums::accent" : [ 1.3 ],
+					"GridDrumsAudio::MLE.analogueDrums::choke" : [ 51.0 ],
+					"GridDrumsAudio::MLE.analogueDrums::live.button" : [ 0.0 ],
+					"GridDrumsAudio::MLE.analogueDrums::live.button[1]" : [ 0.0 ],
+					"GridDrumsAudio::MLE.analogueDrums::live.button[2]" : [ 0.0 ],
+					"GridDrumsAudio::MLE.analogueDrums::live.button[3]" : [ 0.0 ],
+					"GridDrumsAudio::MLE.analogueDrums::live.button[4]" : [ 0.0 ],
+					"GridDrumsAudio::MLE.analogueDrums::live.button[5]" : [ 0.0 ],
+					"GridDrumsAudio::MLE.analogueDrums::live.button[6]" : [ 0.0 ],
+					"GridDrumsAudio::MLE.analogueDrums::live.button[7]" : [ 0.0 ],
+					"GridDrumsAudio::MLE.analogueDrums::live.button[8]" : [ 0.0 ],
+					"GridDrumsAudio::MLE.verb::diffusion" : [ 0.75 ],
+					"GridDrumsAudio::MLE.verb::level" : [ 0.3 ],
+					"GridDrumsAudio::MLE.verb::size" : [ 0.2 ],
+					"GridDrumsAudio::MLE.verb::time" : [ 0.15 ],
+					"GridDrumsAudio::MLE.verb::tone" : [ 0.4 ],
+					"GridDrumsAudio::MLE.verb::reverbFX" : [ -1 ],
+					"gridParamSeq::MLE.atten[1]::curve" : [ 1.0 ],
+					"gridParamSeq::MLE.atten[1]::gain" : [ 1.108695652173913 ],
+					"gridParamSeq::MLE.atten[1]::offset" : [ 1.043478260869565 ],
+					"gridParamSeq::seq" : [ 2, 8, 8, 0, 8, 0, 1001, 2002, 3003, 4004, 5005, 6006, 7007, 2, 2, 2, 2, 2, 2, 2, 2 ],
+					"gridParamSeq::seqRate" : [ 1 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}

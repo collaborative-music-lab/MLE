@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 3,
+			"minor" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -204,8 +204,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 3,
+							"minor" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -412,7 +412,8 @@
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 439.0, 171.0, 50.5, 22.0 ],
 									"saved_object_attributes" : 									{
-										"embed" : 0
+										"embed" : 0,
+										"precision" : 6
 									}
 ,
 									"text" : "coll"
@@ -664,7 +665,8 @@
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 164.0, 262.0, 189.0, 22.0 ],
 									"saved_object_attributes" : 									{
-										"embed" : 1
+										"embed" : 1,
+										"precision" : 6
 									}
 ,
 									"text" : "coll humanzTemplates @embed 1"
@@ -949,8 +951,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 3,
+							"minor" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1192,8 +1194,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 3,
+							"minor" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1497,6 +1499,7 @@
 				"box" : 				{
 					"id" : "obj-13",
 					"maxclass" : "number",
+					"minimum" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
@@ -1585,7 +1588,8 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 3.87506103515625, 343.0, 193.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 1
+						"embed" : 1,
+						"precision" : 6
 					}
 ,
 					"text" : "coll humanzTemplates @embed 1"
@@ -1615,10 +1619,10 @@
 					"rows" : 32,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_type" : 3,
 							"parameter_longname" : "live.grid[10]",
 							"parameter_invisible" : 1,
-							"parameter_shortname" : "live.grid"
+							"parameter_shortname" : "live.grid",
+							"parameter_type" : 3
 						}
 
 					}
