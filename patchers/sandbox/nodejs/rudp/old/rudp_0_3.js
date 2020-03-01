@@ -175,7 +175,7 @@ Max.addHandler("udp-send", (chost,port,...data) => {
 		hosts[i].ackStatus = sequenceNum;
 		hosts[i].lastMsg = data;
 		hosts[i].numAckTries = 0;
-		Max.post("udp sent", hosts[i].ip);
+		Max.post("sent", hosts[i].ip);
 	}
 
 	client.close();
@@ -200,7 +200,7 @@ Max.addHandler("udp-send-bc", (host,port,...data) => {
 		client.setBroadcast(true);
 		udpSend(  client, host, port, data );
 	});	
-});
+});//broadcast send
 
 Max.addHandler('mytask', () => {
 	const client = dgram.createSocket('udp4');
@@ -342,7 +342,7 @@ Max.addHandler("udp-recv", (cmd, port, address) => {
 	
 });//udp-recv
 
-function AddHost2(_ip){
+function AddHost(_num, _ip){
 	var newHost = {
 		ip: _ip, 
 		ackStatus: 0,
@@ -351,43 +351,27 @@ function AddHost2(_ip){
 	};
 
 	hosts.push ( newHost );
-
-	for(var i=0;i<hosts.length;i++){
-		Max.post('Added', hosts[i].ip, 'as host', i);
-	}
+	Max.post('Added', hosts[_num-1].ip, 'as host', _num-1);
 }
 
-Max.addHandler("addHost", (_ip) => {
-	AddHost2(_ip);
+Max.addHandler("addHost", (_num,_ip) => {
+	AddHost(_num, _ip);
 });//addHost
 
 Max.addHandler("printHosts", () => {
 	for(var i=0;i<hosts.length;i++) Max.post("hosts:", i, hosts[i]);
 });//printHosts
 
-Max.addHandler("ping234", () => {
-	const client = dgram.createSocket('udp4');
+// Max.addHandler("ping", () => {
+// 	//const client = dgram.createSocket('udp4');
 
-	var data = 'ping';
-	//Max.post(localIP);
+// 	udp-send-bc('ping');
 
+// 	//udpSend( client, "255.255.255.255", port, data );
+// 	//Max.post('ping');
 
-	for(var i=0; i<8;i++){
-		var _ip = localIP.split(".");
-		_ip = _ip.slice(0,3);	
-		_ip = _ip.concat(i.toString());
-		_ip = _ip.join(".")
-		//Max.post("kg", _ip);
-		udpSend( client, _ip, port, data );
-		Max.post("sent", _ip);
-	}
-
-
-	//udpSend( client, "255.255.255.255", port, data );
-	Max.post('ping');
-
-	client.close();
-});//ping
+// 	//client.close();
+// });//ping
 
 /*	****************************
 //UTILITIES		
