@@ -262,7 +262,7 @@ function refreshLP(cPlayer){
 		s = s.concat(cPlayer);
 		//post(s, "\n");
 		cOffset = d.get(s);
-		post("offzxet", cOffset, "\n");
+		//post("offzxet", cOffset, "\n");
 
 		var x,y;
 	for(var i=0;i<8;i++){
