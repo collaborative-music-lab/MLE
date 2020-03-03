@@ -1099,21 +1099,21 @@
 					"active" : 					{
 						"SpatialGridCtrl" : 0,
 						"SpatialGridCtrl::MLE.noteEntry" : 0,
-						"SpatialGridCtrl::MLE.noteEntry::u866001797" : 0,
+						"SpatialGridCtrl::MLE.noteEntry::u388024280" : 0,
 						"SpatialGridCtrl::MLE.noteEntry::notes" : 0,
 						"GridDrums[1]" : 0,
-						"GridDrums[1]::u481001817" : 0,
+						"GridDrums[1]::u106024272" : 0,
 						"GridDrums[3]" : 0,
-						"GridDrums[3]::u399001824" : 0,
+						"GridDrums[3]::u426024266" : 0,
 						"GridDrums[2]" : 0,
-						"GridDrums[2]::u026001821" : 0,
+						"GridDrums[2]::u977024276" : 0,
 						"GridDrums[5]" : 0,
-						"GridDrums[5]::u659001828" : 0,
+						"GridDrums[5]::u989024273" : 0,
 						"GridDrums[4]" : 0,
-						"GridDrums[4]::u735001822" : 0,
+						"GridDrums[4]::u018024278" : 0,
 						"GridDrumsAudio::drumGridAudio" : 0,
 						"GridDrums[6]" : 0,
-						"GridDrums[6]::u905005767" : 0
+						"GridDrums[6]::u373021841" : 0
 					}
 ,
 					"autorestore" : "GridDrumsMaster.json",
@@ -1337,6 +1337,18 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-7",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 84.0, 93.0, 24.0, 24.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-6",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -1495,7 +1507,7 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
-									"destination" : [ "obj-117", 0 ],
+									"destination" : [ "obj-7", 0 ],
 									"source" : [ "obj-1", 0 ]
 								}
 
@@ -1590,6 +1602,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-124", 0 ],
 									"source" : [ "obj-6", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-117", 0 ],
+									"source" : [ "obj-7", 0 ]
 								}
 
 							}
@@ -1723,7 +1742,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 228.849995791912079, 277.0, 50.0, 22.0 ],
-									"text" : "1"
+									"text" : "2"
 								}
 
 							}
@@ -2464,7 +2483,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 368.650004208087921, 190.0, 50.0, 22.0 ],
-													"text" : "3"
+													"text" : "1"
 												}
 
 											}
@@ -4760,44 +4779,44 @@
  ],
 		"parameters" : 		{
 			"obj-17::obj-12::obj-27" : [ "hat-level", "level", 0 ],
+			"obj-17::obj-12::obj-19" : [ "snare-hicut", "hicut", 0 ],
 			"obj-17::obj-12::obj-30" : [ "ophat-decay", "op-dec", 0 ],
+			"obj-17::obj-12::obj-34" : [ "trig_5", "trig_5", 0 ],
+			"obj-17::obj-12::obj-120" : [ "accent", "accent", 0 ],
+			"obj-84::obj-43::obj-46::obj-2" : [ "live.grid[31]", "live.grid", 0 ],
 			"obj-17::obj-12::obj-6" : [ "kick-attack", "attack", 0 ],
-			"obj-17::obj-12::obj-44" : [ "trig_6", "trig_6", 0 ],
+			"obj-17::obj-143::obj-210::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
 			"obj-17::obj-12::obj-5" : [ "kick-decay", "decay", 0 ],
-			"obj-17::obj-12::obj-119" : [ "choke", "choke", 0 ],
+			"obj-17::obj-12::obj-129" : [ "trig_6[1]", "trig_6", 0 ],
+			"obj-17::obj-268::obj-13::obj-210::obj-46::obj-2" : [ "live.grid[3]", "live.grid", 0 ],
 			"obj-17::obj-12::obj-4" : [ "kick-sweep", "sweep", 0 ],
-			"obj-17::obj-12::obj-33" : [ "trig_4", "trig_4", 0 ],
-			"obj-17::obj-12::obj-12" : [ "trig_2", "trig_2", 0 ],
+			"obj-20::obj-53" : [ "live.grid[11]", "live.grid[11]", 0 ],
 			"obj-17::obj-12::obj-3" : [ "kick-tune[1]", "tuning", 0 ],
 			"obj-17::obj-12::obj-7" : [ "trig_1", "trig_1", 0 ],
-			"obj-78::obj-6::obj-46::obj-2" : [ "live.grid[12]", "live.grid", 0 ],
-			"obj-17::obj-143::obj-210::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
 			"obj-17::obj-12::obj-20" : [ "snare-decay", "decay", 0 ],
-			"obj-17::obj-12::obj-120" : [ "accent", "accent", 0 ],
-			"obj-17::obj-12::obj-42" : [ "tom-mid", "mid", 0 ],
-			"obj-20::obj-53" : [ "live.grid[11]", "live.grid[11]", 0 ],
-			"obj-17::obj-12::obj-21" : [ "snare-snap", "snap", 0 ],
-			"obj-17::obj-12::obj-43" : [ "tom-low", "low", 0 ],
-			"obj-17::obj-12::obj-128" : [ "trig_7[1]", "trig_7", 0 ],
-			"obj-17::obj-12::obj-22" : [ "snare-tune", "tuning", 0 ],
-			"obj-84::obj-43::obj-46::obj-2" : [ "live.grid[31]", "live.grid", 0 ],
-			"obj-17::obj-12::obj-17" : [ "snare-level", "level", 0 ],
-			"obj-17::obj-12::obj-9" : [ "kick-level", "level", 0 ],
-			"obj-17::obj-12::obj-19" : [ "snare-hicut", "hicut", 0 ],
 			"obj-17::obj-12::obj-31" : [ "clhat-decay", "cl-dec", 0 ],
-			"obj-17::obj-268::obj-13::obj-210::obj-46::obj-2" : [ "live.grid[3]", "live.grid", 0 ],
-			"obj-17::obj-12::obj-38" : [ "tom-level", "level", 0 ],
-			"obj-78::obj-53" : [ "live.grid[13]", "live.grid[11]", 0 ],
-			"obj-17::obj-12::obj-40" : [ "tom-decay", "decay", 0 ],
-			"obj-17::obj-12::obj-129" : [ "trig_6[1]", "trig_6", 0 ],
-			"obj-17::obj-12::obj-46" : [ "ad-level", "level", 0 ],
-			"obj-17::obj-12::obj-41" : [ "tom-hi", "hi", 0 ],
-			"obj-17::obj-12::obj-45" : [ "trig_7", "trig_7", 0 ],
-			"obj-17::obj-12::obj-23" : [ "trig_3", "trig_3", 0 ],
-			"obj-17::obj-12::obj-32" : [ "hat-tone", "tone", 0 ],
-			"obj-84::obj-52::obj-46::obj-2" : [ "live.grid[32]", "live.grid", 0 ],
-			"obj-17::obj-12::obj-34" : [ "trig_5", "trig_5", 0 ],
+			"obj-17::obj-12::obj-21" : [ "snare-snap", "snap", 0 ],
+			"obj-17::obj-12::obj-22" : [ "snare-tune", "tuning", 0 ],
 			"obj-20::obj-6::obj-46::obj-2" : [ "live.grid[4]", "live.grid", 0 ],
+			"obj-17::obj-12::obj-9" : [ "kick-level", "level", 0 ],
+			"obj-78::obj-6::obj-46::obj-2" : [ "live.grid[12]", "live.grid", 0 ],
+			"obj-17::obj-12::obj-33" : [ "trig_4", "trig_4", 0 ],
+			"obj-17::obj-12::obj-38" : [ "tom-level", "level", 0 ],
+			"obj-17::obj-12::obj-44" : [ "trig_6", "trig_6", 0 ],
+			"obj-17::obj-12::obj-40" : [ "tom-decay", "decay", 0 ],
+			"obj-17::obj-12::obj-41" : [ "tom-hi", "hi", 0 ],
+			"obj-84::obj-52::obj-46::obj-2" : [ "live.grid[32]", "live.grid", 0 ],
+			"obj-17::obj-12::obj-45" : [ "trig_7", "trig_7", 0 ],
+			"obj-17::obj-12::obj-12" : [ "trig_2", "trig_2", 0 ],
+			"obj-17::obj-12::obj-42" : [ "tom-mid", "mid", 0 ],
+			"obj-17::obj-12::obj-46" : [ "ad-level", "level", 0 ],
+			"obj-17::obj-12::obj-23" : [ "trig_3", "trig_3", 0 ],
+			"obj-17::obj-12::obj-43" : [ "tom-low", "low", 0 ],
+			"obj-78::obj-53" : [ "live.grid[13]", "live.grid[11]", 0 ],
+			"obj-17::obj-12::obj-32" : [ "hat-tone", "tone", 0 ],
+			"obj-17::obj-12::obj-119" : [ "choke", "choke", 0 ],
+			"obj-17::obj-12::obj-128" : [ "trig_7[1]", "trig_7", 0 ],
+			"obj-17::obj-12::obj-17" : [ "snare-level", "level", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -5146,8 +5165,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -5156,8 +5175,8 @@
 , 			{
 				"name" : "newobjYellow-2",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -5166,8 +5185,8 @@
 , 			{
 				"name" : "newobjYellow-3",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
