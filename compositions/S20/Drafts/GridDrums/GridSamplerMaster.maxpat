@@ -99,7 +99,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u012007515"
+					"varname" : "u479018206"
 				}
 
 			}
@@ -1353,20 +1353,20 @@
 					"active" : 					{
 						"SpatialGridCtrl" : 0,
 						"SpatialGridCtrl::MLE.noteEntry" : 0,
-						"SpatialGridCtrl::MLE.noteEntry::u001007496" : 0,
+						"SpatialGridCtrl::MLE.noteEntry::u568018189" : 0,
 						"SpatialGridCtrl::MLE.noteEntry::notes" : 0,
 						"GridDrums[1]" : 0,
-						"GridDrums[1]::u378007497" : 0,
+						"GridDrums[1]::u720018180" : 0,
 						"GridDrums[3]" : 0,
-						"GridDrums[3]::u675007437" : 0,
+						"GridDrums[3]::u604018191" : 0,
 						"GridDrums[2]" : 0,
-						"GridDrums[2]::u819007499" : 0,
+						"GridDrums[2]::u952018159" : 0,
 						"GridDrums[5]" : 0,
-						"GridDrums[5]::u082007500" : 0,
+						"GridDrums[5]::u236018193" : 0,
 						"GridDrums[4]" : 0,
-						"GridDrums[4]::u612007503" : 0,
+						"GridDrums[4]::u177018190" : 0,
 						"GridDrums[6]" : 0,
-						"GridDrums[6]::u859007508" : 0
+						"GridDrums[6]::u180018202" : 0
 					}
 ,
 					"autorestore" : "GridDrumsMaster.json",
@@ -1995,7 +1995,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 228.849995791912079, 277.0, 50.0, 22.0 ],
-									"text" : "1"
+									"text" : "4"
 								}
 
 							}
@@ -2736,7 +2736,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 368.650004208087921, 190.0, 50.0, 22.0 ],
-													"text" : "2"
+													"text" : "3"
 												}
 
 											}
