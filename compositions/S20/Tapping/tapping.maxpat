@@ -39,6 +39,30 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 4,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 652.0, 344.0, 213.0, 22.0 ],
+					"text" : "route notelength decayHigh decayLow"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 646.50001060962677, 297.0, 162.0, 22.0 ],
+					"text" : "MLE.UDPreceive tappingCtrl"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-531",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -1865,7 +1889,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 2,
-					"outlettype" : [ "", "int" ],
+					"outlettype" : [ "int", "int" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -4597,7 +4621,6 @@
 					"numinlets" : 3,
 					"numoutlets" : 0,
 					"patching_rect" : [ 79.0, -78.800006926059723, 75.0, 35.0 ],
-					"presentation_linecount" : 2,
 					"text" : "LP.out"
 				}
 
@@ -5599,6 +5622,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-187", 2 ],
 					"source" : [ "obj-211", 1 ]
 				}
@@ -5773,6 +5803,27 @@
 				"patchline" : 				{
 					"destination" : [ "obj-367", 0 ],
 					"source" : [ "obj-298", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-436", 0 ],
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-451", 0 ],
+					"source" : [ "obj-3", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-460", 0 ],
+					"source" : [ "obj-3", 2 ]
 				}
 
 			}
