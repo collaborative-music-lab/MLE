@@ -1,0 +1,27 @@
+{
+	"pattrstorage" : 	{
+		"name" : "tappingPattrMaster",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"live.grid[1]" : [ 3, 8, 8, 0, 9, 4, 1000, 1005, 4001, 5000, 5004, 5005, 6004, 6005, 2, 2, 2, 2, 2, 2, 2, 2 ],
+					"MLE.reverb::damping" : [ 0.5 ],
+					"MLE.reverb::diffusion" : [ 0.75 ],
+					"MLE.reverb::drywet" : [ 41.593462667926737 ],
+					"MLE.reverb::size" : [ 0.374622076492637 ],
+					"MLE.reverb::time" : [ 0.441036794154395 ],
+					"MLE.reverb::reverbFX" : [ -1 ],
+					"MLE.delay::Lowpass" : [ 0.52 ],
+					"MLE.delay::delayLevel" : [ 0.2 ],
+					"MLE.delay::delayTime" : [ 93 ],
+					"MLE.delay::feedback" : [ 0.9 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}

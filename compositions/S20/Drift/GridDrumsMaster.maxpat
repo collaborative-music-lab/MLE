@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 2,
+			"minor" : 0,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1226.0, 747.0 ],
+		"rect" : [ 34.0, 79.0, 1230.0, 937.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,19 +39,433 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-199",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1482.5, 27.0, 45.0, 22.0 ],
+					"text" : "store 3"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-196",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1332.0, 245.0, 33.0, 22.0 ],
+					"text" : "read"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-194",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1423.0, 3.0, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1001.0, 544.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-192",
+					"linecount" : 13,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1215.0, 150.0, 50.0, 183.0 ],
+					"text" : "write \"Macintosh HD:/Users/ianhattwick/Documents/Max 8/Library/GridDrumsLocal\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-190",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1183.0, 81.0, 89.0, 22.0 ],
+					"text" : "storagewindow"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-185",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 1362.0, -237.0, 29.5, 22.0 ],
+					"text" : "+ 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-186",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 1362.0, -295.5, 46.0, 22.0 ],
+					"text" : "route 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-187",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1362.0, -322.0, 55.0, 22.0 ],
+					"text" : "$3 $1 $2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-188",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1362.0, -264.0, 29.5, 22.0 ],
+					"text" : "$1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-183",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 1243.0, -71.0, 29.5, 22.0 ],
+					"text" : "i"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-182",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1253.0, -15.0, 69.0, 22.0 ],
+					"text" : "print preset"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-181",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1150.0, -15.0, 59.0, 22.0 ],
+					"text" : "print pattr"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-179",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 1415.0, -71.0, 29.5, 22.0 ],
+					"text" : "i"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-162",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 1055.5, -245.0, 29.5, 22.0 ],
+					"text" : "+ 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-155",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 1055.5, -303.5, 46.0, 22.0 ],
+					"text" : "route 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-154",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1055.5, -330.0, 55.0, 22.0 ],
+					"text" : "$3 $1 $2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.188235294117647, 0.607843137254902, 0.0, 1.0 ],
+					"columns" : 4,
+					"id" : "obj-146",
+					"maxclass" : "matrixctrl",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"one/matrix" : 1,
+					"outlettype" : [ "list", "list" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1303.0, -379.0, 104.0, 39.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1101.5, 480.0, 104.0, 39.0 ],
+					"rows" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-145",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1055.5, -272.0, 29.5, 22.0 ],
+					"text" : "$1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.737254901960784, 0.0, 0.0, 1.0 ],
+					"columns" : 4,
+					"id" : "obj-141",
+					"maxclass" : "matrixctrl",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"one/matrix" : 1,
+					"outlettype" : [ "list", "list" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1055.5, -379.0, 104.0, 39.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 979.5, 480.0, 104.0, 39.0 ],
+					"rows" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-137",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "bang" ],
+					"patching_rect" : [ 1313.0, -210.0, 29.5, 22.0 ],
+					"text" : "t i b"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-133",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "bang" ],
+					"patching_rect" : [ 1213.0, -178.0, 29.5, 22.0 ],
+					"text" : "t i b"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-130",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1415.0, -210.0, 50.0, 22.0 ],
+					"text" : "active 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-128",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1477.5, -210.0, 50.0, 22.0 ],
+					"text" : "active 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-124",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1641.0, 197.0, 57.0, 22.0 ],
+					"text" : "active $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-122",
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1415.0, -175.900021856796229, 100.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1103.5, 530.0, 100.0, 20.0 ],
+					"text" : "store",
+					"texton" : "store"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-117",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 1132.0, -112.0, 192.0, 22.0 ],
+					"text" : "MLE.globalPattr GridDrumsMaster"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-116",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1332.5, -146.900021856796229, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-103",
+					"linecount" : 3,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1605.75, -112.0, 312.0, 49.0 ],
+					"text" : "Macintosh HD:/Users/famle/CML/MLE//code/pattrPresets/GridDrumsMaster"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-101",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1654.0, -146.900021856796229, 257.0, 22.0 ],
+					"text" : "sprintf %s/code/pattrPresets/GridDrumsMaster"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-98",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 1398.5, -146.900021856796229, 63.0, 22.0 ],
+					"text" : "closebang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-92",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1654.0, -220.900021856796229, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-85",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 1332.5, -112.0, 177.0, 22.0 ],
+					"text" : "MLE.localPattr GridDrumsLocal"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-83",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 1654.0, -182.900021856796229, 93.0, 22.0 ],
+					"text" : "MLE.globalPath"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-80",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 1361.0, 219.0, 56.0, 22.0 ],
+					"patching_rect" : [ 1430.5, 127.0, 56.0, 22.0 ],
 					"restore" : 					{
 						"param1" : [ 4 ],
 						"param2" : [ 9 ]
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u456014293"
+					"varname" : "u123015272"
 				}
 
 			}
@@ -62,7 +476,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1590.0, 108.0, 29.5, 22.0 ],
+					"patching_rect" : [ 1585.0, 102.666664898395538, 29.5, 22.0 ],
 					"text" : "1"
 				}
 
@@ -86,7 +500,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1570.0, 40.0, 54.0, 22.0 ],
+					"patching_rect" : [ 1585.0, 39.0, 54.0, 22.0 ],
 					"text" : "deferlow"
 				}
 
@@ -186,8 +600,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 2271.600007772445679, 627.200021451484645, 145.0, 35.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 1,
-						"precision" : 6
+						"embed" : 1
 					}
 ,
 					"text" : "coll paramPattrMappings @embed 1"
@@ -216,8 +629,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 2,
+							"minor" : 0,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -538,8 +951,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 1860.600007772445679, 655.200021451484645, 203.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 1,
-						"precision" : 6
+						"embed" : 1
 					}
 ,
 					"text" : "coll paramPattrMappings @embed 1"
@@ -592,8 +1004,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 2,
+							"minor" : 0,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -819,8 +1231,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 2,
+							"minor" : 0,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1010,7 +1422,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1436.0, 56.0, 45.0, 22.0 ],
+					"patching_rect" : [ 1482.5, 58.0, 45.0, 22.0 ],
 					"text" : "store 1"
 				}
 
@@ -1030,525 +1442,1157 @@
 , 			{
 				"box" : 				{
 					"coll_data" : 					{
-						"count" : 130,
+						"count" : 288,
 						"data" : [ 							{
 								"key" : 0,
-								"value" : [ "SpatialGridCtrl::MLE.noteEntry::notes" ]
+								"value" : [ "param1" ]
 							}
 , 							{
 								"key" : 1,
-								"value" : [ "GridDrumsAudio::drumGridAudio" ]
+								"value" : [ "param2" ]
 							}
 , 							{
 								"key" : 2,
-								"value" : [ "GridDrumsAudio::bell1amp" ]
-							}
-, 							{
-								"key" : 3,
-								"value" : [ "GridDrumsAudio::bell1decay" ]
-							}
-, 							{
-								"key" : 4,
-								"value" : [ "GridDrumsAudio::bell1pitch" ]
-							}
-, 							{
-								"key" : 5,
-								"value" : [ "GridDrumsAudio::bell2amp" ]
-							}
-, 							{
-								"key" : 6,
-								"value" : [ "GridDrumsAudio::bell2decay" ]
-							}
-, 							{
-								"key" : 7,
-								"value" : [ "GridDrumsAudio::bell2pitch" ]
-							}
-, 							{
-								"key" : 8,
-								"value" : [ "GridDrumsAudio::bellpreset1" ]
-							}
-, 							{
-								"key" : 9,
-								"value" : [ "GridDrumsAudio::bellpreset2" ]
-							}
-, 							{
-								"key" : 10,
-								"value" : [ "GridDrumsAudio::MLE.analogueDrums::u733002365" ]
-							}
-, 							{
-								"key" : 11,
-								"value" : [ "GridDrumsAudio::MLE.analogueDrums::kickTuning" ]
-							}
-, 							{
-								"key" : 12,
-								"value" : [ "GridDrumsAudio::MLE.analogueDrums::kickSweep" ]
-							}
-, 							{
-								"key" : 13,
-								"value" : [ "GridDrumsAudio::MLE.analogueDrums::kickDecay" ]
-							}
-, 							{
-								"key" : 14,
-								"value" : [ "GridDrumsAudio::MLE.analogueDrums::kickAttack" ]
-							}
-, 							{
-								"key" : 15,
-								"value" : [ "GridDrumsAudio::MLE.analogueDrums::kickLevel" ]
-							}
-, 							{
-								"key" : 16,
-								"value" : [ "GridDrumsAudio::MLE.analogueDrums::snareTuning" ]
-							}
-, 							{
-								"key" : 17,
-								"value" : [ "GridDrumsAudio::MLE.analogueDrums::snareDecay" ]
-							}
-, 							{
-								"key" : 18,
-								"value" : [ "GridDrumsAudio::MLE.analogueDrums::snareSnap" ]
-							}
-, 							{
-								"key" : 19,
-								"value" : [ "GridDrumsAudio::MLE.analogueDrums::snareHicut" ]
-							}
-, 							{
-								"key" : 20,
-								"value" : [ "GridDrumsAudio::MLE.analogueDrums::snareLevel" ]
-							}
-, 							{
-								"key" : 21,
-								"value" : [ "GridDrumsAudio::MLE.analogueDrums::hihatTone" ]
-							}
-, 							{
-								"key" : 22,
-								"value" : [ "GridDrumsAudio::MLE.analogueDrums::hihatCloseDecay" ]
-							}
-, 							{
-								"key" : 23,
-								"value" : [ "GridDrumsAudio::MLE.analogueDrums::hihatOpDecay" ]
-							}
-, 							{
-								"key" : 24,
-								"value" : [ "GridDrumsAudio::MLE.analogueDrums::hihatLevel" ]
-							}
-, 							{
-								"key" : 25,
-								"value" : [ "GridDrumsAudio::MLE.analogueDrums::tomLow" ]
-							}
-, 							{
-								"key" : 26,
-								"value" : [ "GridDrumsAudio::MLE.analogueDrums::tomMid" ]
-							}
-, 							{
-								"key" : 27,
-								"value" : [ "GridDrumsAudio::MLE.analogueDrums::tomHi" ]
-							}
-, 							{
-								"key" : 28,
-								"value" : [ "GridDrumsAudio::MLE.analogueDrums::tomDecay" ]
-							}
-, 							{
-								"key" : 29,
-								"value" : [ "GridDrumsAudio::MLE.analogueDrums::tomLevel" ]
-							}
-, 							{
-								"key" : 30,
-								"value" : [ "GridDrumsAudio::MLE.analogueDrums::aDrumLevel" ]
-							}
-, 							{
-								"key" : 31,
-								"value" : [ "GridDrumsAudio::MLE.analogueDrums::accent" ]
-							}
-, 							{
-								"key" : 32,
-								"value" : [ "GridDrumsAudio::MLE.analogueDrums::choke" ]
-							}
-, 							{
-								"key" : 33,
-								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button" ]
-							}
-, 							{
-								"key" : 34,
-								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[1]" ]
-							}
-, 							{
-								"key" : 35,
-								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[2]" ]
-							}
-, 							{
-								"key" : 36,
-								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[3]" ]
-							}
-, 							{
-								"key" : 37,
-								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[4]" ]
-							}
-, 							{
-								"key" : 38,
-								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[5]" ]
-							}
-, 							{
-								"key" : 39,
-								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[6]" ]
-							}
-, 							{
-								"key" : 40,
-								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[7]" ]
-							}
-, 							{
-								"key" : 41,
-								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[8]" ]
-							}
-, 							{
-								"key" : 42,
-								"value" : [ "GridDrumsAudio::MLE.verb::diffusion" ]
-							}
-, 							{
-								"key" : 43,
-								"value" : [ "GridDrumsAudio::MLE.verb::level" ]
-							}
-, 							{
-								"key" : 44,
-								"value" : [ "GridDrumsAudio::MLE.verb::size" ]
-							}
-, 							{
-								"key" : 45,
-								"value" : [ "GridDrumsAudio::MLE.verb::time" ]
-							}
-, 							{
-								"key" : 46,
-								"value" : [ "GridDrumsAudio::MLE.verb::tone" ]
-							}
-, 							{
-								"key" : 47,
-								"value" : [ "GridDrumsAudio::MLE.verb::reverbFX" ]
-							}
-, 							{
-								"key" : 48,
-								"value" : [ "gridParamSeq::seq" ]
-							}
-, 							{
-								"key" : 49,
-								"value" : [ "gridParamSeq::seqRate" ]
-							}
-, 							{
-								"key" : 50,
-								"value" : [ "gridParamSeq::smoothing" ]
-							}
-, 							{
-								"key" : 51,
-								"value" : [ "gridParamSeq::MLE.atten[1]::curve" ]
-							}
-, 							{
-								"key" : 52,
-								"value" : [ "gridParamSeq::MLE.atten[1]::gain" ]
-							}
-, 							{
-								"key" : 53,
-								"value" : [ "gridParamSeq::MLE.atten[1]::offset" ]
-							}
-, 							{
-								"key" : 54,
-								"value" : [ "gridParamSeq[1]::seq" ]
-							}
-, 							{
-								"key" : 55,
-								"value" : [ "gridParamSeq[1]::seqRate" ]
-							}
-, 							{
-								"key" : 56,
-								"value" : [ "gridParamSeq[1]::smoothing" ]
-							}
-, 							{
-								"key" : 57,
-								"value" : [ "gridParamSeq[1]::MLE.atten[1]::curve" ]
-							}
-, 							{
-								"key" : 58,
-								"value" : [ "gridParamSeq[1]::MLE.atten[1]::gain" ]
-							}
-, 							{
-								"key" : 59,
-								"value" : [ "gridParamSeq[1]::MLE.atten[1]::offset" ]
-							}
-, 							{
-								"key" : 60,
-								"value" : [ "done" ]
-							}
-, 							{
-								"key" : 61,
 								"value" : [ "SpatialGridCtrl::MLE.noteEntry::notes" ]
 							}
 , 							{
-								"key" : 62,
+								"key" : 3,
 								"value" : [ "GridDrumsAudio::drumGridAudio" ]
 							}
 , 							{
-								"key" : 63,
+								"key" : 4,
 								"value" : [ "GridDrumsAudio::bell1amp" ]
 							}
 , 							{
-								"key" : 64,
+								"key" : 5,
 								"value" : [ "GridDrumsAudio::bell1decay" ]
 							}
 , 							{
-								"key" : 65,
+								"key" : 6,
 								"value" : [ "GridDrumsAudio::bell1pitch" ]
 							}
 , 							{
-								"key" : 66,
+								"key" : 7,
 								"value" : [ "GridDrumsAudio::bell2amp" ]
 							}
 , 							{
-								"key" : 67,
+								"key" : 8,
 								"value" : [ "GridDrumsAudio::bell2decay" ]
 							}
 , 							{
-								"key" : 68,
+								"key" : 9,
 								"value" : [ "GridDrumsAudio::bell2pitch" ]
 							}
 , 							{
-								"key" : 69,
+								"key" : 10,
 								"value" : [ "GridDrumsAudio::bellpreset1" ]
 							}
 , 							{
-								"key" : 70,
+								"key" : 11,
 								"value" : [ "GridDrumsAudio::bellpreset2" ]
 							}
 , 							{
-								"key" : 71,
+								"key" : 12,
+								"value" : [ "GridDrumsAudio::distortGain" ]
+							}
+, 							{
+								"key" : 13,
 								"value" : [ "GridDrumsAudio::filterFreq" ]
 							}
 , 							{
-								"key" : 72,
+								"key" : 14,
 								"value" : [ "GridDrumsAudio::filterQ" ]
 							}
 , 							{
-								"key" : 73,
-								"value" : [ "GridDrumsAudio::MLE.analogueDrums::u733002365" ]
+								"key" : 15,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::u953013389" ]
 							}
 , 							{
-								"key" : 74,
+								"key" : 16,
 								"value" : [ "GridDrumsAudio::MLE.analogueDrums::kickTuning" ]
 							}
 , 							{
-								"key" : 75,
+								"key" : 17,
 								"value" : [ "GridDrumsAudio::MLE.analogueDrums::kickSweep" ]
 							}
 , 							{
-								"key" : 76,
+								"key" : 18,
 								"value" : [ "GridDrumsAudio::MLE.analogueDrums::kickDecay" ]
 							}
 , 							{
-								"key" : 77,
+								"key" : 19,
 								"value" : [ "GridDrumsAudio::MLE.analogueDrums::kickAttack" ]
 							}
 , 							{
-								"key" : 78,
+								"key" : 20,
 								"value" : [ "GridDrumsAudio::MLE.analogueDrums::kickLevel" ]
 							}
 , 							{
-								"key" : 79,
+								"key" : 21,
 								"value" : [ "GridDrumsAudio::MLE.analogueDrums::snareTuning" ]
 							}
 , 							{
-								"key" : 80,
+								"key" : 22,
 								"value" : [ "GridDrumsAudio::MLE.analogueDrums::snareDecay" ]
 							}
 , 							{
-								"key" : 81,
+								"key" : 23,
 								"value" : [ "GridDrumsAudio::MLE.analogueDrums::snareSnap" ]
 							}
 , 							{
-								"key" : 82,
+								"key" : 24,
 								"value" : [ "GridDrumsAudio::MLE.analogueDrums::snareHicut" ]
 							}
 , 							{
-								"key" : 83,
+								"key" : 25,
 								"value" : [ "GridDrumsAudio::MLE.analogueDrums::snareLevel" ]
 							}
 , 							{
-								"key" : 84,
+								"key" : 26,
 								"value" : [ "GridDrumsAudio::MLE.analogueDrums::hihatTone" ]
 							}
 , 							{
-								"key" : 85,
+								"key" : 27,
 								"value" : [ "GridDrumsAudio::MLE.analogueDrums::hihatCloseDecay" ]
 							}
 , 							{
-								"key" : 86,
+								"key" : 28,
 								"value" : [ "GridDrumsAudio::MLE.analogueDrums::hihatOpDecay" ]
 							}
 , 							{
-								"key" : 87,
+								"key" : 29,
 								"value" : [ "GridDrumsAudio::MLE.analogueDrums::hihatLevel" ]
 							}
 , 							{
-								"key" : 88,
+								"key" : 30,
 								"value" : [ "GridDrumsAudio::MLE.analogueDrums::tomLow" ]
 							}
 , 							{
-								"key" : 89,
+								"key" : 31,
 								"value" : [ "GridDrumsAudio::MLE.analogueDrums::tomMid" ]
 							}
 , 							{
-								"key" : 90,
+								"key" : 32,
 								"value" : [ "GridDrumsAudio::MLE.analogueDrums::tomHi" ]
 							}
 , 							{
-								"key" : 91,
+								"key" : 33,
 								"value" : [ "GridDrumsAudio::MLE.analogueDrums::tomDecay" ]
 							}
 , 							{
-								"key" : 92,
+								"key" : 34,
 								"value" : [ "GridDrumsAudio::MLE.analogueDrums::tomLevel" ]
 							}
 , 							{
-								"key" : 93,
+								"key" : 35,
 								"value" : [ "GridDrumsAudio::MLE.analogueDrums::aDrumLevel" ]
 							}
 , 							{
-								"key" : 94,
+								"key" : 36,
 								"value" : [ "GridDrumsAudio::MLE.analogueDrums::accent" ]
 							}
 , 							{
-								"key" : 95,
+								"key" : 37,
 								"value" : [ "GridDrumsAudio::MLE.analogueDrums::choke" ]
 							}
 , 							{
-								"key" : 96,
+								"key" : 38,
 								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button" ]
 							}
 , 							{
-								"key" : 97,
+								"key" : 39,
 								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[1]" ]
 							}
 , 							{
-								"key" : 98,
+								"key" : 40,
 								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[2]" ]
 							}
 , 							{
-								"key" : 99,
+								"key" : 41,
 								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[3]" ]
 							}
 , 							{
-								"key" : 100,
+								"key" : 42,
 								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[4]" ]
 							}
 , 							{
-								"key" : 101,
+								"key" : 43,
 								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[5]" ]
 							}
 , 							{
-								"key" : 102,
+								"key" : 44,
 								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[6]" ]
 							}
 , 							{
-								"key" : 103,
+								"key" : 45,
 								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[7]" ]
 							}
 , 							{
-								"key" : 104,
+								"key" : 46,
 								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[8]" ]
 							}
 , 							{
-								"key" : 105,
+								"key" : 47,
 								"value" : [ "GridDrumsAudio::MLE.verb::diffusion" ]
 							}
 , 							{
-								"key" : 106,
+								"key" : 48,
 								"value" : [ "GridDrumsAudio::MLE.verb::level" ]
 							}
 , 							{
-								"key" : 107,
+								"key" : 49,
 								"value" : [ "GridDrumsAudio::MLE.verb::size" ]
 							}
 , 							{
-								"key" : 108,
+								"key" : 50,
 								"value" : [ "GridDrumsAudio::MLE.verb::time" ]
 							}
 , 							{
-								"key" : 109,
+								"key" : 51,
 								"value" : [ "GridDrumsAudio::MLE.verb::tone" ]
 							}
 , 							{
-								"key" : 110,
+								"key" : 52,
 								"value" : [ "GridDrumsAudio::MLE.verb::reverbFX" ]
 							}
 , 							{
-								"key" : 111,
+								"key" : 53,
 								"value" : [ "GridDrumsAudio::MLE.distort::bitdepth" ]
 							}
 , 							{
-								"key" : 112,
+								"key" : 54,
 								"value" : [ "GridDrumsAudio::MLE.distort::drive" ]
 							}
 , 							{
-								"key" : 113,
+								"key" : 55,
 								"value" : [ "GridDrumsAudio::MLE.distort::drywet" ]
 							}
 , 							{
-								"key" : 114,
+								"key" : 56,
 								"value" : [ "GridDrumsAudio::MLE.distort::samplingRate" ]
 							}
 , 							{
-								"key" : 115,
+								"key" : 57,
 								"value" : [ "GridDrumsAudio::MLE.distort::superdrive" ]
 							}
 , 							{
-								"key" : 116,
+								"key" : 58,
 								"value" : [ "GridDrumsAudio::MLE.distort::distortFX" ]
 							}
 , 							{
-								"key" : 117,
+								"key" : 59,
 								"value" : [ "gridParamSeq::seq" ]
 							}
 , 							{
-								"key" : 118,
+								"key" : 60,
 								"value" : [ "gridParamSeq::seqRate" ]
 							}
 , 							{
-								"key" : 119,
+								"key" : 61,
 								"value" : [ "gridParamSeq::smoothing" ]
 							}
 , 							{
-								"key" : 120,
+								"key" : 62,
 								"value" : [ "gridParamSeq::MLE.atten[1]::curve" ]
 							}
 , 							{
-								"key" : 121,
+								"key" : 63,
 								"value" : [ "gridParamSeq::MLE.atten[1]::gain" ]
 							}
 , 							{
-								"key" : 122,
+								"key" : 64,
 								"value" : [ "gridParamSeq::MLE.atten[1]::offset" ]
 							}
 , 							{
-								"key" : 123,
+								"key" : 65,
 								"value" : [ "gridParamSeq[1]::seq" ]
 							}
 , 							{
-								"key" : 124,
+								"key" : 66,
 								"value" : [ "gridParamSeq[1]::seqRate" ]
 							}
 , 							{
-								"key" : 125,
+								"key" : 67,
 								"value" : [ "gridParamSeq[1]::smoothing" ]
 							}
 , 							{
-								"key" : 126,
+								"key" : 68,
 								"value" : [ "gridParamSeq[1]::MLE.atten[1]::curve" ]
 							}
 , 							{
-								"key" : 127,
+								"key" : 69,
 								"value" : [ "gridParamSeq[1]::MLE.atten[1]::gain" ]
 							}
 , 							{
-								"key" : 128,
+								"key" : 70,
 								"value" : [ "gridParamSeq[1]::MLE.atten[1]::offset" ]
 							}
 , 							{
+								"key" : 71,
+								"value" : [ "done" ]
+							}
+, 							{
+								"key" : 72,
+								"value" : [ "param1" ]
+							}
+, 							{
+								"key" : 73,
+								"value" : [ "param2" ]
+							}
+, 							{
+								"key" : 74,
+								"value" : [ "SpatialGridCtrl::MLE.noteEntry::notes" ]
+							}
+, 							{
+								"key" : 75,
+								"value" : [ "GridDrumsAudio::drumGridAudio" ]
+							}
+, 							{
+								"key" : 76,
+								"value" : [ "GridDrumsAudio::bell1amp" ]
+							}
+, 							{
+								"key" : 77,
+								"value" : [ "GridDrumsAudio::bell1decay" ]
+							}
+, 							{
+								"key" : 78,
+								"value" : [ "GridDrumsAudio::bell1pitch" ]
+							}
+, 							{
+								"key" : 79,
+								"value" : [ "GridDrumsAudio::bell2amp" ]
+							}
+, 							{
+								"key" : 80,
+								"value" : [ "GridDrumsAudio::bell2decay" ]
+							}
+, 							{
+								"key" : 81,
+								"value" : [ "GridDrumsAudio::bell2pitch" ]
+							}
+, 							{
+								"key" : 82,
+								"value" : [ "GridDrumsAudio::bellpreset1" ]
+							}
+, 							{
+								"key" : 83,
+								"value" : [ "GridDrumsAudio::bellpreset2" ]
+							}
+, 							{
+								"key" : 84,
+								"value" : [ "GridDrumsAudio::distortGain" ]
+							}
+, 							{
+								"key" : 85,
+								"value" : [ "GridDrumsAudio::filterFreq" ]
+							}
+, 							{
+								"key" : 86,
+								"value" : [ "GridDrumsAudio::filterQ" ]
+							}
+, 							{
+								"key" : 87,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::u953013389" ]
+							}
+, 							{
+								"key" : 88,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::kickTuning" ]
+							}
+, 							{
+								"key" : 89,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::kickSweep" ]
+							}
+, 							{
+								"key" : 90,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::kickDecay" ]
+							}
+, 							{
+								"key" : 91,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::kickAttack" ]
+							}
+, 							{
+								"key" : 92,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::kickLevel" ]
+							}
+, 							{
+								"key" : 93,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::snareTuning" ]
+							}
+, 							{
+								"key" : 94,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::snareDecay" ]
+							}
+, 							{
+								"key" : 95,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::snareSnap" ]
+							}
+, 							{
+								"key" : 96,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::snareHicut" ]
+							}
+, 							{
+								"key" : 97,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::snareLevel" ]
+							}
+, 							{
+								"key" : 98,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::hihatTone" ]
+							}
+, 							{
+								"key" : 99,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::hihatCloseDecay" ]
+							}
+, 							{
+								"key" : 100,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::hihatOpDecay" ]
+							}
+, 							{
+								"key" : 101,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::hihatLevel" ]
+							}
+, 							{
+								"key" : 102,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::tomLow" ]
+							}
+, 							{
+								"key" : 103,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::tomMid" ]
+							}
+, 							{
+								"key" : 104,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::tomHi" ]
+							}
+, 							{
+								"key" : 105,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::tomDecay" ]
+							}
+, 							{
+								"key" : 106,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::tomLevel" ]
+							}
+, 							{
+								"key" : 107,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::aDrumLevel" ]
+							}
+, 							{
+								"key" : 108,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::accent" ]
+							}
+, 							{
+								"key" : 109,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::choke" ]
+							}
+, 							{
+								"key" : 110,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button" ]
+							}
+, 							{
+								"key" : 111,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[1]" ]
+							}
+, 							{
+								"key" : 112,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[2]" ]
+							}
+, 							{
+								"key" : 113,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[3]" ]
+							}
+, 							{
+								"key" : 114,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[4]" ]
+							}
+, 							{
+								"key" : 115,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[5]" ]
+							}
+, 							{
+								"key" : 116,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[6]" ]
+							}
+, 							{
+								"key" : 117,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[7]" ]
+							}
+, 							{
+								"key" : 118,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[8]" ]
+							}
+, 							{
+								"key" : 119,
+								"value" : [ "GridDrumsAudio::MLE.verb::diffusion" ]
+							}
+, 							{
+								"key" : 120,
+								"value" : [ "GridDrumsAudio::MLE.verb::level" ]
+							}
+, 							{
+								"key" : 121,
+								"value" : [ "GridDrumsAudio::MLE.verb::size" ]
+							}
+, 							{
+								"key" : 122,
+								"value" : [ "GridDrumsAudio::MLE.verb::time" ]
+							}
+, 							{
+								"key" : 123,
+								"value" : [ "GridDrumsAudio::MLE.verb::tone" ]
+							}
+, 							{
+								"key" : 124,
+								"value" : [ "GridDrumsAudio::MLE.verb::reverbFX" ]
+							}
+, 							{
+								"key" : 125,
+								"value" : [ "GridDrumsAudio::MLE.distort::bitdepth" ]
+							}
+, 							{
+								"key" : 126,
+								"value" : [ "GridDrumsAudio::MLE.distort::drive" ]
+							}
+, 							{
+								"key" : 127,
+								"value" : [ "GridDrumsAudio::MLE.distort::drywet" ]
+							}
+, 							{
+								"key" : 128,
+								"value" : [ "GridDrumsAudio::MLE.distort::samplingRate" ]
+							}
+, 							{
 								"key" : 129,
+								"value" : [ "GridDrumsAudio::MLE.distort::superdrive" ]
+							}
+, 							{
+								"key" : 130,
+								"value" : [ "GridDrumsAudio::MLE.distort::distortFX" ]
+							}
+, 							{
+								"key" : 131,
+								"value" : [ "gridParamSeq::seq" ]
+							}
+, 							{
+								"key" : 132,
+								"value" : [ "gridParamSeq::seqRate" ]
+							}
+, 							{
+								"key" : 133,
+								"value" : [ "gridParamSeq::smoothing" ]
+							}
+, 							{
+								"key" : 134,
+								"value" : [ "gridParamSeq::MLE.atten[1]::curve" ]
+							}
+, 							{
+								"key" : 135,
+								"value" : [ "gridParamSeq::MLE.atten[1]::gain" ]
+							}
+, 							{
+								"key" : 136,
+								"value" : [ "gridParamSeq::MLE.atten[1]::offset" ]
+							}
+, 							{
+								"key" : 137,
+								"value" : [ "gridParamSeq[1]::seq" ]
+							}
+, 							{
+								"key" : 138,
+								"value" : [ "gridParamSeq[1]::seqRate" ]
+							}
+, 							{
+								"key" : 139,
+								"value" : [ "gridParamSeq[1]::smoothing" ]
+							}
+, 							{
+								"key" : 140,
+								"value" : [ "gridParamSeq[1]::MLE.atten[1]::curve" ]
+							}
+, 							{
+								"key" : 141,
+								"value" : [ "gridParamSeq[1]::MLE.atten[1]::gain" ]
+							}
+, 							{
+								"key" : 142,
+								"value" : [ "gridParamSeq[1]::MLE.atten[1]::offset" ]
+							}
+, 							{
+								"key" : 143,
+								"value" : [ "done" ]
+							}
+, 							{
+								"key" : 144,
+								"value" : [ "param1" ]
+							}
+, 							{
+								"key" : 145,
+								"value" : [ "param2" ]
+							}
+, 							{
+								"key" : 146,
+								"value" : [ "SpatialGridCtrl::MLE.noteEntry::notes" ]
+							}
+, 							{
+								"key" : 147,
+								"value" : [ "GridDrumsAudio::drumGridAudio" ]
+							}
+, 							{
+								"key" : 148,
+								"value" : [ "GridDrumsAudio::bell1amp" ]
+							}
+, 							{
+								"key" : 149,
+								"value" : [ "GridDrumsAudio::bell1decay" ]
+							}
+, 							{
+								"key" : 150,
+								"value" : [ "GridDrumsAudio::bell1pitch" ]
+							}
+, 							{
+								"key" : 151,
+								"value" : [ "GridDrumsAudio::bell2amp" ]
+							}
+, 							{
+								"key" : 152,
+								"value" : [ "GridDrumsAudio::bell2decay" ]
+							}
+, 							{
+								"key" : 153,
+								"value" : [ "GridDrumsAudio::bell2pitch" ]
+							}
+, 							{
+								"key" : 154,
+								"value" : [ "GridDrumsAudio::bellpreset1" ]
+							}
+, 							{
+								"key" : 155,
+								"value" : [ "GridDrumsAudio::bellpreset2" ]
+							}
+, 							{
+								"key" : 156,
+								"value" : [ "GridDrumsAudio::distortGain" ]
+							}
+, 							{
+								"key" : 157,
+								"value" : [ "GridDrumsAudio::filterFreq" ]
+							}
+, 							{
+								"key" : 158,
+								"value" : [ "GridDrumsAudio::filterQ" ]
+							}
+, 							{
+								"key" : 159,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::u953013389" ]
+							}
+, 							{
+								"key" : 160,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::kickTuning" ]
+							}
+, 							{
+								"key" : 161,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::kickSweep" ]
+							}
+, 							{
+								"key" : 162,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::kickDecay" ]
+							}
+, 							{
+								"key" : 163,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::kickAttack" ]
+							}
+, 							{
+								"key" : 164,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::kickLevel" ]
+							}
+, 							{
+								"key" : 165,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::snareTuning" ]
+							}
+, 							{
+								"key" : 166,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::snareDecay" ]
+							}
+, 							{
+								"key" : 167,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::snareSnap" ]
+							}
+, 							{
+								"key" : 168,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::snareHicut" ]
+							}
+, 							{
+								"key" : 169,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::snareLevel" ]
+							}
+, 							{
+								"key" : 170,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::hihatTone" ]
+							}
+, 							{
+								"key" : 171,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::hihatCloseDecay" ]
+							}
+, 							{
+								"key" : 172,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::hihatOpDecay" ]
+							}
+, 							{
+								"key" : 173,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::hihatLevel" ]
+							}
+, 							{
+								"key" : 174,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::tomLow" ]
+							}
+, 							{
+								"key" : 175,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::tomMid" ]
+							}
+, 							{
+								"key" : 176,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::tomHi" ]
+							}
+, 							{
+								"key" : 177,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::tomDecay" ]
+							}
+, 							{
+								"key" : 178,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::tomLevel" ]
+							}
+, 							{
+								"key" : 179,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::aDrumLevel" ]
+							}
+, 							{
+								"key" : 180,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::accent" ]
+							}
+, 							{
+								"key" : 181,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::choke" ]
+							}
+, 							{
+								"key" : 182,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button" ]
+							}
+, 							{
+								"key" : 183,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[1]" ]
+							}
+, 							{
+								"key" : 184,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[2]" ]
+							}
+, 							{
+								"key" : 185,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[3]" ]
+							}
+, 							{
+								"key" : 186,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[4]" ]
+							}
+, 							{
+								"key" : 187,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[5]" ]
+							}
+, 							{
+								"key" : 188,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[6]" ]
+							}
+, 							{
+								"key" : 189,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[7]" ]
+							}
+, 							{
+								"key" : 190,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[8]" ]
+							}
+, 							{
+								"key" : 191,
+								"value" : [ "GridDrumsAudio::MLE.verb::diffusion" ]
+							}
+, 							{
+								"key" : 192,
+								"value" : [ "GridDrumsAudio::MLE.verb::level" ]
+							}
+, 							{
+								"key" : 193,
+								"value" : [ "GridDrumsAudio::MLE.verb::size" ]
+							}
+, 							{
+								"key" : 194,
+								"value" : [ "GridDrumsAudio::MLE.verb::time" ]
+							}
+, 							{
+								"key" : 195,
+								"value" : [ "GridDrumsAudio::MLE.verb::tone" ]
+							}
+, 							{
+								"key" : 196,
+								"value" : [ "GridDrumsAudio::MLE.verb::reverbFX" ]
+							}
+, 							{
+								"key" : 197,
+								"value" : [ "GridDrumsAudio::MLE.distort::bitdepth" ]
+							}
+, 							{
+								"key" : 198,
+								"value" : [ "GridDrumsAudio::MLE.distort::drive" ]
+							}
+, 							{
+								"key" : 199,
+								"value" : [ "GridDrumsAudio::MLE.distort::drywet" ]
+							}
+, 							{
+								"key" : 200,
+								"value" : [ "GridDrumsAudio::MLE.distort::samplingRate" ]
+							}
+, 							{
+								"key" : 201,
+								"value" : [ "GridDrumsAudio::MLE.distort::superdrive" ]
+							}
+, 							{
+								"key" : 202,
+								"value" : [ "GridDrumsAudio::MLE.distort::distortFX" ]
+							}
+, 							{
+								"key" : 203,
+								"value" : [ "gridParamSeq::seq" ]
+							}
+, 							{
+								"key" : 204,
+								"value" : [ "gridParamSeq::seqRate" ]
+							}
+, 							{
+								"key" : 205,
+								"value" : [ "gridParamSeq::smoothing" ]
+							}
+, 							{
+								"key" : 206,
+								"value" : [ "gridParamSeq::MLE.atten[1]::curve" ]
+							}
+, 							{
+								"key" : 207,
+								"value" : [ "gridParamSeq::MLE.atten[1]::gain" ]
+							}
+, 							{
+								"key" : 208,
+								"value" : [ "gridParamSeq::MLE.atten[1]::offset" ]
+							}
+, 							{
+								"key" : 209,
+								"value" : [ "gridParamSeq[1]::seq" ]
+							}
+, 							{
+								"key" : 210,
+								"value" : [ "gridParamSeq[1]::seqRate" ]
+							}
+, 							{
+								"key" : 211,
+								"value" : [ "gridParamSeq[1]::smoothing" ]
+							}
+, 							{
+								"key" : 212,
+								"value" : [ "gridParamSeq[1]::MLE.atten[1]::curve" ]
+							}
+, 							{
+								"key" : 213,
+								"value" : [ "gridParamSeq[1]::MLE.atten[1]::gain" ]
+							}
+, 							{
+								"key" : 214,
+								"value" : [ "gridParamSeq[1]::MLE.atten[1]::offset" ]
+							}
+, 							{
+								"key" : 215,
+								"value" : [ "done" ]
+							}
+, 							{
+								"key" : 216,
+								"value" : [ "param1" ]
+							}
+, 							{
+								"key" : 217,
+								"value" : [ "param2" ]
+							}
+, 							{
+								"key" : 218,
+								"value" : [ "SpatialGridCtrl::MLE.noteEntry::notes" ]
+							}
+, 							{
+								"key" : 219,
+								"value" : [ "GridDrumsAudio::drumGridAudio" ]
+							}
+, 							{
+								"key" : 220,
+								"value" : [ "GridDrumsAudio::bell1amp" ]
+							}
+, 							{
+								"key" : 221,
+								"value" : [ "GridDrumsAudio::bell1decay" ]
+							}
+, 							{
+								"key" : 222,
+								"value" : [ "GridDrumsAudio::bell1pitch" ]
+							}
+, 							{
+								"key" : 223,
+								"value" : [ "GridDrumsAudio::bell2amp" ]
+							}
+, 							{
+								"key" : 224,
+								"value" : [ "GridDrumsAudio::bell2decay" ]
+							}
+, 							{
+								"key" : 225,
+								"value" : [ "GridDrumsAudio::bell2pitch" ]
+							}
+, 							{
+								"key" : 226,
+								"value" : [ "GridDrumsAudio::bellpreset1" ]
+							}
+, 							{
+								"key" : 227,
+								"value" : [ "GridDrumsAudio::bellpreset2" ]
+							}
+, 							{
+								"key" : 228,
+								"value" : [ "GridDrumsAudio::distortGain" ]
+							}
+, 							{
+								"key" : 229,
+								"value" : [ "GridDrumsAudio::filterFreq" ]
+							}
+, 							{
+								"key" : 230,
+								"value" : [ "GridDrumsAudio::filterQ" ]
+							}
+, 							{
+								"key" : 231,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::u953013389" ]
+							}
+, 							{
+								"key" : 232,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::kickTuning" ]
+							}
+, 							{
+								"key" : 233,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::kickSweep" ]
+							}
+, 							{
+								"key" : 234,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::kickDecay" ]
+							}
+, 							{
+								"key" : 235,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::kickAttack" ]
+							}
+, 							{
+								"key" : 236,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::kickLevel" ]
+							}
+, 							{
+								"key" : 237,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::snareTuning" ]
+							}
+, 							{
+								"key" : 238,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::snareDecay" ]
+							}
+, 							{
+								"key" : 239,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::snareSnap" ]
+							}
+, 							{
+								"key" : 240,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::snareHicut" ]
+							}
+, 							{
+								"key" : 241,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::snareLevel" ]
+							}
+, 							{
+								"key" : 242,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::hihatTone" ]
+							}
+, 							{
+								"key" : 243,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::hihatCloseDecay" ]
+							}
+, 							{
+								"key" : 244,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::hihatOpDecay" ]
+							}
+, 							{
+								"key" : 245,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::hihatLevel" ]
+							}
+, 							{
+								"key" : 246,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::tomLow" ]
+							}
+, 							{
+								"key" : 247,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::tomMid" ]
+							}
+, 							{
+								"key" : 248,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::tomHi" ]
+							}
+, 							{
+								"key" : 249,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::tomDecay" ]
+							}
+, 							{
+								"key" : 250,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::tomLevel" ]
+							}
+, 							{
+								"key" : 251,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::aDrumLevel" ]
+							}
+, 							{
+								"key" : 252,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::accent" ]
+							}
+, 							{
+								"key" : 253,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::choke" ]
+							}
+, 							{
+								"key" : 254,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button" ]
+							}
+, 							{
+								"key" : 255,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[1]" ]
+							}
+, 							{
+								"key" : 256,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[2]" ]
+							}
+, 							{
+								"key" : 257,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[3]" ]
+							}
+, 							{
+								"key" : 258,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[4]" ]
+							}
+, 							{
+								"key" : 259,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[5]" ]
+							}
+, 							{
+								"key" : 260,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[6]" ]
+							}
+, 							{
+								"key" : 261,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[7]" ]
+							}
+, 							{
+								"key" : 262,
+								"value" : [ "GridDrumsAudio::MLE.analogueDrums::live.button[8]" ]
+							}
+, 							{
+								"key" : 263,
+								"value" : [ "GridDrumsAudio::MLE.verb::diffusion" ]
+							}
+, 							{
+								"key" : 264,
+								"value" : [ "GridDrumsAudio::MLE.verb::level" ]
+							}
+, 							{
+								"key" : 265,
+								"value" : [ "GridDrumsAudio::MLE.verb::size" ]
+							}
+, 							{
+								"key" : 266,
+								"value" : [ "GridDrumsAudio::MLE.verb::time" ]
+							}
+, 							{
+								"key" : 267,
+								"value" : [ "GridDrumsAudio::MLE.verb::tone" ]
+							}
+, 							{
+								"key" : 268,
+								"value" : [ "GridDrumsAudio::MLE.verb::reverbFX" ]
+							}
+, 							{
+								"key" : 269,
+								"value" : [ "GridDrumsAudio::MLE.distort::bitdepth" ]
+							}
+, 							{
+								"key" : 270,
+								"value" : [ "GridDrumsAudio::MLE.distort::drive" ]
+							}
+, 							{
+								"key" : 271,
+								"value" : [ "GridDrumsAudio::MLE.distort::drywet" ]
+							}
+, 							{
+								"key" : 272,
+								"value" : [ "GridDrumsAudio::MLE.distort::samplingRate" ]
+							}
+, 							{
+								"key" : 273,
+								"value" : [ "GridDrumsAudio::MLE.distort::superdrive" ]
+							}
+, 							{
+								"key" : 274,
+								"value" : [ "GridDrumsAudio::MLE.distort::distortFX" ]
+							}
+, 							{
+								"key" : 275,
+								"value" : [ "gridParamSeq::seq" ]
+							}
+, 							{
+								"key" : 276,
+								"value" : [ "gridParamSeq::seqRate" ]
+							}
+, 							{
+								"key" : 277,
+								"value" : [ "gridParamSeq::smoothing" ]
+							}
+, 							{
+								"key" : 278,
+								"value" : [ "gridParamSeq::MLE.atten[1]::curve" ]
+							}
+, 							{
+								"key" : 279,
+								"value" : [ "gridParamSeq::MLE.atten[1]::gain" ]
+							}
+, 							{
+								"key" : 280,
+								"value" : [ "gridParamSeq::MLE.atten[1]::offset" ]
+							}
+, 							{
+								"key" : 281,
+								"value" : [ "gridParamSeq[1]::seq" ]
+							}
+, 							{
+								"key" : 282,
+								"value" : [ "gridParamSeq[1]::seqRate" ]
+							}
+, 							{
+								"key" : 283,
+								"value" : [ "gridParamSeq[1]::smoothing" ]
+							}
+, 							{
+								"key" : 284,
+								"value" : [ "gridParamSeq[1]::MLE.atten[1]::curve" ]
+							}
+, 							{
+								"key" : 285,
+								"value" : [ "gridParamSeq[1]::MLE.atten[1]::gain" ]
+							}
+, 							{
+								"key" : 286,
+								"value" : [ "gridParamSeq[1]::MLE.atten[1]::offset" ]
+							}
+, 							{
+								"key" : 287,
 								"value" : [ "done" ]
 							}
  ]
@@ -1561,8 +2605,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 1338.0, 155.0, 212.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 1,
-						"precision" : 6
+						"embed" : 1
 					}
 ,
 					"text" : "coll pattrNamesGridDrums @embed 1"
@@ -1574,24 +2617,24 @@
 					"active" : 					{
 						"SpatialGridCtrl" : 0,
 						"SpatialGridCtrl::MLE.noteEntry" : 0,
-						"SpatialGridCtrl::MLE.noteEntry::u513015057" : 0,
+						"SpatialGridCtrl::MLE.noteEntry::u057015233" : 0,
 						"SpatialGridCtrl::MLE.noteEntry::notes" : 0,
 						"GridDrums[1]" : 0,
-						"GridDrums[1]::u516015056" : 0,
+						"GridDrums[1]::u256015234" : 0,
 						"GridDrums[3]" : 0,
-						"GridDrums[3]::u714015055" : 0,
+						"GridDrums[3]::u840015235" : 0,
 						"GridDrums[2]" : 0,
-						"GridDrums[2]::u097015054" : 0,
+						"GridDrums[2]::u003015236" : 0,
 						"GridDrums[5]" : 0,
-						"GridDrums[5]::u121015053" : 0,
+						"GridDrums[5]::u360015237" : 0,
 						"GridDrums[4]" : 0,
-						"GridDrums[4]::u963015046" : 0,
+						"GridDrums[4]::u303015238" : 0,
 						"GridDrumsAudio::drumGridAudio" : 0,
 						"GridDrums[6]" : 0,
-						"GridDrums[6]::u957015027" : 0
+						"GridDrums[6]::u049015267" : 0
 					}
 ,
-					"autorestore" : "GridDrumsMaster.json",
+					"autorestore" : "GridDrumsLocal.json",
 					"id" : "obj-53",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -1602,7 +2645,7 @@
 						"client_rect" : [ 4, 44, 358, 172 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
-						"storage_rect" : [ 365, 44, 816, 172 ]
+						"storage_rect" : [ 583, 69, 1034, 197 ]
 					}
 ,
 					"text" : "pattrstorage GridDrumsMaster @greedy 1",
@@ -1716,8 +2759,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 116.0, 526.0, 89.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 1,
-						"precision" : 6
+						"embed" : 1
 					}
 ,
 					"text" : "coll @embed 1"
@@ -1776,8 +2818,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 2,
+							"minor" : 0,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2139,8 +3181,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 2,
+							"minor" : 0,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2488,8 +3530,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 2,
+							"minor" : 0,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2738,8 +3780,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 2,
+							"minor" : 0,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2868,8 +3910,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 2,
+											"minor" : 0,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3846,8 +4888,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 2,
+							"minor" : 0,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4048,8 +5090,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 2,
+							"minor" : 0,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4512,7 +5554,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1335.0, 56.0, 68.0, 22.0 ],
+					"patching_rect" : [ 1355.5, 53.0, 68.0, 22.0 ],
 					"text" : "getclientlist"
 				}
 
@@ -4522,6 +5564,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-84", 1 ],
 					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-103", 1 ],
+					"source" : [ "obj-101", 0 ]
 				}
 
 			}
@@ -4562,8 +5611,61 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-85", 0 ],
+					"source" : [ "obj-116", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-130", 0 ],
+					"order" : 0,
+					"source" : [ "obj-117", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-181", 0 ],
+					"order" : 1,
+					"source" : [ "obj-117", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-183", 0 ],
+					"order" : 1,
+					"source" : [ "obj-117", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 0 ],
+					"order" : 0,
+					"source" : [ "obj-117", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-85", 1 ],
+					"source" : [ "obj-122", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-122", 0 ],
+					"source" : [ "obj-128", 0 ]
 				}
 
 			}
@@ -4637,6 +5739,27 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-122", 0 ],
+					"source" : [ "obj-130", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-117", 0 ],
+					"source" : [ "obj-133", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-183", 1 ],
+					"source" : [ "obj-133", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-129", 0 ],
 					"source" : [ "obj-135", 0 ]
 				}
@@ -4646,6 +5769,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-48", 0 ],
 					"source" : [ "obj-135", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-116", 0 ],
+					"source" : [ "obj-137", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-179", 1 ],
+					"source" : [ "obj-137", 0 ]
 				}
 
 			}
@@ -4679,6 +5816,27 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-154", 0 ],
+					"source" : [ "obj-141", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-162", 0 ],
+					"source" : [ "obj-145", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-187", 0 ],
+					"source" : [ "obj-146", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
 					"source" : [ "obj-15", 0 ]
 				}
@@ -4688,6 +5846,27 @@
 				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
 					"source" : [ "obj-15", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-155", 0 ],
+					"source" : [ "obj-154", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-145", 0 ],
+					"source" : [ "obj-155", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-133", 0 ],
+					"source" : [ "obj-162", 0 ]
 				}
 
 			}
@@ -4714,6 +5893,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-182", 0 ],
+					"source" : [ "obj-179", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-106", 1 ],
 					"source" : [ "obj-18", 0 ]
 				}
@@ -4728,8 +5914,78 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-182", 0 ],
+					"source" : [ "obj-183", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-137", 0 ],
+					"source" : [ "obj-185", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-188", 0 ],
+					"source" : [ "obj-186", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-186", 0 ],
+					"source" : [ "obj-187", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-185", 0 ],
+					"source" : [ "obj-188", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
 					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 0 ],
+					"source" : [ "obj-190", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 0 ],
+					"source" : [ "obj-192", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 0 ],
+					"source" : [ "obj-194", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 0 ],
+					"source" : [ "obj-196", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 0 ],
+					"source" : [ "obj-199", 0 ]
 				}
 
 			}
@@ -5205,6 +6461,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-101", 0 ],
+					"source" : [ "obj-83", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-68", 0 ],
 					"source" : [ "obj-84", 0 ]
 				}
@@ -5214,6 +6477,62 @@
 				"patchline" : 				{
 					"destination" : [ "obj-73", 0 ],
 					"source" : [ "obj-84", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-128", 0 ],
+					"order" : 0,
+					"source" : [ "obj-85", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-179", 0 ],
+					"order" : 1,
+					"source" : [ "obj-85", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-181", 0 ],
+					"order" : 1,
+					"source" : [ "obj-85", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-181", 0 ],
+					"order" : 2,
+					"source" : [ "obj-85", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-192", 1 ],
+					"order" : 1,
+					"source" : [ "obj-85", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 0 ],
+					"order" : 0,
+					"source" : [ "obj-85", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 0 ],
+					"order" : 0,
+					"source" : [ "obj-85", 0 ]
 				}
 
 			}
@@ -5279,47 +6598,61 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-83", 0 ],
+					"source" : [ "obj-92", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-85", 1 ],
+					"source" : [ "obj-98", 0 ]
+				}
+
+			}
  ],
 		"parameters" : 		{
+			"obj-17::obj-12::obj-40" : [ "tom-decay", "decay", 0 ],
+			"obj-17::obj-12::obj-6" : [ "kick-attack", "attack", 0 ],
+			"obj-17::obj-12::obj-41" : [ "tom-hi", "hi", 0 ],
+			"obj-17::obj-12::obj-5" : [ "kick-decay", "decay", 0 ],
+			"obj-17::obj-12::obj-42" : [ "tom-mid", "mid", 0 ],
 			"obj-20::obj-53" : [ "live.grid[11]", "live.grid[11]", 0 ],
-			"obj-17::obj-12::obj-32" : [ "hat-tone", "tone", 0 ],
-			"obj-17::obj-12::obj-19" : [ "snare-hicut", "hicut", 0 ],
-			"obj-17::obj-12::obj-21" : [ "snare-snap", "snap", 0 ],
-			"obj-17::obj-12::obj-34" : [ "trig_5", "trig_5", 0 ],
-			"obj-78::obj-6::obj-46::obj-2" : [ "live.grid[12]", "live.grid", 0 ],
-			"obj-17::obj-12::obj-9" : [ "kick-level", "level", 0 ],
-			"obj-17::obj-12::obj-43" : [ "tom-low", "low", 0 ],
 			"obj-17::obj-12::obj-4" : [ "kick-sweep", "sweep", 0 ],
-			"obj-17::obj-12::obj-45" : [ "trig_7", "trig_7", 0 ],
+			"obj-17::obj-12::obj-43" : [ "tom-low", "low", 0 ],
 			"obj-17::obj-12::obj-3" : [ "kick-tune[1]", "tuning", 0 ],
+			"obj-20::obj-6::obj-46::obj-2" : [ "live.grid[4]", "live.grid", 0 ],
+			"obj-17::obj-12::obj-7" : [ "trig_1", "trig_1", 0 ],
+			"obj-17::obj-12::obj-129" : [ "trig_6[1]", "trig_6", 0 ],
+			"obj-17::obj-143::obj-210::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
+			"obj-17::obj-12::obj-20" : [ "snare-decay", "decay", 0 ],
+			"obj-17::obj-12::obj-31" : [ "clhat-decay", "cl-dec", 0 ],
+			"obj-17::obj-12::obj-21" : [ "snare-snap", "snap", 0 ],
+			"obj-17::obj-12::obj-22" : [ "snare-tune", "tuning", 0 ],
+			"obj-84::obj-52::obj-46::obj-2" : [ "live.grid[32]", "live.grid", 0 ],
+			"obj-17::obj-12::obj-9" : [ "kick-level", "level", 0 ],
+			"obj-17::obj-12::obj-120" : [ "accent", "accent", 0 ],
+			"obj-17::obj-12::obj-128" : [ "trig_7[1]", "trig_7", 0 ],
+			"obj-17::obj-12::obj-12" : [ "trig_2", "trig_2", 0 ],
+			"obj-17::obj-12::obj-23" : [ "trig_3", "trig_3", 0 ],
+			"obj-78::obj-6::obj-46::obj-2" : [ "live.grid[12]", "live.grid", 0 ],
+			"obj-17::obj-12::obj-44" : [ "trig_6", "trig_6", 0 ],
+			"obj-17::obj-12::obj-46" : [ "ad-level", "level", 0 ],
+			"obj-17::obj-12::obj-32" : [ "hat-tone", "tone", 0 ],
+			"obj-17::obj-268::obj-13::obj-210::obj-46::obj-2" : [ "live.grid[3]", "live.grid", 0 ],
 			"obj-84::obj-43::obj-46::obj-2" : [ "live.grid[31]", "live.grid", 0 ],
 			"obj-17::obj-12::obj-17" : [ "snare-level", "level", 0 ],
-			"obj-17::obj-12::obj-46" : [ "ad-level", "level", 0 ],
-			"obj-17::obj-12::obj-20" : [ "snare-decay", "decay", 0 ],
-			"obj-17::obj-12::obj-44" : [ "trig_6", "trig_6", 0 ],
-			"obj-17::obj-12::obj-119" : [ "choke", "choke", 0 ],
-			"obj-17::obj-12::obj-42" : [ "tom-mid", "mid", 0 ],
-			"obj-17::obj-12::obj-5" : [ "kick-decay", "decay", 0 ],
-			"obj-17::obj-12::obj-23" : [ "trig_3", "trig_3", 0 ],
-			"obj-17::obj-12::obj-120" : [ "accent", "accent", 0 ],
-			"obj-17::obj-143::obj-210::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
-			"obj-20::obj-6::obj-46::obj-2" : [ "live.grid[4]", "live.grid", 0 ],
-			"obj-17::obj-12::obj-41" : [ "tom-hi", "hi", 0 ],
-			"obj-17::obj-12::obj-6" : [ "kick-attack", "attack", 0 ],
-			"obj-17::obj-12::obj-30" : [ "ophat-decay", "op-dec", 0 ],
-			"obj-17::obj-12::obj-40" : [ "tom-decay", "decay", 0 ],
-			"obj-17::obj-12::obj-7" : [ "trig_1", "trig_1", 0 ],
 			"obj-17::obj-12::obj-27" : [ "hat-level", "level", 0 ],
-			"obj-17::obj-12::obj-128" : [ "trig_7[1]", "trig_7", 0 ],
-			"obj-17::obj-12::obj-31" : [ "clhat-decay", "cl-dec", 0 ],
-			"obj-84::obj-52::obj-46::obj-2" : [ "live.grid[32]", "live.grid", 0 ],
-			"obj-17::obj-12::obj-12" : [ "trig_2", "trig_2", 0 ],
-			"obj-17::obj-12::obj-129" : [ "trig_6[1]", "trig_6", 0 ],
-			"obj-17::obj-12::obj-38" : [ "tom-level", "level", 0 ],
-			"obj-17::obj-12::obj-22" : [ "snare-tune", "tuning", 0 ],
+			"obj-17::obj-12::obj-19" : [ "snare-hicut", "hicut", 0 ],
 			"obj-78::obj-53" : [ "live.grid[13]", "live.grid[11]", 0 ],
-			"obj-17::obj-268::obj-13::obj-210::obj-46::obj-2" : [ "live.grid[3]", "live.grid", 0 ],
+			"obj-17::obj-12::obj-30" : [ "ophat-decay", "op-dec", 0 ],
+			"obj-17::obj-12::obj-119" : [ "choke", "choke", 0 ],
+			"obj-17::obj-12::obj-45" : [ "trig_7", "trig_7", 0 ],
 			"obj-17::obj-12::obj-33" : [ "trig_4", "trig_4", 0 ],
+			"obj-17::obj-12::obj-38" : [ "tom-level", "level", 0 ],
+			"obj-17::obj-12::obj-34" : [ "trig_5", "trig_5", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -5595,9 +6928,30 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "GridDrumsMaster.json",
-				"bootpath" : "/Users/famle/CML/MLE/compositions/S20/Drift/dependencies",
-				"patcherrelativepath" : "./dependencies",
+				"name" : "GridDrumsLocal.json",
+				"bootpath" : "~/Documents/Max 8/Library",
+				"patcherrelativepath" : "../../../../../../ianhattwick/Documents/Max 8/Library",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.globalPath.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "../../../patchers/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.localPattr.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "../../../patchers/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.globalPattr.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "../../../patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
