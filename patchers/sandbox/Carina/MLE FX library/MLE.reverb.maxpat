@@ -5006,7 +5006,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 51.0, 228.66667366027832, 125.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 4, 45, 358, 173 ],
+						"client_rect" : [ 4, 45, 357, 328 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
 						"storage_rect" : [ 583, 69, 1034, 197 ]
@@ -5027,14 +5027,14 @@
 					"patching_rect" : [ 51.0, 203.266677856445312, 56.0, 22.0 ],
 					"restore" : 					{
 						"damping" : [ 0.5 ],
-						"diffusion" : [ 0.9 ],
-						"drywet" : [ 11.812574828981793 ],
-						"size" : [ 0.339909463443169 ],
-						"time" : [ 0.151574803149606 ]
+						"diffusion" : [ 0.75 ],
+						"drywet" : [ 58.0 ],
+						"size" : [ 0.374622076492637 ],
+						"time" : [ 0.441036794154395 ]
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u622010421"
+					"varname" : "u408004957"
 				}
 
 			}
@@ -6197,8 +6197,8 @@
 , 			{
 				"name" : "rsliderGold",
 				"default" : 				{
-					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -6207,8 +6207,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 				}
 ,
 				"parentstyle" : "",
