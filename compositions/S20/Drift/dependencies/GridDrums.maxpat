@@ -173,7 +173,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 636.5, 85.0, 203.00002509355545, 35.0 ],
+					"patching_rect" : [ 636.5, 85.0, 205.0, 35.0 ],
 					"text" : "$1 0 0 0 0 0 1 0 0 2 0 0 3 0 0 4 0 0 5 0 0 6 0 0 7"
 				}
 
@@ -198,8 +198,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 139.249996423721313, 324.66666716337204, 219.00000262260437, 35.0 ],
-					"text" : "7 1 0 0 1 0 1 1 0 2 1 0 3 1 0 4 1 0 5 1 0 6 1 0 7"
+					"patching_rect" : [ 139.249996423721313, 324.66666716337204, 43.00000262260437, 35.0 ],
+					"text" : "7 0 0 0"
 				}
 
 			}
@@ -1516,7 +1516,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 913.0, 153.0, 293.0, 22.0 ],
-					"text" : "2 7 0 0 0 0 0 0 0 0"
+					"text" : "1 7 0"
 				}
 
 			}
@@ -2529,7 +2529,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 1001.10001277923584, 217.600007000000005, 56.0, 22.0 ],
 					"text" : "autopattr",
-					"varname" : "u150015360"
+					"varname" : "u890016224"
 				}
 
 			}
@@ -3019,7 +3019,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 392.0, 1007.0, 252.0, 22.0 ],
-					"text" : "custom 0 2 5 7 10 12 14 17"
+					"text" : "custom 0 2 5 7 10 12 14 17 19 22 24 26"
 				}
 
 			}
@@ -3230,7 +3230,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-132", 1 ],
+					"order" : 0,
+					"source" : [ "obj-13", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-70", 0 ],
+					"order" : 1,
 					"source" : [ "obj-13", 1 ]
 				}
 
@@ -3272,16 +3281,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-132", 1 ],
-					"order" : 0,
-					"source" : [ "obj-143", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-65", 1 ],
-					"order" : 1,
 					"source" : [ "obj-143", 0 ]
 				}
 
@@ -3463,7 +3463,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-72", 1 ],
-					"order" : 2,
+					"order" : 3,
 					"source" : [ "obj-5", 1 ]
 				}
 
@@ -3478,7 +3478,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-84", 0 ],
-					"order" : 3,
+					"order" : 2,
 					"source" : [ "obj-5", 1 ]
 				}
 
