@@ -244,7 +244,7 @@ function writeValToGrid(a,curState){
 function updateColumn(){
 
 	var a = arrayfromargs(arguments); //column number, array of values
-	post("updateCol", a, "\n");
+	//post("updateCol", a, "\n");
 	var colVals = a.splice(0,2);//player, colNum
 	while(a.length < 1) a.push(0);
 
