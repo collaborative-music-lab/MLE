@@ -73,6 +73,7 @@ function createStates(){
 	for(var i=0; i<dimX; i++){
 		states[i] = new Array(dimY);
 		for(var k=0;k<dimY;k++) states[i][k] = {x:0, y:0, color:[0,0,0], state:0, player:0};
+			//for(var k=0;k<dimY;k++)  states[i][k].state = 0;
 		//post(states[i],"\n");
 	}
 }
@@ -201,25 +202,14 @@ function update(){
 
 		states[a[1]][a[2]].state = curState;
 		states[a[1]][a[2]].player = a[3];
-		//post(2, a[1], a[2], states[a[1]][a[2]].state, states[a[1]][a[2]].player, "\n");
-		//post("offset:", cOffset, "\n");
-		//generate color
-		for(var i=0;i<3;i++) {
-			if(curState>8) curState=8;
-			var hue = curState / 8;
-			hue = Math.pow(hue,0.3);	
-			states[a[1]][a[2]].color[i] = playerColors[a[3]][i] * hue;
-		}
-		
-		writeGrid(a[1],a[2], 
-			states[a[1]][a[2]].color[0],
-			states[a[1]][a[2]].color[1],
-			states[a[1]][a[2]].color[2]);
-		//outlet(debug,a);
+
+
+		writeValToGrid(a,curState);
 
 		//outlet to coll is 3 values: player, state, y-position
 		var s = new Array(dimY+1);
 		s[0] = a[1];
+
 		for(var i=0; i<dimY; i++) {
 			var curY = (dimY-i-1) % dimY;
 			s[(i*3+1)] = states[a[1]][curY].player;
@@ -232,6 +222,60 @@ function update(){
 		updateLP(ca[1], ca[2], states[a[1]][a[2]].state, states[a[1]][a[2]].player);
 	}
 }//update
+
+function writeValToGrid(a,curState){
+		//generate color
+
+		//x,y,player
+		for(var i=0;i<3;i++) {
+			if(curState>8) curState=8;
+			var hue = curState / 8;
+			hue = Math.pow(hue,0.3);	
+			states[a[1]][a[2]].color[i] = playerColors[a[3]][i] * hue;
+		}
+		
+		writeGrid(a[1],a[2], 
+			states[a[1]][a[2]].color[0],
+			states[a[1]][a[2]].color[1],
+			states[a[1]][a[2]].color[2]);
+		//outlet(debug,a);
+}
+
+function updateColumn(){
+
+	var a = arrayfromargs(arguments); //column number, array of values
+	post("updateCol", a, "\n");
+	var colVals = a.splice(0,2);//player, colNum
+	while(a.length < 1) a.push(0);
+
+	var square = new Array(4);
+	square[0] = "update";
+	 
+
+	for(var i=0;i<dimY;i++){
+		states[colVals[1]][i].state = a[i];
+		states[colVals[1]][i].player = colVals[0];
+		square[1] = colVals[1] ;
+		square[2] = dimY - i -1;
+		square[3] = colVals[0] ;
+		//post(square, "\n");
+		writeValToGrid(square,a[i]);
+	}
+
+	//outlet to coll is 3 values: player, state, y-position
+	var s = new Array(dimY+1);
+	s[0] = colVals[1];
+	//post(colVals,"\n");
+
+	for(var i=0; i<dimY; i++) {
+		var curY = (dimY-i-1) % dimY;
+		s[(i*3+1)] = 1;
+		s[(i*3+2)] = a[i];
+		s[(i*3+3)] = i;
+	}
+	outlet(columnOut, s);
+
+}//updateColumn
 
 //outputs (layer, x, y, r, g)
 function updateLP(x, y, cState, cPlayer){

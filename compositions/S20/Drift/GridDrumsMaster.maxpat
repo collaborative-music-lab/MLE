@@ -465,7 +465,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u123015272"
+					"varname" : "u288015398"
 				}
 
 			}
@@ -2617,21 +2617,21 @@
 					"active" : 					{
 						"SpatialGridCtrl" : 0,
 						"SpatialGridCtrl::MLE.noteEntry" : 0,
-						"SpatialGridCtrl::MLE.noteEntry::u057015233" : 0,
+						"SpatialGridCtrl::MLE.noteEntry::u551015359" : 0,
 						"SpatialGridCtrl::MLE.noteEntry::notes" : 0,
 						"GridDrums[1]" : 0,
-						"GridDrums[1]::u256015234" : 0,
+						"GridDrums[1]::u150015360" : 0,
 						"GridDrums[3]" : 0,
-						"GridDrums[3]::u840015235" : 0,
+						"GridDrums[3]::u986015361" : 0,
 						"GridDrums[2]" : 0,
-						"GridDrums[2]::u003015236" : 0,
+						"GridDrums[2]::u709015362" : 0,
 						"GridDrums[5]" : 0,
-						"GridDrums[5]::u360015237" : 0,
+						"GridDrums[5]::u496015363" : 0,
 						"GridDrums[4]" : 0,
-						"GridDrums[4]::u303015238" : 0,
+						"GridDrums[4]::u271015364" : 0,
 						"GridDrumsAudio::drumGridAudio" : 0,
 						"GridDrums[6]" : 0,
-						"GridDrums[6]::u049015267" : 0
+						"GridDrums[6]::u866015393" : 0
 					}
 ,
 					"autorestore" : "GridDrumsLocal.json",
@@ -2645,7 +2645,7 @@
 						"client_rect" : [ 4, 44, 358, 172 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
-						"storage_rect" : [ 583, 69, 1034, 197 ]
+						"storage_rect" : [ 365, 44, 816, 172 ]
 					}
 ,
 					"text" : "pattrstorage GridDrumsMaster @greedy 1",
@@ -3259,7 +3259,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 228.849995791912079, 277.0, 50.0, 22.0 ],
-									"text" : "1"
+									"text" : "2"
 								}
 
 							}
@@ -4000,7 +4000,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 368.650004208087921, 190.0, 50.0, 22.0 ],
-													"text" : "1"
+													"text" : "2"
 												}
 
 											}
@@ -5048,7 +5048,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 440.0, 163.5, 35.0, 22.0 ],
+					"patching_rect" : [ 443.0, 157.5, 35.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 615.799999594688416, 55.0, 35.0, 22.0 ],
 					"text" : "clear"
@@ -6614,45 +6614,45 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-17::obj-12::obj-40" : [ "tom-decay", "decay", 0 ],
-			"obj-17::obj-12::obj-6" : [ "kick-attack", "attack", 0 ],
-			"obj-17::obj-12::obj-41" : [ "tom-hi", "hi", 0 ],
-			"obj-17::obj-12::obj-5" : [ "kick-decay", "decay", 0 ],
-			"obj-17::obj-12::obj-42" : [ "tom-mid", "mid", 0 ],
 			"obj-20::obj-53" : [ "live.grid[11]", "live.grid[11]", 0 ],
-			"obj-17::obj-12::obj-4" : [ "kick-sweep", "sweep", 0 ],
-			"obj-17::obj-12::obj-43" : [ "tom-low", "low", 0 ],
-			"obj-17::obj-12::obj-3" : [ "kick-tune[1]", "tuning", 0 ],
-			"obj-20::obj-6::obj-46::obj-2" : [ "live.grid[4]", "live.grid", 0 ],
-			"obj-17::obj-12::obj-7" : [ "trig_1", "trig_1", 0 ],
-			"obj-17::obj-12::obj-129" : [ "trig_6[1]", "trig_6", 0 ],
-			"obj-17::obj-143::obj-210::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
-			"obj-17::obj-12::obj-20" : [ "snare-decay", "decay", 0 ],
-			"obj-17::obj-12::obj-31" : [ "clhat-decay", "cl-dec", 0 ],
-			"obj-17::obj-12::obj-21" : [ "snare-snap", "snap", 0 ],
-			"obj-17::obj-12::obj-22" : [ "snare-tune", "tuning", 0 ],
-			"obj-84::obj-52::obj-46::obj-2" : [ "live.grid[32]", "live.grid", 0 ],
-			"obj-17::obj-12::obj-9" : [ "kick-level", "level", 0 ],
-			"obj-17::obj-12::obj-120" : [ "accent", "accent", 0 ],
-			"obj-17::obj-12::obj-128" : [ "trig_7[1]", "trig_7", 0 ],
-			"obj-17::obj-12::obj-12" : [ "trig_2", "trig_2", 0 ],
-			"obj-17::obj-12::obj-23" : [ "trig_3", "trig_3", 0 ],
-			"obj-78::obj-6::obj-46::obj-2" : [ "live.grid[12]", "live.grid", 0 ],
-			"obj-17::obj-12::obj-44" : [ "trig_6", "trig_6", 0 ],
-			"obj-17::obj-12::obj-46" : [ "ad-level", "level", 0 ],
 			"obj-17::obj-12::obj-32" : [ "hat-tone", "tone", 0 ],
-			"obj-17::obj-268::obj-13::obj-210::obj-46::obj-2" : [ "live.grid[3]", "live.grid", 0 ],
-			"obj-84::obj-43::obj-46::obj-2" : [ "live.grid[31]", "live.grid", 0 ],
+			"obj-78::obj-53" : [ "live.grid[13]", "live.grid[11]", 0 ],
 			"obj-17::obj-12::obj-17" : [ "snare-level", "level", 0 ],
 			"obj-17::obj-12::obj-27" : [ "hat-level", "level", 0 ],
 			"obj-17::obj-12::obj-19" : [ "snare-hicut", "hicut", 0 ],
-			"obj-78::obj-53" : [ "live.grid[13]", "live.grid[11]", 0 ],
 			"obj-17::obj-12::obj-30" : [ "ophat-decay", "op-dec", 0 ],
-			"obj-17::obj-12::obj-119" : [ "choke", "choke", 0 ],
-			"obj-17::obj-12::obj-45" : [ "trig_7", "trig_7", 0 ],
+			"obj-84::obj-43::obj-46::obj-2" : [ "live.grid[31]", "live.grid", 0 ],
+			"obj-17::obj-12::obj-6" : [ "kick-attack", "attack", 0 ],
+			"obj-17::obj-12::obj-5" : [ "kick-decay", "decay", 0 ],
 			"obj-17::obj-12::obj-33" : [ "trig_4", "trig_4", 0 ],
 			"obj-17::obj-12::obj-38" : [ "tom-level", "level", 0 ],
+			"obj-17::obj-12::obj-4" : [ "kick-sweep", "sweep", 0 ],
+			"obj-17::obj-268::obj-13::obj-210::obj-46::obj-2" : [ "live.grid[3]", "live.grid", 0 ],
+			"obj-17::obj-12::obj-40" : [ "tom-decay", "decay", 0 ],
+			"obj-17::obj-12::obj-3" : [ "kick-tune[1]", "tuning", 0 ],
+			"obj-17::obj-12::obj-41" : [ "tom-hi", "hi", 0 ],
+			"obj-17::obj-12::obj-7" : [ "trig_1", "trig_1", 0 ],
+			"obj-17::obj-12::obj-128" : [ "trig_7[1]", "trig_7", 0 ],
+			"obj-17::obj-12::obj-46" : [ "ad-level", "level", 0 ],
+			"obj-17::obj-12::obj-42" : [ "tom-mid", "mid", 0 ],
+			"obj-17::obj-12::obj-129" : [ "trig_6[1]", "trig_6", 0 ],
+			"obj-17::obj-12::obj-43" : [ "tom-low", "low", 0 ],
+			"obj-17::obj-12::obj-20" : [ "snare-decay", "decay", 0 ],
+			"obj-17::obj-12::obj-31" : [ "clhat-decay", "cl-dec", 0 ],
+			"obj-17::obj-12::obj-9" : [ "kick-level", "level", 0 ],
+			"obj-17::obj-12::obj-21" : [ "snare-snap", "snap", 0 ],
+			"obj-17::obj-12::obj-119" : [ "choke", "choke", 0 ],
+			"obj-17::obj-12::obj-22" : [ "snare-tune", "tuning", 0 ],
 			"obj-17::obj-12::obj-34" : [ "trig_5", "trig_5", 0 ],
+			"obj-17::obj-143::obj-210::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
+			"obj-84::obj-52::obj-46::obj-2" : [ "live.grid[32]", "live.grid", 0 ],
+			"obj-17::obj-12::obj-45" : [ "trig_7", "trig_7", 0 ],
+			"obj-17::obj-12::obj-44" : [ "trig_6", "trig_6", 0 ],
+			"obj-17::obj-12::obj-120" : [ "accent", "accent", 0 ],
+			"obj-78::obj-6::obj-46::obj-2" : [ "live.grid[12]", "live.grid", 0 ],
+			"obj-17::obj-12::obj-12" : [ "trig_2", "trig_2", 0 ],
+			"obj-17::obj-12::obj-23" : [ "trig_3", "trig_3", 0 ],
+			"obj-20::obj-6::obj-46::obj-2" : [ "live.grid[4]", "live.grid", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -6896,13 +6896,6 @@
 				"name" : "MLE.distort.maxpat",
 				"bootpath" : "/Users/famle/CML/MLE/patchers/sandbox/Carina/MLE FX library",
 				"patcherrelativepath" : "../../../patchers/sandbox/Carina/MLE FX library",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "pan~.maxpat",
-				"bootpath" : "~/Dropbox/_documents/MaxIH/ current/dobrian",
-				"patcherrelativepath" : "../../../../../../ianhattwick/Dropbox/_documents/MaxIH/ current/dobrian",
 				"type" : "JSON",
 				"implicit" : 1
 			}

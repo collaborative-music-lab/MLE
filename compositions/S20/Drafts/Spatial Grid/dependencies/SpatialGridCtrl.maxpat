@@ -39,6 +39,17 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 234.0, 430.547761976718903, 78.0, 22.0 ],
+					"text" : "s LPlocalBus"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-8",
 					"linecount" : 3,
 					"maxclass" : "message",
@@ -72,7 +83,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 479.0, 460.0, 50.0, 49.0 ],
-					"text" : "1 update 0 6 1"
+					"text" : "2 update 5 0 2"
 				}
 
 			}
@@ -1987,7 +1998,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 316.499973177909851, 423.666666507720947, 138.0, 22.0 ],
+					"patching_rect" : [ 316.499973177909851, 444.047761976718903, 138.0, 22.0 ],
 					"text" : "MLE.UDPsend gridInput"
 				}
 
@@ -2593,16 +2604,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 1 ],
-					"order" : 0,
+					"destination" : [ "obj-3", 0 ],
+					"order" : 1,
 					"source" : [ "obj-32", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-72", 0 ],
-					"order" : 1,
+					"destination" : [ "obj-4", 1 ],
+					"order" : 0,
 					"source" : [ "obj-32", 0 ]
 				}
 
