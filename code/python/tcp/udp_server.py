@@ -16,3 +16,14 @@ s.bind(server_address)
 # s.connect(("8.8.8.8", 80))
 # print(s.getsockname()[0])
 # s.close()
+
+while True:
+    print ('\nwaiting to receive message')
+    data, address = sock.recvfrom(4096)
+    
+    print ('received %s bytes from %s' % (len(data), address) )
+    print (data)
+    
+    if data:
+        sent = sock.sendto(data, address)
+        ('print >>sys.stderr, )''sent %s bytes back to %s' % (sent, address))<
