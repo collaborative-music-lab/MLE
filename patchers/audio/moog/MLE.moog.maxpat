@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 856.0, 331.0 ],
+		"rect" : [ 34.0, 79.0, 1037.0, 790.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 8.0,
@@ -68,7 +68,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 93.333336174488068, 1172.666699767112732, 50.0, 17.0 ],
-					"text" : "65 90"
+					"text" : "43 70"
 				}
 
 			}
@@ -1015,7 +1015,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 630.0, 653.0, 50.0, 17.0 ],
-					"text" : "glide 5.58"
+					"text" : "glide 0."
 				}
 
 			}
@@ -2485,8 +2485,8 @@
 					"degrees" : 300,
 					"floatoutput" : 1,
 					"id" : "obj-103",
+					"jspainterfile" : "bipolar-dial-override.js",
 					"maxclass" : "dial",
-					"mode" : 2,
 					"needlecolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ],
 					"numinlets" : 1,
 					"numoutlets" : 1,
@@ -2497,6 +2497,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 216.583328247070312, 186.745849609375, 43.499996185302734, 43.499996185302734 ],
 					"size" : 1.0,
+					"thickness" : 125.0,
 					"varname" : "osc3duty"
 				}
 
@@ -2724,8 +2725,8 @@
 					"degrees" : 300,
 					"floatoutput" : 1,
 					"id" : "obj-88",
+					"jspainterfile" : "bipolar-dial-override.js",
 					"maxclass" : "dial",
-					"mode" : 2,
 					"needlecolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ],
 					"numinlets" : 1,
 					"numoutlets" : 1,
@@ -2736,6 +2737,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 216.583328247070312, 109.425025939941406, 43.499996185302734, 43.499996185302734 ],
 					"size" : 1.0,
+					"thickness" : 125.0,
 					"varname" : "osc2duty"
 				}
 
@@ -2991,44 +2993,44 @@
 					"patching_rect" : [ 1047.166748046875, 464.833343505859375, 56.0, 17.0 ],
 					"restore" : 					{
 						"AM2-1" : [ 0.0 ],
-						"FM3-1" : [ 0.829384021977845 ],
-						"VCAgate" : [ 1 ],
+						"FM3-1" : [ 0.0 ],
+						"VCAgate" : [ 0 ],
 						"amoLFO" : [ 0.0 ],
-						"ampADSR" : [ 0.0, 0.242942526936531, 0.302584648132324, 0.326441526412964 ],
-						"filterADSR" : [ 0.0, 0.297018140554428, 0.130020156502724, 0.201590716838837 ],
-						"filterADSRlevel" : [ 2.780487804878048 ],
-						"filterFreq" : [ 0.517985748401052 ],
-						"filterKey" : [ 2.657960437872096 ],
-						"filterLFO" : [ 0.0 ],
-						"filterRes" : [ 0.68421052631579 ],
-						"glide" : [ 2.362204724409449 ],
-						"lfoFreq" : [ 0.170631140579664 ],
-						"lfoShape" : [ 0.578947368421053 ],
-						"masterVolume" : [ 1.0 ],
-						"mono" : [ 1 ],
-						"noiseColor" : [ 0.0 ],
-						"noiseGain" : [ 0.0 ],
-						"osc1_octave" : [ 2 ],
-						"osc1_waveform" : [ 0 ],
-						"osc1duty" : [ 0.32183910868319 ],
+						"ampADSR" : [ 0.047316249459982, 0.247713848948479, 0.448111444711685, 0.114115446805954 ],
+						"filterADSR" : [ 0.070377983152866, 0.518886864185333, 1.0, 0.156262665987015 ],
+						"filterADSRlevel" : [ 1.024390243902439 ],
+						"filterFreq" : [ 2.340527681482843 ],
+						"filterKey" : [ 0.0 ],
+						"filterLFO" : [ 1.0 ],
+						"filterRes" : [ 0.701754385964912 ],
+						"glide" : [ 0.0 ],
+						"lfoFreq" : [ 0.388463869982581 ],
+						"lfoShape" : [ 0.666666666666667 ],
+						"masterVolume" : [ 0.403508771929823 ],
+						"mono" : [ 0 ],
+						"noiseColor" : [ 0.126316276404232 ],
+						"noiseGain" : [ 0.021052712734039 ],
+						"osc1_octave" : [ 1 ],
+						"osc1_waveform" : [ 3 ],
+						"osc1duty" : [ 0.626134299254459 ],
 						"osc1gain" : [ 1.0 ],
-						"osc2_waveform" : [ 0 ],
-						"osc2detune" : [ 0.0 ],
-						"osc2duty" : [ 0.287356259344365 ],
-						"osc2gain" : [ 0.342042618976917 ],
-						"osc2octave" : [ 1 ],
-						"osc3-waveform" : [ 0 ],
-						"osc3detune" : [ 0.15 ],
-						"osc3duty" : [ 0.655172383553725 ],
+						"osc2_waveform" : [ 3 ],
+						"osc2detune" : [ 0.116279056013352 ],
+						"osc2duty" : [ 0.381730179473975 ],
+						"osc2gain" : [ 0.327790843186212 ],
+						"osc2octave" : [ 2 ],
+						"osc3-waveform" : [ 2 ],
+						"osc3detune" : [ 0.121447132343563 ],
+						"osc3duty" : [ 0.390804631972445 ],
 						"osc3gain" : [ 0.0 ],
 						"osc3octave" : [ 1 ],
 						"pitchLFO" : [ 0.0 ],
-						"pwmLFO" : [ 0.118110239768148 ],
-						"slop" : [ 0.068234323974444 ]
+						"pwmLFO" : [ 0.637795294748 ],
+						"slop" : [ 0.451765176254815 ]
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u906006665"
+					"varname" : "u489010804"
 				}
 
 			}
@@ -4249,7 +4251,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 7.100002765655518, 106.175018310546875, 18.0, 50.0 ],
 					"size" : 3,
-					"value" : 1,
+					"value" : 2,
 					"varname" : "osc2octave"
 				}
 
@@ -4375,8 +4377,8 @@
 					"degrees" : 300,
 					"floatoutput" : 1,
 					"id" : "obj-26",
+					"jspainterfile" : "bipolar-dial-override.js",
 					"maxclass" : "dial",
-					"mode" : 2,
 					"needlecolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ],
 					"numinlets" : 1,
 					"numoutlets" : 1,
@@ -4387,6 +4389,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 216.583328247070312, 52.016632080078125, 43.499996185302734, 43.499996185302734 ],
 					"size" : 1.0,
+					"thickness" : 125.0,
 					"varname" : "osc1duty"
 				}
 
@@ -4445,7 +4448,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 7.099998950958252, 45.266632080078125, 18.0, 50.0 ],
 					"size" : 3,
-					"value" : 2,
+					"value" : 1,
 					"varname" : "osc1_octave"
 				}
 
@@ -6022,8 +6025,8 @@
 				"name" : "helpfile_label-1",
 				"default" : 				{
 					"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
-					"fontname" : [ "Arial" ],
-					"fontsize" : [ 13.0 ]
+					"fontsize" : [ 13.0 ],
+					"fontname" : [ "Arial" ]
 				}
 ,
 				"parentstyle" : "",
@@ -6205,8 +6208,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 				}
 ,
 				"parentstyle" : "",
