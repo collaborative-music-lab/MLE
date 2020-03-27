@@ -39,13 +39,24 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-22",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 398.0, 25.0, 370.0, 20.0 ],
+					"text" : "https://github.com/luciopaiva/socketio-with-express"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-15",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 46.0, 532.0, 50.0, 22.0 ],
-					"text" : "xy 21"
+					"text" : "xy 84"
 				}
 
 			}
@@ -207,23 +218,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.886274509803922, 0.470588235294118, 0.203921568627451, 1.0 ],
-					"fontsize" : 18.0,
-					"id" : "obj-10",
-					"maxclass" : "textbutton",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 200.0, 318.0, 30.0, 30.0 ],
-					"rounded" : 30.0,
-					"text" : "1",
-					"textoncolor" : [ 0.007843137254902, 0.015686274509804, 0.015686274509804, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-12",
 					"linecount" : 2,
 					"maxclass" : "message",
@@ -318,7 +312,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 177.0, 397.0, 400.0, 220.0 ],
+					"patching_rect" : [ 177.0, 387.0, 422.0, 495.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -354,14 +348,16 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 32.0, 341.0, 148.0, 22.0 ],
+					"patching_rect" : [ 32.0, 341.0, 207.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
-					"text" : "node.script socketClient.js"
+					"text" : "node.script socket_client_express2.js"
 				}
 
 			}
@@ -524,7 +520,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "socketClient.js",
+				"name" : "socket_client_express2.js",
 				"bootpath" : "/Users/famle/CML/MLE/patchers/sandbox/nodejs/tcp/socketTCPclient",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",

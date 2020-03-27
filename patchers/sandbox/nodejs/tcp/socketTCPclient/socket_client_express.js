@@ -7,7 +7,7 @@ const Max = require('max-api');
 //     ioClient = io.connect("https://agile-sea-49160.herokuapp.com:8000");
 
 var io = require("socket.io-client"),
-    ioClient = io.connect("127.0.0.1:8000");
+    ioClient = io.connect("127.0.0.1:3000");
 
 //https://protected-dusk-19310.herokuapp.com
 
