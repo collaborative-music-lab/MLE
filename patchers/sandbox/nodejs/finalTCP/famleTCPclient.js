@@ -9,7 +9,7 @@ const maxApi = require("max-api");
 
 let uniqueName = "FriendName";
 let friend = {
-	x: 0, y: 0, name: "FriendName", active: false
+	name: "FriendName", list:[]
 };
 
 let friends = {};
@@ -48,9 +48,20 @@ socket.on("connect", () => {
 
 socket.on("friend-data", (msg) => {
 	temp = msg;
+
+	maxApi.outlet(msg.name,...Object.values(msg.list));
+
 	for(var key in msg){
-		val = msg[key];
-		maxApi.outlet(msg.name,key,...val);
+		temp2 = temp[key];
+
+		val = new Array();
+		val.push();
+
+		//maxApi.post(["post",msg.name,key,Object.values(temp2)]);
+		//maxApi.outlet([msg.name,key,...Object.values(temp2)]);
+		
+		//maxApi.outlet(friend.name,...temp);
+
 	}
 });
 

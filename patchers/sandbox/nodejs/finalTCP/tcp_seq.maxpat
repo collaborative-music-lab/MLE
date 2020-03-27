@@ -39,6 +39,43 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-9",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 4.0, 357.0, 103.0, 35.0 ],
+					"text" : "0 1 7 1 3 1 5 1 4 1 2 1 3 1 4 1 5"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 120.5, 300.0, 59.0, 22.0 ],
+					"text" : "route seq"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 125.0, 271.0, 64.0, 22.0 ],
+					"text" : "route Fred"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-39",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -56,19 +93,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 151.0, 671.0, 75.0, 22.0 ],
+					"patching_rect" : [ 126.0, 637.0, 75.0, 22.0 ],
 					"text" : "prepend seq"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-34",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 671.0, 149.0, 100.0, 22.0 ]
 				}
 
 			}
@@ -79,7 +105,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 151.0, 707.0, 101.0, 22.0 ],
+					"patching_rect" : [ 126.0, 673.0, 101.0, 22.0 ],
 					"text" : "prepend sendList"
 				}
 
@@ -90,7 +116,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 151.0, 736.0, 69.0, 22.0 ],
+					"patching_rect" : [ 126.0, 702.0, 69.0, 22.0 ],
 					"text" : "s to_socket"
 				}
 
@@ -103,7 +129,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 19.0, 133.0, 24.0, 24.0 ]
+					"patching_rect" : [ -22.0, 115.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -114,7 +140,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 19.0, 169.0, 32.0, 22.0 ],
+					"patching_rect" : [ -22.0, 151.0, 57.0, 22.0 ],
 					"text" : "gate"
 				}
 
@@ -134,7 +160,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ -12.0, 476.0, 195.0, 188.0 ],
+					"patching_rect" : [ -50.0, 431.0, 195.0, 188.0 ],
 					"varname" : "MLE.seq",
 					"viewvisibility" : 1
 				}
@@ -158,7 +184,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 16.0, 201.0, 32.0, 22.0 ],
+					"patching_rect" : [ -22.0, 185.0, 32.0, 22.0 ],
 					"text" : "print"
 				}
 
@@ -208,7 +234,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 353.0, 58.0, 162.0, 35.0 ],
-					"text" : "sendList seq 0 1 7 1 3 1 2 1 5 1 5 1 5 1 4 1 0"
+					"text" : "sendList seq 0 1 7 1 3 1 5 1 4 1 2 1 3 1 4 1 5"
 				}
 
 			}
@@ -227,7 +253,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 217.0, 182.0, 405.0, 341.0 ],
+					"patching_rect" : [ 353.0, 235.0, 492.0, 370.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -327,6 +353,15 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-27", 1 ],
+					"order" : 1,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"order" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -419,6 +454,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
 					"source" : [ "obj-33", 0 ]
 				}
@@ -454,6 +496,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-26", 2 ],
+					"order" : 0,
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 1 ],
+					"order" : 1,
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-83", 0 ]
 				}
@@ -470,8 +528,8 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "famleTCPclient.js",
-				"bootpath" : "/Users/famle/CML/MLE/code/node",
-				"patcherrelativepath" : "../../../../code/node",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/sandbox/nodejs/finalTCP",
+				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
