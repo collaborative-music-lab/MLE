@@ -50,24 +50,12 @@ socket.on("friend-data", (msg) => {
 	temp = msg;
 
 	maxApi.outlet(msg.name,...Object.values(msg.list));
-
-	for(var key in msg){
-		temp2 = temp[key];
-
-		val = new Array();
-		val.push();
-
-		//maxApi.post(["post",msg.name,key,Object.values(temp2)]);
-		//maxApi.outlet([msg.name,key,...Object.values(temp2)]);
-		
-		//maxApi.outlet(friend.name,...temp);
-
-	}
 });
 
+//list of connected friends
 socket.on("friend-list", (msg) => {
 	friendfilter(msg);
-	maxApi.outlet("friend-data", friends);
+	maxApi.outlet("friend-data", ...Object.values(friends));
 });
 
 socket.on("disconnect", () => {});
@@ -93,7 +81,7 @@ maxApi.addHandlers({
 		temp = args;
 		friend.list = temp;
 		sendFriend();
-		maxApi.outlet(friend.name,...temp);
+		//maxApi.outlet(friend.name,...temp);
 	},
 	myName: (val) => {
 		friend.name = val;
