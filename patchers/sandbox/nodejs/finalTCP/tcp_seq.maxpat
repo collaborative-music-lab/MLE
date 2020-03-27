@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-39",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 193.0, 74.0, 98.0, 22.0 ],
+					"text" : "script npm install"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-37",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -196,7 +208,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 353.0, 58.0, 162.0, 35.0 ],
-					"text" : "sendList 0 1 7 1 3 1 5 1 5 1 5 1 5 1 4 1 0"
+					"text" : "sendList seq 0 1 7 1 3 1 2 1 5 1 5 1 5 1 4 1 0"
 				}
 
 			}
@@ -298,7 +310,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 16.0, 102.0, 167.0, 22.0 ],
+					"patching_rect" : [ 16.0, 102.0, 164.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
@@ -307,7 +319,7 @@
 						"watch" : 0
 					}
 ,
-					"text" : "node.script drawing_friends.js"
+					"text" : "node.script famleTCPclient.js"
 				}
 
 			}
@@ -421,6 +433,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-39", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
 					"source" : [ "obj-4", 1 ]
 				}
@@ -450,9 +469,9 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "drawing_friends.js",
-				"bootpath" : "/Users/famle/CML/socket-drawings",
-				"patcherrelativepath" : "../../../../../socket-drawings",
+				"name" : "famleTCPclient.js",
+				"bootpath" : "/Users/famle/CML/MLE/code/node",
+				"patcherrelativepath" : "../../../../code/node",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
