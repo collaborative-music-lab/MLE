@@ -39,12 +39,25 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"comment" : "output number (0-7)",
+					"id" : "obj-3",
+					"index" : 2,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 429.0, 139.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-10",
 					"linecount" : 8,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 21.0, 18.0, 150.0, 114.0 ],
+					"patching_rect" : [ 21.0, 18.0, 151.0, 114.0 ],
 					"text" : "MLE.output\n\nArguments:\n\n1. output channel (int from 0-15, default 0)\n2. output gain (float 0-1, def ault 0.5)"
 				}
 
@@ -56,7 +69,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 334.0, 156.0, 77.0, 22.0 ],
+					"patching_rect" : [ 334.0, 145.0, 77.0, 22.0 ],
 					"text" : "loadmess #1"
 				}
 
@@ -68,7 +81,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 334.0, 194.0, 135.0, 22.0 ],
+					"patching_rect" : [ 334.0, 234.0, 135.0, 22.0 ],
 					"text" : "sprintf set MLEaudio%d"
 				}
 
@@ -116,7 +129,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 202.0, 141.0, 30.0, 30.0 ]
 				}
 
@@ -133,6 +146,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-3", 0 ]
 				}
 
 			}

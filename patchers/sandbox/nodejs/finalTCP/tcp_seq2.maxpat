@@ -55,7 +55,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -103,18 +103,6 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 65.5, 134.0, 60.0, 22.0 ],
 									"text" : "zl.change"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-37",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 340.0, 75.0, 22.0 ],
-									"text" : "prepend seq"
 								}
 
 							}
@@ -197,16 +185,16 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-14", 0 ],
-									"order" : 0,
+									"destination" : [ "obj-13", 0 ],
+									"order" : 1,
 									"source" : [ "obj-35", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-37", 0 ],
-									"order" : 1,
+									"destination" : [ "obj-14", 0 ],
+									"order" : 0,
 									"source" : [ "obj-35", 0 ]
 								}
 
@@ -222,13 +210,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-35", 1 ],
 									"source" : [ "obj-36", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-13", 0 ],
-									"source" : [ "obj-37", 0 ]
 								}
 
 							}
@@ -3995,7 +3976,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 394.0, 608.0, 50.0, 76.0 ],
-					"text" : "0 0 5 1 6 1 7 1 1 1 1 0 3 1 3 1 3"
+					"text" : "0 1 7 1 7 1 6 0 6 0 5 1 2 0 3 0 6"
 				}
 
 			}
@@ -6159,10 +6140,10 @@
 				"box" : 				{
 					"id" : "obj-30",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 316.25, 494.0, 106.0, 22.0 ],
-					"text" : "s MLE_TCP_send"
+					"patching_rect" : [ 316.25, 494.0, 129.0, 22.0 ],
+					"text" : "MLE.TCPsend seq Ian"
 				}
 
 			}
@@ -7168,6 +7149,13 @@
 				"name" : "init.maxpat",
 				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
 				"patcherrelativepath" : "../../../utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.TCPsend.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/network",
+				"patcherrelativepath" : "../../../network",
 				"type" : "JSON",
 				"implicit" : 1
 			}
