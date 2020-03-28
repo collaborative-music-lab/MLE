@@ -17109,10 +17109,11 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1025.0, 467.5, 52.0, 22.0 ],
+					"patching_rect" : [ 1025.0, 467.5, 103.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 6.0, 144.0, 52.0, 22.0 ],
-					"text" : "MLE.init"
+					"presentation_linecount" : 3,
+					"presentation_rect" : [ 6.0, 144.0, 52.0, 49.0 ],
+					"text" : "MLE.initTelematic"
 				}
 
 			}
@@ -18339,10 +18340,17 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "MLE.init.maxpat",
+				"name" : "MLE.initTelematic.maxpat",
 				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
 				"patcherrelativepath" : "./patchers/utilities",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLEdata.txt",
+				"bootpath" : "~/Documents/Max 8/Library",
+				"patcherrelativepath" : "../../../ianhattwick/Documents/Max 8/Library",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
