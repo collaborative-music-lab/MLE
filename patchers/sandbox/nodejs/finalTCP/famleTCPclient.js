@@ -55,7 +55,11 @@ socket.on("friend-data", (msg) => {
 //list of connected friends
 socket.on("friend-list", (msg) => {
 	friendfilter(msg);
-	maxApi.outlet("friend-data", ...Object.values(friends));
+	val = [];
+	for(key in friends){
+		val.push(key.name);
+	}
+	maxApi.post("friendlist", Object.values(val));
 });
 
 socket.on("disconnect", () => {});
