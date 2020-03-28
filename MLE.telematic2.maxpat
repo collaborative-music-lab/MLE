@@ -16916,7 +16916,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 638.0, 486.0, 50.0, 22.0 ],
-					"text" : "42"
+					"text" : "45"
 				}
 
 			}
@@ -17049,7 +17049,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 1317.0, 591.0, 56.0, 22.0 ],
 					"text" : "autopattr",
-					"varname" : "u550001470"
+					"varname" : "u815000574"
 				}
 
 			}
