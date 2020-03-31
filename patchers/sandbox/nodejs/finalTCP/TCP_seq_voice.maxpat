@@ -104,8 +104,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 514.0, 766.0, 52.0, 62.0 ],
-					"text" : "store Ian 4.4 191 0.25"
+					"patching_rect" : [ 512.0, 749.0, 50.0, 62.0 ],
+					"text" : "store Ian 4. 100 0. 2"
 				}
 
 			}
@@ -136,26 +136,22 @@
 , 			{
 				"box" : 				{
 					"coll_data" : 					{
-						"count" : 5,
+						"count" : 4,
 						"data" : [ 							{
 								"key" : "player",
-								"value" : [ "filter", "decay", "volume" ]
-							}
-, 							{
-								"key" : "Ian",
-								"value" : [ 4.4, 191, 0.25 ]
-							}
-, 							{
-								"key" : "ijc",
-								"value" : [ 3, 1500, 0.3 ]
+								"value" : [ "filter", "decay", "volume", "subdivide" ]
 							}
 , 							{
 								"key" : 4,
-								"value" : [ 500, 0.5 ]
+								"value" : [ 100, 0, 2 ]
 							}
 , 							{
-								"key" : 3,
-								"value" : [ 1500, 0.3 ]
+								"key" : "ijc",
+								"value" : [ 3.23, 131, 0, 2 ]
+							}
+, 							{
+								"key" : "Ian",
+								"value" : [ 4.0, 100, 0.0, 2 ]
 							}
  ]
 					}
@@ -165,13 +161,13 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 309.0, 776.0, 189.0, 22.0 ],
+					"patching_rect" : [ 309.0, 776.0, 126.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 1,
 						"precision" : 6
 					}
 ,
-					"text" : "coll TCP_seq_params @embed 1"
+					"text" : "coll TCP_seq_params"
 				}
 
 			}
@@ -194,8 +190,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "bang" ],
-					"patching_rect" : [ 40.0, 633.0, 54.0, 22.0 ],
-					"text" : "line~ 0.5"
+					"patching_rect" : [ 40.0, 633.0, 48.0, 22.0 ],
+					"text" : "line~ 0."
 				}
 
 			}
@@ -230,7 +226,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 314.0, 125.0, 202.0, 22.0 ],
+					"patching_rect" : [ 351.0, 121.0, 202.0, 22.0 ],
 					"text" : "0 1 2 1 5 0 4 1 3 0 3 0 2 1 2 0 2"
 				}
 
@@ -302,10 +298,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 245.00000011920929, 130.0, 28.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "in 2"
 				}
 
@@ -318,10 +310,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 61.25, 22.0, 28.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "in 1"
 				}
 
@@ -1140,7 +1128,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 182.333338856697083, 513.66668713092804, 50.0, 22.0 ],
-					"text" : "69."
+					"text" : "60."
 				}
 
 			}
