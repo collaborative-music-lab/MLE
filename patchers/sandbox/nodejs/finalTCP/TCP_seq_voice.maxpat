@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 676.0, 84.0, 1047.0, 878.0 ],
+		"rect" : [ 599.0, 84.0, 1047.0, 878.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-159",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 14.5, 187.0, 169.0, 22.0 ],
+					"text" : "MLE.TCPreceive seq_params"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-39",
 					"linecount" : 3,
 					"maxclass" : "message",
@@ -46,7 +58,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 584.0, 771.0, 50.0, 49.0 ],
-					"text" : "store Ian 4 100 0.5"
+					"text" : "store Ian 14. 100 0.5"
 				}
 
 			}
@@ -77,10 +89,14 @@
 , 			{
 				"box" : 				{
 					"coll_data" : 					{
-						"count" : 1,
+						"count" : 2,
 						"data" : [ 							{
+								"key" : "player",
+								"value" : [ "filter", "decay", "volume" ]
+							}
+, 							{
 								"key" : "Ian",
-								"value" : [ 4, 100, 0.5 ]
+								"value" : [ 14.0, 100, 0.5 ]
 							}
  ]
 					}
@@ -1065,7 +1081,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 182.333338856697083, 513.66668713092804, 50.0, 22.0 ],
-					"text" : "67."
+					"text" : "71."
 				}
 
 			}
@@ -1500,6 +1516,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-159", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-26", 2 ],
 					"source" : [ "obj-16", 0 ]
 				}
@@ -1516,6 +1539,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-40", 0 ],
 					"source" : [ "obj-16", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-159", 0 ],
+					"order" : 3,
+					"source" : [ "obj-17", 0 ]
 				}
 
 			}
