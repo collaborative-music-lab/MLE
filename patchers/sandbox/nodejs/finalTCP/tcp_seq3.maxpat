@@ -198,10 +198,22 @@
 , 			{
 				"box" : 				{
 					"coll_data" : 					{
-						"count" : 1,
+						"count" : 4,
 						"data" : [ 							{
 								"key" : "player",
 								"value" : [ "filter", "decay", "volume", "subdivide" ]
+							}
+, 							{
+								"key" : "ijc",
+								"value" : [ 0.671, 158, 0.5, 2 ]
+							}
+, 							{
+								"key" : 4,
+								"value" : [ 158, 0.5, 2 ]
+							}
+, 							{
+								"key" : "Ian",
+								"value" : [ 4.0, 200, 0.2, 2 ]
 							}
  ]
 					}
@@ -238,7 +250,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 282.0, 27.0, 266.0, 169.0 ],
 					"rowhead" : 1,
-					"rows" : 1,
+					"rows" : 4,
 					"vscroll" : 0
 				}
 
@@ -807,7 +819,7 @@
 , 							{
 								"box" : 								{
 									"coll_data" : 									{
-										"count" : 7,
+										"count" : 8,
 										"data" : [ 											{
 												"key" : 1,
 												"value" : [ "Ian", 0, 5 ]
@@ -835,6 +847,10 @@
 , 											{
 												"key" : 7,
 												"value" : [ "richard", 6, 5 ]
+											}
+, 											{
+												"key" : 8,
+												"value" : [ "none" ]
 											}
  ]
 									}
