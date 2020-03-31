@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -117,8 +117,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 102.0, 160.0, 84.0, 22.0 ],
-					"text" : "initS global #1"
+					"patching_rect" : [ 102.0, 160.0, 101.0, 22.0 ],
+					"text" : "initS global #2"
 				}
 
 			}
@@ -129,8 +129,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 131.5, 362.0, 59.0, 22.0 ],
-					"text" : "route #2"
+					"patching_rect" : [ 131.5, 362.0, 56.0, 22.0 ],
+					"text" : "route #1"
 				}
 
 			}

@@ -953,7 +953,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 182.333338856697083, 513.66668713092804, 50.0, 22.0 ],
-					"text" : "72."
+					"text" : "67."
 				}
 
 			}
@@ -1165,7 +1165,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 285.0, 78.0, 137.0, 22.0 ],
-					"text" : "MLE.TCPreceive ijc seq"
+					"text" : "MLE.TCPreceive seq ijc"
 				}
 
 			}
