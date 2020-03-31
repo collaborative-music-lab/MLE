@@ -39,6 +39,51 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-26",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 864.0, 879.0, 113.0, 22.0 ],
+					"text" : "MLE.TCPsend chat"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 864.0, 799.0, 125.0, 22.0 ],
+					"text" : "MLE.TCPreceive chat"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-10",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "MLE.chatTelematic.maxpat",
+					"numinlets" : 4,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 864.0, 830.0, 128.0, 128.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 17.0, 213.0, 249.0, 428.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-6",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -164,7 +209,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 612.0, 695.0, 47.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 154.0, 448.666671991348267, 47.0, 20.0 ],
+					"presentation_rect" : [ 1013.0, 5.000009775161743, 47.0, 20.0 ],
 					"text" : "volume"
 				}
 
@@ -177,7 +222,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 549.0, 695.0, 41.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 91.0, 448.666671991348267, 41.0, 20.0 ],
+					"presentation_rect" : [ 950.0, 5.000009775161743, 41.0, 20.0 ],
 					"text" : "decay"
 				}
 
@@ -190,7 +235,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 492.0, 695.0, 31.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 34.0, 448.666671991348267, 31.0, 20.0 ],
+					"presentation_rect" : [ 893.0, 5.000009775161743, 31.0, 20.0 ],
 					"text" : "filter"
 				}
 
@@ -210,10 +255,18 @@
 , 			{
 				"box" : 				{
 					"coll_data" : 					{
-						"count" : 1,
+						"count" : 3,
 						"data" : [ 							{
 								"key" : "player",
 								"value" : [ "filter", "decay", "volume", "subdivide" ]
+							}
+, 							{
+								"key" : "ijc",
+								"value" : [ 1.47, 260, 0, 4 ]
+							}
+, 							{
+								"key" : "Ian",
+								"value" : [ 1.5, 800, 0.4, 16 ]
 							}
  ]
 					}
@@ -237,9 +290,10 @@
 				"box" : 				{
 					"colhead" : 1,
 					"cols" : 5,
+					"colwidth" : 50,
 					"fontface" : 0,
 					"fontname" : "Arial",
-					"fontsize" : 12.0,
+					"fontsize" : 10.0,
 					"hscroll" : 0,
 					"id" : "obj-140",
 					"maxclass" : "jit.cellblock",
@@ -248,9 +302,9 @@
 					"outlettype" : [ "list", "", "", "" ],
 					"patching_rect" : [ 1089.0, 41.0, 392.0, 202.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 282.0, 27.0, 266.0, 169.0 ],
+					"presentation_rect" : [ 876.0, 56.333337783813477, 251.0, 202.0 ],
 					"rowhead" : 1,
-					"rows" : 1,
+					"rows" : 3,
 					"vscroll" : 0
 				}
 
@@ -292,7 +346,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 611.0, 717.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 153.0, 470.666671991348267, 50.0, 22.0 ]
+					"presentation_rect" : [ 1012.0, 27.000009775161743, 50.0, 22.0 ]
 				}
 
 			}
@@ -307,7 +361,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 552.0, 717.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 94.0, 470.666671991348267, 50.0, 22.0 ]
+					"presentation_rect" : [ 953.0, 27.000009775161743, 50.0, 22.0 ]
 				}
 
 			}
@@ -324,7 +378,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 492.0, 717.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 34.0, 470.666671991348267, 50.0, 22.0 ]
+					"presentation_rect" : [ 893.0, 27.000009775161743, 50.0, 22.0 ]
 				}
 
 			}
@@ -1627,7 +1681,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 400.333332359790802, 301.33333158493042, 193.333335280418396, 186.66666841506958 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 29.333332359790802, 235.333337783813477, 192.333335280418396, 187.66666841506958 ],
+					"presentation_rect" : [ 289.333332359790802, 17.333337783813477, 192.333335280418396, 187.66666841506958 ],
 					"varname" : "MLE.seq",
 					"viewvisibility" : 1
 				}
@@ -2355,7 +2409,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 392.0, 544.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 17.0, 226.0, 219.0, 212.0 ],
+					"presentation_rect" : [ 277.0, 8.0, 219.0, 212.0 ],
 					"proportion" : 0.5
 				}
 
@@ -2365,6 +2419,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-26", 0 ],
+					"source" : [ "obj-10", 0 ]
 				}
 
 			}
@@ -2466,6 +2527,13 @@
 					"destination" : [ "obj-150", 0 ],
 					"order" : 0,
 					"source" : [ "obj-118", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"source" : [ "obj-12", 0 ]
 				}
 
 			}
@@ -3032,6 +3100,13 @@
 			}
 , 			{
 				"name" : "MLE.TCPreceive.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/network",
+				"patcherrelativepath" : "../../../network",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.chatTelematic.maxpat",
 				"bootpath" : "/Users/famle/CML/MLE/patchers/network",
 				"patcherrelativepath" : "../../../network",
 				"type" : "JSON",
