@@ -44,7 +44,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 14.5, 187.0, 169.0, 22.0 ],
+					"patching_rect" : [ 217.5, 12.0, 169.0, 22.0 ],
 					"text" : "MLE.TCPreceive seq_params"
 				}
 
@@ -52,13 +52,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-39",
-					"linecount" : 3,
+					"linecount" : 4,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 584.0, 771.0, 50.0, 49.0 ],
-					"text" : "store Ian 14. 100 0.5"
+					"patching_rect" : [ 514.0, 766.0, 50.0, 62.0 ],
+					"text" : "store ijc params 8.2 174 0.5"
 				}
 
 			}
@@ -89,14 +89,18 @@
 , 			{
 				"box" : 				{
 					"coll_data" : 					{
-						"count" : 2,
+						"count" : 3,
 						"data" : [ 							{
 								"key" : "player",
 								"value" : [ "filter", "decay", "volume" ]
 							}
 , 							{
 								"key" : "Ian",
-								"value" : [ 14.0, 100, 0.5 ]
+								"value" : [ 29.600000000000001, 298, 0.47 ]
+							}
+, 							{
+								"key" : "ijc",
+								"value" : [ "params", 8.200000000000001, 174, 0.5 ]
 							}
  ]
 					}
@@ -172,7 +176,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 314.0, 125.0, 202.0, 22.0 ],
-					"text" : "0 1 4 1 4 1 5 1 5 1 4 1 3 1 3 1 4"
+					"text" : "0 1 2 1 5 0 4 1 3 0 3 0 2 1 2 0 2"
 				}
 
 			}
@@ -243,10 +247,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 245.00000011920929, 130.0, 28.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "in 2"
 				}
 
@@ -259,10 +259,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 61.25, 22.0, 28.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "in 1"
 				}
 
@@ -335,7 +331,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 526.0, 311.0, 307.0, 22.0 ],
-					"text" : "Ian 0 5"
+					"text" : "ijc 1 4"
 				}
 
 			}
@@ -1081,7 +1077,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 182.333338856697083, 513.66668713092804, 50.0, 22.0 ],
-					"text" : "71."
+					"text" : "65."
 				}
 
 			}
@@ -1516,7 +1512,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
+					"destination" : [ "obj-10", 0 ],
 					"source" : [ "obj-159", 0 ]
 				}
 
