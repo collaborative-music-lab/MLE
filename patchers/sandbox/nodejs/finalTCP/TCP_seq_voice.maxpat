@@ -139,7 +139,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 463.0, 27.0, 50.0, 22.0 ]
+					"patching_rect" : [ 463.0, 27.0, 102.0, 22.0 ],
+					"text" : "params 4 100 0 2"
 				}
 
 			}
@@ -164,7 +165,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 512.0, 749.0, 52.0, 62.0 ],
-					"text" : "store Ian 1.5 324 0.4 4"
+					"text" : "store Ian 6.9 199 0.53 2"
 				}
 
 			}
@@ -202,11 +203,11 @@
 							}
 , 							{
 								"key" : "ijc",
-								"value" : [ 3, 100, 0.2, 2 ]
+								"value" : [ 4, 100, 0.5, 2 ]
 							}
 , 							{
 								"key" : "Ian",
-								"value" : [ 1.5, 324, 0.4, 4 ]
+								"value" : [ 6.9, 199, 0.53, 2 ]
 							}
  ]
 					}
@@ -353,6 +354,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 245.00000011920929, 130.0, 28.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "in 2"
 				}
 
@@ -365,6 +370,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 61.25, 22.0, 28.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "in 1"
 				}
 
@@ -491,23 +500,23 @@
 							}
 , 							{
 								"key" : 3,
-								"value" : [ "anita", 2, 3 ]
+								"value" : [ "Anita", 2, 3 ]
 							}
 , 							{
 								"key" : 4,
-								"value" : [ "jerry", 3, 5 ]
+								"value" : [ "Jerry", 3, 5 ]
 							}
 , 							{
 								"key" : 5,
-								"value" : [ "josh", 4, 3 ]
+								"value" : [ "Josh", 4, 3 ]
 							}
 , 							{
 								"key" : 6,
-								"value" : [ "qiantin", 5, 4 ]
+								"value" : [ "Qiantan", 5, 4 ]
 							}
 , 							{
 								"key" : 7,
-								"value" : [ "richard", 6, 5 ]
+								"value" : [ "Richard", 6, 5 ]
 							}
 , 							{
 								"key" : 8,
@@ -1187,7 +1196,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 182.333338856697083, 513.66668713092804, 50.0, 22.0 ],
-					"text" : "72."
+					"text" : "65."
 				}
 
 			}

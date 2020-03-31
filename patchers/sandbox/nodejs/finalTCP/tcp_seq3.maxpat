@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1161.0, 647.0 ],
+		"rect" : [ 25.0, 192.0, 1161.0, 647.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -262,11 +262,11 @@
 							}
 , 							{
 								"key" : "ijc",
-								"value" : [ 1.8, 189, 0.135, 4 ]
+								"value" : [ 4, 100, 0.5, 2 ]
 							}
 , 							{
 								"key" : "Ian",
-								"value" : [ 1.5, 460, 0.4, 8 ]
+								"value" : [ 6.9, 199, 0.53, 2 ]
 							}
  ]
 					}
@@ -884,23 +884,23 @@
 											}
 , 											{
 												"key" : 3,
-												"value" : [ "anita", 2, 3 ]
+												"value" : [ "Anita", 2, 3 ]
 											}
 , 											{
 												"key" : 4,
-												"value" : [ "jerry", 3, 5 ]
+												"value" : [ "Jerry", 3, 5 ]
 											}
 , 											{
 												"key" : 5,
-												"value" : [ "josh", 4, 3 ]
+												"value" : [ "Josh", 4, 3 ]
 											}
 , 											{
 												"key" : 6,
-												"value" : [ "qiantin", 5, 4 ]
+												"value" : [ "Qiantan", 5, 4 ]
 											}
 , 											{
 												"key" : 7,
-												"value" : [ "richard", 6, 5 ]
+												"value" : [ "Richard", 6, 5 ]
 											}
 , 											{
 												"key" : 8,
