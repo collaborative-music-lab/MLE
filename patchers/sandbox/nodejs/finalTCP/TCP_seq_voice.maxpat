@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 599.0, 84.0, 722.0, 878.0 ],
+		"rect" : [ 34.0, 79.0, 853.0, 842.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -165,7 +165,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 512.0, 749.0, 52.0, 62.0 ],
-					"text" : "store Ian 6.9 199 0.53 2"
+					"text" : "store Ian 4. 100 0.2 2"
 				}
 
 			}
@@ -196,18 +196,34 @@
 , 			{
 				"box" : 				{
 					"coll_data" : 					{
-						"count" : 3,
+						"count" : 7,
 						"data" : [ 							{
 								"key" : "player",
 								"value" : [ "filter", "decay", "volume", "subdivide" ]
+							}
+, 							{
+								"key" : "Ian",
+								"value" : [ 4.0, 100, 0.2, 2 ]
+							}
+, 							{
+								"key" : "Qiantan",
+								"value" : [ 0.5, 100, 0.9, 2 ]
+							}
+, 							{
+								"key" : "Jerry",
+								"value" : [ 0.5, 20, 0.41, 2 ]
+							}
+, 							{
+								"key" : "Richard",
+								"value" : [ 0.5, 100, 0.6, 2 ]
 							}
 , 							{
 								"key" : "ijc",
 								"value" : [ 4, 100, 0.5, 2 ]
 							}
 , 							{
-								"key" : "Ian",
-								"value" : [ 6.9, 199, 0.53, 2 ]
+								"key" : "Josh",
+								"value" : [ 4, 100, 1, 2 ]
 							}
  ]
 					}
@@ -354,10 +370,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 245.00000011920929, 130.0, 28.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "in 2"
 				}
 
@@ -370,10 +382,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 61.25, 22.0, 28.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "in 1"
 				}
 
@@ -1196,7 +1204,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 182.333338856697083, 513.66668713092804, 50.0, 22.0 ],
-					"text" : "65."
+					"text" : "60."
 				}
 
 			}

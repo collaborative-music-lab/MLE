@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 25.0, 192.0, 1161.0, 647.0 ],
+		"rect" : [ 65.0, 175.0, 1132.0, 664.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -77,7 +77,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 864.0, 830.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 17.0, 213.0, 249.0, 428.0 ],
+					"presentation_rect" : [ 11.0, 214.0, 249.0, 428.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -255,18 +255,34 @@
 , 			{
 				"box" : 				{
 					"coll_data" : 					{
-						"count" : 3,
+						"count" : 7,
 						"data" : [ 							{
 								"key" : "player",
 								"value" : [ "filter", "decay", "volume", "subdivide" ]
+							}
+, 							{
+								"key" : "Ian",
+								"value" : [ 4.0, 100, 0.2, 2 ]
+							}
+, 							{
+								"key" : "Qiantan",
+								"value" : [ 5.480000000000001, 100, 0.9, 2 ]
+							}
+, 							{
+								"key" : "Jerry",
+								"value" : [ 0.5, 20, 0.41, 2 ]
+							}
+, 							{
+								"key" : "Richard",
+								"value" : [ 0.5, 100, 0.6, 2 ]
 							}
 , 							{
 								"key" : "ijc",
 								"value" : [ 4, 100, 0.5, 2 ]
 							}
 , 							{
-								"key" : "Ian",
-								"value" : [ 6.9, 199, 0.53, 2 ]
+								"key" : "Josh",
+								"value" : [ 4, 100, 1, 2 ]
 							}
  ]
 					}
@@ -304,7 +320,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 876.0, 17.333337783813477, 251.0, 202.0 ],
 					"rowhead" : 1,
-					"rows" : 3,
+					"rows" : 7,
 					"vscroll" : 0
 				}
 
@@ -1266,7 +1282,7 @@
 					"patching_rect" : [ 1192.333332359790802, 316.333337783813477, 188.0, 27.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 672.333332359790802, 231.333337783813477, 188.0, 27.0 ],
-					"text" : "qiantin",
+					"text" : "qiantan",
 					"textcolor" : [ 0.662745098039216, 0.662745098039216, 0.662745098039216, 1.0 ]
 				}
 
@@ -1331,8 +1347,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1046.666650354862213, 283.0, 147.0, 22.0 ],
-					"text" : "MLE.TCPreceive seq josh"
+					"patching_rect" : [ 1046.666650354862213, 283.0, 151.0, 22.0 ],
+					"text" : "MLE.TCPreceive seq Josh"
 				}
 
 			}
@@ -1366,8 +1382,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1046.666650354862213, 543.0, 162.0, 22.0 ],
-					"text" : "MLE.TCPreceive seq richard"
+					"patching_rect" : [ 1046.666650354862213, 543.0, 167.0, 22.0 ],
+					"text" : "MLE.TCPreceive seq Richard"
 				}
 
 			}
@@ -1401,8 +1417,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 845.666650354862213, 543.0, 149.0, 22.0 ],
-					"text" : "MLE.TCPreceive seq jerry"
+					"patching_rect" : [ 845.666650354862213, 543.0, 152.0, 22.0 ],
+					"text" : "MLE.TCPreceive seq Jerry"
 				}
 
 			}
@@ -1471,8 +1487,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1427.5, 283.0, 159.166667640209198, 22.0 ],
-					"text" : "MLE.TCPreceive seq anita"
+					"patching_rect" : [ 1427.5, 283.0, 152.0, 22.0 ],
+					"text" : "MLE.TCPreceive seq Anita"
 				}
 
 			}
@@ -1506,8 +1522,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1243.666650354862213, 283.0, 161.0, 22.0 ],
-					"text" : "MLE.TCPreceive seq qiantin"
+					"patching_rect" : [ 1243.666650354862213, 283.0, 167.0, 22.0 ],
+					"text" : "MLE.TCPreceive seq Qiantan"
 				}
 
 			}
@@ -1717,7 +1733,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 339.833306431770325, 627.00002384185791, 171.166693568229675, 22.0 ],
+					"patching_rect" : [ 386.833306431770325, 626.0, 171.166693568229675, 22.0 ],
 					"text" : "poly~ tcp_seq_voice 8",
 					"varname" : "poly~"
 				}
