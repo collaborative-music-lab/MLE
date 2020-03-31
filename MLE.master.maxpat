@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 8,
+			"minor" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 681.0, 176.0 ],
+		"rect" : [ 544.0, 840.0, 681.0, 176.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -316,7 +316,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 1096.0, 788.0, 56.0, 22.0 ],
 					"text" : "autopattr",
-					"varname" : "u406015842"
+					"varname" : "u633006678"
 				}
 
 			}
@@ -342,10 +342,10 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1052.0, 816.0, 280.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 4, 44, 358, 172 ],
+						"client_rect" : [ 4, 45, 357, 328 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
-						"storage_rect" : [ 365, 44, 816, 172 ]
+						"storage_rect" : [ 583, 69, 1034, 197 ]
 					}
 ,
 					"text" : "pattrstorage MLEmaster @greedy 1 @savemode 0",
@@ -459,8 +459,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 8,
+							"minor" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -773,8 +773,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 8,
+							"minor" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1045,8 +1045,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 8,
+							"minor" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1689,8 +1689,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 215.0, 94.0, 140.0, 22.0 ],
-					"text" : "receive~ MLEaudioRight"
+					"patching_rect" : [ 215.0, 94.0, 118.0, 22.0 ],
+					"text" : "receive~ MLEaudio1"
 				}
 
 			}
@@ -1701,8 +1701,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 77.0, 94.0, 132.0, 22.0 ],
-					"text" : "receive~ MLEaudioLeft"
+					"patching_rect" : [ 77.0, 94.0, 118.0, 22.0 ],
+					"text" : "receive~ MLEaudio0"
 				}
 
 			}
@@ -2065,85 +2065,85 @@
 			}
 , 			{
 				"name" : "MLE.beat.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/network",
-				"patcherrelativepath" : "../../../ianhattwick/Documents/github/CML/MLE/patchers/network",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/network",
+				"patcherrelativepath" : "./patchers/network",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "init.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
-				"patcherrelativepath" : "../../../ianhattwick/Documents/github/CML/MLE/patchers/utilities",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "./patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.swing.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox",
-				"patcherrelativepath" : "../../../ianhattwick/Documents/github/CML/MLE/patchers/sandbox",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/sandbox",
+				"patcherrelativepath" : "./patchers/sandbox",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.init.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
-				"patcherrelativepath" : "../../../ianhattwick/Documents/github/CML/MLE/patchers/utilities",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "./patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.UDPreceive.maxpat",
-				"bootpath" : "~/Dropbox/MIT/Teaching/2019Fall/M470_Fall2019/Concertmedia",
-				"patcherrelativepath" : "../../../ianhattwick/Dropbox/MIT/Teaching/2019Fall/M470_Fall2019/Concertmedia",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/network",
+				"patcherrelativepath" : "./patchers/network",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "initS.maxpat",
-				"bootpath" : "~/Dropbox/MIT/Teaching/2019Fall/M470_Fall2019/Concertmedia",
-				"patcherrelativepath" : "../../../ianhattwick/Dropbox/MIT/Teaching/2019Fall/M470_Fall2019/Concertmedia",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "./patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mle_network_manager.js",
-				"bootpath" : "~/Documents/github/CML/MLE/code",
-				"patcherrelativepath" : "../../../ianhattwick/Documents/github/CML/MLE/code",
+				"bootpath" : "/Users/famle/CML/MLE/code",
+				"patcherrelativepath" : "./code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.UDPsend.maxpat",
-				"bootpath" : "~/Dropbox/MIT/Teaching/2019Fall/M470_Fall2019/Concertmedia",
-				"patcherrelativepath" : "../../../ianhattwick/Dropbox/MIT/Teaching/2019Fall/M470_Fall2019/Concertmedia",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/network",
+				"patcherrelativepath" : "./patchers/network",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.chat.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/network",
-				"patcherrelativepath" : "../../../ianhattwick/Documents/github/CML/MLE/patchers/network",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/network",
+				"patcherrelativepath" : "./patchers/network",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mle.UDPsend.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/network",
-				"patcherrelativepath" : "../../../ianhattwick/Documents/github/CML/MLE/patchers/network",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/network",
+				"patcherrelativepath" : "./patchers/network",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mle.UDPreceive.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/network",
-				"patcherrelativepath" : "../../../ianhattwick/Documents/github/CML/MLE/patchers/network",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/network",
+				"patcherrelativepath" : "./patchers/network",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.playerID.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox",
-				"patcherrelativepath" : "../../../ianhattwick/Documents/github/CML/MLE/patchers/sandbox",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/sandbox",
+				"patcherrelativepath" : "./patchers/sandbox",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -2155,23 +2155,30 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "MLE.playerNames.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/network",
+				"patcherrelativepath" : "./patchers/network",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "MLE.3bandEQ.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox/Carina",
-				"patcherrelativepath" : "../../../ianhattwick/Documents/github/CML/MLE/patchers/sandbox/Carina",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/sandbox/Carina",
+				"patcherrelativepath" : "./patchers/sandbox/Carina",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLEmaster.json",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
-				"patcherrelativepath" : "../../../ianhattwick/Documents/github/CML/MLE/patchers/utilities",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "./patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.libraryPath.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
-				"patcherrelativepath" : "../../../ianhattwick/Documents/github/CML/MLE/patchers/utilities",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "./patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
