@@ -40,13 +40,13 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-161",
-					"linecount" : 3,
+					"linecount" : 4,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 362.0, 893.0, 50.0, 49.0 ],
-					"text" : "params 2 216 0.649"
+					"patching_rect" : [ 395.5, 948.0, 50.0, 62.0 ],
+					"text" : "params 3.87 104 0.37"
 				}
 
 			}
@@ -57,7 +57,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 389.5, 862.0, 169.0, 22.0 ],
+					"patching_rect" : [ 423.0, 917.0, 169.0, 22.0 ],
 					"text" : "MLE.TCPreceive seq_params"
 				}
 
@@ -68,7 +68,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 492.0, 823.0, 156.0, 22.0 ],
+					"patching_rect" : [ 552.0, 826.0, 156.0, 22.0 ],
 					"text" : "MLE.TCPsend seq_params"
 				}
 
@@ -116,7 +116,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 377.0, 743.0, 29.5, 22.0 ],
+					"patching_rect" : [ 405.0, 810.0, 69.5, 22.0 ],
 					"text" : "t l b"
 				}
 
@@ -211,14 +211,22 @@
 , 			{
 				"box" : 				{
 					"coll_data" : 					{
-						"count" : 2,
+						"count" : 4,
 						"data" : [ 							{
 								"key" : "player",
 								"value" : [ "filter", "decay", "volume" ]
 							}
 , 							{
 								"key" : "Ian",
-								"value" : [ 22.0, 265, 0.52 ]
+								"value" : [ 7.0, 300, 0.502 ]
+							}
+, 							{
+								"key" : "ijc",
+								"value" : [ 3.870000000000001, 104, 0.37 ]
+							}
+, 							{
+								"key" : 4,
+								"value" : [ 78, 0.5 ]
 							}
  ]
 					}
@@ -251,11 +259,11 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "list", "", "", "" ],
-					"patching_rect" : [ 1089.0, 41.0, 200.0, 200.0 ],
+					"patching_rect" : [ 1089.0, 41.0, 392.0, 202.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 282.0, 27.0, 266.0, 169.0 ],
 					"rowhead" : 1,
-					"rows" : 2,
+					"rows" : 4,
 					"vscroll" : 0
 				}
 
