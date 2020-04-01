@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 65.0, 175.0, 1132.0, 664.0 ],
+		"rect" : [ 220.0, 85.0, 1132.0, 664.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -255,34 +255,14 @@
 , 			{
 				"box" : 				{
 					"coll_data" : 					{
-						"count" : 7,
+						"count" : 2,
 						"data" : [ 							{
 								"key" : "player",
 								"value" : [ "filter", "decay", "volume", "subdivide" ]
 							}
 , 							{
 								"key" : "Ian",
-								"value" : [ 4.0, 100, 0.2, 2 ]
-							}
-, 							{
-								"key" : "Qiantan",
-								"value" : [ 5.480000000000001, 100, 0.9, 2 ]
-							}
-, 							{
-								"key" : "Jerry",
-								"value" : [ 0.5, 20, 0.41, 2 ]
-							}
-, 							{
-								"key" : "Richard",
-								"value" : [ 0.5, 100, 0.6, 2 ]
-							}
-, 							{
-								"key" : "ijc",
-								"value" : [ 4, 100, 0.5, 2 ]
-							}
-, 							{
-								"key" : "Josh",
-								"value" : [ 4, 100, 1, 2 ]
+								"value" : [ 0.51, 116, 0.37, 2 ]
 							}
  ]
 					}
@@ -320,7 +300,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 876.0, 17.333337783813477, 251.0, 202.0 ],
 					"rowhead" : 1,
-					"rows" : 7,
+					"rows" : 2,
 					"vscroll" : 0
 				}
 
@@ -440,8 +420,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 70.0, -50.0, 75.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 70.5, 44.0, 75.0, 20.0 ],
 					"text" : "enable clock"
 				}
 
@@ -1734,6 +1712,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 386.833306431770325, 626.0, 171.166693568229675, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 543.749985575675964, 100.166671991348267, 171.166693568229675, 22.0 ],
 					"text" : "poly~ tcp_seq_voice 8",
 					"varname" : "poly~"
 				}
@@ -1808,9 +1788,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 144.5, -50.0, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 17.0, 37.0, 24.0, 24.0 ]
+					"patching_rect" : [ 144.5, -50.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -3031,8 +3009,8 @@
 		"parameters" : 		{
 			"obj-17.5::obj-26::obj-43" : [ "live.grid[11]", "live.grid", 0 ],
 			"obj-24::obj-43" : [ "live.grid[7]", "live.grid", 0 ],
-			"obj-20::obj-43" : [ "live.grid[17]", "live.grid", 0 ],
 			"obj-17.7::obj-26::obj-43" : [ "live.grid[13]", "live.grid", 0 ],
+			"obj-20::obj-43" : [ "live.grid[17]", "live.grid", 0 ],
 			"obj-35::obj-43" : [ "live.grid[20]", "live.grid", 0 ],
 			"obj-16::obj-43" : [ "live.grid[16]", "live.grid", 0 ],
 			"obj-17.2::obj-26::obj-43" : [ "live.grid[8]", "live.grid", 0 ],
