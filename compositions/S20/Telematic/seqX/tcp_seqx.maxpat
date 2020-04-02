@@ -6826,18 +6826,10 @@
 , 			{
 				"box" : 				{
 					"coll_data" : 					{
-						"count" : 3,
+						"count" : 1,
 						"data" : [ 							{
 								"key" : "player",
 								"value" : [ "filter", "decay", "volume", "subdivide", "reverb", "fuzz", "octave", "pan" ]
-							}
-, 							{
-								"key" : "Ian",
-								"value" : [ 2.13265306122449, 85, 0.285714285714286, 2, 0.428571428571429, 0.714285714285714, 6, 0.0 ]
-							}
-, 							{
-								"key" : "ijc",
-								"value" : [ 5.319834710743803, 502, 0.2, 4, 0.181818181818182, 0.490909090909091, 5, 0.745454545454542 ]
 							}
  ]
 					}
@@ -6875,7 +6867,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 456.250014424324036, 11.16666579246521, 364.0, 163.66666841506958 ],
 					"rowhead" : 1,
-					"rows" : 3,
+					"rows" : 1,
 					"vscroll" : 0
 				}
 
@@ -7145,7 +7137,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 101.5, 478.0, 248.0, 22.0 ],
-					"text" : "if (($i2-$i1) > 0 ) && (($i2-$i1) < 240) then $i2"
+					"text" : "if (($i2-$i1) > 0 ) && (($i2-$i1) < 172) then $i2"
 				}
 
 			}
@@ -7156,8 +7148,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 101.5, 447.0, 46.0, 22.0 ],
-					"text" : "pack i i"
+					"patching_rect" : [ 101.5, 447.0, 40.0, 22.0 ],
+					"text" : "pak i i"
 				}
 
 			}
