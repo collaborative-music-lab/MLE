@@ -1,3 +1,6 @@
 [submodule "compositions/F19/Gloop/glooper"]
 	path = compositions/F19/Gloop/glooper
 	url = https://github.com/ijc8/glooper
+[submodule "compositions/S20/cursors"]
+	path = compositions/S20/cursors
+	url = https://github.com/ijc8/cursors.git
