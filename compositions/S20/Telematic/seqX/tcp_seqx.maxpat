@@ -39,6 +39,346 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-160",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 189.0, -125.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 353.0, 669.0, 150.0, 20.0 ],
+					"text" : "seq# to recall"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-134",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 137.0, -125.0, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 301.0, 669.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-126",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "MLE.collHelper.maxpat",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 137.0, -93.0, 241.0, 57.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 301.0, 701.0, 241.0, 57.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-37",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 14.0, 666.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 7.0, 664.0, 150.0, 20.0 ],
+					"text" : "just for synth parameters"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 85.0, 991.0, 56.0, 22.0 ],
+					"restore" : 					{
+						"decay" : [ 0.261588921282799 ],
+						"filterFreq" : [ 0.353571428571429 ],
+						"fuzz" : [ 0.285714285714286 ],
+						"noise" : [ 0.275 ],
+						"octave" : [ 3 ],
+						"panning" : [ 0.50002876620907 ],
+						"reverb" : [ 0.146428571428571 ],
+						"subdivide" : [ 4 ]
+					}
+,
+					"text" : "autopattr",
+					"varname" : "u189015670"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-15",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "pattr-helper.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 35.999983131885529, 783.0, 275.0, 96.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 7.0, 679.0, 275.0, 96.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"active" : 					{
+						"poly~.1" : 0,
+						"poly~.1::MLE.seq" : 0,
+						"poly~.1::MLE.seq::u264013083" : 0,
+						"poly~.1::MLE.seq::enable" : 0,
+						"poly~.1::MLE.seq::hitProb" : 0,
+						"poly~.1::MLE.seq::seq" : 0,
+						"poly~.1::MLE.dist" : 0,
+						"poly~.1::MLE.dist::u103013084" : 0,
+						"poly~.1::MLE.dist::FB1gain" : 0,
+						"poly~.1::MLE.dist::FB2_gain" : 0,
+						"poly~.1::MLE.dist::FB2samples" : 0,
+						"poly~.1::MLE.dist::Gain" : 0,
+						"poly~.1::MLE.dist::LPF_freq" : 0,
+						"poly~.1::MLE.dist::LPF_gain" : 0,
+						"poly~.1::MLE.dist::MIX" : 0,
+						"poly~.1::MLE.dist::PHPF_freq" : 0,
+						"poly~.1::MLE.dist::PHPF_gain" : 0,
+						"poly~.1::MLE.dist::bias" : 0,
+						"poly~.1::MLE.dist::dynamics" : 0,
+						"poly~.1::MLE.dist::tone" : 0,
+						"poly~.1::MLE.dist::volume" : 0,
+						"poly~.2" : 0,
+						"poly~.2::MLE.seq" : 0,
+						"poly~.2::MLE.seq::u584013085" : 0,
+						"poly~.2::MLE.seq::enable" : 0,
+						"poly~.2::MLE.seq::hitProb" : 0,
+						"poly~.2::MLE.seq::seq" : 0,
+						"poly~.2::MLE.dist" : 0,
+						"poly~.2::MLE.dist::u276013086" : 0,
+						"poly~.2::MLE.dist::FB1gain" : 0,
+						"poly~.2::MLE.dist::FB2_gain" : 0,
+						"poly~.2::MLE.dist::FB2samples" : 0,
+						"poly~.2::MLE.dist::Gain" : 0,
+						"poly~.2::MLE.dist::LPF_freq" : 0,
+						"poly~.2::MLE.dist::LPF_gain" : 0,
+						"poly~.2::MLE.dist::MIX" : 0,
+						"poly~.2::MLE.dist::PHPF_freq" : 0,
+						"poly~.2::MLE.dist::PHPF_gain" : 0,
+						"poly~.2::MLE.dist::bias" : 0,
+						"poly~.2::MLE.dist::dynamics" : 0,
+						"poly~.2::MLE.dist::tone" : 0,
+						"poly~.2::MLE.dist::volume" : 0,
+						"poly~.3" : 0,
+						"poly~.3::MLE.seq" : 0,
+						"poly~.3::MLE.seq::u651013087" : 0,
+						"poly~.3::MLE.seq::enable" : 0,
+						"poly~.3::MLE.seq::hitProb" : 0,
+						"poly~.3::MLE.seq::seq" : 0,
+						"poly~.3::MLE.dist" : 0,
+						"poly~.3::MLE.dist::u611013088" : 0,
+						"poly~.3::MLE.dist::FB1gain" : 0,
+						"poly~.3::MLE.dist::FB2_gain" : 0,
+						"poly~.3::MLE.dist::FB2samples" : 0,
+						"poly~.3::MLE.dist::Gain" : 0,
+						"poly~.3::MLE.dist::LPF_freq" : 0,
+						"poly~.3::MLE.dist::LPF_gain" : 0,
+						"poly~.3::MLE.dist::MIX" : 0,
+						"poly~.3::MLE.dist::PHPF_freq" : 0,
+						"poly~.3::MLE.dist::PHPF_gain" : 0,
+						"poly~.3::MLE.dist::bias" : 0,
+						"poly~.3::MLE.dist::dynamics" : 0,
+						"poly~.3::MLE.dist::tone" : 0,
+						"poly~.3::MLE.dist::volume" : 0,
+						"poly~.4" : 0,
+						"poly~.4::MLE.seq" : 0,
+						"poly~.4::MLE.seq::u339013089" : 0,
+						"poly~.4::MLE.seq::enable" : 0,
+						"poly~.4::MLE.seq::hitProb" : 0,
+						"poly~.4::MLE.seq::seq" : 0,
+						"poly~.4::MLE.dist" : 0,
+						"poly~.4::MLE.dist::u984013090" : 0,
+						"poly~.4::MLE.dist::FB1gain" : 0,
+						"poly~.4::MLE.dist::FB2_gain" : 0,
+						"poly~.4::MLE.dist::FB2samples" : 0,
+						"poly~.4::MLE.dist::Gain" : 0,
+						"poly~.4::MLE.dist::LPF_freq" : 0,
+						"poly~.4::MLE.dist::LPF_gain" : 0,
+						"poly~.4::MLE.dist::MIX" : 0,
+						"poly~.4::MLE.dist::PHPF_freq" : 0,
+						"poly~.4::MLE.dist::PHPF_gain" : 0,
+						"poly~.4::MLE.dist::bias" : 0,
+						"poly~.4::MLE.dist::dynamics" : 0,
+						"poly~.4::MLE.dist::tone" : 0,
+						"poly~.4::MLE.dist::volume" : 0,
+						"poly~.5" : 0,
+						"poly~.5::MLE.seq" : 0,
+						"poly~.5::MLE.seq::u337013091" : 0,
+						"poly~.5::MLE.seq::enable" : 0,
+						"poly~.5::MLE.seq::hitProb" : 0,
+						"poly~.5::MLE.seq::seq" : 0,
+						"poly~.5::MLE.dist" : 0,
+						"poly~.5::MLE.dist::u339013092" : 0,
+						"poly~.5::MLE.dist::FB1gain" : 0,
+						"poly~.5::MLE.dist::FB2_gain" : 0,
+						"poly~.5::MLE.dist::FB2samples" : 0,
+						"poly~.5::MLE.dist::Gain" : 0,
+						"poly~.5::MLE.dist::LPF_freq" : 0,
+						"poly~.5::MLE.dist::LPF_gain" : 0,
+						"poly~.5::MLE.dist::MIX" : 0,
+						"poly~.5::MLE.dist::PHPF_freq" : 0,
+						"poly~.5::MLE.dist::PHPF_gain" : 0,
+						"poly~.5::MLE.dist::bias" : 0,
+						"poly~.5::MLE.dist::dynamics" : 0,
+						"poly~.5::MLE.dist::tone" : 0,
+						"poly~.5::MLE.dist::volume" : 0,
+						"poly~.6" : 0,
+						"poly~.6::MLE.seq" : 0,
+						"poly~.6::MLE.seq::u221013093" : 0,
+						"poly~.6::MLE.seq::enable" : 0,
+						"poly~.6::MLE.seq::hitProb" : 0,
+						"poly~.6::MLE.seq::seq" : 0,
+						"poly~.6::MLE.dist" : 0,
+						"poly~.6::MLE.dist::u570013094" : 0,
+						"poly~.6::MLE.dist::FB1gain" : 0,
+						"poly~.6::MLE.dist::FB2_gain" : 0,
+						"poly~.6::MLE.dist::FB2samples" : 0,
+						"poly~.6::MLE.dist::Gain" : 0,
+						"poly~.6::MLE.dist::LPF_freq" : 0,
+						"poly~.6::MLE.dist::LPF_gain" : 0,
+						"poly~.6::MLE.dist::MIX" : 0,
+						"poly~.6::MLE.dist::PHPF_freq" : 0,
+						"poly~.6::MLE.dist::PHPF_gain" : 0,
+						"poly~.6::MLE.dist::bias" : 0,
+						"poly~.6::MLE.dist::dynamics" : 0,
+						"poly~.6::MLE.dist::tone" : 0,
+						"poly~.6::MLE.dist::volume" : 0,
+						"poly~.7" : 0,
+						"poly~.7::MLE.seq" : 0,
+						"poly~.7::MLE.seq::u213013095" : 0,
+						"poly~.7::MLE.seq::enable" : 0,
+						"poly~.7::MLE.seq::hitProb" : 0,
+						"poly~.7::MLE.seq::seq" : 0,
+						"poly~.7::MLE.dist" : 0,
+						"poly~.7::MLE.dist::u338013096" : 0,
+						"poly~.7::MLE.dist::FB1gain" : 0,
+						"poly~.7::MLE.dist::FB2_gain" : 0,
+						"poly~.7::MLE.dist::FB2samples" : 0,
+						"poly~.7::MLE.dist::Gain" : 0,
+						"poly~.7::MLE.dist::LPF_freq" : 0,
+						"poly~.7::MLE.dist::LPF_gain" : 0,
+						"poly~.7::MLE.dist::MIX" : 0,
+						"poly~.7::MLE.dist::PHPF_freq" : 0,
+						"poly~.7::MLE.dist::PHPF_gain" : 0,
+						"poly~.7::MLE.dist::bias" : 0,
+						"poly~.7::MLE.dist::dynamics" : 0,
+						"poly~.7::MLE.dist::tone" : 0,
+						"poly~.7::MLE.dist::volume" : 0,
+						"poly~.8" : 0,
+						"poly~.8::MLE.seq" : 0,
+						"poly~.8::MLE.seq::u411013097" : 0,
+						"poly~.8::MLE.seq::enable" : 0,
+						"poly~.8::MLE.seq::hitProb" : 0,
+						"poly~.8::MLE.seq::seq" : 0,
+						"poly~.8::MLE.dist" : 0,
+						"poly~.8::MLE.dist::u276013098" : 0,
+						"poly~.8::MLE.dist::FB1gain" : 0,
+						"poly~.8::MLE.dist::FB2_gain" : 0,
+						"poly~.8::MLE.dist::FB2samples" : 0,
+						"poly~.8::MLE.dist::Gain" : 0,
+						"poly~.8::MLE.dist::LPF_freq" : 0,
+						"poly~.8::MLE.dist::LPF_gain" : 0,
+						"poly~.8::MLE.dist::MIX" : 0,
+						"poly~.8::MLE.dist::PHPF_freq" : 0,
+						"poly~.8::MLE.dist::PHPF_gain" : 0,
+						"poly~.8::MLE.dist::bias" : 0,
+						"poly~.8::MLE.dist::dynamics" : 0,
+						"poly~.8::MLE.dist::tone" : 0,
+						"poly~.8::MLE.dist::volume" : 0,
+						"MLE.seq[1]" : 0,
+						"MLE.seq[1]::u868013099" : 0,
+						"MLE.seq[1]::enable" : 0,
+						"MLE.seq[1]::hitProb" : 0,
+						"MLE.seq[1]::seq" : 0,
+						"MLE.seq[2]" : 0,
+						"MLE.seq[2]::u071013100" : 0,
+						"MLE.seq[2]::enable" : 0,
+						"MLE.seq[2]::hitProb" : 0,
+						"MLE.seq[2]::seq" : 0,
+						"MLE.seq[4]" : 0,
+						"MLE.seq[4]::u339013101" : 0,
+						"MLE.seq[4]::enable" : 0,
+						"MLE.seq[4]::hitProb" : 0,
+						"MLE.seq[4]::seq" : 0,
+						"MLE.seq[3]" : 0,
+						"MLE.seq[3]::u790013102" : 0,
+						"MLE.seq[3]::enable" : 0,
+						"MLE.seq[3]::hitProb" : 0,
+						"MLE.seq[3]::seq" : 0,
+						"MLE.seq[8]" : 0,
+						"MLE.seq[8]::u476013103" : 0,
+						"MLE.seq[8]::enable" : 0,
+						"MLE.seq[8]::hitProb" : 0,
+						"MLE.seq[8]::seq" : 0,
+						"MLE.seq[7]" : 0,
+						"MLE.seq[7]::u032013104" : 0,
+						"MLE.seq[7]::enable" : 0,
+						"MLE.seq[7]::hitProb" : 0,
+						"MLE.seq[7]::seq" : 0,
+						"MLE.seq[6]" : 0,
+						"MLE.seq[6]::u603013105" : 0,
+						"MLE.seq[6]::enable" : 0,
+						"MLE.seq[6]::hitProb" : 0,
+						"MLE.seq[6]::seq" : 0,
+						"MLE.seq" : 0,
+						"MLE.seq::u605013106" : 0,
+						"MLE.seq::enable" : 0,
+						"MLE.seq::hitProb" : 0,
+						"MLE.seq::seq" : 0
+					}
+,
+					"autorestore" : "seqX.json",
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 35.999983131885529, 888.0, 165.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"client_rect" : [ 4, 79, 448, 619 ],
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0,
+						"storage_rect" : [ 365, 79, 828, 735 ]
+					}
+,
+					"text" : "pattrstorage seqX @greedy 0",
+					"varname" : "seqX"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-21",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -72,7 +412,8 @@
 					"patching_rect" : [ 971.0, 1016.0, 40.0, 40.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 831.5, 125.0, 55.0, 55.0 ],
-					"size" : 1.0
+					"size" : 1.0,
+					"varname" : "noise"
 				}
 
 			}
@@ -1392,7 +1733,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 150.0, 239.0, 50.0, 22.0 ],
-													"text" : "3 0"
+													"text" : "1 0"
 												}
 
 											}
@@ -4309,7 +4650,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ -47.0, 46.999993801116943, 50.0, 35.0 ],
-									"text" : "4 3 6 4 3 3 1 4"
+									"text" : "2 3 4 3 3 5 3 4"
 								}
 
 							}
@@ -6498,7 +6839,8 @@
 					"patching_rect" : [ 221.5, 979.0, 40.0, 40.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 246.0, 37.0, 55.0, 55.0 ],
-					"size" : 1.0
+					"size" : 1.0,
+					"varname" : "filterFreq"
 				}
 
 			}
@@ -6526,7 +6868,8 @@
 					"patching_rect" : [ 392.5, 993.0, 40.0, 40.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 314.583349227905273, 37.0, 55.0, 55.0 ],
-					"size" : 1.0
+					"size" : 1.0,
+					"varname" : "decay"
 				}
 
 			}
@@ -6558,7 +6901,8 @@
 					"patching_rect" : [ 622.5, 1016.0, 40.0, 40.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 314.583349227905273, 149.000006198883057, 55.0, 55.0 ],
-					"size" : 1.0
+					"size" : 1.0,
+					"varname" : "reverb"
 				}
 
 			}
@@ -6574,7 +6918,8 @@
 					"patching_rect" : [ 691.0, 1023.0, 40.0, 40.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 384.499988496303558, 37.0, 55.0, 55.0 ],
-					"size" : 1.0
+					"size" : 1.0,
+					"varname" : "fuzz"
 				}
 
 			}
@@ -6593,7 +6938,8 @@
 					"patching_rect" : [ 881.0, 1023.0, 40.0, 40.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 384.499988496303558, 148.83333420753479, 55.0, 55.0 ],
-					"size" : 1.0
+					"size" : 1.0,
+					"varname" : "panning"
 				}
 
 			}
@@ -6658,7 +7004,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 767.0, 1094.0, 66.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 362.749988496303558, 254.0, 65.0, 29.0 ]
+					"presentation_rect" : [ 362.749988496303558, 254.0, 65.0, 29.0 ],
+					"varname" : "octave"
 				}
 
 			}
@@ -6990,7 +7337,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 406.0, 1072.0, 57.0, 27.0 ],
+					"patching_rect" : [ 389.5, 1072.0, 57.0, 27.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 313.583349227905273, 7.833328008651733, 57.0, 27.0 ],
 					"text" : "decay",
@@ -7005,7 +7352,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 349.0, 1072.0, 43.0, 27.0 ],
+					"patching_rect" : [ 217.0, 1072.0, 43.0, 27.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 252.0, 7.833328008651733, 43.0, 27.0 ],
 					"text" : "filter",
@@ -7028,10 +7375,14 @@
 , 			{
 				"box" : 				{
 					"coll_data" : 					{
-						"count" : 1,
+						"count" : 2,
 						"data" : [ 							{
 								"key" : "player",
 								"value" : [ "filter", "decay", "volume", "subdivide", "reverb", "fuzz", "octave", "pan", "noise" ]
+							}
+, 							{
+								"key" : "Ian",
+								"value" : [ 3.000255102040816, 279, 0.285714285714286, 4, 0.146428571428571, 0.285714285714286, 3, 0.50002876620907, 0.275 ]
 							}
  ]
 					}
@@ -7068,7 +7419,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 456.250014424324036, 11.16666579246521, 410.249985575675964, 163.66666841506958 ],
 					"rowhead" : 1,
-					"rows" : 1,
+					"rows" : 2,
 					"vscroll" : 0
 				}
 
@@ -7125,7 +7476,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 409.0, 1094.0, 50.0, 22.0 ],
+					"patching_rect" : [ 392.5, 1094.0, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 314.583349227905273, 96.0, 55.0, 22.0 ]
 				}
@@ -7143,7 +7494,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 349.0, 1094.0, 52.0, 22.0 ],
+					"patching_rect" : [ 217.0, 1094.0, 52.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 246.0, 96.0, 55.0, 22.0 ]
 				}
@@ -7200,7 +7551,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 540.5, 1096.0, 60.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 284.0, 254.0, 60.0, 29.0 ]
+					"presentation_rect" : [ 284.0, 254.0, 60.0, 29.0 ],
+					"varname" : "subdivide"
 				}
 
 			}
@@ -8180,10 +8532,58 @@
 					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 399.0, 678.0, 128.0, 128.0 ],
+					"patching_rect" : [ 377.416653215885162, 233.0, 215.0, 204.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 13.0, 7.0, 219.0, 212.0 ],
 					"proportion" : 0.5
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-27",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 313.999983131885529, 858.0, 35.0, 22.0 ],
+					"text" : "clear"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 0.0,
+					"bgcolor" : [ 0.094118, 0.113725, 0.137255, 0.0 ],
+					"border" : 1,
+					"bordercolor" : [ 0.415686, 0.454902, 0.52549, 1.0 ],
+					"id" : "obj-162",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 21.0, 771.0, 333.0, 115.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 7.0, 664.0, 275.0, 111.0 ],
+					"rounded" : 16
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 0.0,
+					"bgcolor" : [ 0.094118, 0.113725, 0.137255, 0.0 ],
+					"border" : 1,
+					"bordercolor" : [ 0.415686, 0.454902, 0.52549, 1.0 ],
+					"id" : "obj-161",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 123.0, -134.0, 266.0, 115.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 296.499988496303558, 663.0, 253.0, 95.0 ],
+					"rounded" : 16
 				}
 
 			}
@@ -8290,6 +8690,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-24", 2 ],
+					"source" : [ "obj-126", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-63", 0 ],
 					"source" : [ "obj-128", 0 ]
 				}
@@ -8334,6 +8741,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-136", 1 ],
 					"source" : [ "obj-133", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-126", 0 ],
+					"source" : [ "obj-134", 0 ]
 				}
 
 			}
@@ -8457,6 +8871,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-117", 0 ],
 					"source" : [ "obj-149", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-15", 0 ]
 				}
 
 			}
@@ -8690,7 +9111,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-126", 1 ],
+					"order" : 1,
+					"source" : [ "obj-24", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-85", 0 ],
+					"order" : 0,
 					"source" : [ "obj-24", 1 ]
 				}
 
@@ -8752,6 +9182,13 @@
 					"destination" : [ "obj-282", 0 ],
 					"order" : 1,
 					"source" : [ "obj-266", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-27", 0 ]
 				}
 
 			}
@@ -9338,22 +9775,22 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-17.3::obj-26::obj-43" : [ "live.grid[9]", "live.grid", 0 ],
-			"obj-17.2::obj-26::obj-43" : [ "live.grid[8]", "live.grid", 0 ],
-			"obj-38::obj-43" : [ "live.grid[21]", "live.grid", 0 ],
-			"obj-17.8::obj-26::obj-43" : [ "live.grid[14]", "live.grid", 0 ],
-			"obj-11::obj-43" : [ "live.grid[1]", "live.grid", 0 ],
 			"obj-35::obj-43" : [ "live.grid[20]", "live.grid", 0 ],
 			"obj-17.7::obj-26::obj-43" : [ "live.grid[13]", "live.grid", 0 ],
 			"obj-13::obj-43" : [ "live.grid[2]", "live.grid", 0 ],
-			"obj-17.6::obj-26::obj-43" : [ "live.grid[12]", "live.grid", 0 ],
-			"obj-31::obj-43" : [ "live.grid[19]", "live.grid", 0 ],
-			"obj-24::obj-43" : [ "live.grid[7]", "live.grid", 0 ],
-			"obj-17.1::obj-26::obj-43" : [ "live.grid[15]", "live.grid", 0 ],
 			"obj-17.5::obj-26::obj-43" : [ "live.grid[11]", "live.grid", 0 ],
+			"obj-31::obj-43" : [ "live.grid[19]", "live.grid", 0 ],
+			"obj-17.3::obj-26::obj-43" : [ "live.grid[9]", "live.grid", 0 ],
 			"obj-20::obj-43" : [ "live.grid[17]", "live.grid", 0 ],
-			"obj-17.4::obj-26::obj-43" : [ "live.grid[10]", "live.grid", 0 ],
+			"obj-17.8::obj-26::obj-43" : [ "live.grid[14]", "live.grid", 0 ],
+			"obj-24::obj-43" : [ "live.grid[7]", "live.grid", 0 ],
 			"obj-16::obj-43" : [ "live.grid[16]", "live.grid", 0 ],
+			"obj-17.6::obj-26::obj-43" : [ "live.grid[12]", "live.grid", 0 ],
+			"obj-17.4::obj-26::obj-43" : [ "live.grid[10]", "live.grid", 0 ],
+			"obj-17.1::obj-26::obj-43" : [ "live.grid[15]", "live.grid", 0 ],
+			"obj-38::obj-43" : [ "live.grid[21]", "live.grid", 0 ],
+			"obj-17.2::obj-26::obj-43" : [ "live.grid[8]", "live.grid", 0 ],
+			"obj-11::obj-43" : [ "live.grid[1]", "live.grid", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -9512,6 +9949,34 @@
 				"bootpath" : "/Users/famle/CML/LP/launchpad/input",
 				"patcherrelativepath" : "../../../../../LP/launchpad/input",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "seqX.json",
+				"bootpath" : "/Users/famle/CML/MLE/code/pattrPresets",
+				"patcherrelativepath" : "../../../../code/pattrPresets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pattr-helper.maxpat",
+				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/utilities",
+				"patcherrelativepath" : "../../../../../../../ianhattwick/Library/Application Support/Cycling '74/Max 8/Examples/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.collHelper.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "../../../../patchers/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "seqx_test",
+				"bootpath" : "/Users/famle/CML/MLE/code/pattrPresets/seqX",
+				"patcherrelativepath" : "../../../../code/pattrPresets/seqX",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
