@@ -56,7 +56,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 92.0, 383.0, 96.0, 22.0 ],
+					"patching_rect" : [ 85.0, 383.0, 96.0, 22.0 ],
 					"text" : "prepend append"
 				}
 
@@ -113,7 +113,7 @@
 				"box" : 				{
 					"comment" : "Numerical Index of preset to recall (int)",
 					"id" : "obj-1",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -341,7 +341,7 @@
 				"box" : 				{
 					"comment" : "data to store",
 					"id" : "obj-121",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -354,7 +354,7 @@
 				"box" : 				{
 					"comment" : "recalled data",
 					"id" : "obj-124",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -457,7 +457,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
-					"source" : [ "obj-52", 0 ]
+					"source" : [ "obj-52", 1 ]
 				}
 
 			}
@@ -554,7 +554,9 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [  ],
+		"autosave" : 0
 	}
 
 }
