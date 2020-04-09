@@ -39,6 +39,102 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-62",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ -119.0, 674.0, 89.0, 22.0 ],
+					"text" : "r seqX_presets"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-60",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 74.0, -284.0, 89.0, 22.0 ],
+					"text" : "r seqX_presets"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-56",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ -119.0, 743.0, 146.0, 22.0 ],
+					"text" : "route readPattr recallPattr"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-57",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ -119.0, 781.0, 49.0, 22.0 ],
+					"text" : "read $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-59",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ -119.0, 705.0, 176.0, 22.0 ],
+					"text" : "MLE.TCPreceive seqX_presets"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-52",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 74.0, -214.0, 138.0, 22.0 ],
+					"text" : "route readSeq recallSeq"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-50",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 74.0, -176.0, 49.0, 22.0 ],
+					"text" : "read $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 74.0, -252.0, 176.0, 22.0 ],
+					"text" : "MLE.TCPreceive seqX_presets"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-160",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -115,11 +211,11 @@
 						"octave" : [ 3 ],
 						"panning" : [ 0.50002876620907 ],
 						"reverb" : [ 0.146428571428571 ],
-						"subdivide" : [ 4 ]
+						"subdivide" : [ 2 ]
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u189015670"
+					"varname" : "u440023010"
 				}
 
 			}
@@ -150,12 +246,12 @@
 					"active" : 					{
 						"poly~.1" : 0,
 						"poly~.1::MLE.seq" : 0,
-						"poly~.1::MLE.seq::u264013083" : 0,
+						"poly~.1::MLE.seq::u934022986" : 0,
 						"poly~.1::MLE.seq::enable" : 0,
 						"poly~.1::MLE.seq::hitProb" : 0,
 						"poly~.1::MLE.seq::seq" : 0,
 						"poly~.1::MLE.dist" : 0,
-						"poly~.1::MLE.dist::u103013084" : 0,
+						"poly~.1::MLE.dist::u802022987" : 0,
 						"poly~.1::MLE.dist::FB1gain" : 0,
 						"poly~.1::MLE.dist::FB2_gain" : 0,
 						"poly~.1::MLE.dist::FB2samples" : 0,
@@ -171,12 +267,12 @@
 						"poly~.1::MLE.dist::volume" : 0,
 						"poly~.2" : 0,
 						"poly~.2::MLE.seq" : 0,
-						"poly~.2::MLE.seq::u584013085" : 0,
+						"poly~.2::MLE.seq::u488022988" : 0,
 						"poly~.2::MLE.seq::enable" : 0,
 						"poly~.2::MLE.seq::hitProb" : 0,
 						"poly~.2::MLE.seq::seq" : 0,
 						"poly~.2::MLE.dist" : 0,
-						"poly~.2::MLE.dist::u276013086" : 0,
+						"poly~.2::MLE.dist::u885022989" : 0,
 						"poly~.2::MLE.dist::FB1gain" : 0,
 						"poly~.2::MLE.dist::FB2_gain" : 0,
 						"poly~.2::MLE.dist::FB2samples" : 0,
@@ -192,12 +288,12 @@
 						"poly~.2::MLE.dist::volume" : 0,
 						"poly~.3" : 0,
 						"poly~.3::MLE.seq" : 0,
-						"poly~.3::MLE.seq::u651013087" : 0,
+						"poly~.3::MLE.seq::u964022990" : 0,
 						"poly~.3::MLE.seq::enable" : 0,
 						"poly~.3::MLE.seq::hitProb" : 0,
 						"poly~.3::MLE.seq::seq" : 0,
 						"poly~.3::MLE.dist" : 0,
-						"poly~.3::MLE.dist::u611013088" : 0,
+						"poly~.3::MLE.dist::u962022991" : 0,
 						"poly~.3::MLE.dist::FB1gain" : 0,
 						"poly~.3::MLE.dist::FB2_gain" : 0,
 						"poly~.3::MLE.dist::FB2samples" : 0,
@@ -213,12 +309,12 @@
 						"poly~.3::MLE.dist::volume" : 0,
 						"poly~.4" : 0,
 						"poly~.4::MLE.seq" : 0,
-						"poly~.4::MLE.seq::u339013089" : 0,
+						"poly~.4::MLE.seq::u945022992" : 0,
 						"poly~.4::MLE.seq::enable" : 0,
 						"poly~.4::MLE.seq::hitProb" : 0,
 						"poly~.4::MLE.seq::seq" : 0,
 						"poly~.4::MLE.dist" : 0,
-						"poly~.4::MLE.dist::u984013090" : 0,
+						"poly~.4::MLE.dist::u920022993" : 0,
 						"poly~.4::MLE.dist::FB1gain" : 0,
 						"poly~.4::MLE.dist::FB2_gain" : 0,
 						"poly~.4::MLE.dist::FB2samples" : 0,
@@ -234,12 +330,12 @@
 						"poly~.4::MLE.dist::volume" : 0,
 						"poly~.5" : 0,
 						"poly~.5::MLE.seq" : 0,
-						"poly~.5::MLE.seq::u337013091" : 0,
+						"poly~.5::MLE.seq::u796022994" : 0,
 						"poly~.5::MLE.seq::enable" : 0,
 						"poly~.5::MLE.seq::hitProb" : 0,
 						"poly~.5::MLE.seq::seq" : 0,
 						"poly~.5::MLE.dist" : 0,
-						"poly~.5::MLE.dist::u339013092" : 0,
+						"poly~.5::MLE.dist::u217022995" : 0,
 						"poly~.5::MLE.dist::FB1gain" : 0,
 						"poly~.5::MLE.dist::FB2_gain" : 0,
 						"poly~.5::MLE.dist::FB2samples" : 0,
@@ -255,12 +351,12 @@
 						"poly~.5::MLE.dist::volume" : 0,
 						"poly~.6" : 0,
 						"poly~.6::MLE.seq" : 0,
-						"poly~.6::MLE.seq::u221013093" : 0,
+						"poly~.6::MLE.seq::u582022996" : 0,
 						"poly~.6::MLE.seq::enable" : 0,
 						"poly~.6::MLE.seq::hitProb" : 0,
 						"poly~.6::MLE.seq::seq" : 0,
 						"poly~.6::MLE.dist" : 0,
-						"poly~.6::MLE.dist::u570013094" : 0,
+						"poly~.6::MLE.dist::u948022997" : 0,
 						"poly~.6::MLE.dist::FB1gain" : 0,
 						"poly~.6::MLE.dist::FB2_gain" : 0,
 						"poly~.6::MLE.dist::FB2samples" : 0,
@@ -276,12 +372,12 @@
 						"poly~.6::MLE.dist::volume" : 0,
 						"poly~.7" : 0,
 						"poly~.7::MLE.seq" : 0,
-						"poly~.7::MLE.seq::u213013095" : 0,
+						"poly~.7::MLE.seq::u663022998" : 0,
 						"poly~.7::MLE.seq::enable" : 0,
 						"poly~.7::MLE.seq::hitProb" : 0,
 						"poly~.7::MLE.seq::seq" : 0,
 						"poly~.7::MLE.dist" : 0,
-						"poly~.7::MLE.dist::u338013096" : 0,
+						"poly~.7::MLE.dist::u537022999" : 0,
 						"poly~.7::MLE.dist::FB1gain" : 0,
 						"poly~.7::MLE.dist::FB2_gain" : 0,
 						"poly~.7::MLE.dist::FB2samples" : 0,
@@ -297,12 +393,12 @@
 						"poly~.7::MLE.dist::volume" : 0,
 						"poly~.8" : 0,
 						"poly~.8::MLE.seq" : 0,
-						"poly~.8::MLE.seq::u411013097" : 0,
+						"poly~.8::MLE.seq::u470023000" : 0,
 						"poly~.8::MLE.seq::enable" : 0,
 						"poly~.8::MLE.seq::hitProb" : 0,
 						"poly~.8::MLE.seq::seq" : 0,
 						"poly~.8::MLE.dist" : 0,
-						"poly~.8::MLE.dist::u276013098" : 0,
+						"poly~.8::MLE.dist::u686023001" : 0,
 						"poly~.8::MLE.dist::FB1gain" : 0,
 						"poly~.8::MLE.dist::FB2_gain" : 0,
 						"poly~.8::MLE.dist::FB2samples" : 0,
@@ -317,42 +413,42 @@
 						"poly~.8::MLE.dist::tone" : 0,
 						"poly~.8::MLE.dist::volume" : 0,
 						"MLE.seq[1]" : 0,
-						"MLE.seq[1]::u868013099" : 0,
+						"MLE.seq[1]::u756023002" : 0,
 						"MLE.seq[1]::enable" : 0,
 						"MLE.seq[1]::hitProb" : 0,
 						"MLE.seq[1]::seq" : 0,
 						"MLE.seq[2]" : 0,
-						"MLE.seq[2]::u071013100" : 0,
+						"MLE.seq[2]::u891023003" : 0,
 						"MLE.seq[2]::enable" : 0,
 						"MLE.seq[2]::hitProb" : 0,
 						"MLE.seq[2]::seq" : 0,
 						"MLE.seq[4]" : 0,
-						"MLE.seq[4]::u339013101" : 0,
+						"MLE.seq[4]::u375023004" : 0,
 						"MLE.seq[4]::enable" : 0,
 						"MLE.seq[4]::hitProb" : 0,
 						"MLE.seq[4]::seq" : 0,
 						"MLE.seq[3]" : 0,
-						"MLE.seq[3]::u790013102" : 0,
+						"MLE.seq[3]::u580023005" : 0,
 						"MLE.seq[3]::enable" : 0,
 						"MLE.seq[3]::hitProb" : 0,
 						"MLE.seq[3]::seq" : 0,
 						"MLE.seq[8]" : 0,
-						"MLE.seq[8]::u476013103" : 0,
+						"MLE.seq[8]::u174023006" : 0,
 						"MLE.seq[8]::enable" : 0,
 						"MLE.seq[8]::hitProb" : 0,
 						"MLE.seq[8]::seq" : 0,
 						"MLE.seq[7]" : 0,
-						"MLE.seq[7]::u032013104" : 0,
+						"MLE.seq[7]::u972023007" : 0,
 						"MLE.seq[7]::enable" : 0,
 						"MLE.seq[7]::hitProb" : 0,
 						"MLE.seq[7]::seq" : 0,
 						"MLE.seq[6]" : 0,
-						"MLE.seq[6]::u603013105" : 0,
+						"MLE.seq[6]::u448023008" : 0,
 						"MLE.seq[6]::enable" : 0,
 						"MLE.seq[6]::hitProb" : 0,
 						"MLE.seq[6]::seq" : 0,
 						"MLE.seq" : 0,
-						"MLE.seq::u605013106" : 0,
+						"MLE.seq::u213023009" : 0,
 						"MLE.seq::enable" : 0,
 						"MLE.seq::hitProb" : 0,
 						"MLE.seq::seq" : 0
@@ -7382,7 +7478,7 @@
 							}
 , 							{
 								"key" : "Ian",
-								"value" : [ 3.000255102040816, 279, 0.285714285714286, 4, 0.146428571428571, 0.285714285714286, 3, 0.50002876620907, 0.275 ]
+								"value" : [ 3.000255102040822, 279, 0.272727272727273, 2, 0.146428571428571, 0.285714285714286, 3, 0.50002876620907, 0.275 ]
 							}
  ]
 					}
@@ -9481,6 +9577,27 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-126", 0 ],
+					"source" : [ "obj-50", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-126", 0 ],
+					"source" : [ "obj-52", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-50", 0 ],
+					"source" : [ "obj-52", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-13", 2 ],
 					"source" : [ "obj-55", 2 ]
 				}
@@ -9502,8 +9619,36 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-56", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-57", 0 ],
+					"source" : [ "obj-56", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-57", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-17", 1 ],
 					"source" : [ "obj-58", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-56", 0 ],
+					"source" : [ "obj-59", 0 ]
 				}
 
 			}
@@ -9523,8 +9668,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-52", 0 ],
+					"source" : [ "obj-60", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-85", 1 ],
 					"source" : [ "obj-61", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-56", 0 ],
+					"source" : [ "obj-62", 0 ]
 				}
 
 			}
@@ -9548,6 +9707,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-136", 7 ],
 					"source" : [ "obj-69", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-52", 0 ],
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
@@ -9973,7 +10139,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "seqx_test",
+				"name" : "newTest.txt",
 				"bootpath" : "/Users/famle/CML/MLE/code/pattrPresets/seqX",
 				"patcherrelativepath" : "../../../../code/pattrPresets/seqX",
 				"type" : "TEXT",
