@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 357.0, 519.0, 640.0, 480.0 ],
+		"rect" : [ 336.0, 202.0, 929.0, 814.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -91,7 +91,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 227.5, 441.0, 77.0, 22.0 ],
+					"patching_rect" : [ 227.5, 436.0, 77.0, 22.0 ],
 					"text" : "route symbol"
 				}
 
@@ -172,7 +172,7 @@
 				"box" : 				{
 					"comment" : "int: numerical index of preset, symbol: name of preset, 'read x': read file, 'write x' write file",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -250,7 +250,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-83",
-					"items" : "<empty>",
+					"items" : [ 0, ",", 1, ",", 2, ",", 3 ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -400,7 +400,7 @@
 				"box" : 				{
 					"comment" : "data to store",
 					"id" : "obj-121",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -413,7 +413,7 @@
 				"box" : 				{
 					"comment" : "recalled data",
 					"id" : "obj-124",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -630,6 +630,13 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-8", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -669,9 +676,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [  ],
-		"autosave" : 0
+ ]
 	}
 
 }

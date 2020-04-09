@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 165.0, 79.0, 1132.0, 664.0 ],
+		"rect" : [ 178.0, 160.0, 1132.0, 664.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -211,7 +211,7 @@
 						"octave" : [ 3 ],
 						"panning" : [ 0.50002876620907 ],
 						"reverb" : [ 0.146428571428571 ],
-						"subdivide" : [ 2 ]
+						"subdivide" : [ 4 ]
 					}
 ,
 					"text" : "autopattr",
@@ -7478,7 +7478,7 @@
 							}
 , 							{
 								"key" : "Ian",
-								"value" : [ 3.000255102040822, 279, 0.272727272727273, 2, 0.146428571428571, 0.285714285714286, 3, 0.50002876620907, 0.275 ]
+								"value" : [ 3.000255102040822, 279, 0.272727272727273, 4, 0.146428571428571, 0.285714285714286, 3, 0.50002876620907, 0.275 ]
 							}
  ]
 					}
@@ -10118,13 +10118,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "seqX.json",
-				"bootpath" : "/Users/famle/CML/MLE/code/pattrPresets",
-				"patcherrelativepath" : "../../../../code/pattrPresets",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "pattr-helper.maxpat",
 				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/utilities",
 				"patcherrelativepath" : "../../../../../../../ianhattwick/Library/Application Support/Cycling '74/Max 8/Examples/utilities",
@@ -10136,13 +10129,6 @@
 				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
 				"patcherrelativepath" : "../../../../patchers/utilities",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "newTest.txt",
-				"bootpath" : "/Users/famle/CML/MLE/code/pattrPresets/seqX",
-				"patcherrelativepath" : "../../../../code/pattrPresets/seqX",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
