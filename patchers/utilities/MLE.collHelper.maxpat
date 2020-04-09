@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 85.0, 392.0, 77.0, 22.0 ],
+					"text" : "route symbol"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-6",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -56,7 +68,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 85.0, 383.0, 96.0, 22.0 ],
+					"patching_rect" : [ 85.0, 419.0, 96.0, 22.0 ],
 					"text" : "prepend append"
 				}
 
@@ -145,7 +157,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 92.0, 279.0, 34.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 196.333333333333314, 2.0, 34.0, 22.0 ],
+					"presentation_rect" : [ 193.0, 2.0, 34.0, 22.0 ],
 					"text" : "write"
 				}
 
@@ -273,7 +285,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 179.0, 100.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 47.0, 2.0, 100.0, 20.0 ],
+					"presentation_rect" : [ 46.0, 3.0, 100.0, 20.0 ],
 					"text" : "Store Seq",
 					"texton" : ""
 				}
@@ -456,7 +468,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
+					"destination" : [ "obj-8", 0 ],
 					"source" : [ "obj-52", 1 ]
 				}
 
@@ -537,6 +549,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-52", 0 ],
 					"source" : [ "obj-78", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-8", 0 ]
 				}
 
 			}
