@@ -1026,8 +1026,8 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-7::obj-21::obj-6" : [ "live.tab[3]", "live.tab[1]", 0 ],
 			"obj-7::obj-35" : [ "[5]", "Level", 0 ],
+			"obj-7::obj-21::obj-6" : [ "live.tab[3]", "live.tab[1]", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -1441,8 +1441,8 @@
 , 			{
 				"name" : "rsliderGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
-					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
+					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1460,8 +1460,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 				}
 ,
 				"parentstyle" : "",

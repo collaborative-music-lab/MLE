@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 178.0, 160.0, 1132.0, 664.0 ],
+		"rect" : [ 177.0, 79.0, 1132.0, 664.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -211,11 +211,11 @@
 						"octave" : [ 3 ],
 						"panning" : [ 0.50002876620907 ],
 						"reverb" : [ 0.146428571428571 ],
-						"subdivide" : [ 4 ]
+						"subdivide" : [ 2 ]
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u440023010"
+					"varname" : "u091016176"
 				}
 
 			}
@@ -246,12 +246,12 @@
 					"active" : 					{
 						"poly~.1" : 0,
 						"poly~.1::MLE.seq" : 0,
-						"poly~.1::MLE.seq::u934022986" : 0,
+						"poly~.1::MLE.seq::u515016151" : 0,
 						"poly~.1::MLE.seq::enable" : 0,
 						"poly~.1::MLE.seq::hitProb" : 0,
 						"poly~.1::MLE.seq::seq" : 0,
 						"poly~.1::MLE.dist" : 0,
-						"poly~.1::MLE.dist::u802022987" : 0,
+						"poly~.1::MLE.dist::u158016152" : 0,
 						"poly~.1::MLE.dist::FB1gain" : 0,
 						"poly~.1::MLE.dist::FB2_gain" : 0,
 						"poly~.1::MLE.dist::FB2samples" : 0,
@@ -267,12 +267,12 @@
 						"poly~.1::MLE.dist::volume" : 0,
 						"poly~.2" : 0,
 						"poly~.2::MLE.seq" : 0,
-						"poly~.2::MLE.seq::u488022988" : 0,
+						"poly~.2::MLE.seq::u334016153" : 0,
 						"poly~.2::MLE.seq::enable" : 0,
 						"poly~.2::MLE.seq::hitProb" : 0,
 						"poly~.2::MLE.seq::seq" : 0,
 						"poly~.2::MLE.dist" : 0,
-						"poly~.2::MLE.dist::u885022989" : 0,
+						"poly~.2::MLE.dist::u803016154" : 0,
 						"poly~.2::MLE.dist::FB1gain" : 0,
 						"poly~.2::MLE.dist::FB2_gain" : 0,
 						"poly~.2::MLE.dist::FB2samples" : 0,
@@ -288,12 +288,12 @@
 						"poly~.2::MLE.dist::volume" : 0,
 						"poly~.3" : 0,
 						"poly~.3::MLE.seq" : 0,
-						"poly~.3::MLE.seq::u964022990" : 0,
+						"poly~.3::MLE.seq::u366016155" : 0,
 						"poly~.3::MLE.seq::enable" : 0,
 						"poly~.3::MLE.seq::hitProb" : 0,
 						"poly~.3::MLE.seq::seq" : 0,
 						"poly~.3::MLE.dist" : 0,
-						"poly~.3::MLE.dist::u962022991" : 0,
+						"poly~.3::MLE.dist::u210016156" : 0,
 						"poly~.3::MLE.dist::FB1gain" : 0,
 						"poly~.3::MLE.dist::FB2_gain" : 0,
 						"poly~.3::MLE.dist::FB2samples" : 0,
@@ -309,12 +309,12 @@
 						"poly~.3::MLE.dist::volume" : 0,
 						"poly~.4" : 0,
 						"poly~.4::MLE.seq" : 0,
-						"poly~.4::MLE.seq::u945022992" : 0,
+						"poly~.4::MLE.seq::u381016157" : 0,
 						"poly~.4::MLE.seq::enable" : 0,
 						"poly~.4::MLE.seq::hitProb" : 0,
 						"poly~.4::MLE.seq::seq" : 0,
 						"poly~.4::MLE.dist" : 0,
-						"poly~.4::MLE.dist::u920022993" : 0,
+						"poly~.4::MLE.dist::u175016158" : 0,
 						"poly~.4::MLE.dist::FB1gain" : 0,
 						"poly~.4::MLE.dist::FB2_gain" : 0,
 						"poly~.4::MLE.dist::FB2samples" : 0,
@@ -330,12 +330,12 @@
 						"poly~.4::MLE.dist::volume" : 0,
 						"poly~.5" : 0,
 						"poly~.5::MLE.seq" : 0,
-						"poly~.5::MLE.seq::u796022994" : 0,
+						"poly~.5::MLE.seq::u375016159" : 0,
 						"poly~.5::MLE.seq::enable" : 0,
 						"poly~.5::MLE.seq::hitProb" : 0,
 						"poly~.5::MLE.seq::seq" : 0,
 						"poly~.5::MLE.dist" : 0,
-						"poly~.5::MLE.dist::u217022995" : 0,
+						"poly~.5::MLE.dist::u427016160" : 0,
 						"poly~.5::MLE.dist::FB1gain" : 0,
 						"poly~.5::MLE.dist::FB2_gain" : 0,
 						"poly~.5::MLE.dist::FB2samples" : 0,
@@ -351,12 +351,12 @@
 						"poly~.5::MLE.dist::volume" : 0,
 						"poly~.6" : 0,
 						"poly~.6::MLE.seq" : 0,
-						"poly~.6::MLE.seq::u582022996" : 0,
+						"poly~.6::MLE.seq::u337016161" : 0,
 						"poly~.6::MLE.seq::enable" : 0,
 						"poly~.6::MLE.seq::hitProb" : 0,
 						"poly~.6::MLE.seq::seq" : 0,
 						"poly~.6::MLE.dist" : 0,
-						"poly~.6::MLE.dist::u948022997" : 0,
+						"poly~.6::MLE.dist::u100016162" : 0,
 						"poly~.6::MLE.dist::FB1gain" : 0,
 						"poly~.6::MLE.dist::FB2_gain" : 0,
 						"poly~.6::MLE.dist::FB2samples" : 0,
@@ -372,12 +372,12 @@
 						"poly~.6::MLE.dist::volume" : 0,
 						"poly~.7" : 0,
 						"poly~.7::MLE.seq" : 0,
-						"poly~.7::MLE.seq::u663022998" : 0,
+						"poly~.7::MLE.seq::u100016163" : 0,
 						"poly~.7::MLE.seq::enable" : 0,
 						"poly~.7::MLE.seq::hitProb" : 0,
 						"poly~.7::MLE.seq::seq" : 0,
 						"poly~.7::MLE.dist" : 0,
-						"poly~.7::MLE.dist::u537022999" : 0,
+						"poly~.7::MLE.dist::u842016165" : 0,
 						"poly~.7::MLE.dist::FB1gain" : 0,
 						"poly~.7::MLE.dist::FB2_gain" : 0,
 						"poly~.7::MLE.dist::FB2samples" : 0,
@@ -393,12 +393,12 @@
 						"poly~.7::MLE.dist::volume" : 0,
 						"poly~.8" : 0,
 						"poly~.8::MLE.seq" : 0,
-						"poly~.8::MLE.seq::u470023000" : 0,
+						"poly~.8::MLE.seq::u948016166" : 0,
 						"poly~.8::MLE.seq::enable" : 0,
 						"poly~.8::MLE.seq::hitProb" : 0,
 						"poly~.8::MLE.seq::seq" : 0,
 						"poly~.8::MLE.dist" : 0,
-						"poly~.8::MLE.dist::u686023001" : 0,
+						"poly~.8::MLE.dist::u526016167" : 0,
 						"poly~.8::MLE.dist::FB1gain" : 0,
 						"poly~.8::MLE.dist::FB2_gain" : 0,
 						"poly~.8::MLE.dist::FB2samples" : 0,
@@ -413,42 +413,42 @@
 						"poly~.8::MLE.dist::tone" : 0,
 						"poly~.8::MLE.dist::volume" : 0,
 						"MLE.seq[1]" : 0,
-						"MLE.seq[1]::u756023002" : 0,
+						"MLE.seq[1]::u661016168" : 0,
 						"MLE.seq[1]::enable" : 0,
 						"MLE.seq[1]::hitProb" : 0,
 						"MLE.seq[1]::seq" : 0,
 						"MLE.seq[2]" : 0,
-						"MLE.seq[2]::u891023003" : 0,
+						"MLE.seq[2]::u091016169" : 0,
 						"MLE.seq[2]::enable" : 0,
 						"MLE.seq[2]::hitProb" : 0,
 						"MLE.seq[2]::seq" : 0,
 						"MLE.seq[4]" : 0,
-						"MLE.seq[4]::u375023004" : 0,
+						"MLE.seq[4]::u164016170" : 0,
 						"MLE.seq[4]::enable" : 0,
 						"MLE.seq[4]::hitProb" : 0,
 						"MLE.seq[4]::seq" : 0,
 						"MLE.seq[3]" : 0,
-						"MLE.seq[3]::u580023005" : 0,
+						"MLE.seq[3]::u977016171" : 0,
 						"MLE.seq[3]::enable" : 0,
 						"MLE.seq[3]::hitProb" : 0,
 						"MLE.seq[3]::seq" : 0,
 						"MLE.seq[8]" : 0,
-						"MLE.seq[8]::u174023006" : 0,
+						"MLE.seq[8]::u878016172" : 0,
 						"MLE.seq[8]::enable" : 0,
 						"MLE.seq[8]::hitProb" : 0,
 						"MLE.seq[8]::seq" : 0,
 						"MLE.seq[7]" : 0,
-						"MLE.seq[7]::u972023007" : 0,
+						"MLE.seq[7]::u935016173" : 0,
 						"MLE.seq[7]::enable" : 0,
 						"MLE.seq[7]::hitProb" : 0,
 						"MLE.seq[7]::seq" : 0,
 						"MLE.seq[6]" : 0,
-						"MLE.seq[6]::u448023008" : 0,
+						"MLE.seq[6]::u162016174" : 0,
 						"MLE.seq[6]::enable" : 0,
 						"MLE.seq[6]::hitProb" : 0,
 						"MLE.seq[6]::seq" : 0,
 						"MLE.seq" : 0,
-						"MLE.seq::u213023009" : 0,
+						"MLE.seq::u412016175" : 0,
 						"MLE.seq::enable" : 0,
 						"MLE.seq::hitProb" : 0,
 						"MLE.seq::seq" : 0
@@ -3869,8 +3869,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3879,8 +3879,8 @@
 , 							{
 								"name" : "newobjYellow-2",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3889,8 +3889,8 @@
 , 							{
 								"name" : "newobjYellow-3",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -7471,14 +7471,18 @@
 , 			{
 				"box" : 				{
 					"coll_data" : 					{
-						"count" : 2,
+						"count" : 3,
 						"data" : [ 							{
 								"key" : "player",
 								"value" : [ "filter", "decay", "volume", "subdivide", "reverb", "fuzz", "octave", "pan", "noise" ]
 							}
 , 							{
 								"key" : "Ian",
-								"value" : [ 3.000255102040822, 279, 0.272727272727273, 4, 0.146428571428571, 0.285714285714286, 3, 0.50002876620907, 0.275 ]
+								"value" : [ 3.000255102040822, 279, 0.363636363636364, 2, 0.146428571428571, 0.285714285714286, 3, 0.50002876620907, 0.275 ]
+							}
+, 							{
+								"key" : "ijc",
+								"value" : [ 3.000255102040822, 279, 0.345454545454546, 2, 0.146428571428571, 0.285714285714286, 5, 0.50002876620907, 0.275 ]
 							}
  ]
 					}
@@ -7515,7 +7519,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 456.250014424324036, 11.16666579246521, 410.249985575675964, 163.66666841506958 ],
 					"rowhead" : 1,
-					"rows" : 2,
+					"rows" : 3,
 					"vscroll" : 0
 				}
 
@@ -9941,6 +9945,15 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-16::obj-43" : [ "live.grid[16]", "live.grid", 0 ],
+			"obj-17.6::obj-26::obj-43" : [ "live.grid[12]", "live.grid", 0 ],
+			"obj-17.4::obj-26::obj-43" : [ "live.grid[10]", "live.grid", 0 ],
+			"obj-38::obj-43" : [ "live.grid[21]", "live.grid", 0 ],
+			"obj-17.2::obj-26::obj-43" : [ "live.grid[8]", "live.grid", 0 ],
+			"obj-24::obj-43" : [ "live.grid[7]", "live.grid", 0 ],
+			"obj-17.8::obj-26::obj-43" : [ "live.grid[14]", "live.grid", 0 ],
+			"obj-11::obj-43" : [ "live.grid[1]", "live.grid", 0 ],
+			"obj-17.1::obj-26::obj-43" : [ "live.grid[15]", "live.grid", 0 ],
 			"obj-35::obj-43" : [ "live.grid[20]", "live.grid", 0 ],
 			"obj-17.7::obj-26::obj-43" : [ "live.grid[13]", "live.grid", 0 ],
 			"obj-13::obj-43" : [ "live.grid[2]", "live.grid", 0 ],
@@ -9948,15 +9961,6 @@
 			"obj-31::obj-43" : [ "live.grid[19]", "live.grid", 0 ],
 			"obj-17.3::obj-26::obj-43" : [ "live.grid[9]", "live.grid", 0 ],
 			"obj-20::obj-43" : [ "live.grid[17]", "live.grid", 0 ],
-			"obj-17.8::obj-26::obj-43" : [ "live.grid[14]", "live.grid", 0 ],
-			"obj-24::obj-43" : [ "live.grid[7]", "live.grid", 0 ],
-			"obj-16::obj-43" : [ "live.grid[16]", "live.grid", 0 ],
-			"obj-17.6::obj-26::obj-43" : [ "live.grid[12]", "live.grid", 0 ],
-			"obj-17.4::obj-26::obj-43" : [ "live.grid[10]", "live.grid", 0 ],
-			"obj-17.1::obj-26::obj-43" : [ "live.grid[15]", "live.grid", 0 ],
-			"obj-38::obj-43" : [ "live.grid[21]", "live.grid", 0 ],
-			"obj-17.2::obj-26::obj-43" : [ "live.grid[8]", "live.grid", 0 ],
-			"obj-11::obj-43" : [ "live.grid[1]", "live.grid", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -9965,8 +9969,8 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "TCP_seq_voice.maxpat",
-				"bootpath" : "/Users/famle/CML/MLE/code/js/finalTCP/old",
-				"patcherrelativepath" : "../../../../code/js/finalTCP/old",
+				"bootpath" : "/Users/famle/CML/MLE/compositions/S20/Telematic/seqX/dependencies",
+				"patcherrelativepath" : "./dependencies",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -10118,6 +10122,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "seqX.json",
+				"bootpath" : "/Users/famle/CML/MLE/code/pattrPresets/seqX",
+				"patcherrelativepath" : "../../../../code/pattrPresets/seqX",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "pattr-helper.maxpat",
 				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/utilities",
 				"patcherrelativepath" : "../../../../../../../ianhattwick/Library/Application Support/Cycling '74/Max 8/Examples/utilities",
@@ -10212,8 +10223,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -10222,8 +10233,8 @@
 , 			{
 				"name" : "newobjYellow-2",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -10232,8 +10243,8 @@
 , 			{
 				"name" : "newobjYellow-3",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
