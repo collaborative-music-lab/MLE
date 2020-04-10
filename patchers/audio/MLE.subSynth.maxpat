@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 2,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -86,7 +86,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -423,7 +423,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 42.0, 318.0, 44.0, 22.0 ],
+					"patching_rect" : [ 29.5, 318.0, 44.0, 22.0 ],
 					"text" : "noise~"
 				}
 
@@ -452,7 +452,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -758,7 +758,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 27.0, 231.0, 24.0, 24.0 ]
+					"patching_rect" : [ 27.0, 217.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -877,8 +877,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 335.0, 290.0, 54.0, 22.0 ],
-					"text" : "1 5 0 $1"
+					"patching_rect" : [ 335.0, 290.0, 59.0, 22.0 ],
+					"text" : "1 12 0 $1"
 				}
 
 			}
@@ -889,7 +889,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 297.0, 361.0, 43.0, 22.0 ],
+					"patching_rect" : [ 297.0, 361.0, 41.0, 22.0 ],
 					"text" : "sig~ 2"
 				}
 
