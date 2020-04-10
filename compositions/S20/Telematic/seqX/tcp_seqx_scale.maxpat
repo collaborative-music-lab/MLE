@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 84.0, 129.0, 1208.0, 887.0 ],
+		"rect" : [ 34.0, 79.0, 1612.0, 937.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,43 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 928.0, 600.0, 295.0, 60.0 ],
+					"text" : "notes:\n- add buttons for players to select seq presets\n- add interface for players to select synth presets\n- add ability to send presets to groups of players. . . . ."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 361.0, 672.0, 37.0, 22.0 ],
+					"text" : "pulse"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"linecount" : 4,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 706.0, 544.0, 50.0, 62.0 ],
+					"text" : "0 4 9 12 16 21 24 28"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-78",
 					"maxclass" : "newobj",
@@ -110,8 +147,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 207.0, 676.0, 69.0, 22.0 ],
-					"text" : "newTest.txt"
+					"patching_rect" : [ 207.0, 676.0, 75.0, 22.0 ],
+					"text" : "newTest2.txt"
 				}
 
 			}
@@ -563,13 +600,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-27",
-									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 187.0, 490.0, 143.0, 35.0 ],
-									"text" : "14. 16. 14. 12. 11. 9. 7. 5."
+									"text" : "4. 5. 7. 9. 11. 12. 14. 16."
 								}
 
 							}
@@ -1082,7 +1118,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1177.0, 290.0, 213.0, 22.0 ],
-					"text" : "5. 7. 9. 11. 12. 14. 14. 16."
+					"text" : "4. 5. 7. 9. 11. 12. 14. 16."
 				}
 
 			}
@@ -1132,7 +1168,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 237.0, 314.0, 120.0, 22.0 ],
-					"text" : "5 3 1 4 7 8 11 13"
+					"text" : "0 2 3 5 3 6 8 10"
 				}
 
 			}
@@ -1185,7 +1221,7 @@
 					"patching_rect" : [ 184.0, 98.0, 160.0, 145.0 ],
 					"range" : 19,
 					"size" : 8,
-					"table_data" : [ 0, 5, 3, 1, 4, 7, 8, 11, 13 ]
+					"table_data" : [ 0, 0, 2, 3, 5, 3, 6, 8, 10 ]
 				}
 
 			}
@@ -1373,7 +1409,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
-					"midpoints" : [ 703.0, 221.0 ],
+					"midpoints" : [ 700.5, 221.0 ],
 					"source" : [ "obj-30", 0 ]
 				}
 
@@ -1387,7 +1423,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-54", 0 ],
+					"destination" : [ "obj-3", 1 ],
 					"order" : 0,
 					"source" : [ "obj-36", 0 ]
 				}
@@ -1395,8 +1431,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-57", 0 ],
+					"destination" : [ "obj-54", 0 ],
 					"order" : 1,
+					"source" : [ "obj-36", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-57", 0 ],
+					"order" : 2,
 					"source" : [ "obj-36", 0 ]
 				}
 
@@ -1526,6 +1570,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-62", 0 ],
 					"source" : [ "obj-68", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-60", 0 ],
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
