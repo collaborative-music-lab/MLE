@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 0,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -392,7 +392,8 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 708.0, 238.0, 85.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 0
+						"embed" : 0,
+						"precision" : 6
 					}
 ,
 					"text" : "coll ASCII_coll"
@@ -564,7 +565,8 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 360.0, 226.0, 85.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 0
+						"embed" : 0,
+						"precision" : 6
 					}
 ,
 					"text" : "coll ASCII_coll"
@@ -641,7 +643,8 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 140.25, 137.5, 85.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 0
+						"embed" : 0,
+						"precision" : 6
 					}
 ,
 					"text" : "coll ASCII_coll"
