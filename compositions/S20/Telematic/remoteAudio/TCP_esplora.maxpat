@@ -39,6 +39,36 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-45",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 56.800000846385956, 242.400003612041473, 150.0, 33.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 17.600000262260437, 230.400003433227539, 150.0, 33.0 ],
+					"text" : "s&x and  d&c change joystick sensitivity"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-28",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 204.800003051757812, 194.400002896785736, 150.0, 33.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 201.0, 184.5, 150.0, 33.0 ],
+					"text" : "a and z to change panning amount"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-44",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -84,7 +114,8 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 624.0, 118.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 201.0, 195.5, 97.0, 22.0 ]
+					"presentation_rect" : [ 201.0, 219.5, 97.0, 22.0 ],
+					"text" : "pan 0."
 				}
 
 			}
@@ -612,7 +643,7 @@
 					"outlettype" : [ "", "int" ],
 					"patching_rect" : [ 122.0, 13.0, 320.0, 175.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 5.0, 320.0, 175.0 ],
+					"presentation_rect" : [ 11.0, 4.199999988079071, 320.0, 175.0 ],
 					"viewvisibility" : 1
 				}
 
