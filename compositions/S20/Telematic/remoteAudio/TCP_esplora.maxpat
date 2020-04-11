@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 104.0, 1143.0, 709.0 ],
+		"rect" : [ 59.0, 104.0, 537.0, 295.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,89 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-65",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 407.0, 232.0, 150.0, 74.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 5,
+					"presentation_rect" : [ 377.0, 198.0, 150.0, 74.0 ],
+					"text" : "Slider: volume\n\nAccelerometer: foward/back reverb\nleft/right filter"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-63",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 522.0, 177.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 458.0, 134.0, 39.0, 20.0 ],
+					"text" : "Delay"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-61",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 466.0, 201.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 412.0, 168.0, 59.0, 20.0 ],
+					"text" : "Distortion"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-59",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 427.0, 171.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 371.0, 127.5, 49.0, 33.0 ],
+					"text" : "Loop Length"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-56",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 430.0, 134.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 424.0, 100.203389830508456, 35.0, 20.0 ],
+					"text" : "Pitch"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-54",
+					"linecount" : 6,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 396.0, 48.0, 150.0, 87.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 6,
+					"presentation_rect" : [ 371.0, 16.0, 150.0, 87.0 ],
+					"text" : "Controls:\n\nJoystick button - capture audio\n\n             Buttons:"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-49",
 					"maxclass" : "newobj",
@@ -693,6 +776,24 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 11.0, 4.199999988079071, 320.0, 175.0 ],
 					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 0.0,
+					"bgcolor" : [ 0.094118, 0.113725, 0.137255, 0.0 ],
+					"border" : 1,
+					"bordercolor" : [ 0.415686, 0.454902, 0.52549, 1.0 ],
+					"id" : "obj-66",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 345.0, 62.0, 120.0, 120.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 371.0, 80.0, 135.0, 108.0 ],
+					"rounded" : 16
 				}
 
 			}
