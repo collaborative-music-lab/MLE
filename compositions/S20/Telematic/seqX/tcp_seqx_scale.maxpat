@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1287.0, 937.0 ],
+		"rect" : [ 34.0, 79.0, 1474.0, 937.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,18 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 448.5, 640.0, 101.0, 22.0 ],
+					"text" : "seqX_drums.json"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-13",
 					"maxclass" : "newobj",
@@ -104,7 +116,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 361.0, 672.0, 37.0, 22.0 ],
+					"patching_rect" : [ 393.0, 672.0, 37.0, 22.0 ],
 					"text" : "pulse"
 				}
 
@@ -112,12 +124,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-3",
-					"linecount" : 4,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 706.0, 544.0, 50.0, 62.0 ],
+					"patching_rect" : [ 727.0, 539.0, 168.0, 22.0 ],
 					"text" : "0 4 9 12 16 21 24 28"
 				}
 
@@ -129,7 +140,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 184.0, 596.0, 303.0, 74.0 ],
+					"patching_rect" : [ 201.0, 593.0, 303.0, 74.0 ],
 					"text" : "Read preset files and recall presets:\n- files are saved in MLE/code/pattrPresets/seqX\n- .txt files are for seq, .json for pattr\n- read loads files, recall loads preset within files\n- seq presets are named, pattr are numbered",
 					"textcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ]
 				}
@@ -154,8 +165,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 441.5, 672.0, 92.0, 22.0 ],
-					"text" : "seqXpattr2.json"
+					"patching_rect" : [ 441.5, 672.0, 119.0, 22.0 ],
+					"text" : "seqX_examples.json"
 				}
 
 			}
@@ -166,8 +177,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 317.0, 672.0, 29.5, 22.0 ],
-					"text" : "asc"
+					"patching_rect" : [ 310.0, 676.0, 73.0, 22.0 ],
+					"text" : "\"flat rhythm\""
 				}
 
 			}
@@ -178,8 +189,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 207.0, 676.0, 75.0, 22.0 ],
-					"text" : "newTest2.txt"
+					"patching_rect" : [ 207.0, 676.0, 101.0, 22.0 ],
+					"text" : "3newPresets2.txt"
 				}
 
 			}
@@ -1492,6 +1503,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-62", 0 ],
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-12", 1 ],
 					"source" : [ "obj-40", 0 ]
 				}
@@ -1773,8 +1791,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1783,8 +1801,8 @@
 , 			{
 				"name" : "newobjYellow-2",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1793,8 +1811,8 @@
 , 			{
 				"name" : "newobjYellow-3",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
