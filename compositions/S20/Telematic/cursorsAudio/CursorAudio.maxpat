@@ -39,6 +39,97 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-107",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "MLE.delay.maxpat",
+					"numinlets" : 4,
+					"numoutlets" : 2,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "signal", "" ],
+					"patching_rect" : [ 681.0, 833.0, 275.0, 117.0 ],
+					"varname" : "MLE.delay",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-106",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 919.5, 490.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-104",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "int" ],
+					"patching_rect" : [ 919.5, 525.0, 29.5, 22.0 ],
+					"text" : "t 1 i"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-103",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 971.0, 599.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-99",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "" ],
+					"patching_rect" : [ 930.0, 564.0, 51.0, 22.0 ],
+					"text" : "mtos 60"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"args" : [ "schoenhutToyPiano_A_69.wav" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-94",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "MLE.simpler.maxpat",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 681.0, 636.0, 309.0, 189.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-93",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -272,7 +363,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 630.60714285714289, 581.0, 40.0, 22.0 ],
+					"patching_rect" : [ 178.60714285714289, 829.0, 40.0, 22.0 ],
 					"text" : "*~ 0.2"
 				}
 
@@ -344,7 +435,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 117.0, 638.0, 45.0, 45.0 ]
+					"patching_rect" : [ 100.0, 863.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -566,6 +657,41 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-94", 1 ],
+					"source" : [ "obj-103", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-94", 0 ],
+					"source" : [ "obj-104", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-99", 0 ],
+					"source" : [ "obj-104", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-104", 0 ],
+					"source" : [ "obj-106", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-56", 0 ],
+					"source" : [ "obj-107", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
 					"source" : [ "obj-20", 0 ]
 				}
@@ -657,7 +783,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-107", 0 ],
+					"order" : 1,
+					"source" : [ "obj-52", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-56", 0 ],
+					"order" : 0,
 					"source" : [ "obj-52", 0 ]
 				}
 
@@ -946,6 +1081,29 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-107", 0 ],
+					"order" : 1,
+					"source" : [ "obj-94", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-56", 0 ],
+					"order" : 0,
+					"source" : [ "obj-94", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-103", 0 ],
+					"source" : [ "obj-99", 1 ]
+				}
+
+			}
  ],
 		"parameters" : 		{
 			"obj-7::obj-21" : [ "snare-snap", "snap", 0 ],
@@ -988,7 +1146,7 @@
 		"dependency_cache" : [ 			{
 				"name" : "MLE.analogueDrums.maxpat",
 				"bootpath" : "/Users/famle/CML/MLE/patchers/audio/drums",
-				"patcherrelativepath" : "../../../patchers/audio/drums",
+				"patcherrelativepath" : "../../../../patchers/audio/drums",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -1025,28 +1183,56 @@
 , 			{
 				"name" : "MLE.FMsynth.maxpat",
 				"bootpath" : "/Users/famle/CML/MLE/patchers/audio/FMsynth",
-				"patcherrelativepath" : "../../../patchers/audio/FMsynth",
+				"patcherrelativepath" : "../../../../patchers/audio/FMsynth",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.fmPoly.maxpat",
 				"bootpath" : "/Users/famle/CML/MLE/patchers/audio/FMsynth",
-				"patcherrelativepath" : "../../../patchers/audio/FMsynth",
+				"patcherrelativepath" : "../../../../patchers/audio/FMsynth",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "init.maxpat",
 				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
-				"patcherrelativepath" : "../../../patchers/utilities",
+				"patcherrelativepath" : "../../../../patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.pattrNamer.maxpat",
 				"bootpath" : "/Users/famle/CML/MLE/patchers/sandbox",
-				"patcherrelativepath" : "../../../patchers/sandbox",
+				"patcherrelativepath" : "../../../../patchers/sandbox",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.simpler.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/audio/samplers",
+				"patcherrelativepath" : "../../../../patchers/audio/samplers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "initS.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "../../../../patchers/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mtos.maxpat",
+				"bootpath" : "~/Dropbox (Personal)/_documents/MaxIH/ current/AUMI/application/subpatches",
+				"patcherrelativepath" : "../../../../../../../ianhattwick/Dropbox (Personal)/_documents/MaxIH/ current/AUMI/application/subpatches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.delay.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/sandbox",
+				"patcherrelativepath" : "../../../../patchers/sandbox",
 				"type" : "JSON",
 				"implicit" : 1
 			}
