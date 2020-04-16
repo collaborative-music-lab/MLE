@@ -39,6 +39,30 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-35",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 88.0, 530.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 92.0, 584.0, 88.0, 22.0 ],
+					"text" : "MLE.loadmess"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"format" : 6,
 					"id" : "obj-70",
 					"maxclass" : "flonum",
@@ -1291,6 +1315,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-16", 1 ],
 					"source" : [ "obj-36", 0 ]
 				}
@@ -1320,7 +1351,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-37", 0 ],
-					"order" : 6,
+					"order" : 0,
 					"source" : [ "obj-42", 0 ]
 				}
 
@@ -1328,38 +1359,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-62", 0 ],
-					"order" : 5,
-					"source" : [ "obj-42", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-63", 0 ],
-					"order" : 4,
-					"source" : [ "obj-42", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-64", 0 ],
-					"order" : 3,
-					"source" : [ "obj-42", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-65", 0 ],
-					"order" : 2,
-					"source" : [ "obj-42", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-66", 0 ],
 					"order" : 1,
 					"source" : [ "obj-42", 0 ]
 				}
@@ -1367,8 +1366,40 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-63", 0 ],
+					"order" : 2,
+					"source" : [ "obj-42", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-64", 0 ],
+					"order" : 5,
+					"source" : [ "obj-42", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-65", 0 ],
+					"order" : 4,
+					"source" : [ "obj-42", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-66", 0 ],
+					"order" : 3,
+					"source" : [ "obj-42", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-67", 0 ],
-					"order" : 0,
+					"order" : 6,
 					"source" : [ "obj-42", 0 ]
 				}
 
@@ -1491,22 +1522,22 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-63::obj-7" : [ "live.grid[6]", "live.grid", 0 ],
-			"obj-64::obj-91" : [ "live.grid[9]", "live.grid", 0 ],
 			"obj-62::obj-91" : [ "live.grid[4]", "live.grid", 0 ],
+			"obj-66::obj-91" : [ "live.grid[13]", "live.grid", 0 ],
 			"obj-67::obj-91" : [ "live.grid[14]", "live.grid", 0 ],
-			"obj-66::obj-7" : [ "live.grid[12]", "live.grid", 0 ],
+			"obj-64::obj-7" : [ "live.grid[8]", "live.grid", 0 ],
 			"obj-37::obj-91" : [ "live.grid[3]", "live.grid", 0 ],
+			"obj-63::obj-91" : [ "live.grid[7]", "live.grid", 0 ],
+			"obj-65::obj-7" : [ "live.grid[11]", "live.grid", 0 ],
+			"obj-67::obj-7" : [ "live.grid[15]", "live.grid", 0 ],
+			"obj-7::obj-21::obj-6" : [ "live.tab[3]", "live.tab[1]", 0 ],
+			"obj-62::obj-7" : [ "live.grid[5]", "live.grid", 0 ],
 			"obj-7::obj-35" : [ "[5]", "Level", 0 ],
+			"obj-66::obj-7" : [ "live.grid[12]", "live.grid", 0 ],
+			"obj-64::obj-91" : [ "live.grid[9]", "live.grid", 0 ],
+			"obj-63::obj-7" : [ "live.grid[6]", "live.grid", 0 ],
 			"obj-65::obj-91" : [ "live.grid[10]", "live.grid", 0 ],
 			"obj-37::obj-7" : [ "live.grid[2]", "live.grid", 0 ],
-			"obj-67::obj-7" : [ "live.grid[15]", "live.grid", 0 ],
-			"obj-64::obj-7" : [ "live.grid[8]", "live.grid", 0 ],
-			"obj-62::obj-7" : [ "live.grid[5]", "live.grid", 0 ],
-			"obj-63::obj-91" : [ "live.grid[7]", "live.grid", 0 ],
-			"obj-66::obj-91" : [ "live.grid[13]", "live.grid", 0 ],
-			"obj-65::obj-7" : [ "live.grid[11]", "live.grid", 0 ],
-			"obj-7::obj-21::obj-6" : [ "live.tab[3]", "live.tab[1]", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -1681,8 +1712,8 @@
 , 			{
 				"name" : "helpfile_label-1",
 				"default" : 				{
-					"fontsize" : [ 13.0 ],
 					"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
+					"fontsize" : [ 13.0 ],
 					"fontname" : [ "Arial" ]
 				}
 ,
@@ -1946,7 +1977,8 @@
 				"parentstyle" : "",
 				"multi" : 0
 			}
- ]
+ ],
+		"bgcolor" : [ 0.192156862745098, 0.192156862745098, 0.192156862745098, 1.0 ]
 	}
 
 }
