@@ -39,6 +39,42 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-160",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 180.0, 320.0, 63.0, 22.0 ],
+					"text" : "writeagain"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-158",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 229.0, 373.0, 89.0, 22.0 ],
+					"text" : "storagewindow"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-156",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 57.0, 339.0, 98.0, 22.0 ],
+					"text" : "MLE.loadmess 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-155",
 					"maxclass" : "newobj",
 					"numinlets" : 5,
@@ -56,7 +92,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 207.0, 347.0, 45.0, 22.0 ],
+					"patching_rect" : [ 174.0, 368.0, 45.0, 22.0 ],
 					"text" : "store 1"
 				}
 
@@ -93,7 +129,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 502.0, 526.0, 50.0, 22.0 ],
-					"text" : "59 95"
+					"text" : "60 95"
 				}
 
 			}
@@ -223,13 +259,12 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-20",
-									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 248.0, 200.0, 50.0, 35.0 ],
-									"text" : "ijc 0.375"
+									"patching_rect" : [ 248.0, 200.0, 50.0, 22.0 ],
+									"text" : "ijc 0.25"
 								}
 
 							}
@@ -1029,18 +1064,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-131",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 497.0, 183.0, 29.5, 22.0 ],
-					"text" : "$1"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-126",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -1076,6 +1099,7 @@
 			}
 , 			{
 				"box" : 				{
+					"autorestore" : "cursorAudio.json",
 					"id" : "obj-123",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -1086,7 +1110,7 @@
 						"client_rect" : [ 4, 45, 357, 328 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
-						"storage_rect" : [ 583, 69, 1034, 197 ]
+						"storage_rect" : [ 583, 79, 1034, 207 ]
 					}
 ,
 					"text" : "pattrstorage cursorAudio @greedy 1",
@@ -1491,8 +1515,36 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-123", 0 ],
+					"source" : [ "obj-154", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-69", 3 ],
 					"source" : [ "obj-155", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-123", 0 ],
+					"source" : [ "obj-156", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-123", 0 ],
+					"source" : [ "obj-158", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-123", 0 ],
+					"source" : [ "obj-160", 0 ]
 				}
 
 			}
@@ -1612,6 +1664,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "cursorAudio.json",
+				"bootpath" : "/Users/famle/CML/MLE/code/pattrPresets",
+				"patcherrelativepath" : "../../../../code/pattrPresets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "MLE.scale.maxpat",
 				"bootpath" : "/Users/famle/CML/MLE/patchers/controllers",
 				"patcherrelativepath" : "../../../../patchers/controllers",
@@ -1620,6 +1679,13 @@
 			}
 , 			{
 				"name" : "initS.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "../../../../patchers/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.loadmess.maxpat",
 				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
 				"patcherrelativepath" : "../../../../patchers/utilities",
 				"type" : "JSON",
