@@ -361,13 +361,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-27",
-									"linecount" : 6,
+									"linecount" : 5,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 396.0, 346.0, 51.0, 89.0 ],
-									"text" : "\"OK, my name is Death by Poison\""
+									"text" : "\"OK, my name is Blue Cruelty\""
 								}
 
 							}
@@ -1280,8 +1280,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -4162,6 +4160,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-6",
@@ -4171,17 +4170,6 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 507.0, 235.0, 42.0, 22.0 ],
 									"text" : "48000"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-5",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 502.0, 169.0, 32.0, 22.0 ],
-									"text" : "print"
 								}
 
 							}
@@ -4795,15 +4783,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-13", 0 ],
-									"order" : 1,
-									"source" : [ "obj-27", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-5", 0 ],
-									"order" : 0,
 									"source" : [ "obj-27", 0 ]
 								}
 
@@ -4896,7 +4875,7 @@
 					"fontsize" : 10.0,
 					"hint" : "",
 					"id" : "obj-21",
-					"items" : 48000,
+					"items" : [ 44100, ",", 48000, ",", 88200, ",", 96000 ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -5676,7 +5655,7 @@
 					"fontsize" : 10.0,
 					"hint" : "",
 					"id" : "obj-24",
-					"items" : [ 32, ",", 64, ",", 128, ",", 256, ",", 512 ],
+					"items" : [ 32, ",", 64, ",", 128, ",", 256, ",", 512, ",", 1024, ",", 2048 ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
