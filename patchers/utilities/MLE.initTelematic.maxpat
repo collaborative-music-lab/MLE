@@ -39,6 +39,66 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-62",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 228.0, 923.0, 103.0, 22.0 ],
+					"text" : "node process.exit"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-57",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 305.0, 1178.0, 45.0, 22.0 ],
+					"text" : "send 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-50",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 253.0, 1386.0, 71.0, 22.0 ],
+					"text" : "fromsymbol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-47",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 236.0, 1453.0, 50.0, 22.0 ],
+					"text" : "true"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-44",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 230.959792971611023, 1422.0, 101.0, 22.0 ],
+					"text" : "route connection:"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-43",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -307,7 +367,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 396.0, 346.0, 51.0, 89.0 ],
-									"text" : "\"OK, my name is Heavy Warrior\""
+									"text" : "\"OK, my name is Death by Poison\""
 								}
 
 							}
@@ -417,7 +477,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 388.0, 196.0, 219.0, 35.0 ],
-									"text" : "50 32 102 114 105 101 110 100 115 32 111 110 108 105 110 101"
+									"text" : "49 32 102 114 105 101 110 100 115 32 111 110 108 105 110 101"
 								}
 
 							}
@@ -1225,7 +1285,7 @@
 						"watch" : 0
 					}
 ,
-					"text" : "node.script famleTCPclient_v2.js"
+					"text" : "node.script famleTCPclient_v3.js"
 				}
 
 			}
@@ -1577,7 +1637,7 @@
 			}
 , 			{
 				"box" : 				{
-					"cols" : 3,
+					"cols" : 1,
 					"colwidth" : 100,
 					"fontface" : 0,
 					"fontname" : "Arial",
@@ -1590,7 +1650,7 @@
 					"patching_rect" : [ 35.0, 550.0, 200.0, 200.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 379.0, 9.0, 328.0, 189.941139221191406 ],
-					"rows" : 6
+					"rows" : 1
 				}
 
 			}
@@ -4836,7 +4896,7 @@
 					"fontsize" : 10.0,
 					"hint" : "",
 					"id" : "obj-21",
-					"items" : [ 44100, ",", 48000, ",", 88200, ",", 96000 ],
+					"items" : 48000,
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -5616,7 +5676,7 @@
 					"fontsize" : 10.0,
 					"hint" : "",
 					"id" : "obj-24",
-					"items" : [ 32, ",", 64, ",", 128, ",", 256, ",", 512, ",", 1024, ",", 2048 ],
+					"items" : [ 32, ",", 64, ",", 128, ",", 256, ",", 512 ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -6294,7 +6354,7 @@
 					"fontsize" : 10.0,
 					"hint" : "",
 					"id" : "obj-18",
-					"items" : [ "None", ",", "External Microphone", ",", "MacBook Pro Microphone", ",", "JackRouter", ",", "ZoomAudioDevice" ],
+					"items" : [ "None", ",", "External Microphone", ",", "MacBook Pro Microphone", ",", "iShowU Audio Capture", ",", "ZoomAudioDevice" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -6972,7 +7032,7 @@
 					"fontsize" : 10.0,
 					"hint" : "",
 					"id" : "obj-6",
-					"items" : [ "None", ",", "External Headphones", ",", "MacBook Pro Speakers", ",", "JackRouter", ",", "ZoomAudioDevice" ],
+					"items" : [ "None", ",", "External Headphones", ",", "MacBook Pro Speakers", ",", "iShowU Audio Capture", ",", "ZoomAudioDevice" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -9864,6 +9924,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-204", 0 ],
+					"order" : 0,
+					"source" : [ "obj-227", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-50", 0 ],
+					"order" : 1,
 					"source" : [ "obj-227", 0 ]
 				}
 
@@ -10101,6 +10170,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-47", 1 ],
+					"source" : [ "obj-44", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-153", 0 ],
 					"source" : [ "obj-45", 0 ]
 				}
@@ -10110,6 +10186,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-68", 0 ],
 					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-44", 0 ],
+					"source" : [ "obj-50", 0 ]
 				}
 
 			}
@@ -10178,6 +10261,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-207", 0 ],
+					"source" : [ "obj-57", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-171", 0 ],
 					"source" : [ "obj-59", 0 ]
 				}
@@ -10222,6 +10312,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-59", 0 ],
 					"source" : [ "obj-60", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-207", 0 ],
+					"source" : [ "obj-62", 0 ]
 				}
 
 			}
