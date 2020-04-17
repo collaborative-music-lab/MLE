@@ -4,3 +4,6 @@
 [submodule "compositions/S20/cursors"]
 	path = compositions/S20/cursors
 	url = https://github.com/ijc8/cursors.git
+[submodule "compositions/S20/Telematic/cursors"]
+	path = compositions/S20/Telematic/cursors
+	url = https://github.com/ijc8/cursors.git
