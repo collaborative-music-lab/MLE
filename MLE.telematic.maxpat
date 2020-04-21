@@ -46,7 +46,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 229.0, 36.0, 81.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 232.5, 225.0, 81.0, 22.0 ],
+					"presentation_rect" : [ 236.0, 179.0, 81.0, 22.0 ],
 					"text" : "reset patches"
 				}
 
@@ -255,7 +255,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 844.5, -418.0, 55.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 290.0, 288.0, 55.0, 20.0 ],
+					"presentation_rect" : [ 293.5, 242.0, 55.0, 20.0 ],
 					"text" : "inc clock"
 				}
 
@@ -270,7 +270,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 776.5, -420.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 232.5, 286.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 236.0, 240.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -284,7 +284,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 707.333301544189453, -146.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 232.5, 257.333337783813477, 50.0, 22.0 ]
+					"presentation_rect" : [ 236.0, 211.333337783813477, 50.0, 22.0 ]
 				}
 
 			}
@@ -18482,7 +18482,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 1317.0, 591.0, 56.0, 22.0 ],
 					"text" : "autopattr",
-					"varname" : "u618019407"
+					"varname" : "u482143292"
 				}
 
 			}
