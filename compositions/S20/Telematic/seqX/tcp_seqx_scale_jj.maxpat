@@ -52,13 +52,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-45",
-					"linecount" : 2,
+					"linecount" : 5,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1045.0, 579.0, 50.0, 35.0 ],
-					"text" : "section a 5"
+					"patching_rect" : [ 1045.0, 579.0, 50.0, 76.0 ],
+					"text" : "3-clusters and split sequence 30"
 				}
 
 			}

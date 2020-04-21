@@ -367,7 +367,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 396.0, 346.0, 51.0, 89.0 ],
-									"text" : "\"OK, my name is Blue Cruelty\""
+									"text" : "\"OK, my name is Unholy Sword\""
 								}
 
 							}
@@ -1277,9 +1277,13 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 148.959792971611023, 1234.999991774559021, 183.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 7.0, 377.999991774559021, 183.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -4160,7 +4164,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-6",
@@ -6333,7 +6336,7 @@
 					"fontsize" : 10.0,
 					"hint" : "",
 					"id" : "obj-18",
-					"items" : [ "None", ",", "External Microphone", ",", "MacBook Pro Microphone", ",", "iShowU Audio Capture", ",", "ZoomAudioDevice" ],
+					"items" : [ "None", ",", "MacBook Pro Microphone", ",", "iShowU Audio Capture", ",", "ZoomAudioDevice" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -7011,7 +7014,7 @@
 					"fontsize" : 10.0,
 					"hint" : "",
 					"id" : "obj-6",
-					"items" : [ "None", ",", "External Headphones", ",", "MacBook Pro Speakers", ",", "iShowU Audio Capture", ",", "ZoomAudioDevice" ],
+					"items" : [ "None", ",", "DisplayPort", ",", "External Headphones", ",", "MacBook Pro Speakers", ",", "iShowU Audio Capture", ",", "ZoomAudioDevice" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -10470,8 +10473,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -10480,8 +10483,8 @@
 , 			{
 				"name" : "newobjYellow-2",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -10490,8 +10493,8 @@
 , 			{
 				"name" : "newobjYellow-3",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
