@@ -7,7 +7,7 @@ Max/MSP Library for use by the MIT Laptop Ensemble
 3. Clone the MLE library into the folder you just chose using either GitHub Desktop or the terminal. https://help.github.com/en/articles/cloning-a-repository
 4. You may need to install git tools if necessary. https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 5. Find the GettingStarted folder in the MLE library, and open the GettingStarted Max patch. There will be a bunch of errors we will fix.
-6. Install Java if necessary.
+6. /*deprecated*/ Install Java if necessary.
 7. Install the Max Link library using the File->Show Package Manager menu and searching for "link"
 8. Add the MLE library to your Max search path by opening Max and finding the options->File Preferences menu
 9. Close and reopen GettingStarted
@@ -68,6 +68,7 @@ You need to have java installed on your machine. Get it here - note, you only ne
   * Make sure audio is turned on.
   * Make sure the volume of the synth is turned on.
   * Make sure the sequencer and MLE.beat are running.
+  * Check the Max console to see if it is reporting not finding objects. If so, you probably don't have the MLE library in your Max search path. Check options->File Preferences and add it by clinking the '+' sign on the bottom left of the file manager.
 
 
 
