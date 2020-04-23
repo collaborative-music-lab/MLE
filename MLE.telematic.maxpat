@@ -39,12 +39,35 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-135",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 230.0, 40.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-132",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 332.0, 71.0, 99.0, 22.0 ],
+					"text" : "s MLElocalReset"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-133",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 229.0, 36.0, 81.0, 22.0 ],
+					"patching_rect" : [ 230.0, 14.0, 81.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 236.0, 179.0, 81.0, 22.0 ],
 					"text" : "reset patches"
@@ -18482,7 +18505,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 1317.0, 591.0, 56.0, 22.0 ],
 					"text" : "autopattr",
-					"varname" : "u482143292"
+					"varname" : "u125011571"
 				}
 
 			}
@@ -18496,10 +18519,10 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1273.0, 619.0, 280.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 4, 45, 357, 328 ],
+						"client_rect" : [ 4, 79, 358, 207 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
-						"storage_rect" : [ 583, 69, 1034, 197 ]
+						"storage_rect" : [ 583, 79, 1456, 465 ]
 					}
 ,
 					"text" : "pattrstorage MLEmaster @greedy 1 @savemode 0",
@@ -19171,8 +19194,24 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-130", 0 ],
+					"destination" : [ "obj-135", 0 ],
 					"source" : [ "obj-133", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-130", 0 ],
+					"order" : 1,
+					"source" : [ "obj-135", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-132", 0 ],
+					"order" : 0,
+					"source" : [ "obj-135", 0 ]
 				}
 
 			}
@@ -20348,6 +20387,13 @@
 				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
 				"patcherrelativepath" : "./patchers/utilities",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLEdata.txt",
+				"bootpath" : "~/Documents/Max 8/Library",
+				"patcherrelativepath" : "../../../ianhattwick/Documents/Max 8/Library",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
