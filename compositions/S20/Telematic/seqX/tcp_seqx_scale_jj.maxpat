@@ -12,7 +12,7 @@
 		"classnamespace" : "box",
 		"rect" : [ 782.0, 127.0, 456.0, 506.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -59,7 +59,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 408.0, 411.0, 150.0, 20.0 ],
+					"patching_rect" : [ 820.0, 756.0, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 255.0, 292.0, 150.0, 20.0 ],
 					"text" : "panning mode"
@@ -811,7 +811,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 763.0, 779.0, 198.0, 22.0 ],
+					"patching_rect" : [ 763.0, 793.0, 198.0, 22.0 ],
 					"text" : "MLE.TCPsend defaultPanningState"
 				}
 
