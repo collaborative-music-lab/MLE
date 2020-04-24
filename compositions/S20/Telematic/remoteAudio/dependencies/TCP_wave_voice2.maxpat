@@ -93,10 +93,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 148.0, 349.0, 35.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "out 1"
 				}
 
@@ -4575,7 +4571,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 4,
 									"outlettype" : [ "", "", "", "" ],
-									"patching_rect" : [ 109.0, 287.0, 89.0, 22.0 ],
+									"patching_rect" : [ 46.0, 336.0, 89.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 1,
 										"precision" : 6
@@ -4593,7 +4589,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 46.0, 237.0, 50.0, 22.0 ]
+									"patching_rect" : [ 46.0, 302.0, 50.0, 22.0 ]
 								}
 
 							}
@@ -4677,8 +4673,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 109.0, 226.0, 276.0, 22.0 ],
-									"text" : "expr (floor(pow(abs($f1)\\,1.5)*15) ) * (($f1>0)*2 - 1)"
+									"patching_rect" : [ 109.0, 226.0, 253.0, 22.0 ],
+									"text" : "expr ((pow(abs($f1)\\,1.5)*15) ) * (($f1>0)*2 - 1)"
 								}
 
 							}
@@ -4840,6 +4836,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-27", 0 ],
+									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-11", 0 ],
 									"source" : [ "obj-27", 0 ]
 								}
@@ -4906,15 +4909,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-26", 0 ],
-									"order" : 1,
-									"source" : [ "obj-7", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-27", 0 ],
-									"order" : 0,
 									"source" : [ "obj-7", 0 ]
 								}
 
@@ -7194,6 +7188,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 61.25, 22.0, 28.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "in 1"
 				}
 
@@ -8094,6 +8092,82 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "MLE.output.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "../../../../../patchers/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "init.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "../../../../../patchers/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.loadmess.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "../../../../../patchers/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "initS.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "../../../../../patchers/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.dist.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/audio/FX",
+				"patcherrelativepath" : "../../../../../patchers/audio/FX",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.biquad.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/audio/FX",
+				"patcherrelativepath" : "../../../../../patchers/audio/FX",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tanh_voice4x.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/sandbox/distortion",
+				"patcherrelativepath" : "../../../../../patchers/sandbox/distortion",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "gen_tanH.gendsp",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/sandbox/distortion",
+				"patcherrelativepath" : "../../../../../patchers/sandbox/distortion",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.TCPreceive.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/network",
+				"patcherrelativepath" : "../../../../../patchers/network",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.wave~.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/sandbox",
+				"patcherrelativepath" : "../../../../../patchers/sandbox",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "dcblock~.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
