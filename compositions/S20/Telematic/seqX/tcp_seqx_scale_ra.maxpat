@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 855.0, 216.0, 486.0, 258.0 ],
+		"rect" : [ 1160.0, 833.0, 486.0, 258.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -263,7 +263,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 187.0, 490.0, 143.0, 35.0 ],
-									"text" : "0. 2. 4. 5. 4. 2. 0. 2."
+									"text" : "5. 5. 5. 5. 5. 5. 5. 5."
 								}
 
 							}
@@ -802,11 +802,11 @@
 							}
 , 							{
 								"key" : 5,
-								"value" : [ 1, 24, 5, -5 ]
+								"value" : [ 1, 24, 5, 5 ]
 							}
 , 							{
 								"key" : 6,
-								"value" : [ 0, 24, 5, -5 ]
+								"value" : [ 0, 24, 5, 5 ]
 							}
 , 							{
 								"key" : 7,
@@ -963,7 +963,7 @@
 					"patching_rect" : [ 382.0, 541.0, 128.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 33.0, 129.0, 128.0, 22.0 ],
-					"text" : "0. 0. 2. 2. 2. 4. 4. 5."
+					"text" : "5. 5. 5. 5. 5. 5. 5. 5."
 				}
 
 			}
@@ -1006,13 +1006,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-45",
-					"linecount" : 5,
+					"linecount" : 4,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1055.5, 531.0, 52.0, 76.0 ],
-					"text" : "2-G2 enters and converge 5"
+					"patching_rect" : [ 1055.5, 531.0, 52.0, 62.0 ],
+					"text" : "13-drum end when ready"
 				}
 
 			}
