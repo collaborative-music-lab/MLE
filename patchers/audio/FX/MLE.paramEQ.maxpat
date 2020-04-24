@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 2,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -293,8 +293,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 813.100000202655792, 332.0, 70.0, 22.0 ],
-					"text" : "loadmess 1"
+					"patching_rect" : [ 813.100000202655792, 332.0, 51.0, 22.0 ],
+					"text" : "init 1 #1"
 				}
 
 			}
@@ -315,7 +315,7 @@
 						}
 , 						{
 							"number" : 2,
-							"data" : [ 5, "obj-133", "number", "int", 2455, 5, "obj-132", "flonum", "float", 0.479999989271164, 5, "obj-131", "flonum", "float", 1.0, 5, "obj-52", "dial", "float", 116.14117431640625, 5, "obj-55", "dial", "float", 127.835296630859375, 5, "obj-62", "dial", "float", 88.0, 5, "obj-22", "filtergraph~", "nfilters", 4, 9, "obj-22", "filtergraph~", "setoptions", 3, 7, 1, 0, 0, 8, "obj-22", "filtergraph~", "params", 3, 5180.40478515625, 0.458552926778793, 1.0, 9, "obj-22", "filtergraph~", "setoptions", 2, 5, 1, 0, 0, 8, "obj-22", "filtergraph~", "params", 2, 2455.312255859375, 0.480128973722458, 1.00048828125, 9, "obj-22", "filtergraph~", "setoptions", 1, 5, 1, 0, 0, 8, "obj-22", "filtergraph~", "params", 1, 274.56085205078125, 1.21533203125, 1.0, 9, "obj-22", "filtergraph~", "setoptions", 0, 6, 0, 0, 0, 8, "obj-22", "filtergraph~", "params", 0, 64.844291687011719, 0.502201020717621, 0.5, 5, "obj-91", "number", "int", 274, 5, "obj-90", "flonum", "float", 1.220000028610229, 5, "obj-89", "flonum", "float", 1.0, 5, "obj-88", "dial", "float", 149.082351684570312, 5, "obj-87", "dial", "float", 128.752944946289062, 5, "obj-86", "dial", "float", 74.0, 5, "obj-109", "number", "int", 5180, 5, "obj-108", "flonum", "float", 0.46000000834465, 5, "obj-107", "flonum", "float", 1.0, 5, "obj-106", "dial", "float", 86.588233947753906, 5, "obj-104", "dial", "float", 143.0, 5, "obj-125", "number", "int", 64, 5, "obj-120", "dial", "float", 54.0, 5, "obj-152", "dial", "float", 64.0, 5, "obj-6", "dial", "float", 90.352943420410156, 5, "obj-2", "dial", "float", 64.0, 5, "obj-9", "flonum", "float", 0.5 ]
+							"data" : [ 5, "obj-133", "number", "int", 3928, 5, "obj-132", "flonum", "float", 1.710000038146973, 5, "obj-131", "flonum", "float", 1.0, 5, "obj-52", "dial", "float", 153.788238525390625, 5, "obj-55", "dial", "float", 127.835296630859375, 5, "obj-62", "dial", "float", 166.0, 5, "obj-22", "filtergraph~", "nfilters", 4, 9, "obj-22", "filtergraph~", "setoptions", 3, 7, 1, 0, 0, 8, "obj-22", "filtergraph~", "params", 3, 5180.40478515625, 1.179056406021118, 1.0, 9, "obj-22", "filtergraph~", "setoptions", 2, 5, 1, 0, 0, 8, "obj-22", "filtergraph~", "params", 2, 3928.387451171875, 1.705078125, 1.00048828125, 9, "obj-22", "filtergraph~", "setoptions", 1, 5, 1, 0, 0, 8, "obj-22", "filtergraph~", "params", 1, 801.98272705078125, 0.571393132209778, 0.728868961334229, 9, "obj-22", "filtergraph~", "setoptions", 0, 6, 0, 0, 0, 8, "obj-22", "filtergraph~", "params", 0, 64.844291687011719, 0.583359181880951, 0.5, 5, "obj-91", "number", "int", 801, 5, "obj-90", "flonum", "float", 0.569999992847443, 5, "obj-89", "flonum", "float", 0.730000019073486, 5, "obj-88", "dial", "float", 96.376472473144531, 5, "obj-87", "dial", "float", 68.517654418945312, 5, "obj-86", "dial", "float", 120.0, 5, "obj-109", "number", "int", 5180, 5, "obj-108", "flonum", "float", 1.179999947547913, 5, "obj-107", "flonum", "float", 1.0, 5, "obj-106", "dial", "float", 146.823532104492188, 5, "obj-104", "dial", "float", 143.0, 5, "obj-125", "number", "int", 64, 5, "obj-120", "dial", "float", 54.0, 5, "obj-152", "dial", "float", 64.0, 5, "obj-6", "dial", "float", 97.882354736328125, 5, "obj-2", "dial", "float", 64.0, 5, "obj-9", "flonum", "float", 0.579999983310699, 5, "obj-18", "toggle", "int", 1 ]
 						}
 , 						{
 							"number" : 3,
@@ -343,21 +343,21 @@
 					"patching_rect" : [ 989.0, 417.0, 56.0, 22.0 ],
 					"restore" : 					{
 						"highshelf_Q" : [ 64.0 ],
-						"highshelf_freq" : [ 181 ],
-						"highshelf_gain" : [ 86.588233947753906 ],
+						"highshelf_freq" : [ 143 ],
+						"highshelf_gain" : [ 146.823532104492188 ],
 						"lowshelf_Q" : [ 64.0 ],
-						"lowshelf_freq" : [ 102 ],
-						"lowshelf_gain" : [ 210.823529411764724 ],
-						"mid1_Q" : [ 196.517649931066188 ],
-						"mid1_freq" : [ 114 ],
-						"mid1_gain" : [ 75.294117647058812 ],
+						"lowshelf_freq" : [ 54 ],
+						"lowshelf_gain" : [ 97.882354736328125 ],
+						"mid1_Q" : [ 68.517654418945312 ],
+						"mid1_freq" : [ 120 ],
+						"mid1_gain" : [ 96.376472473144531 ],
 						"mid2_Q" : [ 127.835296630859375 ],
-						"mid2_freq" : [ 167 ],
-						"mid2_gain" : [ 116.14117431640625 ]
+						"mid2_freq" : [ 166 ],
+						"mid2_gain" : [ 153.788238525390625 ]
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u350010089"
+					"varname" : "u0401819079"
 				}
 
 			}
@@ -373,7 +373,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -580,7 +580,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -787,7 +787,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -994,7 +994,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1268,7 +1268,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1801,7 +1801,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2456,7 +2456,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3178,7 +3178,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3708,7 +3708,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 584.100000202655792, 119.0, 42.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 240.037500202655792, 142.0, 34.5, 15.0 ],
+					"presentation_rect" : [ 207.100000202655792, 142.0, 34.5, 15.0 ],
 					"text" : "Hz",
 					"textcolor" : [ 0.792156862745098, 0.792156862745098, 0.792156862745098, 1.0 ],
 					"textjustification" : 1
@@ -3829,7 +3829,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 695.100000202655792, 115.0, 30.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 207.100000202655792, 142.0, 34.0, 15.0 ],
+					"presentation_rect" : [ 240.287500202655792, 139.0, 34.0, 15.0 ],
 					"text" : "dB",
 					"textcolor" : [ 0.792156862745098, 0.792156862745098, 0.792156862745098, 1.0 ],
 					"textjustification" : 1
@@ -3953,7 +3953,7 @@
 					"patching_rect" : [ 102.0, 362.0, 271.0, 108.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 7.53302475810051, 4.0, 384.0, 66.0 ],
-					"setfilter" : [ 3, 7, 1, 0, 0, 7998.39794921875, 0.458552926778793, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2, 5, 1, 0, 0, 2455.312255859375, 1.74267578125, 1.00048828125, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1, 5, 1, 0, 0, 711.480224609375, 0.348750710487366, 3.2578125, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 6, 0, 0, 0, 180.0, 4.283203125, 0.5, 30.0, 19845.0, 0.0625, 16.0, 0.5, 25.0 ],
+					"setfilter" : [ 3, 7, 1, 0, 0, 5180.40478515625, 1.179056406021118, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2, 5, 1, 0, 0, 3928.387451171875, 1.705078125, 1.00048828125, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1, 5, 1, 0, 0, 801.98272705078125, 0.571393132209778, 0.728868961334229, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 6, 0, 0, 0, 64.844291687011719, 0.583359181880951, 0.5, 30.0, 19845.0, 0.0625, 16.0, 0.5, 25.0 ],
 					"textcolor" : [ 0.792156862745098, 0.792156862745098, 0.792156862745098, 0.66 ]
 				}
 
@@ -4571,9 +4571,9 @@
 , 			{
 				"name" : "helpfile_label-1",
 				"default" : 				{
-					"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
 					"fontsize" : [ 13.0 ],
-					"fontname" : [ "Arial" ]
+					"fontname" : [ "Arial" ],
+					"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -4618,8 +4618,8 @@
 , 			{
 				"name" : "newobjBlue-1",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"fontsize" : [ 12.0 ]
+					"fontsize" : [ 12.0 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -4682,8 +4682,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -4755,8 +4755,8 @@
 , 			{
 				"name" : "rsliderGold",
 				"default" : 				{
-					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -4765,8 +4765,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
