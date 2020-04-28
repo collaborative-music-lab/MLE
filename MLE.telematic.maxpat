@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 38.0, 89.0, 1196.0, 867.0 ],
+		"rect" : [ 38.0, 89.0, 551.0, 371.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -212,8 +212,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 332.0, -613.0, 63.0, 22.0 ],
-					"text" : "metro 100"
+					"patching_rect" : [ 329.0, -610.0, 63.0, 22.0 ],
+					"text" : "metro 500"
 				}
 
 			}
@@ -18741,7 +18741,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 1317.0, 591.0, 56.0, 22.0 ],
 					"text" : "autopattr",
-					"varname" : "u157001608"
+					"varname" : "u799915812"
 				}
 
 			}
@@ -18755,10 +18755,10 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1273.0, 619.0, 280.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 4, 79, 358, 207 ],
+						"client_rect" : [ 4, 45, 357, 328 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
-						"storage_rect" : [ 583, 79, 1456, 465 ]
+						"storage_rect" : [ 583, 69, 1034, 197 ]
 					}
 ,
 					"text" : "pattrstorage MLEmaster @greedy 1 @savemode 0",
@@ -20830,6 +20830,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "MLE.loadmess.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "./patchers/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "MLEmaster.json",
 				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
 				"patcherrelativepath" : "./patchers/utilities",
@@ -20896,7 +20903,8 @@
 			}
 , 			{
 				"name" : "interfacecolor.js",
-				"bootpath" : "C74:/interfaces",
+				"bootpath" : "/Users/famle/CML/MLE/code",
+				"patcherrelativepath" : "./code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
