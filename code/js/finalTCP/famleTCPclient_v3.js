@@ -15,7 +15,7 @@ let friend = {
 
 const send = () => {
 	if (socket.connected) {
-		console.log("sending", friend);
+		//console.log("sending", friend);
 		socket.emit("friend-data", friend, (data) => console.log("ack", data));
 	} else {
 		console.log("not connected");
