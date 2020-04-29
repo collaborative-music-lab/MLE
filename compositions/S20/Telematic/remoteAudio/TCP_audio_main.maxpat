@@ -504,7 +504,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1285.0, 541.0, 50.0, 22.0 ],
-					"text" : "0.75"
+					"text" : "0.83"
 				}
 
 			}
@@ -797,7 +797,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 384.0, 51.0, 184.0, 22.0 ],
-					"text" : "MLE.reverb 0.33 0.65 0.5 0.6 0.4",
+					"text" : "MLE.reverb 0.33 0.65 0.3 0.7 0.4",
 					"varname" : "MLE.reverb"
 				}
 
@@ -2282,7 +2282,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-37", 0 ],
-					"order" : 5,
+					"order" : 4,
 					"source" : [ "obj-42", 0 ]
 				}
 
@@ -2290,7 +2290,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-63", 0 ],
-					"order" : 4,
+					"order" : 0,
 					"source" : [ "obj-42", 0 ]
 				}
 
@@ -2322,7 +2322,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-67", 0 ],
-					"order" : 0,
+					"order" : 5,
 					"source" : [ "obj-42", 0 ]
 				}
 
@@ -2610,20 +2610,20 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-65::obj-7" : [ "live.grid[11]", "live.grid", 0 ],
 			"obj-63::obj-91" : [ "live.grid[7]", "live.grid", 0 ],
-			"obj-65::obj-91" : [ "live.grid[10]", "live.grid", 0 ],
-			"obj-7::obj-21::obj-6" : [ "live.tab[3]", "live.tab[1]", 0 ],
-			"obj-66::obj-91" : [ "live.grid[13]", "live.grid", 0 ],
-			"obj-7::obj-35" : [ "[5]", "Level", 0 ],
-			"obj-63::obj-7" : [ "live.grid[6]", "live.grid", 0 ],
-			"obj-64::obj-7" : [ "live.grid[8]", "live.grid", 0 ],
-			"obj-67::obj-7" : [ "live.grid[15]", "live.grid", 0 ],
+			"obj-64::obj-91" : [ "live.grid[9]", "live.grid", 0 ],
+			"obj-37::obj-7" : [ "live.grid[2]", "live.grid", 0 ],
 			"obj-67::obj-91" : [ "live.grid[14]", "live.grid", 0 ],
 			"obj-37::obj-91" : [ "live.grid[3]", "live.grid", 0 ],
-			"obj-65::obj-7" : [ "live.grid[11]", "live.grid", 0 ],
-			"obj-37::obj-7" : [ "live.grid[2]", "live.grid", 0 ],
+			"obj-7::obj-35" : [ "[5]", "Level", 0 ],
 			"obj-66::obj-7" : [ "live.grid[12]", "live.grid", 0 ],
-			"obj-64::obj-91" : [ "live.grid[9]", "live.grid", 0 ],
+			"obj-65::obj-91" : [ "live.grid[10]", "live.grid", 0 ],
+			"obj-67::obj-7" : [ "live.grid[15]", "live.grid", 0 ],
+			"obj-64::obj-7" : [ "live.grid[8]", "live.grid", 0 ],
+			"obj-63::obj-7" : [ "live.grid[6]", "live.grid", 0 ],
+			"obj-7::obj-21::obj-6" : [ "live.tab[3]", "live.tab[1]", 0 ],
+			"obj-66::obj-91" : [ "live.grid[13]", "live.grid", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -2739,8 +2739,7 @@
 			}
 , 			{
 				"name" : "interfacecolor.js",
-				"bootpath" : "/Users/famle/CML/MLE/code",
-				"patcherrelativepath" : "../../../../code",
+				"bootpath" : "C74:/interfaces",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
@@ -2828,8 +2827,8 @@
 				"name" : "helpfile_label-1",
 				"default" : 				{
 					"fontname" : [ "Arial" ],
-					"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
-					"fontsize" : [ 13.0 ]
+					"fontsize" : [ 13.0 ],
+					"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2973,8 +2972,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2983,8 +2982,8 @@
 , 			{
 				"name" : "newobjYellow-2",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2993,8 +2992,8 @@
 , 			{
 				"name" : "newobjYellow-3",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3085,8 +3084,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 				}
 ,
 				"parentstyle" : "",
