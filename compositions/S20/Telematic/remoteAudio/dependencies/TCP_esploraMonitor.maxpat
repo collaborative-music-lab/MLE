@@ -39,6 +39,25 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgcolor" : [ 0.0, 0.0, 0.0, 0.0 ],
+					"bufsize" : 64,
+					"calccount" : 8,
+					"fgcolor" : [ 0.87843137254902, 0.894117647058824, 0.996078431372549, 1.0 ],
+					"gridcolor" : [ 0.349019607843137, 0.349019607843137, 0.349019607843137, 0.0 ],
+					"id" : "obj-26",
+					"maxclass" : "scope~",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 574.0, 111.0, 130.0, 130.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ -3.716856241226196, 22.920635223388672, 140.0, 68.0 ],
+					"range" : [ -0.2, 0.2 ],
+					"trigger" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgstepcolor" : [ 0.0, 0.0, 0.0, 0.54 ],
 					"columns" : 3,
 					"direction" : 0,
@@ -57,10 +76,10 @@
 					"rows" : 3,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.grid[14]",
-							"parameter_invisible" : 1,
 							"parameter_shortname" : "live.grid",
-							"parameter_type" : 3
+							"parameter_type" : 3,
+							"parameter_longname" : "live.grid[14]",
+							"parameter_invisible" : 1
 						}
 
 					}
@@ -610,7 +629,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-2",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -677,10 +696,10 @@
 					"rows" : 1,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.grid[15]",
-							"parameter_invisible" : 1,
 							"parameter_shortname" : "live.grid",
-							"parameter_type" : 3
+							"parameter_type" : 3,
+							"parameter_longname" : "live.grid[15]",
+							"parameter_invisible" : 1
 						}
 
 					}
@@ -704,25 +723,6 @@
 					"patching_rect" : [ 122.5, 296.833328247070312, 58.0, 55.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 3.444444417953491, 22.920635223388672, 67.279998779296875, 66.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.0, 0.0, 0.0, 0.0 ],
-					"bufsize" : 64,
-					"calccount" : 8,
-					"fgcolor" : [ 0.87843137254902, 0.894117647058824, 0.996078431372549, 1.0 ],
-					"gridcolor" : [ 0.349019607843137, 0.349019607843137, 0.349019607843137, 0.0 ],
-					"id" : "obj-26",
-					"maxclass" : "scope~",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"patching_rect" : [ 574.0, 111.0, 130.0, 130.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ -3.716856241226196, 22.920635223388672, 140.0, 68.0 ],
-					"range" : [ -0.2, 0.2 ],
-					"trigger" : 1
 				}
 
 			}
@@ -1060,6 +1060,31 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-91" : [ "live.grid[14]", "live.grid", 0 ],
+			"obj-7" : [ "live.grid[15]", "live.grid", 0 ],
+			"parameterbanks" : 			{
+
+			}
+
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "MLE.loadmess.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "../../../../../patchers/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "initS.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "../../../../../patchers/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
@@ -1095,8 +1120,8 @@
 , 			{
 				"name" : "helpfile_label-1",
 				"default" : 				{
-					"fontname" : [ "Arial" ],
 					"fontsize" : [ 13.0 ],
+					"fontname" : [ "Arial" ],
 					"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ]
 				}
 ,
@@ -1241,8 +1266,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1251,8 +1276,8 @@
 , 			{
 				"name" : "newobjYellow-2",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1261,8 +1286,8 @@
 , 			{
 				"name" : "newobjYellow-3",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
