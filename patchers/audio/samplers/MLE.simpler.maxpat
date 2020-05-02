@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 8,
+			"minor" : 1,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -57,7 +57,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 10.75, -3.5, 150.0, 74.0 ],
-					"text" : "Arguments:\n1) soundfile to load\n2) buffer name\n3) Playback speed\n4) loop enable (0/1)"
+					"text" : "Arguments:\n1) soundfile to load\n2) Playback speed\n3) loop enable (0/1)\n4) buffer name"
 				}
 
 			}
@@ -306,8 +306,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 8,
+							"minor" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -664,7 +664,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 416.0, -3.5, 107.0, 22.0 ],
+					"patching_rect" : [ 416.0, -3.5, 186.0, 22.0 ],
 					"text" : "initS 0 #1"
 				}
 
@@ -701,7 +701,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 244.0, 159.5, 30.0, 30.0 ]
 				}
 
@@ -897,8 +897,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 8,
+							"minor" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1023,7 +1023,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 66.5, 387.0, 136.0, 22.0 ],
-									"text" : "rmooeqdigfgeggqh"
+									"text" : "jpplksqkgfimnqkq"
 								}
 
 							}
