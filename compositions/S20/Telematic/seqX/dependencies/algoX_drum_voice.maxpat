@@ -1269,8 +1269,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 218.0, 236.0, 29.5, 22.0 ],
-					"text" : "120"
+					"patching_rect" : [ 196.0, 236.0, 29.5, 22.0 ],
+					"text" : "60"
 				}
 
 			}
@@ -1281,7 +1281,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 182.0, 237.0, 29.5, 22.0 ],
+					"patching_rect" : [ 160.0, 237.0, 29.5, 22.0 ],
 					"text" : "127"
 				}
 
@@ -1293,7 +1293,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 182.0, 175.0, 34.0, 22.0 ],
+					"patching_rect" : [ 160.0, 190.0, 34.0, 22.0 ],
 					"text" : "sel 1"
 				}
 
@@ -1972,7 +1972,105 @@
 				}
 
 			}
- ]
+ ],
+		"parameters" : 		{
+			"obj-1::obj-40" : [ "tom-decay", "decay", 0 ],
+			"obj-1::obj-44" : [ "trig_6", "trig_6", 0 ],
+			"obj-1::obj-41" : [ "tom-hi", "hi", 0 ],
+			"obj-1::obj-119" : [ "choke", "choke", 0 ],
+			"obj-1::obj-46" : [ "ad-level", "level", 0 ],
+			"obj-1::obj-42" : [ "tom-mid", "mid", 0 ],
+			"obj-1::obj-43" : [ "tom-low", "low", 0 ],
+			"obj-1::obj-17" : [ "snare-level", "level", 0 ],
+			"obj-1::obj-9" : [ "kick-level", "level", 0 ],
+			"obj-1::obj-19" : [ "snare-hicut", "hicut", 0 ],
+			"obj-1::obj-31" : [ "clhat-decay", "cl-dec", 0 ],
+			"obj-1::obj-128" : [ "trig_7[1]", "trig_7", 0 ],
+			"obj-1::obj-34" : [ "trig_5", "trig_5", 0 ],
+			"obj-1::obj-23" : [ "trig_3", "trig_3", 0 ],
+			"obj-1::obj-129" : [ "trig_6[1]", "trig_6", 0 ],
+			"obj-1::obj-20" : [ "snare-decay", "decay", 0 ],
+			"obj-1::obj-120" : [ "accent", "accent", 0 ],
+			"obj-1::obj-21" : [ "snare-snap", "snap", 0 ],
+			"obj-1::obj-32" : [ "hat-tone", "tone", 0 ],
+			"obj-1::obj-22" : [ "snare-tune", "tuning", 0 ],
+			"obj-1::obj-45" : [ "trig_7", "trig_7", 0 ],
+			"obj-1::obj-6" : [ "kick-attack", "attack", 0 ],
+			"obj-1::obj-27" : [ "hat-level", "level", 0 ],
+			"obj-1::obj-5" : [ "kick-decay", "decay", 0 ],
+			"obj-1::obj-30" : [ "ophat-decay", "op-dec", 0 ],
+			"obj-1::obj-4" : [ "kick-sweep", "sweep", 0 ],
+			"obj-1::obj-12" : [ "trig_2", "trig_2", 0 ],
+			"obj-1::obj-3" : [ "kick-tune[1]", "tuning", 0 ],
+			"obj-1::obj-7" : [ "trig_1", "trig_1", 0 ],
+			"obj-1::obj-33" : [ "trig_4", "trig_4", 0 ],
+			"obj-1::obj-38" : [ "tom-level", "level", 0 ],
+			"parameterbanks" : 			{
+
+			}
+
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "MLE.analogueDrums.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/audio/drums",
+				"patcherrelativepath" : "../../../../../patchers/audio/drums",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "thru.maxpat",
+				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "analog.Kick~.maxpat",
+				"bootpath" : "C74:/packages/Max for Live/patchers/Max Instrument/Analogue Drums",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "analog.Snare~.maxpat",
+				"bootpath" : "C74:/packages/Max for Live/patchers/Max Instrument/Analogue Drums",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "analog.Hihat~.maxpat",
+				"bootpath" : "C74:/packages/Max for Live/patchers/Max Instrument/Analogue Drums",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "analog.Tom~.maxpat",
+				"bootpath" : "C74:/packages/Max for Live/patchers/Max Instrument/Analogue Drums",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.scale.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/controllers",
+				"patcherrelativepath" : "../../../../../patchers/controllers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "initS.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "../../../../../patchers/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "init.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "../../../../../patchers/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
