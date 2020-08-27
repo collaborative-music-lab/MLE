@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1612.0, 937.0 ],
+		"rect" : [ 34.0, 56.0, 1287.0, 960.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,70 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-128",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 542.0, 328.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-126",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 538.0, 389.0, 121.0, 22.0 ],
+					"text" : "prepend positiveSine"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-123",
+					"maxclass" : "newobj",
+					"numinlets" : 4,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 534.0, 357.0, 75.0, 22.0 ],
+					"text" : "pak 1 16 0 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-121",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 545.0, 490.0, 32.0, 22.0 ],
+					"text" : "print"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 538.0, 423.0, 146.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"filename" : "rhythmAlgorithms.js",
+						"parameter_enable" : 0
+					}
+,
+					"text" : "js rhythmAlgorithms.js 3 4"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-125",
 					"maxclass" : "newobj",
@@ -378,13 +442,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-115",
-					"linecount" : 8,
+					"linecount" : 4,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 902.0, 628.0, 50.0, 116.0 ],
-					"text" : "1 0 1 0 1 1 1 0 0 1 0 1 1 1 0 1 1 0 1 0 1 1 0 1 0 1 0 1 1 0 1 1"
+					"patching_rect" : [ 902.0, 628.0, 50.0, 62.0 ],
+					"text" : "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
 				}
 
 			}
@@ -1480,7 +1544,6 @@
 			}
 , 			{
 				"box" : 				{
-					"columns" : 32,
 					"direction" : 0,
 					"id" : "obj-220",
 					"matrixmode" : 1,
@@ -1650,8 +1713,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-121", 0 ],
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-49", 1 ],
 					"source" : [ "obj-122", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-126", 0 ],
+					"source" : [ "obj-123", 0 ]
 				}
 
 			}
@@ -1666,6 +1743,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
 					"source" : [ "obj-125", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"source" : [ "obj-126", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-123", 0 ],
+					"source" : [ "obj-128", 0 ]
 				}
 
 			}
@@ -1798,15 +1889,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-110", 0 ],
-					"order" : 0,
-					"source" : [ "obj-26", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-18", 0 ],
-					"order" : 1,
 					"source" : [ "obj-26", 0 ]
 				}
 
@@ -2512,8 +2594,8 @@
 			}
 , 			{
 				"name" : "PM.Ladder~.maxpat",
-				"bootpath" : "~/Dropbox (Personal)/_documents/MaxIH/ current/ externals/petermcculloch/Modular",
-				"patcherrelativepath" : "../../../../../../ianhattwick/Dropbox (Personal)/_documents/MaxIH/ current/ externals/petermcculloch/Modular",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "../../utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
