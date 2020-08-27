@@ -20,6 +20,19 @@ dualSine(rate1,rate2,beats,rotate)
 warp(warp,hits,beats,rotate)
 */
 
+/*****************************
+EUCLID
+*****************************/
+
+/*
+euclid
+
+Generates ueclidean rhtythms
+hits: number of notes per pattern
+beats:  number of beats in a pattern
+rotate: rotate the rhythm
+*/
+
 function euclid( hits, beats, rotate ){
 	var rhythm = new Array(beats);
 	for(i=0;i<beats;i++)rhythm[i]=0;
@@ -39,6 +52,19 @@ function euclid( hits, beats, rotate ){
 	}
 	outputRhythm(rhythm,rotate);
 } //euclid
+
+/*****************************
+SINE FUNCTIONS
+*****************************/
+
+/*
+sine
+
+Generates a rhythm based on when a sine wave crosses a  threshold
+rate; rate of sine wave
+beats: number of beats in a pattern
+rotate:  default
+*/
 
 function sine(rate, beats, rotate){
 	var rhythm = new Array(beats);
@@ -72,6 +98,16 @@ function expoSine(rate, exponent, beats, rotate){
 	if(hitExists) outputRhythm(rhythm,rotate);
 }//sine
 
+/*
+calcSine
+
+Generates a pattern of note on/offs based on a sine wave
+A note on is generated when a sine wave crosses the predefined  offset
+By default, the offsett is 0 so a note in is genrated when the sine waves ascends above th x-axis
+
+rate: the speed of the sine wave:  faster values for rate will generate more note ons
+beeats: the number of beats in a pattern
+*/
 function calcSine(rate, beats){
 	var rhythm = new Array(beats);
 
@@ -89,6 +125,9 @@ function calcSine(rate, beats){
 	return(rhythm);
 }//sine
 
+/*
+Similar to calcSine
+*/
 function calcExpoSine(rate, exponent, beats){
 	var rhythm = new Array(beats);
 
@@ -107,6 +146,10 @@ function calcExpoSine(rate, exponent, beats){
 	//post(rhythm, "\n");
 	return(rhythm);
 }//sine
+
+/*****************************
+TRIANGL FUNCTIONS
+*****************************/
 
 function tri(rate, beats, rotate){
 	var rhythm = new Array(beats);
@@ -178,6 +221,10 @@ function dualTri(rate1,rate2,beats,rotate){
 	if(hitExists) outputRhythm(rhythm1,rotate);
 }//dualTri
 
+/*****************************
+FM FUNCTIONS
+*****************************/
+
 function FM(rate1,rate2,beats,rotate){
 	var rhythm = new Array(beats);
 	for(i=0;i<beats;i++)rhythm[i]=0;
@@ -210,6 +257,9 @@ function calcFM(rate1,rate2,beats){
 	return(rhythm);
 }
 
+/*****************************
+PARADIDDLE FUNCTIONS
+*****************************/
 function paradiddle( num, beats,  rotate ){
 	var rhythm = new Array(beats);
 	for(i=0;i<beats;i++)rhythm[i]=0;
@@ -241,6 +291,44 @@ function paradiddle( num, beats,  rotate ){
 	}
 }//paradiddle
 
+/* positiveSine
+
+Generates a note on whenever a sinewave is greater than a threshold
+- this is different than the other sine function which only generates a note when a threshold is crossed
+
+rate:  rate of sine
+beats: beatsin pattern
+threshold: note on when sin is greater than threshold
+roate: default
+
+*/
+function positiveSine(){
+	var a = arrayfromargs(arguments);
+
+	var rate =  1.;
+	var beats =  16;
+	var threshold = 0.;
+	var rotate = 0.;
+
+	if (a.length>0) rate = a[0];
+	if (a.length>1 && a[1]>0) beats = a[1];
+	if (a.length>2) threshold = a[2];
+	if (a.length>3) rotate = a[3];
+
+	var rhythm = new Array(beats);
+	var curVal = 1.5708; //cosine
+
+	for(var i=0;i<beats;i++){
+		if(Math.sin(curVal)>threshold) rhythm[i] = 1;
+		else rhythm[i] = 0  ;
+		curVal += rate;
+	}
+	outputRhythm( rhythm, rotate);
+}
+
+/*****************************
+HELPER FUNCTIONS
+*****************************/
 
 function rotateArray( vals, rotate){
 	var temp = new Array();
@@ -267,7 +355,10 @@ function offset(val){ curOffset =  val;}
 
 function outputRhythm(rhythm, rotate){
 	//rotate so that the first hit is on beat 1
-	while(rhythm[0]!=1) rhythm = rotateArray(rhythm,1);
+	var hitExists  = 0;
+	for(i=0;i<rhythm.length;i++) if(rhythm[i]>0) hitExists=1;
+
+	while(rhythm[0]!=1 && hitExists) rhythm = rotateArray(rhythm,1);
 	//rotate
 	rhythm = rotateArray(rhythm, rotate);
 
