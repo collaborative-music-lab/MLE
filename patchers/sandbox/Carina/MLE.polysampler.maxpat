@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 629.0, 142.0, 640.0, 553.0 ],
+		"rect" : [ 860.0, 191.0, 640.0, 553.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -81,8 +81,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 774.0, 243.0, 50.0, 89.0 ],
-					"text" : "bufferName 6847polysamplerBuffer"
+					"patching_rect" : [ 786.75, 296.0, 50.0, 89.0 ],
+					"text" : "bufferName 2789polysamplerBuffer"
 				}
 
 			}
@@ -129,7 +129,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 757.0, 223.666656494140625, 118.0, 22.0 ],
+					"patching_rect" : [ 769.5, 223.666656494140625, 118.0, 22.0 ],
 					"text" : "prepend bufferName"
 				}
 
@@ -161,13 +161,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-17",
-					"linecount" : 14,
+					"linecount" : 18,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 213.0, 205.0, 46.0, 196.0 ],
-					"text" : "\"Macintosh HD:/Users/famle/CML/MLE/media/singleshot samples/clarinet_G_55.wav\""
+					"patching_rect" : [ 213.0, 205.0, 56.0, 250.0 ],
+					"text" : "\"Macintosh HD:/Users/ianhattwick/Dropbox (MIT)/Teaching/Soundsets/philharmonia/violin/violin_A7_1_mezzo-forte_artificial-harmonic.mp3\""
 				}
 
 			}
@@ -908,6 +908,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-25", 1 ],
+					"source" : [ "obj-101", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-101", 11 ]
 				}
@@ -1007,6 +1014,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
+					"order" : 0,
+					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"order" : 1,
 					"source" : [ "obj-19", 0 ]
 				}
 
