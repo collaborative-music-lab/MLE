@@ -155,7 +155,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 353.0, 836.0, 400.0, 220.0 ],
+					"patching_rect" : [ 257.0, 981.0, 400.0, 220.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 18.0, 373.0, 400.0, 220.0 ],
 					"viewvisibility" : 1
@@ -175,8 +175,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -228,8 +226,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 34.0, 771.0, 104.0, 22.0 ],
-					"text" : "r MLE_TCP_send"
+					"patching_rect" : [ 34.0, 771.0, 81.0, 22.0 ],
+					"text" : "r localEsplora"
 				}
 
 			}
@@ -536,8 +534,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 308.0, 660.0, 71.0, 35.0 ],
-					"text" : "butt 0 0 0 0 0"
+					"patching_rect" : [ 308.0, 660.0, 72.0, 35.0 ],
+					"text" : "Josh butt 0 0 0 0 0"
 				}
 
 			}
