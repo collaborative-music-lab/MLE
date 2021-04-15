@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 2045.0, 56.0, 861.0, 657.0 ],
+		"rect" : [ 268.0, 104.0, 861.0, 657.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,45 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-105",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ -53.0, 869.0, 66.0, 22.0 ],
+					"text" : "npm install"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-89",
+					"linecount" : 9,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 436.0, 349.0, 150.0, 127.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 7,
+					"presentation_rect" : [ 429.0, 312.0, 210.0, 100.0 ],
+					"text" : "1. click open to view plugin\n2. If plugin does not open click plug and search for Listento-Receiver in JPSQ_record/other \n- (.dll for windows)\n- (.au for mac\n3. Click open again"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-132",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 721.0, 470.0, 29.5, 22.0 ],
+					"text" : "!- 1."
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-131",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -48,8 +87,9 @@
 					"patching_rect" : [ 676.0, 399.0, 150.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 231.0, 206.0, 63.0, 33.0 ],
-					"text" : "Joystick\nResponse"
+					"presentation_rect" : [ 225.5, 209.0, 63.0, 33.0 ],
+					"text" : "Joystick\nSensitivity",
+					"textjustification" : 1
 				}
 
 			}
@@ -60,8 +100,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 721.0, 334.0, 70.0, 22.0 ],
-					"text" : "loadmess 0"
+					"patching_rect" : [ 721.0, 334.0, 80.0, 22.0 ],
+					"text" : "loadmess 0.5"
 				}
 
 			}
@@ -72,7 +112,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 720.0, 428.0, 29.5, 22.0 ],
+					"patching_rect" : [ 721.0, 518.0, 29.5, 22.0 ],
 					"text" : "+ 1."
 				}
 
@@ -152,6 +192,18 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-20",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 99.0, 269.0, 47.0, 22.0 ],
+									"text" : "pack f f"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-19",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
@@ -228,67 +280,6 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-7",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 182.0, 168.0, 47.0, 22.0 ],
-									"text" : "pack f f"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-8",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 182.0, 96.0, 65.0, 22.0 ],
-									"presentation_linecount" : 2,
-									"text" : "$1, 0 1000"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-9",
-									"maxclass" : "newobj",
-									"numinlets" : 3,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "bang" ],
-									"patching_rect" : [ 182.0, 134.0, 57.0, 22.0 ],
-									"text" : "line 0. 20"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-6",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 121.0, 168.0, 47.0, 22.0 ],
-									"text" : "pack f f"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-4",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 112.0, 96.0, 65.0, 22.0 ],
-									"text" : "$1, 0 1000"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-2",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -301,24 +292,12 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-1",
-									"maxclass" : "newobj",
-									"numinlets" : 3,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "bang" ],
-									"patching_rect" : [ 112.0, 134.0, 57.0, 22.0 ],
-									"text" : "line 0. 20"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-13",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 247.0, 96.0, 22.0 ],
+									"patching_rect" : [ 50.0, 353.0, 96.0, 22.0 ],
 									"text" : "sprintf %.3f %.3f"
 								}
 
@@ -344,19 +323,12 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 298.0, 30.0, 30.0 ]
+									"patching_rect" : [ 50.0, 404.0, 30.0, 30.0 ]
 								}
 
 							}
  ],
 						"lines" : [ 							{
-								"patchline" : 								{
-									"destination" : [ "obj-6", 0 ],
-									"source" : [ "obj-1", 0 ]
-								}
-
-							}
-, 							{
 								"patchline" : 								{
 									"destination" : [ "obj-11", 1 ],
 									"order" : 0,
@@ -374,16 +346,16 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-13", 1 ],
-									"order" : 1,
+									"destination" : [ "obj-16", 0 ],
+									"order" : 0,
 									"source" : [ "obj-11", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-16", 0 ],
-									"order" : 0,
+									"destination" : [ "obj-20", 1 ],
+									"order" : 1,
 									"source" : [ "obj-11", 0 ]
 								}
 
@@ -418,64 +390,36 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-13", 0 ],
+									"destination" : [ "obj-20", 0 ],
 									"source" : [ "obj-19", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-4", 0 ],
-									"source" : [ "obj-2", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-8", 0 ],
+									"destination" : [ "obj-11", 0 ],
 									"source" : [ "obj-2", 1 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-1", 0 ],
-									"source" : [ "obj-4", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-19", 0 ],
-									"source" : [ "obj-6", 0 ]
+									"source" : [ "obj-2", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-11", 0 ],
-									"source" : [ "obj-7", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-9", 0 ],
-									"source" : [ "obj-8", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-7", 0 ],
-									"source" : [ "obj-9", 0 ]
+									"destination" : [ "obj-13", 0 ],
+									"source" : [ "obj-20", 0 ]
 								}
 
 							}
  ]
 					}
 ,
-					"patching_rect" : [ 122.0, 273.5, 96.0, 22.0 ],
+					"patching_rect" : [ 122.0, 242.5, 96.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -508,7 +452,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 664.0, 836.0, 48.0, 136.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 451.0, 388.0, 48.0, 136.0 ],
+					"presentation_rect" : [ 435.0, 460.0, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~",
@@ -533,6 +477,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 706.0, 769.0, 31.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 472.0, 409.0, 31.0, 22.0 ],
 					"text" : "plug"
 				}
 
@@ -546,7 +492,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 664.0, 769.0, 35.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 451.0, 318.0, 35.0, 22.0 ],
+					"presentation_rect" : [ 435.0, 409.0, 35.0, 22.0 ],
 					"text" : "open"
 				}
 
@@ -565,7 +511,7 @@
 					"outlettype" : [ "signal", "signal", "", "list", "int", "", "", "" ],
 					"patching_rect" : [ 664.0, 798.0, 128.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 451.0, 347.0, 128.0, 22.0 ],
+					"presentation_rect" : [ 435.0, 436.0, 128.0, 22.0 ],
 					"save" : [ "#N", "vst~", "loaduniqueid", 0, "Listento-Receiver", ";" ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
@@ -592,14 +538,14 @@
 						"subtype" : "Undefined",
 						"embed" : 1,
 						"snapshot" : 						{
-							"pluginname" : "Listento-Receiver.vstinfo",
+							"pluginname" : "Listento-Receiver.component",
 							"plugindisplayname" : "Listento Receiver",
-							"pluginsavedname" : "",
-							"pluginsaveduniqueid" : 1819505778,
+							"pluginsavedname" : "~/Documents/Max 8/Projects/JPSQ_Record/other/Listento-Receiver.component",
+							"pluginsaveduniqueid" : 0,
 							"version" : 1,
 							"isbank" : 0,
 							"isbase64" : 1,
-							"blob" : "196.CMlaKA....fQPMDZ....Av1bzIW.0vFk....A..........................................h.B........vdhL1at4VYiQWZu41WyQWXzUlH5rmHi8latU1XzUFYhniYgw1bkwhHi8latU1XzklamIhNlEFayUFKhLWX1U1WzkVakIhNwXSL3HCN1LiLwzGKhTlai8EbgM2b28lbjIhNhvUcv.CLyHBKhvVZtslH5HhHrHhckI2bo8lahnSL8A"
+							"blob" : "376.hAGaoMGcv.C1AHv.DTfAGfPBJrvDTTgEWvUag4VclE1XzUmbkIGUjEFcgwUYrUVak4Fcs3VXsU1UyUmXzkGbkckckI2bo8laTQWdvU1WP7fZ0MVYPwVcmklaSQWXzUFUtEVakIQP001a.IMCM3PDQESTxD8CPDELUkjavUGcQ+fDV8TczAWczIAayQmbP.fDgUmY38DDHBH.........6IxXu4lakMFco8laeMGcgQWYhnydhL1at4VYiQWYjIhNlEFayUFKhL1at4VYiQWZtclH5XVXrMWYrHxbgYWYeQWZsUlH5DiMwfyLzPyM3TSerHRYtM1WvE1byc2axQlH5HBW0ACLvLiHrHBao41ZhniHhvhH1Ulbyk1atIhNwzGVU4FcoQGakQF.H.PF.XB.q..N..D.HAPS.7E.jAPZ.nF.uAPb.LG.1A.d.3G.AB.h.zH.OB.kA7A.......f.A..........F..................P.n."
 						}
 ,
 						"snapshotlist" : 						{
@@ -609,27 +555,27 @@
 									"version" : 2,
 									"minorversion" : 0,
 									"name" : "Listento Receiver",
-									"origin" : "Listento-Receiver.vstinfo",
-									"type" : "VST",
+									"origin" : "Listento-Receiver.component",
+									"type" : "AudioUnit",
 									"subtype" : "AudioEffect",
 									"embed" : 0,
 									"snapshot" : 									{
-										"pluginname" : "Listento-Receiver.vstinfo",
+										"pluginname" : "Listento-Receiver.component",
 										"plugindisplayname" : "Listento Receiver",
-										"pluginsavedname" : "",
-										"pluginsaveduniqueid" : 1819505778,
+										"pluginsavedname" : "~/Documents/Max 8/Projects/JPSQ_Record/other/Listento-Receiver.component",
+										"pluginsaveduniqueid" : 0,
 										"version" : 1,
 										"isbank" : 0,
 										"isbase64" : 1,
-										"blob" : "196.CMlaKA....fQPMDZ....Av1bzIW.0vFk....A..........................................h.B........vdhL1at4VYiQWZu41WyQWXzUlH5rmHi8latU1XzUFYhniYgw1bkwhHi8latU1XzklamIhNlEFayUFKhLWX1U1WzkVakIhNwXSL3HCN1LiLwzGKhTlai8EbgM2b28lbjIhNhvUcv.CLyHBKhvVZtslH5HhHrHhckI2bo8lahnSL8A"
+										"blob" : "376.hAGaoMGcv.C1AHv.DTfAGfPBJrvDTTgEWvUag4VclE1XzUmbkIGUjEFcgwUYrUVak4Fcs3VXsU1UyUmXzkGbkckckI2bo8laTQWdvU1WP7fZ0MVYPwVcmklaSQWXzUFUtEVakIQP001a.IMCM3PDQESTxD8CPDELUkjavUGcQ+fDV8TczAWczIAayQmbP.fDgUmY38DDHBH.........6IxXu4lakMFco8laeMGcgQWYhnydhL1at4VYiQWYjIhNlEFayUFKhL1at4VYiQWZtclH5XVXrMWYrHxbgYWYeQWZsUlH5DiMwfyLzPyM3TSerHRYtM1WvE1byc2axQlH5HBW0ACLvLiHrHBao41ZhniHhvhH1Ulbyk1atIhNwzGVU4FcoQGakQF.H.PF.XB.q..N..D.HAPS.7E.jAPZ.nF.uAPb.LG.1A.d.3G.AB.h.zH.OB.kA7A.......f.A..........F..................P.n."
 									}
 ,
 									"fileref" : 									{
 										"name" : "Listento Receiver",
-										"filename" : "Listento Receiver_20210411.maxsnap",
+										"filename" : "Listento Receiver.maxsnap",
 										"filepath" : "~/Documents/Max 8/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "7aaf1ce202734a2827137c7de143a4fe"
+										"snapshotfileid" : "5cd1ea7943846d3a69dac2632b18cb15"
 									}
 
 								}
@@ -775,14 +721,12 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 101.0, 917.0, 175.0, 22.0 ],
+					"patching_rect" : [ 102.0, 917.0, 175.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 237.0, 343.0, 175.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -1878,7 +1822,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 389.0, 404.0, 137.0, 22.0 ],
-					"text" : "expr abs($f1-$f2) > 0.02"
+					"text" : "expr abs($f1-$f2) > 0.05"
 				}
 
 			}
@@ -2095,7 +2039,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 122.0, 331.0, 60.0, 22.0 ],
+					"patching_rect" : [ 122.0, 273.5, 60.0, 22.0 ],
 					"text" : "zl.change"
 				}
 
@@ -2203,6 +2147,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-98", 0 ],
+					"source" : [ "obj-105", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-102", 0 ],
 					"source" : [ "obj-106", 0 ]
 				}
@@ -2287,7 +2238,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-128", 0 ],
+					"destination" : [ "obj-132", 0 ],
 					"source" : [ "obj-127", 0 ]
 				}
 
@@ -2303,6 +2254,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-127", 0 ],
 					"source" : [ "obj-129", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-128", 0 ],
+					"source" : [ "obj-132", 0 ]
 				}
 
 			}
@@ -3090,63 +3048,64 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "EsploraInput2.maxpat",
-				"bootpath" : "/Users/famle/CML/MLE/patchers/controllers",
-				"patcherrelativepath" : "../../patchers/controllers",
+				"bootpath" : "~/Documents/Max 8/Projects/JPSQ_Record/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "initS.maxpat",
-				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
-				"patcherrelativepath" : "../../patchers/utilities",
+				"bootpath" : "~/Documents/Max 8/Projects/JPSQ_Record/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "init.maxpat",
-				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
-				"patcherrelativepath" : "../../patchers/utilities",
+				"bootpath" : "~/Documents/Max 8/Projects/JPSQ_Record/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.TCPsend.maxpat",
-				"bootpath" : "/Users/famle/CML/MLE/patchers/network",
-				"patcherrelativepath" : "../../patchers/network",
+				"bootpath" : "~/Documents/Max 8/Projects/JPSQ_Record/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.keyDial.maxpat",
-				"bootpath" : "/Users/famle/CML/MLE/patchers/controllers",
-				"patcherrelativepath" : "../../patchers/controllers",
+				"bootpath" : "~/Documents/Max 8/Projects/JPSQ_Record/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ASCII_coll",
 				"bootpath" : "/Users/famle/CML/MLE/code",
-				"patcherrelativepath" : "../../code",
+				"patcherrelativepath" : "../../../../../../famle/CML/MLE/code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.loadmess.maxpat",
-				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
-				"patcherrelativepath" : "../../patchers/utilities",
+				"bootpath" : "~/Documents/Max 8/Projects/JPSQ_Record/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "famleTCPesplora.js",
 				"bootpath" : "/Users/famle/CML/MLE/compositions/S21/dependencies",
-				"patcherrelativepath" : "./dependencies",
+				"patcherrelativepath" : "../../../../../../famle/CML/MLE/compositions/S21/dependencies",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "n4m.monitor.maxpat",
-				"bootpath" : "C74:/packages/Node For Max/patchers/debug-monitor",
+				"bootpath" : "~/Documents/Max 8/Projects/JPSQ_Record/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3163,9 +3122,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Listento Receiver_20210411.maxsnap",
+				"name" : "Listento Receiver.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../../../ianhattwick/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 56.0, 1312.0, 960.0 ],
+		"rect" : [ 2018.0, 56.0, 1037.0, 960.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,29 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 390.0, 512.0, 32.0, 22.0 ],
+					"text" : "print"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 214.0, 486.0, 204.0, 22.0 ],
+					"text" : "Grace Esplora joy 1 1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-26",
 					"maxclass" : "newobj",
@@ -200,7 +223,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 476.0, 447.0, 39.0, 22.0 ],
+					"patching_rect" : [ 466.5, 444.0, 39.0, 22.0 ],
 					"text" : "zl.join"
 				}
 
@@ -235,7 +258,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 466.5, 486.0, 119.0, 22.0 ],
+					"patching_rect" : [ 466.5, 478.0, 119.0, 22.0 ],
 					"text" : "s MLE_TCP_receive"
 				}
 
@@ -249,18 +272,6 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 85.0, 19.0, 120.0, 24.0 ],
 					"text" : "Start the script"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-2",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 116.0, 50.0, 67.0, 22.0 ],
-					"text" : "r to_socket"
 				}
 
 			}
@@ -282,7 +293,7 @@
 					"maxclass" : "dict.view",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 16.0, 235.31915283203125, 180.0, 417.0 ]
+					"patching_rect" : [ -16.0, 236.31915283203125, 180.0, 417.0 ]
 				}
 
 			}
@@ -290,11 +301,11 @@
 				"box" : 				{
 					"id" : "obj-6",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 16.0, 189.0, 97.0, 22.0 ],
-					"text" : "route friend-data"
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ -16.0, 190.0, 166.0, 22.0 ],
+					"text" : "route friend-data FriendName"
 				}
 
 			}
@@ -340,16 +351,14 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 16.0, 102.0, 167.0, 22.0 ],
+					"patching_rect" : [ 16.0, 102.0, 159.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
-					"text" : "node.script drawing_friends.js"
+					"text" : "node.script JPSQ_receive.js"
 				}
 
 			}
@@ -553,13 +562,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-52", 0 ],
 					"source" : [ "obj-23", 0 ]
 				}
@@ -575,6 +577,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
+					"order" : 0,
+					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 1 ],
+					"order" : 1,
 					"source" : [ "obj-25", 0 ]
 				}
 
@@ -624,7 +635,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
-					"midpoints" : [ 335.5, 229.659576416015625, 25.5, 229.659576416015625 ],
+					"midpoints" : [ 335.5, 229.659576416015625, -6.5, 229.659576416015625 ],
 					"order" : 1,
 					"source" : [ "obj-31", 0 ]
 				}
@@ -682,8 +693,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"source" : [ "obj-6", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
-					"midpoints" : [ 25.5, 221.0, 243.5, 221.0, 243.5, 8.0, 269.5, 8.0 ],
+					"midpoints" : [ -6.5, 221.0, 243.5, 221.0, 243.5, 8.0, 269.5, 8.0 ],
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -711,9 +729,9 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "drawing_friends.js",
-				"bootpath" : "/Users/famle/CML/socket-drawings",
-				"patcherrelativepath" : "../../../socket-drawings",
+				"name" : "JPSQ_receive.js",
+				"bootpath" : "/Users/famle/CML/MLE/compositions/S21/dependencies",
+				"patcherrelativepath" : "./dependencies",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
