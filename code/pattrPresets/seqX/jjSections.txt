@@ -1,0 +1,1 @@
+1, 1-beginning long/low odd/even 0;2, 2-busier moving chords 2 30;3, 3-clusters and split sequence 30;4, 4-tighter clusters and short 4 30;5, 5-short moving busy 30;6, 6-panned busy 30;7, 7-converge in middle 30;

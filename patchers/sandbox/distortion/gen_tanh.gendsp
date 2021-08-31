@@ -1,0 +1,190 @@
+{
+	"patcher" : 	{
+		"fileversion" : 1,
+		"appversion" : 		{
+			"major" : 8,
+			"minor" : 1,
+			"revision" : 2,
+			"architecture" : "x64",
+			"modernui" : 1
+		}
+,
+		"classnamespace" : "dsp.gen",
+		"rect" : [ 1024.0, 79.0, 622.0, 937.0 ],
+		"bglocked" : 0,
+		"openinpresentation" : 0,
+		"default_fontsize" : 12.0,
+		"default_fontface" : 0,
+		"default_fontname" : "Arial",
+		"gridonopen" : 1,
+		"gridsize" : [ 15.0, 15.0 ],
+		"gridsnaponopen" : 1,
+		"objectsnaponopen" : 1,
+		"statusbarvisible" : 2,
+		"toolbarvisible" : 1,
+		"lefttoolbarpinned" : 0,
+		"toptoolbarpinned" : 0,
+		"righttoolbarpinned" : 0,
+		"bottomtoolbarpinned" : 0,
+		"toolbars_unpinned_last_save" : 0,
+		"tallnewobj" : 0,
+		"boxanimatetime" : 200,
+		"enablehscroll" : 1,
+		"enablevscroll" : 1,
+		"devicewidth" : 0.0,
+		"description" : "",
+		"digest" : "",
+		"tags" : "",
+		"style" : "",
+		"subpatcher_template" : "",
+		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 237.0, 908.0, 35.0, 22.0 ],
+					"text" : "out 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 165.0, 35.0, 80.0, 22.0 ],
+					"text" : "slide 100 100"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 155.0, 3.0, 69.0, 22.0 ],
+					"text" : "param gain"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 275.0, 35.0, 80.0, 22.0 ],
+					"text" : "slide 100 100"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 275.0, 6.0, 75.0, 22.0 ],
+					"text" : "param offset"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"code" : "History x1(0);\r\nDelay MyDelay(4410, 0, feedback=1);\r\n\r\nParam feedback(0, min=-0.99, max=0.99);\r\nParam feedback2(0, min=-2, max=2);\r\nParam delayLen(2, min=0, max=4410);\r\nParam link(0);\r\n\r\nParam mode(0);\r\n\r\ndry=in1;\r\nx=dry;\r\nx2=0;\r\ndir = sign(x);\r\ny = x;//initialize y\r\n\r\ncGain= in2;\r\n//x = dry*0;\r\n\r\nif(mode<2){\r\n\tx = dry * 10 * (cGain) + in3;\r\n\tx2 = MyDelay.read(delayLen);\r\n\tx = x + x1 + x2;\r\n}\r\n\r\n//tanh\r\nif( mode == 0 || link==1){\r\n\ty = tanh( x );\r\n\ty = y * scale(pow(1/(cGain+1),0.25),0,1, 0.25,1);\r\n\tx=y;\r\n}\r\n//tanh wavefolder\r\nif( mode == 1){\r\n\tval = (cGain)/2;\r\n\tval3= cGain/4;\r\n\ttau = (abs(x) - val3)/(1-val3);\r\n\t//if(dir==-1) y = -val - (1-val) * tanh(tau);\r\n\t//else y = val + (1-val) * tanh(tau);\r\n\tval2 = 0;//pow(val * clip(1-val,0,1),2);//scale dry signal\r\n\tif(dir==-1) y = -val2 - (1-val) * tanh(tau);\r\n\telse y = val2 + (1-val) * tanh(tau);\r\n\tout2 = val;\r\n\t\r\n\tfuzzGain = pow(clip(cGain-2,1,100),0.25);\r\n\t//fuzzGain = scale(fuzzGain,0,1,0.1,1);\r\n\tfuzzGain = scale(pow(1/(fuzzGain),4),0,1, 0.0625,1)/fuzzGain;\r\n\ty = y * fuzzGain;\r\n}\r\n\r\nif(mode<2){\r\n\tx1= (y*feedback);\r\n\tMyDelay.write(y*feedback2);\r\n}\r\n\r\nout1 = y;\r\n\r\n",
+					"fontface" : 0,
+					"fontname" : "<Monospaced>",
+					"fontsize" : 12.0,
+					"id" : "obj-5",
+					"maxclass" : "codebox",
+					"numinlets" : 3,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 5.0, 82.0, 622.0, 818.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 52.0, 19.0, 28.0, 22.0 ],
+					"text" : "in 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 41.0, 902.0, 35.0, 22.0 ],
+					"text" : "out 1"
+				}
+
+			}
+ ],
+		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-5", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 2 ],
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 1 ],
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+ ]
+	}
+
+}

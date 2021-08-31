@@ -1,0 +1,28 @@
+{
+	"pattrstorage" : 	{
+		"name" : "noisyJoystick",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"FMfreqHigh" : [ 50.0 ],
+					"FMfreqLow" : [ 48.0 ],
+					"FlangeTimeHigh" : [ 16.0 ],
+					"FlangeTimeHigh[1]" : [ 8.0 ],
+					"ReverbTime" : [ 3000.0 ],
+					"flangeTimeLow" : [ 12.0 ],
+					"flangeTimeLow[1]" : [ 2.0 ],
+					"ocatve" : [ 0 ],
+					"resonance" : [ 0.5 ],
+					"swnse" : [ 127 ],
+					"swnse[1]" : [ 0 ],
+					"MLE.noteEntry::notes" : [ 36, 127, 38, 127, 41, 127, 43, 127, 46, 127 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}

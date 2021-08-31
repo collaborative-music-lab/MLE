@@ -1,0 +1,2 @@
+autowatch = 1;
+

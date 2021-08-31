@@ -1,0 +1,60 @@
+{
+	"pattrstorage" : 	{
+		"name" : "keyGridaudio",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"reverb1" : [ 29 ],
+					"MLE.JX3P::LFO_retrigger" : [ 0 ],
+					"MLE.JX3P::Resonance" : [ 0.478087097406387 ],
+					"MLE.JX3P::attack" : [ 0.0 ],
+					"MLE.JX3P::chorus" : [ 0 ],
+					"MLE.JX3P::chorusDelayLength" : [ 0.0 ],
+					"MLE.JX3P::chorusDepth" : [ 0.0 ],
+					"MLE.JX3P::chorusRate" : [ 0.0 ],
+					"MLE.JX3P::cutoff" : [ 0.53558990440097 ],
+					"MLE.JX3P::dco1env" : [ 1 ],
+					"MLE.JX3P::dco1lfo" : [ 1 ],
+					"MLE.JX3P::dco1octave" : [ 1 ],
+					"MLE.JX3P::dco1wave" : [ 1 ],
+					"MLE.JX3P::dco2env" : [ 1 ],
+					"MLE.JX3P::dco2finetune" : [ 0.258963849531411 ],
+					"MLE.JX3P::dco2lfo" : [ 1 ],
+					"MLE.JX3P::dco2octave" : [ 2 ],
+					"MLE.JX3P::dco2pwm" : [ 0 ],
+					"MLE.JX3P::dco2tune" : [ 0.836652414098344 ],
+					"MLE.JX3P::dco2wave" : [ 4 ],
+					"MLE.JX3P::dcoENVdepth" : [ 0.0 ],
+					"MLE.JX3P::dcoENVinvert" : [ 0 ],
+					"MLE.JX3P::dcoLFOdepth" : [ 0.0 ],
+					"MLE.JX3P::dcoMix" : [ 0.053592628144865 ],
+					"MLE.JX3P::dcoMod" : [ 1 ],
+					"MLE.JX3P::decay" : [ 0.219123255488634 ],
+					"MLE.JX3P::filtENVinvert" : [ 0 ],
+					"MLE.JX3P::filtENVmod" : [ 0.577688574790955 ],
+					"MLE.JX3P::filtLFOmod" : [ 0.0 ],
+					"MLE.JX3P::filterKeytrack" : [ 0.816732118382137 ],
+					"MLE.JX3P::hpf" : [ 0.15936236572965 ],
+					"MLE.JX3P::level" : [ 0.557768280053776 ],
+					"MLE.JX3P::lfoDelay" : [ 0.0 ],
+					"MLE.JX3P::lfoRate" : [ 0.0 ],
+					"MLE.JX3P::lfoWave" : [ 1 ],
+					"MLE.JX3P::release" : [ 0.0 ],
+					"MLE.JX3P::subOsc" : [ 0.0 ],
+					"MLE.JX3P::sustain" : [ 0.203188171351748 ],
+					"MLE.reverb::damping" : [ 0.616414717661758 ],
+					"MLE.reverb::diffusion" : [ 0.284341129352968 ],
+					"MLE.reverb::drywet" : [ 100.0 ],
+					"MLE.reverb::size" : [ 0.494762550062472 ],
+					"MLE.reverb::time" : [ 0.324622076492637 ],
+					"MLE.reverb::reverbFX" : [ -1 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}

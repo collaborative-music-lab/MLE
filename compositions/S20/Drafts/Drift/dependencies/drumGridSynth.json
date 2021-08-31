@@ -1,0 +1,59 @@
+{
+	"pattrstorage" : 	{
+		"name" : "drumGridSynth",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"reverb1" : [ 88 ],
+					"MLE.moog::testMoog" : [ -1 ],
+					"MLE.moog::AM2-1" : [ 0.0 ],
+					"MLE.moog::FM3-1" : [ 0.829384021977845 ],
+					"MLE.moog::VCAgate" : [ 1 ],
+					"MLE.moog::amoLFO" : [ 0.0 ],
+					"MLE.moog::ampADSR" : [ 0.0, 0.242942526936531, 0.302584648132324, 0.326441526412964 ],
+					"MLE.moog::filterADSR" : [ 0.0, 0.297018140554428, 0.130020156502724, 0.201590716838837 ],
+					"MLE.moog::filterADSRlevel" : [ 2.780487804878048 ],
+					"MLE.moog::filterFreq" : [ 0.517985748401052 ],
+					"MLE.moog::filterKey" : [ 2.657960437872096 ],
+					"MLE.moog::filterLFO" : [ 0.0 ],
+					"MLE.moog::filterRes" : [ 0.68421052631579 ],
+					"MLE.moog::glide" : [ 2.362204724409449 ],
+					"MLE.moog::lfoFreq" : [ 0.170631140579664 ],
+					"MLE.moog::lfoShape" : [ 0.578947368421053 ],
+					"MLE.moog::masterVolume" : [ 1.0 ],
+					"MLE.moog::mono" : [ 1 ],
+					"MLE.moog::noiseColor" : [ 0.0 ],
+					"MLE.moog::noiseGain" : [ 0.0 ],
+					"MLE.moog::osc1_octave" : [ 2 ],
+					"MLE.moog::osc1_waveform" : [ 0 ],
+					"MLE.moog::osc1duty" : [ 0.32183910868319 ],
+					"MLE.moog::osc1gain" : [ 1.0 ],
+					"MLE.moog::osc2_waveform" : [ 0 ],
+					"MLE.moog::osc2detune" : [ 0.0 ],
+					"MLE.moog::osc2duty" : [ 0.287356259344365 ],
+					"MLE.moog::osc2gain" : [ 0.342042618976917 ],
+					"MLE.moog::osc2octave" : [ 1 ],
+					"MLE.moog::osc3-waveform" : [ 0 ],
+					"MLE.moog::osc3detune" : [ 0.15 ],
+					"MLE.moog::osc3duty" : [ 0.655172383553725 ],
+					"MLE.moog::osc3gain" : [ 0.0 ],
+					"MLE.moog::osc3octave" : [ 1 ],
+					"MLE.moog::pitchLFO" : [ 0.0 ],
+					"MLE.moog::pwmLFO" : [ 0.118110239768148 ],
+					"MLE.moog::slop" : [ 0.068234323974444 ],
+					"MLE.reverb::damping" : [ 0.5 ],
+					"MLE.reverb::diffusion" : [ 0.75 ],
+					"MLE.reverb::drywet" : [ 25.0 ],
+					"MLE.reverb::size" : [ 0.2 ],
+					"MLE.reverb::time" : [ 0.15 ],
+					"MLE.reverb::reverbFX" : [ -1 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
