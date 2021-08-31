@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 22.0, 1680.0, 1028.0 ],
+		"rect" : [ 2000.0, 94.0, 1405.0, 1028.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,96 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-169",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 204.0, 629.0, 73.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 207.783143758773804, 590.200003206729889, 73.0, 20.0 ],
+					"text" : "listento gain"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-167",
+					"maxclass" : "flonum",
+					"minimum" : 1.0,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 144.900001049041748, 622.0, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 152.5, 590.200003206729889, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-84",
+					"maxclass" : "meter~",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 17.400001049041748, 739.200000941753387, 80.0, 13.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 16.0, 337.0, 60.599998950958252, 12.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-120",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 537.500005125999451, 56.700000941753387, 29.5, 22.0 ],
+					"text" : "$2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-91",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 399.900001049041748, 56.700000941753387, 29.5, 22.0 ],
+					"text" : "$2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-87",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 266.900001049041748, 60.700000941753387, 29.5, 22.0 ],
+					"text" : "$2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-86",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 132.900001049041748, 70.700000941753387, 29.5, 22.0 ],
+					"text" : "$2"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-161",
 					"maxclass" : "meter~",
@@ -88,14 +178,14 @@
 						"subtype" : "Undefined",
 						"embed" : 1,
 						"snapshot" : 						{
-							"pluginname" : "listento-receiver.vstinfo",
+							"pluginname" : "Listento-Receiver.vstinfo",
 							"plugindisplayname" : "Listento Receiver",
 							"pluginsavedname" : "",
 							"pluginsaveduniqueid" : 1819505778,
 							"version" : 1,
 							"isbank" : 0,
 							"isbase64" : 1,
-							"blob" : "294.CMlaKA....fQPMDZ....Av1bzIW.0vFk....A.........................................f5hC........vdhL1at4VYiQWZu41WyQWXzUlH5rmHi8latU1XzUFYhnCcxUWYrHxXu4lakMFco41YhniYgw1bkwhHyElck8Eco0VYhnSL1DCNyTSL4PCM8whHk41XeAWXyM2cuIGYhniHbUGLv.SMhvhHrklaqIhNhfFczAmNu7BaoMGck4Fcu4RX0QVZu01a1Ulby4xXu01KyU1byk1atM2K+LWYyM2WoQVOzLFLlkCYvTFMjYVNkMyMlUVNiM1MjQ1X1byXhQSN2XyH3L1L0DiYlkSMz.CNkIVXwHBKhXWYxMWZu4lH5DSe"
+							"blob" : "295.CMlaKA....fQPMDZ....Av1bzIW.0vFk....A.........................................v5iC........vdhL1at4VYiQWZu41WyQWXzUlH5rmHi8latU1XzUFYhniYgw1bkwhHi8latU1XzklamIhNlEFayUFKhLWX1U1WzkVakIhNwXSL3TSL0TCM0zGKhTlai8EbgM2b28lbjIhNhvUcv.CLwHBKhvVZtslH5HBZzQGb57xKrk1bzUlaz8lKgUGYo8VauYWYxMmKi8VauLWYyMWZu41bu7ybkM2bekFY8PyXvXVNjASYzPlY4T1L2XVY4L1X2PFYiYyMiIFM4biMifyXyTSLlYVN0PCL3TlXgEiHrHhckI2bo8lahnSL8A"
 						}
 ,
 						"snapshotlist" : 						{
@@ -105,19 +195,19 @@
 									"version" : 2,
 									"minorversion" : 0,
 									"name" : "Listento Receiver",
-									"origin" : "listento-receiver.vstinfo",
+									"origin" : "Listento-Receiver.vstinfo",
 									"type" : "VST",
 									"subtype" : "AudioEffect",
 									"embed" : 0,
 									"snapshot" : 									{
-										"pluginname" : "listento-receiver.vstinfo",
+										"pluginname" : "Listento-Receiver.vstinfo",
 										"plugindisplayname" : "Listento Receiver",
 										"pluginsavedname" : "",
 										"pluginsaveduniqueid" : 1819505778,
 										"version" : 1,
 										"isbank" : 0,
 										"isbase64" : 1,
-										"blob" : "294.CMlaKA....fQPMDZ....Av1bzIW.0vFk....A.........................................f5hC........vdhL1at4VYiQWZu41WyQWXzUlH5rmHi8latU1XzUFYhnCcxUWYrHxXu4lakMFco41YhniYgw1bkwhHyElck8Eco0VYhnSL1DCNyTSL4PCM8whHk41XeAWXyM2cuIGYhniHbUGLv.SMhvhHrklaqIhNhfFczAmNu7BaoMGck4Fcu4RX0QVZu01a1Ulby4xXu01KyU1byk1atM2K+LWYyM2WoQVOzLFLlkCYvTFMjYVNkMyMlUVNiM1MjQ1X1byXhQSN2XyH3L1L0DiYlkSMz.CNkIVXwHBKhXWYxMWZu4lH5DSe"
+										"blob" : "295.CMlaKA....fQPMDZ....Av1bzIW.0vFk....A.........................................v5iC........vdhL1at4VYiQWZu41WyQWXzUlH5rmHi8latU1XzUFYhniYgw1bkwhHi8latU1XzklamIhNlEFayUFKhLWX1U1WzkVakIhNwXSL3TSL0TCM0zGKhTlai8EbgM2b28lbjIhNhvUcv.CLwHBKhvVZtslH5HBZzQGb57xKrk1bzUlaz8lKgUGYo8VauYWYxMmKi8VauLWYyMWZu41bu7ybkM2bekFY8PyXvXVNjASYzPlY4T1L2XVY4L1X2PFYiYyMiIFM4biMifyXyTSLlYVN0PCL3TlXgEiHrHhckI2bo8lahnSL8A"
 									}
 ,
 									"fileref" : 									{
@@ -125,7 +215,7 @@
 										"filename" : "Listento Receiver_20210411.maxsnap",
 										"filepath" : "~/Documents/Max 8/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "cbf2b21cf1352fef6343043ee0c45246"
+										"snapshotfileid" : "7aaf1ce202734a2827137c7de143a4fe"
 									}
 
 								}
@@ -190,14 +280,14 @@
 						"subtype" : "Undefined",
 						"embed" : 1,
 						"snapshot" : 						{
-							"pluginname" : "listento-receiver.vstinfo",
+							"pluginname" : "Listento-Receiver.vstinfo",
 							"plugindisplayname" : "Listento Receiver",
 							"pluginsavedname" : "",
 							"pluginsaveduniqueid" : 1819505778,
 							"version" : 1,
 							"isbank" : 0,
 							"isbase64" : 1,
-							"blob" : "294.CMlaKA....fQPMDZ....Av1bzIW.0vFk....A.........................................f5hC........vdhL1at4VYiQWZu41WyQWXzUlH5rmHi8latU1XzUFYhnCcxUWYrHxXu4lakMFco41YhniYgw1bkwhHyElck8Eco0VYhnSL1DCNyTSL4PCM8whHk41XeAWXyM2cuIGYhniHbUGLv.iLhvhHrklaqIhNhfFczAmNu7BaoMGck4Fcu4RX0QVZu01a1Ulby4xXu01KyU1byk1atM2K+LWYyM2WoQVOvTSXkIiXwjSY3LlXhkyLkAiYwXVM3.iLkYlL0jyM0DyH3L1L0DiYlkSMz.CY3DVL2HBKhXWYxMWZu4lH5DSe"
+							"blob" : "294.CMlaKA....fQPMDZ....Av1bzIW.0vFk....A.........................................f5hC........vdhL1at4VYiQWZu41WyQWXzUlH5rmHi8latU1XzUFYhnCcxUWYrHxXu4lakMFco41YhniYgw1bkwhHyElck8Eco0VYhnSL1DCN0DSM0PSM8whHk41XeAWXyM2cuIGYhniHbUGLv.yLhvhHrklaqIhNhfFczAmNu7BaoMGck4Fcu4RX0QVZu01a1Ulby4xXu01KyU1byk1atM2K+LWYyM2WoQVOwTFM4LVX1biYvfCN0fCMhQSMgUVMxTyLwTyLhQVXxT1HxPFY3.CLv.iMy.SYhESXxHBKhXWYxMWZu4lH5DSe"
 						}
 ,
 						"snapshotlist" : 						{
@@ -207,19 +297,19 @@
 									"version" : 2,
 									"minorversion" : 0,
 									"name" : "Listento Receiver",
-									"origin" : "listento-receiver.vstinfo",
+									"origin" : "Listento-Receiver.vstinfo",
 									"type" : "VST",
 									"subtype" : "AudioEffect",
 									"embed" : 0,
 									"snapshot" : 									{
-										"pluginname" : "listento-receiver.vstinfo",
+										"pluginname" : "Listento-Receiver.vstinfo",
 										"plugindisplayname" : "Listento Receiver",
 										"pluginsavedname" : "",
 										"pluginsaveduniqueid" : 1819505778,
 										"version" : 1,
 										"isbank" : 0,
 										"isbase64" : 1,
-										"blob" : "294.CMlaKA....fQPMDZ....Av1bzIW.0vFk....A.........................................f5hC........vdhL1at4VYiQWZu41WyQWXzUlH5rmHi8latU1XzUFYhnCcxUWYrHxXu4lakMFco41YhniYgw1bkwhHyElck8Eco0VYhnSL1DCNyTSL4PCM8whHk41XeAWXyM2cuIGYhniHbUGLv.iLhvhHrklaqIhNhfFczAmNu7BaoMGck4Fcu4RX0QVZu01a1Ulby4xXu01KyU1byk1atM2K+LWYyM2WoQVOvTSXkIiXwjSY3LlXhkyLkAiYwXVM3.iLkYlL0jyM0DyH3L1L0DiYlkSMz.CY3DVL2HBKhXWYxMWZu4lH5DSe"
+										"blob" : "294.CMlaKA....fQPMDZ....Av1bzIW.0vFk....A.........................................f5hC........vdhL1at4VYiQWZu41WyQWXzUlH5rmHi8latU1XzUFYhnCcxUWYrHxXu4lakMFco41YhniYgw1bkwhHyElck8Eco0VYhnSL1DCN0DSM0PSM8whHk41XeAWXyM2cuIGYhniHbUGLv.yLhvhHrklaqIhNhfFczAmNu7BaoMGck4Fcu4RX0QVZu01a1Ulby4xXu01KyU1byk1atM2K+LWYyM2WoQVOwTFM4LVX1biYvfCN0fCMhQSMgUVMxTyLwTyLhQVXxT1HxPFY3.CLv.iMy.SYhESXxHBKhXWYxMWZu4lH5DSe"
 									}
 ,
 									"fileref" : 									{
@@ -227,7 +317,7 @@
 										"filename" : "Listento Receiver_20210411.maxsnap",
 										"filepath" : "~/Documents/Max 8/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "cbf2b21cf1352fef6343043ee0c45246"
+										"snapshotfileid" : "7aaf1ce202734a2827137c7de143a4fe"
 									}
 
 								}
@@ -292,14 +382,14 @@
 						"subtype" : "Undefined",
 						"embed" : 1,
 						"snapshot" : 						{
-							"pluginname" : "listento-receiver.vstinfo",
+							"pluginname" : "Listento-Receiver.vstinfo",
 							"plugindisplayname" : "Listento Receiver",
 							"pluginsavedname" : "",
 							"pluginsaveduniqueid" : 1819505778,
 							"version" : 1,
 							"isbank" : 0,
 							"isbase64" : 1,
-							"blob" : "294.CMlaKA....fQPMDZ....Av1bzIW.0vFk....A.........................................f5hC........vdhL1at4VYiQWZu41WyQWXzUlH5rmHi8latU1XzUFYhnCcxUWYrHxXu4lakMFco41YhniYgw1bkwhHyElck8Eco0VYhnSL1DCNyTSL4PCM8whHk41XeAWXyM2cuIGYhniHbUGLv.iMhvhHrklaqIhNhfFczAmNu7BaoMGck4Fcu4RX0QVZu01a1Ulby4xXu01KyU1byk1atM2K+LWYyM2WoQVOkUyM0LFLhAiMlQyLjYFY2LiXvfCLyfCN2bCN4DSY1P1H3L1L0DiYlkSMz.yMxHSM1HBKhXWYxMWZu4lH5DSe"
+							"blob" : "294.CMlaKA....fQPMDZ....Av1bzIW.0vFk....A.........................................f5hC........vdhL1at4VYiQWZu41WyQWXzUlH5rmHi8latU1XzUFYhnCcxUWYrHxXu4lakMFco41YhniYgw1bkwhHyElck8Eco0VYhnSL1DCN0DSM0PSM8whHk41XeAWXyM2cuIGYhniHbUGLv.yLhvhHrklaqIhNhfFczAmNu7BaoMGck4Fcu4RX0QVZu01a1Ulby4xXu01KyU1byk1atM2K+LWYyM2WoQVOwjiX3DVYyLCY0PiM0DyXyjyMgkSXvHiLgESYyPFL4H1HxPFNlEiYkkiM2PyLzX1MiIBKhXWYxMWZu4lH5DSe"
 						}
 ,
 						"snapshotlist" : 						{
@@ -309,19 +399,19 @@
 									"version" : 2,
 									"minorversion" : 0,
 									"name" : "Listento Receiver",
-									"origin" : "listento-receiver.vstinfo",
+									"origin" : "Listento-Receiver.vstinfo",
 									"type" : "VST",
 									"subtype" : "AudioEffect",
 									"embed" : 0,
 									"snapshot" : 									{
-										"pluginname" : "listento-receiver.vstinfo",
+										"pluginname" : "Listento-Receiver.vstinfo",
 										"plugindisplayname" : "Listento Receiver",
 										"pluginsavedname" : "",
 										"pluginsaveduniqueid" : 1819505778,
 										"version" : 1,
 										"isbank" : 0,
 										"isbase64" : 1,
-										"blob" : "294.CMlaKA....fQPMDZ....Av1bzIW.0vFk....A.........................................f5hC........vdhL1at4VYiQWZu41WyQWXzUlH5rmHi8latU1XzUFYhnCcxUWYrHxXu4lakMFco41YhniYgw1bkwhHyElck8Eco0VYhnSL1DCNyTSL4PCM8whHk41XeAWXyM2cuIGYhniHbUGLv.iMhvhHrklaqIhNhfFczAmNu7BaoMGck4Fcu4RX0QVZu01a1Ulby4xXu01KyU1byk1atM2K+LWYyM2WoQVOkUyM0LFLhAiMlQyLjYFY2LiXvfCLyfCN2bCN4DSY1P1H3L1L0DiYlkSMz.yMxHSM1HBKhXWYxMWZu4lH5DSe"
+										"blob" : "294.CMlaKA....fQPMDZ....Av1bzIW.0vFk....A.........................................f5hC........vdhL1at4VYiQWZu41WyQWXzUlH5rmHi8latU1XzUFYhnCcxUWYrHxXu4lakMFco41YhniYgw1bkwhHyElck8Eco0VYhnSL1DCN0DSM0PSM8whHk41XeAWXyM2cuIGYhniHbUGLv.yLhvhHrklaqIhNhfFczAmNu7BaoMGck4Fcu4RX0QVZu01a1Ulby4xXu01KyU1byk1atM2K+LWYyM2WoQVOwjiX3DVYyLCY0PiM0DyXyjyMgkSXvHiLgESYyPFL4H1HxPFNlEiYkkiM2PyLzX1MiIBKhXWYxMWZu4lH5DSe"
 									}
 ,
 									"fileref" : 									{
@@ -329,7 +419,7 @@
 										"filename" : "Listento Receiver_20210411.maxsnap",
 										"filepath" : "~/Documents/Max 8/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "cbf2b21cf1352fef6343043ee0c45246"
+										"snapshotfileid" : "7aaf1ce202734a2827137c7de143a4fe"
 									}
 
 								}
@@ -394,14 +484,14 @@
 						"subtype" : "Undefined",
 						"embed" : 1,
 						"snapshot" : 						{
-							"pluginname" : "listento-receiver.vstinfo",
+							"pluginname" : "Listento-Receiver.vstinfo",
 							"plugindisplayname" : "Listento Receiver",
 							"pluginsavedname" : "",
 							"pluginsaveduniqueid" : 1819505778,
 							"version" : 1,
 							"isbank" : 0,
 							"isbase64" : 1,
-							"blob" : "294.CMlaKA....fQPMDZ....Av1bzIW.0vFk....A.........................................f5hC........vdhL1at4VYiQWZu41WyQWXzUlH5rmHi8latU1XzUFYhnCcxUWYrHxXu4lakMFco41YhniYgw1bkwhHyElck8Eco0VYhnSL1DCNyTSL4PCM8whHk41XeAWXyM2cuIGYhniHbUGLv.CMhvhHrklaqIhNhfFczAmNu7BaoMGck4Fcu4RX0QVZu01a1Ulby4xXu01KyU1byk1atM2K+LWYyM2WoQVOxLCYjYVNwPCYzPlX4PSNlgiLkACYvPCYjQ1XxXSLjMyH3L1L0DiYlkSMzHFNyLFLvHBKhXWYxMWZu4lH5DSe"
+							"blob" : "294.CMlaKA....fQPMDZ....Av1bzIW.0vFk....A.........................................f5hC........vdhL1at4VYiQWZu41WyQWXzUlH5rmHi8latU1XzUFYhniYgw1bkwhHi8latU1XzklamIhNlEFayUFKhLWX1U1WzkVakIhNwXSL3TSL0TCM0zGKhTlai8EbgM2b28lbjIhNhvUcv.CLyHBKhvVZtslH5HBZzQGb57xKrk1bzUlaz8lKgUGYo8VauYWYxMmKi8VauLWYyMWZu41bu7ybkM2bekFY8LVX4fSXybiYzHVXwPCLiIlY1DSYiM1LkAiMwHFLxX1XiTSX2DiYkMCLhUCM1fCM0HBKhXWYxMWZu4lH5DSe"
 						}
 ,
 						"snapshotlist" : 						{
@@ -411,19 +501,19 @@
 									"version" : 2,
 									"minorversion" : 0,
 									"name" : "Listento Receiver",
-									"origin" : "listento-receiver.vstinfo",
+									"origin" : "Listento-Receiver.vstinfo",
 									"type" : "VST",
 									"subtype" : "AudioEffect",
 									"embed" : 0,
 									"snapshot" : 									{
-										"pluginname" : "listento-receiver.vstinfo",
+										"pluginname" : "Listento-Receiver.vstinfo",
 										"plugindisplayname" : "Listento Receiver",
 										"pluginsavedname" : "",
 										"pluginsaveduniqueid" : 1819505778,
 										"version" : 1,
 										"isbank" : 0,
 										"isbase64" : 1,
-										"blob" : "294.CMlaKA....fQPMDZ....Av1bzIW.0vFk....A.........................................f5hC........vdhL1at4VYiQWZu41WyQWXzUlH5rmHi8latU1XzUFYhnCcxUWYrHxXu4lakMFco41YhniYgw1bkwhHyElck8Eco0VYhnSL1DCNyTSL4PCM8whHk41XeAWXyM2cuIGYhniHbUGLv.CMhvhHrklaqIhNhfFczAmNu7BaoMGck4Fcu4RX0QVZu01a1Ulby4xXu01KyU1byk1atM2K+LWYyM2WoQVOxLCYjYVNwPCYzPlX4PSNlgiLkACYvPCYjQ1XxXSLjMyH3L1L0DiYlkSMzHFNyLFLvHBKhXWYxMWZu4lH5DSe"
+										"blob" : "294.CMlaKA....fQPMDZ....Av1bzIW.0vFk....A.........................................f5hC........vdhL1at4VYiQWZu41WyQWXzUlH5rmHi8latU1XzUFYhniYgw1bkwhHi8latU1XzklamIhNlEFayUFKhLWX1U1WzkVakIhNwXSL3TSL0TCM0zGKhTlai8EbgM2b28lbjIhNhvUcv.CLyHBKhvVZtslH5HBZzQGb57xKrk1bzUlaz8lKgUGYo8VauYWYxMmKi8VauLWYyMWZu41bu7ybkM2bekFY8LVX4fSXybiYzHVXwPCLiIlY1DSYiM1LkAiMwHFLxX1XiTSX2DiYkMCLhUCM1fCM0HBKhXWYxMWZu4lH5DSe"
 									}
 ,
 									"fileref" : 									{
@@ -431,7 +521,7 @@
 										"filename" : "Listento Receiver_20210411.maxsnap",
 										"filepath" : "~/Documents/Max 8/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "cbf2b21cf1352fef6343043ee0c45246"
+										"snapshotfileid" : "7aaf1ce202734a2827137c7de143a4fe"
 									}
 
 								}
@@ -469,7 +559,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ -55.0, 552.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 250.0, 516.599996447563171, 24.0, 24.0 ]
+					"presentation_rect" : [ 18.0, 155.599996447563171, 24.0, 24.0 ]
 				}
 
 			}
@@ -1715,7 +1805,7 @@
 					"patching_rect" : [ -176.300002753734589, 393.199995279312134, 140.5, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 56.483139455318451, 544.59999680519104, 172.800001740455627, 22.0 ],
-					"text" : "JPSQ_wet_2_Apr12"
+					"text" : "JPSQ_wet_0_Apr13"
 				}
 
 			}
@@ -1778,21 +1868,6 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 56.483139455318451, 516.599996447563171, 172.800001740455627, 22.0 ],
 					"sig" : 0.0
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontsize" : 16.0,
-					"id" : "obj-89",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 825.500005125999451, -166.799999058246613, 196.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 71.0, 10.0, 104.0, 24.0 ],
-					"text" : "set input gain",
-					"textcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ]
 				}
 
 			}
@@ -1912,7 +1987,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 188.70000159740448, 432.200000941753387, 23.75, 58.0 ],
+					"patching_rect" : [ 175.70000159740448, 450.200000941753387, 23.75, 58.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 351.783143758773804, 45.0, 23.75, 58.0 ]
 				}
@@ -3858,6 +3933,18 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "float" ],
+									"patching_rect" : [ 248.0, 239.0, 29.5, 22.0 ],
+									"text" : "* 2."
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-10",
 									"maxclass" : "message",
 									"numinlets" : 2,
@@ -4032,7 +4119,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-5", 2 ],
+									"destination" : [ "obj-6", 0 ],
 									"source" : [ "obj-4", 1 ]
 								}
 
@@ -4041,6 +4128,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-8", 0 ],
 									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-5", 2 ],
+									"source" : [ "obj-6", 0 ]
 								}
 
 							}
@@ -4247,8 +4341,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -4257,8 +4351,8 @@
 , 							{
 								"name" : "newobjYellow-2",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -4267,8 +4361,8 @@
 , 							{
 								"name" : "newobjYellow-3",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -4340,8 +4434,8 @@
 , 							{
 								"name" : "rsliderGold",
 								"default" : 								{
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
-									"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
+									"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -4359,8 +4453,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 								}
 ,
 								"parentstyle" : "",
@@ -4528,18 +4622,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-116",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 737.000005125999451, 371.200000941753387, 40.0, 22.0 ],
-					"text" : "*~ 0.1"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bufsize" : 64,
 					"calccount" : 32,
 					"id" : "obj-83",
@@ -4563,120 +4645,14 @@
 			}
 , 			{
 				"box" : 				{
-					"bufsize" : 64,
-					"calccount" : 32,
-					"id" : "obj-67",
-					"maxclass" : "scope~",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"patching_rect" : [ 407.000005125999451, -186.799999058246613, 130.0, 130.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-65",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 669.000005125999451, 362.200000941753387, 63.0, 22.0 ],
-					"text" : "cycle~ 0.2"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-61",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 888.000005125999451, 315.200000941753387, 46.0, 22.0 ],
-					"text" : "+~ 200"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-60",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 876.000005125999451, 281.200000941753387, 44.0, 22.0 ],
-					"text" : "*~ 100"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-53",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 870.000005125999451, 241.200000941753387, 53.0, 22.0 ],
-					"text" : "cycle~ 2"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-52",
-					"maxclass" : "meter~",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"patching_rect" : [ 717.000005125999451, 435.200000941753387, 80.0, 13.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"format" : 6,
-					"id" : "obj-51",
-					"maxclass" : "flonum",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 717.000005125999451, 313.200000941753387, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-48",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 791.000005125999451, 358.200000941753387, 40.0, 22.0 ],
-					"text" : "*~ 0.1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-43",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 797.000005125999451, 328.200000941753387, 66.0, 22.0 ],
-					"text" : "cycle~ 200"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-41",
 					"maxclass" : "meter~",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 25.400001049041748, 706.200003206729889, 80.0, 13.0 ]
+					"patching_rect" : [ 17.400001049041748, 720.200000941753387, 80.0, 13.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 16.0, 322.0, 60.599998950958252, 12.0 ]
 				}
 
 			}
@@ -4728,7 +4704,7 @@
 							"version" : 1,
 							"isbank" : 0,
 							"isbase64" : 1,
-							"blob" : "616.CMlaKA....fQPMDZ....Av1bzQW.0vFk....A........................................H.KjH........vdhDVcjk1aeY1ax0VXzIhN6IhXoQ2WjUFbzglH5DiMrHhXoQmbgQWYhnSLxfCLv.iKvvhHigVXt4VYr8UagM2ZhniHvf2LhvhHi8FYkMlH5HRXgMlHrHRZy8kYr8VXzIhNlEFayUFKhzVYyMWXmU1WzkGbkIhNh.mLy8UX0QVZu8kYuIWagQmHrHha001WigVXt4VYrMmH5HCKhLWXsAGak8kbgQWYhnCMzDCLv3BL8whHiwVZk4Fcy8UcyUlbewVZskFchnCLrHxXu4lakMFco8laeMGcgQWYhnydhj1bew1amcVYj8UZtIhNzIWckwhHyElck8Eco0VYhnSL1DCNyTSL4PCMrHBcxElay0VZzMmH5Pmb0UVerHBagQWYtMVdhnCLtTCKh7VczAWczIhN6IhXgMWYe4VcsIhNvvhHoQlH5HhLvLFNwXlYhcSNhUlLhUFLhvhHtEVakIhNh7TczAWczARLsHiH8whHxUVbeAWXyM2cuIGYhniHhvhHxUVbeAWXyM2cuIGYe8lahniYgw1bkwhHyU1byk1at8kag0VYhniHlI2askTXtIBKhPmbg41bv8lbz80bzEFckIhN6IRZy8EcxElayA2axQ2Wi8lazI2ar8UXrw1a2UFYhniYgw1bkwhHoM2WzIWXtMGbuIGceMGcgIGckQlH5XVXrMWYrHBcxElayA2axQ2Wv81bhnCLt.SerHhckI2bo8lahnSM8A"
+							"blob" : "618.CMlaKA....fQPMDZ....Av1bzQW.0vFk....A........................................HfKlH........vdhDVcjk1aeY1ax0VXzIhN6IhXoQ2WjUFbzglH5DiMrHhXoQmbgQWYhnSLxfCLv.iKvvhHigVXt4VYr8UagM2ZhniHvfGLhvhHi8FYkMlH5HRXgMlHrHRZy8kYr8VXzIhNlEFayUFKhzVYyMWXmU1WzkGbkIhNh.mLy8UX0QVZu8kYuIWagQmHrHha001WigVXt4VYrMmH5HCKhLWXsAGak8kbgQWYhnCMzDCLv3BL8whHiwVZk4Fcy8UcyUlbewVZskFchnCLrHxXu4lakMFco8laeMGcgQWYhnydhj1bew1amcVYj8UZtIhNlEFayUFKhLWX1U1WzkVakIhNwXSL3TSL0TCM0vhHzIWXtMWaoQ2bhniYgw1bk0GKhvVXzUlaikmH5.iKwvhHuUGcvUGchnydhHVXyU1WtUWahnCLrHRZjIhNhHCLigSLlYlX2jiXkIiXkAiHrHhag0VYhniHOUGcvUGcfDSKxHRerHhbkE2WvE1byc2axQlH5HhHrHhbkE2WvE1byc2axQ1Wu4lH5XVXrMWYrHxbkM2bo8lae4VXsUlH5HhYx8VaIElahvhHzIWXtMGbuIGceMGcgQWYhnydhj1beQmbg41bv8lbz80Xu4Fcx8FaeEFar81ckQlH5XVXrMWYrHRZy8EcxElayA2axQ2WyQWXxQWYjIhNlEFayUFKhPmbg41bv8lbz8EbuMmH5.iKvzGKhXWYxMWZu4lH5TSe"
 						}
 ,
 						"snapshotlist" : 						{
@@ -4750,7 +4726,7 @@
 										"version" : 1,
 										"isbank" : 0,
 										"isbase64" : 1,
-										"blob" : "616.CMlaKA....fQPMDZ....Av1bzQW.0vFk....A........................................H.KjH........vdhDVcjk1aeY1ax0VXzIhN6IhXoQ2WjUFbzglH5DiMrHhXoQmbgQWYhnSLxfCLv.iKvvhHigVXt4VYr8UagM2ZhniHvf2LhvhHi8FYkMlH5HRXgMlHrHRZy8kYr8VXzIhNlEFayUFKhzVYyMWXmU1WzkGbkIhNh.mLy8UX0QVZu8kYuIWagQmHrHha001WigVXt4VYrMmH5HCKhLWXsAGak8kbgQWYhnCMzDCLv3BL8whHiwVZk4Fcy8UcyUlbewVZskFchnCLrHxXu4lakMFco8laeMGcgQWYhnydhj1bew1amcVYj8UZtIhNzIWckwhHyElck8Eco0VYhnSL1DCNyTSL4PCMrHBcxElay0VZzMmH5Pmb0UVerHBagQWYtMVdhnCLtTCKh7VczAWczIhN6IhXgMWYe4VcsIhNvvhHoQlH5HhLvLFNwXlYhcSNhUlLhUFLhvhHtEVakIhNh7TczAWczARLsHiH8whHxUVbeAWXyM2cuIGYhniHhvhHxUVbeAWXyM2cuIGYe8lahniYgw1bkwhHyU1byk1at8kag0VYhniHlI2askTXtIBKhPmbg41bv8lbz80bzEFckIhN6IRZy8EcxElayA2axQ2Wi8lazI2ar8UXrw1a2UFYhniYgw1bkwhHoM2WzIWXtMGbuIGceMGcgIGckQlH5XVXrMWYrHBcxElayA2axQ2Wv81bhnCLt.SerHhckI2bo8lahnSM8A"
+										"blob" : "618.CMlaKA....fQPMDZ....Av1bzQW.0vFk....A........................................HfKlH........vdhDVcjk1aeY1ax0VXzIhN6IhXoQ2WjUFbzglH5DiMrHhXoQmbgQWYhnSLxfCLv.iKvvhHigVXt4VYr8UagM2ZhniHvfGLhvhHi8FYkMlH5HRXgMlHrHRZy8kYr8VXzIhNlEFayUFKhzVYyMWXmU1WzkGbkIhNh.mLy8UX0QVZu8kYuIWagQmHrHha001WigVXt4VYrMmH5HCKhLWXsAGak8kbgQWYhnCMzDCLv3BL8whHiwVZk4Fcy8UcyUlbewVZskFchnCLrHxXu4lakMFco8laeMGcgQWYhnydhj1bew1amcVYj8UZtIhNlEFayUFKhLWX1U1WzkVakIhNwXSL3TSL0TCM0vhHzIWXtMWaoQ2bhniYgw1bk0GKhvVXzUlaikmH5.iKwvhHuUGcvUGchnydhHVXyU1WtUWahnCLrHRZjIhNhHCLigSLlYlX2jiXkIiXkAiHrHhag0VYhniHOUGcvUGcfDSKxHRerHhbkE2WvE1byc2axQlH5HhHrHhbkE2WvE1byc2axQ1Wu4lH5XVXrMWYrHxbkM2bo8lae4VXsUlH5HhYx8VaIElahvhHzIWXtMGbuIGceMGcgQWYhnydhj1beQmbg41bv8lbz80Xu4Fcx8FaeEFar81ckQlH5XVXrMWYrHRZy8EcxElayA2axQ2WyQWXxQWYjIhNlEFayUFKhPmbg41bv8lbz8EbuMmH5.iKvzGKhXWYxMWZu4lH5TSe"
 									}
 ,
 									"fileref" : 									{
@@ -4775,178 +4751,13 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-27",
-					"maxclass" : "meter~",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"patching_rect" : [ 657.000005125999451, -195.299999058246613, 80.0, 13.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-11",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "bang" ],
-					"patching_rect" : [ 758.000005125999451, -171.799999058246613, 44.0, 22.0 ],
-					"text" : "line~ 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-15",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 758.000005125999451, -199.799999058246613, 45.0, 22.0 ],
-					"text" : "$1 100"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.298039215686275, 0.298039215686275, 0.298039215686275, 1.0 ],
-					"fontsize" : 16.0,
-					"format" : 6,
-					"id" : "obj-23",
-					"maxclass" : "flonum",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 758.000005125999451, -234.299999058246613, 56.0, 26.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-26",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 623.000005125999451, -141.799999058246613, 30.0, 22.0 ],
-					"text" : "*~ 2"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-7",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 615.000005125999451, -288.799999058246613, 31.0, 22.0 ],
-					"text" : "plug"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"autosave" : 1,
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"id" : "obj-9",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 8,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal", "signal", "", "list", "int", "", "", "" ],
-					"patching_rect" : [ 619.000005125999451, -233.799999058246613, 119.0, 22.0 ],
-					"save" : [ "#N", "vst~", "loaduniqueid", 0, "listento-receiver", ";" ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_invisible" : 1,
-							"parameter_longname" : "vst~",
-							"parameter_shortname" : "vst~",
-							"parameter_type" : 3
-						}
-
-					}
-,
-					"saved_object_attributes" : 					{
-						"parameter_enable" : 1,
-						"parameter_mappable" : 0
-					}
-,
-					"snapshot" : 					{
-						"filetype" : "C74Snapshot",
-						"version" : 2,
-						"minorversion" : 0,
-						"name" : "snapshotlist",
-						"origin" : "vst~",
-						"type" : "list",
-						"subtype" : "Undefined",
-						"embed" : 1,
-						"snapshot" : 						{
-							"pluginname" : "Listento-Receiver.vstinfo",
-							"plugindisplayname" : "Listento Receiver",
-							"pluginsavedname" : "",
-							"pluginsaveduniqueid" : 1819505778,
-							"version" : 1,
-							"isbank" : 0,
-							"isbase64" : 1,
-							"blob" : "295.CMlaKA....fQPMDZ....Av1bzIW.0vFk....A.........................................v5iC........vdhL1at4VYiQWZu41WyQWXzUlH5rmHi8latU1XzUFYhniYgw1bkwhHi8latU1XzklamIhNlEFayUFKhLWX1U1WzkVakIhNwXSL3LSMwjCMzzGKhTlai8EbgM2b28lbjIhNhvUcv.CL1HBKhvVZtslH5HBZzQGbyoyKuvVZyQWYtQ2atDVcjk1as8lckI2btL1as8xbkM2bo8lay8xOyU1by8UZj0CYjQlM3bSYyXCYxDCMxHSM0PCLwLFLlcSYhkSLxDlYkMRMgcSLlU1LvHVMzXCNzTiHrHhckI2bo8lahnSL8A"
-						}
-,
-						"snapshotlist" : 						{
-							"current_snapshot" : 0,
-							"entries" : [ 								{
-									"filetype" : "C74Snapshot",
-									"version" : 2,
-									"minorversion" : 0,
-									"name" : "Listento Receiver",
-									"origin" : "Listento-Receiver.vstinfo",
-									"type" : "VST",
-									"subtype" : "AudioEffect",
-									"embed" : 0,
-									"snapshot" : 									{
-										"pluginname" : "Listento-Receiver.vstinfo",
-										"plugindisplayname" : "Listento Receiver",
-										"pluginsavedname" : "",
-										"pluginsaveduniqueid" : 1819505778,
-										"version" : 1,
-										"isbank" : 0,
-										"isbase64" : 1,
-										"blob" : "295.CMlaKA....fQPMDZ....Av1bzIW.0vFk....A.........................................v5iC........vdhL1at4VYiQWZu41WyQWXzUlH5rmHi8latU1XzUFYhniYgw1bkwhHi8latU1XzklamIhNlEFayUFKhLWX1U1WzkVakIhNwXSL3LSMwjCMzzGKhTlai8EbgM2b28lbjIhNhvUcv.CL1HBKhvVZtslH5HBZzQGbyoyKuvVZyQWYtQ2atDVcjk1as8lckI2btL1as8xbkM2bo8lay8xOyU1by8UZj0CYjQlM3bSYyXCYxDCMxHSM0PCLwLFLlcSYhkSLxDlYkMRMgcSLlU1LvHVMzXCNzTiHrHhckI2bo8lahnSL8A"
-									}
-,
-									"fileref" : 									{
-										"name" : "Listento Receiver",
-										"filename" : "Listento Receiver_20210411.maxsnap",
-										"filepath" : "~/Documents/Max 8/Snapshots",
-										"filepos" : -1,
-										"snapshotfileid" : "7aaf1ce202734a2827137c7de143a4fe"
-									}
-
-								}
- ]
-						}
-
-					}
-,
-					"text" : "vst~ listento-receiver",
-					"varname" : "vst~",
-					"viewvisibility" : 0
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-58",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1181.000005125999451, 66.200000941753387, 70.0, 22.0 ],
-					"text" : "loadmess 1"
+					"text" : "loadmess 0"
 				}
 
 			}
@@ -5556,29 +5367,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-85",
-					"maxclass" : "meter~",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"patching_rect" : [ 487.000005125999451, -49.299999058246613, 80.0, 13.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-50",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 932.500005125999451, 70.700000941753387, 98.0, 22.0 ],
-					"text" : "MLE.loadmess 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bgcolor" : [ 0.325490196078431, 0.325490196078431, 0.325490196078431, 1.0 ],
 					"checkedcolor" : [ 0.847058823529412, 0.831372549019608, 0.831372549019608, 1.0 ],
 					"id" : "obj-80",
@@ -5667,17 +5455,6 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 952.500005125999451, 162.200000941753387, 150.0, 20.0 ],
 					"text" : "or play a soundfile"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-73",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 797.000005125999451, 157.700000941753387, 150.0, 20.0 ],
-					"text" : "set input gain"
 				}
 
 			}
@@ -5878,29 +5655,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-28",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 975.500005125999451, 110.200000941753387, 150.0, 20.0 ],
-					"text" : "<-click to enable recording"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-25",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 932.500005125999451, 101.700000941753387, 37.0, 37.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bgcolor" : [ 0.298039215686275, 0.298039215686275, 0.298039215686275, 1.0 ],
 					"fontsize" : 16.0,
 					"format" : 6,
@@ -5970,6 +5724,8 @@
 					"numoutlets" : 12,
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "", "" ],
 					"patching_rect" : [ 0.60000079870224, 218.200000941753387, 557.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 3.60000079870224, 624.200000941753387, 557.0, 22.0 ],
 					"text" : "poly~ JPSQ_wave_voice3 4",
 					"varname" : "poly~"
 				}
@@ -6050,31 +5806,6 @@
 					"numoutlets" : 6,
 					"outlettype" : [ "float", "float", "float", "float", "list", "" ],
 					"patching_rect" : [ 1412.000005125999451, 298.69999748468399, 256.0, 64.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"format" : 6,
-					"id" : "obj-14",
-					"maxclass" : "flonum",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 797.000005125999451, 181.200000941753387, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-12",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 728.000005125999451, 209.200000941753387, 88.0, 22.0 ],
-					"text" : "*~ 1"
 				}
 
 			}
@@ -6217,13 +5948,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-26", 1 ],
-					"source" : [ "obj-11", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-111", 0 ],
 					"source" : [ "obj-110", 0 ]
 				}
@@ -6259,13 +5983,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-48", 1 ],
-					"source" : [ "obj-116", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-39", 1 ],
 					"order" : 0,
 					"source" : [ "obj-118", 0 ]
@@ -6282,25 +5999,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-19", 0 ],
-					"order" : 1,
-					"source" : [ "obj-12", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-40", 0 ],
-					"order" : 0,
-					"source" : [ "obj-12", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-42", 1 ],
-					"order" : 2,
-					"source" : [ "obj-12", 0 ]
+					"destination" : [ "obj-162", 0 ],
+					"source" : [ "obj-120", 0 ]
 				}
 
 			}
@@ -6467,6 +6167,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-41", 0 ],
+					"order" : 2,
+					"source" : [ "obj-133", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-146", 0 ],
 					"order" : 0,
 					"source" : [ "obj-134", 0 ]
@@ -6477,6 +6185,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-39", 1 ],
 					"order" : 1,
+					"source" : [ "obj-134", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-84", 0 ],
+					"order" : 2,
 					"source" : [ "obj-134", 0 ]
 				}
 
@@ -6504,13 +6220,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-12", 1 ],
-					"source" : [ "obj-14", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-134", 0 ],
 					"order" : 1,
 					"source" : [ "obj-145", 0 ]
@@ -6529,13 +6238,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-8", 1 ],
 					"source" : [ "obj-146", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
-					"source" : [ "obj-15", 0 ]
 				}
 
 			}
@@ -6616,6 +6318,22 @@
 					"destination" : [ "obj-42", 3 ],
 					"order" : 1,
 					"source" : [ "obj-165", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-133", 1 ],
+					"order" : 1,
+					"source" : [ "obj-167", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-134", 1 ],
+					"order" : 0,
+					"source" : [ "obj-167", 0 ]
 				}
 
 			}
@@ -6758,29 +6476,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-15", 0 ],
-					"source" : [ "obj-23", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-12", 0 ],
-					"order" : 0,
-					"source" : [ "obj-26", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-85", 0 ],
-					"order" : 1,
-					"source" : [ "obj-26", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
 					"source" : [ "obj-29", 0 ]
 				}
@@ -6816,8 +6511,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-42", 0 ],
-					"hidden" : 1,
+					"destination" : [ "obj-86", 0 ],
 					"source" : [ "obj-34", 0 ]
 				}
 
@@ -6833,13 +6527,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-38", 0 ],
 					"source" : [ "obj-36", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-41", 0 ],
-					"source" : [ "obj-39", 0 ]
 				}
 
 			}
@@ -7140,13 +6827,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-48", 0 ],
-					"source" : [ "obj-43", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-42", 0 ],
 					"source" : [ "obj-44", 0 ]
 				}
@@ -7177,15 +6857,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-52", 0 ],
-					"source" : [ "obj-48", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-42", 0 ],
-					"hidden" : 1,
+					"destination" : [ "obj-87", 0 ],
 					"source" : [ "obj-49", 0 ]
 				}
 
@@ -7194,27 +6866,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-5", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-25", 0 ],
-					"source" : [ "obj-50", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-48", 1 ],
-					"source" : [ "obj-51", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-60", 0 ],
-					"source" : [ "obj-53", 0 ]
 				}
 
 			}
@@ -7257,20 +6908,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-61", 0 ],
-					"source" : [ "obj-60", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-43", 0 ],
-					"source" : [ "obj-61", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-93", 0 ],
 					"source" : [ "obj-62", 1 ]
 				}
@@ -7286,22 +6923,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-116", 0 ],
-					"source" : [ "obj-65", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-71", 0 ],
 					"source" : [ "obj-69", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
-					"source" : [ "obj-7", 0 ]
 				}
 
 			}
@@ -7337,8 +6960,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-42", 0 ],
-					"hidden" : 1,
+					"destination" : [ "obj-120", 0 ],
 					"source" : [ "obj-78", 0 ]
 				}
 
@@ -7352,9 +6974,22 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-42", 0 ],
-					"hidden" : 1,
+					"destination" : [ "obj-91", 0 ],
 					"source" : [ "obj-82", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-153", 0 ],
+					"source" : [ "obj-86", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-159", 0 ],
+					"source" : [ "obj-87", 0 ]
 				}
 
 			}
@@ -7367,32 +7002,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-26", 0 ],
-					"order" : 1,
-					"source" : [ "obj-9", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-27", 0 ],
-					"order" : 0,
-					"source" : [ "obj-9", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-67", 0 ],
-					"order" : 2,
-					"source" : [ "obj-9", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
 					"source" : [ "obj-90", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-165", 0 ],
+					"source" : [ "obj-91", 0 ]
 				}
 
 			}
@@ -7469,7 +7087,6 @@
 			"obj-64::obj-91" : [ "live.grid[9]", "live.grid", 0 ],
 			"obj-66::obj-7" : [ "live.grid[12]", "live.grid", 0 ],
 			"obj-66::obj-91" : [ "live.grid[13]", "live.grid", 0 ],
-			"obj-9" : [ "vst~", "vst~", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -7548,14 +7165,14 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Listento Receiver_20210411.maxsnap",
+				"name" : "Listento.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../../../../ianhattwick/Documents/Max 8/Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Listento.maxsnap",
+				"name" : "Listento Receiver_20210411.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../../../../ianhattwick/Documents/Max 8/Snapshots",
 				"type" : "mx@s",
@@ -7744,8 +7361,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -7754,8 +7371,8 @@
 , 			{
 				"name" : "newobjYellow-2",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -7764,8 +7381,8 @@
 , 			{
 				"name" : "newobjYellow-3",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -7837,8 +7454,8 @@
 , 			{
 				"name" : "rsliderGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
-					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
+					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -7856,8 +7473,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 				}
 ,
 				"parentstyle" : "",
