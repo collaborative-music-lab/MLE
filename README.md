@@ -1,5 +1,5 @@
 # MLE
-Max/MSP Library for use by the MIT Laptop Ensemble
+Max/MSP Library for use by FaMLE, the MIT Laptop Ensemble
 
 ## Steps to get started with the MLE Library:
 1. Install Max 8. https://cycling74.com/downloads
