@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 2,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 544.0, 840.0, 681.0, 176.0 ],
+		"rect" : [ 535.0, 816.0, 681.0, 176.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,18 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-22",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 482.0, 391.0, 188.0, 22.0 ],
+					"text" : "MLE.keyDial equal dash 0 127 20"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-24",
 					"maxclass" : "comment",
@@ -69,7 +81,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 638.0, 486.0, 50.0, 22.0 ],
-					"text" : "45"
+					"text" : "197"
 				}
 
 			}
@@ -302,7 +314,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 482.0, 388.5, 77.0, 22.0 ],
+					"patching_rect" : [ 593.0, 362.5, 77.0, 22.0 ],
 					"text" : "loadmess 45"
 				}
 
@@ -316,7 +328,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 1096.0, 788.0, 56.0, 22.0 ],
 					"text" : "autopattr",
-					"varname" : "u633006678"
+					"varname" : "u330003474"
 				}
 
 			}
@@ -342,10 +354,10 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1052.0, 816.0, 280.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 4, 45, 357, 328 ],
+						"client_rect" : [ 4, 44, 358, 172 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
-						"storage_rect" : [ 583, 69, 1034, 197 ]
+						"storage_rect" : [ 365, 44, 816, 172 ]
 					}
 ,
 					"text" : "pattrstorage MLEmaster @greedy 1 @savemode 0",
@@ -460,7 +472,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -774,7 +786,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1046,7 +1058,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1807,7 +1819,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-14", 0 ],
+					"destination" : [ "obj-22", 1 ],
 					"source" : [ "obj-17", 0 ]
 				}
 
@@ -1837,6 +1849,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
 					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"source" : [ "obj-22", 0 ]
 				}
 
 			}
@@ -2072,15 +2091,15 @@
 			}
 , 			{
 				"name" : "init.maxpat",
-				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
-				"patcherrelativepath" : "./patchers/utilities",
+				"bootpath" : "~/Documents/github/heath-interactive/heath-interactive/casa-stairs/roots/utilities",
+				"patcherrelativepath" : "../../../ianhattwick/Documents/github/heath-interactive/heath-interactive/casa-stairs/roots/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.swing.maxpat",
-				"bootpath" : "/Users/famle/CML/MLE/patchers/sandbox",
-				"patcherrelativepath" : "./patchers/sandbox",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "./patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -2100,8 +2119,8 @@
 			}
 , 			{
 				"name" : "initS.maxpat",
-				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
-				"patcherrelativepath" : "./patchers/utilities",
+				"bootpath" : "~/Documents/github/heath-interactive/heath-interactive/casa-stairs/roots/utilities",
+				"patcherrelativepath" : "../../../ianhattwick/Documents/github/heath-interactive/heath-interactive/casa-stairs/roots/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -2142,8 +2161,8 @@
 			}
 , 			{
 				"name" : "MLE.playerID.maxpat",
-				"bootpath" : "/Users/famle/CML/MLE/patchers/sandbox",
-				"patcherrelativepath" : "./patchers/sandbox",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "./patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -2163,8 +2182,8 @@
 			}
 , 			{
 				"name" : "MLE.3bandEQ.maxpat",
-				"bootpath" : "/Users/famle/CML/MLE/patchers/sandbox/Carina",
-				"patcherrelativepath" : "./patchers/sandbox/Carina",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/audio/FX",
+				"patcherrelativepath" : "./patchers/audio/FX",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -2180,6 +2199,20 @@
 				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
 				"patcherrelativepath" : "./patchers/utilities",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.keyDial.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/controllers",
+				"patcherrelativepath" : "./patchers/controllers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ASCII_coll",
+				"bootpath" : "/Users/famle/CML/MLE/code",
+				"patcherrelativepath" : "./code",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
