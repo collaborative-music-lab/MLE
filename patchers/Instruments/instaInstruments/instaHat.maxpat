@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 8,
+			"minor" : 1,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -119,7 +119,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 503.0, 103.0, 70.0, 22.0 ],
+					"patching_rect" : [ 484.0, 7.799980163574219, 70.0, 22.0 ],
 					"text" : "loadmess 1"
 				}
 
@@ -133,15 +133,16 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 929.70001220703125, 1079.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"FX" : [ 0 ],
-						"Pitch" : [ 59 ],
-						"Volume" : [ 127 ],
-						"decay" : [ 56 ],
-						"masterVolume" : [ 0.5 ]
+						"FX" : [ 15 ],
+						"Pitch" : [ 19 ],
+						"Volume" : [ 106 ],
+						"decay" : [ 127 ],
+						"live.grid" : [ 3, 8, 2, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2 ],
+						"masterVolume" : [ 0.821693915960579 ]
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u697008397"
+					"varname" : "u411005796"
 				}
 
 			}
@@ -156,8 +157,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 8,
+							"minor" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -298,7 +299,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 279.333335876464844, 149.0, 50.0, 22.0 ],
-									"text" : "3 0"
+									"text" : "1 0"
 								}
 
 							}
@@ -313,8 +314,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 0,
-											"revision" : 8,
+											"minor" : 1,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -910,8 +911,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 0,
-											"revision" : 8,
+											"minor" : 1,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1691,8 +1692,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 8,
+							"minor" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1928,8 +1929,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 8,
+							"minor" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2114,7 +2115,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 809.0, 270.0, 50.0, 22.0 ],
-					"text" : "51"
+					"text" : "23"
 				}
 
 			}
@@ -2215,7 +2216,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "preset", "int", "preset", "int" ],
-					"patching_rect" : [ 503.0, 127.20001220703125, 100.0, 40.0 ],
+					"patching_rect" : [ 484.0, 31.999992370605469, 100.0, 40.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 293.64447021484375, 181.66668701171875, 100.0, 17.0 ],
 					"preset_data" : [ 						{
 							"number" : 1,
 							"data" : [ 5, "obj-60", "slider", "float", 127.0, 5, "obj-22", "slider", "float", 2.0, 5, "obj-50", "slider", "float", 0.0, 5, "obj-6", "slider", "float", 40.0 ]
@@ -2775,8 +2778,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 8,
+							"minor" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3214,10 +3217,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "preset", "int", "preset", "int" ],
-					"patching_rect" : [ 654.70001220703125, 90.0, 100.0, 40.0 ],
-					"pattrstorage" : "instaHat",
-					"presentation" : 1,
-					"presentation_rect" : [ 309.20001220703125, 183.3555908203125, 92.0, 16.6221923828125 ]
+					"patching_rect" : [ 654.70001220703125, 112.0, 100.0, 40.0 ],
+					"pattrstorage" : "instaHat"
 				}
 
 			}
@@ -3232,10 +3233,10 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1017.20001220703125, 1079.0, 183.0, 35.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 4, 45, 358, 173 ],
+						"client_rect" : [ 4, 44, 358, 172 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
-						"storage_rect" : [ 583, 69, 1034, 197 ]
+						"storage_rect" : [ 365, 79, 816, 207 ]
 					}
 ,
 					"text" : "pattrstorage instaHat @savemode 1 @greedy 1",
@@ -3398,14 +3399,15 @@
 					"rows" : 2,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_invisible" : 1,
 							"parameter_shortname" : "live.grid",
 							"parameter_type" : 3,
-							"parameter_longname" : "live.grid"
+							"parameter_longname" : "live.grid",
+							"parameter_invisible" : 1
 						}
 
 					}
-
+,
+					"varname" : "live.grid"
 				}
 
 			}
@@ -3883,7 +3885,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-17", 0 ],
+					"destination" : [ "obj-33", 0 ],
 					"source" : [ "obj-67", 0 ]
 				}
 
@@ -3999,35 +4001,39 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-39::obj-3" : [ "kick-tune[1]", "tuning", 0 ],
+			"obj-39::obj-128" : [ "trig_7[1]", "trig_7", 0 ],
+			"obj-27::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
+			"obj-39::obj-23" : [ "trig_3", "trig_3", 0 ],
+			"obj-39::obj-34" : [ "trig_5", "trig_5", 0 ],
+			"obj-39::obj-20" : [ "snare-decay", "decay", 0 ],
+			"obj-39::obj-120" : [ "accent", "accent", 0 ],
+			"obj-39::obj-21" : [ "snare-snap", "snap", 0 ],
+			"obj-39::obj-32" : [ "hat-tone", "tone", 0 ],
 			"obj-39::obj-22" : [ "snare-tune", "tuning", 0 ],
-			"obj-39::obj-46" : [ "ad-level", "level", 0 ],
-			"obj-39::obj-6" : [ "kick-attack", "attack", 0 ],
+			"obj-39::obj-129" : [ "trig_6[1]", "trig_6", 0 ],
 			"obj-39::obj-27" : [ "hat-level", "level", 0 ],
-			"obj-39::obj-31" : [ "clhat-decay", "cl-dec", 0 ],
+			"obj-39::obj-45" : [ "trig_7", "trig_7", 0 ],
+			"obj-39::obj-30" : [ "ophat-decay", "op-dec", 0 ],
+			"obj-39::obj-6" : [ "kick-attack", "attack", 0 ],
+			"obj-39::obj-33" : [ "trig_4", "trig_4", 0 ],
+			"obj-39::obj-12" : [ "trig_2", "trig_2", 0 ],
+			"obj-39::obj-7" : [ "trig_1", "trig_1", 0 ],
+			"obj-39::obj-119" : [ "choke", "choke", 0 ],
+			"obj-39::obj-43" : [ "tom-low", "low", 0 ],
+			"obj-39::obj-44" : [ "trig_6", "trig_6", 0 ],
+			"obj-39::obj-17" : [ "snare-level", "level", 0 ],
+			"obj-39::obj-9" : [ "kick-level", "level", 0 ],
+			"obj-39::obj-38" : [ "tom-level", "level", 0 ],
 			"obj-39::obj-19" : [ "snare-hicut", "hicut", 0 ],
 			"obj-39::obj-40" : [ "tom-decay", "decay", 0 ],
-			"obj-39::obj-21" : [ "snare-snap", "snap", 0 ],
-			"obj-39::obj-9" : [ "kick-level", "level", 0 ],
-			"obj-39::obj-34" : [ "trig_5", "trig_5", 0 ],
-			"obj-39::obj-32" : [ "hat-tone", "tone", 0 ],
-			"obj-39::obj-17" : [ "snare-level", "level", 0 ],
-			"obj-39::obj-38" : [ "tom-level", "level", 0 ],
-			"obj-39::obj-20" : [ "snare-decay", "decay", 0 ],
-			"obj-39::obj-44" : [ "trig_6", "trig_6", 0 ],
-			"obj-9" : [ "live.grid", "live.grid", 0 ],
-			"obj-39::obj-43" : [ "tom-low", "low", 0 ],
-			"obj-39::obj-45" : [ "trig_7", "trig_7", 0 ],
-			"obj-39::obj-23" : [ "trig_3", "trig_3", 0 ],
-			"obj-39::obj-4" : [ "kick-sweep", "sweep", 0 ],
-			"obj-39::obj-3" : [ "kick-tune[1]", "tuning", 0 ],
-			"obj-39::obj-42" : [ "tom-mid", "mid", 0 ],
-			"obj-39::obj-7" : [ "trig_1", "trig_1", 0 ],
-			"obj-27::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
-			"obj-39::obj-33" : [ "trig_4", "trig_4", 0 ],
+			"obj-39::obj-31" : [ "clhat-decay", "cl-dec", 0 ],
 			"obj-39::obj-5" : [ "kick-decay", "decay", 0 ],
-			"obj-39::obj-30" : [ "ophat-decay", "op-dec", 0 ],
-			"obj-39::obj-12" : [ "trig_2", "trig_2", 0 ],
 			"obj-39::obj-41" : [ "tom-hi", "hi", 0 ],
+			"obj-39::obj-4" : [ "kick-sweep", "sweep", 0 ],
+			"obj-39::obj-46" : [ "ad-level", "level", 0 ],
+			"obj-39::obj-42" : [ "tom-mid", "mid", 0 ],
+			"obj-9" : [ "live.grid", "live.grid", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -4036,43 +4042,43 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "MLE.keyGrid.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/controllers",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/controllers",
 				"patcherrelativepath" : "../../controllers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "asciiLinearMapping.txt",
-				"bootpath" : "~/Documents/github/CML/MLE/code",
+				"bootpath" : "/Users/famle/CML/MLE/code",
 				"patcherrelativepath" : "../../../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.beat.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/network",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/network",
 				"patcherrelativepath" : "../../network",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "init.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
-				"patcherrelativepath" : "../../utilities",
+				"bootpath" : "~/Documents/github/heath-interactive/heath-interactive/casa-stairs/roots/utilities",
+				"patcherrelativepath" : "../../../../../../ianhattwick/Documents/github/heath-interactive/heath-interactive/casa-stairs/roots/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.swing.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox",
-				"patcherrelativepath" : "../../sandbox",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "../../utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.analogueDrums.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/audio",
-				"patcherrelativepath" : "../../audio",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/audio/drums",
+				"patcherrelativepath" : "../../audio/drums",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -4108,49 +4114,49 @@
 			}
 , 			{
 				"name" : "instahat.json",
-				"bootpath" : "~/Documents/Max 8/Library/presets",
-				"patcherrelativepath" : "../../../../../../Max 8/Library/presets",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/Instruments/instaInstruments",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.distort.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox/Carina/MLE FX library",
-				"patcherrelativepath" : "../../sandbox/Carina/MLE FX library",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/audio/FX",
+				"patcherrelativepath" : "../../audio/FX",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.flanger.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox/Carina/MLE FX library",
-				"patcherrelativepath" : "../../sandbox/Carina/MLE FX library",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/audio/FX",
+				"patcherrelativepath" : "../../audio/FX",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.reverb.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/sandbox/Carina/MLE FX library",
-				"patcherrelativepath" : "../../sandbox/Carina/MLE FX library",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/audio/FX",
+				"patcherrelativepath" : "../../audio/FX",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.output.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
 				"patcherrelativepath" : "../../utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.pattrSaver.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
 				"patcherrelativepath" : "../../utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MLE.globalPath.maxpat",
-				"bootpath" : "~/Documents/github/CML/MLE/patchers/utilities",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
 				"patcherrelativepath" : "../../utilities",
 				"type" : "JSON",
 				"implicit" : 1
