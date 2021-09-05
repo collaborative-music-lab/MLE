@@ -133,12 +133,12 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 929.70001220703125, 1079.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"FX" : [ 15 ],
-						"Pitch" : [ 19 ],
-						"Volume" : [ 106 ],
-						"decay" : [ 127 ],
+						"FX" : [ 35 ],
+						"Pitch" : [ 49 ],
+						"Volume" : [ 85 ],
+						"decay" : [ 74 ],
 						"live.grid" : [ 3, 8, 2, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2 ],
-						"masterVolume" : [ 0.821693915960579 ]
+						"masterVolume" : [ 1.0 ]
 					}
 ,
 					"text" : "autopattr",
@@ -1618,7 +1618,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 120.0, 224.0, 50.0, 22.0 ],
-					"text" : "1"
+					"text" : "3"
 				}
 
 			}
@@ -1642,7 +1642,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 217.0, 104.666679382324219, 24.0, 24.0 ]
+					"patching_rect" : [ 250.0, 104.666679382324219, 24.0, 24.0 ]
 				}
 
 			}
@@ -2115,7 +2115,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 809.0, 270.0, 50.0, 22.0 ],
-					"text" : "23"
+					"text" : "44"
 				}
 
 			}
@@ -2324,7 +2324,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 559.0, 195.0, 154.0, 74.0 ],
+					"patching_rect" : [ 567.00006103515625, 191.0, 154.0, 74.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 4,
 					"presentation_rect" : [ 154.333328247070312, 25.999994277954102, 150.0, 74.0 ],
@@ -3185,7 +3185,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 570.5, 225.800033569335938, 70.0, 22.0 ],
+					"patching_rect" : [ 484.0, 168.0, 70.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -3418,7 +3418,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 190.0, 77.0, 78.0, 22.0 ],
+					"patching_rect" : [ 250.0, 77.20001220703125, 78.0, 22.0 ],
 					"text" : "MLE.keyGrid"
 				}
 
@@ -4114,8 +4114,8 @@
 			}
 , 			{
 				"name" : "instahat.json",
-				"bootpath" : "/Users/famle/CML/MLE/patchers/Instruments/instaInstruments",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/famle/CML/MLE/code/pattrPresets",
+				"patcherrelativepath" : "../../../code/pattrPresets",
 				"type" : "JSON",
 				"implicit" : 1
 			}

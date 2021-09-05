@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 535.0, 816.0, 681.0, 176.0 ],
+		"rect" : [ 483.0, 640.0, 681.0, 176.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -45,7 +45,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 482.0, 391.0, 188.0, 22.0 ],
-					"text" : "MLE.keyDial equal dash 0 127 20"
+					"text" : "MLE.keyDial equal dash 0 256 30"
 				}
 
 			}
@@ -81,7 +81,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 638.0, 486.0, 50.0, 22.0 ],
-					"text" : "197"
+					"text" : "153"
 				}
 
 			}
@@ -357,7 +357,7 @@
 						"client_rect" : [ 4, 44, 358, 172 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
-						"storage_rect" : [ 365, 44, 816, 172 ]
+						"storage_rect" : [ 365, 79, 816, 207 ]
 					}
 ,
 					"text" : "pattrstorage MLEmaster @greedy 1 @savemode 0",
@@ -1820,6 +1820,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-22", 1 ],
+					"midpoints" : [ 602.5, 387.25, 660.5, 387.25 ],
 					"source" : [ "obj-17", 0 ]
 				}
 
@@ -1855,6 +1856,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
+					"midpoints" : [ 491.5, 416.0, 491.5, 416.0 ],
 					"source" : [ "obj-22", 0 ]
 				}
 
