@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 10,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -37,7 +37,20 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-36",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 112.0, 181.0, 29.5, 22.0 ],
+					"text" : "% 8"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bubblesize" : 12,
 					"id" : "obj-63",
@@ -227,11 +240,11 @@
 					"restore" : 					{
 						"AmpA" : [ 85 ],
 						"AmpB" : [ 85 ],
-						"FX" : [ 54 ],
-						"PitchA" : [ 80 ],
-						"PitchB" : [ 9 ],
-						"decay" : [ 75 ],
-						"live.grid" : [ 3, 10, 2, 0, 3, 0, 3001, 4000, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 ]
+						"FX" : [ 0 ],
+						"PitchA" : [ 51 ],
+						"PitchB" : [ 45 ],
+						"decay" : [ 30 ],
+						"live.grid" : [ 3, 10, 2, 0, 2, 3001, 4000, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 ]
 					}
 ,
 					"text" : "autopattr",
@@ -459,7 +472,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 854.0, 926.0, 81.0, 22.0 ],
-					"restore" : [ 7 ],
+					"restore" : [ 0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -486,7 +499,7 @@
 						"storage_rect" : [ 583, 69, 1034, 197 ]
 					}
 ,
-					"subscribe" : [ "menuB3", "menuA1", "menuA3", "menuA2", "menuB4", "menuB1", "menuA4", "menuB2", "test1" ],
+					"subscribe" : [ "menuA1", "menuB4", "menuA4", "menuB2", "menuA2", "menuB3", "test1", "menuA3", "menuB1" ],
 					"text" : "pattrstorage instaSamplerSamples @savemode 0 @subscribemode 1",
 					"varname" : "instaSamplerSamples"
 				}
@@ -512,7 +525,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1163.70001220703125, 162.0, 50.0, 22.0 ],
-					"text" : "9"
+					"text" : "45"
 				}
 
 			}
@@ -528,7 +541,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 10,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -561,6 +574,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-2",
@@ -734,7 +748,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1001.533324999999991, 167.0, 50.0, 22.0 ],
-					"text" : "80"
+					"text" : "51"
 				}
 
 			}
@@ -750,7 +764,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 10,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -783,6 +797,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-2",
@@ -956,7 +971,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1182.0, 477.0, 50.0, 22.0 ],
-					"text" : "2"
+					"text" : "1"
 				}
 
 			}
@@ -1285,7 +1300,7 @@
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1197.0, 1028.0, 100.0, 22.0 ],
-					"prefix" : "Macintosh HD:/Users/famle/CML/MLE/media/bassDrums/",
+					"prefix" : "/Users/famle/CML/MLE/media/bassDrums/",
 					"presentation" : 1,
 					"presentation_rect" : [ 446.333332061767578, 267.711090087890625, 129.0, 22.0 ],
 					"varname" : "umenu[2]"
@@ -1303,7 +1318,7 @@
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1197.0, 963.2000732421875, 100.0, 22.0 ],
-					"prefix" : "Macintosh HD:/Users/famle/CML/MLE/media/",
+					"prefix" : "/Users/famle/CML/MLE/media/",
 					"presentation" : 1,
 					"presentation_rect" : [ 446.333332061767578, 240.911163330078125, 129.0, 22.0 ],
 					"varname" : "umenu[3]"
@@ -1358,7 +1373,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 10,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1391,6 +1406,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-4",
@@ -1611,7 +1627,7 @@
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 941.0, 1023.0, 100.0, 22.0 ],
-					"prefix" : "Macintosh HD:/Users/famle/CML/MLE/media/snares/",
+					"prefix" : "/Users/famle/CML/MLE/media/snares/",
 					"presentation" : 1,
 					"presentation_rect" : [ 307.866668701171875, 270.094345092773438, 130.0, 22.0 ],
 					"varname" : "umenu[1]"
@@ -1629,7 +1645,7 @@
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 941.0, 958.2000732421875, 100.0, 22.0 ],
-					"prefix" : "Macintosh HD:/Users/famle/CML/MLE/media/",
+					"prefix" : "/Users/famle/CML/MLE/media/",
 					"presentation" : 1,
 					"presentation_rect" : [ 307.866668701171875, 240.711090087890625, 130.0, 22.0 ],
 					"varname" : "umenu"
@@ -1729,7 +1745,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 769.0, 310.0, 50.0, 22.0 ],
-					"text" : "54"
+					"text" : "0"
 				}
 
 			}
@@ -1801,7 +1817,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 508.0, 411.13330078125, 50.0, 22.0 ],
-					"text" : "5 1 1"
+					"text" : "6 1 0"
 				}
 
 			}
@@ -2341,18 +2357,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-68",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 65.333332061767578, 170.000015258789062, 114.0, 22.0 ],
-					"text" : "expr ($i1+3) %4 + 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-54",
 					"maxclass" : "newobj",
 					"numinlets" : 5,
@@ -2562,7 +2566,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 10,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2595,6 +2599,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-1",
@@ -3063,7 +3068,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 10,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3096,6 +3101,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-11",
@@ -3120,7 +3126,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 3,
+											"revision" : 10,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3153,6 +3159,7 @@
 										"tags" : "",
 										"style" : "",
 										"subpatcher_template" : "",
+										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-44",
@@ -3717,7 +3724,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 3,
+											"revision" : 10,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3750,6 +3757,7 @@
 										"tags" : "",
 										"style" : "",
 										"subpatcher_template" : "",
+										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-8",
@@ -4599,9 +4607,9 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
+							"parameter_longname" : "live.grid",
 							"parameter_shortname" : "live.grid",
-							"parameter_type" : 3,
-							"parameter_longname" : "live.grid"
+							"parameter_type" : 3
 						}
 
 					}
@@ -5169,16 +5177,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-68", 0 ],
-					"order" : 1,
-					"source" : [ "obj-27", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-85", 0 ],
-					"order" : 0,
+					"destination" : [ "obj-36", 0 ],
 					"source" : [ "obj-27", 1 ]
 				}
 
@@ -5222,6 +5221,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-41", 0 ],
 					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-85", 0 ],
+					"source" : [ "obj-36", 0 ]
 				}
 
 			}
@@ -5740,12 +5746,13 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-27::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
+			"obj-27::obj-7::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
 			"obj-9" : [ "live.grid", "live.grid", 0 ],
 			"parameterbanks" : 			{
 
 			}
-
+,
+			"inherited_shortname" : 1
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -5764,6 +5771,34 @@
 			}
 , 			{
 				"name" : "MLE.beat.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/network",
+				"patcherrelativepath" : "../../network",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.UDPsend.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/network",
+				"patcherrelativepath" : "../../network",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "initS.maxpat",
+				"bootpath" : "~/Documents/github/heath-interactive/heath-interactive/casa-stairs/roots/utilities",
+				"patcherrelativepath" : "../../../../../../ianhattwick/Documents/github/heath-interactive/heath-interactive/casa-stairs/roots/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.UDPreceive.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/network",
+				"patcherrelativepath" : "../../network",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.beatLink.maxpat",
 				"bootpath" : "/Users/famle/CML/MLE/patchers/network",
 				"patcherrelativepath" : "../../network",
 				"type" : "JSON",
@@ -5815,13 +5850,6 @@
 				"name" : "MLE.simpler.maxpat",
 				"bootpath" : "/Users/famle/CML/MLE/patchers/audio/samplers",
 				"patcherrelativepath" : "../../audio/samplers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "initS.maxpat",
-				"bootpath" : "~/Documents/github/heath-interactive/heath-interactive/casa-stairs/roots/utilities",
-				"patcherrelativepath" : "../../../../../../ianhattwick/Documents/github/heath-interactive/heath-interactive/casa-stairs/roots/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
