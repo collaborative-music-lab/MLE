@@ -359,7 +359,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 820.0, 487.0, 50.0, 22.0 ],
-									"text" : "0"
+									"text" : "1"
 								}
 
 							}
@@ -625,7 +625,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 263.0, 706.0, 50.0, 22.0 ],
-									"text" : "862"
+									"text" : "1453"
 								}
 
 							}
@@ -661,7 +661,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 175.0, 706.0, 50.0, 22.0 ],
-									"text" : "862"
+									"text" : "1453"
 								}
 
 							}
@@ -834,7 +834,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 511.0, 175.0, 152.0, 22.0 ],
-													"text" : "311"
+													"text" : "466"
 												}
 
 											}
@@ -1295,7 +1295,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 204.0, 87.0, 139.0, 22.0 ],
-													"text" : "746 746 746 862"
+													"text" : "1453 1453 1453 1453"
 												}
 
 											}
@@ -1307,7 +1307,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 119.0, 288.0, 50.0, 22.0 ],
-													"text" : "78"
+													"text" : "1455"
 												}
 
 											}
@@ -1355,7 +1355,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 339.0, 248.5, 157.0, 22.0 ],
-													"text" : "746 746 746 862"
+													"text" : "1453 1453 1453 1453"
 												}
 
 											}
@@ -1800,7 +1800,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 870.600012838840485, 324.800004839897156, 359.800006151199341, 22.0 ],
-									"text" : "746 746 746 862"
+									"text" : "1453 1453 1453 1453"
 								}
 
 							}
@@ -2890,8 +2890,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 452.0, 272.0, 319.0, 22.0 ],
-					"text" : "pak 100 4 8"
+					"patching_rect" : [ 443.75, 277.0, 78.0, 22.0 ],
+					"text" : "pak 100 12 8"
 				}
 
 			}
@@ -2948,7 +2948,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 452.0, 307.0, 137.0, 22.0 ],
+					"patching_rect" : [ 443.75, 307.0, 137.0, 22.0 ],
 					"text" : "MLE.UDPsend setClock"
 				}
 
@@ -3280,7 +3280,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 760.75, 525.5, 50.0, 23.0 ],
-					"text" : "4 4"
+					"text" : "6 4"
 				}
 
 			}
@@ -3658,7 +3658,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-33", 1 ],
+					"destination" : [ "obj-46", 0 ],
 					"order" : 1,
 					"source" : [ "obj-35", 0 ]
 				}
@@ -3666,24 +3666,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-46", 0 ],
-					"order" : 2,
-					"source" : [ "obj-35", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-33", 2 ],
-					"order" : 0,
-					"source" : [ "obj-36", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-52", 0 ],
-					"order" : 2,
+					"order" : 1,
 					"source" : [ "obj-36", 0 ]
 				}
 
@@ -3691,7 +3675,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-61", 1 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-36", 0 ]
 				}
 
