@@ -1986,7 +1986,7 @@
 					"patching_rect" : [ 1316.0, 91.0, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 320.88330078125, 50.566664035762784, 50.0, 22.0 ],
-					"text" : "79 20"
+					"text" : "0 26"
 				}
 
 			}
@@ -4163,7 +4163,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 242.25, 661.0, 274.0, 20.0 ],
-													"text" : "1 0 1 0 1 0 1 0"
+													"text" : "1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
 												}
 
 											}
@@ -6138,7 +6138,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 57.833331999999999, 635.0, 50.0, 22.0 ],
-									"text" : "48."
+									"text" : "38."
 								}
 
 							}
@@ -6967,7 +6967,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 242.25, 661.0, 274.0, 20.0 ],
-													"text" : "1 0 0 0 0 0"
+													"text" : "1 0 0 0 0 0 0 0 0"
 												}
 
 											}
@@ -8929,7 +8929,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 57.833331999999999, 635.0, 50.0, 22.0 ],
-									"text" : "43."
+									"text" : "40."
 								}
 
 							}
@@ -9758,7 +9758,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 242.25, 661.0, 274.0, 20.0 ],
-													"text" : "1 0 1 0 1 1 0 1"
+													"text" : "1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
 												}
 
 											}
@@ -11720,7 +11720,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 57.833331999999999, 635.0, 50.0, 22.0 ],
-									"text" : "57."
+									"text" : "42."
 								}
 
 							}
@@ -12549,7 +12549,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 242.25, 661.0, 274.0, 20.0 ],
-													"text" : "1 0 0 0 1 0 0 0"
+													"text" : "1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
 												}
 
 											}
@@ -15386,6 +15386,55 @@
 			"midi" : 			{
 				"dial" : 				{
 					"srcname" : "20.ctrl.0.chan.midi",
+					"min" : 0.0,
+					"max" : 127.0,
+					"flags" : 2
+				}
+,
+				"dial[5]" : 				{
+					"srcname" : "22.ctrl.0.chan.midi",
+					"min" : 0.0,
+					"max" : 127.0,
+					"flags" : 2
+				}
+,
+				"dial[3]" : 				{
+					"srcname" : "23.ctrl.0.chan.midi",
+					"min" : 0.0,
+					"max" : 127.0,
+					"flags" : 2
+				}
+,
+				"dial[6]" : 				{
+					"srcname" : "24.ctrl.0.chan.midi",
+					"min" : 0.0,
+					"max" : 127.0,
+					"flags" : 2
+				}
+,
+				"dial[8]" : 				{
+					"srcname" : "25.ctrl.0.chan.midi",
+					"min" : 0.0,
+					"max" : 127.0,
+					"flags" : 2
+				}
+,
+				"dial[11]" : 				{
+					"srcname" : "26.ctrl.0.chan.midi",
+					"min" : 0.0,
+					"max" : 127.0,
+					"flags" : 2
+				}
+,
+				"dial[9]" : 				{
+					"srcname" : "27.ctrl.0.chan.midi",
+					"min" : 0.0,
+					"max" : 127.0,
+					"flags" : 2
+				}
+,
+				"dial[2]" : 				{
+					"srcname" : "21.ctrl.0.chan.midi",
 					"min" : 0.0,
 					"max" : 127.0,
 					"flags" : 2
