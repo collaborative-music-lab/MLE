@@ -512,7 +512,7 @@
 					"patching_rect" : [ 229.0, 73.5, 100.0, 40.0 ],
 					"preset_data" : [ 						{
 							"number" : 1,
-							"data" : [ 5, "obj-4", "dial", "float", 127.0, 5, "<invalid>", "number", "int", 16, 5, "obj-73", "number", "int", 7, 5, "obj-75", "number", "int", 9, 5, "obj-92", "number", "int", 16, 5, "obj-100", "umenu", "int", 1, 5, "obj-118", "umenu", "int", 0, 5, "obj-124", "toggle", "int", 1, 5, "obj-168", "textbutton", "mode", 1, 5, "obj-168", "textbutton", "int", 1 ]
+							"data" : [ 5, "obj-4", "dial", "float", 127.0, 5, "obj-73", "number", "int", 11, 5, "obj-75", "number", "int", 9, 5, "obj-92", "number", "int", 3, 5, "obj-100", "umenu", "int", 1, 5, "obj-118", "umenu", "int", 0, 5, "obj-124", "toggle", "int", 1, 5, "obj-168", "textbutton", "mode", 1, 5, "obj-168", "textbutton", "int", 1, 5, "obj-156", "number", "int", 0, 5, "obj-176", "umenu", "int", 0 ]
 						}
  ]
 				}
