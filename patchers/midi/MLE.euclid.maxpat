@@ -1794,7 +1794,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 185.166663999999997, 30.0, 30.0 ]
+									"patching_rect" : [ 50.0, 210.166663999999997, 30.0, 30.0 ]
 								}
 
 							}
@@ -1818,7 +1818,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 281.533363000000008, 185.166663999999997, 30.0, 30.0 ]
+									"patching_rect" : [ 485.533363000000008, 218.166663999999997, 30.0, 30.0 ]
 								}
 
 							}
@@ -1986,7 +1986,7 @@
 					"patching_rect" : [ 1316.0, 91.0, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 320.88330078125, 50.566664035762784, 50.0, 22.0 ],
-					"text" : "0 26"
+					"text" : "49 24"
 				}
 
 			}
@@ -2388,51 +2388,51 @@
 					"presentation_rect" : [ 119.616683999999964, 37.400000035762787, 100.0, 40.0 ],
 					"preset_data" : [ 						{
 							"number" : 1,
-							"data" : [ 5, "obj-3", "number", "int", 8, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "<invalid>", "toggle", "int", 1, 5, "<invalid>", "number", "int", 200, 5, "obj-177", "number", "int", 8, 5, "obj-190", "flonum", "float", 77.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 0, 5, "obj-194", "number", "int", 8, 5, "obj-191", "flonum", "float", 62.0, 5, "obj-210", "number", "int", 0, 5, "obj-209", "number", "int", 0, 5, "obj-204", "number", "int", 8, 5, "obj-201", "flonum", "float", 67.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 0, 5, "obj-214", "number", "int", 8, 5, "obj-211", "flonum", "float", 55.0, 6, "<invalid>", "pictslider", "list", 0, 0 ]
+							"data" : [ 5, "obj-3", "number", "int", 8, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "obj-177", "number", "int", 8, 5, "obj-190", "flonum", "float", 77.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 0, 5, "obj-194", "number", "int", 8, 5, "obj-191", "flonum", "float", 62.0, 5, "obj-210", "number", "int", 4, 5, "obj-209", "number", "int", 0, 5, "obj-204", "number", "int", 8, 5, "obj-201", "flonum", "float", 67.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 0, 5, "obj-214", "number", "int", 8, 5, "obj-211", "flonum", "float", 55.0, 5, "obj-12", "number", "int", 3, 5, "obj-14", "textbutton", "mode", 1, 5, "obj-14", "textbutton", "int", 0, 5, "obj-27", "textbutton", "mode", 1, 5, "obj-27", "textbutton", "int", 1, 5, "obj-32", "dial", "float", 0.0, 5, "obj-35", "dial", "float", 77.0, 5, "obj-37", "dial", "float", 0.0, 5, "obj-49", "dial", "float", 0.0, 5, "obj-48", "dial", "float", 81.0, 5, "obj-47", "dial", "float", 70.0, 5, "obj-58", "dial", "float", 0.0, 5, "obj-57", "dial", "float", 79.0, 5, "obj-56", "dial", "float", 0.0, 5, "obj-54", "dial", "float", 0.0, 5, "obj-52", "dial", "float", 81.0, 5, "obj-51", "dial", "float", 0.0, 5, "obj-65", "textbutton", "mode", 1, 5, "obj-65", "textbutton", "int", 0 ]
 						}
 , 						{
 							"number" : 2,
-							"data" : [ 5, "obj-3", "number", "int", 8, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "<invalid>", "toggle", "int", 1, 5, "<invalid>", "number", "int", 200, 5, "obj-177", "number", "int", 8, 5, "obj-190", "flonum", "float", 77.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 0, 5, "obj-194", "number", "int", 8, 5, "obj-191", "flonum", "float", 62.0, 5, "obj-210", "number", "int", 0, 5, "obj-209", "number", "int", 0, 5, "obj-204", "number", "int", 8, 5, "obj-201", "flonum", "float", 67.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 3, 5, "obj-214", "number", "int", 8, 5, "obj-211", "flonum", "float", 55.0, 6, "<invalid>", "pictslider", "list", 0, 0 ]
+							"data" : [ 5, "obj-3", "number", "int", 8, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "obj-177", "number", "int", 8, 5, "obj-190", "flonum", "float", 77.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 0, 5, "obj-194", "number", "int", 8, 5, "obj-191", "flonum", "float", 62.0, 5, "obj-210", "number", "int", 0, 5, "obj-209", "number", "int", 0, 5, "obj-204", "number", "int", 8, 5, "obj-201", "flonum", "float", 67.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 3, 5, "obj-214", "number", "int", 8, 5, "obj-211", "flonum", "float", 55.0, 5, "obj-12", "number", "int", 3, 5, "obj-14", "textbutton", "mode", 1, 5, "obj-14", "textbutton", "int", 0, 5, "obj-27", "textbutton", "mode", 1, 5, "obj-27", "textbutton", "int", 1, 5, "obj-32", "dial", "float", 0.0, 5, "obj-35", "dial", "float", 77.0, 5, "obj-37", "dial", "float", 0.0, 5, "obj-49", "dial", "float", 0.0, 5, "obj-48", "dial", "float", 81.0, 5, "obj-47", "dial", "float", 70.0, 5, "obj-58", "dial", "float", 0.0, 5, "obj-57", "dial", "float", 79.0, 5, "obj-56", "dial", "float", 0.0, 5, "obj-54", "dial", "float", 0.0, 5, "obj-52", "dial", "float", 81.0, 5, "obj-51", "dial", "float", 0.0, 5, "obj-65", "textbutton", "mode", 1, 5, "obj-65", "textbutton", "int", 0 ]
 						}
 , 						{
 							"number" : 3,
-							"data" : [ 5, "obj-3", "number", "int", 8, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "<invalid>", "toggle", "int", 1, 5, "<invalid>", "number", "int", 200, 5, "obj-177", "number", "int", 8, 5, "obj-190", "flonum", "float", 77.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 0, 5, "obj-194", "number", "int", 8, 5, "obj-191", "flonum", "float", 62.0, 5, "obj-210", "number", "int", 0, 5, "obj-209", "number", "int", 5, 5, "obj-204", "number", "int", 8, 5, "obj-201", "flonum", "float", 67.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 3, 5, "obj-214", "number", "int", 8, 5, "obj-211", "flonum", "float", 55.0, 6, "<invalid>", "pictslider", "list", 0, 0 ]
+							"data" : [ 5, "obj-3", "number", "int", 8, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "obj-177", "number", "int", 8, 5, "obj-190", "flonum", "float", 77.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 0, 5, "obj-194", "number", "int", 8, 5, "obj-191", "flonum", "float", 62.0, 5, "obj-210", "number", "int", 0, 5, "obj-209", "number", "int", 5, 5, "obj-204", "number", "int", 8, 5, "obj-201", "flonum", "float", 67.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 3, 5, "obj-214", "number", "int", 8, 5, "obj-211", "flonum", "float", 55.0, 5, "obj-12", "number", "int", 5, 5, "obj-14", "textbutton", "mode", 1, 5, "obj-14", "textbutton", "int", 0, 5, "obj-27", "textbutton", "mode", 1, 5, "obj-27", "textbutton", "int", 1, 5, "obj-32", "dial", "float", 0.0, 5, "obj-35", "dial", "float", 77.0, 5, "obj-37", "dial", "float", 0.0, 5, "obj-49", "dial", "float", 0.0, 5, "obj-48", "dial", "float", 81.0, 5, "obj-47", "dial", "float", 70.0, 5, "obj-58", "dial", "float", 0.0, 5, "obj-57", "dial", "float", 79.0, 5, "obj-56", "dial", "float", 0.0, 5, "obj-54", "dial", "float", 0.0, 5, "obj-52", "dial", "float", 81.0, 5, "obj-51", "dial", "float", 0.0, 5, "obj-65", "textbutton", "mode", 1, 5, "obj-65", "textbutton", "int", 0 ]
 						}
 , 						{
 							"number" : 4,
-							"data" : [ 5, "obj-3", "number", "int", 8, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "<invalid>", "toggle", "int", 1, 5, "<invalid>", "number", "int", 200, 5, "obj-177", "number", "int", 8, 5, "obj-190", "flonum", "float", 77.0, 5, "obj-200", "number", "int", 4, 5, "obj-199", "number", "int", 1, 5, "obj-194", "number", "int", 8, 5, "obj-191", "flonum", "float", 62.0, 5, "obj-210", "number", "int", 0, 5, "obj-209", "number", "int", 5, 5, "obj-204", "number", "int", 8, 5, "obj-201", "flonum", "float", 67.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 3, 5, "obj-214", "number", "int", 8, 5, "obj-211", "flonum", "float", 55.0, 6, "<invalid>", "pictslider", "list", 0, 0 ]
+							"data" : [ 5, "obj-3", "number", "int", 8, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "obj-177", "number", "int", 8, 5, "obj-190", "flonum", "float", 77.0, 5, "obj-200", "number", "int", 4, 5, "obj-199", "number", "int", 1, 5, "obj-194", "number", "int", 8, 5, "obj-191", "flonum", "float", 62.0, 5, "obj-210", "number", "int", 0, 5, "obj-209", "number", "int", 5, 5, "obj-204", "number", "int", 8, 5, "obj-201", "flonum", "float", 67.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 3, 5, "obj-214", "number", "int", 8, 5, "obj-211", "flonum", "float", 55.0, 5, "obj-12", "number", "int", 4, 5, "obj-14", "textbutton", "mode", 1, 5, "obj-14", "textbutton", "int", 0, 5, "obj-27", "textbutton", "mode", 1, 5, "obj-27", "textbutton", "int", 1, 5, "obj-32", "dial", "float", 0.0, 5, "obj-35", "dial", "float", 77.0, 5, "obj-37", "dial", "float", 0.0, 5, "obj-49", "dial", "float", 0.0, 5, "obj-48", "dial", "float", 81.0, 5, "obj-47", "dial", "float", 70.0, 5, "obj-58", "dial", "float", 0.0, 5, "obj-57", "dial", "float", 79.0, 5, "obj-56", "dial", "float", 0.0, 5, "obj-54", "dial", "float", 0.0, 5, "obj-52", "dial", "float", 81.0, 5, "obj-51", "dial", "float", 0.0, 5, "obj-65", "textbutton", "mode", 1, 5, "obj-65", "textbutton", "int", 0 ]
 						}
 , 						{
 							"number" : 5,
-							"data" : [ 5, "obj-3", "number", "int", 8, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 6, 5, "<invalid>", "toggle", "int", 1, 5, "<invalid>", "number", "int", 200, 5, "obj-177", "number", "int", 8, 5, "obj-190", "flonum", "float", 77.0, 5, "obj-200", "number", "int", 4, 5, "obj-199", "number", "int", 1, 5, "obj-194", "number", "int", 8, 5, "obj-191", "flonum", "float", 62.0, 5, "obj-210", "number", "int", 0, 5, "obj-209", "number", "int", 5, 5, "obj-204", "number", "int", 8, 5, "obj-201", "flonum", "float", 67.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 3, 5, "obj-214", "number", "int", 8, 5, "obj-211", "flonum", "float", 55.0, 6, "<invalid>", "pictslider", "list", 0, 0 ]
+							"data" : [ 5, "obj-3", "number", "int", 8, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 6, 5, "obj-177", "number", "int", 8, 5, "obj-190", "flonum", "float", 77.0, 5, "obj-200", "number", "int", 4, 5, "obj-199", "number", "int", 1, 5, "obj-194", "number", "int", 8, 5, "obj-191", "flonum", "float", 62.0, 5, "obj-210", "number", "int", 0, 5, "obj-209", "number", "int", 5, 5, "obj-204", "number", "int", 8, 5, "obj-201", "flonum", "float", 67.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 3, 5, "obj-214", "number", "int", 8, 5, "obj-211", "flonum", "float", 55.0, 5, "obj-12", "number", "int", 5, 5, "obj-14", "textbutton", "mode", 1, 5, "obj-14", "textbutton", "int", 0, 5, "obj-27", "textbutton", "mode", 1, 5, "obj-27", "textbutton", "int", 1, 5, "obj-32", "dial", "float", 0.0, 5, "obj-35", "dial", "float", 77.0, 5, "obj-37", "dial", "float", 0.0, 5, "obj-49", "dial", "float", 0.0, 5, "obj-48", "dial", "float", 81.0, 5, "obj-47", "dial", "float", 70.0, 5, "obj-58", "dial", "float", 0.0, 5, "obj-57", "dial", "float", 79.0, 5, "obj-56", "dial", "float", 0.0, 5, "obj-54", "dial", "float", 0.0, 5, "obj-52", "dial", "float", 81.0, 5, "obj-51", "dial", "float", 0.0, 5, "obj-65", "textbutton", "mode", 1, 5, "obj-65", "textbutton", "int", 0 ]
 						}
 , 						{
 							"number" : 9,
-							"data" : [ 5, "obj-3", "number", "int", 12, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "<invalid>", "toggle", "int", 1, 5, "<invalid>", "number", "int", 170, 5, "obj-177", "number", "int", 12, 5, "obj-190", "flonum", "float", 79.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 0, 5, "obj-194", "number", "int", 12, 5, "obj-191", "flonum", "float", 64.0, 5, "obj-210", "number", "int", 0, 5, "obj-209", "number", "int", 0, 5, "obj-204", "number", "int", 12, 5, "obj-201", "flonum", "float", 71.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 3, 5, "obj-214", "number", "int", 12, 5, "obj-211", "flonum", "float", 52.0, 6, "<invalid>", "pictslider", "list", 0, 0 ]
+							"data" : [ 5, "obj-3", "number", "int", 12, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "obj-177", "number", "int", 12, 5, "obj-190", "flonum", "float", 79.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 0, 5, "obj-194", "number", "int", 12, 5, "obj-191", "flonum", "float", 64.0, 5, "obj-210", "number", "int", 0, 5, "obj-209", "number", "int", 0, 5, "obj-204", "number", "int", 12, 5, "obj-201", "flonum", "float", 71.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 3, 5, "obj-214", "number", "int", 12, 5, "obj-211", "flonum", "float", 52.0, 5, "obj-12", "number", "int", 2, 5, "obj-14", "textbutton", "mode", 1, 5, "obj-14", "textbutton", "int", 0, 5, "obj-27", "textbutton", "mode", 1, 5, "obj-27", "textbutton", "int", 1, 5, "obj-32", "dial", "float", 0.0, 5, "obj-35", "dial", "float", 111.0, 5, "obj-37", "dial", "float", 0.0, 5, "obj-49", "dial", "float", 0.0, 5, "obj-48", "dial", "float", 106.0, 5, "obj-47", "dial", "float", 70.0, 5, "obj-58", "dial", "float", 0.0, 5, "obj-57", "dial", "float", 106.0, 5, "obj-56", "dial", "float", 0.0, 5, "obj-54", "dial", "float", 0.0, 5, "obj-52", "dial", "float", 103.0, 5, "obj-51", "dial", "float", 0.0, 5, "obj-65", "textbutton", "mode", 1, 5, "obj-65", "textbutton", "int", 0 ]
 						}
 , 						{
 							"number" : 10,
-							"data" : [ 5, "obj-3", "number", "int", 12, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "<invalid>", "toggle", "int", 1, 5, "<invalid>", "number", "int", 170, 5, "obj-177", "number", "int", 12, 5, "obj-190", "flonum", "float", 79.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 4, 5, "obj-194", "number", "int", 12, 5, "obj-191", "flonum", "float", 64.0, 5, "obj-210", "number", "int", 0, 5, "obj-209", "number", "int", 0, 5, "obj-204", "number", "int", 12, 5, "obj-201", "flonum", "float", 71.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 3, 5, "obj-214", "number", "int", 12, 5, "obj-211", "flonum", "float", 52.0, 6, "<invalid>", "pictslider", "list", 0, 0 ]
+							"data" : [ 5, "obj-3", "number", "int", 12, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "obj-177", "number", "int", 12, 5, "obj-190", "flonum", "float", 79.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 4, 5, "obj-194", "number", "int", 12, 5, "obj-191", "flonum", "float", 64.0, 5, "obj-210", "number", "int", 0, 5, "obj-209", "number", "int", 0, 5, "obj-204", "number", "int", 12, 5, "obj-201", "flonum", "float", 71.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 3, 5, "obj-214", "number", "int", 12, 5, "obj-211", "flonum", "float", 52.0, 5, "obj-12", "number", "int", 1, 5, "obj-14", "textbutton", "mode", 1, 5, "obj-14", "textbutton", "int", 0, 5, "obj-27", "textbutton", "mode", 1, 5, "obj-27", "textbutton", "int", 1, 5, "obj-32", "dial", "float", 0.0, 5, "obj-35", "dial", "float", 111.0, 5, "obj-37", "dial", "float", 0.0, 5, "obj-49", "dial", "float", 0.0, 5, "obj-48", "dial", "float", 106.0, 5, "obj-47", "dial", "float", 70.0, 5, "obj-58", "dial", "float", 0.0, 5, "obj-57", "dial", "float", 106.0, 5, "obj-56", "dial", "float", 0.0, 5, "obj-54", "dial", "float", 0.0, 5, "obj-52", "dial", "float", 103.0, 5, "obj-51", "dial", "float", 0.0, 5, "obj-65", "textbutton", "mode", 1, 5, "obj-65", "textbutton", "int", 0 ]
 						}
 , 						{
 							"number" : 11,
-							"data" : [ 5, "obj-3", "number", "int", 12, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "<invalid>", "toggle", "int", 1, 5, "<invalid>", "number", "int", 170, 5, "obj-177", "number", "int", 12, 5, "obj-190", "flonum", "float", 79.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 4, 5, "obj-194", "number", "int", 12, 5, "obj-191", "flonum", "float", 64.0, 5, "obj-210", "number", "int", 0, 5, "obj-209", "number", "int", 5, 5, "obj-204", "number", "int", 12, 5, "obj-201", "flonum", "float", 71.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 3, 5, "obj-214", "number", "int", 12, 5, "obj-211", "flonum", "float", 52.0, 6, "<invalid>", "pictslider", "list", 0, 0 ]
+							"data" : [ 5, "obj-3", "number", "int", 12, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "obj-177", "number", "int", 12, 5, "obj-190", "flonum", "float", 79.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 4, 5, "obj-194", "number", "int", 12, 5, "obj-191", "flonum", "float", 64.0, 5, "obj-210", "number", "int", 0, 5, "obj-209", "number", "int", 5, 5, "obj-204", "number", "int", 12, 5, "obj-201", "flonum", "float", 71.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 3, 5, "obj-214", "number", "int", 12, 5, "obj-211", "flonum", "float", 52.0, 5, "obj-12", "number", "int", 10, 5, "obj-14", "textbutton", "mode", 1, 5, "obj-14", "textbutton", "int", 0, 5, "obj-27", "textbutton", "mode", 1, 5, "obj-27", "textbutton", "int", 1, 5, "obj-32", "dial", "float", 0.0, 5, "obj-35", "dial", "float", 111.0, 5, "obj-37", "dial", "float", 0.0, 5, "obj-49", "dial", "float", 0.0, 5, "obj-48", "dial", "float", 106.0, 5, "obj-47", "dial", "float", 70.0, 5, "obj-58", "dial", "float", 0.0, 5, "obj-57", "dial", "float", 106.0, 5, "obj-56", "dial", "float", 0.0, 5, "obj-54", "dial", "float", 0.0, 5, "obj-52", "dial", "float", 103.0, 5, "obj-51", "dial", "float", 0.0, 5, "obj-65", "textbutton", "mode", 1, 5, "obj-65", "textbutton", "int", 0 ]
 						}
 , 						{
 							"number" : 12,
-							"data" : [ 5, "obj-3", "number", "int", 12, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 7, 5, "<invalid>", "toggle", "int", 1, 5, "<invalid>", "number", "int", 170, 5, "obj-177", "number", "int", 12, 5, "obj-190", "flonum", "float", 79.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 3, 5, "obj-194", "number", "int", 12, 5, "obj-191", "flonum", "float", 64.0, 5, "obj-210", "number", "int", 0, 5, "obj-209", "number", "int", 5, 5, "obj-204", "number", "int", 12, 5, "obj-201", "flonum", "float", 71.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 2, 5, "obj-214", "number", "int", 12, 5, "obj-211", "flonum", "float", 52.0, 6, "<invalid>", "pictslider", "list", 0, 0 ]
+							"data" : [ 5, "obj-3", "number", "int", 12, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 7, 5, "obj-177", "number", "int", 12, 5, "obj-190", "flonum", "float", 79.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 3, 5, "obj-194", "number", "int", 12, 5, "obj-191", "flonum", "float", 64.0, 5, "obj-210", "number", "int", 0, 5, "obj-209", "number", "int", 5, 5, "obj-204", "number", "int", 12, 5, "obj-201", "flonum", "float", 71.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 2, 5, "obj-214", "number", "int", 12, 5, "obj-211", "flonum", "float", 52.0, 5, "obj-12", "number", "int", 8, 5, "obj-14", "textbutton", "mode", 1, 5, "obj-14", "textbutton", "int", 0, 5, "obj-27", "textbutton", "mode", 1, 5, "obj-27", "textbutton", "int", 1, 5, "obj-32", "dial", "float", 0.0, 5, "obj-35", "dial", "float", 111.0, 5, "obj-37", "dial", "float", 0.0, 5, "obj-49", "dial", "float", 0.0, 5, "obj-48", "dial", "float", 106.0, 5, "obj-47", "dial", "float", 70.0, 5, "obj-58", "dial", "float", 0.0, 5, "obj-57", "dial", "float", 106.0, 5, "obj-56", "dial", "float", 0.0, 5, "obj-54", "dial", "float", 0.0, 5, "obj-52", "dial", "float", 103.0, 5, "obj-51", "dial", "float", 0.0, 5, "obj-65", "textbutton", "mode", 1, 5, "obj-65", "textbutton", "int", 0 ]
 						}
 , 						{
 							"number" : 17,
-							"data" : [ 5, "obj-3", "number", "int", 16, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "<invalid>", "toggle", "int", 1, 5, "<invalid>", "number", "int", 125, 5, "obj-177", "number", "int", 16, 5, "obj-190", "flonum", "float", 69.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 0, 5, "obj-194", "number", "int", 16, 5, "obj-191", "flonum", "float", 60.0, 5, "obj-210", "number", "int", 0, 5, "obj-209", "number", "int", 0, 5, "obj-204", "number", "int", 16, 5, "obj-201", "flonum", "float", 65.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 0, 5, "obj-214", "number", "int", 16, 5, "obj-211", "flonum", "float", 53.0, 6, "<invalid>", "pictslider", "list", 0, 0 ]
+							"data" : [ 5, "obj-3", "number", "int", 16, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "obj-177", "number", "int", 16, 5, "obj-190", "flonum", "float", 69.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 0, 5, "obj-194", "number", "int", 16, 5, "obj-191", "flonum", "float", 60.0, 5, "obj-210", "number", "int", 0, 5, "obj-209", "number", "int", 0, 5, "obj-204", "number", "int", 16, 5, "obj-201", "flonum", "float", 65.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 0, 5, "obj-214", "number", "int", 16, 5, "obj-211", "flonum", "float", 53.0, 5, "obj-12", "number", "int", 2, 5, "obj-14", "textbutton", "mode", 1, 5, "obj-14", "textbutton", "int", 0, 5, "obj-27", "textbutton", "mode", 1, 5, "obj-27", "textbutton", "int", 1, 5, "obj-32", "dial", "float", 0.0, 5, "obj-35", "dial", "float", 127.0, 5, "obj-37", "dial", "float", 0.0, 5, "obj-49", "dial", "float", 0.0, 5, "obj-48", "dial", "float", 127.0, 5, "obj-47", "dial", "float", 70.0, 5, "obj-58", "dial", "float", 0.0, 5, "obj-57", "dial", "float", 127.0, 5, "obj-56", "dial", "float", 0.0, 5, "obj-54", "dial", "float", 0.0, 5, "obj-52", "dial", "float", 127.0, 5, "obj-51", "dial", "float", 0.0, 5, "obj-65", "textbutton", "mode", 1, 5, "obj-65", "textbutton", "int", 0 ]
 						}
 , 						{
 							"number" : 18,
-							"data" : [ 5, "obj-3", "number", "int", 16, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "<invalid>", "toggle", "int", 1, 5, "<invalid>", "number", "int", 125, 5, "obj-177", "number", "int", 16, 5, "obj-190", "flonum", "float", 69.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 7, 5, "obj-194", "number", "int", 16, 5, "obj-191", "flonum", "float", 60.0, 5, "obj-210", "number", "int", 0, 5, "obj-209", "number", "int", 0, 5, "obj-204", "number", "int", 16, 5, "obj-201", "flonum", "float", 65.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 4, 5, "obj-214", "number", "int", 16, 5, "obj-211", "flonum", "float", 53.0, 6, "<invalid>", "pictslider", "list", 0, 0 ]
+							"data" : [ 5, "obj-3", "number", "int", 16, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "obj-177", "number", "int", 16, 5, "obj-190", "flonum", "float", 69.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 7, 5, "obj-194", "number", "int", 16, 5, "obj-191", "flonum", "float", 60.0, 5, "obj-210", "number", "int", 0, 5, "obj-209", "number", "int", 0, 5, "obj-204", "number", "int", 16, 5, "obj-201", "flonum", "float", 65.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 4, 5, "obj-214", "number", "int", 16, 5, "obj-211", "flonum", "float", 53.0, 5, "obj-12", "number", "int", 11, 5, "obj-14", "textbutton", "mode", 1, 5, "obj-14", "textbutton", "int", 0, 5, "obj-27", "textbutton", "mode", 1, 5, "obj-27", "textbutton", "int", 1, 5, "obj-32", "dial", "float", 0.0, 5, "obj-35", "dial", "float", 127.0, 5, "obj-37", "dial", "float", 0.0, 5, "obj-49", "dial", "float", 0.0, 5, "obj-48", "dial", "float", 127.0, 5, "obj-47", "dial", "float", 70.0, 5, "obj-58", "dial", "float", 0.0, 5, "obj-57", "dial", "float", 127.0, 5, "obj-56", "dial", "float", 0.0, 5, "obj-54", "dial", "float", 0.0, 5, "obj-52", "dial", "float", 127.0, 5, "obj-51", "dial", "float", 0.0, 5, "obj-65", "textbutton", "mode", 1, 5, "obj-65", "textbutton", "int", 0 ]
 						}
 , 						{
 							"number" : 19,
-							"data" : [ 5, "obj-3", "number", "int", 16, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "<invalid>", "toggle", "int", 1, 5, "<invalid>", "number", "int", 125, 5, "obj-177", "number", "int", 16, 5, "obj-190", "flonum", "float", 69.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 7, 5, "obj-194", "number", "int", 16, 5, "obj-191", "flonum", "float", 60.0, 5, "obj-210", "number", "int", 4, 5, "obj-209", "number", "int", 2, 5, "obj-204", "number", "int", 16, 5, "obj-201", "flonum", "float", 65.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 4, 5, "obj-214", "number", "int", 16, 5, "obj-211", "flonum", "float", 53.0, 6, "<invalid>", "pictslider", "list", 0, 0 ]
+							"data" : [ 5, "obj-3", "number", "int", 16, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "obj-177", "number", "int", 16, 5, "obj-190", "flonum", "float", 69.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 7, 5, "obj-194", "number", "int", 16, 5, "obj-191", "flonum", "float", 60.0, 5, "obj-210", "number", "int", 4, 5, "obj-209", "number", "int", 2, 5, "obj-204", "number", "int", 16, 5, "obj-201", "flonum", "float", 65.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 4, 5, "obj-214", "number", "int", 16, 5, "obj-211", "flonum", "float", 53.0, 5, "obj-12", "number", "int", 7, 5, "obj-14", "textbutton", "mode", 1, 5, "obj-14", "textbutton", "int", 0, 5, "obj-27", "textbutton", "mode", 1, 5, "obj-27", "textbutton", "int", 1, 5, "obj-32", "dial", "float", 0.0, 5, "obj-35", "dial", "float", 127.0, 5, "obj-37", "dial", "float", 0.0, 5, "obj-49", "dial", "float", 0.0, 5, "obj-48", "dial", "float", 127.0, 5, "obj-47", "dial", "float", 70.0, 5, "obj-58", "dial", "float", 0.0, 5, "obj-57", "dial", "float", 127.0, 5, "obj-56", "dial", "float", 0.0, 5, "obj-54", "dial", "float", 0.0, 5, "obj-52", "dial", "float", 127.0, 5, "obj-51", "dial", "float", 0.0, 5, "obj-65", "textbutton", "mode", 1, 5, "obj-65", "textbutton", "int", 0 ]
 						}
  ]
 				}
@@ -3334,7 +3334,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 57.833331999999999, 635.0, 50.0, 22.0 ],
-									"text" : "36."
+									"text" : "53."
 								}
 
 							}
@@ -4163,7 +4163,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 242.25, 661.0, 274.0, 20.0 ],
-													"text" : "1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
+													"text" : "1 0 1 1 1 1 1 1 1 0 1 1 1 1 1 1"
 												}
 
 											}
@@ -6138,7 +6138,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 57.833331999999999, 635.0, 50.0, 22.0 ],
-									"text" : "38."
+									"text" : "65."
 								}
 
 							}
@@ -6967,7 +6967,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 242.25, 661.0, 274.0, 20.0 ],
-													"text" : "1 0 0 0 0 0 0 0 0"
+													"text" : "1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0"
 												}
 
 											}
@@ -8929,7 +8929,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 57.833331999999999, 635.0, 50.0, 22.0 ],
-									"text" : "40."
+									"text" : "60."
 								}
 
 							}
@@ -9758,7 +9758,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 242.25, 661.0, 274.0, 20.0 ],
-													"text" : "1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
+													"text" : "1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0"
 												}
 
 											}
@@ -11720,7 +11720,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 57.833331999999999, 635.0, 50.0, 22.0 ],
-									"text" : "42."
+									"text" : "69."
 								}
 
 							}
@@ -12549,7 +12549,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 242.25, 661.0, 274.0, 20.0 ],
-													"text" : "1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
+													"text" : "1 0 0 1 0 1 0 1 0 0 1 0 1 0 1 0"
 												}
 
 											}
