@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 560.0, 333.0, 728.0, 184.0 ],
+		"rect" : [ 297.0, 327.0, 707.0, 181.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,34 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-24",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "MidiMonitor.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 689.0, 21.0, 257.0, 162.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 216.0, 1.0, 257.0, 186.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-56",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 652.0, 240.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 246.0, 211.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 243.0, 211.0, 150.0, 20.0 ],
 					"text" : "sync msg"
 				}
 
@@ -59,7 +80,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 585.0, 232.0, 42.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 179.0, 203.0, 42.0, 20.0 ],
+					"presentation_rect" : [ 176.0, 203.0, 42.0, 20.0 ],
 					"text" : "tempo"
 				}
 
@@ -72,7 +93,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 531.0, 232.0, 38.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 125.0, 203.0, 38.0, 20.0 ],
+					"presentation_rect" : [ 122.0, 203.0, 38.0, 20.0 ],
 					"text" : "beat"
 				}
 
@@ -87,7 +108,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 585.0, 211.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 179.0, 182.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 176.0, 182.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -101,7 +122,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 532.0, 211.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 126.0, 182.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 123.0, 182.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -114,7 +135,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 641.0, 211.0, 183.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 235.0, 182.0, 183.0, 22.0 ]
+					"presentation_rect" : [ 232.0, 182.0, 183.0, 22.0 ]
 				}
 
 			}
@@ -130,7 +151,7 @@
 					"patching_rect" : [ 565.0, 52.0, 84.0, 47.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 1.0, 103.0, 84.0, 47.0 ],
+					"presentation_rect" : [ -2.0, 103.0, 84.0, 47.0 ],
 					"text" : "Sync Latency"
 				}
 
@@ -170,7 +191,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 534.0, 128.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 86.5, 123.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 83.5, 123.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -184,7 +205,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 585.0, 128.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 90.5, 151.5, 24.0, 24.0 ]
+					"presentation_rect" : [ 87.5, 151.5, 24.0, 24.0 ]
 				}
 
 			}
@@ -197,7 +218,7 @@
 					"outlettype" : [ "", "int", "", "" ],
 					"patching_rect" : [ 534.0, 165.0, 87.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 190.5, 153.0, 87.0, 22.0 ],
+					"presentation_rect" : [ 123.0, 151.5, 87.0, 22.0 ],
 					"text" : "MLE.beatSync"
 				}
 
@@ -301,7 +322,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 380.0, 90.0, 20.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 135.0, 42.0, 25.0, 56.0 ]
+					"presentation_rect" : [ 132.0, 42.0, 25.0, 56.0 ]
 				}
 
 			}
@@ -315,8 +336,9 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 987.0, 557.0, 148.0, 16.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 183.0, 105.5, 100.0, 16.0 ],
-					"text" : "EQ preset"
+					"presentation_rect" : [ 485.0, 13.0, 100.0, 16.0 ],
+					"text" : "EQ preset",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -330,7 +352,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 8.0, 682.0, 81.0, 16.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 73.0, 103.0, 81.0, 16.0 ],
+					"presentation_rect" : [ 70.0, 103.0, 81.0, 16.0 ],
 					"text" : "latency test"
 				}
 
@@ -345,7 +367,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ -22.5, 49.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 75.0, 81.0, 22.0, 22.0 ]
+					"presentation_rect" : [ 72.0, 81.0, 22.0, 22.0 ]
 				}
 
 			}
@@ -387,6 +409,13 @@
 			}
 , 			{
 				"box" : 				{
+					"bgfillcolor_angle" : 270.0,
+					"bgfillcolor_autogradient" : 0.0,
+					"bgfillcolor_color" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgfillcolor_color1" : [ 0.301961, 0.301961, 0.301961, 0.48 ],
+					"bgfillcolor_color2" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgfillcolor_proportion" : 0.5,
+					"bgfillcolor_type" : "gradient",
 					"id" : "obj-30",
 					"items" : [ "Default", "EQ", ",", "Bass", "boost", ",", "Presence", ",", "Mid-cut" ],
 					"maxclass" : "umenu",
@@ -396,7 +425,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 946.0, 526.0, 138.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 145.0, 123.0, 138.0, 22.0 ]
+					"presentation_rect" : [ 612.0, 17.0, 138.0, 22.0 ]
 				}
 
 			}
@@ -547,7 +576,7 @@
 					"outlettype" : [ "signal", "" ],
 					"patching_rect" : [ 81.0, 211.0, 437.0, 143.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 285.0, 9.0, 438.0, 166.0 ],
+					"presentation_rect" : [ 479.0, 1.0, 438.0, 166.0 ],
 					"varname" : "MLE.3bandEQ",
 					"viewvisibility" : 1
 				}
@@ -576,7 +605,7 @@
 					"patching_rect" : [ 487.0, 52.0, 84.0, 47.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 80.0, 0.0, 84.0, 47.0 ],
+					"presentation_rect" : [ 77.0, 0.0, 84.0, 47.0 ],
 					"text" : "Audio Latency"
 				}
 
@@ -593,7 +622,7 @@
 					"patching_rect" : [ 528.0, 420.0, 73.0, 47.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 1.0, 1.0, 73.0, 47.0 ],
+					"presentation_rect" : [ -2.0, 1.0, 73.0, 47.0 ],
 					"text" : "Master\nVolume"
 				}
 
@@ -606,7 +635,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1025.0, 467.5, 52.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 222.0, 9.0, 52.0, 22.0 ],
+					"presentation_rect" : [ 160.5, 90.0, 52.0, 22.0 ],
 					"text" : "MLE.init"
 				}
 
@@ -623,7 +652,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 432.0, 90.0, 72.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 73.0, 42.0, 72.0, 35.0 ]
+					"presentation_rect" : [ 70.0, 42.0, 72.0, 35.0 ]
 				}
 
 			}
@@ -679,7 +708,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 3,
 									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"outlettype" : [ "", "", "int" ],
 									"patching_rect" : [ 224.0, 61.0, 60.0, 22.0 ],
 									"text" : "MLE.beat"
 								}
@@ -1717,7 +1746,7 @@
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 139.5, 881.5, 19.0, 66.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 190.5, 0.0, 26.0, 77.0 ],
+					"presentation_rect" : [ 186.5, 1.0, 26.0, 77.0 ],
 					"tepidcolor" : [ 0.6, 0.729412, 0.0, 1.0 ],
 					"warmcolor" : [ 0.85098, 0.85098, 0.0, 1.0 ]
 				}
@@ -1735,7 +1764,7 @@
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 112.5, 881.5, 19.0, 66.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 163.5, 0.0, 26.0, 77.0 ],
+					"presentation_rect" : [ 159.5, 1.0, 26.0, 77.0 ],
 					"tepidcolor" : [ 0.6, 0.729412, 0.0, 1.0 ],
 					"warmcolor" : [ 0.85098, 0.85098, 0.0, 1.0 ]
 				}
@@ -1800,7 +1829,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 482.0, 420.0, 40.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.0, 42.0, 64.0, 64.0 ],
+					"presentation_rect" : [ -2.0, 42.0, 64.0, 64.0 ],
 					"size" : 255.0
 				}
 
@@ -1900,7 +1929,7 @@
 					"patching_rect" : [ 410.0, 157.0, 84.0, 47.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 1.0, 140.0, 97.0, 47.0 ],
+					"presentation_rect" : [ -2.0, 140.0, 97.0, 47.0 ],
 					"text" : "Sync Enable"
 				}
 
@@ -2472,6 +2501,26 @@
 				"bootpath" : "/Users/famle/CML/MLE/patchers/sandbox",
 				"patcherrelativepath" : "./patchers/sandbox",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MidiMonitor.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers",
+				"patcherrelativepath" : "./patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "helpargs.js",
+				"bootpath" : "C74:/help/resources",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Ians_MIDI_mapping",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/midi",
+				"patcherrelativepath" : "./patchers/midi",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
