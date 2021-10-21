@@ -40,23 +40,103 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-76",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 157.650055000000009, 801.0, 71.0, 22.0 ],
-					"text" : "r #0midiOut"
+					"id" : "obj-28",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 12.0, 4.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 4.500012000000083, 3.166663999999997, 150.0, 20.0 ],
+					"text" : "tempo"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-75",
+					"id" : "obj-26",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ -11.0, -9.0, 41.0, 22.0 ],
+					"text" : "set $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ -11.0, 24.166663999999997, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ -1.89995099999993, 25.166663999999997, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 864.0, 113.0, 70.0, 22.0 ],
+					"text" : "loadmess 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "textbutton",
+					"mode" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 864.0, 146.0, 140.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 505.0, 79.9667051953125, 123.0, 20.0 ],
+					"text" : "Enable Local Mapping",
+					"texton" : "Enable Local Mapping"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-69",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 783.0, 43.0, 63.0, 22.0 ],
+					"text" : "route note"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-66",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 781.0, 10.09999, 67.0, 22.0 ],
+					"text" : "r MIDIinput"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-102",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -98,12 +178,918 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-93",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 310.0, 131.0, 41.0, 22.0 ],
+									"text" : "set $1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-94",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 310.0, 100.0, 155.0, 22.0 ],
+									"text" : "r mirrorNoteEnable"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-95",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 221.0, 208.0, 112.0, 22.0 ],
+									"text" : "s mirrorNoteEnable"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-96",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 221.0, 136.0, 70.0, 22.0 ],
+									"text" : "loadmess 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-92",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 139.0, 131.0, 41.0, 22.0 ],
+									"text" : "set $1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-89",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 139.0, 100.0, 101.0, 22.0 ],
+									"text" : "r mirrorCCenable"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-77",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 50.0, 208.0, 103.0, 22.0 ],
+									"text" : "s mirrorCCenable"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-73",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 50.0, 136.0, 70.0, 22.0 ],
+									"text" : "loadmess 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-98",
+									"index" : 1,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 50.0, 40.0, 30.0, 30.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-99",
+									"index" : 2,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 221.0, 40.0, 30.0, 30.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-100",
+									"index" : 1,
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 88.5, 290.0, 30.0, 30.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-101",
+									"index" : 2,
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 259.5, 290.0, 30.0, 30.0 ]
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-100", 0 ],
+									"source" : [ "obj-73", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-92", 0 ],
+									"source" : [ "obj-89", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-100", 0 ],
+									"source" : [ "obj-92", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-101", 0 ],
+									"source" : [ "obj-93", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-93", 0 ],
+									"source" : [ "obj-94", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-101", 0 ],
+									"source" : [ "obj-96", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-77", 0 ],
+									"source" : [ "obj-98", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-95", 0 ],
+									"source" : [ "obj-99", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 1135.0, 31.0, 190.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p mirroring"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 1.0, 0.349019607843137, 0.349019607843137, 1.0 ],
+					"bgoncolor" : [ 0.019607843137255, 0.796078431372549, 0.0, 1.0 ],
+					"id" : "obj-97",
+					"maxclass" : "textbutton",
+					"mode" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1306.0, 63.0, 165.0, 14.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 279.0, 33.0, 196.0, 20.0 ],
+					"text" : "Don't Mirror Notes to Ableton",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"texton" : "Mirror Notes to Ableton",
+					"textoncolor" : [ 0.941176470588235, 0.941176470588235, 0.941176470588235, 1.0 ],
+					"usebgoncolor" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 1.0, 0.537254901960784, 0.0, 1.0 ],
+					"bgoncolor" : [ 0.305882352941176, 0.796078431372549, 0.0, 1.0 ],
+					"id" : "obj-64",
+					"maxclass" : "textbutton",
+					"mode" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1135.0, 63.0, 165.0, 14.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 279.0, 56.566664035762784, 196.0, 20.0 ],
+					"text" : "Don't Mirror CC to Ableton",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"texton" : "Mirror CC to Ableton",
+					"textoncolor" : [ 0.941176470588235, 0.941176470588235, 0.941176470588235, 1.0 ],
+					"usebgoncolor" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-63",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 60.350052000000005, 838.0, 77.0, 22.0 ],
+					"text" : "s MIDIoutput"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-62",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 8,
+							"minor" : 1,
+							"revision" : 11,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ 517.0, 146.0, 823.0, 510.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-38",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 322.0, 49.0, 32.0, 22.0 ],
+									"text" : "gate"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-37",
+									"index" : 1,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 253.0, -2.0, 30.0, 30.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-34",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 382.0, 271.0, 47.0, 22.0 ],
+									"text" : "zl.iter 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-33",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 401.0, 30.0, 50.0, 22.0 ],
+									"text" : "cc 7 34"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-31",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 227.0, 354.0, 24.0, 24.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-29",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 384.0, 243.0, 77.0, 22.0 ],
+									"text" : "route symbol"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-16",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 267.0, 365.0, 50.0, 22.0 ],
+									"text" : "34"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-15",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "bang", "" ],
+									"patching_rect" : [ 383.0, 297.0, 31.0, 22.0 ],
+									"text" : "t b s"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-14",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "int", "int", "int" ],
+									"patching_rect" : [ 328.0, 185.0, 40.0, 22.0 ],
+									"text" : "t 1 i 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-11",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 267.0, 232.0, 29.5, 22.0 ],
+									"text" : "0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 267.0, 322.0, 32.0, 22.0 ],
+									"text" : "gate"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-8",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 395.0, 402.0, 131.0, 22.0 ],
+									"text" : "sprintf send parent::%s"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-7",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 2,
+									"outlettype" : [ "int", "int" ],
+									"patching_rect" : [ 327.0, 154.0, 50.0, 22.0 ],
+									"text" : "split 0 9"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "int", "int" ],
+									"patching_rect" : [ 327.0, 115.0, 138.0, 22.0 ],
+									"text" : "unpack"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-5",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 327.0, 83.5, 51.0, 22.0 ],
+									"text" : "route cc"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 327.0, -2.0, 67.0, 22.0 ],
+									"text" : "r MIDIinput"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"coll_data" : 									{
+										"count" : 8,
+										"data" : [ 											{
+												"key" : 0,
+												"value" : [ "dial" ]
+											}
+, 											{
+												"key" : 1,
+												"value" : [ "dial[5]" ]
+											}
+, 											{
+												"key" : 2,
+												"value" : [ "dial[6]" ]
+											}
+, 											{
+												"key" : 3,
+												"value" : [ "dial[11]" ]
+											}
+, 											{
+												"key" : 4,
+												"value" : [ "dial[1]", "dial[4]", "dial[7]", "dial[10]" ]
+											}
+, 											{
+												"key" : 5,
+												"value" : [ "dial[3]" ]
+											}
+, 											{
+												"key" : 6,
+												"value" : [ "dial[8]" ]
+											}
+, 											{
+												"key" : 7,
+												"value" : [ "dial[9]" ]
+											}
+ ]
+									}
+,
+									"id" : "obj-2",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 4,
+									"outlettype" : [ "", "", "", "" ],
+									"patching_rect" : [ 383.0, 207.0, 169.0, 22.0 ],
+									"saved_object_attributes" : 									{
+										"embed" : 1,
+										"precision" : 6
+									}
+,
+									"text" : "coll euclidMapping @embed 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-61",
+									"maxclass" : "number",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 267.0, 402.0, 50.0, 22.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-59",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 267.0, 435.0, 135.0, 22.0 ],
+									"text" : "pattrforward parent::dial"
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-33", 1 ],
+									"order" : 0,
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-38", 1 ],
+									"order" : 1,
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-9", 0 ],
+									"source" : [ "obj-11", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"source" : [ "obj-14", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-9", 0 ],
+									"source" : [ "obj-14", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-8", 0 ],
+									"source" : [ "obj-15", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-9", 1 ],
+									"source" : [ "obj-15", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-61", 0 ],
+									"source" : [ "obj-16", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-29", 0 ],
+									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-34", 0 ],
+									"source" : [ "obj-29", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-34", 0 ],
+									"source" : [ "obj-29", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-16", 0 ],
+									"source" : [ "obj-31", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-15", 0 ],
+									"source" : [ "obj-34", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-38", 0 ],
+									"source" : [ "obj-37", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-5", 0 ],
+									"source" : [ "obj-38", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-11", 0 ],
+									"order" : 1,
+									"source" : [ "obj-6", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-16", 1 ],
+									"order" : 0,
+									"source" : [ "obj-6", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
+									"source" : [ "obj-6", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-59", 0 ],
+									"source" : [ "obj-61", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-14", 0 ],
+									"source" : [ "obj-7", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-59", 0 ],
+									"source" : [ "obj-8", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-31", 0 ],
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
+ ],
+						"styles" : [ 							{
+								"name" : "AudioStatus_Menu",
+								"default" : 								{
+									"bgfillcolor" : 									{
+										"type" : "color",
+										"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
+										"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39,
+										"autogradient" : 0
+									}
+
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 864.0, 180.0, 90.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p MIDImapping"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-61",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 283.0, 13.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-59",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 283.0, 46.0, 135.0, 22.0 ],
+					"text" : "pattrforward parent::dial"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-41",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 421.0, 67.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-39",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 417.0, 102.0, 44.0, 35.0 ],
+					"text" : ";\rdial $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 407.400055000000009, 18.0, 70.0, 22.0 ],
+					"text" : "loadmess 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-76",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 157.650055000000009, 801.0, 71.0, 22.0 ],
+					"text" : "r #0midiOut"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-75",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 8,
+							"minor" : 1,
+							"revision" : 11,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ 193.0, 397.0, 640.0, 480.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
+						"boxes" : [ 							{
+								"box" : 								{
 									"id" : "obj-67",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "int", "int" ],
-									"patching_rect" : [ 155.0, 129.0, 47.0, 22.0 ],
+									"patching_rect" : [ 65.0, 50.0, 47.0, 22.0 ],
 									"text" : "unpack"
 								}
 
@@ -115,7 +1101,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 136.0, 100.0, 79.0, 22.0 ],
+									"patching_rect" : [ 65.0, 21.0, 79.0, 22.0 ],
 									"text" : "MLE.midiKey"
 								}
 
@@ -127,7 +1113,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 112.0, 187.0, 32.0, 22.0 ],
+									"patching_rect" : [ 140.0, 168.0, 103.0, 22.0 ],
 									"text" : "gate"
 								}
 
@@ -139,7 +1125,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 163.099989999999991, 32.0, 22.0 ],
+									"patching_rect" : [ 78.0, 221.099989999999991, 32.0, 22.0 ],
 									"text" : "gate"
 								}
 
@@ -151,7 +1137,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 50.0, 129.0, 29.5, 22.0 ],
+									"patching_rect" : [ 78.0, 110.0, 29.5, 22.0 ],
 									"text" : "> 0"
 								}
 
@@ -163,7 +1149,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "int", "bang" ],
-									"patching_rect" : [ 50.0, 197.0, 29.5, 22.0 ],
+									"patching_rect" : [ 78.0, 255.0, 29.5, 22.0 ],
 									"text" : "t i b"
 								}
 
@@ -175,7 +1161,7 @@
 									"numinlets" : 5,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "int" ],
-									"patching_rect" : [ 55.0, 235.0, 69.0, 22.0 ],
+									"patching_rect" : [ 83.0, 293.0, 69.0, 22.0 ],
 									"text" : "counter 1 4"
 								}
 
@@ -187,7 +1173,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "", "", "", "" ],
-									"patching_rect" : [ 55.0, 273.666672000000005, 78.5, 22.0 ],
+									"patching_rect" : [ 83.0, 331.666672000000005, 78.5, 22.0 ],
 									"text" : "gate 4"
 								}
 
@@ -200,8 +1186,8 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "int" ],
-									"patching_rect" : [ 50.0, 40.0, 30.0, 30.0 ]
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 29.0, 13.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -214,20 +1200,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 112.0, 40.0, 30.0, 30.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"comment" : "",
-									"id" : "obj-70",
-									"index" : 3,
-									"maxclass" : "inlet",
-									"numinlets" : 0,
-									"numoutlets" : 1,
-									"outlettype" : [ "int" ],
-									"patching_rect" : [ 147.0, 40.0, 30.0, 30.0 ]
+									"patching_rect" : [ 140.0, 119.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -239,7 +1212,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 55.0, 355.666672000000005, 30.0, 30.0 ]
+									"patching_rect" : [ 83.0, 413.666672000000005, 30.0, 30.0 ]
 								}
 
 							}
@@ -251,7 +1224,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 90.0, 355.666672000000005, 30.0, 30.0 ]
+									"patching_rect" : [ 118.0, 413.666672000000005, 30.0, 30.0 ]
 								}
 
 							}
@@ -263,7 +1236,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 125.0, 355.666672000000005, 30.0, 30.0 ]
+									"patching_rect" : [ 153.0, 413.666672000000005, 30.0, 30.0 ]
 								}
 
 							}
@@ -275,7 +1248,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 160.0, 355.666672000000005, 30.0, 30.0 ]
+									"patching_rect" : [ 188.0, 413.666672000000005, 30.0, 30.0 ]
 								}
 
 							}
@@ -373,7 +1346,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-62", 0 ],
+									"destination" : [ "obj-67", 0 ],
 									"source" : [ "obj-68", 0 ]
 								}
 
@@ -385,17 +1358,10 @@
 								}
 
 							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-64", 1 ],
-									"source" : [ "obj-70", 0 ]
-								}
-
-							}
  ]
 					}
 ,
-					"patching_rect" : [ 783.0, 60.666668000000016, 67.0, 22.0 ],
+					"patching_rect" : [ 783.0, 80.666668000000016, 67.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -416,9 +1382,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 807.0, -25.0, 123.0, 20.0 ],
+					"patching_rect" : [ 864.0, 43.0, 123.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 582.0, 50.566664035762784, 123.0, 20.0 ],
+					"presentation_rect" : [ 279.0, 79.9667051953125, 123.0, 20.0 ],
 					"text" : "Input sets MIDI note",
 					"texton" : "Input sets MIDI note"
 				}
@@ -1892,7 +2858,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 64.083336000000003, 245.833336000000003, 137.266723999999982, 22.0 ],
+					"patching_rect" : [ 81.350052000000005, 245.833336000000003, 137.266723999999982, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1912,7 +2878,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 161.350059999999985, 195.0, 40.0, 40.0 ],
+					"patching_rect" : [ 178.616775999999987, 197.0, 40.0, 40.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 150.483383242187529, 193.0, 40.0, 40.0 ],
 					"saved_attribute_attributes" : 					{
@@ -1936,7 +2902,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 110.350059999999985, 195.0, 40.0, 40.0 ],
+					"patching_rect" : [ 127.616775999999987, 197.0, 40.0, 40.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 86.233387621093783, 193.0, 40.0, 40.0 ],
 					"saved_attribute_attributes" : 					{
@@ -1959,238 +2925,12 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 64.083336000000003, 198.166663999999997, 40.0, 40.0 ],
+					"parameter_enable" : 0,
+					"parameter_mappable" : 0,
+					"patching_rect" : [ 81.350052000000005, 200.166663999999997, 40.0, 40.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 31.950016242187516, 193.0, 40.0, 40.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_longname" : "dial",
-							"parameter_shortname" : "dial",
-							"parameter_type" : 0
-						}
-
-					}
-,
 					"varname" : "dial"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-53",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1316.0, 91.0, 50.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 320.88330078125, 50.566664035762784, 50.0, 22.0 ],
-					"text" : "49 24"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-25",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1358.8333740234375, 168.399999499320984, 70.0, 22.0 ],
-					"text" : "loadmess 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-26",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1077.3333740234375, 189.399999499320984, 50.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 320.88330078125, 25.166663999999997, 50.0, 22.0 ],
-					"text" : "57 0"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 1.0, 0.537254901960784, 0.0, 1.0 ],
-					"bgoncolor" : [ 0.305882352941176, 0.796078431372549, 0.0, 1.0 ],
-					"id" : "obj-27",
-					"maxclass" : "textbutton",
-					"mode" : 1,
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 1358.8333740234375, 206.399999499320984, 100.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 378.3499755859375, 50.566664035762784, 196.0, 20.0 ],
-					"text" : "Don't Mirror CC to Ableton",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"texton" : "Mirror CC to Ableton",
-					"textoncolor" : [ 0.941176470588235, 0.941176470588235, 0.941176470588235, 1.0 ],
-					"usebgoncolor" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-28",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1255.0, 255.399999499320984, 32.0, 22.0 ],
-					"text" : "gate"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-29",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1261.0, 127.399999499320984, 39.0, 22.0 ],
-					"text" : "$2 $1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-164",
-					"maxclass" : "newobj",
-					"numinlets" : 7,
-					"numoutlets" : 2,
-					"outlettype" : [ "int", "" ],
-					"patching_rect" : [ 1240.0, 168.399999499320984, 82.0, 22.0 ],
-					"text" : "midiformat"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-162",
-					"maxclass" : "newobj",
-					"numinlets" : 7,
-					"numoutlets" : 2,
-					"outlettype" : [ "int", "" ],
-					"patching_rect" : [ 1034.5, 223.399999499320984, 82.0, 22.0 ],
-					"text" : "midiformat"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-161",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1255.0, 289.399999499320984, 73.0, 22.0 ],
-					"text" : "s #0midiOut"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-160",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1261.0, 96.399999499320984, 34.0, 22.0 ],
-					"text" : "pack"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-13",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "int", "int", "int" ],
-					"patching_rect" : [ 1261.0, 58.399999499320984, 40.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 238.88330078125, 50.566664035762784, 78.0, 22.0 ],
-					"text" : "ctlin"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 1.0, 0.349019607843137, 0.349019607843137, 1.0 ],
-					"bgoncolor" : [ 0.019607843137255, 0.796078431372549, 0.0, 1.0 ],
-					"id" : "obj-14",
-					"maxclass" : "textbutton",
-					"mode" : 1,
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 1027.3333740234375, 142.399999499320984, 100.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 378.3499755859375, 28.566664035762784, 196.0, 20.0 ],
-					"text" : "Don't Mirror Notes to Ableton",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"texton" : "Mirror Notes to Ableton",
-					"textoncolor" : [ 0.941176470588235, 0.941176470588235, 0.941176470588235, 1.0 ],
-					"usebgoncolor" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-156",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1032.5, 193.399999499320984, 32.0, 22.0 ],
-					"text" : "gate"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-153",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1032.5, 250.399999499320984, 73.0, 22.0 ],
-					"text" : "s #0midiOut"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-30",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 927.0, 78.0, 71.0, 22.0 ],
-					"text" : "pack"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-31",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "int", "int", "int" ],
-					"patching_rect" : [ 927.0, 12.0, 123.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 238.88330078125, 25.166663999999997, 78.0, 22.0 ],
-					"text" : "notein"
 				}
 
 			}
@@ -2248,19 +2988,6 @@
 							"data" : [ 5, "obj-201", "flonum", "float", 43.0, 5, "obj-190", "flonum", "float", 53.0, 5, "obj-211", "flonum", "float", 36.0, 5, "obj-191", "flonum", "float", 52.0 ]
 						}
  ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-11",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 60.350052000000005, 834.0, 119.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 238.88330078125, 78.9667051953125, 119.0, 22.0 ],
-					"text" : "midiout \"from Max 1\""
 				}
 
 			}
@@ -2388,51 +3115,51 @@
 					"presentation_rect" : [ 119.616683999999964, 37.400000035762787, 100.0, 40.0 ],
 					"preset_data" : [ 						{
 							"number" : 1,
-							"data" : [ 5, "obj-3", "number", "int", 8, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "obj-177", "number", "int", 8, 5, "obj-190", "flonum", "float", 77.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 0, 5, "obj-194", "number", "int", 8, 5, "obj-191", "flonum", "float", 62.0, 5, "obj-210", "number", "int", 4, 5, "obj-209", "number", "int", 0, 5, "obj-204", "number", "int", 8, 5, "obj-201", "flonum", "float", 67.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 0, 5, "obj-214", "number", "int", 8, 5, "obj-211", "flonum", "float", 55.0, 5, "obj-12", "number", "int", 3, 5, "obj-14", "textbutton", "mode", 1, 5, "obj-14", "textbutton", "int", 0, 5, "obj-27", "textbutton", "mode", 1, 5, "obj-27", "textbutton", "int", 1, 5, "obj-32", "dial", "float", 0.0, 5, "obj-35", "dial", "float", 77.0, 5, "obj-37", "dial", "float", 0.0, 5, "obj-49", "dial", "float", 0.0, 5, "obj-48", "dial", "float", 81.0, 5, "obj-47", "dial", "float", 70.0, 5, "obj-58", "dial", "float", 0.0, 5, "obj-57", "dial", "float", 79.0, 5, "obj-56", "dial", "float", 0.0, 5, "obj-54", "dial", "float", 0.0, 5, "obj-52", "dial", "float", 81.0, 5, "obj-51", "dial", "float", 0.0, 5, "obj-65", "textbutton", "mode", 1, 5, "obj-65", "textbutton", "int", 0 ]
+							"data" : [ 5, "obj-3", "number", "int", 8, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "obj-177", "number", "int", 8, 5, "obj-190", "flonum", "float", 77.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 0, 5, "obj-194", "number", "int", 8, 5, "obj-191", "flonum", "float", 62.0, 5, "obj-210", "number", "int", 4, 5, "obj-209", "number", "int", 0, 5, "obj-204", "number", "int", 8, 5, "obj-201", "flonum", "float", 67.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 0, 5, "obj-214", "number", "int", 8, 5, "obj-211", "flonum", "float", 55.0, 5, "obj-12", "number", "int", 3, 5, "<invalid>", "textbutton", "mode", 1, 5, "<invalid>", "textbutton", "int", 0, 5, "<invalid>", "textbutton", "mode", 1, 5, "<invalid>", "textbutton", "int", 1, 5, "obj-32", "dial", "float", 0.0, 5, "obj-35", "dial", "float", 77.0, 5, "obj-37", "dial", "float", 0.0, 5, "obj-49", "dial", "float", 0.0, 5, "obj-48", "dial", "float", 81.0, 5, "obj-47", "dial", "float", 70.0, 5, "obj-58", "dial", "float", 0.0, 5, "obj-57", "dial", "float", 79.0, 5, "obj-56", "dial", "float", 0.0, 5, "obj-54", "dial", "float", 0.0, 5, "obj-52", "dial", "float", 81.0, 5, "obj-51", "dial", "float", 0.0, 5, "obj-65", "textbutton", "mode", 1, 5, "obj-65", "textbutton", "int", 0 ]
 						}
 , 						{
 							"number" : 2,
-							"data" : [ 5, "obj-3", "number", "int", 8, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "obj-177", "number", "int", 8, 5, "obj-190", "flonum", "float", 77.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 0, 5, "obj-194", "number", "int", 8, 5, "obj-191", "flonum", "float", 62.0, 5, "obj-210", "number", "int", 0, 5, "obj-209", "number", "int", 0, 5, "obj-204", "number", "int", 8, 5, "obj-201", "flonum", "float", 67.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 3, 5, "obj-214", "number", "int", 8, 5, "obj-211", "flonum", "float", 55.0, 5, "obj-12", "number", "int", 3, 5, "obj-14", "textbutton", "mode", 1, 5, "obj-14", "textbutton", "int", 0, 5, "obj-27", "textbutton", "mode", 1, 5, "obj-27", "textbutton", "int", 1, 5, "obj-32", "dial", "float", 0.0, 5, "obj-35", "dial", "float", 77.0, 5, "obj-37", "dial", "float", 0.0, 5, "obj-49", "dial", "float", 0.0, 5, "obj-48", "dial", "float", 81.0, 5, "obj-47", "dial", "float", 70.0, 5, "obj-58", "dial", "float", 0.0, 5, "obj-57", "dial", "float", 79.0, 5, "obj-56", "dial", "float", 0.0, 5, "obj-54", "dial", "float", 0.0, 5, "obj-52", "dial", "float", 81.0, 5, "obj-51", "dial", "float", 0.0, 5, "obj-65", "textbutton", "mode", 1, 5, "obj-65", "textbutton", "int", 0 ]
+							"data" : [ 5, "obj-3", "number", "int", 8, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "obj-177", "number", "int", 8, 5, "obj-190", "flonum", "float", 77.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 0, 5, "obj-194", "number", "int", 8, 5, "obj-191", "flonum", "float", 62.0, 5, "obj-210", "number", "int", 4, 5, "obj-209", "number", "int", 0, 5, "obj-204", "number", "int", 8, 5, "obj-201", "flonum", "float", 67.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 3, 5, "obj-214", "number", "int", 8, 5, "obj-211", "flonum", "float", 55.0, 5, "obj-12", "number", "int", 1, 5, "obj-32", "dial", "float", 52.0, 5, "obj-35", "dial", "float", 77.0, 5, "obj-37", "dial", "float", 0.0, 5, "obj-49", "dial", "float", 0.0, 5, "obj-48", "dial", "float", 81.0, 5, "obj-47", "dial", "float", 70.0, 5, "obj-58", "dial", "float", 0.0, 5, "obj-57", "dial", "float", 79.0, 5, "obj-56", "dial", "float", 0.0, 5, "obj-54", "dial", "float", 0.0, 5, "obj-52", "dial", "float", 81.0, 5, "obj-51", "dial", "float", 0.0, 5, "obj-65", "textbutton", "mode", 1, 5, "obj-65", "textbutton", "int", 0, 5, "obj-41", "number", "int", 19, 5, "obj-61", "number", "int", 40, 5, "obj-64", "textbutton", "mode", 1, 5, "obj-64", "textbutton", "int", 0, 5, "obj-97", "textbutton", "mode", 1, 5, "obj-97", "textbutton", "int", 0 ]
 						}
 , 						{
 							"number" : 3,
-							"data" : [ 5, "obj-3", "number", "int", 8, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "obj-177", "number", "int", 8, 5, "obj-190", "flonum", "float", 77.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 0, 5, "obj-194", "number", "int", 8, 5, "obj-191", "flonum", "float", 62.0, 5, "obj-210", "number", "int", 0, 5, "obj-209", "number", "int", 5, 5, "obj-204", "number", "int", 8, 5, "obj-201", "flonum", "float", 67.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 3, 5, "obj-214", "number", "int", 8, 5, "obj-211", "flonum", "float", 55.0, 5, "obj-12", "number", "int", 5, 5, "obj-14", "textbutton", "mode", 1, 5, "obj-14", "textbutton", "int", 0, 5, "obj-27", "textbutton", "mode", 1, 5, "obj-27", "textbutton", "int", 1, 5, "obj-32", "dial", "float", 0.0, 5, "obj-35", "dial", "float", 77.0, 5, "obj-37", "dial", "float", 0.0, 5, "obj-49", "dial", "float", 0.0, 5, "obj-48", "dial", "float", 81.0, 5, "obj-47", "dial", "float", 70.0, 5, "obj-58", "dial", "float", 0.0, 5, "obj-57", "dial", "float", 79.0, 5, "obj-56", "dial", "float", 0.0, 5, "obj-54", "dial", "float", 0.0, 5, "obj-52", "dial", "float", 81.0, 5, "obj-51", "dial", "float", 0.0, 5, "obj-65", "textbutton", "mode", 1, 5, "obj-65", "textbutton", "int", 0 ]
+							"data" : [ 5, "obj-3", "number", "int", 8, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "obj-177", "number", "int", 8, 5, "obj-190", "flonum", "float", 77.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 0, 5, "obj-194", "number", "int", 8, 5, "obj-191", "flonum", "float", 62.0, 5, "obj-210", "number", "int", 4, 5, "obj-209", "number", "int", 3, 5, "obj-204", "number", "int", 8, 5, "obj-201", "flonum", "float", 67.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 2, 5, "obj-214", "number", "int", 8, 5, "obj-211", "flonum", "float", 55.0, 5, "obj-12", "number", "int", 5, 5, "obj-32", "dial", "float", 37.0, 5, "obj-35", "dial", "float", 77.0, 5, "obj-37", "dial", "float", 0.0, 5, "obj-49", "dial", "float", 55.0, 5, "obj-48", "dial", "float", 81.0, 5, "obj-47", "dial", "float", 70.0, 5, "obj-58", "dial", "float", 0.0, 5, "obj-57", "dial", "float", 79.0, 5, "obj-56", "dial", "float", 0.0, 5, "obj-54", "dial", "float", 0.0, 5, "obj-52", "dial", "float", 81.0, 5, "obj-51", "dial", "float", 0.0, 5, "obj-65", "textbutton", "mode", 1, 5, "obj-65", "textbutton", "int", 0, 5, "obj-41", "number", "int", 19, 5, "obj-61", "number", "int", 40, 5, "obj-64", "textbutton", "mode", 1, 5, "obj-64", "textbutton", "int", 0, 5, "obj-97", "textbutton", "mode", 1, 5, "obj-97", "textbutton", "int", 0 ]
 						}
 , 						{
 							"number" : 4,
-							"data" : [ 5, "obj-3", "number", "int", 8, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "obj-177", "number", "int", 8, 5, "obj-190", "flonum", "float", 77.0, 5, "obj-200", "number", "int", 4, 5, "obj-199", "number", "int", 1, 5, "obj-194", "number", "int", 8, 5, "obj-191", "flonum", "float", 62.0, 5, "obj-210", "number", "int", 0, 5, "obj-209", "number", "int", 5, 5, "obj-204", "number", "int", 8, 5, "obj-201", "flonum", "float", 67.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 3, 5, "obj-214", "number", "int", 8, 5, "obj-211", "flonum", "float", 55.0, 5, "obj-12", "number", "int", 4, 5, "obj-14", "textbutton", "mode", 1, 5, "obj-14", "textbutton", "int", 0, 5, "obj-27", "textbutton", "mode", 1, 5, "obj-27", "textbutton", "int", 1, 5, "obj-32", "dial", "float", 0.0, 5, "obj-35", "dial", "float", 77.0, 5, "obj-37", "dial", "float", 0.0, 5, "obj-49", "dial", "float", 0.0, 5, "obj-48", "dial", "float", 81.0, 5, "obj-47", "dial", "float", 70.0, 5, "obj-58", "dial", "float", 0.0, 5, "obj-57", "dial", "float", 79.0, 5, "obj-56", "dial", "float", 0.0, 5, "obj-54", "dial", "float", 0.0, 5, "obj-52", "dial", "float", 81.0, 5, "obj-51", "dial", "float", 0.0, 5, "obj-65", "textbutton", "mode", 1, 5, "obj-65", "textbutton", "int", 0 ]
+							"data" : [ 5, "obj-3", "number", "int", 8, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "obj-177", "number", "int", 8, 5, "obj-190", "flonum", "float", 77.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 5, 5, "obj-194", "number", "int", 8, 5, "obj-191", "flonum", "float", 62.0, 5, "obj-210", "number", "int", 4, 5, "obj-209", "number", "int", 3, 5, "obj-204", "number", "int", 8, 5, "obj-201", "flonum", "float", 67.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 2, 5, "obj-214", "number", "int", 8, 5, "obj-211", "flonum", "float", 55.0, 5, "obj-12", "number", "int", 4, 5, "obj-32", "dial", "float", 37.0, 5, "obj-35", "dial", "float", 77.0, 5, "obj-37", "dial", "float", 0.0, 5, "obj-49", "dial", "float", 55.0, 5, "obj-48", "dial", "float", 81.0, 5, "obj-47", "dial", "float", 70.0, 5, "obj-58", "dial", "float", 93.0, 5, "obj-57", "dial", "float", 79.0, 5, "obj-56", "dial", "float", 0.0, 5, "obj-54", "dial", "float", 0.0, 5, "obj-52", "dial", "float", 81.0, 5, "obj-51", "dial", "float", 0.0, 5, "obj-65", "textbutton", "mode", 1, 5, "obj-65", "textbutton", "int", 0, 5, "obj-41", "number", "int", 19, 5, "obj-61", "number", "int", 40, 5, "obj-64", "textbutton", "mode", 1, 5, "obj-64", "textbutton", "int", 0, 5, "obj-97", "textbutton", "mode", 1, 5, "obj-97", "textbutton", "int", 0 ]
 						}
 , 						{
 							"number" : 5,
-							"data" : [ 5, "obj-3", "number", "int", 8, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 6, 5, "obj-177", "number", "int", 8, 5, "obj-190", "flonum", "float", 77.0, 5, "obj-200", "number", "int", 4, 5, "obj-199", "number", "int", 1, 5, "obj-194", "number", "int", 8, 5, "obj-191", "flonum", "float", 62.0, 5, "obj-210", "number", "int", 0, 5, "obj-209", "number", "int", 5, 5, "obj-204", "number", "int", 8, 5, "obj-201", "flonum", "float", 67.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 3, 5, "obj-214", "number", "int", 8, 5, "obj-211", "flonum", "float", 55.0, 5, "obj-12", "number", "int", 5, 5, "obj-14", "textbutton", "mode", 1, 5, "obj-14", "textbutton", "int", 0, 5, "obj-27", "textbutton", "mode", 1, 5, "obj-27", "textbutton", "int", 1, 5, "obj-32", "dial", "float", 0.0, 5, "obj-35", "dial", "float", 77.0, 5, "obj-37", "dial", "float", 0.0, 5, "obj-49", "dial", "float", 0.0, 5, "obj-48", "dial", "float", 81.0, 5, "obj-47", "dial", "float", 70.0, 5, "obj-58", "dial", "float", 0.0, 5, "obj-57", "dial", "float", 79.0, 5, "obj-56", "dial", "float", 0.0, 5, "obj-54", "dial", "float", 0.0, 5, "obj-52", "dial", "float", 81.0, 5, "obj-51", "dial", "float", 0.0, 5, "obj-65", "textbutton", "mode", 1, 5, "obj-65", "textbutton", "int", 0 ]
+							"data" : [ 5, "obj-3", "number", "int", 8, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "obj-177", "number", "int", 8, 5, "obj-190", "flonum", "float", 77.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 7, 5, "obj-194", "number", "int", 8, 5, "obj-191", "flonum", "float", 62.0, 5, "obj-210", "number", "int", 2, 5, "obj-209", "number", "int", 2, 5, "obj-204", "number", "int", 8, 5, "obj-201", "flonum", "float", 67.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 1, 5, "obj-214", "number", "int", 8, 5, "obj-211", "flonum", "float", 55.0, 5, "obj-12", "number", "int", 5, 5, "obj-32", "dial", "float", 31.0, 5, "obj-35", "dial", "float", 77.0, 5, "obj-37", "dial", "float", 0.0, 5, "obj-49", "dial", "float", 43.0, 5, "obj-48", "dial", "float", 81.0, 5, "obj-47", "dial", "float", 32.0, 5, "obj-58", "dial", "float", 117.0, 5, "obj-57", "dial", "float", 79.0, 5, "obj-56", "dial", "float", 0.0, 5, "obj-54", "dial", "float", 0.0, 5, "obj-52", "dial", "float", 81.0, 5, "obj-51", "dial", "float", 0.0, 5, "obj-65", "textbutton", "mode", 1, 5, "obj-65", "textbutton", "int", 0, 5, "obj-41", "number", "int", 19, 5, "obj-61", "number", "int", 40, 5, "obj-64", "textbutton", "mode", 1, 5, "obj-64", "textbutton", "int", 0, 5, "obj-97", "textbutton", "mode", 1, 5, "obj-97", "textbutton", "int", 0 ]
 						}
 , 						{
 							"number" : 9,
-							"data" : [ 5, "obj-3", "number", "int", 12, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "obj-177", "number", "int", 12, 5, "obj-190", "flonum", "float", 79.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 0, 5, "obj-194", "number", "int", 12, 5, "obj-191", "flonum", "float", 64.0, 5, "obj-210", "number", "int", 0, 5, "obj-209", "number", "int", 0, 5, "obj-204", "number", "int", 12, 5, "obj-201", "flonum", "float", 71.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 3, 5, "obj-214", "number", "int", 12, 5, "obj-211", "flonum", "float", 52.0, 5, "obj-12", "number", "int", 2, 5, "obj-14", "textbutton", "mode", 1, 5, "obj-14", "textbutton", "int", 0, 5, "obj-27", "textbutton", "mode", 1, 5, "obj-27", "textbutton", "int", 1, 5, "obj-32", "dial", "float", 0.0, 5, "obj-35", "dial", "float", 111.0, 5, "obj-37", "dial", "float", 0.0, 5, "obj-49", "dial", "float", 0.0, 5, "obj-48", "dial", "float", 106.0, 5, "obj-47", "dial", "float", 70.0, 5, "obj-58", "dial", "float", 0.0, 5, "obj-57", "dial", "float", 106.0, 5, "obj-56", "dial", "float", 0.0, 5, "obj-54", "dial", "float", 0.0, 5, "obj-52", "dial", "float", 103.0, 5, "obj-51", "dial", "float", 0.0, 5, "obj-65", "textbutton", "mode", 1, 5, "obj-65", "textbutton", "int", 0 ]
+							"data" : [ 5, "obj-3", "number", "int", 12, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "obj-177", "number", "int", 12, 5, "obj-190", "flonum", "float", 79.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 0, 5, "obj-194", "number", "int", 12, 5, "obj-191", "flonum", "float", 64.0, 5, "obj-210", "number", "int", 0, 5, "obj-209", "number", "int", 0, 5, "obj-204", "number", "int", 12, 5, "obj-201", "flonum", "float", 71.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 3, 5, "obj-214", "number", "int", 12, 5, "obj-211", "flonum", "float", 52.0, 5, "obj-12", "number", "int", 2, 5, "<invalid>", "textbutton", "mode", 1, 5, "<invalid>", "textbutton", "int", 0, 5, "<invalid>", "textbutton", "mode", 1, 5, "<invalid>", "textbutton", "int", 1, 5, "obj-32", "dial", "float", 0.0, 5, "obj-35", "dial", "float", 111.0, 5, "obj-37", "dial", "float", 0.0, 5, "obj-49", "dial", "float", 0.0, 5, "obj-48", "dial", "float", 106.0, 5, "obj-47", "dial", "float", 70.0, 5, "obj-58", "dial", "float", 0.0, 5, "obj-57", "dial", "float", 106.0, 5, "obj-56", "dial", "float", 0.0, 5, "obj-54", "dial", "float", 0.0, 5, "obj-52", "dial", "float", 103.0, 5, "obj-51", "dial", "float", 0.0, 5, "obj-65", "textbutton", "mode", 1, 5, "obj-65", "textbutton", "int", 0 ]
 						}
 , 						{
 							"number" : 10,
-							"data" : [ 5, "obj-3", "number", "int", 12, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "obj-177", "number", "int", 12, 5, "obj-190", "flonum", "float", 79.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 4, 5, "obj-194", "number", "int", 12, 5, "obj-191", "flonum", "float", 64.0, 5, "obj-210", "number", "int", 0, 5, "obj-209", "number", "int", 0, 5, "obj-204", "number", "int", 12, 5, "obj-201", "flonum", "float", 71.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 3, 5, "obj-214", "number", "int", 12, 5, "obj-211", "flonum", "float", 52.0, 5, "obj-12", "number", "int", 1, 5, "obj-14", "textbutton", "mode", 1, 5, "obj-14", "textbutton", "int", 0, 5, "obj-27", "textbutton", "mode", 1, 5, "obj-27", "textbutton", "int", 1, 5, "obj-32", "dial", "float", 0.0, 5, "obj-35", "dial", "float", 111.0, 5, "obj-37", "dial", "float", 0.0, 5, "obj-49", "dial", "float", 0.0, 5, "obj-48", "dial", "float", 106.0, 5, "obj-47", "dial", "float", 70.0, 5, "obj-58", "dial", "float", 0.0, 5, "obj-57", "dial", "float", 106.0, 5, "obj-56", "dial", "float", 0.0, 5, "obj-54", "dial", "float", 0.0, 5, "obj-52", "dial", "float", 103.0, 5, "obj-51", "dial", "float", 0.0, 5, "obj-65", "textbutton", "mode", 1, 5, "obj-65", "textbutton", "int", 0 ]
+							"data" : [ 5, "obj-3", "number", "int", 12, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "obj-177", "number", "int", 12, 5, "obj-190", "flonum", "float", 79.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 0, 5, "obj-194", "number", "int", 12, 5, "obj-191", "flonum", "float", 64.0, 5, "obj-210", "number", "int", 6, 5, "obj-209", "number", "int", 3, 5, "obj-204", "number", "int", 12, 5, "obj-201", "flonum", "float", 71.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 2, 5, "obj-214", "number", "int", 12, 5, "obj-211", "flonum", "float", 52.0, 5, "obj-12", "number", "int", 0, 5, "obj-32", "dial", "float", 27.0, 5, "obj-35", "dial", "float", 111.0, 5, "obj-37", "dial", "float", 0.0, 5, "obj-49", "dial", "float", 37.0, 5, "obj-48", "dial", "float", 106.0, 5, "obj-47", "dial", "float", 70.0, 5, "obj-58", "dial", "float", 0.0, 5, "obj-57", "dial", "float", 106.0, 5, "obj-56", "dial", "float", 0.0, 5, "obj-54", "dial", "float", 0.0, 5, "obj-52", "dial", "float", 103.0, 5, "obj-51", "dial", "float", 0.0, 5, "obj-65", "textbutton", "mode", 1, 5, "obj-65", "textbutton", "int", 0, 5, "obj-41", "number", "int", 19, 5, "obj-61", "number", "int", 40, 5, "obj-64", "textbutton", "mode", 1, 5, "obj-64", "textbutton", "int", 0, 5, "obj-97", "textbutton", "mode", 1, 5, "obj-97", "textbutton", "int", 0 ]
 						}
 , 						{
 							"number" : 11,
-							"data" : [ 5, "obj-3", "number", "int", 12, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "obj-177", "number", "int", 12, 5, "obj-190", "flonum", "float", 79.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 4, 5, "obj-194", "number", "int", 12, 5, "obj-191", "flonum", "float", 64.0, 5, "obj-210", "number", "int", 0, 5, "obj-209", "number", "int", 5, 5, "obj-204", "number", "int", 12, 5, "obj-201", "flonum", "float", 71.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 3, 5, "obj-214", "number", "int", 12, 5, "obj-211", "flonum", "float", 52.0, 5, "obj-12", "number", "int", 10, 5, "obj-14", "textbutton", "mode", 1, 5, "obj-14", "textbutton", "int", 0, 5, "obj-27", "textbutton", "mode", 1, 5, "obj-27", "textbutton", "int", 1, 5, "obj-32", "dial", "float", 0.0, 5, "obj-35", "dial", "float", 111.0, 5, "obj-37", "dial", "float", 0.0, 5, "obj-49", "dial", "float", 0.0, 5, "obj-48", "dial", "float", 106.0, 5, "obj-47", "dial", "float", 70.0, 5, "obj-58", "dial", "float", 0.0, 5, "obj-57", "dial", "float", 106.0, 5, "obj-56", "dial", "float", 0.0, 5, "obj-54", "dial", "float", 0.0, 5, "obj-52", "dial", "float", 103.0, 5, "obj-51", "dial", "float", 0.0, 5, "obj-65", "textbutton", "mode", 1, 5, "obj-65", "textbutton", "int", 0 ]
+							"data" : [ 5, "obj-3", "number", "int", 12, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "obj-177", "number", "int", 12, 5, "obj-190", "flonum", "float", 79.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 7, 5, "obj-194", "number", "int", 12, 5, "obj-191", "flonum", "float", 64.0, 5, "obj-210", "number", "int", 6, 5, "obj-209", "number", "int", 3, 5, "obj-204", "number", "int", 12, 5, "obj-201", "flonum", "float", 71.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 2, 5, "obj-214", "number", "int", 12, 5, "obj-211", "flonum", "float", 52.0, 5, "obj-12", "number", "int", 0, 5, "obj-32", "dial", "float", 27.0, 5, "obj-35", "dial", "float", 111.0, 5, "obj-37", "dial", "float", 0.0, 5, "obj-49", "dial", "float", 37.0, 5, "obj-48", "dial", "float", 106.0, 5, "obj-47", "dial", "float", 70.0, 5, "obj-58", "dial", "float", 79.0, 5, "obj-57", "dial", "float", 106.0, 5, "obj-56", "dial", "float", 10.0, 5, "obj-54", "dial", "float", 0.0, 5, "obj-52", "dial", "float", 103.0, 5, "obj-51", "dial", "float", 0.0, 5, "obj-65", "textbutton", "mode", 1, 5, "obj-65", "textbutton", "int", 0, 5, "obj-41", "number", "int", 19, 5, "obj-61", "number", "int", 40, 5, "obj-64", "textbutton", "mode", 1, 5, "obj-64", "textbutton", "int", 0, 5, "obj-97", "textbutton", "mode", 1, 5, "obj-97", "textbutton", "int", 0 ]
 						}
 , 						{
 							"number" : 12,
-							"data" : [ 5, "obj-3", "number", "int", 12, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 7, 5, "obj-177", "number", "int", 12, 5, "obj-190", "flonum", "float", 79.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 3, 5, "obj-194", "number", "int", 12, 5, "obj-191", "flonum", "float", 64.0, 5, "obj-210", "number", "int", 0, 5, "obj-209", "number", "int", 5, 5, "obj-204", "number", "int", 12, 5, "obj-201", "flonum", "float", 71.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 2, 5, "obj-214", "number", "int", 12, 5, "obj-211", "flonum", "float", 52.0, 5, "obj-12", "number", "int", 8, 5, "obj-14", "textbutton", "mode", 1, 5, "obj-14", "textbutton", "int", 0, 5, "obj-27", "textbutton", "mode", 1, 5, "obj-27", "textbutton", "int", 1, 5, "obj-32", "dial", "float", 0.0, 5, "obj-35", "dial", "float", 111.0, 5, "obj-37", "dial", "float", 0.0, 5, "obj-49", "dial", "float", 0.0, 5, "obj-48", "dial", "float", 106.0, 5, "obj-47", "dial", "float", 70.0, 5, "obj-58", "dial", "float", 0.0, 5, "obj-57", "dial", "float", 106.0, 5, "obj-56", "dial", "float", 0.0, 5, "obj-54", "dial", "float", 0.0, 5, "obj-52", "dial", "float", 103.0, 5, "obj-51", "dial", "float", 0.0, 5, "obj-65", "textbutton", "mode", 1, 5, "obj-65", "textbutton", "int", 0 ]
+							"data" : [ 5, "obj-3", "number", "int", 12, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 2, 5, "obj-177", "number", "int", 3, 5, "obj-190", "flonum", "float", 79.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 7, 5, "obj-194", "number", "int", 12, 5, "obj-191", "flonum", "float", 64.0, 5, "obj-210", "number", "int", 1, 5, "obj-209", "number", "int", 3, 5, "obj-204", "number", "int", 12, 5, "obj-201", "flonum", "float", 71.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 2, 5, "obj-214", "number", "int", 12, 5, "obj-211", "flonum", "float", 52.0, 5, "obj-12", "number", "int", 11, 5, "obj-32", "dial", "float", 27.0, 5, "obj-35", "dial", "float", 111.0, 5, "obj-37", "dial", "float", 0.0, 5, "obj-49", "dial", "float", 37.0, 5, "obj-48", "dial", "float", 106.0, 5, "obj-47", "dial", "float", 18.0, 5, "obj-58", "dial", "float", 79.0, 5, "obj-57", "dial", "float", 106.0, 5, "obj-56", "dial", "float", 10.0, 5, "obj-54", "dial", "float", 89.0, 5, "obj-52", "dial", "float", 24.0, 5, "obj-51", "dial", "float", 0.0, 5, "obj-65", "textbutton", "mode", 1, 5, "obj-65", "textbutton", "int", 0, 5, "obj-41", "number", "int", 19, 5, "obj-61", "number", "int", 40, 5, "obj-64", "textbutton", "mode", 1, 5, "obj-64", "textbutton", "int", 0, 5, "obj-97", "textbutton", "mode", 1, 5, "obj-97", "textbutton", "int", 0 ]
 						}
 , 						{
 							"number" : 17,
-							"data" : [ 5, "obj-3", "number", "int", 16, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "obj-177", "number", "int", 16, 5, "obj-190", "flonum", "float", 69.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 0, 5, "obj-194", "number", "int", 16, 5, "obj-191", "flonum", "float", 60.0, 5, "obj-210", "number", "int", 0, 5, "obj-209", "number", "int", 0, 5, "obj-204", "number", "int", 16, 5, "obj-201", "flonum", "float", 65.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 0, 5, "obj-214", "number", "int", 16, 5, "obj-211", "flonum", "float", 53.0, 5, "obj-12", "number", "int", 2, 5, "obj-14", "textbutton", "mode", 1, 5, "obj-14", "textbutton", "int", 0, 5, "obj-27", "textbutton", "mode", 1, 5, "obj-27", "textbutton", "int", 1, 5, "obj-32", "dial", "float", 0.0, 5, "obj-35", "dial", "float", 127.0, 5, "obj-37", "dial", "float", 0.0, 5, "obj-49", "dial", "float", 0.0, 5, "obj-48", "dial", "float", 127.0, 5, "obj-47", "dial", "float", 70.0, 5, "obj-58", "dial", "float", 0.0, 5, "obj-57", "dial", "float", 127.0, 5, "obj-56", "dial", "float", 0.0, 5, "obj-54", "dial", "float", 0.0, 5, "obj-52", "dial", "float", 127.0, 5, "obj-51", "dial", "float", 0.0, 5, "obj-65", "textbutton", "mode", 1, 5, "obj-65", "textbutton", "int", 0 ]
+							"data" : [ 5, "obj-3", "number", "int", 16, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "obj-177", "number", "int", 16, 5, "obj-190", "flonum", "float", 69.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 0, 5, "obj-194", "number", "int", 16, 5, "obj-191", "flonum", "float", 60.0, 5, "obj-210", "number", "int", 0, 5, "obj-209", "number", "int", 0, 5, "obj-204", "number", "int", 16, 5, "obj-201", "flonum", "float", 65.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 0, 5, "obj-214", "number", "int", 16, 5, "obj-211", "flonum", "float", 53.0, 5, "obj-12", "number", "int", 2, 5, "<invalid>", "textbutton", "mode", 1, 5, "<invalid>", "textbutton", "int", 0, 5, "<invalid>", "textbutton", "mode", 1, 5, "<invalid>", "textbutton", "int", 1, 5, "obj-32", "dial", "float", 0.0, 5, "obj-35", "dial", "float", 127.0, 5, "obj-37", "dial", "float", 0.0, 5, "obj-49", "dial", "float", 0.0, 5, "obj-48", "dial", "float", 127.0, 5, "obj-47", "dial", "float", 70.0, 5, "obj-58", "dial", "float", 0.0, 5, "obj-57", "dial", "float", 127.0, 5, "obj-56", "dial", "float", 0.0, 5, "obj-54", "dial", "float", 0.0, 5, "obj-52", "dial", "float", 127.0, 5, "obj-51", "dial", "float", 0.0, 5, "obj-65", "textbutton", "mode", 1, 5, "obj-65", "textbutton", "int", 0 ]
 						}
 , 						{
 							"number" : 18,
-							"data" : [ 5, "obj-3", "number", "int", 16, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "obj-177", "number", "int", 16, 5, "obj-190", "flonum", "float", 69.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 7, 5, "obj-194", "number", "int", 16, 5, "obj-191", "flonum", "float", 60.0, 5, "obj-210", "number", "int", 0, 5, "obj-209", "number", "int", 0, 5, "obj-204", "number", "int", 16, 5, "obj-201", "flonum", "float", 65.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 4, 5, "obj-214", "number", "int", 16, 5, "obj-211", "flonum", "float", 53.0, 5, "obj-12", "number", "int", 11, 5, "obj-14", "textbutton", "mode", 1, 5, "obj-14", "textbutton", "int", 0, 5, "obj-27", "textbutton", "mode", 1, 5, "obj-27", "textbutton", "int", 1, 5, "obj-32", "dial", "float", 0.0, 5, "obj-35", "dial", "float", 127.0, 5, "obj-37", "dial", "float", 0.0, 5, "obj-49", "dial", "float", 0.0, 5, "obj-48", "dial", "float", 127.0, 5, "obj-47", "dial", "float", 70.0, 5, "obj-58", "dial", "float", 0.0, 5, "obj-57", "dial", "float", 127.0, 5, "obj-56", "dial", "float", 0.0, 5, "obj-54", "dial", "float", 0.0, 5, "obj-52", "dial", "float", 127.0, 5, "obj-51", "dial", "float", 0.0, 5, "obj-65", "textbutton", "mode", 1, 5, "obj-65", "textbutton", "int", 0 ]
+							"data" : [ 5, "obj-3", "number", "int", 16, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "obj-177", "number", "int", 16, 5, "obj-190", "flonum", "float", 69.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 7, 5, "obj-194", "number", "int", 16, 5, "obj-191", "flonum", "float", 60.0, 5, "obj-210", "number", "int", 0, 5, "obj-209", "number", "int", 0, 5, "obj-204", "number", "int", 16, 5, "obj-201", "flonum", "float", 65.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 4, 5, "obj-214", "number", "int", 16, 5, "obj-211", "flonum", "float", 53.0, 5, "obj-12", "number", "int", 11, 5, "<invalid>", "textbutton", "mode", 1, 5, "<invalid>", "textbutton", "int", 0, 5, "<invalid>", "textbutton", "mode", 1, 5, "<invalid>", "textbutton", "int", 1, 5, "obj-32", "dial", "float", 0.0, 5, "obj-35", "dial", "float", 127.0, 5, "obj-37", "dial", "float", 0.0, 5, "obj-49", "dial", "float", 0.0, 5, "obj-48", "dial", "float", 127.0, 5, "obj-47", "dial", "float", 70.0, 5, "obj-58", "dial", "float", 0.0, 5, "obj-57", "dial", "float", 127.0, 5, "obj-56", "dial", "float", 0.0, 5, "obj-54", "dial", "float", 0.0, 5, "obj-52", "dial", "float", 127.0, 5, "obj-51", "dial", "float", 0.0, 5, "obj-65", "textbutton", "mode", 1, 5, "obj-65", "textbutton", "int", 0 ]
 						}
 , 						{
 							"number" : 19,
-							"data" : [ 5, "obj-3", "number", "int", 16, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 0, 5, "obj-177", "number", "int", 16, 5, "obj-190", "flonum", "float", 69.0, 5, "obj-200", "number", "int", 0, 5, "obj-199", "number", "int", 7, 5, "obj-194", "number", "int", 16, 5, "obj-191", "flonum", "float", 60.0, 5, "obj-210", "number", "int", 4, 5, "obj-209", "number", "int", 2, 5, "obj-204", "number", "int", 16, 5, "obj-201", "flonum", "float", 65.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 4, 5, "obj-214", "number", "int", 16, 5, "obj-211", "flonum", "float", 53.0, 5, "obj-12", "number", "int", 7, 5, "obj-14", "textbutton", "mode", 1, 5, "obj-14", "textbutton", "int", 0, 5, "obj-27", "textbutton", "mode", 1, 5, "obj-27", "textbutton", "int", 1, 5, "obj-32", "dial", "float", 0.0, 5, "obj-35", "dial", "float", 127.0, 5, "obj-37", "dial", "float", 0.0, 5, "obj-49", "dial", "float", 0.0, 5, "obj-48", "dial", "float", 127.0, 5, "obj-47", "dial", "float", 70.0, 5, "obj-58", "dial", "float", 0.0, 5, "obj-57", "dial", "float", 127.0, 5, "obj-56", "dial", "float", 0.0, 5, "obj-54", "dial", "float", 0.0, 5, "obj-52", "dial", "float", 127.0, 5, "obj-51", "dial", "float", 0.0, 5, "obj-65", "textbutton", "mode", 1, 5, "obj-65", "textbutton", "int", 0 ]
+							"data" : [ 5, "obj-3", "number", "int", 16, 5, "obj-5", "number", "int", 0, 5, "obj-7", "number", "int", 2, 5, "obj-177", "number", "int", 9, 5, "obj-190", "flonum", "float", 69.0, 5, "obj-200", "number", "int", 2, 5, "obj-199", "number", "int", 11, 5, "obj-194", "number", "int", 16, 5, "obj-191", "flonum", "float", 60.0, 5, "obj-210", "number", "int", 4, 5, "obj-209", "number", "int", 3, 5, "obj-204", "number", "int", 16, 5, "obj-201", "flonum", "float", 65.0, 5, "obj-220", "number", "int", 0, 5, "obj-219", "number", "int", 2, 5, "obj-214", "number", "int", 16, 5, "obj-211", "flonum", "float", 53.0, 5, "obj-12", "number", "int", 0, 5, "obj-32", "dial", "float", 22.0, 5, "obj-35", "dial", "float", 127.0, 5, "obj-37", "dial", "float", 0.0, 5, "obj-49", "dial", "float", 33.0, 5, "obj-48", "dial", "float", 127.0, 5, "obj-47", "dial", "float", 45.0, 5, "obj-58", "dial", "float", 121.0, 5, "obj-57", "dial", "float", 127.0, 5, "obj-56", "dial", "float", 26.0, 5, "obj-54", "dial", "float", 34.0, 5, "obj-52", "dial", "float", 88.0, 5, "obj-51", "dial", "float", 0.0, 5, "obj-65", "textbutton", "mode", 1, 5, "obj-65", "textbutton", "int", 0, 5, "obj-41", "number", "int", 19, 5, "obj-61", "number", "int", 40, 5, "obj-64", "textbutton", "mode", 1, 5, "obj-64", "textbutton", "int", 0, 5, "obj-97", "textbutton", "mode", 1, 5, "obj-97", "textbutton", "int", 0 ]
 						}
  ]
 				}
@@ -3301,7 +4028,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-2",
@@ -3334,7 +4060,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 57.833331999999999, 635.0, 50.0, 22.0 ],
-									"text" : "53."
+									"text" : "36."
 								}
 
 							}
@@ -4163,7 +4889,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 242.25, 661.0, 274.0, 20.0 ],
-													"text" : "1 0 1 1 1 1 1 1 1 0 1 1 1 1 1 1"
+													"text" : "1 0 0 0 0 0 1 0 0 0 0 0"
 												}
 
 											}
@@ -5160,7 +5886,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-7",
@@ -6138,7 +6863,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 57.833331999999999, 635.0, 50.0, 22.0 ],
-									"text" : "65."
+									"text" : "38."
 								}
 
 							}
@@ -6967,7 +7692,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 242.25, 661.0, 274.0, 20.0 ],
-													"text" : "1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0"
+													"text" : "1 0 0 0 1 0 0 0 1 0 0 0"
 												}
 
 											}
@@ -8929,7 +9654,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 57.833331999999999, 635.0, 50.0, 22.0 ],
-									"text" : "60."
+									"text" : "44."
 								}
 
 							}
@@ -9758,7 +10483,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 242.25, 661.0, 274.0, 20.0 ],
-													"text" : "1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0"
+													"text" : "1 0 1 0 1 0 1 1 0 1 0 1"
 												}
 
 											}
@@ -11720,7 +12445,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 57.833331999999999, 635.0, 50.0, 22.0 ],
-									"text" : "69."
+									"text" : "42."
 								}
 
 							}
@@ -12549,7 +13274,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 242.25, 661.0, 274.0, 20.0 ],
-													"text" : "1 0 0 1 0 1 0 1 0 0 1 0 1 0 1 0"
+													"text" : "1 0 0 1 0 1 0 0 1 0 1 0"
 												}
 
 											}
@@ -13495,7 +14220,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 166.666672000000005, 6.09999, 40.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 65.583328999999992, 25.166663999999997, 40.0, 20.0 ],
+					"presentation_rect" : [ 59.500012000000083, 0.166663999999997, 40.0, 20.0 ],
 					"text" : "beats"
 				}
 
@@ -14457,7 +15182,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 170.0, 32.166663999999997, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 12.0, 25.166663999999997, 50.0, 22.0 ]
+					"presentation_rect" : [ 58.0, 25.166663999999997, 50.0, 22.0 ]
 				}
 
 			}
@@ -14539,8 +15264,29 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-26", 0 ],
+					"source" : [ "obj-1", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 1 ],
 					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-64", 0 ],
+					"source" : [ "obj-102", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-97", 0 ],
+					"source" : [ "obj-102", 1 ]
 				}
 
 			}
@@ -14562,59 +15308,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-160", 1 ],
-					"source" : [ "obj-13", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-160", 0 ],
+					"destination" : [ "obj-62", 0 ],
 					"source" : [ "obj-13", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-156", 0 ],
+					"destination" : [ "obj-13", 0 ],
 					"source" : [ "obj-14", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-162", 0 ],
-					"source" : [ "obj-156", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-29", 0 ],
-					"order" : 1,
-					"source" : [ "obj-160", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-53", 1 ],
-					"order" : 0,
-					"source" : [ "obj-160", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-153", 0 ],
-					"source" : [ "obj-162", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-28", 1 ],
-					"source" : [ "obj-164", 0 ]
 				}
 
 			}
@@ -14797,7 +15499,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
+					"destination" : [ "obj-63", 0 ],
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -14858,6 +15560,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-203", 1 ],
 					"source" : [ "obj-209", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-232", 0 ],
+					"source" : [ "obj-21", 0 ]
 				}
 
 			}
@@ -14974,6 +15683,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
 					"source" : [ "obj-230", 0 ]
 				}
@@ -14981,29 +15697,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-27", 0 ],
-					"source" : [ "obj-25", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-28", 0 ],
-					"source" : [ "obj-27", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-161", 0 ],
-					"source" : [ "obj-28", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-164", 2 ],
-					"source" : [ "obj-29", 0 ]
+					"destination" : [ "obj-23", 0 ],
+					"source" : [ "obj-26", 0 ]
 				}
 
 			}
@@ -15090,54 +15785,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-156", 1 ],
-					"order" : 1,
-					"source" : [ "obj-30", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-26", 1 ],
-					"order" : 0,
-					"source" : [ "obj-30", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-30", 1 ],
-					"order" : 0,
-					"source" : [ "obj-31", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-30", 0 ],
-					"order" : 0,
-					"source" : [ "obj-31", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-75", 0 ],
-					"order" : 1,
-					"source" : [ "obj-31", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-75", 2 ],
-					"order" : 1,
-					"source" : [ "obj-31", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-45", 0 ],
 					"source" : [ "obj-32", 0 ]
 				}
@@ -15154,6 +15801,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-45", 3 ],
 					"source" : [ "obj-37", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-39", 0 ],
+					"source" : [ "obj-41", 0 ]
 				}
 
 			}
@@ -15313,8 +15967,36 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-59", 0 ],
+					"source" : [ "obj-61", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-102", 0 ],
+					"source" : [ "obj-64", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-75", 1 ],
 					"source" : [ "obj-65", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-69", 0 ],
+					"source" : [ "obj-66", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-75", 0 ],
+					"source" : [ "obj-69", 0 ]
 				}
 
 			}
@@ -15355,15 +16037,21 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
+					"destination" : [ "obj-63", 0 ],
 					"source" : [ "obj-76", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-102", 1 ],
+					"source" : [ "obj-97", 0 ]
 				}
 
 			}
  ],
 		"parameters" : 		{
 			"obj-1::obj-7::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
-			"obj-32" : [ "dial", "dial", 0 ],
 			"obj-35" : [ "dial[1]", "dial[1]", 0 ],
 			"obj-37" : [ "dial[2]", "dial[2]", 0 ],
 			"obj-47" : [ "dial[3]", "dial[3]", 0 ],
@@ -15384,60 +16072,60 @@
 ,
 		"parameter_map" : 		{
 			"midi" : 			{
-				"dial" : 				{
-					"srcname" : "20.ctrl.0.chan.midi",
-					"min" : 0.0,
-					"max" : 127.0,
-					"flags" : 2
-				}
-,
 				"dial[5]" : 				{
 					"srcname" : "22.ctrl.0.chan.midi",
 					"min" : 0.0,
 					"max" : 127.0,
-					"flags" : 2
+					"flags" : 2,
+					"active" : 0
 				}
 ,
 				"dial[3]" : 				{
 					"srcname" : "23.ctrl.0.chan.midi",
 					"min" : 0.0,
 					"max" : 127.0,
-					"flags" : 2
+					"flags" : 2,
+					"active" : 0
 				}
 ,
 				"dial[6]" : 				{
 					"srcname" : "24.ctrl.0.chan.midi",
 					"min" : 0.0,
 					"max" : 127.0,
-					"flags" : 2
+					"flags" : 2,
+					"active" : 0
 				}
 ,
 				"dial[8]" : 				{
 					"srcname" : "25.ctrl.0.chan.midi",
 					"min" : 0.0,
 					"max" : 127.0,
-					"flags" : 2
+					"flags" : 2,
+					"active" : 0
 				}
 ,
 				"dial[11]" : 				{
 					"srcname" : "26.ctrl.0.chan.midi",
 					"min" : 0.0,
 					"max" : 127.0,
-					"flags" : 2
+					"flags" : 2,
+					"active" : 0
 				}
 ,
 				"dial[9]" : 				{
 					"srcname" : "27.ctrl.0.chan.midi",
 					"min" : 0.0,
 					"max" : 127.0,
-					"flags" : 2
+					"flags" : 2,
+					"active" : 0
 				}
 ,
 				"dial[2]" : 				{
 					"srcname" : "21.ctrl.0.chan.midi",
 					"min" : 0.0,
 					"max" : 127.0,
-					"flags" : 2
+					"flags" : 2,
+					"active" : 0
 				}
 
 			}
