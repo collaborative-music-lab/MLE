@@ -1,6 +1,9 @@
 # MLE
 Max/MSP Library for use by FaMLE, the MIT Laptop Ensemble
 
+## Folder for Live Sets
+https://www.dropbox.com/sh/jpe638mpd37xcii/AADjzOvU68op9DzobxqvHql9a?dl=0
+
 ## Steps to get started with the MLE Library:
 1. Install Max 8. https://cycling74.com/downloads
 2. Choose a directory to store the MLE library (probably on your desktop or in your documents folder) and navigate there in the Terminal.
