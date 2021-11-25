@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 11,
+			"minor" : 2,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -39,6 +39,146 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-256",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1639.0, 99.0, 32.0, 22.0 ],
+					"text" : "print"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-255",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1678.0, 7.0, 96.0, 22.0 ],
+					"text" : "r #0midiChannel"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-221",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1555.0, -270.0, 39.0, 22.0 ],
+					"text" : "set -1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-218",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1637.25, -293.0, 29.5, 22.0 ],
+					"text" : "12"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-214",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 505.0, 229.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 423.540833824751303, 226.600002527236938, 150.0, 20.0 ],
+					"text" : "select sound:"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-204",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 611.500024914741516, 964.0, 96.0, 22.0 ],
+					"text" : "r #0midiChannel"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-203",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1134.166703999042511, 1260.0, 96.0, 22.0 ],
+					"text" : "r #0midiChannel"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-201",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1602.0, -218.0, 98.0, 22.0 ],
+					"text" : "s #0midiChannel"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-199",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 1602.0, -325.301352679729462, 34.0, 22.0 ],
+					"text" : "sel 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.2, 0.2, 0.2, 0.0 ],
+					"id" : "obj-167",
+					"ignoreclick" : 1,
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1602.0, -259.09587287902832, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 699.651961499330923, 239.100002527236938, 31.0, 22.0 ],
+					"triangle" : 0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 36.0,
+					"id" : "obj-25",
+					"items" : [ "no", "sound", ",", "pad", "A", ",", "pad", "B", ",", "pad", "C", ",", "arp", "A", ",", "arp", "B", ",", "arp", "C", ",", "extra", "A", ",", "extra", "B", ",", "extra", "C" ],
+					"maxclass" : "umenu",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1602.0, -357.0, 100.0, 49.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 511.763061159727499, 212.100002527236938, 220.384299308061486, 49.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-198",
 					"maxclass" : "newobj",
@@ -164,7 +304,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1356.448811675821162, 375.0, 174.0, 22.0 ],
-					"text" : "row 1 1 0 1 0 0 1 0 0"
+					"text" : "row 1 1 1 0 1 0 0 0 1"
 				}
 
 			}
@@ -188,7 +328,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 884.800013184547424, 32.000000476837158, 221.0, 87.0 ],
+					"patching_rect" : [ 1295.3333540558815, -317.999999523162842, 221.0, 87.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 4,
 					"presentation_rect" : [ 871.600022554397583, 16.5, 221.0, 87.0 ],
@@ -210,24 +350,12 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-51",
-					"maxclass" : "number",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 304.000004529953003, 582.400008678436279, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-31",
 					"linecount" : 5,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 882.400013148784637, 18.400000274181366, 150.0, 74.0 ],
+					"patching_rect" : [ 1134.877870619297028, -301.301352679729462, 150.0, 74.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 5,
 					"presentation_rect" : [ 800.000011920928955, 199.600002527236938, 150.0, 74.0 ],
@@ -242,7 +370,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 835.200012445449829, 85.600001275539398, 150.0, 114.0 ],
+					"patching_rect" : [ 1602.0, -168.712323188781738, 150.0, 114.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 7,
 					"presentation_rect" : [ 790.400011777877808, 281.333325445652008, 150.0, 114.0 ],
@@ -267,95 +395,95 @@
 						}
 , 						{
 							"number" : 2,
-							"data" : [ 5, "obj-1", "dial", "float", 54.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 45.0, 5, "obj-71", "dial", "float", 35.0, 5, "obj-74", "dial", "float", 38.0, 5, "obj-77", "dial", "float", 54.0, 5, "obj-80", "dial", "float", 77.0, 5, "obj-83", "dial", "float", 127.0, 5, "obj-86", "dial", "float", 58.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 72.0, 5, "obj-21", "dial", "float", 31.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 127.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 127.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 127.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 0.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 2, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 2, 1, 6, "obj-17", "live.grid", "steps", 4, 1, 6, "obj-17", "live.grid", "steps", 8, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "obj-51", "number", "int", 4 ]
+							"data" : [ 5, "obj-1", "dial", "float", 54.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 45.0, 5, "obj-71", "dial", "float", 35.0, 5, "obj-74", "dial", "float", 38.0, 5, "obj-77", "dial", "float", 54.0, 5, "obj-80", "dial", "float", 77.0, 5, "obj-83", "dial", "float", 127.0, 5, "obj-86", "dial", "float", 58.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 72.0, 5, "obj-21", "dial", "float", 31.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 127.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 127.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 127.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 0.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 2, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 2, 1, 6, "obj-17", "live.grid", "steps", 4, 1, 6, "obj-17", "live.grid", "steps", 8, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "<invalid>", "number", "int", 4 ]
 						}
 , 						{
 							"number" : 3,
-							"data" : [ 5, "obj-1", "dial", "float", 78.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 45.0, 5, "obj-71", "dial", "float", 109.0, 5, "obj-74", "dial", "float", 76.0, 5, "obj-77", "dial", "float", 54.0, 5, "obj-80", "dial", "float", 24.0, 5, "obj-83", "dial", "float", 127.0, 5, "obj-86", "dial", "float", 70.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 60.0, 5, "obj-21", "dial", "float", 19.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 127.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 127.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 127.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 0.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 5, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 3, 1, 6, "obj-17", "live.grid", "steps", 4, 1, 6, "obj-17", "live.grid", "steps", 6, 1, 6, "obj-17", "live.grid", "steps", 8, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "obj-51", "number", "int", 4 ]
+							"data" : [ 5, "obj-1", "dial", "float", 78.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 45.0, 5, "obj-71", "dial", "float", 109.0, 5, "obj-74", "dial", "float", 76.0, 5, "obj-77", "dial", "float", 54.0, 5, "obj-80", "dial", "float", 24.0, 5, "obj-83", "dial", "float", 127.0, 5, "obj-86", "dial", "float", 70.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 60.0, 5, "obj-21", "dial", "float", 19.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 127.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 127.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 127.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 0.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 5, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 3, 1, 6, "obj-17", "live.grid", "steps", 4, 1, 6, "obj-17", "live.grid", "steps", 6, 1, 6, "obj-17", "live.grid", "steps", 8, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "<invalid>", "number", "int", 4 ]
 						}
 , 						{
 							"number" : 4,
-							"data" : [ 5, "obj-1", "dial", "float", 39.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 45.0, 5, "obj-71", "dial", "float", 109.0, 5, "obj-74", "dial", "float", 106.0, 5, "obj-77", "dial", "float", 54.0, 5, "obj-80", "dial", "float", 24.0, 5, "obj-83", "dial", "float", 127.0, 5, "obj-86", "dial", "float", 70.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 84.0, 5, "obj-21", "dial", "float", 0.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 127.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 127.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 127.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 3.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 2, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 6, 1, 6, "obj-17", "live.grid", "steps", 8, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "obj-51", "number", "int", 4 ]
+							"data" : [ 5, "obj-1", "dial", "float", 39.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 45.0, 5, "obj-71", "dial", "float", 109.0, 5, "obj-74", "dial", "float", 106.0, 5, "obj-77", "dial", "float", 54.0, 5, "obj-80", "dial", "float", 24.0, 5, "obj-83", "dial", "float", 127.0, 5, "obj-86", "dial", "float", 70.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 84.0, 5, "obj-21", "dial", "float", 0.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 127.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 127.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 127.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 3.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 2, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 6, 1, 6, "obj-17", "live.grid", "steps", 8, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "<invalid>", "number", "int", 4 ]
 						}
 , 						{
 							"number" : 5,
-							"data" : [ 5, "obj-1", "dial", "float", 38.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 45.0, 5, "obj-71", "dial", "float", 34.0, 5, "obj-74", "dial", "float", 106.0, 5, "obj-77", "dial", "float", 54.0, 5, "obj-80", "dial", "float", 24.0, 5, "obj-83", "dial", "float", 48.0, 5, "obj-86", "dial", "float", 43.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 93.0, 5, "obj-21", "dial", "float", 21.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 127.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 127.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 127.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 2.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 6, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 3, 1, 6, "obj-17", "live.grid", "steps", 7, 1, 6, "obj-17", "live.grid", "steps", 8, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "obj-51", "number", "int", 4 ]
+							"data" : [ 5, "obj-1", "dial", "float", 38.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 45.0, 5, "obj-71", "dial", "float", 34.0, 5, "obj-74", "dial", "float", 106.0, 5, "obj-77", "dial", "float", 54.0, 5, "obj-80", "dial", "float", 24.0, 5, "obj-83", "dial", "float", 48.0, 5, "obj-86", "dial", "float", 43.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 93.0, 5, "obj-21", "dial", "float", 21.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 127.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 127.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 127.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 2.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 6, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 3, 1, 6, "obj-17", "live.grid", "steps", 7, 1, 6, "obj-17", "live.grid", "steps", 8, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "<invalid>", "number", "int", 4 ]
 						}
 , 						{
 							"number" : 6,
-							"data" : [ 5, "obj-1", "dial", "float", 94.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 45.0, 5, "obj-71", "dial", "float", 34.0, 5, "obj-74", "dial", "float", 106.0, 5, "obj-77", "dial", "float", 54.0, 5, "obj-80", "dial", "float", 60.0, 5, "obj-83", "dial", "float", 48.0, 5, "obj-86", "dial", "float", 43.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 45.0, 5, "obj-21", "dial", "float", 21.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 127.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 127.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 127.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 2.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 6, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 3, 1, 6, "obj-17", "live.grid", "steps", 7, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "obj-51", "number", "int", 4 ]
+							"data" : [ 5, "obj-1", "dial", "float", 94.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 45.0, 5, "obj-71", "dial", "float", 34.0, 5, "obj-74", "dial", "float", 106.0, 5, "obj-77", "dial", "float", 54.0, 5, "obj-80", "dial", "float", 60.0, 5, "obj-83", "dial", "float", 48.0, 5, "obj-86", "dial", "float", 43.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 45.0, 5, "obj-21", "dial", "float", 21.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 127.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 127.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 127.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 2.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 6, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 3, 1, 6, "obj-17", "live.grid", "steps", 7, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "<invalid>", "number", "int", 4 ]
 						}
 , 						{
 							"number" : 7,
-							"data" : [ 5, "obj-1", "dial", "float", 127.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 64.0, 5, "obj-71", "dial", "float", 37.0, 5, "obj-74", "dial", "float", 0.0, 5, "obj-77", "dial", "float", 106.0, 5, "obj-80", "dial", "float", 58.0, 5, "obj-83", "dial", "float", 121.0, 5, "obj-86", "dial", "float", 58.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 45.0, 5, "obj-21", "dial", "float", 31.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 117.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 124.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 85.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 5.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 4, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 2, 1, 6, "obj-17", "live.grid", "steps", 3, 1, 6, "obj-17", "live.grid", "steps", 4, 1, 6, "obj-17", "live.grid", "steps", 6, 1, 6, "obj-17", "live.grid", "steps", 7, 1, 6, "obj-17", "live.grid", "steps", 8, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "obj-51", "number", "int", 4 ]
+							"data" : [ 5, "obj-1", "dial", "float", 127.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 64.0, 5, "obj-71", "dial", "float", 37.0, 5, "obj-74", "dial", "float", 0.0, 5, "obj-77", "dial", "float", 106.0, 5, "obj-80", "dial", "float", 58.0, 5, "obj-83", "dial", "float", 121.0, 5, "obj-86", "dial", "float", 58.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 45.0, 5, "obj-21", "dial", "float", 31.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 117.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 124.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 85.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 5.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 4, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 2, 1, 6, "obj-17", "live.grid", "steps", 3, 1, 6, "obj-17", "live.grid", "steps", 4, 1, 6, "obj-17", "live.grid", "steps", 6, 1, 6, "obj-17", "live.grid", "steps", 7, 1, 6, "obj-17", "live.grid", "steps", 8, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "<invalid>", "number", "int", 4 ]
 						}
 , 						{
 							"number" : 8,
-							"data" : [ 5, "obj-1", "dial", "float", 47.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 64.0, 5, "obj-71", "dial", "float", 99.0, 5, "obj-74", "dial", "float", 88.0, 5, "obj-77", "dial", "float", 91.0, 5, "obj-80", "dial", "float", 58.0, 5, "obj-83", "dial", "float", 121.0, 5, "obj-86", "dial", "float", 67.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 45.0, 5, "obj-21", "dial", "float", 31.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 117.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 124.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 85.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 5.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 0, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 2, 1, 6, "obj-17", "live.grid", "steps", 3, 1, 6, "obj-17", "live.grid", "steps", 4, 1, 6, "obj-17", "live.grid", "steps", 5, 1, 6, "obj-17", "live.grid", "steps", 6, 1, 6, "obj-17", "live.grid", "steps", 7, 1, 6, "obj-17", "live.grid", "steps", 8, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "obj-51", "number", "int", 4 ]
+							"data" : [ 5, "obj-1", "dial", "float", 47.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 64.0, 5, "obj-71", "dial", "float", 99.0, 5, "obj-74", "dial", "float", 88.0, 5, "obj-77", "dial", "float", 91.0, 5, "obj-80", "dial", "float", 58.0, 5, "obj-83", "dial", "float", 121.0, 5, "obj-86", "dial", "float", 67.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 45.0, 5, "obj-21", "dial", "float", 31.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 117.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 124.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 85.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 5.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 0, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 2, 1, 6, "obj-17", "live.grid", "steps", 3, 1, 6, "obj-17", "live.grid", "steps", 4, 1, 6, "obj-17", "live.grid", "steps", 5, 1, 6, "obj-17", "live.grid", "steps", 6, 1, 6, "obj-17", "live.grid", "steps", 7, 1, 6, "obj-17", "live.grid", "steps", 8, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "<invalid>", "number", "int", 4 ]
 						}
 , 						{
 							"number" : 9,
-							"data" : [ 5, "obj-1", "dial", "float", 47.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 64.0, 5, "obj-71", "dial", "float", 99.0, 5, "obj-74", "dial", "float", 88.0, 5, "obj-77", "dial", "float", 91.0, 5, "obj-80", "dial", "float", 58.0, 5, "obj-83", "dial", "float", 121.0, 5, "obj-86", "dial", "float", 67.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 53.0, 5, "obj-21", "dial", "float", 40.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 117.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 124.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 85.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 4.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 10, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 2, 1, 6, "obj-17", "live.grid", "steps", 3, 1, 6, "obj-17", "live.grid", "steps", 4, 1, 6, "obj-17", "live.grid", "steps", 5, 1, 6, "obj-17", "live.grid", "steps", 6, 1, 6, "obj-17", "live.grid", "steps", 7, 1, 6, "obj-17", "live.grid", "steps", 8, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "obj-51", "number", "int", 4 ]
+							"data" : [ 5, "obj-1", "dial", "float", 47.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 64.0, 5, "obj-71", "dial", "float", 99.0, 5, "obj-74", "dial", "float", 88.0, 5, "obj-77", "dial", "float", 91.0, 5, "obj-80", "dial", "float", 58.0, 5, "obj-83", "dial", "float", 121.0, 5, "obj-86", "dial", "float", 67.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 53.0, 5, "obj-21", "dial", "float", 40.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 117.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 124.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 85.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 4.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 10, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 2, 1, 6, "obj-17", "live.grid", "steps", 3, 1, 6, "obj-17", "live.grid", "steps", 4, 1, 6, "obj-17", "live.grid", "steps", 5, 1, 6, "obj-17", "live.grid", "steps", 6, 1, 6, "obj-17", "live.grid", "steps", 7, 1, 6, "obj-17", "live.grid", "steps", 8, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "<invalid>", "number", "int", 4 ]
 						}
 , 						{
 							"number" : 10,
-							"data" : [ 5, "obj-1", "dial", "float", 119.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 6.0, 5, "obj-71", "dial", "float", 99.0, 5, "obj-74", "dial", "float", 0.0, 5, "obj-77", "dial", "float", 91.0, 5, "obj-80", "dial", "float", 58.0, 5, "obj-83", "dial", "float", 71.0, 5, "obj-86", "dial", "float", 111.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 38.0, 5, "obj-21", "dial", "float", 24.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 117.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 124.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 85.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 4.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 4, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 2, 1, 6, "obj-17", "live.grid", "steps", 4, 1, 6, "obj-17", "live.grid", "steps", 5, 1, 6, "obj-17", "live.grid", "steps", 7, 1, 6, "obj-17", "live.grid", "steps", 8, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "obj-51", "number", "int", 4 ]
+							"data" : [ 5, "obj-1", "dial", "float", 119.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 6.0, 5, "obj-71", "dial", "float", 99.0, 5, "obj-74", "dial", "float", 0.0, 5, "obj-77", "dial", "float", 91.0, 5, "obj-80", "dial", "float", 58.0, 5, "obj-83", "dial", "float", 71.0, 5, "obj-86", "dial", "float", 111.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 38.0, 5, "obj-21", "dial", "float", 24.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 117.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 124.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 85.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 4.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 4, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 2, 1, 6, "obj-17", "live.grid", "steps", 4, 1, 6, "obj-17", "live.grid", "steps", 5, 1, 6, "obj-17", "live.grid", "steps", 7, 1, 6, "obj-17", "live.grid", "steps", 8, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "<invalid>", "number", "int", 4 ]
 						}
 , 						{
 							"number" : 11,
-							"data" : [ 5, "obj-1", "dial", "float", 119.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 98.0, 5, "obj-71", "dial", "float", 42.0, 5, "obj-74", "dial", "float", 0.0, 5, "obj-77", "dial", "float", 79.0, 5, "obj-80", "dial", "float", 22.0, 5, "obj-83", "dial", "float", 71.0, 5, "obj-86", "dial", "float", 111.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 26.0, 5, "obj-21", "dial", "float", 39.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 117.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 124.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 85.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 4.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 10, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 2, 1, 6, "obj-17", "live.grid", "steps", 4, 1, 6, "obj-17", "live.grid", "steps", 5, 1, 6, "obj-17", "live.grid", "steps", 7, 1, 6, "obj-17", "live.grid", "steps", 8, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "obj-51", "number", "int", 4 ]
+							"data" : [ 5, "obj-1", "dial", "float", 119.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 98.0, 5, "obj-71", "dial", "float", 42.0, 5, "obj-74", "dial", "float", 0.0, 5, "obj-77", "dial", "float", 79.0, 5, "obj-80", "dial", "float", 22.0, 5, "obj-83", "dial", "float", 71.0, 5, "obj-86", "dial", "float", 111.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 26.0, 5, "obj-21", "dial", "float", 39.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 117.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 124.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 85.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 4.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 10, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 2, 1, 6, "obj-17", "live.grid", "steps", 4, 1, 6, "obj-17", "live.grid", "steps", 5, 1, 6, "obj-17", "live.grid", "steps", 7, 1, 6, "obj-17", "live.grid", "steps", 8, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "<invalid>", "number", "int", 4 ]
 						}
 , 						{
 							"number" : 12,
-							"data" : [ 5, "obj-1", "dial", "float", 119.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 98.0, 5, "obj-71", "dial", "float", 42.0, 5, "obj-74", "dial", "float", 0.0, 5, "obj-77", "dial", "float", 79.0, 5, "obj-80", "dial", "float", 22.0, 5, "obj-83", "dial", "float", 71.0, 5, "obj-86", "dial", "float", 111.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 26.0, 5, "obj-21", "dial", "float", 27.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 117.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 124.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 85.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 5.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 1, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 2, 1, 6, "obj-17", "live.grid", "steps", 4, 1, 6, "obj-17", "live.grid", "steps", 5, 1, 6, "obj-17", "live.grid", "steps", 6, 1, 6, "obj-17", "live.grid", "steps", 7, 1, 6, "obj-17", "live.grid", "steps", 8, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "obj-51", "number", "int", 4 ]
+							"data" : [ 5, "obj-1", "dial", "float", 119.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 98.0, 5, "obj-71", "dial", "float", 42.0, 5, "obj-74", "dial", "float", 0.0, 5, "obj-77", "dial", "float", 79.0, 5, "obj-80", "dial", "float", 22.0, 5, "obj-83", "dial", "float", 71.0, 5, "obj-86", "dial", "float", 111.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 26.0, 5, "obj-21", "dial", "float", 27.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 117.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 124.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 85.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 5.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 1, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 2, 1, 6, "obj-17", "live.grid", "steps", 4, 1, 6, "obj-17", "live.grid", "steps", 5, 1, 6, "obj-17", "live.grid", "steps", 6, 1, 6, "obj-17", "live.grid", "steps", 7, 1, 6, "obj-17", "live.grid", "steps", 8, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "<invalid>", "number", "int", 4 ]
 						}
 , 						{
 							"number" : 13,
-							"data" : [ 5, "obj-1", "dial", "float", 119.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 98.0, 5, "obj-71", "dial", "float", 54.0, 5, "obj-74", "dial", "float", 117.0, 5, "obj-77", "dial", "float", 79.0, 5, "obj-80", "dial", "float", 22.0, 5, "obj-83", "dial", "float", 71.0, 5, "obj-86", "dial", "float", 111.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 26.0, 5, "obj-21", "dial", "float", 27.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 117.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 124.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 85.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 3.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 0, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 3, 1, 6, "obj-17", "live.grid", "steps", 4, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "obj-51", "number", "int", 4 ]
+							"data" : [ 5, "obj-1", "dial", "float", 119.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 98.0, 5, "obj-71", "dial", "float", 54.0, 5, "obj-74", "dial", "float", 117.0, 5, "obj-77", "dial", "float", 79.0, 5, "obj-80", "dial", "float", 22.0, 5, "obj-83", "dial", "float", 71.0, 5, "obj-86", "dial", "float", 111.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 26.0, 5, "obj-21", "dial", "float", 27.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 117.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 124.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 85.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 3.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 0, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 3, 1, 6, "obj-17", "live.grid", "steps", 4, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "<invalid>", "number", "int", 4 ]
 						}
 , 						{
 							"number" : 14,
-							"data" : [ 5, "obj-1", "dial", "float", 127.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 98.0, 5, "obj-71", "dial", "float", 54.0, 5, "obj-74", "dial", "float", 117.0, 5, "obj-77", "dial", "float", 79.0, 5, "obj-80", "dial", "float", 22.0, 5, "obj-83", "dial", "float", 56.0, 5, "obj-86", "dial", "float", 111.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 41.0, 5, "obj-21", "dial", "float", 27.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 117.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 124.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 85.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 3.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 2, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 7, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "obj-51", "number", "int", 4 ]
+							"data" : [ 5, "obj-1", "dial", "float", 127.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 98.0, 5, "obj-71", "dial", "float", 54.0, 5, "obj-74", "dial", "float", 117.0, 5, "obj-77", "dial", "float", 79.0, 5, "obj-80", "dial", "float", 22.0, 5, "obj-83", "dial", "float", 56.0, 5, "obj-86", "dial", "float", 111.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 41.0, 5, "obj-21", "dial", "float", 27.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 117.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 124.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 85.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 3.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 2, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 7, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "<invalid>", "number", "int", 4 ]
 						}
 , 						{
 							"number" : 15,
-							"data" : [ 5, "obj-1", "dial", "float", 127.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 98.0, 5, "obj-71", "dial", "float", 54.0, 5, "obj-74", "dial", "float", 117.0, 5, "obj-77", "dial", "float", 79.0, 5, "obj-80", "dial", "float", 22.0, 5, "obj-83", "dial", "float", 56.0, 5, "obj-86", "dial", "float", 111.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 41.0, 5, "obj-21", "dial", "float", 24.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 117.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 124.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 85.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 3.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 2, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 7, 1, 6, "obj-17", "live.grid", "steps", 8, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "obj-51", "number", "int", 4 ]
+							"data" : [ 5, "obj-1", "dial", "float", 127.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 98.0, 5, "obj-71", "dial", "float", 54.0, 5, "obj-74", "dial", "float", 117.0, 5, "obj-77", "dial", "float", 79.0, 5, "obj-80", "dial", "float", 22.0, 5, "obj-83", "dial", "float", 56.0, 5, "obj-86", "dial", "float", 111.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 41.0, 5, "obj-21", "dial", "float", 24.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 117.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 124.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 85.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 3.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 2, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 7, 1, 6, "obj-17", "live.grid", "steps", 8, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "<invalid>", "number", "int", 4 ]
 						}
 , 						{
 							"number" : 16,
-							"data" : [ 5, "obj-1", "dial", "float", 127.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 98.0, 5, "obj-71", "dial", "float", 54.0, 5, "obj-74", "dial", "float", 117.0, 5, "obj-77", "dial", "float", 79.0, 5, "obj-80", "dial", "float", 103.0, 5, "obj-83", "dial", "float", 127.0, 5, "obj-86", "dial", "float", 111.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 41.0, 5, "obj-21", "dial", "float", 24.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 117.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 124.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 85.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 3.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 2, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 3, 1, 6, "obj-17", "live.grid", "steps", 6, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "obj-51", "number", "int", 4 ]
+							"data" : [ 5, "obj-1", "dial", "float", 127.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 98.0, 5, "obj-71", "dial", "float", 54.0, 5, "obj-74", "dial", "float", 117.0, 5, "obj-77", "dial", "float", 79.0, 5, "obj-80", "dial", "float", 103.0, 5, "obj-83", "dial", "float", 127.0, 5, "obj-86", "dial", "float", 111.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 41.0, 5, "obj-21", "dial", "float", 24.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 117.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 124.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 85.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 3.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 2, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 3, 1, 6, "obj-17", "live.grid", "steps", 6, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "<invalid>", "number", "int", 4 ]
 						}
 , 						{
 							"number" : 17,
-							"data" : [ 5, "obj-1", "dial", "float", 127.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 98.0, 5, "obj-71", "dial", "float", 54.0, 5, "obj-74", "dial", "float", 117.0, 5, "obj-77", "dial", "float", 79.0, 5, "obj-80", "dial", "float", 103.0, 5, "obj-83", "dial", "float", 127.0, 5, "obj-86", "dial", "float", 111.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 41.0, 5, "obj-21", "dial", "float", 24.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 117.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 124.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 85.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 3.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 6, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 2, 1, 6, "obj-17", "live.grid", "steps", 8, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "obj-51", "number", "int", 4 ]
+							"data" : [ 5, "obj-1", "dial", "float", 127.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 98.0, 5, "obj-71", "dial", "float", 54.0, 5, "obj-74", "dial", "float", 117.0, 5, "obj-77", "dial", "float", 79.0, 5, "obj-80", "dial", "float", 103.0, 5, "obj-83", "dial", "float", 127.0, 5, "obj-86", "dial", "float", 111.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 41.0, 5, "obj-21", "dial", "float", 24.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 117.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 124.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 85.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 3.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 6, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 2, 1, 6, "obj-17", "live.grid", "steps", 8, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "<invalid>", "number", "int", 4 ]
 						}
 , 						{
 							"number" : 18,
-							"data" : [ 5, "obj-1", "dial", "float", 127.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 98.0, 5, "obj-71", "dial", "float", 82.0, 5, "obj-74", "dial", "float", 117.0, 5, "obj-77", "dial", "float", 79.0, 5, "obj-80", "dial", "float", 103.0, 5, "obj-83", "dial", "float", 127.0, 5, "obj-86", "dial", "float", 111.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 44.0, 5, "obj-21", "dial", "float", 24.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 117.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 124.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 85.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 3.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 6, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 3, 1, 6, "obj-17", "live.grid", "steps", 4, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "obj-51", "number", "int", 4 ]
+							"data" : [ 5, "obj-1", "dial", "float", 127.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 98.0, 5, "obj-71", "dial", "float", 82.0, 5, "obj-74", "dial", "float", 117.0, 5, "obj-77", "dial", "float", 79.0, 5, "obj-80", "dial", "float", 103.0, 5, "obj-83", "dial", "float", 127.0, 5, "obj-86", "dial", "float", 111.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 44.0, 5, "obj-21", "dial", "float", 24.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 117.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 124.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 85.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 3.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 6, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 3, 1, 6, "obj-17", "live.grid", "steps", 4, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "<invalid>", "number", "int", 4 ]
 						}
 , 						{
 							"number" : 19,
-							"data" : [ 5, "obj-1", "dial", "float", 43.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 127.0, 5, "obj-71", "dial", "float", 22.0, 5, "obj-74", "dial", "float", 80.0, 5, "obj-77", "dial", "float", 3.0, 5, "obj-80", "dial", "float", 103.0, 5, "obj-83", "dial", "float", 93.0, 5, "obj-86", "dial", "float", 111.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 56.0, 5, "obj-21", "dial", "float", 24.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 117.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 124.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 85.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 5.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 3, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 2, 1, 6, "obj-17", "live.grid", "steps", 3, 1, 6, "obj-17", "live.grid", "steps", 5, 1, 6, "obj-17", "live.grid", "steps", 7, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "obj-51", "number", "int", 4 ]
+							"data" : [ 5, "obj-1", "dial", "float", 43.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 127.0, 5, "obj-71", "dial", "float", 22.0, 5, "obj-74", "dial", "float", 80.0, 5, "obj-77", "dial", "float", 3.0, 5, "obj-80", "dial", "float", 103.0, 5, "obj-83", "dial", "float", 93.0, 5, "obj-86", "dial", "float", 111.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 56.0, 5, "obj-21", "dial", "float", 24.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 117.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 124.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 85.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 5.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 3, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 2, 1, 6, "obj-17", "live.grid", "steps", 3, 1, 6, "obj-17", "live.grid", "steps", 5, 1, 6, "obj-17", "live.grid", "steps", 7, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "<invalid>", "number", "int", 4 ]
 						}
 , 						{
 							"number" : 20,
-							"data" : [ 5, "obj-1", "dial", "float", 44.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 90.0, 5, "obj-71", "dial", "float", 26.0, 5, "obj-74", "dial", "float", 97.0, 5, "obj-77", "dial", "float", 80.0, 5, "obj-80", "dial", "float", 72.0, 5, "obj-83", "dial", "float", 93.0, 5, "obj-86", "dial", "float", 97.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 56.0, 5, "obj-21", "dial", "float", 24.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 117.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 124.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 85.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 5.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 5, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 2, 1, 6, "obj-17", "live.grid", "steps", 3, 1, 6, "obj-17", "live.grid", "steps", 4, 1, 6, "obj-17", "live.grid", "steps", 5, 1, 6, "obj-17", "live.grid", "steps", 6, 1, 6, "obj-17", "live.grid", "steps", 7, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "obj-51", "number", "int", 4 ]
+							"data" : [ 5, "obj-1", "dial", "float", 44.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 90.0, 5, "obj-71", "dial", "float", 26.0, 5, "obj-74", "dial", "float", 97.0, 5, "obj-77", "dial", "float", 80.0, 5, "obj-80", "dial", "float", 72.0, 5, "obj-83", "dial", "float", 93.0, 5, "obj-86", "dial", "float", 97.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 56.0, 5, "obj-21", "dial", "float", 24.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 117.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 124.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 85.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 5.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 5, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 2, 1, 6, "obj-17", "live.grid", "steps", 3, 1, 6, "obj-17", "live.grid", "steps", 4, 1, 6, "obj-17", "live.grid", "steps", 5, 1, 6, "obj-17", "live.grid", "steps", 6, 1, 6, "obj-17", "live.grid", "steps", 7, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "<invalid>", "number", "int", 4 ]
 						}
 , 						{
 							"number" : 21,
-							"data" : [ 5, "obj-1", "dial", "float", 25.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 65.0, 5, "obj-71", "dial", "float", 40.0, 5, "obj-74", "dial", "float", 97.0, 5, "obj-77", "dial", "float", 59.0, 5, "obj-80", "dial", "float", 103.0, 5, "obj-83", "dial", "float", 23.0, 5, "obj-86", "dial", "float", 127.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 37.0, 5, "obj-21", "dial", "float", 36.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 117.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 124.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 85.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 5.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 4, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 2, 1, 6, "obj-17", "live.grid", "steps", 3, 1, 6, "obj-17", "live.grid", "steps", 4, 1, 6, "obj-17", "live.grid", "steps", 6, 1, 6, "obj-17", "live.grid", "steps", 8, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "obj-51", "number", "int", 4 ]
+							"data" : [ 5, "obj-1", "dial", "float", 25.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 65.0, 5, "obj-71", "dial", "float", 40.0, 5, "obj-74", "dial", "float", 97.0, 5, "obj-77", "dial", "float", 59.0, 5, "obj-80", "dial", "float", 103.0, 5, "obj-83", "dial", "float", 23.0, 5, "obj-86", "dial", "float", 127.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 37.0, 5, "obj-21", "dial", "float", 36.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 117.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 124.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 85.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 5.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 4, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 2, 1, 6, "obj-17", "live.grid", "steps", 3, 1, 6, "obj-17", "live.grid", "steps", 4, 1, 6, "obj-17", "live.grid", "steps", 6, 1, 6, "obj-17", "live.grid", "steps", 8, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "<invalid>", "number", "int", 4 ]
 						}
 , 						{
 							"number" : 22,
-							"data" : [ 5, "obj-1", "dial", "float", 56.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 87.0, 5, "obj-71", "dial", "float", 24.0, 5, "obj-74", "dial", "float", 63.0, 5, "obj-77", "dial", "float", 59.0, 5, "obj-80", "dial", "float", 103.0, 5, "obj-83", "dial", "float", 97.0, 5, "obj-86", "dial", "float", 127.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 55.0, 5, "obj-21", "dial", "float", 25.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 117.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 124.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 85.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 5.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 3, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 2, 1, 6, "obj-17", "live.grid", "steps", 4, 1, 6, "obj-17", "live.grid", "steps", 6, 1, 6, "obj-17", "live.grid", "steps", 7, 1, 6, "obj-17", "live.grid", "steps", 8, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "obj-51", "number", "int", 4 ]
+							"data" : [ 5, "obj-1", "dial", "float", 56.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 87.0, 5, "obj-71", "dial", "float", 24.0, 5, "obj-74", "dial", "float", 63.0, 5, "obj-77", "dial", "float", 59.0, 5, "obj-80", "dial", "float", 103.0, 5, "obj-83", "dial", "float", 97.0, 5, "obj-86", "dial", "float", 127.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 55.0, 5, "obj-21", "dial", "float", 25.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 117.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 124.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 85.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 5.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 3, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 2, 1, 6, "obj-17", "live.grid", "steps", 4, 1, 6, "obj-17", "live.grid", "steps", 6, 1, 6, "obj-17", "live.grid", "steps", 7, 1, 6, "obj-17", "live.grid", "steps", 8, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "<invalid>", "number", "int", 4 ]
 						}
 , 						{
 							"number" : 23,
-							"data" : [ 5, "obj-1", "dial", "float", 127.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 108.0, 5, "obj-71", "dial", "float", 127.0, 5, "obj-74", "dial", "float", 77.0, 5, "obj-77", "dial", "float", 127.0, 5, "obj-80", "dial", "float", 127.0, 5, "obj-83", "dial", "float", 127.0, 5, "obj-86", "dial", "float", 72.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 55.0, 5, "obj-21", "dial", "float", 25.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 117.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 124.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 85.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 5.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 7, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 2, 1, 6, "obj-17", "live.grid", "steps", 4, 1, 6, "obj-17", "live.grid", "steps", 6, 1, 6, "obj-17", "live.grid", "steps", 8, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "obj-51", "number", "int", 4 ]
+							"data" : [ 5, "obj-1", "dial", "float", 127.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 108.0, 5, "obj-71", "dial", "float", 127.0, 5, "obj-74", "dial", "float", 77.0, 5, "obj-77", "dial", "float", 127.0, 5, "obj-80", "dial", "float", 127.0, 5, "obj-83", "dial", "float", 127.0, 5, "obj-86", "dial", "float", 72.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 55.0, 5, "obj-21", "dial", "float", 25.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 117.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 124.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 85.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 5.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 7, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 2, 1, 6, "obj-17", "live.grid", "steps", 4, 1, 6, "obj-17", "live.grid", "steps", 6, 1, 6, "obj-17", "live.grid", "steps", 8, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "<invalid>", "number", "int", 4 ]
 						}
 , 						{
 							"number" : 24,
-							"data" : [ 5, "obj-1", "dial", "float", 93.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 108.0, 5, "obj-71", "dial", "float", 102.0, 5, "obj-74", "dial", "float", 46.0, 5, "obj-77", "dial", "float", 119.0, 5, "obj-80", "dial", "float", 127.0, 5, "obj-83", "dial", "float", 96.0, 5, "obj-86", "dial", "float", 108.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 61.0, 5, "obj-21", "dial", "float", 0.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 117.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 124.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 85.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 5.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 5, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 2, 1, 6, "obj-17", "live.grid", "steps", 3, 1, 6, "obj-17", "live.grid", "steps", 4, 1, 6, "obj-17", "live.grid", "steps", 5, 1, 6, "obj-17", "live.grid", "steps", 7, 1, 6, "obj-17", "live.grid", "steps", 8, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "obj-51", "number", "int", 4 ]
+							"data" : [ 5, "obj-1", "dial", "float", 93.0, 5, "obj-6", "radiogroup", "int", 1, 5, "obj-8", "number", "int", 1, 5, "obj-68", "dial", "float", 108.0, 5, "obj-71", "dial", "float", 102.0, 5, "obj-74", "dial", "float", 46.0, 5, "obj-77", "dial", "float", 119.0, 5, "obj-80", "dial", "float", 127.0, 5, "obj-83", "dial", "float", 96.0, 5, "obj-86", "dial", "float", 108.0, 5, "obj-7", "led", "int", 0, 5, "obj-10", "led", "int", 0, 5, "obj-12", "led", "int", 0, 5, "obj-11", "led", "int", 0, 5, "obj-16", "led", "int", 0, 5, "obj-15", "led", "int", 0, 5, "obj-14", "led", "int", 0, 5, "obj-13", "led", "int", 0, 5, "obj-19", "dial", "float", 61.0, 5, "obj-21", "dial", "float", 0.0, 5, "obj-107", "dial", "float", 127.0, 5, "obj-105", "number", "int", 1, 5, "obj-102", "dial", "float", 127.0, 5, "obj-99", "dial", "float", 127.0, 5, "obj-96", "dial", "float", 127.0, 5, "obj-93", "dial", "float", 127.0, 5, "obj-89", "dial", "float", 127.0, 5, "obj-64", "dial", "float", 127.0, 5, "obj-61", "dial", "float", 127.0, 5, "obj-55", "dial", "float", 127.0, 5, "obj-53", "dial", "float", 0.0, 5, "obj-142", "dial", "float", 124.0, 5, "obj-140", "number", "int", 1, 5, "obj-137", "dial", "float", 117.0, 5, "obj-134", "dial", "float", 127.0, 5, "obj-131", "dial", "float", 127.0, 5, "obj-128", "dial", "float", 124.0, 5, "obj-125", "dial", "float", 127.0, 5, "obj-122", "dial", "float", 127.0, 5, "obj-119", "dial", "float", 85.0, 5, "obj-113", "dial", "float", 127.0, 5, "obj-112", "dial", "float", 0.0, 5, "obj-159", "textbutton", "mode", 1, 5, "obj-159", "textbutton", "int", 1, 5, "obj-186", "dial", "float", 5.0, 5, "obj-184", "dial", "float", 0.0, 5, "obj-182", "dial", "float", 7.0, 5, "obj-196", "toggle", "int", 0, 5, "obj-238", "led", "int", 0, 5, "obj-236", "led", "int", 0, 5, "obj-235", "led", "int", 0, 5, "obj-234", "led", "int", 0, 5, "obj-233", "led", "int", 0, 5, "obj-232", "led", "int", 0, 5, "obj-231", "led", "int", 0, 5, "obj-230", "led", "int", 0, 5, "obj-229", "dial", "float", 1.0, 5, "obj-228", "dial", "float", 7.0, 5, "obj-226", "toggle", "int", 0, 5, "obj-254", "led", "int", 0, 5, "obj-252", "led", "int", 0, 5, "obj-251", "led", "int", 0, 5, "obj-250", "led", "int", 0, 5, "obj-249", "led", "int", 0, 5, "obj-248", "led", "int", 0, 5, "obj-247", "led", "int", 0, 5, "obj-246", "led", "int", 0, 5, "obj-245", "dial", "float", 0.0, 5, "obj-244", "dial", "float", 7.0, 5, "obj-242", "toggle", "int", 0, 5, "obj-366", "textbutton", "mode", 1, 5, "obj-366", "textbutton", "int", 1, 5, "obj-367", "textbutton", "mode", 1, 5, "obj-367", "textbutton", "int", 0, 5, "obj-388", "number", "int", 5, 5, "obj-435", "umenu", "int", 0, 5, "obj-436", "umenu", "int", 0, 5, "obj-17", "live.grid", "mode", 0, 5, "obj-17", "live.grid", "matrixmode", 1, 5, "obj-17", "live.grid", "columns", 8, 5, "obj-17", "live.grid", "rows", 1, 6, "obj-17", "live.grid", "constraint", 1, 1, 6, "obj-17", "live.grid", "constraint", 2, 1, 6, "obj-17", "live.grid", "constraint", 3, 1, 6, "obj-17", "live.grid", "constraint", 4, 1, 6, "obj-17", "live.grid", "constraint", 5, 1, 6, "obj-17", "live.grid", "constraint", 6, 1, 6, "obj-17", "live.grid", "constraint", 7, 1, 6, "obj-17", "live.grid", "constraint", 8, 1, 4, "obj-17", "live.grid", "clear", 6, "obj-17", "live.grid", "steps", 1, 1, 6, "obj-17", "live.grid", "steps", 2, 1, 6, "obj-17", "live.grid", "steps", 3, 1, 6, "obj-17", "live.grid", "steps", 4, 1, 6, "obj-17", "live.grid", "steps", 5, 1, 6, "obj-17", "live.grid", "steps", 7, 1, 6, "obj-17", "live.grid", "steps", 8, 1, 12, "obj-17", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-157", "textbutton", "mode", 1, 5, "obj-157", "textbutton", "int", 1, 5, "obj-166", "textbutton", "mode", 1, 5, "obj-166", "textbutton", "int", 0, 5, "obj-178", "textbutton", "mode", 1, 5, "obj-178", "textbutton", "int", 1, 5, "obj-177", "textbutton", "mode", 1, 5, "obj-177", "textbutton", "int", 0, 5, "<invalid>", "number", "int", 4 ]
 						}
  ]
 				}
@@ -380,8 +508,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1036.000029027462006, 1256.0, 44.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 699.833326995372772, 295.333333909511566, 34.5, 20.0 ],
 					"text" : "127"
 				}
 
@@ -417,8 +543,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 522.333349943161011, 917.0, 44.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 689.833348035812378, 207.999999701976776, 41.0, 20.0 ],
 					"text" : "92 12"
 				}
 
@@ -483,8 +607,6 @@
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 308.0, 828.333327233791351, 100.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 625.671276062726974, 207.999999701976776, 65.990840017795449, 20.0 ],
 					"text" : "CC 92 Off",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"texton" : "CC 92 On",
@@ -504,8 +626,6 @@
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 193.0, 828.333327233791351, 100.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 519.393489390611876, 208.999999701976776, 65.990840017795449, 20.0 ],
 					"text" : "CC 90 Off",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"texton" : "CC 90 On",
@@ -646,8 +766,6 @@
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 703.019782727149163, 1156.0, 100.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 633.254572719335442, 295.333333909511566, 69.5, 20.0 ],
 					"text" : "Velocity Off",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"texton" : "Velocity On",
@@ -698,7 +816,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 74.0, 442.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.670068949460983, 383.33331698179245, 51.0, 20.0 ],
+					"presentation_rect" : [ 6.166668355464935, 185.500000894069672, 51.0, 20.0 ],
 					"text" : "enables"
 				}
 
@@ -714,8 +832,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -757,7 +875,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 123.0, 311.0, 50.0, 22.0 ],
-									"text" : "0 1 0"
+									"text" : "6 1 1"
 								}
 
 							}
@@ -1416,7 +1534,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1458.576992469174456, 168.191811203956604, 33.0, 42.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 181.556564505611107, 383.33331698179245, 55.486303470436951, 17.0 ]
+					"presentation_rect" : [ 184.643343880536293, 185.500000894069672, 55.486303470436951, 17.0 ]
 				}
 
 			}
@@ -1431,7 +1549,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1536.320630882467412, 168.191811203956604, 33.0, 42.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 294.44306006176123, 383.33331698179245, 55.486303470436951, 17.0 ]
+					"presentation_rect" : [ 297.529839436686416, 185.500000894069672, 55.486303470436951, 17.0 ]
 				}
 
 			}
@@ -1446,7 +1564,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1652.936088502406847, 168.191811203956604, 33.0, 42.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 463.772803395986386, 383.33331698179245, 55.486303470436951, 17.0 ]
+					"presentation_rect" : [ 466.859582770911572, 185.500000894069672, 55.486303470436951, 17.0 ]
 				}
 
 			}
@@ -1461,7 +1579,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1614.064269295760369, 168.191811203956604, 33.0, 42.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 407.329555617911353, 383.33331698179245, 55.486303470436951, 17.0 ]
+					"presentation_rect" : [ 410.416334992836539, 185.500000894069672, 55.486303470436951, 17.0 ]
 				}
 
 			}
@@ -1476,7 +1594,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1380.8333540558815, 168.191811203956604, 33.0, 42.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 68.670068949460983, 383.33331698179245, 55.486303470436951, 17.0 ]
+					"presentation_rect" : [ 71.756848324386169, 185.500000894069672, 55.486303470436951, 17.0 ]
 				}
 
 			}
@@ -1491,7 +1609,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1419.705173262527978, 168.191811203956604, 33.0, 42.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 125.113316727536045, 383.33331698179245, 55.486303470436951, 17.0 ]
+					"presentation_rect" : [ 128.200096102461231, 185.500000894069672, 55.486303470436951, 17.0 ]
 				}
 
 			}
@@ -1506,7 +1624,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1497.448811675820934, 168.191811203956604, 33.0, 42.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 237.999812283686168, 383.33331698179245, 55.486303470436923, 17.0 ]
+					"presentation_rect" : [ 241.086591658611383, 185.500000894069672, 55.486303470436923, 17.0 ]
 				}
 
 			}
@@ -1521,7 +1639,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1575.19245008911389, 168.191811203956604, 33.0, 42.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 350.88630783983632, 383.33331698179245, 55.486303470436894, 17.0 ]
+					"presentation_rect" : [ 353.973087214761506, 185.500000894069672, 55.486303470436894, 17.0 ]
 				}
 
 			}
@@ -1587,7 +1705,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1274.8333540558815, 310.666668236255646, 534.0, 16.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 66.571499745996505, 383.33331698179245, 451.010134203566167, 16.0 ],
+					"presentation_rect" : [ 69.658279120921691, 185.500000894069672, 451.010134203566167, 16.0 ],
 					"rows" : 1,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
@@ -1625,8 +1743,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1810,8 +1928,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 637.333349943161011, 452.000013828277588, 129.0, 18.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 127.04762379612248, 360.33331698179245, 129.0, 18.0 ],
 					"text" : "Input Notes",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -1834,9 +1950,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 521.833344876766205, 452.000013828277588, 100.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 68.670068949460983, 271.33334618806839, 61.659862220287323, 20.0 ]
+					"patching_rect" : [ 521.833344876766205, 452.000013828277588, 100.0, 20.0 ]
 				}
 
 			}
@@ -1851,8 +1965,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1918,7 +2032,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 393.0, 173.0, 50.0, 22.0 ],
-									"text" : "4 119"
+									"text" : "7 106"
 								}
 
 							}
@@ -2271,9 +2385,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1020.000029027462006, 812.000013828277588, 100.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 63.387761575835157, 360.33331698179245, 61.659862220287323, 20.0 ]
+					"patching_rect" : [ 1020.000029027462006, 812.000013828277588, 100.0, 20.0 ]
 				}
 
 			}
@@ -2288,8 +2400,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2678,8 +2790,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1122.000029027462006, 812.000013828277588, 129.0, 18.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 127.04762379612248, 271.33334618806839, 129.0, 18.0 ],
 					"text" : "Input Notes",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -2741,20 +2851,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 642.465706706047058, -235.09587287902832, 50.0, 22.0 ],
-					"text" : "0 0"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-406",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 37.671230137348175, 400.684902369976044, 150.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 68.670068949460983, 402.33331698179245, 150.0, 20.0 ],
-					"text" : "alt: Subdivide"
+					"text" : "3 0"
 				}
 
 			}
@@ -2959,8 +3056,6 @@
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 810.019782727149163, 1156.0, 100.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 519.393489390611876, 295.333333909511566, 69.5, 20.0 ],
 					"text" : "CC 91 Off",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"texton" : "CC 91 On",
@@ -3000,8 +3095,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3598,7 +3693,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 642.465706706047058, -173.972590088844299, 50.0, 22.0 ],
-					"text" : "4 119"
+					"text" : "4 24"
 				}
 
 			}
@@ -3610,7 +3705,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 765.753368973731995, -206.849300026893616, 50.0, 22.0 ],
-					"text" : "1"
+					"text" : "4"
 				}
 
 			}
@@ -3796,8 +3891,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1162.166703999042511, 1169.000013828277588, 68.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 593.740748458438361, 337.66667628288269, 68.0, 20.0 ],
 					"text" : "Max",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -3828,8 +3921,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ -21.666607856750488, 978.187220990657806, 33.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 665.833326995372772, 357.33331698179245, 33.0, 20.0 ],
 					"text" : "sync",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -3842,8 +3933,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 85.833392143249512, 988.187220990657806, 29.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 699.833326995372772, 337.66667628288269, 29.0, 20.0 ],
 					"text" : "end",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -3856,8 +3945,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 33.16674017906189, 988.187220990657806, 32.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 647.16667503118515, 337.66667628288269, 32.0, 20.0 ],
 					"text" : "start",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -3874,8 +3961,6 @@
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ -15.499955892562866, 1000.187220990657806, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 647.16667503118515, 357.33331698179245, 24.0, 24.0 ],
 					"uncheckedcolor" : [ 0.517647058823529, 0.517647058823529, 0.517647058823529, 1.0 ]
 				}
 
@@ -3891,8 +3976,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3994,7 +4079,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 590.25, 781.0, 115.0, 22.0 ],
-									"text" : "-1 5 1 4 0"
+									"text" : "-1 2 5 2 4 5 6"
 								}
 
 							}
@@ -4780,8 +4865,6 @@
 					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 80.333392143249512, 978.187220990657806, 40.0, 40.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 694.333326995372772, 327.66667628288269, 40.0, 40.0 ],
 					"size" : 8.0
 				}
 
@@ -4795,8 +4878,6 @@
 					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 29.16674017906189, 978.187220990657806, 40.0, 40.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 643.16667503118515, 327.66667628288269, 40.0, 40.0 ],
 					"size" : 8.0
 				}
 
@@ -4811,9 +4892,7 @@
 					"oncolor" : [ 0.0, 1.0, 0.12156862745098, 1.0 ],
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 130.833436250686646, 1116.187228143215179, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 485.444455444813002, 295.333333909511566, 24.0, 24.0 ]
+					"patching_rect" : [ 130.833436250686646, 1116.187228143215179, 24.0, 24.0 ]
 				}
 
 			}
@@ -4827,9 +4906,7 @@
 					"oncolor" : [ 0.0, 1.0, 0.12156862745098, 1.0 ],
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 106.000088214874268, 1116.187228143215179, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 428.595247532640371, 295.333333909511566, 24.0, 24.0 ]
+					"patching_rect" : [ 106.000088214874268, 1116.187228143215179, 24.0, 24.0 ]
 				}
 
 			}
@@ -4843,9 +4920,7 @@
 					"oncolor" : [ 0.0, 1.0, 0.12156862745098, 1.0 ],
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 80.000088214874268, 1116.187228143215179, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 371.746039620467741, 295.333333909511566, 24.0, 24.0 ]
+					"patching_rect" : [ 80.000088214874268, 1116.187228143215179, 24.0, 24.0 ]
 				}
 
 			}
@@ -4859,9 +4934,7 @@
 					"oncolor" : [ 0.0, 1.0, 0.12156862745098, 1.0 ],
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 55.16674017906189, 1116.187228143215179, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 314.89683170829511, 295.333333909511566, 24.0, 24.0 ]
+					"patching_rect" : [ 55.16674017906189, 1116.187228143215179, 24.0, 24.0 ]
 				}
 
 			}
@@ -4875,9 +4948,7 @@
 					"oncolor" : [ 0.0, 1.0, 0.12156862745098, 1.0 ],
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 29.16674017906189, 1116.187228143215179, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 258.04762379612248, 295.333333909511566, 24.0, 24.0 ]
+					"patching_rect" : [ 29.16674017906189, 1116.187228143215179, 24.0, 24.0 ]
 				}
 
 			}
@@ -4891,9 +4962,7 @@
 					"oncolor" : [ 0.0, 1.0, 0.12156862745098, 1.0 ],
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 4.333392143249512, 1116.187228143215179, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 201.198415883949849, 295.333333909511566, 24.0, 24.0 ]
+					"patching_rect" : [ 4.333392143249512, 1116.187228143215179, 24.0, 24.0 ]
 				}
 
 			}
@@ -4907,9 +4976,7 @@
 					"oncolor" : [ 0.0, 1.0, 0.12156862745098, 1.0 ],
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ -21.666607856750488, 1116.187228143215179, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 144.349207971777247, 295.333333909511566, 24.0, 24.0 ]
+					"patching_rect" : [ -21.666607856750488, 1116.187228143215179, 24.0, 24.0 ]
 				}
 
 			}
@@ -4935,9 +5002,7 @@
 					"oncolor" : [ 0.0, 1.0, 0.12156862745098, 1.0 ],
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ -46.499955892562866, 1116.187228143215179, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 87.500000059604645, 295.333333909511566, 24.0, 24.0 ]
+					"patching_rect" : [ -46.499955892562866, 1116.187228143215179, 24.0, 24.0 ]
 				}
 
 			}
@@ -4948,8 +5013,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ -115.333303928375244, 682.66667628288269, 33.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 665.833326995372772, 271.33334618806839, 33.0, 20.0 ],
 					"text" : "sync",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -4962,8 +5025,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ -10.0, 719.753423511981964, 29.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 695.333348035812378, 250.333327233791351, 29.0, 20.0 ],
 					"text" : "end",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -4976,8 +5037,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ -62.666651964187622, 719.753423511981964, 32.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 642.666696071624756, 250.333327233791351, 32.0, 20.0 ],
 					"text" : "start",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -4994,8 +5053,6 @@
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ -109.166651964187622, 704.66667628288269, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 644.591284573078156, 271.33334618806839, 24.0, 24.0 ],
 					"uncheckedcolor" : [ 0.517647058823529, 0.517647058823529, 0.517647058823529, 1.0 ]
 				}
 
@@ -5011,8 +5068,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5114,7 +5171,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 590.25, 781.0, 115.0, 22.0 ],
-									"text" : "-1 5 1 4 0"
+									"text" : "-1 2 5 2 4 5 6"
 								}
 
 							}
@@ -5900,8 +5957,6 @@
 					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ -15.5, 709.753423511981964, 40.0, 40.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 689.833348035812378, 240.333327233791351, 40.0, 40.0 ],
 					"size" : 8.0
 				}
 
@@ -5915,8 +5970,6 @@
 					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ -66.666651964187622, 709.753423511981964, 40.0, 40.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 638.666696071624756, 240.333327233791351, 40.0, 40.0 ],
 					"size" : 8.0
 				}
 
@@ -5931,9 +5984,7 @@
 					"oncolor" : [ 0.0, 1.0, 0.12156862745098, 1.0 ],
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 37.16674017906189, 820.666683435440063, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 485.444455444812888, 207.999999701976776, 24.0, 24.0 ]
+					"patching_rect" : [ 37.16674017906189, 820.666683435440063, 24.0, 24.0 ]
 				}
 
 			}
@@ -5947,9 +5998,7 @@
 					"oncolor" : [ 0.0, 1.0, 0.12156862745098, 1.0 ],
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 12.333392143249512, 820.666683435440063, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 428.738104675497425, 207.999999701976776, 24.0, 24.0 ]
+					"patching_rect" : [ 12.333392143249512, 820.666683435440063, 24.0, 24.0 ]
 				}
 
 			}
@@ -5963,9 +6012,7 @@
 					"oncolor" : [ 0.0, 1.0, 0.12156862745098, 1.0 ],
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ -13.666607856750488, 820.666683435440063, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 372.031753906181962, 207.999999701976776, 24.0, 24.0 ]
+					"patching_rect" : [ -13.666607856750488, 820.666683435440063, 24.0, 24.0 ]
 				}
 
 			}
@@ -5979,9 +6026,7 @@
 					"oncolor" : [ 0.0, 1.0, 0.12156862745098, 1.0 ],
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ -38.499955892562866, 820.666683435440063, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 315.325403136866498, 207.999999701976776, 24.0, 24.0 ]
+					"patching_rect" : [ -38.499955892562866, 820.666683435440063, 24.0, 24.0 ]
 				}
 
 			}
@@ -5995,9 +6040,7 @@
 					"oncolor" : [ 0.0, 1.0, 0.12156862745098, 1.0 ],
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ -64.499955892562866, 820.666683435440063, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 258.619052367551035, 207.999999701976776, 24.0, 24.0 ]
+					"patching_rect" : [ -64.499955892562866, 820.666683435440063, 24.0, 24.0 ]
 				}
 
 			}
@@ -6011,9 +6054,7 @@
 					"oncolor" : [ 0.0, 1.0, 0.12156862745098, 1.0 ],
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ -89.333303928375244, 820.666683435440063, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 201.912701598235572, 207.999999701976776, 24.0, 24.0 ]
+					"patching_rect" : [ -89.333303928375244, 820.666683435440063, 24.0, 24.0 ]
 				}
 
 			}
@@ -6027,9 +6068,7 @@
 					"oncolor" : [ 0.0, 1.0, 0.12156862745098, 1.0 ],
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ -115.333303928375244, 820.666683435440063, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 145.206350828920108, 207.999999701976776, 24.0, 24.0 ]
+					"patching_rect" : [ -115.333303928375244, 820.666683435440063, 24.0, 24.0 ]
 				}
 
 			}
@@ -6055,9 +6094,7 @@
 					"oncolor" : [ 0.0, 1.0, 0.12156862745098, 1.0 ],
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ -140.166651964187622, 820.666683435440063, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 88.500000059604645, 207.999999701976776, 24.0, 24.0 ]
+					"patching_rect" : [ -140.166651964187622, 820.666683435440063, 24.0, 24.0 ]
 				}
 
 			}
@@ -6131,8 +6168,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -6169,13 +6206,13 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-27",
-									"linecount" : 6,
+									"linecount" : 8,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 413.0, 780.0, 18.0, 35.0 ],
-									"text" : "-1 5 1 4 0"
+									"text" : "-1 2 5 2 4 5 6"
 								}
 
 							}
@@ -6247,7 +6284,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 635.25, 826.0, 115.0, 22.0 ],
-									"text" : "-1 5 1 4 0"
+									"text" : "-1 2 5 2 4 5 6"
 								}
 
 							}
@@ -7170,8 +7207,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -7249,7 +7286,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 262.0, 367.0, 50.0, 22.0 ],
-									"text" : "1"
+									"text" : "4"
 								}
 
 							}
@@ -7554,8 +7591,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -7675,22 +7712,14 @@
 , 							{
 								"box" : 								{
 									"coll_data" : 									{
-										"count" : 6,
+										"count" : 4,
 										"data" : [ 											{
 												"key" : [ "quarter", 0 ],
 												"value" : [ 8, 1, 0 ]
 											}
 , 											{
-												"key" : [ "eighth", 1 ],
-												"value" : [ 4, 2, 1 ]
-											}
-, 											{
 												"key" : [ "eighth", 2 ],
 												"value" : [ 4, 2, 1 ]
-											}
-, 											{
-												"key" : [ "16th", 3 ],
-												"value" : [ 2, 4, 1 ]
 											}
 , 											{
 												"key" : [ "16th", 4 ],
@@ -7887,8 +7916,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 513.333349943161011, 812.000013828277588, 68.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 537.38890939950943, 250.333327233791351, 68.0, 20.0 ],
 					"text" : "Min",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -7901,8 +7928,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 639.500024914741516, 800.000013828277588, 68.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 593.555584371089935, 250.333327233791351, 68.0, 20.0 ],
 					"text" : "Max",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -7955,8 +7980,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 81.3561652302742, 22.438354969024658, 67.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 42.666668355464935, 79.0, 67.0, 20.0 ],
 					"text" : "Row select"
 				}
 
@@ -8035,7 +8058,7 @@
 					"patching_rect" : [ 108.0, 566.0, 44.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 584.0, 112.16666841506958, 50.666666984558105, 20.0 ],
-					"text" : "57 124",
+					"text" : "65 127",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -8059,8 +8082,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 866.0, 1256.0, 44.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 589.000023066997528, 297.333333909511566, 55.402469911137359, 20.0 ],
 					"text" : "91 48"
 				}
 
@@ -8084,8 +8105,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 359.0, 917.0, 44.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 584.0, 207.999999701976776, 40.0, 20.0 ],
 					"text" : "90 127"
 				}
 
@@ -8125,8 +8144,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -8522,8 +8541,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1036.000029027462006, 1181.000013828277588, 68.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 538.907430642180884, 337.66667628288269, 68.0, 20.0 ],
 					"text" : "Min",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -8538,8 +8555,6 @@
 					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 990.8333540558815, 1167.0, 40.0, 40.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 532.240763776832068, 327.333318710327148, 40.0, 40.0 ],
 					"size" : 127.0
 				}
 
@@ -8552,9 +8567,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1123.000029027462006, 1161.000013828277588, 40.0, 40.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 588.833359241485482, 327.333318710327148, 40.0, 40.0 ]
+					"patching_rect" : [ 1123.000029027462006, 1161.000013828277588, 40.0, 40.0 ]
 				}
 
 			}
@@ -8604,8 +8617,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -9253,8 +9266,6 @@
 					"outlinecolor" : [ 0.923077, 0.0, 0.076923, 1.0 ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1631.666708111763, 1006.000001728534698, 40.0, 40.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 475.648168312178655, 327.333318710327148, 40.0, 40.0 ],
 					"thickness" : 80.0
 				}
 
@@ -9282,8 +9293,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -9931,8 +9942,6 @@
 					"outlinecolor" : [ 0.923077, 0.0, 0.076923, 1.0 ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1523.666704893112183, 1000.666668236255646, 40.0, 40.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 419.055572847525241, 327.333318710327148, 40.0, 40.0 ],
 					"thickness" : 80.0
 				}
 
@@ -9960,8 +9969,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -10609,8 +10618,6 @@
 					"outlinecolor" : [ 0.923077, 0.0, 0.076923, 1.0 ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1429.666702091693878, 1000.666668236255646, 40.0, 40.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 362.462977382871827, 327.333318710327148, 40.0, 40.0 ],
 					"thickness" : 80.0
 				}
 
@@ -10638,8 +10645,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -11287,8 +11294,6 @@
 					"outlinecolor" : [ 0.923077, 0.0, 0.076923, 1.0 ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1323.666698932647705, 1000.666668236255646, 40.0, 40.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 305.870381918218413, 327.333318710327148, 40.0, 40.0 ],
 					"thickness" : 80.0
 				}
 
@@ -11316,8 +11321,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -11965,8 +11970,6 @@
 					"outlinecolor" : [ 0.923077, 0.0, 0.076923, 1.0 ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1215.000029027462006, 1000.666668236255646, 40.0, 40.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 249.277786453565, 327.333318710327148, 40.0, 40.0 ],
 					"thickness" : 80.0
 				}
 
@@ -11994,8 +11997,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -12643,8 +12646,6 @@
 					"outlinecolor" : [ 0.923077, 0.0, 0.076923, 1.0 ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1115.666692733764648, 1000.666668236255646, 40.0, 40.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 192.685190988911529, 327.333318710327148, 40.0, 40.0 ],
 					"thickness" : 80.0
 				}
 
@@ -12672,8 +12673,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -13321,8 +13322,6 @@
 					"outlinecolor" : [ 0.923077, 0.0, 0.076923, 1.0 ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1024.33335667848587, 1000.666668236255646, 40.0, 40.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 136.092595524258087, 327.333318710327148, 40.0, 40.0 ],
 					"thickness" : 80.0
 				}
 
@@ -13350,8 +13349,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -14023,8 +14022,6 @@
 					"outlinecolor" : [ 0.923077, 0.0, 0.076923, 1.0 ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 936.3333540558815, 1000.666668236255646, 40.0, 40.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 79.500000059604645, 327.333318710327148, 40.0, 40.0 ],
 					"thickness" : 80.0
 				}
 
@@ -14035,9 +14032,7 @@
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 919.833358585834503, 990.333341002464294, 775.666678190231323, 89.333332300186157 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 57.499996840953827, 295.333333909511566, 676.833330154418945, 85.999983072280884 ]
+					"patching_rect" : [ 919.833358585834503, 990.333341002464294, 775.666678190231323, 89.333332300186157 ]
 				}
 
 			}
@@ -14052,8 +14047,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -14426,8 +14421,6 @@
 					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 468.166674971580505, 798.0, 40.0, 40.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 532.38890939950943, 240.333326935768127, 40.0, 40.0 ],
 					"size" : 127.0
 				}
 
@@ -14440,9 +14433,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 600.333349943161011, 792.000013828277588, 40.0, 40.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 589.000023066997528, 240.333326935768127, 40.0, 40.0 ]
+					"patching_rect" : [ 600.333349943161011, 792.000013828277588, 40.0, 40.0 ]
 				}
 
 			}
@@ -14492,8 +14483,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -15141,8 +15132,6 @@
 					"outlinecolor" : [ 0.923077, 0.0, 0.076923, 1.0 ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1109.000029027462006, 637.000001728534698, 40.0, 40.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 475.777795732021332, 240.333326935768127, 40.0, 40.0 ],
 					"thickness" : 80.0
 				}
 
@@ -15170,8 +15159,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -15819,8 +15808,6 @@
 					"outlinecolor" : [ 0.923077, 0.0, 0.076923, 1.0 ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1001.000025808811188, 631.666668236255646, 40.0, 40.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 419.166682064533234, 240.333326935768127, 40.0, 40.0 ],
 					"thickness" : 80.0
 				}
 
@@ -15848,8 +15835,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -16497,8 +16484,6 @@
 					"outlinecolor" : [ 0.923077, 0.0, 0.076923, 1.0 ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 907.000023007392883, 631.666668236255646, 40.0, 40.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 362.555568397045135, 240.333326935768127, 40.0, 40.0 ],
 					"thickness" : 80.0
 				}
 
@@ -16526,8 +16511,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -17175,8 +17160,6 @@
 					"outlinecolor" : [ 0.923077, 0.0, 0.076923, 1.0 ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 801.00001984834671, 631.666668236255646, 40.0, 40.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 305.944454729557037, 240.333326935768127, 40.0, 40.0 ],
 					"thickness" : 80.0
 				}
 
@@ -17204,8 +17187,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -17853,8 +17836,6 @@
 					"outlinecolor" : [ 0.923077, 0.0, 0.076923, 1.0 ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 692.333349943161011, 631.666668236255646, 40.0, 40.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 249.333341062068939, 240.333326935768127, 40.0, 40.0 ],
 					"thickness" : 80.0
 				}
 
@@ -17882,8 +17863,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -18531,8 +18512,6 @@
 					"outlinecolor" : [ 0.923077, 0.0, 0.076923, 1.0 ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 593.000013649463654, 631.666668236255646, 40.0, 40.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 192.722227394580841, 240.333326935768127, 40.0, 40.0 ],
 					"thickness" : 80.0
 				}
 
@@ -18560,8 +18539,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -19209,8 +19188,6 @@
 					"outlinecolor" : [ 0.923077, 0.0, 0.076923, 1.0 ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 501.666677594184875, 631.666668236255646, 40.0, 40.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 136.111113727092743, 240.333326935768127, 40.0, 40.0 ],
 					"thickness" : 80.0
 				}
 
@@ -19238,8 +19215,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -19911,8 +19888,6 @@
 					"outlinecolor" : [ 0.923077, 0.0, 0.076923, 1.0 ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 413.666674971580505, 631.666668236255646, 40.0, 40.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 79.500000059604645, 240.333326935768127, 40.0, 40.0 ],
 					"thickness" : 80.0
 				}
 
@@ -19923,9 +19898,7 @@
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 397.166679501533508, 621.333341002464294, 775.666678190231323, 89.333332300186157 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 57.499996840953827, 207.999999701976776, 676.833330154418945, 83.333346486091614 ]
+					"patching_rect" : [ 397.166679501533508, 621.333341002464294, 775.666678190231323, 89.333332300186157 ]
 				}
 
 			}
@@ -19934,14 +19907,14 @@
 					"id" : "obj-37",
 					"maxclass" : "newobj",
 					"numinlets" : 4,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -19976,6 +19949,54 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-17",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "int", "bang" ],
+									"patching_rect" : [ 553.0, 491.0, 29.5, 22.0 ],
+									"text" : "t i b"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-10",
+									"index" : 3,
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 579.0, 606.0, 30.0, 30.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-5",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 549.166674971580505, 442.0, 96.0, 22.0 ],
+									"text" : "r #0midiChannel"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-51",
+									"maxclass" : "number",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 549.166674971580505, 545.400008678436279, 50.0, 22.0 ]
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-40",
 									"maxclass" : "newobj",
@@ -20031,7 +20052,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 170.0, 715.0, 50.0, 22.0 ],
-									"text" : "57 124"
+									"text" : "65 127"
 								}
 
 							}
@@ -20271,7 +20292,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 129.0, 318.333338856697083, 50.0, 22.0 ],
-									"text" : "57."
+									"text" : "65."
 								}
 
 							}
@@ -20508,6 +20529,20 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-24", 0 ],
+									"source" : [ "obj-17", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-51", 0 ],
+									"source" : [ "obj-17", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-64", 0 ],
 									"source" : [ "obj-20", 0 ]
 								}
@@ -20663,6 +20698,20 @@
 								"patchline" : 								{
 									"destination" : [ "obj-56", 0 ],
 									"source" : [ "obj-48", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-17", 0 ],
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-10", 0 ],
+									"source" : [ "obj-51", 0 ]
 								}
 
 							}
@@ -21057,8 +21106,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -21735,8 +21784,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -22413,8 +22462,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -23091,8 +23140,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -23769,8 +23818,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -24447,8 +24496,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -25125,8 +25174,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -25803,8 +25852,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -26464,8 +26513,6 @@
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 55.0, -46.666660792465223, 18.0, 282.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 22.666668355464935, 89.0, 18.0, 282.0 ],
 					"shape" : 1,
 					"size" : 4,
 					"value" : 1
@@ -27695,6 +27742,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-201", 0 ],
+					"source" : [ "obj-167", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-155", 0 ],
 					"source" : [ "obj-168", 0 ]
 				}
@@ -27854,7 +27908,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-37", 1 ],
+					"destination" : [ "obj-109", 1 ],
 					"order" : 0,
 					"source" : [ "obj-185", 0 ]
 				}
@@ -27862,8 +27916,24 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
+					"destination" : [ "obj-37", 1 ],
+					"order" : 2,
+					"source" : [ "obj-185", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-45", 1 ],
 					"order" : 1,
+					"source" : [ "obj-185", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"order" : 3,
 					"source" : [ "obj-185", 0 ]
 				}
 
@@ -27926,6 +27996,29 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-167", 0 ],
+					"source" : [ "obj-199", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-218", 0 ],
+					"order" : 0,
+					"source" : [ "obj-199", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-221", 0 ],
+					"order" : 1,
+					"source" : [ "obj-199", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-2", 0 ]
 				}
@@ -27935,6 +28028,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-28", 0 ],
 					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-116", 6 ],
+					"source" : [ "obj-203", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-58", 6 ],
+					"source" : [ "obj-204", 0 ]
 				}
 
 			}
@@ -28010,6 +28117,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-201", 0 ],
+					"source" : [ "obj-218", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-168", 0 ],
 					"source" : [ "obj-22", 1 ]
 				}
@@ -28024,6 +28138,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-167", 0 ],
+					"source" : [ "obj-221", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-227", 1 ],
 					"source" : [ "obj-226", 0 ]
 				}
@@ -28032,15 +28153,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-237", 0 ],
-					"order" : 1,
-					"source" : [ "obj-227", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-45", 1 ],
-					"order" : 0,
 					"source" : [ "obj-227", 0 ]
 				}
 
@@ -28131,16 +28243,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-109", 1 ],
-					"order" : 0,
-					"source" : [ "obj-243", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-253", 0 ],
-					"order" : 1,
 					"source" : [ "obj-243", 0 ]
 				}
 
@@ -28156,6 +28259,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-243", 2 ],
 					"source" : [ "obj-245", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-199", 0 ],
+					"source" : [ "obj-25", 0 ]
 				}
 
 			}
@@ -28212,6 +28322,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-254", 0 ],
 					"source" : [ "obj-253", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-256", 0 ],
+					"source" : [ "obj-255", 0 ]
 				}
 
 			}
@@ -28593,6 +28710,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-88", 6 ],
+					"source" : [ "obj-37", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-88", 0 ],
 					"order" : 0,
 					"source" : [ "obj-37", 0 ]
@@ -28904,13 +29028,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-37", 1 ],
 					"source" : [ "obj-50", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-88", 6 ],
-					"source" : [ "obj-51", 0 ]
 				}
 
 			}
