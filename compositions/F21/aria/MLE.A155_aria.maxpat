@@ -40,6 +40,30 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"args" : [ "global", 5 ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-32",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "MLE.chat.maxpat",
+					"numinlets" : 4,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 231.0, 1155.0, 128.0, 128.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ -2.362384773942892, 204.600002527236938, 511.806840218755781, 256.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-256",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -93,7 +117,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 505.0, 229.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 423.540833824751303, 226.600002527236938, 150.0, 20.0 ],
+					"presentation_rect" : [ 510.267662191269437, 204.600002527236938, 150.0, 20.0 ],
 					"text" : "select sound:"
 				}
 
@@ -174,7 +198,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1602.0, -357.0, 100.0, 49.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 511.763061159727499, 212.100002527236938, 220.384299308061486, 49.0 ]
+					"presentation_rect" : [ 510.267662191269437, 226.600002527236938, 220.384299308061486, 49.0 ]
 				}
 
 			}
@@ -304,7 +328,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1356.448811675821162, 375.0, 174.0, 22.0 ],
-					"text" : "row 1 1 1 0 1 0 0 0 1"
+					"text" : "row 1 1 1 1 1 1 1 1 1"
 				}
 
 			}
@@ -358,7 +382,7 @@
 					"patching_rect" : [ 1134.877870619297028, -301.301352679729462, 150.0, 74.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 5,
-					"presentation_rect" : [ 800.000011920928955, 199.600002527236938, 150.0, 74.0 ],
+					"presentation_rect" : [ 785.000011920928955, 204.600002527236938, 150.0, 74.0 ],
 					"text" : "main\nbuild\nbridge\nclimax\noutro"
 				}
 
@@ -508,7 +532,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1036.000029027462006, 1256.0, 44.0, 20.0 ],
-					"text" : "127"
+					"text" : "124"
 				}
 
 			}
@@ -871,7 +895,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 123.0, 311.0, 50.0, 22.0 ],
-									"text" : "6 1 1"
+									"text" : "2 1 0"
 								}
 
 							}
@@ -2028,7 +2052,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 393.0, 173.0, 50.0, 22.0 ],
-									"text" : "4 53"
+									"text" : "1 31"
 								}
 
 							}
@@ -3689,7 +3713,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 642.465706706047058, -173.972590088844299, 50.0, 22.0 ],
-					"text" : "4 53"
+					"text" : "6 22"
 				}
 
 			}
@@ -3701,7 +3725,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 765.753368973731995, -206.849300026893616, 50.0, 22.0 ],
-					"text" : "1"
+					"text" : "4"
 				}
 
 			}
@@ -4075,7 +4099,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 590.25, 781.0, 115.0, 22.0 ],
-									"text" : "-1 2 5 2 4 5 6"
+									"text" : "-1 2"
 								}
 
 							}
@@ -5167,7 +5191,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 590.25, 781.0, 115.0, 22.0 ],
-									"text" : "-1 2 5 2 4 5 6"
+									"text" : "-1 2"
 								}
 
 							}
@@ -6198,13 +6222,13 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-27",
-									"linecount" : 8,
+									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 413.0, 780.0, 18.0, 35.0 ],
-									"text" : "-1 2 5 2 4 5 6"
+									"text" : "-1 2"
 								}
 
 							}
@@ -6276,7 +6300,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 635.25, 826.0, 115.0, 22.0 ],
-									"text" : "-1 2 5 2 4 5 6"
+									"text" : "-1 2"
 								}
 
 							}
@@ -7278,7 +7302,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 262.0, 367.0, 50.0, 22.0 ],
-									"text" : "1"
+									"text" : "4"
 								}
 
 							}
@@ -8050,7 +8074,7 @@
 					"patching_rect" : [ 108.0, 566.0, 44.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 584.0, 112.16666841506958, 50.666666984558105, 20.0 ],
-					"text" : "122 0",
+					"text" : "41 0",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -20044,7 +20068,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 170.0, 715.0, 50.0, 22.0 ],
-									"text" : "122 0"
+									"text" : "41 0"
 								}
 
 							}
@@ -20284,7 +20308,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 129.0, 318.333338856697083, 50.0, 22.0 ],
-									"text" : "62."
+									"text" : "40."
 								}
 
 							}
@@ -26507,7 +26531,7 @@
 					"patching_rect" : [ 55.0, -46.666660792465223, 18.0, 282.0 ],
 					"shape" : 1,
 					"size" : 4,
-					"value" : 1
+					"value" : 0
 				}
 
 			}
@@ -29653,6 +29677,27 @@
 				"name" : "MLE.swing.maxpat",
 				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
 				"patcherrelativepath" : "../../../patchers/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.chat.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/network",
+				"patcherrelativepath" : "../../../patchers/network",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mle.UDPsend.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/network",
+				"patcherrelativepath" : "../../../patchers/network",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mle.UDPreceive.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/network",
+				"patcherrelativepath" : "../../../patchers/network",
 				"type" : "JSON",
 				"implicit" : 1
 			}
