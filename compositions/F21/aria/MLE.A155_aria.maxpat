@@ -40,6 +40,59 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-258",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 149.0, -178.0, 77.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 749.0, 114.500002086162567, 77.0, 20.0 ],
+					"text" : "current scale"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-219",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 232.0, -178.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 832.0, 114.500002086162567, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-213",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 263.0, -178.0, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 862.0, 114.500002086162567, 93.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-51",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 247.0, -231.506832793689739, 104.0, 35.0 ],
+					"text" : "MLE.UDPreceive customScale"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"args" : [ "global", 5 ],
 					"bgmode" : 0,
 					"border" : 0,
@@ -357,18 +410,6 @@
 					"presentation_linecount" : 4,
 					"presentation_rect" : [ 871.600022554397583, 16.5, 221.0, 87.0 ],
 					"text" : "simple\nfaster, syncopated\nperc synth / occasional\nchaos"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-146",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 845.600012600421906, 355.200005292892456, 150.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 744.000022172927856, 122.40000182390213, 150.0, 20.0 ]
 				}
 
 			}
@@ -29044,6 +29085,22 @@
 				"patchline" : 				{
 					"destination" : [ "obj-37", 1 ],
 					"source" : [ "obj-50", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-213", 1 ],
+					"order" : 0,
+					"source" : [ "obj-51", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-219", 0 ],
+					"order" : 1,
+					"source" : [ "obj-51", 0 ]
 				}
 
 			}
