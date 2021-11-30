@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 11,
+			"minor" : 2,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 297.0, 327.0, 707.0, 181.0 ],
+		"rect" : [ 84.0, 111.0, 707.0, 181.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -47,6 +47,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-24",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "MidiMonitor.maxpat",
 					"numinlets" : 0,
@@ -135,7 +136,8 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 641.0, 211.0, 183.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 232.0, 182.0, 183.0, 22.0 ]
+					"presentation_rect" : [ 232.0, 182.0, 183.0, 22.0 ],
+					"text" : "100 12 8"
 				}
 
 			}
@@ -568,6 +570,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-9",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "MLE.3bandEQ.maxpat",
 					"numinlets" : 4,
@@ -667,8 +670,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -982,8 +985,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1255,8 +1258,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1779,6 +1782,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-73",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "komp.maxpat",
 					"numinlets" : 10,
@@ -2517,7 +2521,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Ians_MIDI_mapping",
+				"name" : "Ian_nanoKEY",
 				"bootpath" : "/Users/famle/CML/MLE/patchers/midi",
 				"patcherrelativepath" : "./patchers/midi",
 				"type" : "TEXT",
