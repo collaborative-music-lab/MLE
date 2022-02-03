@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"comment" : "",
+					"id" : "obj-1",
+					"index" : 3,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 696.0, 759.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-2",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -183,11 +195,11 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "MLE.beatClient2.maxpat",
-					"numinlets" : 6,
-					"numoutlets" : 4,
+					"name" : "MLE.beatLink.maxpat",
+					"numinlets" : 3,
+					"numoutlets" : 3,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "", "", "", "" ],
+					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 257.5, 432.0, 128.0, 128.0 ],
 					"varname" : "mleBeatFunction",
 					"viewvisibility" : 1
@@ -226,7 +238,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 356.0, 822.0, 102.0, 22.0 ],
-					"text" : "2 5 100"
+					"text" : "1 2 100"
 				}
 
 			}
@@ -273,7 +285,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 81.500003933906555, 801.5, 30.0, 30.0 ]
+					"patching_rect" : [ 164.25, 742.5, 30.0, 30.0 ]
 				}
 
 			}
@@ -285,7 +297,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 136.25, 801.5, 30.0, 30.0 ]
+					"patching_rect" : [ 419.25, 727.5, 30.0, 30.0 ]
 				}
 
 			}
@@ -352,7 +364,24 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-90", 0 ],
+					"order" : 1,
+					"source" : [ "obj-78", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-91", 0 ],
+					"order" : 0,
+					"source" : [ "obj-78", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-98", 2 ],
+					"order" : 1,
 					"source" : [ "obj-78", 2 ]
 				}
 
@@ -367,6 +396,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-98", 0 ],
+					"order" : 0,
 					"source" : [ "obj-78", 0 ]
 				}
 
