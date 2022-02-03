@@ -42,7 +42,7 @@
 				"box" : 				{
 					"fontsize" : 24.0,
 					"id" : "obj-40",
-					"items" : [ "client", ",", "link" ],
+					"items" : [ "client", ",", "link", ",", "transmit" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -82,7 +82,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 652.0, 240.0, 150.0, 20.0 ],
+					"patching_rect" : [ 1032.5, 320.0, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 243.0, 211.0, 150.0, 20.0 ],
 					"text" : "sync msg"
@@ -95,7 +95,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 585.0, 232.0, 42.0, 20.0 ],
+					"patching_rect" : [ 965.5, 312.0, 42.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 174.5, 179.0, 42.0, 20.0 ],
 					"text" : "tempo"
@@ -108,7 +108,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 531.0, 232.0, 38.0, 20.0 ],
+					"patching_rect" : [ 911.5, 312.0, 38.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 120.5, 179.0, 38.0, 20.0 ],
 					"text" : "beat"
@@ -123,7 +123,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 585.0, 211.0, 50.0, 22.0 ],
+					"patching_rect" : [ 965.5, 291.0, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 174.5, 158.0, 50.0, 22.0 ]
 				}
@@ -137,7 +137,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 532.0, 211.0, 50.0, 22.0 ],
+					"patching_rect" : [ 912.5, 291.0, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 121.5, 158.0, 50.0, 22.0 ]
 				}
@@ -150,7 +150,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 641.0, 211.0, 183.0, 22.0 ],
+					"patching_rect" : [ 1021.5, 291.0, 183.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 232.0, 182.0, 183.0, 22.0 ],
 					"text" : "100 12 8"
@@ -206,7 +206,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 534.0, 165.0, 87.0, 35.0 ],
+					"patching_rect" : [ 914.5, 245.0, 87.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 121.5, 127.5, 93.0, 22.0 ],
 					"text" : "MLE.beatSync2"
@@ -538,10 +538,10 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1052.0, 816.0, 280.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 1057, 45, 1440, 407 ],
+						"client_rect" : [ 4, 44, 358, 172 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
-						"storage_rect" : [ 583, 69, 1034, 197 ]
+						"storage_rect" : [ 365, 44, 816, 172 ]
 					}
 ,
 					"text" : "pattrstorage MLEmaster @greedy 1 @savemode 0",
@@ -2274,7 +2274,7 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-28::obj-78::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
+			"obj-28::obj-78::obj-1::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -2424,6 +2424,13 @@
 			}
 , 			{
 				"name" : "MLE.beatSync2.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/network",
+				"patcherrelativepath" : "./patchers/network",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.clockTransmit.maxpat",
 				"bootpath" : "/Users/famle/CML/MLE/patchers/network",
 				"patcherrelativepath" : "./patchers/network",
 				"type" : "JSON",
