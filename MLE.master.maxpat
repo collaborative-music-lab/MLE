@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 84.0, 111.0, 707.0, 181.0 ],
+		"rect" : [ 84.0, 111.0, 707.0, 206.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,7 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontsize" : 24.0,
 					"id" : "obj-40",
 					"items" : [ "client", ",", "link" ],
 					"maxclass" : "umenu",
@@ -47,7 +48,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 874.0, 196.0, 100.0, 22.0 ]
+					"patching_rect" : [ 874.0, 196.0, 100.0, 35.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 4.5, 156.0, 100.0, 35.0 ]
 				}
 
 			}
@@ -94,7 +97,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 585.0, 232.0, 42.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 176.0, 203.0, 42.0, 20.0 ],
+					"presentation_rect" : [ 174.5, 179.0, 42.0, 20.0 ],
 					"text" : "tempo"
 				}
 
@@ -107,7 +110,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 531.0, 232.0, 38.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 122.0, 203.0, 38.0, 20.0 ],
+					"presentation_rect" : [ 120.5, 179.0, 38.0, 20.0 ],
 					"text" : "beat"
 				}
 
@@ -122,7 +125,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 585.0, 211.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 176.0, 182.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 174.5, 158.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -136,7 +139,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 532.0, 211.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 123.0, 182.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 121.5, 158.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -165,9 +168,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 565.0, 52.0, 84.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ -2.0, 103.0, 84.0, 47.0 ],
-					"text" : "Sync Latency"
+					"presentation_rect" : [ 0.5, 125.0, 115.0, 27.0 ],
+					"text" : "Sync Mode"
 				}
 
 			}
@@ -198,42 +200,14 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-41",
-					"maxclass" : "number",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 534.0, 128.0, 50.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 83.5, 123.0, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-39",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 585.0, 128.0, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 87.5, 151.5, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-28",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
+					"numinlets" : 7,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 534.0, 165.0, 87.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 123.0, 151.5, 87.0, 22.0 ],
+					"presentation_rect" : [ 121.5, 127.5, 87.0, 22.0 ],
 					"text" : "MLE.beatSync"
 				}
 
@@ -563,10 +537,10 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1052.0, 816.0, 280.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 4, 44, 358, 172 ],
+						"client_rect" : [ 1057, 45, 1440, 407 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
-						"storage_rect" : [ 365, 44, 816, 172 ]
+						"storage_rect" : [ 583, 69, 1034, 197 ]
 					}
 ,
 					"text" : "pattrstorage MLEmaster @greedy 1 @savemode 0",
@@ -1934,23 +1908,6 @@
 				}
 
 			}
-, 			{
-				"box" : 				{
-					"fontname" : "Courier New",
-					"fontsize" : 18.0,
-					"id" : "obj-46",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 410.0, 157.0, 84.0, 47.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ -2.0, 140.0, 97.0, 47.0 ],
-					"text" : "Sync Enable"
-				}
-
-			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
@@ -2123,6 +2080,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-49", 0 ],
+					"source" : [ "obj-28", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
 					"source" : [ "obj-29", 0 ]
 				}
@@ -2174,20 +2138,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-28", 0 ],
 					"source" : [ "obj-40", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-41", 0 ],
-					"source" : [ "obj-42", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-39", 0 ],
-					"source" : [ "obj-43", 0 ]
 				}
 
 			}
@@ -2329,14 +2279,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"parameterbanks" : 			{
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
 		"dependency_cache" : [ 			{
 				"name" : "komp.maxpat",
 				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/effects/kompressor/lib",
@@ -2478,14 +2420,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "MLE.beatSync2.maxpat",
-				"bootpath" : "/Users/famle/CML/MLE/patchers/network",
-				"patcherrelativepath" : "./patchers/network",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "MLE.beatClient2.maxpat",
+				"name" : "MLE.beatSync.maxpat",
 				"bootpath" : "/Users/famle/CML/MLE/patchers/network",
 				"patcherrelativepath" : "./patchers/network",
 				"type" : "JSON",
