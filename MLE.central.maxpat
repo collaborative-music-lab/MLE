@@ -83,8 +83,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1032.5, 320.0, 150.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 243.0, 211.0, 150.0, 20.0 ],
 					"text" : "sync msg"
 				}
 
@@ -151,8 +149,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1021.5, 291.0, 183.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 232.0, 182.0, 183.0, 22.0 ],
 					"text" : "100 12 8"
 				}
 
@@ -204,8 +200,8 @@
 					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 914.5, 245.0, 87.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 121.5, 127.5, 93.0, 22.0 ],
@@ -614,7 +610,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ -2.0, 1.0, 73.0, 47.0 ],
-					"text" : "Master\nVolume"
+					"text" : "Output\nVolume"
 				}
 
 			}
@@ -2076,6 +2072,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-47", 0 ],
 					"source" : [ "obj-28", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-49", 0 ],
+					"source" : [ "obj-28", 1 ]
 				}
 
 			}
