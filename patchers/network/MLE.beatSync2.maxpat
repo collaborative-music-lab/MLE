@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 434.0, 137.0, 110.0, 22.0 ],
+					"text" : "MLE.clockTransmit"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-97",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -58,7 +70,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 148.0, 364.0, 49.0, 22.0 ],
-					"text" : "100 4 8"
+					"text" : "100 4 2"
 				}
 
 			}
@@ -81,7 +93,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 329.0, 78.0, 58.0, 22.0 ],
+					"patching_rect" : [ 136.25, 91.0, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -90,11 +102,11 @@
 				"box" : 				{
 					"id" : "obj-92",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 3,
-					"outlettype" : [ "bang", "bang", "" ],
-					"patching_rect" : [ 206.0, 91.0, 77.0, 22.0 ],
-					"text" : "sel link client"
+					"numinlets" : 4,
+					"numoutlets" : 4,
+					"outlettype" : [ "bang", "bang", "bang", "" ],
+					"patching_rect" : [ 206.0, 91.0, 123.0, 22.0 ],
+					"text" : "sel link client transmit"
 				}
 
 			}
@@ -144,7 +156,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 201.0, 136.0, 97.0, 22.0 ],
-					"text" : "MLE.beatClient2"
+					"text" : "MLE.beatClient3"
 				}
 
 			}
@@ -214,7 +226,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 356.0, 822.0, 102.0, 22.0 ],
-					"text" : "3 48 124"
+					"text" : "2 5 100"
 				}
 
 			}
@@ -291,6 +303,13 @@
 					"destination" : [ "obj-99", 0 ],
 					"order" : 1,
 					"source" : [ "obj-100", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-94", 0 ],
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -377,6 +396,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-92", 0 ],
 					"source" : [ "obj-89", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-92", 2 ]
 				}
 
 			}
