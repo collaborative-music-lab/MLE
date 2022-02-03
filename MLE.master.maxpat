@@ -40,6 +40,19 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-40",
+					"items" : [ "client", ",", "link" ],
+					"maxclass" : "umenu",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 874.0, 196.0, 100.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -215,9 +228,9 @@
 				"box" : 				{
 					"id" : "obj-28",
 					"maxclass" : "newobj",
-					"numinlets" : 5,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "int", "", "" ],
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 534.0, 165.0, 87.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 123.0, 151.5, 87.0, 22.0 ],
@@ -2103,22 +2116,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-37", 1 ],
-					"source" : [ "obj-28", 3 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-47", 0 ],
 					"source" : [ "obj-28", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-49", 0 ],
-					"source" : [ "obj-28", 2 ]
 				}
 
 			}
@@ -2173,15 +2172,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-28", 1 ],
-					"source" : [ "obj-39", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-28", 0 ],
-					"source" : [ "obj-41", 0 ]
+					"source" : [ "obj-40", 1 ]
 				}
 
 			}
@@ -2338,7 +2330,6 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-124::obj-2::obj-7::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -2368,7 +2359,21 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "MLE.UDPsend.maxpat",
+				"name" : "init.maxpat",
+				"bootpath" : "~/Documents/github/heath-interactive/heath-interactive/casa-stairs/roots/utilities",
+				"patcherrelativepath" : "../../../ianhattwick/Documents/github/heath-interactive/heath-interactive/casa-stairs/roots/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.init.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "./patchers/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.UDPreceive.maxpat",
 				"bootpath" : "/Users/famle/CML/MLE/patchers/network",
 				"patcherrelativepath" : "./patchers/network",
 				"type" : "JSON",
@@ -2382,45 +2387,17 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "MLE.UDPreceive.maxpat",
-				"bootpath" : "/Users/famle/CML/MLE/patchers/network",
-				"patcherrelativepath" : "./patchers/network",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "MLE.beatLink.maxpat",
-				"bootpath" : "/Users/famle/CML/MLE/patchers/network",
-				"patcherrelativepath" : "./patchers/network",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "init.maxpat",
-				"bootpath" : "~/Documents/github/heath-interactive/heath-interactive/casa-stairs/roots/utilities",
-				"patcherrelativepath" : "../../../ianhattwick/Documents/github/heath-interactive/heath-interactive/casa-stairs/roots/utilities",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "MLE.swing.maxpat",
-				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
-				"patcherrelativepath" : "./patchers/utilities",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "MLE.init.maxpat",
-				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
-				"patcherrelativepath" : "./patchers/utilities",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "mle_network_manager.js",
 				"bootpath" : "/Users/famle/CML/MLE/code",
 				"patcherrelativepath" : "./code",
 				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.UDPsend.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/network",
+				"patcherrelativepath" : "./patchers/network",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
@@ -2501,9 +2478,16 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "MLE.beatSync.maxpat",
-				"bootpath" : "/Users/famle/CML/MLE/patchers/sandbox",
-				"patcherrelativepath" : "./patchers/sandbox",
+				"name" : "MLE.beatSync2.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/network",
+				"patcherrelativepath" : "./patchers/network",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.beatClient2.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/network",
+				"patcherrelativepath" : "./patchers/network",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -2519,17 +2503,6 @@
 				"bootpath" : "C74:/help/resources",
 				"type" : "TEXT",
 				"implicit" : 1
-			}
-, 			{
-				"name" : "Ian_nanoKEY",
-				"bootpath" : "/Users/famle/CML/MLE/patchers/midi",
-				"patcherrelativepath" : "./patchers/midi",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "link.phasor~.mxo",
-				"type" : "iLaX"
 			}
 , 			{
 				"name" : "shell.mxo",
