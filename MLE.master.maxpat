@@ -201,14 +201,15 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-28",
+					"linecount" : 2,
 					"maxclass" : "newobj",
-					"numinlets" : 7,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 534.0, 165.0, 87.0, 22.0 ],
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 534.0, 165.0, 87.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 121.5, 127.5, 87.0, 22.0 ],
-					"text" : "MLE.beatSync"
+					"presentation_rect" : [ 121.5, 127.5, 93.0, 22.0 ],
+					"text" : "MLE.beatSync2"
 				}
 
 			}
@@ -2080,13 +2081,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-49", 0 ],
-					"source" : [ "obj-28", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
 					"source" : [ "obj-29", 0 ]
 				}
@@ -2279,6 +2273,15 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-28::obj-78::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
+			"parameterbanks" : 			{
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
 		"dependency_cache" : [ 			{
 				"name" : "komp.maxpat",
 				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/effects/kompressor/lib",
@@ -2420,9 +2423,23 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "MLE.beatSync.maxpat",
+				"name" : "MLE.beatSync2.maxpat",
 				"bootpath" : "/Users/famle/CML/MLE/patchers/network",
 				"patcherrelativepath" : "./patchers/network",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.beatLink.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/network",
+				"patcherrelativepath" : "./patchers/network",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MLE.swing.maxpat",
+				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
+				"patcherrelativepath" : "./patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -2441,6 +2458,10 @@
 			}
 , 			{
 				"name" : "shell.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "link.phasor~.mxo",
 				"type" : "iLaX"
 			}
  ],
