@@ -40,6 +40,57 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-50",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 892.0, 384.0, 71.0, 22.0 ],
+					"text" : "pak 100 4 4"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-69",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 892.0, 420.0, 116.0, 22.0 ],
+					"text" : "s localClockSettings"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-48",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 957.5, 342.0, 38.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 144.5, 173.5, 38.0, 20.0 ],
+					"text" : "div"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-46",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1009.0, 321.0, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 181.0, 149.5, 33.0, 22.0 ],
+					"triangle" : 0
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontsize" : 24.0,
 					"id" : "obj-40",
 					"items" : [ "client", ",", "link", ",", "transmit" ],
@@ -50,7 +101,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 874.0, 196.0, 100.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.5, 156.0, 100.0, 35.0 ]
+					"presentation_rect" : [ 1.5, 143.0, 100.0, 35.0 ]
 				}
 
 			}
@@ -82,7 +133,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1032.5, 320.0, 150.0, 20.0 ],
+					"patching_rect" : [ 1087.5, 350.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 8.0, 189.0, 150.0, 20.0 ],
 					"text" : "sync msg"
 				}
 
@@ -93,9 +146,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 965.5, 312.0, 42.0, 20.0 ],
+					"patching_rect" : [ 1009.0, 342.0, 42.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 174.5, 179.0, 42.0, 20.0 ],
+					"presentation_rect" : [ 174.5, 173.5, 42.0, 20.0 ],
 					"text" : "tempo"
 				}
 
@@ -106,9 +159,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 911.5, 312.0, 38.0, 20.0 ],
+					"patching_rect" : [ 897.5, 342.0, 38.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 120.5, 179.0, 38.0, 20.0 ],
+					"presentation_rect" : [ 108.5, 173.5, 38.0, 20.0 ],
 					"text" : "beat"
 				}
 
@@ -121,9 +174,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 965.5, 291.0, 50.0, 22.0 ],
+					"patching_rect" : [ 951.5, 321.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 174.5, 158.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 144.5, 149.5, 34.0, 22.0 ]
 				}
 
 			}
@@ -135,9 +188,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 912.5, 291.0, 50.0, 22.0 ],
+					"patching_rect" : [ 897.5, 315.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 121.5, 158.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 108.5, 149.5, 34.0, 22.0 ]
 				}
 
 			}
@@ -148,7 +201,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1021.5, 291.0, 183.0, 22.0 ],
+					"patching_rect" : [ 1076.5, 321.0, 183.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 70.0, 189.0, 183.0, 22.0 ],
 					"text" : "100 12 8"
 				}
 
@@ -164,7 +219,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 565.0, 52.0, 84.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.5, 125.0, 115.0, 27.0 ],
+					"presentation_rect" : [ 1.5, 114.0, 115.0, 27.0 ],
 					"text" : "Sync Mode"
 				}
 
@@ -197,14 +252,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-28",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 914.5, 245.0, 87.0, 35.0 ],
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "link" ],
+					"patching_rect" : [ 914.5, 245.0, 110.5, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 121.5, 127.5, 93.0, 22.0 ],
+					"presentation_rect" : [ 121.5, 119.0, 93.0, 22.0 ],
 					"text" : "MLE.beatSync2"
 				}
 
@@ -2070,6 +2124,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"source" : [ "obj-28", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-46", 0 ],
+					"source" : [ "obj-28", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-47", 0 ],
 					"source" : [ "obj-28", 0 ]
 				}
@@ -2147,8 +2215,36 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-50", 0 ],
+					"source" : [ "obj-46", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-50", 1 ],
+					"source" : [ "obj-47", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-50", 2 ],
+					"source" : [ "obj-49", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-76", 0 ],
 					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-69", 0 ],
+					"source" : [ "obj-50", 0 ]
 				}
 
 			}
@@ -2276,15 +2372,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"obj-28::obj-78::obj-1::obj-46::obj-2" : [ "live.grid[10]", "live.grid", 0 ],
-			"parameterbanks" : 			{
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
 		"dependency_cache" : [ 			{
 				"name" : "komp.maxpat",
 				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/effects/kompressor/lib",
@@ -2433,23 +2520,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "MLE.clockTransmit.maxpat",
+				"name" : "MLE.beatClient3.maxpat",
 				"bootpath" : "/Users/famle/CML/MLE/patchers/network",
 				"patcherrelativepath" : "./patchers/network",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "MLE.beatLink.maxpat",
-				"bootpath" : "/Users/famle/CML/MLE/patchers/network",
-				"patcherrelativepath" : "./patchers/network",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "MLE.swing.maxpat",
-				"bootpath" : "/Users/famle/CML/MLE/patchers/utilities",
-				"patcherrelativepath" : "./patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -2470,10 +2543,6 @@
 				"name" : "shell.mxo",
 				"type" : "iLaX"
 			}
-, 			{
-				"name" : "link.phasor~.mxo",
-				"type" : "iLaX"
-			}
  ],
 		"autosave" : 0,
 		"styles" : [ 			{
@@ -2489,6 +2558,68 @@
 						"autogradient" : 0
 					}
 
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "dUG Yello 01-1",
+				"message" : 				{
+					"bgfillcolor" : 					{
+						"type" : "gradient",
+						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"color1" : [ 0.94902, 0.992157, 1.0, 1.0 ],
+						"color2" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+						"angle" : 270.0,
+						"proportion" : 0.39,
+						"autogradient" : 0
+					}
+,
+					"fontface" : [ 1 ],
+					"fontsize" : [ 10.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"default" : 				{
+					"bgfillcolor" : 					{
+						"type" : "gradient",
+						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"color1" : [ 0.94902, 0.992157, 1.0, 1.0 ],
+						"color2" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+						"angle" : 270.0,
+						"proportion" : 0.39,
+						"autogradient" : 0
+					}
+,
+					"fontface" : [ 1 ],
+					"fontsize" : [ 10.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 1.0, 0.941176, 0.803922, 1.0 ]
+				}
+,
+				"newobj" : 				{
+					"fontface" : [ 1 ],
+					"fontsize" : [ 10.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 1.0, 0.941176, 0.803922, 1.0 ]
+				}
+,
+				"button" : 				{
+					"bgcolor" : [ 1.0, 0.941176, 0.803922, 1.0 ]
+				}
+,
+				"toggle" : 				{
+					"bgcolor" : [ 1.0, 0.941176, 0.803922, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "tap",
+				"default" : 				{
+					"fontname" : [ "Lato Light" ]
 				}
 ,
 				"parentstyle" : "",

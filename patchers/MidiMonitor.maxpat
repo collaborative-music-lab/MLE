@@ -1971,7 +1971,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-128",
-					"items" : [ "AU DLS Synth 1", ",", "from Max 1", ",", "from Max 2", ",", "MPD218 Port A" ],
+					"items" : [ "AU DLS Synth 1", ",", "from Max 1", ",", "from Max 2" ],
 					"labelclick" : 1,
 					"maxclass" : "umenu",
 					"numinlets" : 1,
@@ -2453,14 +2453,15 @@
 			}
 , 			{
 				"box" : 				{
+					"fontsize" : 10.0,
 					"id" : "obj-117",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 58.0, 415.0, 50.0, 22.0 ],
+					"patching_rect" : [ 58.0, 415.0, 44.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 195.3499755859375, 137.0, 50.0, 22.0 ],
+					"presentation_rect" : [ 195.3499755859375, 137.0, 54.6500244140625, 20.0 ],
 					"text" : "15 0"
 				}
 
@@ -3962,14 +3963,15 @@
 			}
 , 			{
 				"box" : 				{
+					"fontsize" : 10.0,
 					"id" : "obj-74",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 329.75, 419.5, 50.0, 22.0 ],
+					"patching_rect" : [ 329.75, 419.5, 44.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 195.3499755859375, 115.0, 50.0, 22.0 ],
+					"presentation_rect" : [ 195.3499755859375, 115.0, 54.6500244140625, 20.0 ],
 					"text" : "1 29"
 				}
 
@@ -4004,7 +4006,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-33",
-					"items" : [ "to Max 1", ",", "to Max 2", ",", "MPD218 Port A" ],
+					"items" : [ "to Max 1", ",", "to Max 2" ],
 					"labelclick" : 1,
 					"maxclass" : "umenu",
 					"numinlets" : 1,
