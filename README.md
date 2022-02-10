@@ -4,6 +4,12 @@ Max/MSP Library for use by FaMLE, the MIT Laptop Ensemble
 ## Folder for Live Sets
 https://www.dropbox.com/sh/jpe638mpd37xcii/AADjzOvU68op9DzobxqvHql9a?dl=0
 
+### Plugins for Live
+We will start with a couple of plugins:
+[Tyrell N6](https://www.amazona.de/freeware-synthesizer-tyrell-n6-plugin-vst-au-win-mac/)
+- [manual](https://www.amazona.de/wp-content/uploads/2016/10/Tyrell-N6_v3.0.3898_manual_ENG_v1.1.pdf)
+Exact Lite
+
 ## Steps to get started with the MLE Library:
 1. Install Max 8. https://cycling74.com/downloads
 2. Choose a directory to store the MLE library (probably on your desktop or in your documents folder) and navigate there in the Terminal.
