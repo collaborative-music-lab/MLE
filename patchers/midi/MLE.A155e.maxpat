@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 133.0, 22.0, 997.0, 994.0 ],
+		"rect" : [ 641.0, 22.0, 997.0, 994.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -86,7 +86,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 442.0, 1197.0, 50.0, 22.0 ],
-					"text" : "58"
+					"text" : "106"
 				}
 
 			}
@@ -99,7 +99,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 86.0, 1072.0, 50.0, 35.0 ],
-					"text" : "seq1 14"
+					"text" : "seq1 33"
 				}
 
 			}
@@ -111,7 +111,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 214.0, 1176.0, 109.0, 22.0 ],
-					"text" : "36 58"
+					"text" : "69 106"
 				}
 
 			}
@@ -228,7 +228,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 345.0, 227.0, 51.0, 22.0 ],
-									"text" : "seq1 14"
+									"text" : "seq1 33"
 								}
 
 							}
@@ -289,7 +289,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 345.0, 934.0, 50.0, 22.0 ],
-									"text" : "36 58"
+									"text" : "69 106"
 								}
 
 							}
@@ -1883,7 +1883,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 919.0, -505.0, 50.0, 22.0 ],
-					"text" : "dial 5"
+					"text" : "dial 0"
 				}
 
 			}
@@ -2919,7 +2919,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1079.0, -49.0, 50.0, 22.0 ],
-					"text" : "5 107"
+					"text" : "0 99"
 				}
 
 			}
@@ -3219,13 +3219,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-321",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 600.0, -499.0, 50.0, 35.0 ],
-					"text" : "dial 5 107"
+					"patching_rect" : [ 600.0, -499.0, 50.0, 49.0 ],
+					"text" : "stepenable 0 0"
 				}
 
 			}
@@ -3727,7 +3727,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1213.0, -100.0, 50.0, 22.0 ],
-					"text" : "1 24"
+					"text" : "1 60"
 				}
 
 			}
@@ -3809,7 +3809,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 123.0, 311.0, 50.0, 22.0 ],
-									"text" : "7 1 0"
+									"text" : "0 1 0"
 								}
 
 							}
@@ -5634,7 +5634,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 262.0, 367.0, 50.0, 22.0 ],
-									"text" : "4"
+									"text" : "5"
 								}
 
 							}
@@ -6006,7 +6006,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 302.0, 322.0, 50.0, 22.0 ],
-									"text" : "1"
+									"text" : "0"
 								}
 
 							}
