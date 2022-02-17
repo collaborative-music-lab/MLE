@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 102.0, 157.0, 1216.0, 910.0 ],
+		"rect" : [ 73.0, 56.0, 1216.0, 910.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,23 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-27",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 156.5, 754.187220990657806, 56.0, 22.0 ],
+					"restore" : 					{
+						"subdivide" : [ 2 ]
+					}
+,
+					"text" : "autopattr",
+					"varname" : "u895006149"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-72",
 					"maxclass" : "message",
@@ -251,7 +268,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 826.0, 29.0, 50.0, 22.0 ],
-					"text" : "4"
+					"text" : "8"
 				}
 
 			}
@@ -453,7 +470,7 @@
 					"patching_rect" : [ 746.333348035812378, 63.0, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 37.499996840953827, 43.66667628288269, 50.0, 22.0 ],
-					"text" : "4"
+					"text" : "8"
 				}
 
 			}
@@ -622,7 +639,8 @@
 					"patching_rect" : [ 863.091353356838226, -64.999992728233337, 40.0, 40.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 30.999996840953827, 35.333318710327148, 40.0, 40.0 ],
-					"size" : 11.0
+					"size" : 11.0,
+					"varname" : "subdivide"
 				}
 
 			}
@@ -1392,9 +1410,9 @@
 					"patching_rect" : [ 103.499978899955636, 238.520561993122101, 100.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 633.254572719335442, 3.333333909511566, 69.5, 20.0 ],
-					"text" : "91 Off",
+					"text" : "89 Off",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"texton" : "91 On",
+					"texton" : "89 On",
 					"textoncolor" : [ 0.964705882352941, 0.780392156862745, 0.533333333333333, 1.0 ]
 				}
 
@@ -1413,9 +1431,9 @@
 					"patching_rect" : [ 210.499978899955636, 238.520561993122101, 100.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 519.393489390611876, 3.333333909511566, 69.5, 20.0 ],
-					"text" : "Velocity Off",
+					"text" : "Note Off",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"texton" : "Velocity On",
+					"texton" : "Note On",
 					"textoncolor" : [ 0.964705882352941, 0.780392156862745, 0.533333333333333, 1.0 ]
 				}
 
