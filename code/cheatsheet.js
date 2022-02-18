@@ -1,8 +1,3 @@
-/*
-Max/MSP JavaScript Cheat Sheet
-
-*/
-
 //SETUP
 autowatch = 1;
 inlets = 1;
@@ -38,6 +33,21 @@ function list()
 function msg_float(val){
 	var newFloat = val;
 }
+
+function msg_int(val){
+	var newInt = val;
+}
+
+function loadbang(){
+	var init = 0;
+}
+
+//a list that begins with a number. . .  and not a string for function name
+function list(a)
+  {
+    post("the list contains",arguments.length, "elements");
+  }
+
 
 //create two dimensional arrays
 //also check cellularAutomate for other approaches
