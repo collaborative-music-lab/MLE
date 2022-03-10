@@ -40,6 +40,17 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-61",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 81.0, 11.0, 150.0, 20.0 ],
+					"text" : "<- click to close window"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-89",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -1257,7 +1268,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 234.0, 483.5, 119.0, 62.0 ],
-									"text" : "port \"Launchpad Mini\""
+									"text" : "port \"Launch Control XL\""
 								}
 
 							}
@@ -2213,7 +2224,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-128",
-					"items" : [ "AU DLS Synth 1", ",", "from Max 1", ",", "from Max 2" ],
+					"items" : [ "AU DLS Synth 1", ",", "Launch Control XL", ",", "Launch Control XL HUI", ",", "from Max 1", ",", "from Max 2" ],
 					"labelclick" : 1,
 					"maxclass" : "umenu",
 					"numinlets" : 1,
@@ -2389,7 +2400,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 169.0, 410.0, 50.0, 22.0 ],
-									"text" : "8 0"
+									"text" : "1105 0"
 								}
 
 							}
@@ -2425,7 +2436,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 276.0, 66.0, 50.0, 22.0 ],
-									"text" : "96 0 1"
+									"text" : "105 0 1"
 								}
 
 							}
@@ -2704,7 +2715,7 @@
 					"patching_rect" : [ 58.0, 415.0, 44.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 195.3499755859375, 137.0, 54.6500244140625, 20.0 ],
-					"text" : "8 0"
+					"text" : "1105 0"
 				}
 
 			}
@@ -2833,7 +2844,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 234.0, 413.0, 50.0, 22.0 ],
-									"text" : "3 0"
+									"text" : "0 51"
 								}
 
 							}
@@ -2869,7 +2880,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 310.0, 63.0, 50.0, 22.0 ],
-									"text" : "0 107 1"
+									"text" : "51 13 1"
 								}
 
 							}
@@ -4214,7 +4225,7 @@
 					"patching_rect" : [ 329.75, 419.5, 44.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 195.3499755859375, 115.0, 54.6500244140625, 20.0 ],
-					"text" : "3 0"
+					"text" : "0 51"
 				}
 
 			}
@@ -4248,7 +4259,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-33",
-					"items" : [ "to Max 1", ",", "to Max 2", ",", "Launchpad Mini" ],
+					"items" : [ "Launch Control XL", ",", "Launch Control XL HUI", ",", "to Max 1", ",", "to Max 2" ],
 					"labelclick" : 1,
 					"maxclass" : "umenu",
 					"numinlets" : 1,
