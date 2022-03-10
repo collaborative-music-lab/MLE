@@ -4,9 +4,9 @@ inlets = 1;
 outlets = 3;
 
 //names of outlets
-var midiOutput = 0;
 var pattrOutput = 1;
-var sendOutput = 2;
+var sendOutput = 0;
+var sendOutput2 = 2;
 
 //variables to store sequence data
 var seqPrototype = {
@@ -24,7 +24,14 @@ var seqPrototype = {
 var seq = [seqPrototype, seqPrototype, seqPrototype];
 var subdivide_values = [32,16,8,6,4,3,2,1,"seq1","seq2","seq3"];
 
-var stepEnables = [0,0,0,0, 0,0,0,0];
+//objects to store MIDI controller state. Still TBD
+var midiState = {
+	'cc': {},
+	'note':{}
+};
+
+var note_values = new Array(128);
+var cc_values = new Array(128);
 
 //MIDI cc to parameter name mappings
 var midiMap = {
@@ -47,23 +54,15 @@ var midiMap = {
 	'channelVolume': 15
 }
 
+
 /********************************
  * YOUR SCRIPTS 
  *******************************/
 function loadbang(){
-	//load your mapping files automatically when this script is loaded 
 	loadMapping('midi', 'launchpadMIDI');
 	loadMapping('note', 'A155_launchControl_note');
 	loadMapping('cc', 'A155_launchControl_cc');
 	loadMapping('alt', 'A155_launchControl_alt');
-}
-
-function randomSteps(threshold){
-	//generate a random set of step enables
-	//threshold determines how likely it is that a step will be turned on
-	for(var i=0;i<8;i++){
-		setStepEnable(i,Math.random()<0.5);
-	}
 }
 
 function randomVals(seqNum, buttonState){
@@ -117,21 +116,21 @@ function freezeDelay(){
 	post(a);
 
 	if(a[1] > 0){ //on button down
-		outlet(midiOutput, 'cc', midiMap['delayFreeze'],127);
-		outlet(midiOutput, 'cc', midiMap['channelVolume'],0);
+		outlet(sendOutput, 'cc', midiMap['delayFreeze'],127);
+		outlet(sendOutput, 'cc', midiMap['channelVolume'],0);
 	} else {
-		outlet(midiOutput, 'cc', midiMap['delayFreeze'],0);
-		outlet(midiOutput, 'cc', midiMap['channelVolume'],100);
+		outlet(sendOutput, 'cc', midiMap['delayFreeze'],0);
+		outlet(sendOutput, 'cc', midiMap['channelVolume'],100);
 	}
 }
 
-//use CC to start and stop clock
 var clockState = 0;
 function enableClock(val){
 	if(val>0) {
-		clockState = (clockState == 0);
+		clockState = clockState == 0;
 		sendPattr("clockEnable", clockState); //sendPattr(target, val)
 	}
+
 }
 /********************************
  * BEAT
@@ -139,13 +138,11 @@ function enableClock(val){
 //beat is called for every step of each sequence. This allows you to create
 //functions which fire on specific steps, or every step
 
-//count how many 8 beat cycles have passed for each sequence
 var cycleCounter = [0,0,0];
 
 function beat( seqNum, step){
 	//seqnum indicates which sequence called beat()
 	//step is the current step of that sequence
-
 	if(step == 0) cycleCounter[seqNum] += 1;
 	if(seqNum == 0 && cycleCounter[seqNum] >= 8) {
 		cycleCounter[seqNum] = 0;
@@ -156,9 +153,12 @@ function beat( seqNum, step){
 	}
 	if( gatedRandomEnable[seqNum] > 0) { calcNewGateRandomValue(seqNum,step); }
 	
+	
+	//post(gatedRandomEnable,"\n");
+	//post("beat", seqNum,step, "\n");
 }
 
-/***** SAVE INCOMING DATA VALUES FROM SEQUENCERS ******/
+/***** SAVE DATA VALUES FOR SEQUENCERS ******/
 function dial( seqNum, num, val ){ post(seqNum,num,val);seq[ seqNum ].dial[num] = val;}
 	
 function valRange( seqNum, low, high ){ 
@@ -183,10 +183,8 @@ function StealCCnum(num, state){
 	if(state > 0) ccs_to_steal.push(num);
 	else ccs_to_steal = ccs_to_steal.filter(function(e) { return e !== num });
 	post(ccs_to_steal,"\n");
-	outlet(midiOutput, "stealCC", ccs_to_steal);
+	outlet(sendOutput, "stealCC", ccs_to_steal);
 }
-
-function stepEnable(num, val){ stepEnables[num] = val;}
 
 function note(num,val){ note_values[num] = val;}
 function cc(num,val){ cc_values[num] = val;}
@@ -197,24 +195,10 @@ function setDial(seqNum, num, val){
 	outlet(pattrOutput, val);
 }
 
-function setStepEnable(num, val){
-	outlet(sendOutput, "stepEnable", [num,val]);
-}
-
-function setValRange(seqNum, low, high){
-	sendPattr("seq"+seqNum+"::rangeHigh", high);
-	sendPattr("seq"+seqNum+"::rangeLow", low);
-}
-
-function setStepRange(seqNum, low, high){
-	sendPattr("seq"+seqNum+"::stepHigh", high);
-	sendPattr("seq"+seqNum+"::stepLow", low);
-}
-
 function sendPattr(target, val){
 	outlet(pattrOutput, ["send", target]);
 	outlet(pattrOutput, val);
 }
 
-function loadMapping(mappingtype, filename){ outlet(sendOutput, mappingtype + "Mapping", filename);}
+function loadMapping(mappingtype, filename){ outlet(sendOutput2, mappingtype + "Mapping", filename);}
   
