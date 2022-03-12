@@ -1,32 +1,31 @@
 //SETUP
-autowatch = 1;
-inlets = 1;
-outlets = 3;
+autowatch = 1; inlets = 1; outlets = 3;  
 
-//names of outlets
-var midiOutput = 0;
-var pattrOutput = 1;
-var sendOutput = 2;
+/************************************
+GLOBAL
+************************************/ 
+g = new Global("globular")
+g.output = function(outletNum, name, msg){ 
+	outlet(outletNum, name, msg )
+	// outMsg = [] 
+	// for(var i=0;i<msg.length;i++) outMsg.push(msg[i])
+	// 	post(outMsg, msg)
+	// outlet(outletNum, outMsg); 
+}
 
-//variables to store sequence data
-var seqPrototype = {
-	subdivide : 4,
-	dial: [0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0],
-	valRange : [0,127],
-	stepRange : [0,7],
-	destination : {
-		target : 'Note',
-		enable : 1
-	},
-	sync : 0
-}; 
+//dicts to store states of MIDI controller and sequencers
+var midiVals = new Dict("MIDI_values");
+var A155Vals = new Dict("A155_values");
 
-var seq = [seqPrototype, seqPrototype, seqPrototype];
-var subdivide_values = [32,16,8,6,4,3,2,1,"seq1","seq2","seq3"];
+//import basic scripting methods 
+var A155 = new Object()
+include("A155_framework.js", A155)
+A155.test()
 
-var stepEnables = [0,0,0,0, 0,0,0,0];
 
 //MIDI cc to parameter name mappings
+//feel free to change this for your purposes!
+//this is solely for convenience when mapping to ableton
 var midiMap = {
 	'osc1gain': 0,
 	'osc2gain': 1,
@@ -51,170 +50,156 @@ var midiMap = {
  * YOUR SCRIPTS 
  *******************************/
 function loadbang(){
-	//load your mapping files automatically when this script is loaded 
-	loadMapping('midi', 'launchpadMIDI');
-	loadMapping('note', 'A155_launchControl_note');
-	loadMapping('cc', 'A155_launchControl_cc');
-	loadMapping('alt', 'A155_launchControl_alt');
+	//this function is called when the Max patch is loaded
+	// - isn't called when a javascript file is resaved. . . 
+	//this examples loads your mapping files automatically when the patch is opened
+	A155.loadMapping('midi', 'launchControl');
+	A155.loadMapping('note', 'A155_launchControl_note');
+	A155.loadMapping('cc', 'A155_launchControl_cc');
+	A155.loadMapping('alt', 'A155_launchControl_alt');
+
+	//you could do any other setup here as well
+	//such as define the output destinations of the sequencer
+	//or starting values for sequencer parameters
+	A155.setSequence(1, [0,64,127,64,0,127,0,64])//(sequence number, [array of 8 values from 0-127])
+	A155.setValRange(1, 20,100) //(sequence number, minRange, maxRange)
 }
 
-function randomSteps(threshold){
+function randomSteps(buttonState){
 	//generate a random set of step enables
 	//threshold determines how likely it is that a step will be turned on
-	for(var i=0;i<8;i++){
-		setStepEnable(i,Math.random()<0.5);
+	threshold = 0.5
+
+	a = arrayfromargs(arguments) //contains all arguments
+	if (a.length > 1) threshold = a[1] 
+
+	if( buttonState > 0){
+		for(var i=0;i<8;i++){
+			A155.setStepEnable(i,Math.random()<threshold);
+		}
+	}
+}  
+
+function randomVals(buttonState, seqNum){
+	//sets all dials in a sequence to a random value
+	//optional min and max parameters
+	var min = 0
+	var max = 127
+	a = arrayfromargs(arguments) //contains all arguments
+	if (a.length > 2) min = a[2] 
+	if (a.length > 3) max = a[3] 
+ 
+	if(buttonState > 0) {
+		post("randomVals", seqNum, buttonState, min, max,"\n");
+		for(var i=0;i<8;i++) A155.setDial(seqNum, i, Math.random()*(max-min)+min);
+	}
+}    
+
+//lets recall some saved sequences
+//I'm going to use a range of 0-15 for convenience
+var mySeqs = [
+	[0,2,4,6, 8,10,12,14],
+	[0,2,4,2,3,5,7,5],
+	[0,15,3,12, 6,9,7,8],
+	[5,5,7,7, 0,0,9,9]
+];
+var mySeqNumber = 0;
+var mySubdivide = [2,4,1,"seq3"] //we'll also change subdivide per sequence
+function recallStoredSequences(buttonState){
+	if(buttonState>0){
+		var vals = [] 
+		for(var i=0;i<mySeqs[mySeqNumber].length;i++){
+			vals[i] = mySeqs[mySeqNumber][i] //have to copy arrays element by element in JS. . . 
+		 	vals[i] = vals[i]*8 //scale to 0-127
+		}
+		A155.setSequence(0,vals)
+		A155.setSubdivide(0,mySubdivide[mySeqNumber])
+		mySeqNumber += 1
+		if(mySeqNumber >= mySeqs.length) mySeqNumber = 0
 	}
 }
 
-function randomVals(seqNum, buttonState){
-	post("randomVals", seqNum, buttonState,"\n");
-	if(buttonState > 0) for(var i=0;i<8;i++) setDial(seqNum, i, Math.random()*127);
-}
-
-function sine_to_seq(seqNum, freq, amp, phase){
-	if(typeof(phase) == "undefined") phase = 0;
-	for(var i=0;i<8;i++) setDial(seqNum, i, Math.sin(freq*i + phase)*63*amp + 63);
+//this function uses a sine function to generate values for a sequence
+var phase = 0;
+function sine_to_seq(seqNum, freq, amp, _phase){
+	if(typeof(_phase) != "undefined") phase = _phase;
+	for(var i=0;i<8;i++) A155.setDial(seqNum, i, Math.sin(freq*i + phase)*63*amp + 63);
 } 
 
-//gated random
-var gatedRandomEnable = [0,0,0]; //make an array to activate for specific sequences
-var gatedRandomThresholdSource = [0,0,0]; //how do we determine the threshold
 
-function gatedRandomizer(seqNum, dialNum, buttonState){
-	post("gatedRand", seqNum, dialNum, buttonState, "\n");
-	gatedRandomEnable[seqNum] = buttonState;
-	gatedRandomThresholdSource[seqNum] = dialNum;
-	if(typeof(dialNum)=="string"){
-		var splitString = dialNum.split("_");
-		//if(splitString[0] == "cc") 
-			StealCCnum(splitString[1],buttonState);
-	}
-}
-
-function calcNewGateRandomValue(seqNum, step){
-	var currentVal = seq[seqNum].dial[step];
-	var newVal = Math.random() * 127;
-	var threshold = 0;
-	//post("type", typeof(gatedRandomThresholdSource[seqNum]), gatedRandomThresholdSource[seqNum],  "\n");
-	//a number for thrshold source is just a fixed threshold
-	if( typeof(gatedRandomThresholdSource[seqNum]) == "number" ) {threshold = gatedRandomThresholdSource[seqNum];}
-	//a string swill pull the threshold from an input source
-	else{
-		var splitString = gatedRandomThresholdSource[seqNum].split("_");
-		if( splitString[0] == "dial") threshold = seq[seqNum].dial[splitString[1]];
-		if( splitString[0] == "cc") threshold = cc_values[splitString[1]];
-		//else if( splitString[0] == "cc" threshold = seq[seqNum].)
-	}
-	post("threshold " + threshold, currentVal, newVal, "\n");
-	if(Math.abs(currentVal-newVal) < threshold) {
-		setDial(seqNum,step,newVal); 
-		seq[seqNum].dial[step] = newVal;
-	}
-}
-
-function freezeDelay(){
-	var a = arrayfromargs(messagename,arguments);
-	post(a);
-
-	if(a[1] > 0){ //on button down
-		outlet(midiOutput, 'cc', midiMap['delayFreeze'],127);
-		outlet(midiOutput, 'cc', midiMap['channelVolume'],0);
-	} else {
-		outlet(midiOutput, 'cc', midiMap['delayFreeze'],0);
-		outlet(midiOutput, 'cc', midiMap['channelVolume'],100);
-	}
-}
-
-//use CC to start and stop clock
+//use a midi note to start and stop clock
+//edit the A155_notein_mappings text file to say:
+// <noteNumber>, enableClock;
 var clockState = 0;
 function enableClock(val){
 	if(val>0) {
 		clockState = (clockState == 0);
-		sendPattr("clockEnable", clockState); //sendPattr(target, val)
+		A155.sendPattr("clockEnable", clockState); //sendPattr(target, val)
+		A155.sendPattr("seq2::stepLow", clockState*3); //sendPattr(target, val)
 	}
-}
+}  
+
+function envelope(val){
+	//this function is called by a cc message, defined in the cc_mappings text file
+	//we will map the value of this cc message to control an ADSR
+	//note we will use the midiMap variable defined on line 27 to keep track of the cc
+	//value mapped in Ableton. . .
+	if(val<64){
+		A155.sendMIDI('cc', midiMap.attack, 4)
+		A155.sendMIDI('cc', midiMap.decay, val/2 + 32) //32 to 64
+		A155.sendMIDI('cc', midiMap.sustain, 0)
+		A155.sendMIDI('cc', midiMap.release, val/2 + 32)
+	} else{
+		A155.sendMIDI('cc', midiMap.attack, val/2+4)
+		A155.sendMIDI('cc', midiMap.decay, val/2 + 64)
+		A155.sendMIDI('cc', midiMap.sustain, (val-64)*2 )
+		A155.sendMIDI('cc', midiMap.release, val/2 + 64)
+	}
+}  
+        
 /********************************
- * BEAT
+ * BEAT 
  *******************************/
 //beat is called for every step of each sequence. This allows you to create
 //functions which fire on specific steps, or every step
 
-//count how many 8 beat cycles have passed for each sequence
+//cycleCounter keeps track of how many cycles have passed for each sequence
 var cycleCounter = [0,0,0];
 
 function beat( seqNum, step){
 	//seqnum indicates which sequence called beat()
 	//step is the current step of that sequence
 
-	if(step == 0) cycleCounter[seqNum] += 1;
-	if(seqNum == 0 && cycleCounter[seqNum] >= 8) {
+	//cycleCounter updates everytime we hit the last step of our cycle
+	curStepRange = A155.getStepRange(seqNum) //get the current step range for this sequence
+	if(step == curStepRange[1] ) cycleCounter[seqNum] += 1; //increment on last step
+	if(seqNum == 0 && cycleCounter[seqNum] >= 8) { //reset cycle counter after 8 cycles. . . or ???
 		cycleCounter[seqNum] = 0;
 		//randomVals(seqNum, 1);
 	}
-	if(seqNum == 1 && step == 0) {
-		//sine_to_seq(seqNum, 1.56,1, cycleCounter[seqNum]/4.);
+
+	//update sequence 1's values every cycle
+	if(seqNum == 1 && step == curStepRange[1] ) {
+		//sine_to_seq(seqNum, 1.56,1, cycleCounter[seqNum]/1.); //seqNum, freq, amplitude, phase
+
+		//alternatively we could use a cc to set the frequency like this:
+		//sine_to_seq(seqNum, A155.getMidiVal('cc',0)/32 ,1 , cycleCounter[seqNum]/1.);
+		//note this cc is probably used to control another parameter. We can 'steal' it
+		//so it only is used  for this purpose by doing:   
+		//A155.stealCCnum(0,1) //CCnumber, enable/disable stealing
+
+		//but now it can't be used for any other purpose! How about if we use a button to enable stealing?
+		if(A155.getMidiVal('note',1105) > 0){
+			sine_to_seq(seqNum, A155.getMidiVal('cc',0)/32 ,1 , cycleCounter[seqNum]/1.);
+			A155.stealCCnum(0,1)  //enable cc stealing
+		} else( A155.stealCCnum(0,0) ) //disable cc stealing
 	}
-	if( gatedRandomEnable[seqNum] > 0) { calcNewGateRandomValue(seqNum,step); }
-	
 }
 
-/***** SAVE INCOMING DATA VALUES FROM SEQUENCERS ******/
-function dial( seqNum, num, val ){ post(seqNum,num,val);seq[ seqNum ].dial[num] = val;}
-	
-function valRange( seqNum, low, high ){ 
-	seq[ seqNum ].valRange[0] = low;
-	seq[ seqNum ].valRange[1] = high;
-}
-function stepRange( seqNum, low, high ){ 
-	seq[ seqNum ].stepRange[0] = low;
-	seq[ seqNum ].stepRange[1] = high;
-}
-function sync( num, state ){ seq[num].sync = state; }
-function subdivide( num, val ){ seq[num].subdivide = val; }
-
-function printSeq(num){
-	post("seq " , num, "\n");
-	post(seq[num].dial, "\n")
-	post(seq[num].valRange, seq[num].stepRange, "\n")
-}
-
-var ccs_to_steal = [-1];
-function StealCCnum(num, state){
-	if(state > 0) ccs_to_steal.push(num);
-	else ccs_to_steal = ccs_to_steal.filter(function(e) { return e !== num });
-	post(ccs_to_steal,"\n");
-	outlet(midiOutput, "stealCC", ccs_to_steal);
-}
-
-function stepEnable(num, val){ stepEnables[num] = val;}
-
-function note(num,val){ note_values[num] = val;}
-function cc(num,val){ cc_values[num] = val;}
-	
-/***** OUTPUT DATA VALUES FOR SEQUENCERS ******/
-function setDial(seqNum, num, val){
-	outlet(pattrOutput, ["send", "seq"+seqNum+"::dial"+num]);
-	outlet(pattrOutput, val);
-}
-
-function setStepEnable(num, val){
-	outlet(sendOutput, "stepEnable", [num,val]);
-}
-
-function setValRange(seqNum, low, high){
-	sendPattr("seq"+seqNum+"::rangeHigh", high);
-	sendPattr("seq"+seqNum+"::rangeLow", low);
-}
-
-function setStepRange(seqNum, low, high){
-	sendPattr("seq"+seqNum+"::stepHigh", high);
-	sendPattr("seq"+seqNum+"::stepLow", low);
-}
-
-function sendPattr(target, val){
-	outlet(pattrOutput, ["send", target]);
-	outlet(pattrOutput, val);
-}
-
-function loadMapping(mappingtype, filename){ outlet(sendOutput, mappingtype + "Mapping", filename);}
-  
+/********************************
+ * MISC
+ *******************************/
+//functions to store state of midi controller and sequencers
+function note(num,val){A155.midiInput("note", num, val);}
+function cc(num,val){A155.midiInput("cc", num, val);}  
+function seqParam(){A155.seqParamInput(arrayfromargs(messagename,arguments));}
