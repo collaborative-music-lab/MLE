@@ -78,6 +78,3 @@ You need to have java installed on your machine. Get it here - note, you only ne
   * Make sure the volume of the synth is turned on.
   * Make sure the sequencer and MLE.beat are running.
   * Check the Max console to see if it is reporting not finding objects. If so, you probably don't have the MLE library in your Max search path. Check options->File Preferences and add it by clinking the '+' sign on the bottom left of the file manager.
-
-
-
