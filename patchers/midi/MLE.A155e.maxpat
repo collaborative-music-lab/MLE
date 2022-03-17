@@ -198,24 +198,24 @@
 						"seq2" : 						{
 							"sync" : 1,
 							"subdivide" : 4,
-							"stepRange" : [ 3, 7 ],
-							"valRange" : [ 27, 80 ],
+							"stepRange" : [ 0, 7 ],
+							"valRange" : [ 27, 127 ],
 							"dial" : [ 64, 64, 64, 64, 64, 64, 64, 64 ]
 						}
 ,
 						"seq1" : 						{
 							"sync" : 1,
-							"subdivide" : 2,
-							"stepRange" : [ 0, 5 ],
+							"subdivide" : 4,
+							"stepRange" : [ 0, 7 ],
 							"valRange" : [ 20, 100 ],
 							"dial" : [ 0, 64, 127, 64, 0, 127, 0, 64 ]
 						}
 ,
 						"seq0" : 						{
-							"subdivide" : 6,
-							"valRange" : [ 43, 127 ],
+							"subdivide" : 4,
+							"valRange" : [ 27, 127 ],
 							"stepRange" : [ 0, 7 ],
-							"dial" : [ 127, 0, 127, 0, 63, 80, 90, 112 ],
+							"dial" : [ 64, 64, 64, 64, 64, 64, 64, 64 ],
 							"sync" : 1
 						}
 
@@ -434,13 +434,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-45",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ -39.5, 1046.0, 50.0, 35.0 ],
-					"text" : "seq1 43"
+					"patching_rect" : [ -39.5, 1046.0, 50.0, 22.0 ],
+					"text" : "seq1 -1"
 				}
 
 			}
@@ -4286,12 +4285,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-78",
+					"linecount" : 5,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 208.000006198883057, 157.333338022232056, 52.0, 22.0 ],
-					"text" : "beat 0 0"
+					"patching_rect" : [ 208.000006198883057, 157.333338022232056, 52.0, 76.0 ],
+					"text" : "seqParam valRange 1 20 100"
 				}
 
 			}
@@ -5375,7 +5375,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 174.0, 134.0, 50.0, 22.0 ],
-									"text" : "2"
+									"text" : "1069"
 								}
 
 							}
@@ -5435,7 +5435,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 174.0, -0.698625640541081, 45.0, 35.0 ],
-									"text" : "note 2 0"
+									"text" : "note 1069 0"
 								}
 
 							}
@@ -8730,13 +8730,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-451",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 86.0, 1072.0, 50.0, 35.0 ],
-					"text" : "seq1 43"
+					"patching_rect" : [ 86.0, 1072.0, 50.0, 22.0 ],
+					"text" : "seq1 -1"
 				}
 
 			}
@@ -8950,7 +8949,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 57.0, 764.0, 50.0, 22.0 ],
-									"text" : "98."
+									"text" : "0."
 								}
 
 							}
@@ -13702,7 +13701,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 302.0, 322.0, 50.0, 22.0 ],
-									"text" : "2"
+									"text" : "1"
 								}
 
 							}
