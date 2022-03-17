@@ -61,8 +61,22 @@ function stealCCnum(num, state){
 	g.output(midiOutput, "stealCC", ccs_to_steal  );
 }
 
+var notes_to_steal = [-1];
+function stealNote(num, state){
+	//prevents incoming notes from being routed to the sequencers
+	//this lets us use notes as parameters for scripts
+	//without messing with our sequencer
+	var includes = 0 
+	for(var i=0;i<notes_to_steal.length;i++) if(notes_to_steal[i]==num) includes = 1
+	if(state > 0 && includes == 0) notes_to_steal.push(num);
+	else if(state == 0 && includes == 1 ) notes_to_steal = notes_to_steal.filter(function(e) { return e !== num });
+	//post(ccs_to_steal,"\n");
+	g.output(midiOutput, "stealNote", notes_to_steal  );
+}
+
 function stepEnable(num, val){ stepEnables[num] = val;}
 
+function getDial(seqNum, num){ return( A155Vals.get("seq"+String(seqNum)+"::dial")[num]) }
 function getStepRange(seqNum){ return( A155Vals.get("seq"+String(seqNum)+"::stepRange")) }
 function getValRange(seqNum){ return( A155Vals.get("seq"+String(seqNum)+"::valRange")) }
 function getSync(seqNum){ return( A155Vals.get("seq"+String(seqNum)+"::sync")) }

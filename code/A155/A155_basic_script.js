@@ -72,6 +72,7 @@ function randomSteps(buttonState){
 
 	a = arrayfromargs(arguments) //contains all arguments
 	if (a.length > 1) threshold = a[1] 
+	post("randomSteps", a, threshold)
 
 	if( buttonState > 0){
 		for(var i=0;i<8;i++){
@@ -105,8 +106,12 @@ var mySeqs = [
 ];
 var mySeqNumber = 0;
 var mySubdivide = [2,4,1,"seq3"] //we'll also change subdivide per sequence
-function recallStoredSequences(buttonState){
+function recallStoredSequence(buttonState){
 	if(buttonState>0){
+		//look to see if there is an optional argmument for which sequence to recall
+		var a = arrayfromargs(arguments);
+		if( a.length>1) mySeqNumber = a[1]; 
+
 		var vals = [] 
 		for(var i=0;i<mySeqs[mySeqNumber].length;i++){
 			vals[i] = mySeqs[mySeqNumber][i] //have to copy arrays element by element in JS. . . 
@@ -157,6 +162,34 @@ function envelope(val){
 	}
 }  
         
+//store incoming MIDI notes and use them to set sequence 0
+//we will collect incoming MIDI notes in the note() function at the bottom of this script
+//we will only save notes from white keys, and use the black keys to start recording
+//each black key will remember one sequence
+//we will reduce all notes to one octave as well (to avoid having to worry about octaves for now. . .)
+//if the MIDI note assigned to enableRecordingSeqs is held down:
+// - we will start recording a sequence
+//otherwise
+// - we will recall a recorded sequence
+var recordedSeqs = [] //array to store recorded sequences
+var recordingIndex = 0; //keep track of which step we are recording into
+var curRecording = -1; //which array are we recording. -1 means we are finished recording
+var enableRecordingSeqs = 25
+
+function accessRecordedSeqs(buttonState, recordNum){
+	if(buttonState > 0){
+		while(recordNum+1 > recordedSeqs.length) recordedSeqs.push([0,0,0,0, 0,0,0,0]);
+
+		if( enableRecordingSeqs > 0){
+			recordingIndex = 0;
+			curRecording = recordNum;
+		} else {
+			A155.setSequence(0, recordedSeqs[recordNum])
+			post("recall " + String(recordNum) + "\n")
+		}
+	}
+}
+
 /********************************
  * BEAT 
  *******************************/
@@ -189,7 +222,7 @@ function beat( seqNum, step){
 		//A155.stealCCnum(0,1) //CCnumber, enable/disable stealing
 
 		//but now it can't be used for any other purpose! How about if we use a button to enable stealing?
-		if(A155.getMidiVal('note',1105) > 0){
+		if(A155.getMidiVal('note',25) > 0){
 			sine_to_seq(seqNum, A155.getMidiVal('cc',0)/32 ,1 , cycleCounter[seqNum]/1.);
 			A155.stealCCnum(0,1)  //enable cc stealing
 		} else( A155.stealCCnum(0,0) ) //disable cc stealing
@@ -200,6 +233,24 @@ function beat( seqNum, step){
  * MISC
  *******************************/
 //functions to store state of midi controller and sequencers
-function note(num,val){A155.midiInput("note", num, val);}
+function note(num,val){
+	//this section is for recording incoming midi notes and saving them
+	if(curRecording > 0 ){
+		num = (num%12) * 80
+		recordedSeqs[curRecording][recordingIndex] = num
+		A155.setDial(0, 0, num)
+		recordingIndex += 1
+		if(recordingIndex >= 8) {
+			recordingIndex = 0
+			recordNum = -1
+		}
+	}
+
+	//the below function is mandatory, in order to save incoming MIDI notes and CCs
+	A155.midiInput("note", num, val);
+}
+
+
+
 function cc(num,val){A155.midiInput("cc", num, val);}  
 function seqParam(){A155.seqParamInput(arrayfromargs(messagename,arguments));}
