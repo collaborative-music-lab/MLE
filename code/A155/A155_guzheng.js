@@ -1,3 +1,5 @@
+//For use with ableton: instrument rack/guitar & plucked/basic guzheng
+
 //SETUP
 autowatch = 1; inlets = 1; outlets = 3;  
 
@@ -27,23 +29,21 @@ A155.test()
 //feel free to change this for your purposes!
 //this is solely for convenience when mapping to ableton
 var midiMap = {
-	'osc1gain': 0,
-	'osc2gain': 1,
-	'oscSubGain': 2,
-	'osc2detune': 3,
-	'attack': 4,
-	'decay': 5,
-	'sustain': 6,
-	'release': 7,
-	'delayFeedback': 8,
-	'delayFilter': 9,
-	'delayLevel': 10,
-	'delayTime': 92,
-	'delayFeedback': 20,
-	'delayFreeze': 21,
-	'delaySend': 13,
-	'reverbSend': 14,
-	'channelVolume': 15
+	'filterCutoff': 0,
+	'color': 1,
+	'attack': 2,
+	'release': 91,
+	'damping': 4,
+	'autoFilterFreq': 5,
+	'flangeTime': 6,
+	'flangeFeedback': 7,
+	'flangeMix': 8,
+	'delaySend': 9,
+	'delayTime': 10,
+	'delayFeedback': 11,
+	'reverbSend': 12,
+	'reverbDecayTime': 13,
+	'channelVolume': 16
 }
 
 /********************************
@@ -53,10 +53,10 @@ function loadbang(){
 	//this function is called when the Max patch is loaded
 	// - isn't called when a javascript file is resaved. . . 
 	//this examples loads your mapping files automatically when the patch is opened
-	A155.loadMapping('midi', 'launchControl');
-	A155.loadMapping('note', 'A155_launchControl_note');
-	A155.loadMapping('cc', 'A155_launchControl_cc');
-	A155.loadMapping('alt', 'A155_launchControl_alt');
+	A155.loadMapping('midi', 'nanoKey_ian');
+	A155.loadMapping('note', 'guzheng_note');
+	A155.loadMapping('cc', 'guzheng_cc');
+	A155.loadMapping('alt', 'guzheng_alt');
 
 	//you could do any other setup here as well
 	//such as define the output destinations of the sequencer
@@ -71,6 +71,7 @@ function randomSteps(buttonState){
 	threshold = 0.5
 
 	a = arrayfromargs(arguments) //contains all arguments
+	post("randomSteps", a)
 	if (a.length > 1) threshold = a[1] 
 
 	if( buttonState > 0){
@@ -105,8 +106,12 @@ var mySeqs = [
 ];
 var mySeqNumber = 0;
 var mySubdivide = [2,4,1,"seq3"] //we'll also change subdivide per sequence
-function recallStoredSequences(buttonState){
+function recallStoredSequence(buttonState){
 	if(buttonState>0){
+		//look to see if there is an optional argmument for which sequence to recall
+		var a = arrayfromargs(arguments);
+		if( a.length>1) mySeqNumber = a[1]; 
+
 		var vals = [] 
 		for(var i=0;i<mySeqs[mySeqNumber].length;i++){
 			vals[i] = mySeqs[mySeqNumber][i] //have to copy arrays element by element in JS. . . 
@@ -166,9 +171,21 @@ function envelope(val){
 //cycleCounter keeps track of how many cycles have passed for each sequence
 var cycleCounter = [0,0,0];
 
+var randomStepIndex = 0;
+
 function beat( seqNum, step){
 	//seqnum indicates which sequence called beat()
 	//step is the current step of that sequence
+	if(seqNum == 0 && step == 0) {
+		if(A155.getMidiVal( "note", 0) > 0 ){
+			randomSteps(1, A155.getDial(0, randomStepIndex)/127);
+			post("randomsTep", A155.getDial(0,randomStepIndex )/127, "\n");
+			A155.setStepEnable(0,1);
+			randomStepIndex += 1;
+			if(randomStepIndex >= 8) randomStepIndex = 0;
+
+		} 
+	}
 
 	//cycleCounter updates everytime we hit the last step of our cycle
 	curStepRange = A155.getStepRange(seqNum) //get the current step range for this sequence
