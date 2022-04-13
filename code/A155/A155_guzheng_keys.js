@@ -54,7 +54,7 @@ function loadbang(){
 	// - isn't called when a javascript file is resaved. . . 
 	//this examples loads your mapping files automatically when the patch is opened
 	A155.loadMapping('midi', 'nanoKey_ian');
-	A155.loadMapping('note', 'guzheng_note');
+	A155.loadMapping('note', 'guzheng_key_note');
 	A155.loadMapping('cc', 'guzheng_cc');
 	A155.loadMapping('alt', 'guzheng_alt');
 
@@ -165,8 +165,8 @@ function envelope(val){
 }  
 
 var pitchFragment = [
-	[0,1,2,3], [0,2,4,2], [0,2,1,3],[0,3,2,1],
-	[3,2,1,0], [4,2,2,0], [3,1,2,0],[0,7,7,0]
+	[0,1,2,3], [0,2,4,2], 
+	[3,2,1,0], [4,2,2,0], [3,1,2,0],[0,7,7,0], [0,2,1,3],[0,3,2,1]
 ]
 function setPitchFragment(buttonState,seq,fragment,startStep){
 	if( fragment > pitchFragment.length) fragment = 0
@@ -181,7 +181,7 @@ function setPitchFragment(buttonState,seq,fragment,startStep){
 }
 
 var rhythmFragment = [
-	[2,2,2,2,2,2,2,2], [2,2,4,1,1,2], [2,1,1,2,1,1,2,2],[4,2,2,2,4,2,1,1,1,1]
+	[2,2,2,2,2,2,2,2], [2,2,4,1,1,2,2,4], [3,3,3,3,2,2,2,2],[4,8,8,8,4,8,8,8]
 ]
 var subdivideSeq = rhythmFragment[0]
 
@@ -194,6 +194,19 @@ function setRhythmFragment(buttonState,seq,fragment){
 	}
 }
 
+var stepFragment = [
+	[1,1,1,1, 1,1,1,1], [1,0,1,1, 1,0,1,0], [0,1,1,0, 1,1,0,1],[0,0,0,0, 0,0,0,0]
+]
+
+function setStepFragment(buttonState,fragment){
+	if( fragment > stepFragment.length) fragment = 0
+	var frag = stepFragment[fragment]
+	if(buttonState>0){
+		//A155.reset(seq) //sets back to step 0
+		for(var i=0;i<8;i++) A155.setStepEnable(i,frag[i])
+	}
+}
+ 
         
 /********************************
  * BEAT 
@@ -209,21 +222,21 @@ var randomStepIndex = 0;
 function beat( seqNum, step){
 	//seqnum indicates which sequence called beat()
 	//step is the current step of that sequence
-	if(seqNum == 0 && step == 0) {
-		if(A155.getMidiVal( "note", 0) > 0 ){
-			randomSteps(1, A155.getDial(0, randomStepIndex)/127);
-			post("randomsTep", A155.getDial(0,randomStepIndex )/127, "\n");
-			A155.setStepEnable(0,1);
-			randomStepIndex += 1;
-			if(randomStepIndex >= 8) randomStepIndex = 0;
+	// if(seqNum == 0 && step == 0) {
+	// 	if(A155.getMidiVal( "note", 0) > 0 ){
+	// 		randomSteps(1, A155.getDial(0, randomStepIndex)/127);
+	// 		post("randomsTep", A155.getDial(0,randomStepIndex )/127, "\n");
+	// 		A155.setStepEnable(0,1);
+	// 		randomStepIndex += 1;
+	// 		if(randomStepIndex >= 8) randomStepIndex = 0;
 
-		} 
-	}
-
-	// if(seqNum == 0){
-	// 	A155.setSubdivide(0,subdivideSeq[step])
-	// 	post(subdivideSeq, subdivideSeq[step], step)
+	// 	} 
 	// }
+
+	if(seqNum == 0){
+		A155.setSubdivide(0,subdivideSeq[step])
+		post(subdivideSeq, subdivideSeq[step], step, "\n")
+	}
 
 	//cycleCounter updates everytime we hit the last step of our cycle
 	curStepRange = A155.getStepRange(seqNum) //get the current step range for this sequence
