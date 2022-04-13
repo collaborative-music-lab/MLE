@@ -3,6 +3,20 @@ var midiOutput = 0; var pattrOutput = 1; var sendOutput = 2;
 
 var subdivide_values = [32,16,8,6,4,3,2,1,"seq1","seq2","seq3"];
 
+var subdivideDict = {
+	32:0,
+	16:1,
+	8:2,
+	6:3,
+	4:4,
+	3:5,
+	2:6,
+	1:7,
+	"seq1":8,
+	"seq2":9,
+	"seq3":10
+}
+
 //dicts to store states of MIDI controller and sequencers
 var midiVals = new Dict("MIDI_values");
 var A155Vals = new Dict("A155_values");
@@ -48,6 +62,18 @@ function printSeq(num){
 	post(seq[num].valRange, seq[num].stepRange, "\n")
 }
 
+function clockEnableInput(val){
+	key = "clockEnable"
+	if( A155Vals.contains(key) == 1)  A155Vals.replace(key, val);
+	else A155Vals.append(key, val);
+	sendPattr("clockEnable", val); //sendPattr(target, val)
+	//post(A155.get("clockEnable"))
+}
+
+function reset(num){
+	sendPattr("seq"+String(num)+"::reset", num)
+}
+
 var ccs_to_steal = [-1];
 function stealCCnum(num, state){
 	//prevents incoming ccs from being routed to the sequencers
@@ -81,6 +107,7 @@ function getStepRange(seqNum){ return( A155Vals.get("seq"+String(seqNum)+"::step
 function getValRange(seqNum){ return( A155Vals.get("seq"+String(seqNum)+"::valRange")) }
 function getSync(seqNum){ return( A155Vals.get("seq"+String(seqNum)+"::sync")) }
 function getSubdivide(seqNum){ return( A155Vals.get("seq"+String(seqNum)+"::subdivide")) }
+function getClock(){ return( A155Vals.get("clockEnable"))}
 
 function getMidiVal(type, num){ return midiVals.get(type+"::"+String(num))}
 	
@@ -117,13 +144,11 @@ function setStepEnable(num, val){
 
 function setSubdivide(num, val){
 	var index = 0
-	for(var i=0;i<subdivide_values.length;i++){
-		if(subdivide_values[i] == val) {
-			index = i;
-			break;
-		}
-	} 
-	sendPattr("seq"+num+"::subdivide", index);
+	post("sub", num, val)
+	val = subdivideDict[val]
+	post("sub", num, val, "\n")
+	sendPattr("seq"+num+"::subdivide", val);
+
 }
 
 function setValRange(seqNum, low, high){
@@ -148,6 +173,10 @@ function sendPattr(target, val){
 
 function sendMIDI(type,num,val){
 	g.output(midiOutput,type,[num,Math.floor(val)])
+}
+
+function setClock(val){
+	g.output(pattrOutput, val);
 }
 
 function loadMapping(mappingtype, filename){ g.output(sendOutput, mappingtype + "Mapping", filename) }
