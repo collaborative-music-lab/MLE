@@ -1,0 +1,108 @@
+{
+	"patcher" : 	{
+		"fileversion" : 1,
+		"appversion" : 		{
+			"major" : 8,
+			"minor" : 1,
+			"revision" : 2,
+			"architecture" : "x64",
+			"modernui" : 1
+		}
+,
+		"classnamespace" : "dsp.gen",
+		"rect" : [ 421.0, 79.0, 579.0, 937.0 ],
+		"bglocked" : 0,
+		"openinpresentation" : 0,
+		"default_fontsize" : 12.0,
+		"default_fontface" : 0,
+		"default_fontname" : "Arial",
+		"gridonopen" : 1,
+		"gridsize" : [ 15.0, 15.0 ],
+		"gridsnaponopen" : 1,
+		"objectsnaponopen" : 1,
+		"statusbarvisible" : 2,
+		"toolbarvisible" : 1,
+		"lefttoolbarpinned" : 0,
+		"toptoolbarpinned" : 0,
+		"righttoolbarpinned" : 0,
+		"bottomtoolbarpinned" : 0,
+		"toolbars_unpinned_last_save" : 0,
+		"tallnewobj" : 0,
+		"boxanimatetime" : 200,
+		"enablehscroll" : 1,
+		"enablevscroll" : 1,
+		"devicewidth" : 0.0,
+		"description" : "",
+		"digest" : "",
+		"tags" : "",
+		"style" : "",
+		"subpatcher_template" : "",
+		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 190.0, 18.0, 61.0, 22.0 ],
+					"text" : "delay 100"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"code" : "History x1(0);\r\nHistory x2(0);\r\nHistory prev_x2(0);\r\n\r\nDelay MyDelay(4410, 0, feedback=1);\r\n\r\nParam feedback(0, min=-0.99, max=0.99);\r\nParam feedback2(0, min=-0.99, max=0.99);\r\nParam delayLen(2, min=0, max=4410);\r\n\r\nParam amount(0, min = 0, max=20);\r\nParam gain(1, min = 0, max=200);\r\nParam mode(0);\r\nParam offset(0);\r\nParam mix(1,min=0,max=1);\r\n\r\ndry=in1;\r\nx = dry*gain;\r\ny = x;\r\ndir = sign(x);\r\nx = x+offset;\r\nx2 = MyDelay.read(delayLen);\r\nx = x + x1 + x2;\r\n\r\n\r\n\r\n\r\n//cycling74 exmple with positive amount\r\nif( mode == 0){\r\n\tval = amount;\r\n\tif(val>0.99) val = 0.99;\r\n\tk = 2 * val / (1 - val);\r\n\ty = (1+k) * x / (1+k* abs(x) );\r\n}\r\n//same with negative amount\r\nif( mode == 1){\r\n\tval = -amount;\r\n\tif(val<-0.9) val=-0.9;\r\n\tk = 2 * val / (1 - val);\r\n\ty = (1+k) * x / (1+k* abs(x) );\r\n}\r\n//tanh\r\nif( mode == 2){\r\n\tval = x*amount*4;\r\n\ty = tanh( val );\r\n}\r\n//cubic\r\nif( mode == 3){\r\n\tval = amount*2;\r\n\t//if(val > 1) val=1;\r\n\tx = x * val;\r\n\ty = x - (pow(x,3)/3);\r\n}\r\n//tanh wavefolder\r\nif( mode == 4){\r\n\tval = amount*2-1;\r\n\ttau = (abs(x) - val)/(1-val);\r\n//\ttau = tau * (1-feedback) + (feedback * x1);\r\n\tif(dir==-1) y = -val - (1-val) * tanh(tau);\r\n\telse y = val + (1-val) * tanh(tau);\r\n}\r\n//y = x * sqrt(1-x^2)\r\nif( mode == 5){\r\n\tval = pow(amount*x,1)*0.95;\r\n\ty = val / sqrt(1-pow(val,2));\r\n}\r\n//y = x / (1-x)\r\nif( mode == 6){\r\n\tval = pow(amount*x,1)*0.9*dir;\r\n\tval = clip(val,-.9,.9);\r\n\tden = 1-val;\r\n\tif (den == 0)  den = 0.01;\r\n\ty = val / (1-(val));\r\n\ty = y*dir;\r\n\t//y-=1;\r\n}\r\n//y = 1/ ( 1+e^x )\r\nif( mode == 7){\r\n\tval = pow(abs(x),0.25)*amount*10*dir+offset;\r\n\ty = 1/(1+exp(-val));\r\n}\r\n\r\nmix2 = sqrt(mix);\r\nscaleOut = 1.25-clip(amount,0,1);\r\ny= y*scaleOut;\r\ny = dry*(1-mix2) + y*mix2;\r\nMyDelay.write(y*feedback2);\r\n\r\n\r\n//prev_x2 = y*;\r\n//x2=prev_x2*feedback2;\r\nx1= (y*feedback);\r\nout1 = y;\r\n\r\n",
+					"fontface" : 0,
+					"fontname" : "<Monospaced>",
+					"fontsize" : 12.0,
+					"id" : "obj-5",
+					"maxclass" : "codebox",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 52.0, 63.0, 459.0, 818.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 52.0, 19.0, 28.0, 22.0 ],
+					"text" : "in 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 41.0, 902.0, 35.0, 22.0 ],
+					"text" : "out 1"
+				}
+
+			}
+ ],
+		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+ ]
+	}
+
+}
