@@ -1,0 +1,20 @@
+Quick porting steps form C to jspainter
+
+- get value with box.getvalueof() instead of x->
+- get attributes with box.getattr() instad of x->
+- get size from mgraphics instead of rect from view
+	var viewsize = mgraphics.size;
+	var width = viewsize[0];
+	var height = viewsize[1];
+- replace jgraphics_ with mgraphics.
+- replace (g,? with (
+- replace jrgba with rgba
+- jgraphics constants like linecap to strings
+- Math. prefix for things like sin/cos/PI
+- points/rects converted to scalar vars or objects
+- define constants as global vars
+- if normal has a text field, copy drawtext and modify calc_x/y_offset functions as necessary
+- pattern modification methods are called on the object, not on mgraphics, and no need to explicitly destroy a pattern
+- if using prims like rectangle_rounded, etc. and don't want autofill on, set mgraphics.autofill=0 in global code
+- if using colors with struct dereferencing for red/green/blue/alpha, copy use array_to_color function, and pass in values rather than object to color functions
+- if using SVGs you can create a new SVG with new MGraphicsSVG(filename), see ezadc-override.js for an example
