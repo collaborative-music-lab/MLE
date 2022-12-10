@@ -72,7 +72,7 @@ function randomSteps(buttonState){
 
 	a = arrayfromargs(arguments) //contains all arguments
 	if (a.length > 1) threshold = a[1] 
-	post("randomSteps", a, threshold)
+	post("randomSteps", a, threshold, "\n")
 
 	if( buttonState > 0){
 		for(var i=0;i<8;i++){
@@ -81,7 +81,7 @@ function randomSteps(buttonState){
 	}
 }  
 
-function randomVals(buttonState, seqNum){
+function randomVals(buttonState, seqNum){ //velocity, seqNum, miVal, maxVal
 	//sets all dials in a sequence to a random value
 	//optional min and max parameters
 	var min = 0
@@ -212,7 +212,7 @@ function beat( seqNum, step){
 	}
 
 	//update sequence 1's values every cycle
-	if(seqNum == 1 && step == curStepRange[1] ) {
+	if(seqNum == 0 && step == curStepRange[1] ) {
 		//sine_to_seq(seqNum, 1.56,1, cycleCounter[seqNum]/1.); //seqNum, freq, amplitude, phase
 
 		//alternatively we could use a cc to set the frequency like this:
@@ -222,7 +222,7 @@ function beat( seqNum, step){
 		//A155.stealCCnum(0,1) //CCnumber, enable/disable stealing
 
 		//but now it can't be used for any other purpose! How about if we use a button to enable stealing?
-		if(A155.getMidiVal('note',25) > 0){
+		if(A155.getMidiVal('note',1074) > 0){
 			sine_to_seq(seqNum, A155.getMidiVal('cc',0)/32 ,1 , cycleCounter[seqNum]/1.);
 			A155.stealCCnum(0,1)  //enable cc stealing
 		} else( A155.stealCCnum(0,0) ) //disable cc stealing
